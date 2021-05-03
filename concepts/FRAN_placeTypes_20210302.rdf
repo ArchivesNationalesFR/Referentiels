@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xml:base="http://data.archives-nationales.culture.gouv.fr/">
+
+    <skos:ConceptScheme rdf:about="placeTypes">
+        <dcterms:description>Thésaurus des types de lieux (entités géo-historiques). Saisi manuellement
+            en se fondant sur les catégories de lieux sous-jacentes ou implicites dans les RI
+            actuels du SIA. Il s'agit donc d'une VERSION RDF PROVISOIRE. Des enrichissements,
+            modifications de structure et alignements sont prévus. </dcterms:description>
+        <dcterms:title>Thésaurus des types de lieux</dcterms:title>
+        <dcterms:creator>
+            <foaf:Organization>
+                <foaf:mbox>referentiels.archives-nationales@culture.gouv.fr</foaf:mbox>
+                <foaf:homepage>http://www.archives-nationales.culture.gouv.fr/</foaf:homepage>
+                <foaf:name>Archives nationales (France). Mission référentiels</foaf:name>
+            </foaf:Organization>
+        </dcterms:creator>
+        <dcterms:created>2019-06-16</dcterms:created>
+        <dc:coverage xml:lang="fr">du Moyen Âge à nos jours</dc:coverage>
+        <dc:language>fr-FR</dc:language>
+        <dc:type xml:lang="fr">Thésaurus</dc:type>
+    </skos:ConceptScheme>
+    <skos:Concept rdf:about="placeType/commune">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">commune française</skos:prefLabel>
+        <!--<owl:sameAs rdf:resource="http://data.ign.fr/def/geofla#Commune"/>-->
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/ancienne%20commune">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">ancienne commune française</skos:prefLabel>
+        <!--<owl:sameAs rdf:resource="http://data.ign.fr/def/geofla#Commune"/>-->
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/r%C3%A9gion">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">région française</skos:prefLabel>
+        <!-- <owl:sameAs rdf:resource="http://data.ign.fr/def/geofla#Region"/>-->
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/d%C3%A9partement">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">département français</skos:prefLabel>
+        <skos:scopeNote xml:lang="fr">département actuel, ou département ancien
+            disparu.</skos:scopeNote>
+        <!-- <owl:sameAs rdf:resource="http://data.ign.fr/def/geofla#Departement"/>-->
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/arrondissement">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">arrondissement français (différent des arrondissements
+            municipaux)</skos:prefLabel>
+        <!-- <owl:sameAs rdf:resource="http://data.ign.fr/def/geofla#Arrondissement"/>-->
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/arrondissement%20municipal">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">arrondissement municipal</skos:prefLabel>
+        <skos:scopeNote xml:lang="fr">utilisé uniquement pour les villes de Paris, Lyon et
+            Marseille</skos:scopeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/canton">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">canton français</skos:prefLabel>
+        <!-- <owl:sameAs rdf:resource="http://data.ign.fr/def/geofla#Canton"/>-->
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/pays">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">pays</skos:prefLabel>
+        <!-- <owl:sameAs rdf:resource="http://rdf.insee.fr/def/geo#Pays"/>-->
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20physique">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">élément de géographie physique</skos:prefLabel>
+        <skos:narrower rdf:resource="placeType/aire%20g%C3%A9ographique%20naturelle"/>
+        <skos:narrower rdf:resource="placeType/%C3%A9l%C3%A9ment%20d%27hydrographie"/>
+        <skos:narrower rdf:resource="placeType/zone%20naturelle"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/aire%20g%C3%A9ographique%20naturelle">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">aire géographique naturelle</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20physique"/>
+
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/%C3%A9l%C3%A9ment%20d%27hydrographie">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">élément d'hydrographie</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20physique"/>
+        <skos:narrower rdf:resource="placeType/cours%20d%E2%80%99eau"/>
+        <skos:narrower rdf:resource="placeType/lac"/>
+
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/zone%20naturelle">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">zone naturelle</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20physique"/>
+        <skos:narrower rdf:resource="placeType/for%C3%AAt"/>
+        <skos:narrower rdf:resource="placeType/col"/>
+        <skos:narrower rdf:resource="placeType/plage"/>
+        <skos:narrower rdf:resource="placeType/volcan"/>
+        <skos:narrower rdf:resource="placeType/cap"/>
+        <skos:narrower rdf:resource="placeType/pointe"/>
+        <skos:narrower rdf:resource="placeType/for%C3%AAt"/>
+        <skos:narrower rdf:resource="placeType/pic"/>
+        <skos:narrower rdf:resource="placeType/sommet"/>
+        <skos:narrower rdf:resource="placeType/montagne"/>
+        <skos:narrower rdf:resource="placeType/massif"/>
+        <skos:narrower rdf:resource="placeType/plateau"/>
+        <skos:narrower rdf:resource="placeType/vall%C3%A9e"/>
+        <skos:narrower rdf:resource="placeType/%C3%AEle"/>
+        <skos:narrower rdf:resource="placeType/grotte"/>
+        <skos:narrower rdf:resource="placeType/gorge"/>
+        <skos:narrower rdf:resource="placeType/baie"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/territoire%20ou%20ville%20%C3%A9tranger">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">territoire ou ville étranger</skos:prefLabel>
+        <skos:changeNote rdf:parseType="Resource">
+            <rdf:value>Added on 2020, June 17.</rdf:value>
+            <dc:date>2020-06-17</dc:date>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/am%C3%A9nagement%20ou%20construction">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">aménagement ou construction</skos:prefLabel>
+        <skos:narrover rdf:resource="placeType/abbaye"/>
+        <skos:narrover rdf:resource="placeType/ch%C3%A2teau"/>
+        <skos:narrover rdf:resource="placeType/prison"/>
+        <skos:narrover rdf:resource="placeType/camp%20de%20concentration"/>
+        <skos:narrover rdf:resource="placeType/h%C3%B4pital"/>
+        <skos:narrover rdf:resource="placeType/maison%20royale%20de%20sant%C3%A9"/>
+        <skos:narrover rdf:resource="placeType/canal"/>
+        <skos:narrower rdf:resource="placeType/camp%20militaire"/>
+        <skos:narrover rdf:resource="placeType/station%20de%20ski"/>
+        <skos:narrover rdf:resource="placeType/a%C3%A9rodrome"/>
+        <skos:narrover rdf:resource="placeType/pont"/>
+        <skos:narrover rdf:resource="placeType/barrage"/>
+        <skos:narrover rdf:resource="placeType/port"/>
+        <skos:narrover rdf:resource="placeType/phare"/>
+        <skos:narrover rdf:resource="placeType/station%20baln%C3%A9aire"/>
+        <skos:narrover rdf:resource="placeType/gare%20ferroviaire"/>
+        <skos:narrover rdf:resource="placeType/cit%C3%A9%20sanitaire"/>
+        <skos:narrover rdf:resource="placeType/fortification"/>
+        <skos:narrover rdf:resource="placeType/parc%20industriel"/>
+        <skos:narrover rdf:resource="placeType/site%20nucl%C3%A9aire"/>
+        <skos:narrover rdf:resource="placeType/base%20a%C3%A9rienne"/>
+        <skos:narrover rdf:resource="placeType/cimeti%C3%A8re%20militaire"/>
+        <skos:narrover rdf:resource="placeType/monument20comm%C3%A9moratif"/>
+        <skos:narrover rdf:resource="placeType/manoir"/>
+        <skos:narrover rdf:resource="placeType/sanctuaire"/>
+
+
+        <!-- à traiter aussi : ce qu'on peut extraire du référentiel des édifices parisiens -->
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/lieu-dit">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">lieu-dit</skos:prefLabel>
+        <skos:definition xml:lang="fr">Lieu habité autrefois ou
+            aujourd'hui<!-- et non géolocalisé
+            entièrement dans une commune.--></skos:definition>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="placeType/hameau">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">hameau</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">écart</skos:altLabel>
+        <skos:definition xml:lang="fr">Groupe d’habitations en milieu rural, généralement trop petit
+            pour être considéré comme un village. L’élément fondateur est très souvent une
+            ferme.<!-- définition wikipedia --></skos:definition>
+        <!--<owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q5084"/>-->
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/village">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">village</skos:prefLabel>
+        <skos:definition xml:lang="fr">agglomération rurale caractérisée par un habitat plus ou
+            moins concentré, possédant des services de première nécessité et offrant une forme de
+            vie communautaire.<!-- définition wikipedia --></skos:definition>
+        <!--<owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q532"/>-->
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/quartier">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">quartier</skos:prefLabel>
+        <skos:definition xml:lang="fr">partie d'une
+            ville.<!-- définition wikipedia --></skos:definition>
+        <!--<owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q123705"/>-->
+        <skos:exactMatch rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/Quartier"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/bourg">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">bourg</skos:prefLabel>
+        <skos:definition xml:lang="fr">Un bourg est une agglomération rurale plus importante que la
+            ville, où se tient ordinairement le marché des villages environnants1 et qui tient lieu
+            de centre administratif local (un droit de fortification existait à l'époque médiévale)
+            ce qui le distingue de la simple bourgade. On parle généralement de bourg pour désigner
+            une localité de taille intermédiaire entre le village et la ville, sans faubourg2 ni
+            banlieue. Sur le plan administratif, le bourg peut être le chef-lieu d'une commune dont
+            peuvent dépendre des villages et hameaux. Cependant, la fonction et l'importance
+            symbolique, économique ou politique du bourg ont pu évoluer au cours des siècles et le
+            terme même a changé de sens. Ainsi, en régions d'habitat dispersé, notamment dans les
+            régions bocagères françaises, le terme désigne simplement le chef-lieu de la commune où
+            il arrive que l'on ne trouve guère que les quelques bâtiments publics : l'église, la
+            mairie, l'école (en général fermée aujourd'hui), un commerce (souvent un
+            café-épicerie-bureau de tabac). <!-- définition wikipedia --></skos:definition>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="placeType/paroisse">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">paroisse</skos:prefLabel>
+        <skos:definition xml:lang="fr">Organisation qui est originellement, dans le christianisme,
+            la subdivision de base d'un diocèse de l'Église. La paroisse occupe un rôle essentiel
+            dans la vie religieuse, elle est le lieu de culte, de célébration pour les croyants.
+            <!-- définition wikipedia --></skos:definition>
+        <!--  <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q102496"/>-->
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/ville%20nouvelle">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">ville nouvelle</skos:prefLabel>
+
+        <skos:definition xml:lang="fr">Une ville nouvelle, ville neuve ou ville planifiée est une
+            ville, ou un ensemble de communes, qui naît généralement d’une volonté politique, et qui
+            se construit peu à peu sur un emplacement auparavant peu ou pas habité (source :
+            Wikipédia).</skos:definition>
+
+        <skos:changeNote rdf:parseType="Resource">
+            <rdf:value>Added on 2020, June 17.</rdf:value>
+            <dc:date>2020-06-17</dc:date>
+        </skos:changeNote>
+        <!--  <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q1074523"/>-->
+
+        <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Ville_nouvelle"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/voie%20urbaine">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">voie urbaine</skos:prefLabel>
+        <!-- à revoir en se fondant sur le RI des voies de Paris. En fait il regroupe autre chose que des voies....-->
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/for%C3%AAt">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">forêt</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">bois</skos:altLabel>
+        <skos:broader rdf:resource="placeType/zone%20naturelle"/>
+
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/col">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">col</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/zone%20naturelle"/>
+
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/pic">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">pic</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/zone%20naturelle"/>
+        <skos:definition xml:lang="fr">Sommet montagneux assez pointu (source :
+            Wikipédia).</skos:definition>
+        <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Pic"/>
+        <!--  <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q227723"/>-->
+        <owl:sameAs rdf:resource="http://data.ign.fr/id/codes/topo/typederelief/Pic"/>
+        <skos:changeNote rdf:parseType="Resource">
+            <rdf:value>Added on 2020, June 17.</rdf:value>
+            <dc:date>2020-06-17</dc:date>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/sommet">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">sommet</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/zone%20naturelle"/>
+        <skos:definition xml:lang="fr">Point haut du relief non caractérisé par un profil abrupt
+            (source : vocabulaire IGN).</skos:definition>
+
+
+        <owl:sameAs rdf:resource="http://data.ign.fr/id/codes/topo/typederelief/Sommet"/>
+        <skos:changeNote rdf:parseType="Resource">
+            <rdf:value>Added on 2020, June 17.</rdf:value>
+            <dc:date>2020-06-17</dc:date>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/montagne">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">montagne</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">mont</skos:altLabel>
+        <skos:broader rdf:resource="placeType/zone%20naturelle"/>
+        <skos:definition xml:lang="fr">Forme topographique de relief positif, à la surface de
+            planètes telluriques, et faisant partie d'un ensemble — une chaîne de montagnes — ou
+            formant un relief isolé (source : Wikipédia).</skos:definition>
+        <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Montagne"/>
+        <owl:sameAs rdf:resource="http://data.ign.fr/id/codes/topo/typederelief/Montagne"/>
+        <!--   <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q8502"/>-->
+        <skos:changeNote rdf:parseType="Resource">
+            <rdf:value>Added on 2020, June 17.</rdf:value>
+            <dc:date>2020-06-17</dc:date>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/massif">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">massif</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">massif montagneux</skos:altLabel>
+        <skos:broader rdf:resource="placeType/zone%20naturelle"/>
+        <skos:definition xml:lang="fr">Ensemble de montagnes formant un bloc continu qui suit une
+            ligne de crête, et s'oppose à une chaîne de montagnes. Il présente la particularité de
+            former un ensemble de reliefs continus, séparé souvent par des rivières, des vallées,
+            entourés d'abîmes ou des reliefs distincts (source : Wikipédia).</skos:definition>
+        <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Massif_de_montagnes"/>
+
+        <!--   <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q2624046"/>-->
+        <skos:changeNote rdf:parseType="Resource">
+            <rdf:value>Added on 2020, June 17.</rdf:value>
+            <dc:date>2020-06-17</dc:date>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/vall%C3%A9e">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">vallée</skos:prefLabel>
+
+        <skos:broader rdf:resource="placeType/zone%20naturelle"/>
+        <skos:definition xml:lang="fr">Dépression géographique généralement de forme allongée et
+            façonnée dans le relief par un cours d'eau (vallée fluviale) ou un glacier (vallée
+            glaciaire) (source : Wikipédia).</skos:definition>
+        <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Vall%C3%A9e"/>
+        <owl:sameAs rdf:resource="http://data.ign.fr/id/codes/topo/typederelief/Vallee"/>
+        <!--   <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q39816"/>-->
+        <skos:changeNote rdf:parseType="Resource">
+            <rdf:value>Added on 2020, June 17.</rdf:value>
+            <dc:date>2020-06-17</dc:date>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/plateau">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">plateau</skos:prefLabel>
+
+        <skos:broader rdf:resource="placeType/zone%20naturelle"/>
+        <skos:definition xml:lang="fr">Aire géographique où les cours d'eau sont encaissés, par
+            opposition aux plaines où les cours d'eau coulent à fleur de sol. Le relief y est peu
+            marqué, ce qui différencie un plateau d'une montagne (source :
+            Wikipédia).</skos:definition>
+        <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Plateau_(g%C3%A9ographie)"/>
+
+        <!--   <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q75520"/>-->
+        <skos:changeNote rdf:parseType="Resource">
+            <rdf:value>Added on 2020, June 17.</rdf:value>
+            <dc:date>2020-06-17</dc:date>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/%C3%AEle">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">île</skos:prefLabel>
+
+        <skos:broader rdf:resource="placeType/zone%20naturelle"/>
+        <skos:definition xml:lang="fr">Masse de terre entourée d'eau de manière permanente ou
+            parfois de manière temporaire en fonction des marées. L'eau baignant les îles peut être
+            celle d'un océan, d'une mer, d'un lac ou d'un cours d'eau. Les îles peuvent être
+            temporaires (banc de sable, volcans, etc.) ou permanentes, isolées ou groupées avec
+            d'autres îles et peuvent alors former un archipel. Une petite île est parfois désignée
+            sous les termes d'îlet ou d'îlot. Les îles peuvent être reliées à d'autres îles ou à un
+            continent par une chaussée, un pont ou un tunnel (source : Wikipédia).</skos:definition>
+        <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/%C3%8Ele"/>
+
+        <!--   <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q23442"/>-->
+        <skos:changeNote rdf:parseType="Resource">
+            <rdf:value>Added on 2020, June 17.</rdf:value>
+            <dc:date>2020-06-17</dc:date>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/lac">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">lac</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20d%27hydrographie"/>
+        <skos:definition xml:lang="fr">Étendue d'eau terrestre : bassin, étang, lac, mare (source :
+            vocabulaire IGN).</skos:definition>
+        <skos:changeNote rdf:parseType="Resource">
+            <rdf:value>Added on 2020, June 17.</rdf:value>
+            <dc:date>2020-06-17</dc:date>
+        </skos:changeNote>
+        <!--  <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q23397"/>-->
+        <owl:sameAs rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/Lac"/>
+        <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Lac"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/cours%20d%E2%80%99eau">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">cours d’eau</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">cours d'eau</skos:altLabel>
+        <skos:altLabel xml:lang="fr">rivière</skos:altLabel>
+        <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20d%27hydrographie"/>
+        <skos:definition xml:lang="fr">Tout écoulement terrestre d'eau liquide entre une source et
+            une embouchure avec un débit à module supérieur à zéro (source :
+            Wikipédia).</skos:definition>
+        <skos:changeNote rdf:parseType="Resource">
+            <rdf:value>Added on 2020, June 17.</rdf:value>
+            <dc:date>2020-06-17</dc:date>
+        </skos:changeNote>
+        <!--  <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q355304"/>-->
+
+        <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Cours_d'eau"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/plage">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">plage</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/zone%20naturelle"/>
+
+
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/volcan">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">volcan</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/zone%20naturelle"/>
+
+
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/cap">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">cap</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/zone%20naturelle"/>
+
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/pointe">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">pointe</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/zone%20naturelle"/>
+
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/abbaye">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">abbaye</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/ch%C3%A2teau">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">château</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/fortification">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">fortification</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:changeNote rdf:parseType="Resource">
+            <rdf:value>Added on 2020, June 17.</rdf:value>
+            <dc:date>2020-06-17</dc:date>
+        </skos:changeNote>
+        <!-- <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q57821"/>-->
+        <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Fortification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/parc%20industriel">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">parc industriel</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:changeNote rdf:parseType="Resource">
+            <rdf:value>Added on 2020, June 17.</rdf:value>
+            <dc:date>2020-06-17</dc:date>
+        </skos:changeNote>
+        <skos:closeMatch rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/ZoneIndustrielle"/>
+        <!-- <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q57821"/>-->
+        <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Fortification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/site%20nucl%C3%A9aire">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">site nucléaire</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">centrale nucléaire</skos:altLabel>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:changeNote rdf:parseType="Resource">
+            <rdf:value>Added on 2020, June 17.</rdf:value>
+            <dc:date>2020-06-17</dc:date>
+        </skos:changeNote>
+
+        <!-- <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q134447"/>-->
+        <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Centrale_nucl%C3%A9aire"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/base%20a%C3%A9rienne">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">base aérienne</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">base aérienne militaire</skos:altLabel>
+        <skos:definition xml:lang="fr">Aérodrome ou partie d'un aérodrome utilisée par les forces
+            armées d'un pays pour mettre en œuvre la composante aérienne
+            <!-- définition Wikipedia)--></skos:definition>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:changeNote rdf:parseType="Resource">
+            <rdf:value>Added on 2020, June 17.</rdf:value>
+            <dc:date>2020-06-17</dc:date>
+        </skos:changeNote>
+
+        <!-- <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q695850"/>-->
+        <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Base_a%C3%A9rienne"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/cimeti%C3%A8re%20militaire">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">cimetière militaire</skos:prefLabel>
+        <skos:definition xml:lang="fr">Lieu où sont inhumés les soldats morts lors d'une
+            guerre</skos:definition>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:changeNote rdf:parseType="Resource">
+            <rdf:value>Added on 2020, June 17.</rdf:value>
+            <dc:date>2020-06-17</dc:date>
+        </skos:changeNote>
+
+        <!-- <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q1241568"/>-->
+        <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Cimeti%C3%A8re_militaire"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/monument%20comm%C3%A9moratif">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">monument commémoratif</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">mémorial</skos:altLabel>
+        <skos:definition xml:lang="fr">Monument érigé en souvenir d'un événement, ou / et, en
+            l’honneur d'une ou plusieurs personnes décédées (source : Wikipédia).</skos:definition>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:changeNote rdf:parseType="Resource">
+            <rdf:value>Added on 2020, June 17.</rdf:value>
+            <dc:date>2020-06-17</dc:date>
+        </skos:changeNote>
+
+
+        <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/M%C3%A9morial"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/manoir">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">manoir</skos:prefLabel>
+
+
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:changeNote rdf:parseType="Resource">
+            <rdf:value>Added on 2020, June 17.</rdf:value>
+            <dc:date>2020-06-17</dc:date>
+        </skos:changeNote>
+        <!--<owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q879050"/> -->
+
+        <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Manoir"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/prison">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">prison</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/camp%20de%20concentration">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">camp de concentration</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/h%C3%B4pital">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">hôpital</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/maison%20royale%20de%20sant%C3%A9">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">maison royale de santé</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/canal">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">canal</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/camp%20militaire">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">camp militaire</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/station%20de%20ski">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">station de ski</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/a%C3%A9rodrome">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">aérodrome</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/pont">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">pont</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:narrower rdf:resource="placeType/pont-canal"/>
+        <skos:narrower rdf:resource="placeType/viaduc"/>
+
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/pont-canal">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">pont-canal</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/pont"/>
+
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/viaduc">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">viaduc</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/pont"/>
+
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/barrage">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">barrage</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/port">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">port</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/phare">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">phare</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/station%20baln%C3%A9aire">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">station balnéaire</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/gare%20ferroviaire">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">gare ferroviaire</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/cit%C3%A9%20sanitaire">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">cité sanitaire</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+
+    </skos:Concept>
+    <!-- Nouveau -->
+    <skos:Concept rdf:about="placeType/grotte">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">grotte</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/zone%20naturelle"/>
+        <skos:definition xml:lang="fr">En géomorphologie, une grotte est une cavité souterraine
+            naturelle comportant au moins une partie horizontale accessible. (source :
+            Wikipédia).</skos:definition>
+        <!-- <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q35509"/>-->
+        <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Grotte"/>
+
+        <!-- <owl:sameAs rdf:resource="http://data.ign.fr/id/codes/topo/typederelief/Sommet"/>-->
+        <skos:changeNote rdf:parseType="Resource">
+            <rdf:value>Added on 2020, August 14.</rdf:value>
+            <dc:date>2020-08-14</dc:date>
+        </skos:changeNote>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="placeType/gorge">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">gorge</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">canyon</skos:altLabel>
+        <skos:broader rdf:resource="placeType/zone%20naturelle"/>
+        <skos:definition xml:lang="fr">Une gorge (appelé aussi en anglais canyon, de l'espagnol
+            cañón), est un passage encaissé entre deux reliefs résultant de l'érosion hydraulique
+            sur tout type de roche mais préférentiellement sur les sédimentaires. Une gorge
+            peut-être confondue avec une clue ou un défilé. (source : Wikipédia).</skos:definition>
+        <!-- <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q150784"/>-->
+        <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Gorge_(g%C3%A9ographie)"/>
+
+        <!-- <owl:sameAs rdf:resource="http://data.ign.fr/id/codes/topo/typederelief/Sommet"/>-->
+        <skos:changeNote rdf:parseType="Resource">
+            <rdf:value>Added on 2020, August 14.</rdf:value>
+            <dc:date>2020-08-14</dc:date>
+        </skos:changeNote>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="placeType/sanctuaire">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">sanctaire</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:definition xml:lang="fr">En anthropologie religieuse, un sanctuaire (de sanctus, «
+            sacré ») est généralement un édifice ou lieu rendu (par « consécration ») ou devenu
+            sacré, par son association au Divin ou Transcendant. Le terme désigne donc un site
+            sacré. (source : Wikipédia).</skos:definition>
+        <!-- <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q29553"/>-->
+        <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Sanctuaire"/>
+        <!-- <owl:sameAs rdf:resource="http://data.ign.fr/id/codes/topo/typederelief/Sommet"/>-->
+        <skos:changeNote rdf:parseType="Resource">
+            <rdf:value>Added on 2020, August 14.</rdf:value>
+            <dc:date>2020-08-14</dc:date>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/baie">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">baie</skos:prefLabel>
+        <skos:broader rdf:resource="placeType/zone%20naturelle"/>
+        <skos:definition xml:lang="fr">En géographie, une baie est une échancrure du littoral mais
+            aussi de la berge d'un lac. Une baie est moins grande qu'un golfe et moins profonde
+            qu'une rade. Une baie de petite dimension est plutôt appelée anse. Si l'échancrure est
+            de très petite dimension, on parle d'une crique. En général, un ou plusieurs fleuves se
+            jettent dans une baie. (source : Wikipédia).</skos:definition>
+        <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Baie_(g%C3%A9ographie)"/>
+        <owl:sameAs rdf:resource="http://data.ign.fr/id/codes/topo/typederelief/Montagne"/>
+        <!--   <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q39594"/>-->
+        <skos:changeNote rdf:parseType="Resource">
+            <rdf:value>Added on 2021, March 2.</rdf:value>
+            <dc:date>2021-03-12</dc:date>
+        </skos:changeNote>
+    </skos:Concept>
+</rdf:RDF>
