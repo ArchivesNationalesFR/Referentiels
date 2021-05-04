@@ -4,7 +4,7 @@ Les référentiels des Archives nationales de France | the Archives nationales d
 
 Version : 1.0, mai 2021
 
-Format : XML/RDF pour l'ensemble des référentiels,  et XML/EAC-CPF pour les notices du référentiel des producteurs
+Format : XML/RDF pour l'ensemble des référentiels (principaux modèles utilisés : SKOS (https://www.w3.org/2004/02/skos/) et RiC-O (https://www.ica.org/standards/RiC/ontology)),  et XML/EAC-CPF pour les notices du référentiel des producteurs
 
 En cours de construction | a work in progress...
 
