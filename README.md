@@ -27,6 +27,8 @@ Nous prévoyons de publier bientôt au moins une partie de ces fichiers sur [htt
 
 Les Archives nationales ne disposent pas à ce jour d'application web leur permettant de publier et de rendre accessibles aux humains et aux machines (sparql end point) leurs référentiels au format RDF/XML. Par conséquent **les IRIs des entités décrites dans ces référentiels - celles commençant par http://data.archives-nationales.culture.gouv.fr/, segment de base fourni dans l'attribut xml:base de l'élément racine rdf:RDF de chaque fichier) -  ne sont pas déréférençables**. La partie variable de ces IRIs utilise cependant l'identifiant unique et pérenne de l'entité décrite dans la version de ces référentiels qui est interne aux Archives nationales. 
 
-## Pour plus d'informations
+## For more information | Pour plus d'informations
 
+You can contact the Lab of the Archives Nationales de France by email at the following address: <le-lab.archives-nationales@culture.gouv.fr>.
 Vous pouvez contacter par courriel le Lab des Archives nationales de France, à l'adresse suivante :  <le-lab.archives-nationales@culture.gouv.fr>.
+
