@@ -6,7 +6,7 @@ Version : 1.0, mai 2022
 
 Formats : 
 
-- XML/RDF pour l'ensemble des référentiels. Principaux modèles utilisés : [SKOS](https://www.w3.org/2004/02/skos/) et [Records in Contexts - Ontology (RiC-O)](https://www.ica.org/standards/RiC/ontology)
+- XML/RDF pour l'ensemble des référentiels. Principaux modèles utilisés : [SKOS](https://www.w3.org/2004/02/skos/) et [Records in Contexts - Ontology (RiC-O)](https://www.ica.org/standards/RiC/ontology) (dans sa dernière version officielle en date, la v0.2 de février 2021)
 - [XML/EAC-CPF](https://eac.staatsbibliothek-berlin.de/schemata-and-tag-library/) pour les notices du référentiel des producteurs
 - CSV (encodage UTF-8; séparateur de champs : virgule ; valeurs des colonnes encadrées par des guillemets ('"')) pour les concepts et les lieux. Ces fichiers CSV ont été produits à partir des versions RDF. Pour les agents, les fichiers CSV fournis sont des listes, qui ne contiennent pas toute la substance des notices RDF des agents.
 
