@@ -3,7 +3,7 @@
          xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
    <control>
       <recordId>FRAN_NP_052128</recordId>
-      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceStatus>revised</maintenanceStatus>
       <maintenanceAgency>
          <agencyName>Archives nationales de France</agencyName>
       </maintenanceAgency>
@@ -15,7 +15,7 @@
          <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
       </conventionDeclaration>
       <localControl localType="niveau_de_detail">
-         <term>Moyenne</term>
+         <term>Élémentaire</term>
       </localControl>
       <maintenanceHistory>
          <maintenanceEvent>
@@ -31,6 +31,19 @@
             <agentType>human</agentType>
             <agent>Isabelle ARISTIDE-HASTIR</agent>
          </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2020-07-09</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Vivien BARRO</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2021-06-07</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+            <eventDescription>P. Charbonnier, 07/06/2021 : suppression relation chrono présente en sens inverse, indexation lieu</eventDescription>
+         </maintenanceEvent>
       </maintenanceHistory>
       <sources>
          <source>
@@ -40,13 +53,15 @@
             <sourceEntry>Jalabert Laurent, « La Convention des institutions républicaines (1964-1971) », Vingtième Siècle. Revue d'histoire, 2009/4 (n° 104), p. 123-139. DOI : 10.3917/ving.104.0123. URL : https://www.cairn.info/revue-vingtieme-siecle-revue-d-histoire-2009-4-page-123.htm </sourceEntry>
          </source>
          <source>
-            <sourceEntry>"Convention des Institutions Républicaines", article Wikipédia. URL : https://fr.wikipedia.org/wiki/Convention_des_institutions_r%C3%A9publicaines</sourceEntry>
-         </source>
-         <source>
             <sourceEntry>Archives nationales, Fonds Louis Mermaz (754AP)</sourceEntry>
          </source>
-         <source>
-            <sourceEntry>Notice BNF : FRBNF11590264</sourceEntry>
+         <source xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xlink:href="https://fr.wikipedia.org/wiki/Convention_des_institutions_r%C3%A9publicaines">
+            <sourceEntry>"Convention des Institutions Républicaines", Wikipédia.</sourceEntry>
+         </source>
+         <source xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xlink:href="https://catalogue.bnf.fr/ark:/12148/cb32968126b">
+            <sourceEntry>Notice Bnf n° : FRBNF32968126</sourceEntry>
          </source>
       </sources>
    </control>
@@ -68,9 +83,22 @@
                <toDate standardDate="1971-06-13">13 juin 1971</toDate>
             </dateRange>
          </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">13 boulevard de la tour Maubourg</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzbn2s42--1t1u0sd5ftn1q">La-Tour-Maubourg (boulevard de)</placeEntry>
+               <descriptiveNote>
+                  <p>Siège social</p>
+               </descriptiveNote>
+            </place>
+         </places>
          <legalStatuses>
             <legalStatus>
-               <term>association</term>
+               <term vocabularySource="d5blom9zjl-l45jh5o3uznu">association</term>
+            </legalStatus>
+            <legalStatus>
+               <term vocabularySource="d5bloma6vf-1ggqx7lhcg0rt">parti politique</term>
             </legalStatus>
          </legalStatuses>
          <functions>
@@ -113,10 +141,30 @@
                <toDate standardDate="1968-11-07">7 novembre 1968</toDate>
             </dateRange>
             <descriptiveNote>
-               <p>
-     La CIR de François Mitterrand signe la Charte de la FGDS et se joint au groupe parlementaire
-    </p>
+               <p> La CIR de François Mitterrand signe la Charte de la FGDS et se joint au groupe parlementaire </p>
             </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-later"
+                      xlink:href="FRAN_NP_052182"
+                      xlink:type="simple">
+            <relationEntry>Parti socialiste (France ; 1969-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1969-05-04">4 mai 1969</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p> La Convention des Institutions républicaines a travaillé avec le Nouveau Parti socialiste (NPS) à la création d'un grand parti rassemblant les forces de gauche non-communistes. La CIR se dissout au Congrès d'Epinay en juin 1971. </p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_053028"
+                      xlink:type="simple">
+            <relationEntry>Halimi, Gisèle (1927-2020)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1964-06-06">6 juin 1964</fromDate>
+               <toDate standardDate="1971-06-13">13 juin 1971</toDate>
+            </dateRange>
          </cpfRelation>
          <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
                       cpfRelationType="associative"
@@ -138,7 +186,7 @@
                <toDate standardDate="1971-06-13">13 juin 1971</toDate>
             </dateRange>
             <descriptiveNote>
-               <p>Notice wikipédia</p>
+               <p>Notice Wikipédia</p>
             </descriptiveNote>
          </cpfRelation>
          <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
