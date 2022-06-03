@@ -5,7 +5,7 @@ Les référentiels des Archives nationales de France | the Archives nationales d
 
 ## Téléchargement
 
-Télécharger la version 1.0 (mai 2022): [https://github.com/ArchivesNationalesFR/Referentiels/releases/tag/1.0](https://github.com/ArchivesNationalesFR/Referentiels/releases/tag/1.0)
+Télécharger la dernière release (la version 1.1, juin 2022): [https://github.com/ArchivesNationalesFR/Referentiels/releases/tag/1.1](https://github.com/ArchivesNationalesFR/Referentiels/releases/tag/1.1)
 
 ## Description 
 
