@@ -40,6 +40,7 @@
                 <html:li xml:lang="fr">Mars 2022 : regénéré le fichier, les métadonnées du
                     vocabulaire ont été améliorées par rapport à la version de décembre 2021. Les
                     propriétés skos:hasTopConcept ont été rajoutées. Quelques coquilles corrigées.</html:li>
+                <html:li xml:lang="fr">Mai 2024 : correction de l'URI d'un concept spécifique (cours d'eau) dans la description de 'élément d'hydrographie'</html:li>
             </html:ul>
         </skos:historyNote>
         <skos:hasTopConcept rdf:resource="placeType/commune"/>
@@ -134,9 +135,12 @@
         <skos:inScheme rdf:resource="placeTypes"/>
         <skos:prefLabel xml:lang="fr">élément d'hydrographie</skos:prefLabel>
         <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20physique"/>
-        <!--Correction manuelle 26 mai 2024: <skos:narrower rdf:resource="placeType/cours%20d%E2%80%99eau"/>-->
         <skos:narrower rdf:resource="placeType/cours%20d%27eau"/>
         <skos:narrower rdf:resource="placeType/lac"/>
+        <skos:changeNote rdf:parseType="Resource">
+            <rdf:value>Fixed the URI of the narrower concept, 'cours d'eau'.</rdf:value>
+            <dc:date>2024-05-26</dc:date>
+        </skos:changeNote>
     </skos:Concept>
     <skos:Concept rdf:about="placeType/zone%20naturelle">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
