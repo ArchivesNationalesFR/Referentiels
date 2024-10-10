@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-    xmlns:foaf="http://xmlns.com/foaf/0.1/"
-    xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:dcterms="http://purl.org/dc/terms/"
-    xmlns:html="http://www.w3.org/1999/xhtml"
-    xmlns:iso-thes="http://purl.org/iso25964/skos-thes#"
-    xml:base="http://data.archives-nationales.culture.gouv.fr/">
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:html="http://www.w3.org/1999/xhtml" xmlns:iso-thes="http://purl.org/iso25964/skos-thes#"
+    xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
     <skos:ConceptScheme rdf:about="placeTypes">
         <dc:description xml:lang="fr">Thésaurus des types de lieux (entités géo-historiques). Saisi
             manuellement en se fondant sur les catégories de lieux sous-jacentes ou implicites dans
@@ -40,9 +36,13 @@
             <html:ul>
                 <html:li xml:lang="fr">Mars 2022 : regénéré le fichier, les métadonnées du
                     vocabulaire ont été améliorées par rapport à la version de décembre 2021. Les
-                    propriétés skos:hasTopConcept ont été rajoutées. Quelques coquilles corrigées.</html:li>
-                <html:li xml:lang="fr">30 juillet 2024 : corrigé l'URI du cours d'eau dans la description du concept générique 'élément d'hydrographie'.</html:li>
-                <html:li xml:lang="fr">1er août 2024 : ajouté les assertions iso-thes:status et skos:topConceptOf ; modifié certaines définitions pour leur intégrer la mention de la source ; traduit en langue françise les notes de mise à jour.</html:li>
+                    propriétés skos:hasTopConcept ont été rajoutées. Quelques coquilles
+                    corrigées.</html:li>
+                <html:li xml:lang="fr">30 juillet 2024 : corrigé l'URI du cours d'eau dans la
+                    description du concept générique 'élément d'hydrographie'.</html:li>
+                <html:li xml:lang="fr">1er août 2024 : ajouté les assertions iso-thes:status et
+                    skos:topConceptOf ; modifié certaines définitions pour leur intégrer la mention
+                    de la source ; traduit en langue française les notes de mise à jour.</html:li>
             </html:ul>
         </skos:historyNote>
         <skos:hasTopConcept rdf:resource="placeType/commune"/>
@@ -105,7 +105,8 @@
         <skos:inScheme rdf:resource="placeTypes"/>
         <skos:topConceptOf rdf:resource="placeTypes"/>
         <skos:prefLabel xml:lang="fr">arrondissement français</skos:prefLabel>
-        <skos:scopeNote xml:lang="fr">Ne pas confondre avec les arrondissements municipaux</skos:scopeNote>
+        <skos:scopeNote xml:lang="fr">Ne pas confondre avec les arrondissements
+            municipaux</skos:scopeNote>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <!-- <owl:sameAs rdf:resource="http://data.ign.fr/def/geofla#Arrondissement"/>-->
     </skos:Concept>
@@ -245,8 +246,8 @@
         <skos:topConceptOf rdf:resource="placeTypes"/>
         <skos:altLabel xml:lang="fr">écart</skos:altLabel>
         <skos:definition xml:lang="fr">Groupe d’habitations en milieu rural, généralement trop petit
-            pour être considéré comme un village. L’élément fondateur est très souvent une
-            ferme (source : Wikipédia).</skos:definition>
+            pour être considéré comme un village. L’élément fondateur est très souvent une ferme
+            (source : Wikipédia).</skos:definition>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <!--<owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q5084"/>-->
     </skos:Concept>
@@ -266,8 +267,7 @@
         <skos:inScheme rdf:resource="placeTypes"/>
         <skos:topConceptOf rdf:resource="placeTypes"/>
         <skos:prefLabel xml:lang="fr">quartier</skos:prefLabel>
-        <skos:definition xml:lang="fr">partie d'une
-            ville (source : Wikipédia).</skos:definition>
+        <skos:definition xml:lang="fr">partie d'une ville (source : Wikipédia).</skos:definition>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <!--<owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q123705"/>-->
         <skos:exactMatch rdf:resource="http://data.ign.fr/id/codes/topo/typedezai/Quartier"/>
@@ -277,7 +277,7 @@
         <skos:inScheme rdf:resource="placeTypes"/>
         <skos:topConceptOf rdf:resource="placeTypes"/>
         <skos:prefLabel xml:lang="fr">bourg</skos:prefLabel>
-        
+
         <skos:definition xml:lang="fr">Un bourg est une agglomération rurale plus importante que la
             ville, où se tient ordinairement le marché des villages environnants1 et qui tient lieu
             de centre administratif local (un droit de fortification existait à l'époque médiévale)
@@ -300,7 +300,8 @@
         <skos:prefLabel xml:lang="fr">paroisse</skos:prefLabel>
         <skos:definition xml:lang="fr">Organisation qui est originellement, dans le christianisme,
             la subdivision de base d'un diocèse de l'Église. La paroisse occupe un rôle essentiel
-            dans la vie religieuse, elle est le lieu de culte, de célébration pour les croyants (source : Wikipédia).</skos:definition>
+            dans la vie religieuse, elle est le lieu de culte, de célébration pour les croyants
+            (source : Wikipédia).</skos:definition>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <!--  <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q102496"/>-->
     </skos:Concept>
@@ -480,9 +481,9 @@
         <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Lac"/>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
     </skos:Concept>
-    <skos:Concept rdf:about="placeType/cours%20d%27eau"> 
-       
-         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+    <skos:Concept rdf:about="placeType/cours%20d%27eau">
+
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
         <skos:prefLabel xml:lang="fr">cours d'eau</skos:prefLabel>
         <skos:altLabel xml:lang="fr">cours d’eau</skos:altLabel>
@@ -587,7 +588,8 @@
         <skos:prefLabel xml:lang="fr">base aérienne</skos:prefLabel>
         <skos:altLabel xml:lang="fr">base aérienne militaire</skos:altLabel>
         <skos:definition xml:lang="fr">Aérodrome ou partie d'un aérodrome utilisée par les forces
-            armées d'un pays pour mettre en œuvre la composante aérienne (source : Wikipédia).</skos:definition>
+            armées d'un pays pour mettre en œuvre la composante aérienne (source :
+            Wikipédia).</skos:definition>
         <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
         <skos:changeNote rdf:parseType="Resource">
             <rdf:value xml:lang="fr">Ajouté le 17 juin 2020.</rdf:value>
@@ -772,7 +774,7 @@
             Wikipédia).</skos:definition>
         <!-- <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q35509"/>-->
         <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Grotte"/>
-         <skos:changeNote rdf:parseType="Resource">
+        <skos:changeNote rdf:parseType="Resource">
             <rdf:value xml:lang="fr">Ajouté le 14 août 2020.</rdf:value>
             <dc:date>2020-08-14</dc:date>
         </skos:changeNote>
@@ -804,11 +806,11 @@
         <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
         <skos:definition xml:lang="fr">En anthropologie religieuse, un sanctuaire (de sanctus, «
             sacré ») est généralement un édifice ou lieu rendu (par « consécration ») ou devenu
-            sacré, par son association au Divin ou Transcendant. Le terme désigne donc un site
-            sacré (source : Wikipédia).</skos:definition>
+            sacré, par son association au Divin ou Transcendant. Le terme désigne donc un site sacré
+            (source : Wikipédia).</skos:definition>
         <!-- <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q29553"/>-->
         <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Sanctuaire"/>
-         <skos:changeNote rdf:parseType="Resource">
+        <skos:changeNote rdf:parseType="Resource">
             <rdf:value xml:lang="fr">Ajouté le 14 août 2020.</rdf:value>
             <dc:date>2020-08-14</dc:date>
         </skos:changeNote>
