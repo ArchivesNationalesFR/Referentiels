@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+<rdf:RDF xmlns:cc="http://creativecommons.org/ns#"
          xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcat="http://www.w3.org/ns/dcat#"
          xmlns:dcterms="http://purl.org/dc/terms/"
-         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:cc="http://creativecommons.org/ns#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
          xmlns:html="http://www.w3.org/1999/xhtml"
-         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <skos:ConceptScheme rdf:about="representationTypes">
-      <dc:description xml:lang="fr">Thésaurus des types de représentation des instantiations. Résulte de la conversion automatique en RDF, conforme à SKOS et RiC-O 0.2, du référentiel XML correspondant. Des enrichissements, modifications de structure et alignements sont prévus dans les prochains mois.</dc:description>
-      <dc:source xml:lang="fr">FRAN_RI_002</dc:source>
-      <dc:title xml:lang="fr">Thésaurus des types de représentation des instantiations</dc:title>
+      <dcterms:title xml:lang="fr">Thésaurus des types de représentation des instanciations</dcterms:title>
+      <dcterms:description rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Thésaurus des types de représentation des instanciations des documents. Résulte de la conversion automatique en RDF, conforme à SKOS et RiC-O 1.1, d’une partie du référentiel XML correspondant dit des supports des documents (fichier FRAN_RI_002.xml, version 1.2) dans le système d’information archivistique (SIA) des Archives nationales de France (AnF). Des enrichissements, modifications de
+                                        structure et alignements sont prévus dans les prochains
+                                        mois.</html:p>
+            <html:p>Nombre de concepts : 2.</html:p>
+         </html:div>
+      </dcterms:description>
+      <dcat:version xml:lang="fr">2.0 (février 2025)</dcat:version>
+      <dc:source xml:lang="fr">Fichier FRAN_RI_002.xml, version 1.2 ; exporté du système d’information archivistique (SIA) des Archives nationales de France (AnF) le 21 janvier 2025 (date de dernière modification dans le SIA : 2023-06-29)</dc:source>
       <dcterms:creator>
          <foaf:Organization>
             <foaf:mbox>le-lab.archives-nationales@culture.gouv.fr</foaf:mbox>
@@ -21,16 +30,49 @@
             <foaf:name xml:lang="fr">Archives nationales (France). Lab</foaf:name>
          </foaf:Organization>
       </dcterms:creator>
+      <dcterms:publisher>
+         <foaf:Organization>
+            <foaf:name xml:lang="fr">Archives nationales de France</foaf:name>
+            <owl:sameAs rdf:resource="https://rdf.archives-nationales.culture.gouv.fr/agent/005061"/>
+         </foaf:Organization>
+      </dcterms:publisher>
       <dcterms:created>2021-04-16</dcterms:created>
       <dcterms:modified>2022-03-20</dcterms:modified>
-      <dcterms:modified>2022-04-13T16:25:08.42+02:00</dcterms:modified>
+      <dcterms:modified>2024-10-10T17:32:28.2566262+02:00</dcterms:modified>
+      <dcterms:modified>2025-02-21T20:10:27.7563908+01:00</dcterms:modified>
       <dc:coverage xml:lang="fr">du Moyen Âge à nos jours</dc:coverage>
       <dc:language>fr-FR</dc:language>
-      <dc:type>Thésaurus</dc:type>
-      <dc:rights xml:lang="fr">Ces données étant des informations publiques, l'usager dispose d'un droit non exclusif et gratuit de libre « réutilisation » à des fins commerciales ou non, dans le monde entier et pour une durée illimitée. Il doit accompagner chaque rediffusion des informations de l'indication précise de l'origine des métadonnées : « Archives nationales (France) », date des métadonnées (mars 2022), nom du référentiel (fourni dans le fichier Excel qui en donne la liste). Voir à ce sujet la page : https://www.archives-nationales.culture.gouv.fr/fr/web/guest/reutilisation-des-donnees-publiques.</dc:rights>
+      <dcterms:language rdf:resource="http://id.loc.gov/vocabulary/iso639-2/fre"/>
+      <dc:type xml:lang="fr">Thésaurus</dc:type>
+      <dc:rights xml:lang="fr">Ces données étant des informations publiques, l’usager dispose d’un droit non exclusif
+        et gratuit de libre « réutilisation » à des fins commerciales ou non, dans le monde entier
+        et pour une durée illimitée, de ce référentiel. Il doit accompagner chaque rediffusion des
+        informations de l’indication précise de l’origine des métadonnées : « Archives nationales de
+        France », du nom du référentiel, de son identifiant (URI), du numéro et de la date de la version
+        du référentiel.</dc:rights>
+      <dcat:distribution>
+         <dcat:Distribution>
+            <dcat:title xml:lang="fr">Version RDF/XML</dcat:title>
+            <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/application/rdf+xml"/>
+            <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/ArchivesNationalesFR/Referentiels/refs/heads/main/concepts/rdf/FRAN_RI_002_representationTypes.rdf"/>
+         </dcat:Distribution>
+      </dcat:distribution>
+      <dcat:distribution>
+         <dcat:Distribution>
+            <dcat:title xml:lang="fr">Version CSV générée à partir du fichier RDF/XML</dcat:title>
+            <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/csv"/>
+            <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/ArchivesNationalesFR/Referentiels/refs/heads/main/concepts/csv/FRAN_RI_002_representationTypes.csv"/>
+         </dcat:Distribution>
+      </dcat:distribution>
       <skos:historyNote rdf:parseType="Literal">
          <html:ul>
-            <html:li xml:lang="fr">Mars-avril 2022 : regénéré le fichier. Enrichissement des métadonnées du vocabulaire.</html:li>
+            <html:li xml:lang="fr">Mars-avril 2022 : regénéré le fichier. Enrichissement des
+               métadonnées du vocabulaire.</html:li>
+            <html:li xml:lang="fr">Mai 2024 : regénéré le fichier. Mise à jour des métadonnées.
+               Suppression de notes éditoriales non pertinentes.</html:li>
+            <html:li xml:lang="fr">Février 2025 : regénéré le fichier. Cette
+                                    version du vocabulaire ne compte pas de nouveau concept. Les
+                                    métadonnées du fichier SKOS ont été enrichies.</html:li>
          </html:ul>
       </skos:historyNote>
       <skos:hasTopConcept rdf:resource="representationType/FRAN_RI_002-d3nd9xpopj-ckdrv6ljeqeg"/>
@@ -39,16 +81,16 @@
    <skos:Concept rdf:about="representationType/FRAN_RI_002-d3nd9xpopj-ckdrv6ljeqeg">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RepresentationType"/>
       <skos:inScheme rdf:resource="representationTypes"/>
+      <skos:topConceptOf rdf:resource="representationTypes"/>
       <skos:prefLabel xml:lang="fr">archives audio-visuelles</skos:prefLabel>
       <skos:altLabel xml:lang="fr">document audiovisuel</skos:altLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : RepresentationType</skos:editorialNote>
    </skos:Concept>
    <skos:Concept rdf:about="representationType/FRAN_RI_002-d3nd9y3c6o-iu0j3xsmoisx">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RepresentationType"/>
       <skos:inScheme rdf:resource="representationTypes"/>
+      <skos:topConceptOf rdf:resource="representationTypes"/>
       <skos:prefLabel xml:lang="fr">archives électroniques</skos:prefLabel>
       <skos:altLabel xml:lang="fr">archives informatiques</skos:altLabel>
       <skos:altLabel xml:lang="fr">document numérique</skos:altLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : RepresentationType</skos:editorialNote>
    </skos:Concept>
 </rdf:RDF>
