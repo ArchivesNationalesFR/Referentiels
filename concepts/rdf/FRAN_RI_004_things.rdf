@@ -10,10 +10,15 @@
    xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <skos:ConceptScheme rdf:about="things">
       <dcterms:title xml:lang="fr">Thésaurus des mots-matières</dcterms:title>
-      <dcterms:description xml:lang="fr">Thésaurus des mots-matières. Résulte de la conversion
-         automatique en RDF, conforme à SKOS et RiC-O 1.1, du référentiel XML correspondant (fichier
-         FRAN_RI_004.xml, version 1.3) dans le système d’information archivistique (SIA) des
-         Archives nationales de France (AnF).</dcterms:description>
+      <dcterms:description rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Thésaurus des mots-matières. Résulte de la conversion automatique en RDF,
+               conforme à SKOS et RiC-O 1.1, du référentiel XML correspondant (fichier
+               FRAN_RI_004.xml, version 1.3) dans le système d’information archivistique (SIA) des
+               Archives nationales de France (AnF).</html:p>
+            <html:p>Nombre de concepts : 2219.</html:p>
+         </html:div>
+      </dcterms:description>
       <dcat:version xml:lang="fr">2.0 (février 2025)</dcat:version>
       <dc:source xml:lang="fr">Fichier FRAN_RI_004.xml, version 1.3 ; exporté du système
          d’information archivistique (SIA) des Archives nationales de France (AnF) le 21 janvier
@@ -36,7 +41,7 @@
       <dcterms:modified>2022-03-20</dcterms:modified>
       <dcterms:modified>2022-04-08</dcterms:modified>
       <dcterms:modified>2024-10-10T17:41:34.6127763+02:00</dcterms:modified>
-      <dcterms:modified>2025-02-18T18:08:19.0201246+01:00</dcterms:modified>
+      <dcterms:modified>2025-02-21T17:54:28.1113638+01:00</dcterms:modified>
       <dc:coverage xml:lang="fr">de 1789 à nos jours</dc:coverage>
       <dc:language>fr-FR</dc:language>
       <dcterms:language rdf:resource="http://id.loc.gov/vocabulary/iso639-2/fre"/>
@@ -46,11 +51,24 @@
          dans le monde entier et pour une durée illimitée, de ce référentiel. Il doit accompagner
          chaque rediffusion des informations de l’indication précise de l’origine des métadonnées :
          « Archives nationales de France », du nom du référentiel, de son identifiant (URI), du
-         numéro et date de la version du référentiel.</dc:rights>
+         numéro et de la date de la version du référentiel.</dc:rights>
       <dcat:distribution>
          <dcat:Distribution>
-            <dcat:title>version CSV issue du présent fichier RDF</dcat:title>
+            <dcat:title xml:lang="fr">Version RDF/XML</dcat:title>
+            <dcat:mediaType
+               rdf:resource="https://www.iana.org/assignments/media-types/application/rdf+xml"/>
+            <dcat:downloadURL
+               rdf:resource="https://raw.githubusercontent.com/ArchivesNationalesFR/Referentiels/refs/heads/main/concepts/rdf/FRAN_RI_004_things.rdf"
+            />
+         </dcat:Distribution>
+      </dcat:distribution>
+      <dcat:distribution>
+         <dcat:Distribution>
+            <dcat:title xml:lang="fr">Version CSV générée à partir du fichier RDF/XML</dcat:title>
             <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/csv"/>
+            <dcat:downloadURL
+               rdf:resource="https://raw.githubusercontent.com/ArchivesNationalesFR/Referentiels/refs/heads/main/concepts/csv/FRAN_RI_004_things.csv"
+            />
          </dcat:Distribution>
       </dcat:distribution>
       <skos:historyNote rdf:parseType="Literal">
