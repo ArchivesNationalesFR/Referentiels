@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:dcterms="http://purl.org/dc/terms/"
-         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/FRAN_RI_012-d-dv4qwtq94-1lpi63ngdfsor">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/FRAN_RI_012-d-dv4qwtq94-1lpi63ngdfsor"/>
@@ -17,24 +17,30 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
       <rdfs:seeAlso rdf:resource="https://catalogue.bnf.fr/ark:/12148/cb12442581n"/>
-      <rico:source xml:lang="fr">http://oxfordindex.oup.com/view/10.1093/benz/9780199773787.article.B00136528</rico:source>
-      <rdfs:seeAlso rdf:resource="http://www.purl.org/inha/agorha/002/81757"/>
+      <!--Contenu de biblio :  Identifiant VIAF :
+        https://viaf.org/viaf/5714910 -->
+      <rdfs:seeAlso rdf:resource="http://oxfordindex.oup.com/view/10.1093/benz/9780199773787.article.B00136528"/>
+      <!--Contenu de biblio :  Identifiant
+        AGORHA : http://www.purl.org/inha/agorha/002/81757 -->
       <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121189955/about"/>
       <rdfs:seeAlso rdf:resource="http://elec.enc.sorbonne.fr/architectes/401"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Jean-Louis_Pascal"/>
-      <rico:hasInstantiation>
+      <!--Contenu de biblio :  Identifiant Wikidata :
+        http://www.wikidata.org/entity/Q3166930-->
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/FRAN_RI_012-d-dv4qwtq94-1lpi63ngdfsor">
-            <rico:isInstantiationOf rdf:resource="record/FRAN_RI_012-d-dv4qwtq94-1lpi63ngdfsor"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/FRAN_RI_012-d-dv4qwtq94-1lpi63ngdfsor"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_RI_012-d-dv4qwtq94-1lpi63ngdfsor</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/FRAN_RI_012-d-dv4qwtq94-1lpi63ngdfsor">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/FRAN_RI_012-d-dv4qwtq94-1lpi63ngdfsor"/>
       <rdfs:label xml:lang="fr">Pascal, Jean Louis (1837-1920)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Pascal, Jean Louis (1837-1920)</skos:prefLabel>
       <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/FRAN_RI_012-d-dv4qwtq94-1lpi63ngdfsor-Pascal%2C%20Jean%20Louis%20%281837-1920%29">
             <rdfs:label xml:lang="fr">Pascal, Jean Louis (1837-1920)</rdfs:label>
@@ -48,12 +54,21 @@
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1920-05-17</rico:deathDate>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
-            <html:p>Né le 04/06/1837 à Paris. Décédé en 17/05/1920 à Paris. Architecte diocésain. A œuvré à la restauration des cathédrales d'Avignon, Valence.</html:p>
+            <html:p>Né le 04/06/1837 à Paris. Décédé en 17/05/1920 à Paris. Architecte diocésain. A œuvré à
+        la restauration des cathédrales d'Avignon, Valence.</html:p>
          </html:div>
       </rico:history>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb12442581n#about"/>
       <owl:sameAs rdf:resource="https://viaf.org/viaf/5714910"/>
+      <!--Contenu de biblio :  Identifiant Bénézit :
+        http://oxfordindex.oup.com/view/10.1093/benz/9780199773787.article.B00136528 -->
+      <!--Contenu de biblio :  Identifiant
+        AGORHA : http://www.purl.org/inha/agorha/002/81757 -->
       <owl:sameAs rdf:resource="https://isni.org/isni/0000000121189955"/>
+      <!--Contenu de biblio :  Identifiant Répertoire des architectes diocésains :
+        http://elec.enc.sorbonne.fr/architectes/401 -->
+      <!--Contenu de biblio :  Article Wikipedia :
+        https://fr.wikipedia.org/wiki/Jean-Louis_Pascal -->
       <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q3166930"/>
    </rico:Agent>
 </rdf:RDF>

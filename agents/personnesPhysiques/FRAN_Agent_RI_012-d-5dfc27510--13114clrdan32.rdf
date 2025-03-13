@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:dcterms="http://purl.org/dc/terms/"
-         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/FRAN_RI_012-d-5dfc27510--13114clrdan32">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/FRAN_RI_012-d-5dfc27510--13114clrdan32"/>
@@ -16,19 +16,22 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl002"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
-      <rico:hasInstantiation>
+      <rdfs:seeAlso rdf:resource="http://fr.wikipedia.org/wiki/Am%C3%A9d%C3%A9e_de_P%C3%A9russe_des_Cars"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/FRAN_RI_012-d-5dfc27510--13114clrdan32">
-            <rico:isInstantiationOf rdf:resource="record/FRAN_RI_012-d-5dfc27510--13114clrdan32"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/FRAN_RI_012-d-5dfc27510--13114clrdan32"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_RI_012-d-5dfc27510--13114clrdan32</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/FRAN_RI_012-d-5dfc27510--13114clrdan32">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/FRAN_RI_012-d-5dfc27510--13114clrdan32"/>
       <rdfs:label xml:lang="fr">Escars, Amédée François Régis de Pérusse (1790-1868 , duc d')</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Escars, Amédée François Régis de Pérusse (1790-1868 , duc d')</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">Pérusse des Cars, Amédée de</skos:altLabel>
       <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/FRAN_RI_012-d-5dfc27510--13114clrdan32-Escars%2C%20Am%C3%A9d%C3%A9e%20Fran%C3%A7ois%20R%C3%A9gis%20de%20P%C3%A9russe%20%281790-1868%20%2C%20duc%20d%27%29">
             <rdfs:label xml:lang="fr">Escars, Amédée François Régis de Pérusse (1790-1868 , duc d')</rdfs:label>
@@ -52,5 +55,6 @@
             <html:p>Général et homme politique français</html:p>
          </html:div>
       </rico:history>
+      <!--Contenu de biblio : http://fr.wikipedia.org/wiki/Am%C3%A9d%C3%A9e_de_P%C3%A9russe_des_Cars-->
    </rico:Agent>
 </rdf:RDF>

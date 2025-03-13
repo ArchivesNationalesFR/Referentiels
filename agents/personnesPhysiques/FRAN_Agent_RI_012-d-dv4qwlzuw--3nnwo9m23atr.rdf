@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:dcterms="http://purl.org/dc/terms/"
-         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/FRAN_RI_012-d-dv4qwlzuw--3nnwo9m23atr">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/FRAN_RI_012-d-dv4qwlzuw--3nnwo9m23atr"/>
@@ -17,23 +17,28 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
       <rdfs:seeAlso rdf:resource="https://catalogue.bnf.fr/ark:/12148/cb124335941"/>
+      <!--Contenu de biblio :  Identifiant VIAF :
+        https://viaf.org/viaf/24693244 -->
       <rdfs:seeAlso rdf:resource="http://www.purl.org/inha/agorha/002/4919"/>
       <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000081033859/about"/>
       <rdfs:seeAlso rdf:resource="http://elec.enc.sorbonne.fr/architectes/344"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Lucien_Magne"/>
-      <rico:hasInstantiation>
+      <!--Contenu de biblio :  Identifiant Wikidata :
+        http://www.wikidata.org/entity/Q1873405-->
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/FRAN_RI_012-d-dv4qwlzuw--3nnwo9m23atr">
-            <rico:isInstantiationOf rdf:resource="record/FRAN_RI_012-d-dv4qwlzuw--3nnwo9m23atr"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/FRAN_RI_012-d-dv4qwlzuw--3nnwo9m23atr"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_RI_012-d-dv4qwlzuw--3nnwo9m23atr</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/FRAN_RI_012-d-dv4qwlzuw--3nnwo9m23atr">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/FRAN_RI_012-d-dv4qwlzuw--3nnwo9m23atr"/>
       <rdfs:label xml:lang="fr">Magne, Lucien (1849-1916)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Magne, Lucien (1849-1916)</skos:prefLabel>
       <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/FRAN_RI_012-d-dv4qwlzuw--3nnwo9m23atr-Magne%2C%20Lucien%20%281849-1916%29">
             <rdfs:label xml:lang="fr">Magne, Lucien (1849-1916)</rdfs:label>
@@ -47,12 +52,20 @@
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1916-07-25</rico:deathDate>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
-            <html:p>Né le 27/12/1849 à Paris. Décédé le 25/07/1916 à Eaubonne. Architecte et inspecteur général. A œuvré à la restauration de la cathédrale d'Autun.</html:p>
+            <html:p>Né le 27/12/1849 à Paris. Décédé le 25/07/1916 à Eaubonne. Architecte et inspecteur
+        général. A œuvré à la restauration de la cathédrale d'Autun.</html:p>
          </html:div>
       </rico:history>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb124335941#about"/>
       <owl:sameAs rdf:resource="https://viaf.org/viaf/24693244"/>
+      <!--Contenu de biblio :  Identifiant AGORHA :
+        http://www.purl.org/inha/agorha/002/4919 -->
       <owl:sameAs rdf:resource="https://isni.org/isni/0000000081033859"/>
+      <!--Contenu de biblio : 
+        Identifiant Répertoire des architectes diocésains :
+        http://elec.enc.sorbonne.fr/architectes/344 -->
+      <!--Contenu de biblio :  Article Wikipedia :
+        https://fr.wikipedia.org/wiki/Lucien_Magne -->
       <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q1873405"/>
    </rico:Agent>
 </rdf:RDF>

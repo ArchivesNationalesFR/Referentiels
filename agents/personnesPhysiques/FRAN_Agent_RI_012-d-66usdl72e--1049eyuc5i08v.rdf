@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:dcterms="http://purl.org/dc/terms/"
-         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/FRAN_RI_012-d-66usdl72e--1049eyuc5i08v">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/FRAN_RI_012-d-66usdl72e--1049eyuc5i08v"/>
@@ -16,20 +16,26 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl002"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
-      <rico:source xml:lang="fr">FRBNF10738014</rico:source>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice BnF n° : FRBNF10738014</rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/FRAN_RI_012-d-66usdl72e--1049eyuc5i08v">
-            <rico:isInstantiationOf rdf:resource="record/FRAN_RI_012-d-66usdl72e--1049eyuc5i08v"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/FRAN_RI_012-d-66usdl72e--1049eyuc5i08v"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_RI_012-d-66usdl72e--1049eyuc5i08v</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/FRAN_RI_012-d-66usdl72e--1049eyuc5i08v">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/FRAN_RI_012-d-66usdl72e--1049eyuc5i08v"/>
       <rdfs:label xml:lang="fr">Choiseul-Gouffier, Marie-Gabriel-Florent-Auguste de (1752-1817)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Choiseul-Gouffier, Marie-Gabriel-Florent-Auguste de (1752-1817)</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">Beaupré, Marie-Gabriel-Florent-Auguste de Choiseul- (1752-1817)</skos:altLabel>
+      <skos:altLabel xml:lang="fr">Choiseul, Comte de (1752-1817)</skos:altLabel>
+      <skos:altLabel xml:lang="fr">Choiseul-Beaupré, Marie-Gabriel-Florent-Auguste de (1752-1817)</skos:altLabel>
+      <skos:altLabel xml:lang="fr">Choiseul-Gouffier, Comte de (1752-1817)</skos:altLabel>
+      <skos:altLabel xml:lang="fr">Gouffier, Marie-Gabriel-Florent-Auguste de Choiseul- (1752-1817)</skos:altLabel>
       <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/FRAN_RI_012-d-66usdl72e--1049eyuc5i08v-Choiseul-Gouffier%2C%20Marie-Gabriel-Florent-Auguste%20de%20%281752-1817%29">
             <rdfs:label xml:lang="fr">Choiseul-Gouffier, Marie-Gabriel-Florent-Auguste de (1752-1817)</rdfs:label>
@@ -78,8 +84,13 @@
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1817-06-20</rico:deathDate>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
-            <html:p>Ambassadeur à Constantinople (1784-1792). - Nommé membre du Conseil privé, ministre d'État et pair de France par Louis XVIII. - Membre de l'Académie des Inscriptions et belles-lettres (élu en 1779). Membre de l'Académie française (élu en 1783 ; réintégré en 1816). - Dessinateur. - Prend le nom de "Choiseul-Gouffier" après son mariage avec Adélaïde-Marie-Louise de Gouffier</html:p>
+            <html:p>Ambassadeur à Constantinople (1784-1792). - Nommé membre du Conseil privé, ministre
+        d'État et pair de France par Louis XVIII. - Membre de l'Académie des Inscriptions et
+        belles-lettres (élu en 1779). Membre de l'Académie française (élu en 1783 ; réintégré en
+        1816). - Dessinateur. - Prend le nom de "Choiseul-Gouffier" après son mariage avec
+        Adélaïde-Marie-Louise de Gouffier</html:p>
          </html:div>
       </rico:history>
+      <!--Contenu de biblio : Notice BnF n° : FRBNF10738014-->
    </rico:Agent>
 </rdf:RDF>

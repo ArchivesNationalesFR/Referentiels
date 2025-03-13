@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:dcterms="http://purl.org/dc/terms/"
-         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/FRAN_RI_012-d-dv4qw72b1-148od8ya6vwuy">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/FRAN_RI_012-d-dv4qw72b1-148od8ya6vwuy"/>
@@ -17,19 +17,20 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
       <rdfs:seeAlso rdf:resource="http://www.purl.org/inha/agorha/002/77018"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/FRAN_RI_012-d-dv4qw72b1-148od8ya6vwuy">
-            <rico:isInstantiationOf rdf:resource="record/FRAN_RI_012-d-dv4qw72b1-148od8ya6vwuy"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/FRAN_RI_012-d-dv4qw72b1-148od8ya6vwuy"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_RI_012-d-dv4qw72b1-148od8ya6vwuy</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/FRAN_RI_012-d-dv4qw72b1-148od8ya6vwuy">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/FRAN_RI_012-d-dv4qw72b1-148od8ya6vwuy"/>
       <rdfs:label xml:lang="fr">Féraud, Pierre Honoré (1816-1884)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Féraud, Pierre Honoré (1816-1884)</skos:prefLabel>
       <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/FRAN_RI_012-d-dv4qw72b1-148od8ya6vwuy-F%C3%A9raud%2C%20Pierre%20Honor%C3%A9%20%281816-1884%29">
             <rdfs:label xml:lang="fr">Féraud, Pierre Honoré (1816-1884)</rdfs:label>
@@ -43,8 +44,10 @@
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1884-10-29</rico:deathDate>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
-            <html:p>Né le 19/02/1816 à Nice. Décédé le 29/10/1884 à Paris. A œuvré à la restauration de la cathédrale d'Alger.</html:p>
+            <html:p>Né le 19/02/1816 à Nice. Décédé le 29/10/1884 à Paris. A œuvré à la restauration de la
+        cathédrale d'Alger.</html:p>
          </html:div>
       </rico:history>
+      <!--Contenu de biblio : Identifiant AGORHA : http://www.purl.org/inha/agorha/002/77018-->
    </rico:Agent>
 </rdf:RDF>

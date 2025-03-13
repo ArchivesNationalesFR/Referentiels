@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:dcterms="http://purl.org/dc/terms/"
-         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/FRAN_RI_012-d-dv4qx5lnj-zst9id59ttrp">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/FRAN_RI_012-d-dv4qx5lnj-zst9id59ttrp"/>
@@ -17,23 +17,28 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
       <rdfs:seeAlso rdf:resource="https://catalogue.bnf.fr/ark:/12148/cb14565552n"/>
+      <!--Contenu de biblio :  Identifiant VIAF :
+        https://viaf.org/viaf/19923220 -->
       <rdfs:seeAlso rdf:resource="http://www.purl.org/inha/agorha/002/81634"/>
       <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000066569487/about"/>
       <rdfs:seeAlso rdf:resource="http://elec.enc.sorbonne.fr/architectes/494"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Joseph_Auguste_%C3%89mile_Vaudremer"/>
-      <rico:hasInstantiation>
+      <!--Contenu de biblio :  Identifiant Wikidata :
+        http://www.wikidata.org/entity/Q286517-->
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/FRAN_RI_012-d-dv4qx5lnj-zst9id59ttrp">
-            <rico:isInstantiationOf rdf:resource="record/FRAN_RI_012-d-dv4qx5lnj-zst9id59ttrp"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/FRAN_RI_012-d-dv4qx5lnj-zst9id59ttrp"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_RI_012-d-dv4qx5lnj-zst9id59ttrp</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/FRAN_RI_012-d-dv4qx5lnj-zst9id59ttrp">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/FRAN_RI_012-d-dv4qx5lnj-zst9id59ttrp"/>
       <rdfs:label xml:lang="fr">Vaudremer, Joseph Auguste Émile (1829-1914)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Vaudremer, Joseph Auguste Émile (1829-1914)</skos:prefLabel>
       <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/FRAN_RI_012-d-dv4qx5lnj-zst9id59ttrp-Vaudremer%2C%20Joseph%20Auguste%20%C3%89mile%20%281829-1914%29">
             <rdfs:label xml:lang="fr">Vaudremer, Joseph Auguste Émile (1829-1914)</rdfs:label>
@@ -47,12 +52,20 @@
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1914-07-02</rico:deathDate>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
-            <html:p>Né le 06/02/1829 à Paris. Décédé le 07/02/1914 à Antibes. Architecte diocésain et inspecteur général. A œuvré à la restauration de la cathédrale de Beauvais.</html:p>
+            <html:p>Né le 06/02/1829 à Paris. Décédé le 07/02/1914 à Antibes. Architecte diocésain et
+        inspecteur général. A œuvré à la restauration de la cathédrale de Beauvais.</html:p>
          </html:div>
       </rico:history>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb14565552n#about"/>
       <owl:sameAs rdf:resource="https://viaf.org/viaf/19923220"/>
+      <!--Contenu de biblio :  Identifiant AGORHA :
+        http://www.purl.org/inha/agorha/002/81634 -->
       <owl:sameAs rdf:resource="https://isni.org/isni/0000000066569487"/>
+      <!--Contenu de biblio : 
+        Identifiant Répertoire des architectes diocésains :
+        http://elec.enc.sorbonne.fr/architectes/494 -->
+      <!--Contenu de biblio :  Article Wikipedia :
+        https://fr.wikipedia.org/wiki/Joseph_Auguste_%C3%89mile_Vaudremer -->
       <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q286517"/>
    </rico:Agent>
 </rdf:RDF>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:dcterms="http://purl.org/dc/terms/"
-         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/FRAN_RI_012-d699mtzv49d-14jjkljn2mxkg">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/FRAN_RI_012-d699mtzv49d-14jjkljn2mxkg"/>
@@ -17,23 +17,28 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
       <rdfs:seeAlso rdf:resource="https://catalogue.bnf.fr/ark:/12148/cb14954489z"/>
+      <!--Contenu de biblio :  Identifiant VIAF :
+        https://viaf.org/viaf/35203743 -->
       <rdfs:seeAlso rdf:resource="http://www.purl.org/inha/agorha/002/78496"/>
       <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000117578720/about"/>
       <rdfs:seeAlso rdf:resource="http://elec.enc.sorbonne.fr/architectes/4"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Jean-Antoine_Alavoine"/>
-      <rico:hasInstantiation>
+      <!--Contenu de biblio :  Identifiant Wikidata :
+        http://www.wikidata.org/entity/Q2402612-->
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/FRAN_RI_012-d699mtzv49d-14jjkljn2mxkg">
-            <rico:isInstantiationOf rdf:resource="record/FRAN_RI_012-d699mtzv49d-14jjkljn2mxkg"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/FRAN_RI_012-d699mtzv49d-14jjkljn2mxkg"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_RI_012-d699mtzv49d-14jjkljn2mxkg</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/FRAN_RI_012-d699mtzv49d-14jjkljn2mxkg">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/FRAN_RI_012-d699mtzv49d-14jjkljn2mxkg"/>
       <rdfs:label xml:lang="fr">Alavoine, Jean Antoine (1778-1834)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Alavoine, Jean Antoine (1778-1834)</skos:prefLabel>
       <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/FRAN_RI_012-d699mtzv49d-14jjkljn2mxkg-Alavoine%2C%20Jean%20Antoine%20%281778-1834%29">
             <rdfs:label xml:lang="fr">Alavoine, Jean Antoine (1778-1834)</rdfs:label>
@@ -47,12 +52,20 @@
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1834-11-15</rico:deathDate>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
-            <html:p>Né le 04/01/1778 à Paris. Décédé le 15/11/1834 à Paris. Architecte. A œuvré à la restauration des cathédrales de Besançon, Paris, Rouen, Sées, Bourges, Châlons.</html:p>
+            <html:p>Né le 04/01/1778 à Paris. Décédé le 15/11/1834 à Paris. Architecte. A œuvré à la
+        restauration des cathédrales de Besançon, Paris, Rouen, Sées, Bourges, Châlons.</html:p>
          </html:div>
       </rico:history>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb14954489z#about"/>
       <owl:sameAs rdf:resource="https://viaf.org/viaf/35203743"/>
+      <!--Contenu de biblio :  Identifiant AGORHA :
+        http://www.purl.org/inha/agorha/002/78496 -->
       <owl:sameAs rdf:resource="https://isni.org/isni/0000000117578720"/>
+      <!--Contenu de biblio : 
+        Identifiant Répertoire des architectes diocésains :
+        http://elec.enc.sorbonne.fr/architectes/4 -->
+      <!--Contenu de biblio :  Article Wikipedia :
+        https://fr.wikipedia.org/wiki/Jean-Antoine_Alavoine -->
       <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q2402612"/>
    </rico:Agent>
 </rdf:RDF>

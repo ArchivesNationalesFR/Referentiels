@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:dcterms="http://purl.org/dc/terms/"
-         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/FRAN_RI_012-d-8be9zhcfc--jbq87re570o1">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/FRAN_RI_012-d-8be9zhcfc--jbq87re570o1"/>
@@ -16,20 +16,22 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl002"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
-      <rico:source xml:lang="fr">FRBNF12529770.Wikipédia,consultéle6mai2014.</rico:source>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice BnF n° : FRBNF12529770</rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/FRAN_RI_012-d-8be9zhcfc--jbq87re570o1">
-            <rico:isInstantiationOf rdf:resource="record/FRAN_RI_012-d-8be9zhcfc--jbq87re570o1"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/FRAN_RI_012-d-8be9zhcfc--jbq87re570o1"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_RI_012-d-8be9zhcfc--jbq87re570o1</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/FRAN_RI_012-d-8be9zhcfc--jbq87re570o1">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/FRAN_RI_012-d-8be9zhcfc--jbq87re570o1"/>
       <rdfs:label xml:lang="fr">Boïeldieu, François Adrien (1775-1834)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Boïeldieu, François Adrien (1775-1834)</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">Boïeldieu, Adrien</skos:altLabel>
       <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/FRAN_RI_012-d-8be9zhcfc--jbq87re570o1-Bo%C3%AFeldieu%2C%20Fran%C3%A7ois%20Adrien%20%281775-1834%29">
             <rdfs:label xml:lang="fr">Boïeldieu, François Adrien (1775-1834)</rdfs:label>
@@ -50,8 +52,12 @@
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1834-10-08</rico:deathDate>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
-            <html:p>Compositeur français, né le 16 décembre 1775 à Rouen (Seine-Maritime) et mort le 8 octobre 1834 à Varennes-Jarcy (Seine-et-Oise). Directeur de l'opéra impérial de Saint-Pétersbourg (1803-1811). - Succède à Méhul au Conservatoire de Paris (1812-1829). - A écrit des romances pour chant et piano, des sonates, de nombreux opéras.</html:p>
+            <html:p>Compositeur français, né le 16 décembre 1775 à Rouen (Seine-Maritime) et mort le 8
+        octobre 1834 à Varennes-Jarcy (Seine-et-Oise). Directeur de l'opéra impérial de
+        Saint-Pétersbourg (1803-1811). - Succède à Méhul au Conservatoire de Paris (1812-1829). - A
+        écrit des romances pour chant et piano, des sonates, de nombreux opéras.</html:p>
          </html:div>
       </rico:history>
+      <!--Contenu de biblio : Notice BnF n° : FRBNF12529770 -->
    </rico:Agent>
 </rdf:RDF>

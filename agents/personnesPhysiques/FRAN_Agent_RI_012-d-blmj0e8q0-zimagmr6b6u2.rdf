@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:dcterms="http://purl.org/dc/terms/"
-         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/FRAN_RI_012-d-blmj0e8q0-zimagmr6b6u2">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/FRAN_RI_012-d-blmj0e8q0-zimagmr6b6u2"/>
@@ -17,19 +17,20 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
       <rdfs:seeAlso rdf:resource="http://fr.wikipedia.org/wiki/Louis_VI_de_Rohan-Gu%C3%A9m%C3%A9n%C3%A9"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/FRAN_RI_012-d-blmj0e8q0-zimagmr6b6u2">
-            <rico:isInstantiationOf rdf:resource="record/FRAN_RI_012-d-blmj0e8q0-zimagmr6b6u2"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/FRAN_RI_012-d-blmj0e8q0-zimagmr6b6u2"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_RI_012-d-blmj0e8q0-zimagmr6b6u2</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/FRAN_RI_012-d-blmj0e8q0-zimagmr6b6u2">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/FRAN_RI_012-d-blmj0e8q0-zimagmr6b6u2"/>
       <rdfs:label xml:lang="fr">Rohan-Guéméné, Louis VI de (1540-1611)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Rohan-Guéméné, Louis VI de (1540-1611)</skos:prefLabel>
       <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/FRAN_RI_012-d-blmj0e8q0-zimagmr6b6u2-Rohan-Gu%C3%A9m%C3%A9n%C3%A9%2C%20Louis%20VI%20de%20%281540-1611%29">
             <rdfs:label xml:lang="fr">Rohan-Guéméné, Louis VI de (1540-1611)</rdfs:label>
@@ -41,5 +42,7 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1540-01-01</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1611-01-01</rico:deathDate>
+      <!--Contenu de biblio : Article Wikipedia :
+        http://fr.wikipedia.org/wiki/Louis_VI_de_Rohan-Gu%C3%A9m%C3%A9n%C3%A9-->
    </rico:Agent>
 </rdf:RDF>

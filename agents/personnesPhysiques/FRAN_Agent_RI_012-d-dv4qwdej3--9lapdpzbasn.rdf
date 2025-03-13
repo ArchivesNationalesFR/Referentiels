@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:dcterms="http://purl.org/dc/terms/"
-         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/FRAN_RI_012-d-dv4qwdej3--9lapdpzbasn">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/FRAN_RI_012-d-dv4qwdej3--9lapdpzbasn"/>
@@ -17,19 +17,22 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Romain_Harou"/>
-      <rico:hasInstantiation>
+      <!--Contenu de biblio :  Identifiant Wikidata
+        : https://www.wikidata.org/wiki/Q22074943-->
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/FRAN_RI_012-d-dv4qwdej3--9lapdpzbasn">
-            <rico:isInstantiationOf rdf:resource="record/FRAN_RI_012-d-dv4qwdej3--9lapdpzbasn"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/FRAN_RI_012-d-dv4qwdej3--9lapdpzbasn"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_RI_012-d-dv4qwdej3--9lapdpzbasn</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/FRAN_RI_012-d-dv4qwdej3--9lapdpzbasn">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/FRAN_RI_012-d-dv4qwdej3--9lapdpzbasn"/>
       <rdfs:label xml:lang="fr">Harou, Romain [dit Harou-Romain] (1796-1866)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Harou, Romain [dit Harou-Romain] (1796-1866)</skos:prefLabel>
       <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/FRAN_RI_012-d-dv4qwdej3--9lapdpzbasn-Harou%2C%20Romain%20%5Bdit%20Harou-Romain%5D%20%281796-1866%29">
             <rdfs:label xml:lang="fr">Harou, Romain [dit Harou-Romain] (1796-1866)</rdfs:label>
@@ -43,9 +46,11 @@
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1866-01-01</rico:deathDate>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
-            <html:p>Né en 1796 à Bernay. Décédé en 1866 à Caen. A œuvré à la restauration des cathédrales d'Alger, Bayeux.</html:p>
+            <html:p>Né en 1796 à Bernay. Décédé en 1866 à Caen. A œuvré à la restauration des cathédrales
+        d'Alger, Bayeux.</html:p>
          </html:div>
       </rico:history>
+      <!--Contenu de biblio : Article Wikipedia : https://fr.wikipedia.org/wiki/Romain_Harou -->
       <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q22074943"/>
    </rico:Agent>
 </rdf:RDF>

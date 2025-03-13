@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:dcterms="http://purl.org/dc/terms/"
-         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/FRAN_RI_012-d-dv4qwg806--18ytwesra6ckw">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/FRAN_RI_012-d-dv4qwg806--18ytwesra6ckw"/>
@@ -17,24 +17,31 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
       <rdfs:seeAlso rdf:resource="https://catalogue.bnf.fr/ark:/12148/cb12127997d"/>
-      <rico:source xml:lang="fr">http://oxfordindex.oup.com/view/10.1093/benz/9780199773787.article.B00102423</rico:source>
-      <rdfs:seeAlso rdf:resource="http://www.purl.org/inha/agorha/002/78907"/>
+      <!--Contenu de biblio :  Identifiant VIAF :
+        https://viaf.org/viaf/2505313 -->
+      <rdfs:seeAlso rdf:resource="http://oxfordindex.oup.com/view/10.1093/benz/9780199773787.article.B00102423"/>
+      <!--Contenu de biblio :  Identifiant
+        AGORHA : http://www.purl.org/inha/agorha/002/78907 -->
       <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000123197166/about"/>
       <rdfs:seeAlso rdf:resource="http://elec.enc.sorbonne.fr/architectes/291"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Henri_Labrouste"/>
-      <rico:hasInstantiation>
+      <!--Contenu de biblio :  Identifiant Wikidata :
+        http://www.wikidata.org/entity/Q434218 -->
+      <!--Contenu de biblio :  Identifiant RP AN : FRAN_NP_051483-->
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/FRAN_RI_012-d-dv4qwg806--18ytwesra6ckw">
-            <rico:isInstantiationOf rdf:resource="record/FRAN_RI_012-d-dv4qwg806--18ytwesra6ckw"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/FRAN_RI_012-d-dv4qwg806--18ytwesra6ckw"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_RI_012-d-dv4qwg806--18ytwesra6ckw</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/FRAN_RI_012-d-dv4qwg806--18ytwesra6ckw">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/FRAN_RI_012-d-dv4qwg806--18ytwesra6ckw"/>
       <rdfs:label xml:lang="fr">Labrouste, Henri (1801-1875)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Labrouste, Henri (1801-1875)</skos:prefLabel>
       <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/FRAN_RI_012-d-dv4qwg806--18ytwesra6ckw-Labrouste%2C%20Henri%20%281801-1875%29">
             <rdfs:label xml:lang="fr">Labrouste, Henri (1801-1875)</rdfs:label>
@@ -48,12 +55,21 @@
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1875-06-24</rico:deathDate>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
-            <html:p>Né le 11/05/1801 à Paris. Décédé le 24/06/1875 à Fontainebleau. Architecte diocésain. A œuvré à la restauration de la cathédrale de Rennes.</html:p>
+            <html:p>Né le 11/05/1801 à Paris. Décédé le 24/06/1875 à Fontainebleau. Architecte diocésain. A
+        œuvré à la restauration de la cathédrale de Rennes.</html:p>
          </html:div>
       </rico:history>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb12127997d#about"/>
       <owl:sameAs rdf:resource="https://viaf.org/viaf/2505313"/>
+      <!--Contenu de biblio :  Identifiant Bénézit :
+        http://oxfordindex.oup.com/view/10.1093/benz/9780199773787.article.B00102423 -->
+      <!--Contenu de biblio :  Identifiant
+        AGORHA : http://www.purl.org/inha/agorha/002/78907 -->
       <owl:sameAs rdf:resource="https://isni.org/isni/0000000123197166"/>
+      <!--Contenu de biblio :  Identifiant Répertoire des architectes diocésains :
+        http://elec.enc.sorbonne.fr/architectes/291 -->
+      <!--Contenu de biblio :  Article Wikipedia :
+        https://fr.wikipedia.org/wiki/Henri_Labrouste -->
       <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q434218"/>
       <owl:sameAs rdf:resource="agent/051483"/>
    </rico:Agent>
