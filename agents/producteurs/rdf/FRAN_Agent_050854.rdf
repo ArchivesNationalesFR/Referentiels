@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050854">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050854"/>
@@ -11,39 +19,36 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-11-24</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Pascal DAVID)</rico:name>
+            <rico:name xml:lang="fr">Création (par Pascal DAVID)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-01-16</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 16 janvier 2015 : changé forme du nom, ajouté n°s ISNI et notice BnF, indexation activités</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 16 janvier 2015 : changé forme du nom, ajouté n°s ISNI et notice BnF, indexation activités</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Loic BESNARD)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Loic BESNARD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-09</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-11-24</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Notice enrichie avec les ééments de l'instrument de recherche</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Notice enrichie avec les ééments de l'instrument de recherche</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Archives nationales, fonds 208 AS (VII).</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000110272892/about"/>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Archives nationales, fonds 208 AS (VII).</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000110272892"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050854">
-            <rico:isInstantiationOf rdf:resource="record/050854"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050854"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050854</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050854"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050854">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -61,17 +66,19 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1917-11-28</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-02-04</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050854-d699msjarlu--l5x9bzdkopz8">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050854"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050854-d699msjarlu--l5x9bzdkopz8"/>
+            <rico:relationHasTarget rdf:resource="agent/050854"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d176499e112">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050854-d699msjarlu--l5x9bzdkopz8"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjarlu--l5x9bzdkopz8"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjarlu--l5x9bzdkopz8"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjarlu--l5x9bzdkopz8"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d176499e112"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Victor Girard (1917-2012) est né en 1917, à Chalon-sur-Saône, dans une famille d'employés. Parallèlement à une scolarité à l'école puis au collège laïque, il entre en 1927 aux Scouts de France. Il devient chef de troupe, ce qui l'amène à fréquenter des scouts d'autres fédérations, en particulier des Éclaireurs. Ses études universitaires le conduisent à Lyon, où il intègre la Maison des Étudiants Catholiques. Il s'occupe alors de la section universitaire d'un clan « populaire » (Albert de Mun), tout en participant aux travaux des Équipes sociales.</html:p>
@@ -85,7 +92,7 @@
             <html:p>Victor Girard décède en février 2012.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054733-050854"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-054733"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054733-050854"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054733"/>
    </rico:Agent>
 </rdf:RDF>

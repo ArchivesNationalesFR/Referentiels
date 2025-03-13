@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050079">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050079"/>
@@ -11,28 +19,26 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-10-31</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Raphael BAUMARD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Raphael BAUMARD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-08-09</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Florence CLAVAUD)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Florence CLAVAUD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-10-31</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050079">
-            <rico:isInstantiationOf rdf:resource="record/050079"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050079"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050079</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050079"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050079">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -54,7 +60,9 @@
             <html:p>Jean-Frédéric Phélypeaux, comte de Maurepas (1701-1781) reçoit de son père (après la mort de Louis XIV) la charge de secrétaire d’État de la Maison du roi. En 1723, il obtient en outre le département de la Marine. En janvier 1738, il est promu ministre d’État. Disgrâcié pour une épigramme contre Madame de Pompadour en 1749, Maurepas est exilé à Bourges puis à Pontchartrain. À l’avènement de Louis XVI, il est rappelé aux affaires en qualité de ministre d’État et de président du conseil des finances. Il s’adjoint des ministres réformateurs comme Turgot et Necker, mais il ne sait pas les défendre des intrigues de la Cour. Son secrétaire publia sous son nom des<html:i>Mémoires</html:i>.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/000689-050079"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-000689"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/000689-050079"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-000689"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/060276-050079"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-060276"/>
    </rico:Agent>
 </rdf:RDF>

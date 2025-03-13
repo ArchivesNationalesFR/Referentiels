@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050124">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050124"/>
@@ -10,21 +18,20 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-10-16</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Raphael BAUMARD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Raphael BAUMARD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-10-16</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050124">
-            <rico:isInstantiationOf rdf:resource="record/050124"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050124"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050124</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050124"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050124">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -46,8 +53,11 @@
             <html:p>Conseiller à la Cour des monnaies dès 1781, l’orientaliste Antoine-Isaac Silvestre de Sacy (1768-1838) devint, en 1791 l’un des commissaires généraux des monnaies. Associé libre de l’Académie des inscriptions dès 1785, membre ordinaire en 1792, il en devint secrétaire perpétuel en 1833. À la création de l’École des langues orientales en 1795, il fut professeur d’arabe, et en 1806, professeur de persan au Collège de France. De 1808 à 1814, il siégea au Corps législatif, fut nommé de 1815 à 1820 membre de la Commission de l’instruction publique et administrateur de l’Académie de Paris, puis, en 1822, du Collège de France et de l’École des langues orientales. Il fonda la même année la Société asiatique, dont il fut élu président, et en 1832, devint pair de France, conservateur des manuscrits de la Bibliothèque royale et inspecteur des types orientaux de l’Imprimerie royale.</html:p>
          </html:div>
       </rico:history>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/050124-050125"/><rico:hasFamilyAssociationWith rdf:resource="agent/050125"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/004894-050124"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-004894"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/050124-052741"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/052741"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/050124-050125"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/050125"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/004894-050124"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-004894"/>
    </rico:Agent>
 </rdf:RDF>

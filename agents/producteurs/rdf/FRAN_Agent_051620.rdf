@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051620">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051620"/>
@@ -11,34 +19,32 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-09-04</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Jean-Pierre BAT)</rico:name>
+            <rico:name xml:lang="fr">Création (par Jean-Pierre BAT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-08-02</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Samuel GIBIAT)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Samuel GIBIAT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-09-04</rico:date>
-            <rico:descriptiveNote xml:lang="fr">relue et validée par Samuel Gibiat le 29 août 2017</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">relue et validée par Samuel Gibiat le 29 août 2017</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">CV en ligne de Daniel Bach sur le site du centre de recherche Emile Durkheim https://durkheim.u-bordeaux.fr/Notre-equipe/Chercheurs-et-enseignants-chercheurs/CV/Daniel-Bach</rico:source>
-      <rico:source xml:lang="fr">Correspondance avec Daniel Bach.</rico:source>
-      <rico:source xml:lang="fr">Notice BnF http://data.bnf.fr/12051296/daniel_c__bach/</rico:source>
-      <rico:source xml:lang="fr">ISNI BnF 0000 0001 0855 0208</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000108550208/about"/>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">CV en ligne de Daniel Bach sur le site du centre de recherche Emile Durkheim https://durkheim.u-bordeaux.fr/Notre-equipe/Chercheurs-et-enseignants-chercheurs/CV/Daniel-Bach</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Correspondance avec Daniel Bach.</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice BnF http://data.bnf.fr/12051296/daniel_c__bach/</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">ISNI BnF 0000 0001 0855 0208</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000108550208"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051620">
-            <rico:isInstantiationOf rdf:resource="record/051620"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051620"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051620</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051620"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051620">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -55,28 +61,32 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1950-08-19</rico:birthDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051620-d3m0bl7bbdy-s3moxyf8em8b">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051620"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051620-d3m0bl7bbdy-s3moxyf8em8b"/>
+            <rico:relationHasTarget rdf:resource="agent/051620"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d188738e111">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051620-d3m0bl7bbdy-s3moxyf8em8b"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3m0bl7bbdy-s3moxyf8em8b"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl7bbdy-s3moxyf8em8b"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl7bbdy-s3moxyf8em8b"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d188738e111"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051620-d699msj02xm-19qbb7wdtto3j">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051620"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051620-d699msj02xm-19qbb7wdtto3j"/>
+            <rico:relationHasTarget rdf:resource="agent/051620"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d188738e117">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051620-d699msj02xm-19qbb7wdtto3j"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d188738e117"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Daniel C. Bach est  né le 19 août 1950 à Annemasse. Diplômé de l’Institut d’études politiques de Grenoble en 1971 (major de promotion), il est incité par Daniel Pépy (alors professeur à l’IEP Grenoble et directeur de l’IRAT tropical à Paris, et éphémère remplaçant de Foccart lors de l’intérim d’Alain Poher en 1969) à poursuivre ses études à Sciences Po Paris (cycle supérieur d’études) et à l’université Paris-I (DES de sciences politiques) en 1973. Il continue ses études à Oxford (<html:i>Junior member</html:i>à St Antony’s College, 1973-1976 et 1977-1978) grâce à une allocation de recherche du British Council. Sa thèse intitulée<html:i>Relations between Nigeria, France and Selected Francophone States in West Africa (1960-1974)</html:i>est dirigée par Anthony Kirk-Greene (<html:i>District officer</html:i>au Nord du Nigeria, puis chargé de la création de l’Institut d’administration à Zaria) au St Antony’s College de l’université d’Oxford. Cette histoire immédiate de la décolonisation présente deux particularités : réalisée en Angleterre, elle porte une attention alors inédite pour un chercheur français à l’Afrique de l’Ouest anglophone ; fondée sur le Nigeria, elle lui a permis de collecter une documentation inédite et inégalée sur la<html:i>Nigerian Civil War</html:i>, mieux connue en France sous le nom de guerre du Biafra. La préparation de la thèse a été l’occasion d’un premier séjour de terrain (six mois en septembre 1974-février 1975) essentiellement au Nigeria, puis au Niger et au Bénin. C’est durant ce séjour qu’ont été réalisés les entretiens avec les personnalités de l’ensemble du Nigeria, complétés par le dépouillement systématique de la presse nigériane depuis 1960 et la collecte de documents de littérature grise. À ces documents se sont ajoutés ceux collectés à Paris (dont des archives des groupes de pression français sur le Biafra) et Londres. Daniel Bach soutient sa thèse en septembre 1978.</html:p>
@@ -87,7 +97,7 @@
          </html:div>
       </rico:history>
       <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb120512964#about"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056198-051620"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-056198"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/056198-051620"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-056198"/>
    </rico:Agent>
 </rdf:RDF>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/000487">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/000487"/>
@@ -11,14 +19,13 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Dérivation
-                (Import_SIA)</rico:name>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/000487">
-            <rico:isInstantiationOf rdf:resource="record/000487"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/000487"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_000487</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
@@ -26,7 +33,7 @@
             <rico:identifier>2104/G</rico:identifier>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/000487">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -43,14 +50,23 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-01-01</rico:beginningDate>
       <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5blonaxbw--1mt8t42bokzts"/>
-      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000495-000487-20010101-*"/><rico:isOrwasSubdivisionOf rdf:resource="agent/000495"/>
-      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000487-000480-20010101-*"/><rico:hasOrHadSubdivision rdf:resource="agent/000480"/>
-      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000487-000481-20020101-20081231"/><rico:hasOrHadSubdivision rdf:resource="agent/000481"/>
-      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000487-000478-20010101-*"/><rico:hasOrHadSubdivision rdf:resource="agent/000478"/>
-      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000487-000787-20010101-20021231"/><rico:hasOrHadSubdivision rdf:resource="agent/000787"/>
-      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000487-000479-20010101-20081231"/><rico:hasOrHadSubdivision rdf:resource="agent/000479"/>
-      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000487-000483-20010101-*"/><rico:hasOrHadSubdivision rdf:resource="agent/000483"/>
-      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000487-000484-20080101-*"/><rico:hasOrHadSubdivision rdf:resource="agent/000484"/>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/000784-000487-20010101-*"/><rico:isSuccessorOf rdf:resource="agent/000784"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/000495-000487-20010101-*"/>
+      <rico:isDirectSubdivisionOf rdf:resource="agent/000495"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/000487-000480-20010101-*"/>
+      <rico:hasDirectSubdivision rdf:resource="agent/000480"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/000487-000481-20020101-20081231"/>
+      <rico:hadSubdivision rdf:resource="agent/000481"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/000487-000478-20010101-*"/>
+      <rico:hasDirectSubdivision rdf:resource="agent/000478"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/000487-000787-20010101-20021231"/>
+      <rico:hadSubdivision rdf:resource="agent/000787"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/000487-000479-20010101-20081231"/>
+      <rico:hadSubdivision rdf:resource="agent/000479"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/000487-000483-20010101-*"/>
+      <rico:hasDirectSubdivision rdf:resource="agent/000483"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/000487-000484-20080101-*"/>
+      <rico:hasDirectSubdivision rdf:resource="agent/000484"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/000784-000487-20010101-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/000784"/>
    </rico:Agent>
 </rdf:RDF>

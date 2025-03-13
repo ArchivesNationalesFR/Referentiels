@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050602">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050602"/>
@@ -10,34 +18,33 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-05-11</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Création (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-05-11</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud et E. Camus, 2 mai 2016 : revu le nom, ajouté ISNI, notices BnF et Wikipédia, activités, revu l'historique</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud et E. Camus, 2 mai 2016 : revu le nom, ajouté ISNI, notices BnF et Wikipédia, activités, revu l'historique</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">66 AP</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb119166303</html:p>
-      </rico:source>
-      <rico:hasSource rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb119166303"/>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb119166303"/>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice Wikipédia : https://fr.wikipedia.org/wiki/Parfait-Louis_Monteil</html:p>
-      </rico:source>
-      <rico:hasSource rdf:resource="https://fr.wikipedia.org/wiki/Parfait-Louis_Monteil"/>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000119490394/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="https://fr.wikipedia.org/wiki/Parfait-Louis_Monteil"/>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000119490394"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050602">
-            <rico:isInstantiationOf rdf:resource="record/050602"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050602"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050602</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050602"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050602">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -62,33 +69,37 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1855-04-18</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1925-12-31</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050602-d699msjpuqr-66gt6kmedjiv">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050602"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050602-d699msjpuqr-66gt6kmedjiv"/>
+            <rico:relationHasTarget rdf:resource="agent/050602"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d173197e100">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050602-d699msjpuqr-66gt6kmedjiv"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">colonel</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d173197e100"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050602-d699msinuei--15vcl6i9uctzp-18900101-18921231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050602"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050602-d699msinuei--15vcl6i9uctzp-18900101-18921231"/>
+            <rico:relationHasTarget rdf:resource="agent/050602"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d173197e111">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050602-d699msinuei--15vcl6i9uctzp-18900101-18921231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msinuei--15vcl6i9uctzp"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1890-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1892-12-31</rico:endDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msinuei--15vcl6i9uctzp"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msinuei--15vcl6i9uctzp"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d173197e111"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Après avoir étudié au Sénégal le projet d’un chemin de fer entre Bafoulabé et Bamako, Parfait-Louis Monteil (1855-1925) exécute de 1890 à 1892 un grand voyage dans l’Afrique occidentale depuis Saint-Louis du Sénégal et Kayes, à travers la boucle du Niger inconnue, jusqu’à Say ; de là, il gagne le lac Tchad par Sokoto et Kano, et remonte à Tripoli.</html:p>
@@ -96,9 +107,11 @@
             <html:p>On lui doit, outre sa carte du Sénégal (1886) :<html:i>Voyage d’exploration au Sénégal</html:i>(1882), un<html:i>Vade mecum de l’officier d’infanterie de marine</html:i>(1884),<html:i>De Saint-Louis à Tripoli par le Sénégal</html:i>(1895),<html:i>Une page d’histoire coloniale : la colonne de Kong, 1895</html:i>(1902),<html:i>Quelques feuillets de l’histoire coloniale</html:i>(1924).</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050602-051541-18900101-18921231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/051541"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050602-052321-18940101-18951231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/052321"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/001845-050602"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-001845"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050602-051541-18900101-18921231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/051541"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050602-052321-18940101-18951231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/052321"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/001845-050602"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-001845"/>
    </rico:Agent>
 </rdf:RDF>

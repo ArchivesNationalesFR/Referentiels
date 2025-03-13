@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050119">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050119"/>
@@ -11,28 +19,26 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-10-31</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Raphael BAUMARD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Raphael BAUMARD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-08-13</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Raphael BAUMARD)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Raphael BAUMARD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-10-31</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050119">
-            <rico:isInstantiationOf rdf:resource="record/050119"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050119"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050119</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050119"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050119">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Family"/>
@@ -60,7 +66,7 @@
             <html:p>La famille de Lobel est originaire de la province de Flandre où elle est connue dès le xiiie siècle. Elle a donné son nom au fief de Lobel, sis près de Mentque, dépendant de la châtellenie de Tournechem (actuellement en Belgique). Parmi les personnages marquants de cette famille figurent plus particulièrement Mathias de Lobel (1538-1616), médecin du Prince d’Orange puis botaniste de Jacques Ier d’Angleterre, et Jean Christophe de Lobel, colonel en 1632 d’un régiment au service de l’empereur d’Allemagne.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/004888-050119"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-004888"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/004888-050119"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-004888"/>
    </rico:Agent>
 </rdf:RDF>

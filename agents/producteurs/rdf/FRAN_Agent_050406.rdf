@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050406">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050406"/>
@@ -10,37 +18,36 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-07-28</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Création (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-07-28</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Elsa Camus, 28 juillet 2016 : modification forme autorisée du nom, ajout autres formes du nom, ajout activités, ajout lieu, ajout sources</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Elsa Camus, 28 juillet 2016 : modification forme autorisée du nom, ajout autres formes du nom, ajout activités, ajout lieu, ajout sources</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Archives nationales, Fonds Théodore DUCOS, 46 AP.</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb10349911t</html:p>
-      </rico:source>
-      <rico:hasSource rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb10349911t"/>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb10349911t"/>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/Th%C3%A9odore_Ducos</html:p>
-      </rico:source>
-      <rico:hasSource rdf:resource="https://fr.wikipedia.org/wiki/Th%C3%A9odore_Ducos"/>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="https://fr.wikipedia.org/wiki/Th%C3%A9odore_Ducos"/>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice Assemblée nationale Sycomore : http://www2.assemblee-nationale.fr/sycomore/fiche/%28num_dept%29/9807</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000052438267/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000052438267"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050406">
-            <rico:isInstantiationOf rdf:resource="record/050406"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050406"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050406</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050406"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050406">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -65,76 +72,86 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1801-08-22</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1855-04-17</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050406"/>
-            <rico:placeRelationHasSource rdf:resource="place/FRAN_RI_005-d3ntb7rwey-p9op5y5cz1c6"/>
+            <rico:relationHasTarget rdf:resource="agent/050406"/>
+            <rico:relationHasSource rdf:resource="place/FRAN_RI_005-d3ntb7rwey-p9op5y5cz1c6"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/FRAN_RI_005-d3ntb7rwey-p9op5y5cz1c6"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_005-d3ntb7rwey-p9op5y5cz1c6"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050406-d699msjyazt-1f0ggfyf3is8u">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050406"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050406-d699msjyazt-1f0ggfyf3is8u"/>
+            <rico:relationHasTarget rdf:resource="agent/050406"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d170528e113">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050406-d699msjyazt-1f0ggfyf3is8u"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">conseiller général de la Gironde</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d170528e113"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050406-d699msj9l7t-1gb5a09kkzrmp-18530101-18550417">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050406"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050406-d699msj9l7t-1gb5a09kkzrmp-18530101-18550417"/>
+            <rico:relationHasTarget rdf:resource="agent/050406"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d170528e124">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050406-d699msj9l7t-1gb5a09kkzrmp-18530101-18550417"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj9l7t-1gb5a09kkzrmp"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1853-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1855-04-17</rico:endDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj9l7t-1gb5a09kkzrmp"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj9l7t-1gb5a09kkzrmp"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d170528e124"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050406-d699msjnw86-64seh0fmw8hj-18510101-18550417">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050406"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050406-d699msjnw86-64seh0fmw8hj-18510101-18550417"/>
+            <rico:relationHasTarget rdf:resource="agent/050406"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d170528e139">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050406-d699msjnw86-64seh0fmw8hj-18510101-18550417"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1851-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1855-04-17</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">ministre de la Marine</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d170528e139"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050406-d699msiribo--1dn34eg8lht4f-18340101-18511231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050406"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050406-d699msiribo--1dn34eg8lht4f-18340101-18511231"/>
+            <rico:relationHasTarget rdf:resource="agent/050406"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d170528e159">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050406-d699msiribo--1dn34eg8lht4f-18340101-18511231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1834-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1851-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">député de la Gironde puis de la Seine</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d170528e159"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Issu d’une famille de grands armateurs et négociants bordelais, Jean Étienne Théodore Ducos (1801-1855) est le neveu de l’ancien consul Roger Ducos. Conseiller général puis député de la Gironde en 1834, il est élu en février 1848 à la Constituante, où il vote pour le bannissement des Orléans, pour la loi réglementant les clubs et la presse. Il est battu aux élections de 1849 dans la Gironde mais retrouve un siège quelques mois après, à l’occasion d’une élection partielle dans la Seine. Il se rallie au « parti de l'Odre » puis se rapproche du prince-président qui le fait nommer ministre de la Marine et des Colonies à deux reprises, du 9 au 24 janvier 1851 et du 3 décembre 1851 jusqu’à sa mort en 1855. Son administration est marquée par le développement de la marine militaire à vapeur, l’installation française en Nouvelle-Calédonie et l’organisation des transports en Méditerranée lors de la guerre de Crimée.</html:p>
          </html:div>
       </rico:history>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/000653-050406"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-000653"/>
    </rico:Agent>
 </rdf:RDF>

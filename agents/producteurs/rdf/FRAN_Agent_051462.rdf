@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051462">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051462"/>
@@ -11,29 +19,27 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-02</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:name xml:lang="fr">Création (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-01</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 1er mars 2017 : création sur demande de la mission Présidence de la République ; ajout activité et relation d'association</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 1er mars 2017 : création sur demande de la mission Présidence de la République ; ajout activité et relation d'association</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-02</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051462">
-            <rico:isInstantiationOf rdf:resource="record/051462"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051462"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051462</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051462"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051462">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -49,22 +55,24 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1985-07-06</rico:birthDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051462-d-11hasr639--1mmaoyj7hl5zc-20110201-20131231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051462"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051462-d-11hasr639--1mmaoyj7hl5zc-20110201-20131231"/>
+            <rico:relationHasTarget rdf:resource="agent/051462"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d185562e86">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051462-d-11hasr639--1mmaoyj7hl5zc-20110201-20131231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-11hasr639--1mmaoyj7hl5zc"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-02-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">chargé de mission auprès de la direction du cabinet</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-11hasr639--1mmaoyj7hl5zc"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-11hasr639--1mmaoyj7hl5zc"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d185562e86"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>
@@ -72,7 +80,6 @@
             </html:p>
             <html:p>- Master 2 « Vie Publique et Relations Institutionnelles », Université Panthéon-Assas, Paris, 2011</html:p>
             <html:p>- Master 2 « Politiques européennes », Institut d'études politiques, Strasbourg, 2009</html:p>
-            <html:p/>
             <html:p>
                <html:u>Carrière</html:u>
             </html:p>
@@ -83,6 +90,7 @@
             <html:p>- Adjoint au chef du Protocole, Ville et Eurométropole de Strasbourg, Strasbourg (Bas-Rhin), 2015-2016</html:p>
          </html:div>
       </rico:history>
-      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/051462-000059-20110201-20131231"/><rico:isOrWasLeaderOf rdf:resource="agent/000059"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/051462-000059-20110201-20131231"/>
+      <rico:isOrWasLeaderOf rdf:resource="agent/000059"/>
    </rico:Agent>
 </rdf:RDF>

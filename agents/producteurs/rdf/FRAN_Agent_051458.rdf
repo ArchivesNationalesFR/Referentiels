@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051458">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051458"/>
@@ -11,30 +19,28 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-06-21</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Marine ZELVERTE)</rico:name>
+            <rico:name xml:lang="fr">Création (par Marine ZELVERTE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-02-24</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Marine ZELVERTE)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Marine ZELVERTE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-06-21</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000078286038/about"/>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000078286038"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Macha_B%C3%A9ranger"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051458">
-            <rico:isInstantiationOf rdf:resource="record/051458"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051458"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051458</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051458"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051458">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -59,28 +65,32 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1941-01-01</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-12-31</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051458-d699msjp2m6--1qo7edsfvkfpy">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051458"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051458-d699msjp2m6--1qo7edsfvkfpy"/>
+            <rico:relationHasTarget rdf:resource="agent/051458"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d185502e94">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051458-d699msjp2m6--1qo7edsfvkfpy"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjp2m6--1qo7edsfvkfpy"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjp2m6--1qo7edsfvkfpy"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjp2m6--1qo7edsfvkfpy"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d185502e94"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051458-d-1axy38anu-1ua8su5ef37p1">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051458"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051458-d-1axy38anu-1ua8su5ef37p1"/>
+            <rico:relationHasTarget rdf:resource="agent/051458"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d185502e100">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051458-d-1axy38anu-1ua8su5ef37p1"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-1axy38anu-1ua8su5ef37p1"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-1axy38anu-1ua8su5ef37p1"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-1axy38anu-1ua8su5ef37p1"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d185502e100"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Macha Béranger (1941-2009), de son vrai nom Michèle Riond, est une productrice et animatrice de radio française. Elle mène sa carrière principalement sur France Inter en présentant une émission quotidienne et en direct pendant près de 30 ans.</html:p>
@@ -92,10 +102,11 @@
       </rico:history>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb11891322x#about"/>
       <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Macha_B%C3%A9ranger"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005419-051458-19770101-20061231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/005419"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/015895-051458"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-015895"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056114-051458"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-056114"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/005419-051458-19770101-20061231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/005419"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/015895-051458"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-015895"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/056114-051458"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-056114"/>
    </rico:Agent>
 </rdf:RDF>

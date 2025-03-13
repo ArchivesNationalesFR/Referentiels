@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/005103">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/005103"/>
@@ -11,29 +19,27 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-21</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Dérivation
-                (Import_SIA)</rico:name>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Pascal RIVIALE)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Pascal RIVIALE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-21</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 21 octobre 2015 : revu le nom, ajouté ISNI, sources, indexation fonctions et lieux</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 21 octobre 2015 : revu le nom, ajouté ISNI, sources, indexation fonctions et lieux</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Site Internet : http://www.jeudepaume.org/</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice d'autorité BnF n° FRBNF14619833</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121798347/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121798347"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/005103">
-            <rico:isInstantiationOf rdf:resource="record/005103"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/005103"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_005103</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
@@ -41,7 +47,7 @@
             <rico:identifier>5104/79JDP</rico:identifier>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/005103">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -65,28 +71,29 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2004-01-01</rico:beginningDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/005103"/>
-            <rico:placeRelationHasSource rdf:resource="place/site%20Concorde%2C%201%20place%20de%20la%20Concorde"/>
+            <rico:relationHasTarget rdf:resource="agent/005103"/>
+            <rico:relationHasSource rdf:resource="place/site%20Concorde%2C%201%20place%20de%20la%20Concorde"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/site%20Concorde%2C%201%20place%20de%20la%20Concorde"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/site%20Concorde%2C%201%20place%20de%20la%20Concorde"/>
       <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5blom9zjl-l45jh5o3uznu"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/005103-d5bhviikk9--y6te63k761ib">
-            <rico:performanceRelationHasTarget rdf:resource="agent/005103"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005103-d5bhviikk9--y6te63k761ib"/>
+            <rico:relationHasTarget rdf:resource="agent/005103"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d55448e135">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/005103-d5bhviikk9--y6te63k761ib"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">manifestations culturelles dans le domaine de la photographie</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d55448e135"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>La création du Jeu de Paume s’inscrit dans un long processus de valorisation de la création photographique.</html:p>
@@ -100,17 +107,21 @@
             <html:p>Daniel Abadie est alors remplacé à partir de juin 2004 à la tête de l’institution par Régis Durand.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000005-005103-20040101-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000005"/>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005471-005103-20040101-*"/><rico:isSuccessorOf rdf:resource="agent/005471"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054093-005103"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-054093"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054689-005103"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-054689"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054694-005103"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-054694"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/055366-005103"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-055366"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/055367-005103"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-055367"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000005-005103-20040101-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000005"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/005471-005103-20040101-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/005471"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054093-005103"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054093"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054689-005103"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054689"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054694-005103"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054694"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/055366-005103"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-055366"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/055367-005103"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-055367"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/060049-005103"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-060049"/>
    </rico:Agent>
 </rdf:RDF>

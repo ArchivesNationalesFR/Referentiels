@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051647">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051647"/>
@@ -11,34 +19,32 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-11-22</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Création (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-08-28</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-11-22</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Archives nationales, fonds Odilon Barrot (271 AP).</rico:source>
-      <rico:source xml:lang="fr">Article Odilon Barrot de Wikipédia en français (http://fr.wikipedia.org/wiki/Odilon_Barrot).</rico:source>
-      <rico:source xml:lang="fr">Notice BnF n° : FRBNF11890368.</rico:source>
-      <rico:source xml:lang="fr">État des fonds d'archives privées, séries AP et AB XIX, Paris, Centre historique des Archives nationales, 2004, p. 484-485 (notice 271 AP).</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000110235573/about"/>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Archives nationales, fonds Odilon Barrot (271 AP).</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Article Odilon Barrot de Wikipédia en français (http://fr.wikipedia.org/wiki/Odilon_Barrot).</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice BnF n° : FRBNF11890368.</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">État des fonds d'archives privées, séries AP et AB XIX, Paris, Centre historique des Archives nationales, 2004, p. 484-485 (notice 271 AP).</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000110235573"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Odilon_Barrot"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051647">
-            <rico:isInstantiationOf rdf:resource="record/051647"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051647"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051647</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051647"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051647">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -63,65 +69,73 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1791-07-19</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1873-08-06</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051647-d699msj742x--12cnnohd8i9wj">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051647"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051647-d699msj742x--12cnnohd8i9wj"/>
+            <rico:relationHasTarget rdf:resource="agent/051647"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d189179e117">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051647-d699msj742x--12cnnohd8i9wj"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj742x--12cnnohd8i9wj"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj742x--12cnnohd8i9wj"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj742x--12cnnohd8i9wj"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d189179e117"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051647-d699msjnw86-64seh0fmw8hj-18480101-18491231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051647"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051647-d699msjnw86-64seh0fmw8hj-18480101-18491231"/>
+            <rico:relationHasTarget rdf:resource="agent/051647"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d189179e123">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051647-d699msjnw86-64seh0fmw8hj-18480101-18491231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1848-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1849-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">président du Conseil et ministre de la justice</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d189179e123"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051647-d699msiribo--1dn34eg8lht4f-18300101-18491231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051647"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051647-d699msiribo--1dn34eg8lht4f-18300101-18491231"/>
+            <rico:relationHasTarget rdf:resource="agent/051647"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d189179e143">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051647-d699msiribo--1dn34eg8lht4f-18300101-18491231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1830-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1849-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">député de l'Eure</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d189179e143"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051647-d3nyu9xige-1dbbvsqzr0tfp-18300101-18311231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051647"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051647-d3nyu9xige-1dbbvsqzr0tfp-18300101-18311231"/>
+            <rico:relationHasTarget rdf:resource="agent/051647"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d189179e163">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051647-d3nyu9xige-1dbbvsqzr0tfp-18300101-18311231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3nyu9xige-1dbbvsqzr0tfp"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1830-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1831-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">préfet de la Seine</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3nyu9xige-1dbbvsqzr0tfp"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3nyu9xige-1dbbvsqzr0tfp"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d189179e163"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Avocat libéral sous la Restauration, chef de file de l’opposition dynastique sous la monarchie de Juillet, préfet de la Seine en 1830-1831, Odilon Barrot (1791-1873) est le promoteur de la « campagne des banquets » pour la réforme électorale (1847). Député de l’Eure de 1830 à 1849, il accepte la présidence du Conseil, du 20 décembre 1848 au 31 octobre 1849, et le portefeuille de la Justice, du 20 décembre 1848 au 31 octobre 1849. Mais il se laisse reprendre par ses opinions monarchistes et est arrêté après le 2 décembre 1851. Après le 4 septembre 1870, il est nommé par Thiers président du Conseil d’État, le 27 juillet 1872. Il est membre de l’Institut (Académie des sciences morales et politiques) depuis 1855.</html:p>
@@ -129,9 +143,10 @@
          </html:div>
       </rico:history>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb118903680#about"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051647-052981-18480101-18491231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/052981"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/051647-052981-18480101-18491231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/052981"/>
       <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Odilon_Barrot"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/000709-051647"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-000709"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/000709-051647"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-000709"/>
    </rico:Agent>
 </rdf:RDF>

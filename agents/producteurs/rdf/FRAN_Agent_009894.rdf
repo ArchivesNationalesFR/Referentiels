@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/009894">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/009894"/>
@@ -11,29 +19,27 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-06-09</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Dérivation
-                (Import_SIA)</rico:name>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Florence CLAVAUD)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Florence CLAVAUD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-06-09</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 9 juin 2016 : mise à jour de la notice sur demande de la mission. Revu forme du nom, ajouté historique, textes de référence, composition interne, liens, fonction</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 9 juin 2016 : mise à jour de la notice sur demande de la mission. Revu forme du nom, ajouté historique, textes de référence, composition interne, liens, fonction</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/009894">
-            <rico:isInstantiationOf rdf:resource="record/009894"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/009894"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_009894</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_009894"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/009894">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -51,21 +57,22 @@
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-21</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-03-31</rico:endDate>
       <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5blonb04s-1nqrprwwl75h0"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/009894-d5bhvikz03--iqa08pprge9n">
-            <rico:performanceRelationHasTarget rdf:resource="agent/009894"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/009894-d5bhvikz03--iqa08pprge9n"/>
+            <rico:relationHasTarget rdf:resource="agent/009894"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d99725e98">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/009894-d5bhvikz03--iqa08pprge9n"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvikz03--iqa08pprge9n"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">questions agroalimentaires</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvikz03--iqa08pprge9n"/></rico:Activity></rico:performsOrPerformed>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d99725e98"/>
+      <rico:generalDescription rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Organisation interne ou généalogie</h4>
             <html:p>Composition du cabinet :</html:p>
@@ -85,7 +92,7 @@
             <html:p>David PHILIPPONA, conseiller technique (31 mai 2013-31 mars 2014)</html:p>
             <html:p>Françoise DEGOIS, conseillère technique (9 juillet 2012-31 mars 2014).</html:p>
          </html:div>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Par délégation du ministre de l’agriculture, de l’agroalimentaire et de la forêt, G. Garot, ministre délégué à l'agroalimentaire, traite (avec son cabinet) des questions relatives à l’agroalimentaire.</html:p>
@@ -96,7 +103,9 @@
             <html:p>compétitivité, de l’industrie et des services.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/007921-009894-20120621-20140331"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/007921"/>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000004-009894-20120621-20140331"/><rico:isOrWasSubordinateTo rdf:resource="agent/000004"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/007921-009894-20120621-20140331"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/007921"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/000004-009894-20120621-20140331"/>
+      <rico:wasSubordinateTo rdf:resource="agent/000004"/>
    </rico:Agent>
 </rdf:RDF>

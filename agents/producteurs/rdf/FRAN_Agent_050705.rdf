@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050705">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050705"/>
@@ -10,26 +18,25 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-02-21</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Emmanuelle GIRY)</rico:name>
+            <rico:name xml:lang="fr">Création (par Emmanuelle GIRY)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-02-21</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 21 février 2014 : ajouté statut et lien vers fiche de la branche française du SCI</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 21 février 2014 : ajouté statut et lien vers fiche de la branche française du SCI</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">
             <html:i>Guide des sources du PAJEP</html:i>, consulté au mois de février 2014</html:p>
-      </rico:source>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050705">
-            <rico:isInstantiationOf rdf:resource="record/050705"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050705"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050705</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050705"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050705">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -62,9 +69,11 @@
             <html:p>L'association comprend aujourd'hui cinq groupes d'action-réflexion formés par des volontaires et des bénévoles qui se retrouvent au rythme de quelques rencontres annuelles : Groupe Afrique ; groupe Femmes et développement ; groupe Méditerranée (Maghreb et Moyen Orient) ; groupe Bretagne ; groupe Vendée-Sénégal.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050705-050739-19990101-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050739"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050705-050706-19921207-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050706"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/050926-050705"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-050926"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050705-050739-19990101-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050739"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050705-050706-19921207-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050706"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/050926-050705"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-050926"/>
    </rico:Agent>
 </rdf:RDF>

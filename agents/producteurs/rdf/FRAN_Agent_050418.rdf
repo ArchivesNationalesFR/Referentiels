@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050418">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050418"/>
@@ -11,40 +19,37 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-09</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Virginie POTIN)</rico:name>
+            <rico:name xml:lang="fr">Création (par Virginie POTIN)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-10-08</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Pascal DAVID-DORMIEN)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Pascal DAVID-DORMIEN)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-09-16</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Pas de notice wikipédia.</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Pas de notice wikipédia.</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-09</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 09/07/2019 : suppression du lien vers NP51630 Dautry Raoul en cours de rédaction, identifiant ISNI revu, pas de notice wikipédia</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 09/07/2019 : suppression du lien vers NP51630 Dautry Raoul en cours de rédaction, identifiant ISNI revu, pas de notice wikipédia</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Notice BnF : FRBNF14056736</rico:source>
-      <rico:source xml:lang="fr">État sommaire des fonds d'archives privées. Séries AP et AB XIX, Paris, Centre historique des Archives nationales, 2004, p. 1123-1124 (notice 606 AP).</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000001420390/about"/>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice BnF : FRBNF14056736</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">État sommaire des fonds d'archives privées. Séries AP et AB XIX, Paris, Centre historique des Archives nationales, 2004, p. 1123-1124 (notice 606 AP).</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000001420390"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050418">
-            <rico:isInstantiationOf rdf:resource="record/050418"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050418"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050418</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050418"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050418">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -62,86 +67,90 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1905-07-07</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1996-10-12</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050418"/>
-            <rico:placeRelationHasSource rdf:resource="place/Sarre%20%28Allemagne%29"/>
+            <rico:relationHasTarget rdf:resource="agent/050418"/>
+            <rico:relationHasSource rdf:resource="place/Sarre%20%28Allemagne%29"/>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1949-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">négociations relatives à la délimitation du bassin du Warndt.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Sarre%20%28Allemagne%29"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Sarre%20%28Allemagne%29"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050418"/>
-            <rico:placeRelationHasSource rdf:resource="place/Maroc"/>
+            <rico:relationHasTarget rdf:resource="agent/050418"/>
+            <rico:relationHasSource rdf:resource="place/Maroc"/>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1944-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1949-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">secrétaire général du protectorat de la France au Maroc.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Maroc"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Maroc"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050418"/>
-            <rico:placeRelationHasSource rdf:resource="place/Tunisie"/>
+            <rico:relationHasTarget rdf:resource="agent/050418"/>
+            <rico:relationHasSource rdf:resource="place/Tunisie"/>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1941-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1943-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">secrétaire général adjoint au gouvernement tunisien.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Tunisie"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Tunisie"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050418"/>
-            <rico:placeRelationHasSource rdf:resource="place/Alg%C3%A9rie"/>
+            <rico:relationHasTarget rdf:resource="agent/050418"/>
+            <rico:relationHasSource rdf:resource="place/Alg%C3%A9rie"/>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1940-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1941-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">inspecteur général en Algérie.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Alg%C3%A9rie"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Alg%C3%A9rie"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050418-d3m0bl759we-1qfz4kgpyc2dp-19560101-19751231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050418"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050418-d3m0bl759we-1qfz4kgpyc2dp-19560101-19751231"/>
+            <rico:relationHasTarget rdf:resource="agent/050418"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d170672e221">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050418-d3m0bl759we-1qfz4kgpyc2dp-19560101-19751231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3m0bl759we-1qfz4kgpyc2dp"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1956-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1975-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">président de la Socitété du Djebel Djerissa, de la compagnie des phosphates et du chemin de fer de Gafsa.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl759we-1qfz4kgpyc2dp"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl759we-1qfz4kgpyc2dp"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d170672e221"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050418-d699msiydj2--15ch8dyky11sp-19400101-19411231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050418"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050418-d699msiydj2--15ch8dyky11sp-19400101-19411231"/>
+            <rico:relationHasTarget rdf:resource="agent/050418"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d170672e241">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050418-d699msiydj2--15ch8dyky11sp-19400101-19411231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msiydj2--15ch8dyky11sp"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1940-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1941-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">inspecteur général en Algérie.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiydj2--15ch8dyky11sp"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiydj2--15ch8dyky11sp"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d170672e241"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Jacques Lucius est né à Paris en juillet 1905, il est le gendre de Raoul Dautry (1880-1951) par son mariage, en 1930, avec Hélène Dautry fille aînée de Raoul.</html:p>
@@ -153,7 +162,7 @@
          </html:div>
       </rico:history>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb140567364#about"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/003532-050418"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-003532"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/003532-050418"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-003532"/>
    </rico:Agent>
 </rdf:RDF>

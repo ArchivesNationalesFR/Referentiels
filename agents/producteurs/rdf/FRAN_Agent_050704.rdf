@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050704">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050704"/>
@@ -10,26 +18,25 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-02-21</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Emmanuelle GIRY)</rico:name>
+            <rico:name xml:lang="fr">Création (par Emmanuelle GIRY)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-02-21</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 21 février 2014 : changement des noms, de la date ; ajout mention des statuts</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 21 février 2014 : changement des noms, de la date ; ajout mention des statuts</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">
             <html:i>Guide des sources du PAJEP</html:i>, consulté au mois de février 2014</html:p>
-      </rico:source>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050704">
-            <rico:isInstantiationOf rdf:resource="record/050704"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050704"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050704</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050704"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050704">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -83,18 +90,20 @@
             <html:p> Union française des centres de vacances (UFCV) ;</html:p>
             <html:p> Union nationale des fédérations régionales des Maisons des jeunes et de la culture ;</html:p>
             <html:p> Union nationale des centres permanents d’initiation à l’environnement (UNCPIE).</html:p>
-            <html:p/>
             <html:p>Fort du succès des assises, le CIRAST, transformé en Collectif inter associatif pour la réalisation d’activités scientifiques et techniques internationales (CIRASTI), se donne un double but :</html:p>
             <html:p> promouvoir le développement des exposciences en France ;</html:p>
             <html:p> préparer la participation française aux exposciences internationales et contribuer à la création de l’organisation internationale prévue à Toulouse : le MILSET.</html:p>
-            <html:p/>
             <html:p>Des collectifs régionaux coordonnés par le CIRASTI se mettent progressivement en place, dont une des principales actions est de réaliser des exposciences régionales et départementales. L’exposcience est ainsi reconnue comme un moyen privilégié de développement de la pratique de l’activité scientifique et technique chez les jeunes.</html:p>
             <html:p>Les exposciences connaissent en France un réel développement. Elles sont largement ouvertes aux jeunes des clubs, des Projets d’action éducative (PAE), ou d’autres formes de loisirs scientifiques et techniques. Le rôle du CIRASTI est de coordonner les actions régionales et nationales et les mettre en cohérence dans un programme d’action.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050704-050739-19990101-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050739"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050704-050721-19870716-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050721"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/059873-050704"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-059873"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050704-050739-19990101-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050739"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050704-053536-19850101-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/053536"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050704-050721-19870716-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050721"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/059873-050704"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-059873"/>
    </rico:Agent>
 </rdf:RDF>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050675">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050675"/>
@@ -10,26 +18,25 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-06-04</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Pascal DAVID)</rico:name>
+            <rico:name xml:lang="fr">Création (par Pascal DAVID)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-06-04</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 4 juin 2015 : changé formes du nom, ajouté descripteur activité</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 4 juin 2015 : changé formes du nom, ajouté descripteur activité</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice BnF n° : FRBNF14059402.</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000001207661/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000001207661"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050675">
-            <rico:isInstantiationOf rdf:resource="record/050675"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050675"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050675</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050675"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050675">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -54,28 +61,32 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1898-02-22</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1966-05-14</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050675-d699msizce3-1fkn61hd3lpjw">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050675"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050675-d699msizce3-1fkn61hd3lpjw"/>
+            <rico:relationHasTarget rdf:resource="agent/050675"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d174167e96">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050675-d699msizce3-1fkn61hd3lpjw"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msizce3-1fkn61hd3lpjw"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msizce3-1fkn61hd3lpjw"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msizce3-1fkn61hd3lpjw"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d174167e96"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050675-d699msj3i51--hevk1gms21cg">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050675"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050675-d699msj3i51--hevk1gms21cg"/>
+            <rico:relationHasTarget rdf:resource="agent/050675"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d174167e102">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050675-d699msj3i51--hevk1gms21cg"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d174167e102"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Yvette Marthe Lebas est née au Mans (Sarthe) en février 1898. Elle est la fille d'Albert Isidore Lebas (1853-1930), général de brigade et gouverneur militaire de Lille (Nord), et de Berthe Eugénie Marie Darnaud (originaire aussi du Mans).</html:p>
@@ -89,7 +100,7 @@
             <html:p>Yvette Marthe Lebas-Guyot décède à son domicile parisien en mai 1966.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/005762-050675"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-005762"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/005762-050675"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-005762"/>
    </rico:Agent>
 </rdf:RDF>

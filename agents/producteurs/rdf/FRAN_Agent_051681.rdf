@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051681">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051681"/>
@@ -10,27 +18,26 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-06-29</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Création (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-06-29</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">État sommaire des fonds d'archives privées. Séries AP et AB XIX, Paris, Centre historique des Archives nationales, 2004, p. 635-636 (notice 353 AP).</rico:source>
-      <rico:source xml:lang="fr">Notice d'autorité BnF n° : FRBNF11994549.</rico:source>
-      <rico:source xml:lang="fr">Article Auguste de La Force de Wikipédia en français (http://fr.wikipedia.org/wiki/Auguste_de_La_Force).</rico:source>
-      <rico:source xml:lang="fr">Site Internet de l'Académie française : http://www.academie-francaise.fr/</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000116087786/about"/>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">État sommaire des fonds d'archives privées. Séries AP et AB XIX, Paris, Centre historique des Archives nationales, 2004, p. 635-636 (notice 353 AP).</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice d'autorité BnF n° : FRBNF11994549.</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Article Auguste de La Force de Wikipédia en français (http://fr.wikipedia.org/wiki/Auguste_de_La_Force).</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Site Internet de l'Académie française : http://www.academie-francaise.fr/</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000116087786"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Auguste_de_La_Force"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051681">
-            <rico:isInstantiationOf rdf:resource="record/051681"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051681"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051681</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051681"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051681">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -48,17 +55,19 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1878-08-18</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1961-10-03</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051681-d699msj3i51--hevk1gms21cg">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051681"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051681-d699msj3i51--hevk1gms21cg"/>
+            <rico:relationHasTarget rdf:resource="agent/051681"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d189910e101">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051681-d699msj3i51--hevk1gms21cg"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d189910e101"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Descendant du maréchal de La Force, compagnon d’armes d’Henri IV, fils du marquis de Caumont, secrétaire d’ambassade, Auguste Nompar de Caumont (1878-1961), aussi appelé Auguste-Armand de La Force, ou le duc de La Force, ou La Force, devient à sa naissance le 12e duc de La Force. Il fait ses études d'abord à domicile, avec un précepteur, puis à partir de 1892 à l'externat fondé par les Jésuites rue de Madrid à Paris. Il est ensuite élève de l’École libre des sciences politiques, où il suit les cours d’Albert Sorel et d’Albert Vandal, qui lui donnent la vocation de l’Histoire.</html:p>
@@ -69,10 +78,13 @@
       </rico:history>
       <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Auguste_de_La_Force"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb11994549d#about"/>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/051681-051682"/><rico:hasFamilyAssociationWith rdf:resource="agent/051682"/>
-      <rico:personIsTargetOfMembershipRelation rdf:resource="membershipRelation/050505-051681"/><rico:isOrWasMemberOf rdf:resource="agent/050505"/>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/051680-051681"/><rico:hasFamilyAssociationWith rdf:resource="agent/051680"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/004887-051681"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-004887"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/051681-051682"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/051682"/>
+      <rico:thingIsTargetOfRelation rdf:resource="membershipRelation/050505-051681"/>
+      <rico:isOrWasMemberOf rdf:resource="agent/050505"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/051680-051681"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/051680"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/004887-051681"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-004887"/>
    </rico:Agent>
 </rdf:RDF>

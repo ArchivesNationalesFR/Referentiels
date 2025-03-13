@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052919">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052919"/>
@@ -11,33 +19,31 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-03-09</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Véronique AUBER)</rico:name>
+            <rico:name xml:lang="fr">Création (par Véronique AUBER)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-03-15</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-03-09</rico:date>
-            <rico:descriptiveNote xml:lang="fr">09/03/2022, J. Gaillard : Ajout d'index lieux</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">09/03/2022, J. Gaillard : Ajout d'index lieux</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Notice BNF n° :FRBNF12058424</rico:source>
-      <rico:source xml:lang="fr">Notice wikipedia : https://fr.wikipedia.org/wiki/Anne-Marie-Louise_d%27Orl%C3%A9ans</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000109170813/about"/>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice BNF n° :FRBNF12058424</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice wikipedia : https://fr.wikipedia.org/wiki/Anne-Marie-Louise_d%27Orl%C3%A9ans</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000109170813"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Anne-Marie-Louise_d%27Orl%C3%A9ans"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052919">
-            <rico:isInstantiationOf rdf:resource="record/052919"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052919"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052919</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052919"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052919">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -90,12 +96,12 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1627-05-29</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1693-04-05</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052919"/>
-            <rico:placeRelationHasSource rdf:resource="place/Titres%20et%20possessions"/>
+            <rico:relationHasTarget rdf:resource="agent/052919"/>
+            <rico:relationHasSource rdf:resource="place/Titres%20et%20possessions"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Titres%20et%20possessions"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Titres%20et%20possessions"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
@@ -106,12 +112,13 @@
             <html:p>Ses espérances matrimoniales rebondissent en revanche de manière inattendue en 1669, lorsqu’elle tombe amoureuse d’un gentilhomme d’une naissance bien inférieure à la sienne : Antoine-Nompar de Caumont, marquis de Puyguilhem, comte de Lauzun. En 1670, elle obtient, à force de supplications, l’accord du roi pour ce mariage très inégal. Les courtisans et Marguerite de Lorraine obtiennent toutefois<html:i>in extremis</html:i>que celui-ci ne se fasse pas, provoquant la rage des futurs époux. Lauzun insulte alors publiquement Madame de Montespan,dont il sait qu’elle a intrigué contre les noces, ce qui lui vaut dix ans d’emprisonnement à Pignerol. Pour l’en faire sortir, Mademoiselle doit se résoudre à céder sa principauté de Dombes, son comté d’Eu et une partie de ses biens au comte du Maine, fils légitimé de Madame de Montespan. On ne sait exactement si Lauzun épousa réellement la princesse à son retour à la Cour mais celle-ci le comble ouvertement de largesses : le duché de Saint-Fargeau, la baronnie de Thiers et dix mille livres de rentes. Mais l’ingratitude et le mépris qu’il affiche envers elle lui font enfin comprendre qu’il ne l’a jamais aimée. Elle le quitte définitivement en 1684 et consacre ses dernières années à Dieu. Elle meurt le 5 avril 1693.</html:p>
          </html:div>
       </rico:history>
-      <rico:personIsTargetOfMembershipRelation rdf:resource="membershipRelation/051254-052919"/><rico:isOrWasMemberOf rdf:resource="agent/051254"/>
+      <rico:thingIsTargetOfRelation rdf:resource="membershipRelation/051254-052919"/>
+      <rico:isOrWasMemberOf rdf:resource="agent/051254"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb12058424h#about"/>
       <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Anne-Marie-Louise_d%27Orl%C3%A9ans"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/050193-052919"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-050193"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/001870-052919"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-001870"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/050193-052919"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-050193"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/001870-052919"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-001870"/>
    </rico:Agent>
 </rdf:RDF>

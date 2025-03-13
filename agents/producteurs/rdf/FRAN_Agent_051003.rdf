@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051003">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051003"/>
@@ -10,21 +18,20 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-04-28</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Création (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-04-28</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051003">
-            <rico:isInstantiationOf rdf:resource="record/051003"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051003"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051003</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051003"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051003">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Family"/>
@@ -51,10 +58,13 @@
             <html:p>Le château de Lantheuil (Calvados) est le berceau de la famille Turgot ; c'était la résidence de la branche aînée, les Turgot de Saint-Clair ; elle ne revint que plus tard aux marquis Turgot.</html:p>
          </html:div>
       </rico:history>
-      <rico:groupIsSourceOfMembershipRelation rdf:resource="membershipRelation/051003-052178"/><rico:hasOrHadMember rdf:resource="agent/052178"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051003-052527-17430707-18271210"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/052527"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051003-052528-18110320-18860710"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/052528"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054019-051003"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-054019"/>
+      <rico:thingIsSourceOfRelation rdf:resource="membershipRelation/051003-052178"/>
+      <rico:hasOrHadMember rdf:resource="agent/052178"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/051003-052527-17430707-18271210"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/052527"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/051003-052528-18110320-18860710"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/052528"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054019-051003"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054019"/>
    </rico:Agent>
 </rdf:RDF>

@@ -4,7 +4,7 @@
    <control>
       <recordId>FRAN_NP_011148</recordId>
       <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE00916</otherRecordId>
-      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceStatus>revised</maintenanceStatus>
       <maintenanceAgency>
          <agencyName>Archives nationales de France</agencyName>
       </maintenanceAgency>
@@ -25,12 +25,38 @@
             <agentType>machine</agentType>
             <agent>Migration ETANOT</agent>
          </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2024-11-06</eventDateTime>
+            <agentType>human</agentType>
+            <agent>François CHANCEREL</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2024-11-08</eventDateTime>
+            <agentType>human</agentType>
+            <agent>François CHANCEREL</agent>
+            <eventDescription>modification de lien</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2025-01-14</eventDateTime>
+            <agentType>human</agentType>
+            <agent>François CHANCEREL</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2025-01-14</eventDateTime>
+            <agentType>human</agentType>
+            <agent>François CHANCEREL</agent>
+            <eventDescription>14/01/2025, F. Chancerel : modification de lien. J. Gaillard : Création lien familial avec NP 11146</eventDescription>
+         </maintenanceEvent>
       </maintenanceHistory>
    </control>
    <cpfDescription>
       <identity>
          <entityType>person</entityType>
-         <nameEntry scriptCode="Latn" localType="autorisée" xml:lang="fre">
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
             <part>Merlin, Louis-François</part>
          </nameEntry>
       </identity>
@@ -47,23 +73,31 @@
          <places>
             <place>
                <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">Siège de l'étude</placeEntry>
                <placeEntry localType="arrondissement_actuel"
                            vocabularySource="d3nyv5m81r-3b9vn0frjmzw">07e arrondissement</placeEntry>
-               <placeEntry localType="voie" vocabularySource="d3nz8z5c64-1bao0y641ypyo">bourgogne (rue de)</placeEntry>
-               <placeEntry localType="nomLieu">23 rue de Bourgogne</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nz8z5c64-1bao0y641ypyo">Bourgogne (rue de)</placeEntry>
+               <descriptiveNote>
+                  <p>23 rue de Bourgogne</p>
+               </descriptiveNote>
             </place>
          </places>
          <functions>
             <function>
-               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à Paris</term>
                <dateRange>
                   <fromDate standardDate="1894-07-25">25 juillet 1894</fromDate>
                   <toDate standardDate="1903-06-11">11 juin 1903</toDate>
                </dateRange>
             </function>
          </functions>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d3nyu9x713-9kcjiv44l4wh">notaire</term>
+            </occupation>
+         </occupations>
          <biogHist>
-            <p>fils et successeur de François-Ernest Merlin</p>
+            <p>Fils et successeur de François-Ernest Merlin.</p>
          </biogHist>
       </description>
       <relations>
@@ -77,14 +111,25 @@
                <toDate standardDate="1903-06-11">11 juin 1903</toDate>
             </dateRange>
          </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_011146"
+                      xlink:type="simple">
+            <relationEntry>Merlin, François-Ernest</relationEntry>
+            <descriptiveNote>
+               <p>Louis-François est le fils de François-Ernest Merlin</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="Information">
+            <relationEntry localType="archival"/>
+            <descriptiveNote>
+               <p>les minutes de ce notaire sont en attente / cours de classement ; ses répertoires ont été déclarés manquants par l'étude (constat en janvier 2024)</p>
+            </descriptiveNote>
+         </resourceRelation>
          <resourceRelation resourceRelationType="other">
             <relationEntry localType="archival">ET/XLIV/1372, cession d'office entre François-Ernest Merlin et Louis-François Merlin</relationEntry>
-         </resourceRelation>
-         <resourceRelation resourceRelationType="creatorOf">
-            <relationEntry localType="archival">minutes</relationEntry>
-            <descriptiveNote>
-               <p>les minutes de ce notaire sont conservées à l'étude</p>
-            </descriptiveNote>
          </resourceRelation>
       </relations>
    </cpfDescription>

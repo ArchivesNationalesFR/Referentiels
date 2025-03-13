@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051359">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051359"/>
@@ -10,31 +18,30 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-08-16</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par null MISSION.REFERENTIELS)</rico:name>
+            <rico:name xml:lang="fr">Création (par null MISSION.REFERENTIELS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-08-16</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Elsa Camus, 11 août 2016 : notice rédigée par Evelyne Van den Neste, Mission Présidence de la République</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Elsa Camus, 11 août 2016 : notice rédigée par Evelyne Van den Neste, Mission Présidence de la République</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb133373754</html:p>
-      </rico:source>
-      <rico:hasSource rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb133373754"/>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb133373754"/>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/Laurence_Boone</html:p>
-      </rico:source>
-      <rico:hasSource rdf:resource="https://fr.wikipedia.org/wiki/Laurence_Boone"/>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000039153806/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="https://fr.wikipedia.org/wiki/Laurence_Boone"/>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000039153806"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051359">
-            <rico:isInstantiationOf rdf:resource="record/051359"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051359"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051359</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051359"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051359">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -51,36 +58,40 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-05-15</rico:birthDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051359-d3nyu9s4o0--xm3ygup3bbb1">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051359"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051359-d3nyu9s4o0--xm3ygup3bbb1"/>
+            <rico:relationHasTarget rdf:resource="agent/051359"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d183831e90">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051359-d3nyu9s4o0--xm3ygup3bbb1"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3nyu9s4o0--xm3ygup3bbb1"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">analyste économique et financier</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3nyu9s4o0--xm3ygup3bbb1"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3nyu9s4o0--xm3ygup3bbb1"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d183831e90"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051359-d-11hasr639--1mmaoyj7hl5zc-20140701-20160331">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051359"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051359-d-11hasr639--1mmaoyj7hl5zc-20140701-20160331"/>
+            <rico:relationHasTarget rdf:resource="agent/051359"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d183831e101">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051359-d-11hasr639--1mmaoyj7hl5zc-20140701-20160331"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-11hasr639--1mmaoyj7hl5zc"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-07-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-03-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">conseiller économie</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-11hasr639--1mmaoyj7hl5zc"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-11hasr639--1mmaoyj7hl5zc"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d183831e101"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>
@@ -92,7 +103,6 @@
                <html:li>Ancien élève de l’Ecole nationale d’administration (promotion Léopold Sédar Senghor) ;</html:li>
                <html:li>Titulaire d’un diplôme d’études approfondies d’analyse quantitative et de modélisation PhD d’économétrie appliquée de la London Business School</html:li>
             </html:ul>
-            <html:p/>
             <html:p>
                <html:b>Carrière</html:b>
             </html:p>
@@ -107,6 +117,7 @@
             </html:ul>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000165-051359-20020101-20041231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000165"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000165-051359-20020101-20041231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000165"/>
    </rico:Agent>
 </rdf:RDF>

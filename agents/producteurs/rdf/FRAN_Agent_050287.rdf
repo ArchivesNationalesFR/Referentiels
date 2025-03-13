@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050287">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050287"/>
@@ -10,34 +18,33 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-06-22</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Vanessa ASPART)</rico:name>
+            <rico:name xml:lang="fr">Création (par Vanessa ASPART)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-06-22</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Elsa Camus, 20 juin 2016 : modification forme autorisée du nom, ajout ISNI, ajout activités, modification historique (verbes), modification sources, ajout lien d'association</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Elsa Camus, 20 juin 2016 : modification forme autorisée du nom, ajout ISNI, ajout activités, modification historique (verbes), modification sources, ajout lien d'association</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Archives nationales, Fonds Georges Bourgin (XIXe-XXe siècles), 651 AP.</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb12118791t</html:p>
-      </rico:source>
-      <rico:hasSource rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb12118791t"/>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb12118791t"/>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/Georges_Bourgin</html:p>
-      </rico:source>
-      <rico:hasSource rdf:resource="https://fr.wikipedia.org/wiki/Georges_Bourgin"/>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/000000012099934X/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="https://fr.wikipedia.org/wiki/Georges_Bourgin"/>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/000000012099934X"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050287">
-            <rico:isInstantiationOf rdf:resource="record/050287"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050287"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050287</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050287"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050287">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -55,43 +62,49 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1879-01-01</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1958-12-31</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050287-d699msk5oth-xqvujelh8c39">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050287"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050287-d699msk5oth-xqvujelh8c39"/>
+            <rico:relationHasTarget rdf:resource="agent/050287"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d168965e95">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050287-d699msk5oth-xqvujelh8c39"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msk5oth-xqvujelh8c39"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk5oth-xqvujelh8c39"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk5oth-xqvujelh8c39"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d168965e95"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050287-d699msirr1g-3naumnfaswc-19040101-19441231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050287"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050287-d699msirr1g-3naumnfaswc-19040101-19441231"/>
+            <rico:relationHasTarget rdf:resource="agent/050287"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d168965e101">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050287-d699msirr1g-3naumnfaswc-19040101-19441231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msirr1g-3naumnfaswc"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1904-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1944-12-31</rico:endDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msirr1g-3naumnfaswc"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msirr1g-3naumnfaswc"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d168965e101"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050287-d3m0bl6u27z--1eg4fqfkrzwxv-19040101-19441231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050287"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050287-d3m0bl6u27z--1eg4fqfkrzwxv-19040101-19441231"/>
+            <rico:relationHasTarget rdf:resource="agent/050287"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d168965e116">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050287-d3m0bl6u27z--1eg4fqfkrzwxv-19040101-19441231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3m0bl6u27z--1eg4fqfkrzwxv"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1904-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1944-12-31</rico:endDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl6u27z--1eg4fqfkrzwxv"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl6u27z--1eg4fqfkrzwxv"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d168965e116"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Georges Bourgin (1879-1958), après des études à l’École nationale des chartes (promotion 1903), à l’École pratique des hautes études et à l’École française de Rome (1903-1904), est conservateur aux Archives nationales et chargé de cours à l’École pratique des hautes études (histoire économique et sociale) et à la Sorbonne (accès aux sources d’archives).</html:p>
@@ -101,9 +114,11 @@
             <html:p>On lui doit de nombreux ouvrages, d’innombrables articles et des traductions en français d’œuvres historiques et littéraires italiennes.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009357-050287-19481218-19581231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/009357"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009963-050287-19000101-19031231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/009963"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/027992-050287"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-027992"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/005411-050287-19481218-19581231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/005411"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009963-050287-19000101-19031231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/009963"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/027992-050287"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-027992"/>
    </rico:Agent>
 </rdf:RDF>

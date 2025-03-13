@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050990">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050990"/>
@@ -10,29 +18,28 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-03-30</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Arnaud ROMONT)</rico:name>
+            <rico:name xml:lang="fr">Création (par Arnaud ROMONT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-03-30</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 30 mars 2015 : ajouté indexation activités et référence au reg. paroissial</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 30 mars 2015 : ajouté indexation activités et référence au reg. paroissial</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice d'autorité FRBNF12108228 (la date de naissance qui y est donnée est erronée)</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Registre paroissial de Beausset (Var) (baptêmes, avril 1746) : http://www.archives.var.fr/ark:/73531/s00512dce3772468/512dce378a508</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000083429224/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000083429224"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050990">
-            <rico:isInstantiationOf rdf:resource="record/050990"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050990"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050990</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050990"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050990">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -57,28 +64,32 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1746-04-01</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1807-08-25</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050990-d699msj742x--12cnnohd8i9wj">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050990"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050990-d699msj742x--12cnnohd8i9wj"/>
+            <rico:relationHasTarget rdf:resource="agent/050990"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d178370e103">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050990-d699msj742x--12cnnohd8i9wj"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj742x--12cnnohd8i9wj"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj742x--12cnnohd8i9wj"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj742x--12cnnohd8i9wj"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d178370e103"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050990-d699msjnw86-64seh0fmw8hj">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050990"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050990-d699msjnw86-64seh0fmw8hj"/>
+            <rico:relationHasTarget rdf:resource="agent/050990"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d178370e109">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050990-d699msjnw86-64seh0fmw8hj"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d178370e109"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Jean-Étienne-Marie Portalis, né le 1er avril 1746 à Beausset (Var), fait des études au Collège de l'Oratoire de Marseille, puis dès 1765, à Aix-en-Provence, où il étudie le droit.</html:p>
@@ -92,13 +103,19 @@
             <html:p>Il meurt le 25 août 1807, à l'âge de 61 ans après une courte maladie.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050990-051277-18040710-18070825"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/051277"/>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/050990-051962"/><rico:hasFamilyAssociationWith rdf:resource="agent/051962"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050191-050990-17990101-18041231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050191"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000080-050990-18000101-18070825"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000080"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/053813-050990"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-053813"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/003915-050990"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-003915"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050990-051277-18040710-18070825"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/051277"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/050990-051962"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/051962"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050191-050990-17990101-18041231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050191"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000080-050990-18000901-18070825"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000080"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000080-050990-18000101-18070825"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000080"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/053813-050990"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-053813"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/003915-050990"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-003915"/>
    </rico:Agent>
 </rdf:RDF>

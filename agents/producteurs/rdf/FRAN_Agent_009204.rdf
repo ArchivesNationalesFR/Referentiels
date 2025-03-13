@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/009204">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/009204"/>
@@ -11,30 +19,27 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-10</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Dérivation
-                (Import_SIA)</rico:name>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Maïwenn BOURDIC)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Maïwenn BOURDIC)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Violaine CHALLEAT-FONCK)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Violaine CHALLEAT-FONCK)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-10</rico:date>
-            <rico:descriptiveNote xml:lang="fr">10/01/2022, J. Gaillard : modification relation hiérarchique ascendante et relations d'association, ajout fonction, index lieux, modification forme autorisée du nom</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">10/01/2022, J. Gaillard : modification relation hiérarchique ascendante et relations d'association, ajout fonction, index lieux, modification forme autorisée du nom</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Répertoire numérique du versement 20030426, "historique du producteur" (https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/ FRAN_IR_010391)</rico:source>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Répertoire numérique du versement 20030426, "historique du producteur" (https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/ FRAN_IR_010391)</rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/009204">
-            <rico:isInstantiationOf rdf:resource="record/009204"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/009204"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_009204</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
@@ -42,11 +47,13 @@
             <rico:identifier>9822/02</rico:identifier>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/009204">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:isOrWasDescribedBy rdf:resource="record/009204"/>
+      <rico:identifier>SIREN 332 589 670</rico:identifier>
+      <rico:identifier>SIRET 332 589 670 00022</rico:identifier>
       <rdfs:label xml:lang="fr">Fondation Jean Moulin (1952-....)</rdfs:label>
       <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/009204-Fondation%20Jean%20Moulin%20%281952-....%29">
@@ -72,65 +79,63 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-01-01</rico:beginningDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/009204"/>
-            <rico:placeRelationHasSource rdf:resource="place/Font-Romeu"/>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:relationHasTarget rdf:resource="agent/009204"/>
+            <rico:relationHasSource rdf:resource="place/Font-Romeu"/>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Centre de vacances</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Font-Romeu"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Font-Romeu"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/009204"/>
-            <rico:placeRelationHasSource rdf:resource="place/Saint-Denis-d%27Ol%C3%A9ron"/>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:relationHasTarget rdf:resource="agent/009204"/>
+            <rico:relationHasSource rdf:resource="place/Saint-Denis-d%27Ol%C3%A9ron"/>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Centre de vacances</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Saint-Denis-d%27Ol%C3%A9ron"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Saint-Denis-d%27Ol%C3%A9ron"/>
       <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5blonarq5-4915ysawyv52"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/009204-d3nyug3e0g-1xzlvri8dg416">
-            <rico:performanceRelationHasTarget rdf:resource="agent/009204"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/009204-d3nyug3e0g-1xzlvri8dg416"/>
+            <rico:relationHasTarget rdf:resource="agent/009204"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d93269e169">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/009204-d3nyug3e0g-1xzlvri8dg416"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyug3e0g-1xzlvri8dg416"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyug3e0g-1xzlvri8dg416"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d93269e169"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/009204"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/009204"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d93269e178">
                   <rico:title>Statuts de la fondation</rico:title>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Statuts de la fondation</rico:title>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d93269e178"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/009204"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/009204"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d93269e183">
                   <rico:title>Arrêté du 14 janvier 2019 confiant à des fondations et à une association la gestion de prestations d'action sociale pour les agents du ministère de l'intérieur</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000038021273"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 14 janvier 2019 confiant à des fondations et à une association la gestion de prestations d'action sociale pour les agents du ministère de l'intérieur</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000038021273"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d93269e183"/>
+      <rico:generalDescription rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Organisation interne ou généalogie</h4>
             <html:p>La fondation, bien que de droit privé, est rattachée à la sous-direction de l'action sociale jusqu'en 1993.</html:p>
@@ -141,7 +146,7 @@
                <html:li>Michel Fuzeau, préfet (en 2019)</html:li>
             </html:ul>
          </html:div>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Contexte général</h4>
@@ -160,7 +165,6 @@
             <html:p>L'autre organe décisionnel de la fondation est le bureau. Celui-ci instruit toutes les affaires soumises au conseil d'administration et pourvoit à l'exécution des délibérations. Il comprend sept membres issus du conseil : trois membres de l'administration dont le président et quatre membres représentant les personnels. Ses membres, hormis le président et le vice-président de droit, sont élus pour trois ans. Ils sont rééligibles. De plus, il se réunit avant chaque réunion du conseil d'administration.</html:p>
             <html:p>Le conseil d'administration et le bureau constituent des groupes de travail chargés d'examiner les questions de leur compétence. Le règlement intérieur détermine les conditions de constitution et de fonctionnement de ces groupes. La formation des groupes de travail est déjà prévue en 1993 lors du changement des statuts. Ils peuvent être constitués pour une durée déterminée sur des thèmes d'études précis. Le conseil d'administration ou le bureau choisissent les membres des groupes de travail parmi les représentants des partenaires sociaux, les représentants de l'administration siégeant au conseil, ou toute personne, tout organisme en raison de leur connaissance avérée du dossier confié au groupe ou ayant intérêt à l'action entreprise par la fondation. Chaque groupe de travail est tenu de présenter ses conclusions au conseil dans les délais impartis par ce dernier. Le conseil et le bureau restent souverains quant aux décisions à prendre, suite aux conclusions de ces groupes de travail qui n'ont qu'un caractère consultatif.</html:p>
             <html:p>La fondation Jean Moulin est dirigée au quotidien par le président et le directeur. Le président, haut fonctionnaire désigné par arrêté du ministre de l'Intérieur, est nommé pour une durée de trois ans. Il représente la fondation dans les actes de la vie civile, ordonnance les dépenses et convoque le conseil d'administration et le bureau dont il arrête l'ordre du jour. Le directeur de la fondation est nommé par le président, après appel à candidatures auprès des agents du ministère et sur avis du bureau et du conseil d'administration. Le directeur, par délégation du président, prépare et exécute les délibérations du conseil d'administration et du bureau, auxquels il participe. Il est assisté d'un adjoint. Cette gestion s'effectue à partir du siège de la fondation situé à Paris (XVe arrondissement) au n° 7 de la rue Nélaton où se trouvent l'administration des moyens (gestion du personnel et de la formation professionnelle, du patrimoine et des finances), les loisirs et la gestion des Prêts.</html:p>
-            <html:p/>
             <html:p>
                <html:b>Activités de la fondation</html:b>
             </html:p>
@@ -173,18 +177,15 @@
          </html:div>
       </rico:history>
       <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q106804423"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009204-052324-19520101-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/052324"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/010402-009204"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-010402"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/010391-009204"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-010391"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/010523-009204"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-010523"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/023553-009204"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-023553"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/010389-009204"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-010389"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/023707-009204"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-023707"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009204-052324-19520101-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/052324"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/010402-009204"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-010402"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/010391-009204"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-010391"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/010523-009204"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-010523"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/010389-009204"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-010389"/>
    </rico:Agent>
 </rdf:RDF>

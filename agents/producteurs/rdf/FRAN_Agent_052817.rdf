@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052817">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052817"/>
@@ -11,29 +19,27 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-02-18</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Pascal RIVIALE)</rico:name>
+            <rico:name xml:lang="fr">Création (par Pascal RIVIALE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-12-02</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Geneviève PROFIT)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Geneviève PROFIT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-02-18</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 18/02/2021 : modification forme autorisée du nom, ajout statut juridique, pas d'ISNI, d'identifiant BnF ou notice wikipédia, historique au temps présent</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 18/02/2021 : modification forme autorisée du nom, ajout statut juridique, pas d'ISNI, d'identifiant BnF ou notice wikipédia, historique au temps présent</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052817">
-            <rico:isInstantiationOf rdf:resource="record/052817"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052817"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052817</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052817"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052817">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -58,8 +64,9 @@
             <html:p>Le rôle de "l'agence d'architecture" du Palais du Trocadéro (en l'occurrence un architecte, un inspecteur et éventuellement quelques employés) est de suivre l'ensemble des travaux d'entretien et de réparation rendus nécessaires par l'exploitation de ce bâtiment au quotidien et sur le long terme : évaluation des travaux à entreprendre et de leur coût, choix et suivi des entrepreneurs, inspection des travaux puis du service fait. Plus globalement, l'agence est le maillon intermédiaire entre la Direction des bâtiments civils et palais nationaux et les services ou institutions exploitant l'édifice.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/051158-052817-18780101-19371231"/><rico:isOrWasSubordinateTo rdf:resource="agent/051158"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/059188-052817"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-059188"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/051158-052817-18780101-19371231"/>
+      <rico:wasSubordinateTo rdf:resource="agent/051158"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/059188-052817"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-059188"/>
    </rico:Agent>
 </rdf:RDF>

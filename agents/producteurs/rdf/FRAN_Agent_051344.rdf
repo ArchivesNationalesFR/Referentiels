@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051344">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051344"/>
@@ -10,24 +18,23 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-08-01</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Création (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-08-01</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">« Une famille : les Roquancourt », dans<html:i>Les Amis du patrimoine de Guingamp</html:i>, n°38, juin 2005, p. 5-30.</html:p>
-      </rico:source>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051344">
-            <rico:isInstantiationOf rdf:resource="record/051344"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051344"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051344</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051344"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051344">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Family"/>
@@ -95,7 +102,7 @@
             <html:p>Au début du XXe siècle s'ouvre une crise de succession dans la famille de Roquancourt. La branche aînée issue de Christophe François de Roquancourt s'éteint en 1915 avec le décès d'Athénaïse de Contre-Eglise, héritière du Roudourou et de Keravel. Le dernier descendant direct de la branche cadette issue de Laurent Guillaume, Élie Joseph de Roquancourt Keravel (1853-1892) meurt sans enfant et lègue ses biens à son neveu, Élie Chancerelle (1878-1914), fils de sa soeur Élisabeth de Roquancourt et d'Auguste Chancerelle. Élie Chancerelle est autorisé par décret du 14 juillet 1900 à relever le nom de sa mère. C'est l'origine du nom de famille « Chancerelle de Roquancourt-Keravel ». Capitaine d'infanterie au 115e RI, Élie meurt au champ d'honneur à Virton (Belgique) le 22 août 1914. Sa veuve, née Jeanne Guichard, réussit à racheter en 1917 le manoir de Keravel, qui fait désormais partie du patrimoine de la branche cadette Chancerelle de Roquancourt-Keravel.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/058119-051344"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-058119"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/058119-051344"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-058119"/>
    </rico:Agent>
 </rdf:RDF>

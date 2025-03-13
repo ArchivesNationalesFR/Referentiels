@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/001159">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/001159"/>
@@ -8,17 +16,35 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-09-30</rico:creationDate>
-      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-09-30</rico:lastModificationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-10-04</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Dérivation
-                (Import_SIA)</rico:name>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-09-30</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Emilie CHARRIER)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-28</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Alice DE BREMOND D'ARS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-10-04</rico:date>
+            <rico:generalDescription xml:lang="fr">03/10/2023, J. Gaillard : Correction forme autorisée du nom (police -&gt; Police) | Correction de coquilles | Ajout lien d'identité Wikipedia | Correction type liens IR</rico:generalDescription>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Defrance (Jean-Pierre), Archives contemporaines du Ministère de l'intérieur : état des versements d'archives effectués aux Archives nationales, 1995, Ministère de l'intérieur et de l'aménagement du territoire et Archives nationales, 476 p.</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Légifrance (https://www.legifrance.gouv.fr)</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Site Internet de la Police nationale (https://www.police-nationale.interieur.gouv.fr/Organisation/Direction-Centrale-de-la-Police-Aux-Frontieres)</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Article Wikipédia (https://fr.wikipedia.org/wiki/Direction_nationale_de_la_Police_aux_fronti%C3%A8res)</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q3029453"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Direction_nationale_de_la_Police_aux_fronti%C3%A8res"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/001159">
-            <rico:isInstantiationOf rdf:resource="record/001159"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/001159"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_001159</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
@@ -26,16 +52,18 @@
             <rico:identifier>2214/A</rico:identifier>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/001159">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:isOrWasDescribedBy rdf:resource="record/001159"/>
-      <rdfs:label xml:lang="fr">Direction centrale de la police aux frontières</rdfs:label>
+      <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q3029453"/>
+      <rico:identifier>SIREN 120015177</rico:identifier>
+      <rdfs:label xml:lang="fr">France. Ministère de l'Intérieur. Direction générale de la Police nationale. Direction centrale de la police aux frontières (1944-....)</rdfs:label>
       <rico:hasOrHadAgentName>
-         <rico:AgentName rdf:about="agentName/001159-Direction%20centrale%20de%20la%20police%20aux%20fronti%C3%A8res">
-            <rdfs:label xml:lang="fr">Direction centrale de la police aux frontières</rdfs:label>
-            <rico:textualValue xml:lang="fr">Direction centrale de la police aux frontières</rico:textualValue>
+         <rico:AgentName rdf:about="agentName/001159-France.%20Minist%C3%A8re%20de%20l%27Int%C3%A9rieur.%20Direction%20g%C3%A9n%C3%A9rale%20de%20la%20Police%20nationale.%20Direction%20centrale%20de%20la%20police%20aux%20fronti%C3%A8res%20%281944-....%29">
+            <rdfs:label xml:lang="fr">France. Ministère de l'Intérieur. Direction générale de la Police nationale. Direction centrale de la police aux frontières (1944-....)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de l'Intérieur. Direction générale de la Police nationale. Direction centrale de la police aux frontières (1944-....)</rico:textualValue>
             <rico:isOrWasAgentNameOf rdf:resource="agent/001159"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
@@ -50,76 +78,437 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:hasOrHadAgentName>
-         <rico:AgentName rdf:about="agentName/001159-Direction%20centrale%20du%20contr%C3%B4le%20de%20l%27immigration%20et%20de%20la%20lutte%20contre%20l%27emploi%20des%20clandestins%20%28DICCILEC%29-19940101-19991231">
-            <rdfs:label xml:lang="fr">Direction centrale du contrôle de l'immigration et de la lutte contre l'emploi des clandestins (DICCILEC)</rdfs:label>
-            <rico:textualValue xml:lang="fr">Direction centrale du contrôle de l'immigration et de la lutte contre l'emploi des clandestins (DICCILEC)</rico:textualValue>
+         <rico:AgentName rdf:about="agentName/001159-France.%20Minist%C3%A8re%20de%20l%27Int%C3%A9rieur.%20Direction%20g%C3%A9n%C3%A9rale%20de%20la%20police%20nationale.%20Direction%20centrale%20du%20contr%C3%B4le%20de%20l%27immigration%20et%20de%20la%20lutte%20contre%20l%27emploi%20des%20clandestins%20%28DICCILEC%29-19940101-19991231">
+            <rdfs:label xml:lang="fr">France. Ministère de l'Intérieur. Direction générale de la police nationale. Direction centrale du contrôle de l'immigration et de la lutte contre l'emploi des clandestins (DICCILEC)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de l'Intérieur. Direction générale de la police nationale. Direction centrale du contrôle de l'immigration et de la lutte contre l'emploi des clandestins (DICCILEC)</rico:textualValue>
             <rico:isOrWasAgentNameOf rdf:resource="agent/001159"/>
             <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1994-01-01</rico:usedFromDate>
             <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-12-31</rico:usedToDate>
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:hasOrHadAgentName>
-         <rico:AgentName rdf:about="agentName/001159-Service%20central%20de%20la%20police%20de%20l%27air%20et%20des%20fronti%C3%A8res-19690101-19941231">
-            <rdfs:label xml:lang="fr">Service central de la police de l'air et des frontières</rdfs:label>
-            <rico:textualValue xml:lang="fr">Service central de la police de l'air et des frontières</rico:textualValue>
-            <rico:isOrWasAgentNameOf rdf:resource="agent/001159"/>
-            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-01-01</rico:usedFromDate>
-            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1994-12-31</rico:usedToDate>
-         </rico:AgentName>
-      </rico:hasOrHadAgentName>
-      <rico:hasOrHadAgentName>
-         <rico:AgentName rdf:about="agentName/001159-Service%20central%20de%20la%20police%20de%20l%27air-19470101-19691231">
-            <rdfs:label xml:lang="fr">Service central de la police de l'air</rdfs:label>
-            <rico:textualValue xml:lang="fr">Service central de la police de l'air</rico:textualValue>
+         <rico:AgentName rdf:about="agentName/001159-France.%20Minist%C3%A8re%20de%20l%27Int%C3%A9rieur.%20Direction%20g%C3%A9n%C3%A9rale%20de%20la%20police%20nationale.%20Direction%20centrale%20des%20Renseignements%20g%C3%A9n%C3%A9raux.%20Service%20central%20de%20la%20police%20de%20l%27air-19470101-19691231">
+            <rdfs:label xml:lang="fr">France. Ministère de l'Intérieur. Direction générale de la police nationale. Direction centrale des Renseignements généraux. Service central de la police de l'air</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de l'Intérieur. Direction générale de la police nationale. Direction centrale des Renseignements généraux. Service central de la police de l'air</rico:textualValue>
             <rico:isOrWasAgentNameOf rdf:resource="agent/001159"/>
             <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1947-01-01</rico:usedFromDate>
             <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-12-31</rico:usedToDate>
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:hasOrHadAgentName>
-         <rico:AgentName rdf:about="agentName/001159-Service%20de%20police%20a%C3%A9rienne-19290101-19471231">
-            <rdfs:label xml:lang="fr">Service de police aérienne</rdfs:label>
-            <rico:textualValue xml:lang="fr">Service de police aérienne</rico:textualValue>
+         <rico:AgentName rdf:about="agentName/001159-France.%20Minist%C3%A8re%20de%20l%27Int%C3%A9rieur.%20Direction%20g%C3%A9n%C3%A9rale%20de%20la%20police%20nationale.%20Service%20central%20de%20la%20police%20de%20l%27air%20et%20des%20fronti%C3%A8res-19690101-19941231">
+            <rdfs:label xml:lang="fr">France. Ministère de l'Intérieur. Direction générale de la police nationale. Service central de la police de l'air et des frontières</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de l'Intérieur. Direction générale de la police nationale. Service central de la police de l'air et des frontières</rico:textualValue>
             <rico:isOrWasAgentNameOf rdf:resource="agent/001159"/>
-            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1929-01-01</rico:usedFromDate>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1994-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/001159-France.%20Minist%C3%A8re%20de%20l%27Int%C3%A9rieur.%20Sous-direction%20de%20la%20Police%20de%20l%27air%20et%20des%20fronti%C3%A8res-19440101-19471231">
+            <rdfs:label xml:lang="fr">France. Ministère de l'Intérieur. Sous-direction de la Police de l'air et des frontières</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de l'Intérieur. Sous-direction de la Police de l'air et des frontières</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/001159"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1944-01-01</rico:usedFromDate>
             <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1947-12-31</rico:usedToDate>
          </rico:AgentName>
       </rico:hasOrHadAgentName>
-      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1929-01-01</rico:beginningDate>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1944-01-01</rico:beginningDate>
       <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5bloo2j25-1c245l4bneo85"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/001159-001134-19940101-*"/><rico:hasOrHadSubordinate rdf:resource="agent/001134"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/001159-001140-20060101-*"/><rico:hasOrHadSubordinate rdf:resource="agent/001140"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/001159-001144-20110101-*"/><rico:hasOrHadSubordinate rdf:resource="agent/001144"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/001159-001145-20040101-*"/><rico:hasOrHadSubordinate rdf:resource="agent/001145"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/001159-001149-20060101-*"/><rico:hasOrHadSubordinate rdf:resource="agent/001149"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/001159-001158-19910101-19941231"/><rico:hasOrHadSubordinate rdf:resource="agent/001158"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/001159-001637-19920101-19991231"/><rico:hasOrHadSubordinate rdf:resource="agent/001637"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/001159-001154-19940101-*"/><rico:hasOrHadSubordinate rdf:resource="agent/001154"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/001159-001638-19920101-19991231"/><rico:hasOrHadSubordinate rdf:resource="agent/001638"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/001159-001639-19940101-19991231"/><rico:hasOrHadSubordinate rdf:resource="agent/001639"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/001159-001653-19990101-20041231"/><rico:hasOrHadSubordinate rdf:resource="agent/001653"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/001159-001654-19990101-20061231"/><rico:hasOrHadSubordinate rdf:resource="agent/001654"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/001159-001655-19990101-20041231"/><rico:hasOrHadSubordinate rdf:resource="agent/001655"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/001159-001664-20040101-20061231"/><rico:hasOrHadSubordinate rdf:resource="agent/001664"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/001159-001668-20110101-*"/><rico:hasOrHadSubordinate rdf:resource="agent/001668"/>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/001398-001159-19930831-*"/><rico:isOrWasSubordinateTo rdf:resource="agent/001398"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/008034-001159"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-008034"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057032-001159"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-057032"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057033-001159"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-057033"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057035-001159"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-057035"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/028731-001159"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-028731"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/058756-001159"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-058756"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/058759-001159"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-058759"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/058757-001159"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-058757"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/058761-001159"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-058761"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/001159-d3nyuh22j7-1un996fsc6m08">
+            <rico:relationHasTarget rdf:resource="agent/001159"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d18931e221">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/001159-d3nyuh22j7-1un996fsc6m08"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuh22j7-1un996fsc6m08"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d18931e221"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/001159-d5bhvim4ls-1aiyuy0zts9x8">
+            <rico:relationHasTarget rdf:resource="agent/001159"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d18931e227">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/001159-d5bhvim4ls-1aiyuy0zts9x8"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvim4ls-1aiyuy0zts9x8"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d18931e227"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/001159"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d18931e236">
+                  <rico:title>Ordonnance du 16 novembre 1944 relative à l'organisation du ministère de l'Intérieur.</rico:title>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d18931e236"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/001159"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d18931e241">
+                  <rico:title>Arrêté du 10 avril 1947 relatif à l'organisation de la police de l'air et des frontières </rico:title>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d18931e241"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/001159"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d18931e246">
+                  <rico:title>Arrêté du 19 décembre 1952 relatif à l'organisation de la police de l'air et des frontières </rico:title>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d18931e246"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/001159"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d18931e251">
+                  <rico:title>Arrêté du 2 avril 1953 relatif à l'organisation de la police de l'air et des frontières </rico:title>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d18931e251"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/001159"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d18931e256">
+                  <rico:title>Arrêté du 6 juin 1969 portant organisation de la police de l'air et des frontières</rico:title>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d18931e256"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/001159"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d18931e262">
+                  <rico:title>Arrêté du 1er août 1973 relatif à l'organisation de la police de l'air et des frontières </rico:title>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d18931e262"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/001159"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d18931e267">
+                  <rico:title>Décret 85-1057 du 2 octobre 1985 relatif à l'organisation de l'administration centrale du ministère de l'intérieur</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000871537"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d18931e267"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/001159"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d18931e273">
+                  <rico:title>Arrêté du 20 février 1992 relatif à l'organisation à la direction générale de la police nationale de la direction centrale de la police territoriale </rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000357440"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d18931e273"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/001159"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d18931e279">
+                  <rico:title>Décret n° 94-885 du 14 octobre 1994 portant création à la direction générale de la police nationale de la direction centrale du contrôle de l'immigration et de la lutte contre l'emploi des clandestins </rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000184887"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d18931e279"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/001159"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d18931e285">
+                  <rico:title>Décret n° 94-886 du 14 octobre 1994 portant création des services de police déconcentrés chargés du contrôle de l'immigration et de la lutte contre l'emploi des clandestins</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000733053"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d18931e285"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/001159"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d18931e291">
+                  <rico:title>Arrêté du 14 octobre 1994 relatif à l'organisation de la direction centrale du contrôle de l'immigration et de la lutte contre l'emploi des clandestins</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000184855"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d18931e291"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/001159"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d18931e298">
+                  <rico:title>Décret n° 99-57 du 29 janvier 1999 relatif à l'organisation de l'administration centrale du ministère de l'intérieur</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000196415"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d18931e298"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/001159"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d18931e304">
+                  <rico:title>Arrêté du 1er février 2011 relatif aux missions et à l'organisation de la direction centrale de la police aux frontières</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000023528103"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d18931e304"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/001159"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d18931e310">
+                  <rico:title>Arrêté du 1er avril 2015 modifiant l'arrêté du 1er février 2011 relatif aux missions et à l'organisation de la direction centrale de la police aux frontières</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/eli/arrete/2015/4/1/INTC1507480A/jo/texte"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d18931e310"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/001159"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d18931e316">
+                  <rico:title>Arrêté du 29 janvier 1999 relatif à l'organisation de la direction centrale de la police aux frontières (organisation en bureaux)</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000377578"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d18931e316"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/001159"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d18931e322">
+                  <rico:title>Arrêté du 30 septembre 2021 modifiant l'arrêté du 1er février 2011 relatif aux missions et à l'organisation de la direction centrale de la police aux frontières</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/eli/arrete/2021/9/30/INTC2123213A/jo/texte"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d18931e322"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/001159"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d18931e328">
+                  <rico:title>Arrêté du 24 octobre 2022 modifiant l'arrêté du 1er février 2011 relatif aux missions et à l'organisation de la direction centrale de la police aux frontières</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/eli/arrete/2022/10/24/IOMC2221056A/jo/texte"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d18931e328"/>
+      <rico:generalDescription rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>
+               <html:b>Liste des directeurs</html:b>(depuis 1973, date à laquelle la police aux frontières devient un service central)</html:p>
+            <html:ul>
+               <html:li>1973-1976 : Gabriel Cham</html:li>
+               <html:li>1976-1981 : André Diérickx</html:li>
+               <html:li>1981-1986 : Jean Clerc</html:li>
+               <html:li>1986-1989 : Lucien Cokelaer</html:li>
+               <html:li>1989-1989 : Pierre Bergès</html:li>
+               <html:li>1989-1993 : Roger Lejeune</html:li>
+               <html:li>1993-1997 : Robert Broussard</html:li>
+               <html:li>1997-1999 : Jean-Louis Ottavi</html:li>
+               <html:li>1999-2000 : Yves Guillot</html:li>
+               <html:li>2000-2002 : Fulvio Raggi</html:li>
+               <html:li>2002-2005 : Pierre Debue</html:li>
+               <html:li>2005-2009 : Eric Le Douaron</html:li>
+               <html:li>2007-2009 : Jean-Yves Topin</html:li>
+               <html:li>2009-2014 : Frédéric Perrin</html:li>
+               <html:li>2014-2017 : David Skuli</html:li>
+               <html:li>2017-2022 : Fernand Gontier</html:li>
+               <html:li>2022-…. : Fabrice Gardon</html:li>
+            </html:ul>
+            <html:p>
+               <html:b>Organisation interne</html:b>
+            </html:p>
+            <html:p>En 1969, la police de l'air et des frontières est organisée en une sous-direction, un service central et des services extérieurs divisés en 7 secteurs calqués sur l'organisation territoriale de la défense.</html:p>
+            <html:p>En 1973, le Service central de la police de l'air et des frontière sort du giron des Renseignements généraux et est directement rattaché à la direction générale de la police nationale. Il est alors organisé en 4 sections :</html:p>
+            <html:ul>
+               <html:li>le secrétariat ;</html:li>
+               <html:li>la section Liaisons et organisation ;</html:li>
+               <html:li>la section Application de la réglementation ;</html:li>
+               <html:li>la section Gestion opérationnelle et prévisionnelle.</html:li>
+            </html:ul>
+            <html:p>Une cinquième division (anciennement section) est créée en 1981 : la division Informatique, statistiques, archives et méthodes.</html:p>
+            <html:p>En 1992, le service central de la police de l'air et des frontières comprend deux sous-directions : la sous-direction de la circulation transfrontière et la sous-direction de la maîtrise des flux migratoires.</html:p>
+            <html:p>Renommée direction centrale du contrôle de l'immigration et de la lutte contre l'emploi des clandestins en 1994, elle est réorganisée en 3 sous-directions :</html:p>
+            <html:ul>
+               <html:li>la sous-direction des moyens qui comprend un bureau des personnels, un bureau de la logistique, un bureau de l'informatique et des statistiques et un bureau de la formation ;</html:li>
+               <html:li>la sous-direction du contrôle de la circulation transfrontière qui comprend un bureau de la réglementation, un bureau des affaires européennes, un bureau de la sûreté des moyens de transport, un bureau de l'éloignement et un bureau de la police aéronautique ;</html:li>
+               <html:li>la sous-direction de la lutte contre l'immigration irrégulière et l'emploi des clandestins qui comprend un bureau des analyses et des synthèses, un bureau de la lutte contre l'emploi des clandestins, un bureau des affaires judiciaires et de la lutte contre le trafic des faux documents de voyage, un bureau des liaisons extérieures et de la coopération et un bureau des chemins de fer.</html:li>
+            </html:ul>
+            <html:p>À partir de 2011, la direction centrale de la police aux frontières est organisée en trois sous-directions auxquelles s'ajoute le service national de police ferroviaire :</html:p>
+            <html:ul>
+               <html:li>la sous-direction des affaires internationales, transfrontières et de la sûreté ;</html:li>
+               <html:li>la sous-direction de l'immigration irrégulière et des services territoriaux ;</html:li>
+               <html:li>la sous-direction des ressources ;</html:li>
+               <html:li>le service national de police ferroviaire.</html:li>
+            </html:ul>
+         </html:div>
+      </rico:generalDescription>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>En 1944 est créée une sous-direction de la police de l’air et des frontières (PAF) placée sous la direction des Renseignements généraux. Ce n’est qu’en 1973 que les attributions de la police de l'air et des frontières sortent du giron des Renseignements généraux pour être placée directement à la Direction générale de la Police nationale.</html:p>
+            <html:p>En 1994, le service change de nom pour devenir la direction centrale du contrôle de l’immigration et de la lutte contre l’emploi des clandestins (DICCILEC). La notion de « police aux frontières » est rétablie en 1999, en tant que « direction centrale de la police aux frontières ».</html:p>
+            <html:p>Le service de la police de l'air et des frontières est chargé de veiller au respect de la réglementation relative au franchissement des frontières, à la mise en oeuvre des mesures de sûreté du transport aérien et à la police aéronautique. Il est par ailleurs chargé de recueillir, centraliser et diffuser les informations de nature à lui permettre d’animer la lutte contre les filières d'’immigration, l’usage des faux documents de voyage et le travail clandestin.</html:p>
+            <html:p>La police de l'air et des frontières a comme attributions :</html:p>
+            <html:ul>
+               <html:li>le contrôle transfrontalier (contrôle des personnes entrantes et sortantes de l’espace Schengen) ;</html:li>
+               <html:li>la lutte conter l’immigration irrégulière ;</html:li>
+               <html:li>l’éloignement physique des étrangers séjournant irrégulièrement en France ;</html:li>
+               <html:li>la police aéronautique ;</html:li>
+               <html:li>la sécurité ferroviaire ;</html:li>
+               <html:li>la sûreté portuaire et aéroportuaire.</html:li>
+            </html:ul>
+         </html:div>
+      </rico:history>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/001159-001134-19940101-*"/>
+      <rico:hasDirectSubordinate rdf:resource="agent/001134"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/001159-001140-20060101-*"/>
+      <rico:hasDirectSubordinate rdf:resource="agent/001140"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/001159-001144-20110101-*"/>
+      <rico:hasDirectSubordinate rdf:resource="agent/001144"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/001159-001145-20040101-*"/>
+      <rico:hasDirectSubordinate rdf:resource="agent/001145"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/001159-001149-20060101-*"/>
+      <rico:hasDirectSubordinate rdf:resource="agent/001149"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/001159-001158-19910101-19941231"/>
+      <rico:hadSubordinate rdf:resource="agent/001158"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/001159-001637-19920101-19991231"/>
+      <rico:hadSubordinate rdf:resource="agent/001637"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/001159-001154-19940101-*"/>
+      <rico:hasDirectSubordinate rdf:resource="agent/001154"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/001159-001638-19920101-19991231"/>
+      <rico:hadSubordinate rdf:resource="agent/001638"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/001159-001639-19940101-19991231"/>
+      <rico:hadSubordinate rdf:resource="agent/001639"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/001159-001653-19990101-20041231"/>
+      <rico:hadSubordinate rdf:resource="agent/001653"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/001159-001654-19990101-20061231"/>
+      <rico:hadSubordinate rdf:resource="agent/001654"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/001159-001655-19990101-20041231"/>
+      <rico:hadSubordinate rdf:resource="agent/001655"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/001159-001664-20040101-20061231"/>
+      <rico:hadSubordinate rdf:resource="agent/001664"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/001159-001668-20110101-*"/>
+      <rico:hasDirectSubordinate rdf:resource="agent/001668"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/001348-001159-19440101-19730731"/>
+      <rico:wasSubordinateTo rdf:resource="agent/001348"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/001398-001159-19730801-*"/>
+      <rico:isDirectSubordinateTo rdf:resource="agent/001398"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Direction_nationale_de_la_Police_aux_fronti%C3%A8res"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/057035-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-057035"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/057032-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-057032"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/057033-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-057033"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/027182-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-027182"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/013361-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-013361"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/008797-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-008797"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/008987-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-008987"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/015533-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-015533"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/015259-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-015259"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/021718-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-021718"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/057380-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-057380"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/057382-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-057382"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/028731-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-028731"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/026047-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-026047"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/021919-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-021919"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/008034-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-008034"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/012833-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-012833"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/015975-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-015975"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/015698-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-015698"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/015975-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-015975"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/022891-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-022891"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/009899-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-009899"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/022921-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-022921"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/019856-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-019856"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/019408-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-019408"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/023123-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-023123"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/009999-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-009999"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/022894-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-022894"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/016191-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-016191"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/058756-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-058756"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/058759-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-058759"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/058757-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-058757"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/058761-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-058761"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/008123-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-008123"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/008216-001159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-008216"/>
    </rico:Agent>
 </rdf:RDF>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051151">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051151"/>
@@ -10,32 +18,31 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-09</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Elsa CAMUS)</rico:name>
+            <rico:name xml:lang="fr">Création (par Elsa CAMUS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-09</rico:date>
-            <rico:descriptiveNote xml:lang="fr">@protoLinkedData@. F. Clavaud, 3 décembre 2015 : revu les liens</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">@protoLinkedData@. F. Clavaud, 3 décembre 2015 : revu les liens</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Dardy-Cretin Michèle,<html:i>Histoire administrative du Ministère de la culture et de la communication, 1959-2012 : les services de l'administration centrale</html:i>, Paris, Comité d'histoire du Ministère de la Culture, 2012</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Site Internet du ministère de la Culture et de la Communication. Disponible à l'adresse suivante : http://www.culturecommunication.gouv.fr/Politiques-ministerielles/Monuments-historiques</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">
             <html:i>État général des fonds des Archives nationales (Paris) : F/21 Beaux-Arts</html:i>. Disponible en ligne sur le site des Archives nationales : http://www.archivesnationales.culture.gouv.fr/chan/chan/series/pdf/F21-2010.pdf</html:p>
-      </rico:source>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051151">
-            <rico:isInstantiationOf rdf:resource="record/051151"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051151"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051151</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051151"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051151">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -97,18 +104,19 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1959-01-08</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-12-31</rico:endDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051151-d5bhviikk9--y6te63k761ib">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051151"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051151-d5bhviikk9--y6te63k761ib"/>
+            <rico:relationHasTarget rdf:resource="agent/051151"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d179899e195">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051151-d5bhviikk9--y6te63k761ib"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/></rico:Activity></rico:performsOrPerformed>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d179899e195"/>
+      <rico:generalDescription rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Organisation interne ou généalogie</h4>
             <html:p>La composition interne du service varie beaucoup de 1959 à 2009.</html:p>
@@ -117,21 +125,18 @@
             <html:p>- Travaux et classements (supprimé à partir de 1961)</html:p>
             <html:p>- Documentation générale, Fouilles et Antiquités</html:p>
             <html:p>- Sites</html:p>
-            <html:p/>
             <html:p>De 1964 à 1967, un bureau « secteurs sauvegardés » voit le jour.</html:p>
             <html:p>À partir de 1968, le service des monuments historiques est réorganisé : les sites et secteurs sauvegardés quittent le service pour n’y revenir qu’en 2004. Les fouilles quittent définitivement les monuments historiques, suite à la mise en place d’un service de la recherche archéologique et des antiquités : le bureau de la Documentation générale, des Fouilles et Antiquités devient alors le bureau de la Documentation et des objets d’art.</html:p>
             <html:p>C’est également en 1968 que les palais nationaux (auparavant à la sous-direction des bâtiments civils) sont rattachés au service des monuments historiques qui est alors composé de trois bureaux :</html:p>
             <html:p>- La protection des monuments historiques</html:p>
             <html:p>- La conservation et la restauration des monuments historiques et palais nationaux</html:p>
             <html:p>- Les œuvres d’art classées et la documentation</html:p>
-            <html:p/>
             <html:p>À partir de 1971 (le sous-directeur du service des monuments historiques est alors Pierre Dussaule), le bureau de la conservation et de la restauration des monuments historiques et palais nationaux se scinde et deux nouveaux bureaux apparaissent : celui de la conservation des monuments historiques appartenant à l’État et celui de la conservation des monuments historiques n’appartenant pas à l’État.</html:p>
             <html:p>Suite au changement de tutelle en 1978 (la sous-direction des Monuments historiques passe de la direction de l’Architecture à la direction du Patrimoine), le service est composé de quatre bureaux :</html:p>
             <html:p>- Protection des monuments historiques et des affaires domaniales (qui devient le bureau des Affaires générales et de la Protection à partir de 1983)</html:p>
             <html:p>- Conservation</html:p>
             <html:p>- Patrimoine mobilier</html:p>
             <html:p>- Documentation et Affaires générales (qui devient le bureau des Affaires générales et de la Protection en 1983)</html:p>
-            <html:p/>
             <html:p>À partir de 1989, les palais nationaux quittent le service des monuments historiques.</html:p>
             <html:p>La nouvelle organisation est la suivante :</html:p>
             <html:p>- bureau des affaires générales</html:p>
@@ -140,19 +145,17 @@
             <html:p>- bureau de la conservation des monuments historiques n'appartenant pas à l’État</html:p>
             <html:p>- bureau du patrimoine mobilier</html:p>
             <html:p>- bureau des Orgues historiques et des Instruments de musique anciens (il fusionne à partir de 1992 avec le bureau du Patrimoine mobilier).</html:p>
-            <html:p/>
             <html:p>De 1996 à 1997, le service est composé de trois bureaux :</html:p>
             <html:p>- Affaires générales</html:p>
             <html:p>- Patrimoine mobilier et instrumental et Protection</html:p>
             <html:p>- Monuments et jardins</html:p>
-            <html:p/>
             <html:p>De 1998 à 2000, la sous-direction des monuments historiques est placée au sein du « service de la connaissance, de la conservation et de la création », lui-même rattaché à la direction du Patrimoine. Il comprend trois bureaux :</html:p>
             <html:p>- Protection des monuments historiques</html:p>
             <html:p>- Patrimoine immobilier</html:p>
             <html:p>- Patrimoine mobilier et instrumental</html:p>
             <html:p>S'ajoute à partir de 2004 un bureau de la protection des espaces.</html:p>
          </html:div>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Le 24 juillet 1959, le ministère des Affaires culturelles est créé par décret et est confié à André Malraux. Il prend au ministère de l'Éducation nationale la direction générale des arts et des lettres, la direction de l'architecture (comprenant notamment le service des monuments historiques) et la direction des Archives de France.</html:p>
@@ -171,15 +174,27 @@
             <html:p>Le 13 janvier 2010, la direction de l'architecture et du patrimoine intègre la Direction générale des patrimoines créée par décret. Elle regroupe plusieurs services dont le service du Patrimoine auquel est rattachée la sous-direction des monuments historiques.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000051-051151-19590108-19780412"/><rico:isOrWasSubordinateTo rdf:resource="agent/000051"/>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/005170-051151-19780413-19980920"/><rico:isOrWasSubordinateTo rdf:resource="agent/005170"/>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/005662-051151-19980921-20011128"/><rico:isOrWasSubordinateTo rdf:resource="agent/005662"/>
-      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051151-051153-20090101-*"/><rico:hasSuccessor rdf:resource="agent/051153"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/051151-005389-19980101-20081231"/><rico:hasOrHadSubordinate rdf:resource="agent/005389"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/051151-005388-19980101-20081231"/><rico:hasOrHadSubordinate rdf:resource="agent/005388"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/051151-005532-20040101-20081231"/><rico:hasOrHadSubordinate rdf:resource="agent/005532"/>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/005406-051151-20011129-20091231"/><rico:isOrWasSubordinateTo rdf:resource="agent/005406"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051151-051164-19590108-20091231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/051164"/>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051150-051151-19590108-*"/><rico:isSuccessorOf rdf:resource="agent/051150"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/000051-051151-19590108-19780412"/>
+      <rico:wasSubordinateTo rdf:resource="agent/000051"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/005170-051151-19780413-19980920"/>
+      <rico:wasSubordinateTo rdf:resource="agent/005170"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/005662-051151-19980921-20011128"/>
+      <rico:wasSubordinateTo rdf:resource="agent/005662"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentTemporalRelation/051151-051153-20090101-*"/>
+      <rico:hasSuccessor rdf:resource="agent/051153"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/051151-005389-19980101-20081231"/>
+      <rico:hadSubordinate rdf:resource="agent/005389"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/051151-005388-19980101-20081231"/>
+      <rico:hadSubordinate rdf:resource="agent/005388"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/051151-005532-20040101-20081231"/>
+      <rico:hadSubordinate rdf:resource="agent/005532"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/005406-051151-20011129-20091231"/>
+      <rico:wasSubordinateTo rdf:resource="agent/005406"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/051151-051164-19590108-20091231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/051164"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/051150-051151-19590108-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/051150"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/007404-051151"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-007404"/>
    </rico:Agent>
 </rdf:RDF>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051201">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051201"/>
@@ -10,21 +18,20 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-15</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Patrice TRIBOUX)</rico:name>
+            <rico:name xml:lang="fr">Création (par Patrice TRIBOUX)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-15</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051201">
-            <rico:isInstantiationOf rdf:resource="record/051201"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051201"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051201</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051201"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051201">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -41,7 +48,7 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-03-28</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-05-06</rico:endDate>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      <rico:generalDescription rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Organisation interne ou généalogie</h4>
             <html:p>Le cabinet était composé de :</html:p>
@@ -66,19 +73,25 @@
                <html:li>Catherine Mino, chef du secrétariat particulier</html:li>
             </html:ul>
          </html:div>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Cabinet de Paulette Guinchard-Kunstler, secrétaire d’État chargée des personnes âgées auprès de la ministre de l'emploi et de la solidarité Élisabeth Guigou, au sein du gouvernement de Lionel Jospin, sous la présidence de Jacques Chirac.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054618-051201"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-054618"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/058896-051201"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-058896"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/059790-051201"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-059790"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/059886-051201"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-059886"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentTemporalRelation/051201-053451-20020617-*"/>
+      <rico:hasSuccessor rdf:resource="agent/053451"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/053438-051201-20010328-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/053438"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054618-051201"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054618"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/058896-051201"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-058896"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/059790-051201"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-059790"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/059886-051201"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-059886"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/060529-051201"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-060529"/>
    </rico:Agent>
 </rdf:RDF>

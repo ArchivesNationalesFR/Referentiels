@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050249">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050249"/>
@@ -11,31 +19,29 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-01-08</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Vanessa ASPART)</rico:name>
+            <rico:name xml:lang="fr">Création (par Vanessa ASPART)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-08-21</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 20 décembre 2018 : ajout identifiant ISNI, lien d'identité, indexation activité, forme autorisée du nom revue, lien asso</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 20 décembre 2018 : ajout identifiant ISNI, lien d'identité, indexation activité, forme autorisée du nom revue, lien asso</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-01-08</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Archives nationales, Fonds Bernard Gildas (XXe siècle), 628 AP.</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/000000011022070X/about"/>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Archives nationales, Fonds Bernard Gildas (XXe siècle), 628 AP.</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/000000011022070X"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050249">
-            <rico:isInstantiationOf rdf:resource="record/050249"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050249"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050249</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050249"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050249">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -53,23 +59,26 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1925-01-01</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-12-31</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050249-d699msirr1g-3naumnfaswc">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050249"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050249-d699msirr1g-3naumnfaswc"/>
+            <rico:relationHasTarget rdf:resource="agent/050249"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d168444e100">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050249-d699msirr1g-3naumnfaswc"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msirr1g-3naumnfaswc"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msirr1g-3naumnfaswc"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msirr1g-3naumnfaswc"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d168444e100"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Archiviste-paléographe, auteur d'une thèse d'Ecole des chartes sur<html:i>L'abbaye Saint-Melaine de Rennes, des origines à la Révolution</html:i>, diplômé de l'Ecole pratique des hautes études, Gildas Bernard fut membre de l'Ecole pratique des hautes études hispaniques (Casa Velasquez) de 1952-1955 ; il y rédigea une thèse sur<html:i>Le secrétariat d'Etat et le conseil espagnol des Indes, 1700-1708</html:i>, publiée chez Droz en 1972. Directeur des Archives départementales de l'Aube (1956-1970) puis du Calvados (1970-1980), il fut aussi inspecteur général des Archives de France (1980-1992) et président de l'Association des archivistes français (1977-1979). Fondateur du musée Napoléon à Brienne-le-Château et du musée de la Résistance à Mussy-sur-Seine, Gildas Bernard publia de nombreux articles sur Jeanne d'Arc, Napoléon, la Champagne et la Normandie, des ouvrages héraldiques sur l'Aube, plusieurs instruments de recherche des Archives départementales de l'Aube et du Calvados, ainsi que des guides des sources généalogiques :<html:i>Le Guide des recherches sur l'histoire des familles</html:i>(1981),<html:i>Les familles protestantes en France</html:i>(1985), et<html:i>Les familles juives en France</html:i>(1990).</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009963-050249-19250101-20011231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/009963"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009963-050249-19250101-20011231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/009963"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb118915067#about"/>
    </rico:Agent>
 </rdf:RDF>

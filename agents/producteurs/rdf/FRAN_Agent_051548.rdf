@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051548">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051548"/>
@@ -11,33 +19,31 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-11</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Emmanuel ROUSSEAU)</rico:name>
+            <rico:name xml:lang="fr">Création (par Emmanuel ROUSSEAU)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-10</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Florence CLAVAUD)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Florence CLAVAUD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-11</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Notice du catalogue de la BnF : http://catalogue.bnf.fr/ark:/12148/cb122050062.public</rico:source>
-      <rico:source xml:lang="fr">Notice sur le site de l'Académie de France à Rome : http://www.villamedici.it/fr/villa-m%C3%A9dicis/directeurs/s/suv%C3%A9e-joseph/</rico:source>
-      <rico:source xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/Joseph-Beno%C3%AEt_Suv%C3%A9e</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000066443251/about"/>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice du catalogue de la BnF : http://catalogue.bnf.fr/ark:/12148/cb122050062.public</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice sur le site de l'Académie de France à Rome : http://www.villamedici.it/fr/villa-m%C3%A9dicis/directeurs/s/suv%C3%A9e-joseph/</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/Joseph-Beno%C3%AEt_Suv%C3%A9e</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000066443251"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Joseph-Beno%C3%AEt_Suv%C3%A9e"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051548">
-            <rico:isInstantiationOf rdf:resource="record/051548"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051548"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051548</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051548"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051548">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -55,26 +61,28 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1743-01-03</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1807-02-09</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/051548"/>
-            <rico:placeRelationHasSource rdf:resource="place/rome"/>
+            <rico:relationHasTarget rdf:resource="agent/051548"/>
+            <rico:relationHasSource rdf:resource="place/rome"/>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1801-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1807-02-09</rico:endDate>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/rome"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/rome"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051548-d699msit6xq-1e7tbhtd3o7v6">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051548"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051548-d699msit6xq-1e7tbhtd3o7v6"/>
+            <rico:relationHasTarget rdf:resource="agent/051548"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d187090e130">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051548-d699msit6xq-1e7tbhtd3o7v6"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msit6xq-1e7tbhtd3o7v6"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msit6xq-1e7tbhtd3o7v6"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msit6xq-1e7tbhtd3o7v6"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d187090e130"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Joseph-Benoît Suvée, né le 3 janvier 1743 à Bruges, et mort le 9 février 1807 à Rome, est pensionnaire après avoir obtenu le premier prix de l’Académie de peinture en 1771, puis académicien en 1780, et professeur à l’École des Beaux-arts de Paris en 1792. Il est nommé, le 20 novembre 1792, directeur de l’Académie de France à Rome, en remplacement de François-Guillaume Ménageot, mais il est suspendu dès le 25 novembre à la suite d’une intervention du peintre David à la Convention nationale qui vise à supprimer le poste de directeur de l’Académie de France à Rome. Les pensionnaires quittent alors Rome pour Naples, pour Florence ou pour la France. Pendant la Terreur, Suvée est arrêté en 1794, puis détenu à la prison de Saint-Lazare.</html:p>
@@ -84,10 +92,12 @@
          </html:div>
       </rico:history>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb122050062.public#about"/>
-      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051548-051553-18070201-*"/><rico:hasSuccessor rdf:resource="agent/051553"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentTemporalRelation/051548-051553-18070201-*"/>
+      <rico:hasSuccessor rdf:resource="agent/051553"/>
       <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Joseph-Beno%C3%AEt_Suv%C3%A9e"/>
-      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/051548-005104-17921120-18070209"/><rico:isOrWasLeaderOf rdf:resource="agent/005104"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056124-051548"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-056124"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/051548-005104-17921120-18070209"/>
+      <rico:isOrWasLeaderOf rdf:resource="agent/005104"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/056124-051548"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-056124"/>
    </rico:Agent>
 </rdf:RDF>

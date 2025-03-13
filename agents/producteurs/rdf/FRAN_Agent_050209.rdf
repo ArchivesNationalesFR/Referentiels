@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050209">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050209"/>
@@ -11,32 +19,30 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-22</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Vanessa ASPART)</rico:name>
+            <rico:name xml:lang="fr">Création (par Vanessa ASPART)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-08-19</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 16/10/2019 : forme autorisée du nom revue, indexation lieu, activités, ajout ISNI, liens d'identité</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 16/10/2019 : forme autorisée du nom revue, indexation lieu, activités, ajout ISNI, liens d'identité</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-22</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Archives nationales, Fonds Paul Allard (1840-1923), 638 AP.</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121033571/about"/>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Archives nationales, Fonds Paul Allard (1840-1923), 638 AP.</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121033571"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Paul_Allard"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050209">
-            <rico:isInstantiationOf rdf:resource="record/050209"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050209"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050209</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050209"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050209">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -54,46 +60,52 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1841-09-15</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1916-12-04</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050209"/>
-            <rico:placeRelationHasSource rdf:resource="place/Rouen"/>
+            <rico:relationHasTarget rdf:resource="agent/050209"/>
+            <rico:relationHasSource rdf:resource="place/Rouen"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Rouen"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Rouen"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050209-d-2q4q12i6q--yjvnepbzk7z8">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050209"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050209-d-2q4q12i6q--yjvnepbzk7z8"/>
+            <rico:relationHasTarget rdf:resource="agent/050209"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d167872e114">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050209-d-2q4q12i6q--yjvnepbzk7z8"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-2q4q12i6q--yjvnepbzk7z8"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-2q4q12i6q--yjvnepbzk7z8"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-2q4q12i6q--yjvnepbzk7z8"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d167872e114"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050209-d699msj742x--12cnnohd8i9wj">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050209"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050209-d699msj742x--12cnnohd8i9wj"/>
+            <rico:relationHasTarget rdf:resource="agent/050209"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d167872e120">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050209-d699msj742x--12cnnohd8i9wj"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj742x--12cnnohd8i9wj"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj742x--12cnnohd8i9wj"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj742x--12cnnohd8i9wj"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d167872e120"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050209-d-2pjo8eb5f-aep79lv4czdw">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050209"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050209-d-2pjo8eb5f-aep79lv4czdw"/>
+            <rico:relationHasTarget rdf:resource="agent/050209"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d167872e126">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050209-d-2pjo8eb5f-aep79lv4czdw"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-2pjo8eb5f-aep79lv4czdw"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-2pjo8eb5f-aep79lv4czdw"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-2pjo8eb5f-aep79lv4czdw"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d167872e126"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Fils d’un notaire rouennais, Paul Allard naît en septembre 1841. Il est l’aîné d’une famille de neuf enfants. Très jeune, il s'est intéressé aux questions sociales grâce à son père, Jules, l’un des membres fondateurs de la société de secours mutuel, l’Émulation chrétienne de Rouen, et partie prenante à la fondation de l’Institution catholique Joint-Lambert où ses fils feront leurs études. En 1862, Paul Allard est avocat, inscrit au barreau de Rouen. Dix ans plus tard il est nommé juge suppléant au tribunal civil de la même ville. Il démissionne de ses fonctions en 1883, marquant sa désapprobation à la suite de la mise à la retraite forcée de certains de ses collègues qui avaient refusé d’appliquer les lois et décrets qui frappaient les congrégations religieuses. La même année, il accepte la présidence de l’Union catholique de la Seine-Inférieure à laquelle il appartenait depuis 1875 et qu’il dirigera jusqu’à sa dissolution en 1900. Il prend une part active aux congrès catholiques tenus à Rouen en 1883 et 1886, et est en relation avec de nombreuses personnalités catholiques, s’intéressant tout particulièrement aux questions d’enseignement et au domaine de l’art. En 1863, Paul Allard avait rencontré l’archéologue romain, Jean-Baptiste de Rossi qui l’avait initié à l’archéologie chrétienne et entraîné dans des travaux historiques qui devaient l’occuper toute sa vie. L’ouvrage qu’il publie, en 1876, sur les Esclaves Chrétiens marque le début d’une carrière d’historien qu’il mènera parallèlement à ses autres activités. En 1902, la famille de Beaucourt, propriétaire de la Revue des questions historiques, lui en propose la direction. Paul Allard accepte et, lorsqu’il cède son poste à Jean Guiraud en 1908, c’est uniquement pour raisons de santé qu’il préfère se retirer dans sa propriété de Senneville en Seine-Inférieure. Sa retraite forcée de l’empêchera pas de garder un œil sur la revue, ni de continuer à publier. Il meurt le 4 décembre 1916.</html:p>

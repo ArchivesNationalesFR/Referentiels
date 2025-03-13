@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050921">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050921"/>
@@ -11,41 +19,39 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-09-21</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Raphael BAUMARD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Raphael BAUMARD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-12-08</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-09-21</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Elsa Camus, 15 septembre 2016 : ajout Activités, modification Sources, ajout Lien d'identité</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Elsa Camus, 15 septembre 2016 : ajout Activités, modification Sources, ajout Lien d'identité</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Archives nationales, fonds de la famille LALLY-TOLENDAL, 737AP</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice d'autorité BnF n° FRBNF10642461 : http://catalogue.bnf.fr/ark:/12148/cb10642461t</html:p>
-      </rico:source>
-      <rico:hasSource rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb10642461t"/>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb10642461t"/>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Article Thomas Arthur de Lally-Tollendal de Wikipédia en français (http://fr.wikipedia.org/wiki/Thomas_Arthur_de_Lally-Tollendal).</html:p>
-      </rico:source>
-      <rico:hasSource rdf:resource="http://fr.wikipedia.org/wiki/Thomas_Arthur_de_Lally-Tollendal"/>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000081027774/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="http://fr.wikipedia.org/wiki/Thomas_Arthur_de_Lally-Tollendal"/>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000081027774"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050921">
-            <rico:isInstantiationOf rdf:resource="record/050921"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050921"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050921</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050921"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050921">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -126,68 +132,74 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1702-01-01</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1766-12-31</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050921"/>
-            <rico:placeRelationHasSource rdf:resource="place/FRAN_RI_005-d3m08zan8gb--1dzrseyfrt3q3"/>
+            <rico:relationHasTarget rdf:resource="agent/050921"/>
+            <rico:relationHasSource rdf:resource="place/FRAN_RI_005-d3m08zan8gb--1dzrseyfrt3q3"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/FRAN_RI_005-d3m08zan8gb--1dzrseyfrt3q3"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050921"/>
-            <rico:placeRelationHasSource rdf:resource="place/FRAN_RI_005-d3ntxkt0ox-16bmp6ylm8933"/>
+            <rico:relationHasTarget rdf:resource="agent/050921"/>
+            <rico:relationHasSource rdf:resource="place/FRAN_RI_005-d3ntxkt0ox-16bmp6ylm8933"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/FRAN_RI_005-d3ntxkt0ox-16bmp6ylm8933"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_005-d3m08zan8gb--1dzrseyfrt3q3"/>
       <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_005-d3ntxkt0ox-16bmp6ylm8933"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050921-d3m0bl79y9j--1wpw5u7c5oc6l-17570101-17611231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050921"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050921-d3m0bl79y9j--1wpw5u7c5oc6l-17570101-17611231"/>
+            <rico:relationHasTarget rdf:resource="agent/050921"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d177205e240">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050921-d3m0bl79y9j--1wpw5u7c5oc6l-17570101-17611231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3m0bl79y9j--1wpw5u7c5oc6l"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1757-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1761-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">gouverneur général des établissement français en Inde</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl79y9j--1wpw5u7c5oc6l"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl79y9j--1wpw5u7c5oc6l"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d177205e240"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050921-d699msk3a25-1xs3m641rhiyg-17480101-17571231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050921"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050921-d699msk3a25-1xs3m641rhiyg-17480101-17571231"/>
+            <rico:relationHasTarget rdf:resource="agent/050921"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d177205e260">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050921-d699msk3a25-1xs3m641rhiyg-17480101-17571231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msk3a25-1xs3m641rhiyg"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1748-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1757-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">maréchal de camp</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk3a25-1xs3m641rhiyg"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk3a25-1xs3m641rhiyg"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d177205e260"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050921-d699msjpuqr-66gt6kmedjiv-17320101-17481231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050921"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050921-d699msjpuqr-66gt6kmedjiv-17320101-17481231"/>
+            <rico:relationHasTarget rdf:resource="agent/050921"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d177205e280">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050921-d699msjpuqr-66gt6kmedjiv-17320101-17481231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1732-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1748-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">aide-major</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d177205e280"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Né à Romans, dans l'Isère, d'une famille originaire d'Irlande, Thomas-Arthur de Lally (1702-1766) fait carrière dans l'armée : en 1732, il est fait aide-major du régiment irlandais de Dillon, et après avoir visité l'Angleterre en 1737 et avoir effectué une mission secrète en Russie pour le cardinal de Fleury, il devient aide-major général du maréchal de Noailles. En 1744, il devient colonel d'un régiment irlandais de son nom créé pour lui ; il se distingue à la bataille de Fontenoy (11 mai 1745) ainsi qu' à Falkirk, en Écosse (janvier 1746), où il fait fonction d'aide de camp du prince Charles-Édouard Stuart, dans la tentative des Jacobites de reprendre le pouvoir. Il prend part encore en juillet 1747 à la bataille de Lauffelt (ou Lawffeld,<html:i>auj</html:i>. Belgique) contre les troupes combattant sous les ordres du prince d'Orange et au siège de Maastricht en avril-mai 1748, où il est fait maréchal de camp. Il reçoit la grand-croix de Saint-Louis en 1757.</html:p>
@@ -195,10 +207,12 @@
             <html:p>Fait prisonnier par les Anglais, il est envoyé en Angleterre, où il est libéré sur parole. Il souhaite en effet se rendre à Paris pour se défendre des accusations portées contre lui. Considéré comme le seul responsable de la défaite et de la perte des Indes, il embastillé sur lettre de cachet en avril 1762. Il est jugé par le parlement de Paris qui le condamne à la mort par décapitation en mai 1766. Son exécution en place de Grève, au cours de laquelle le bourreau Sanson dut se reprendre à plusieurs fois, suscite l'indignation de l'opinion publique et de Voltaire, qui prend alors sa défense. À partir de 1773, son fils, Trophime-Gérard entreprend de faire réviser le jugement. Il obtient par arrêt du Conseil du roi du 16 juillet 1778 la cassation du jugement. Le procès est renvoyé devant le parlement de Rouen, qui confirme le 12 mai 1780 le jugement de 1766. Une nouvelle décision du Conseil d'État renvoie le jugement devant le parlement de Dijon, qui rend son arrêt le le 23 août 1783. Lally est finalement blanchi du crime de haute-trahison mais rendu responsable des autres chefs d'accusation et ne sera pas réhabilité.</html:p>
          </html:div>
       </rico:history>
-      <rico:personIsTargetOfMembershipRelation rdf:resource="membershipRelation/050919-050921"/><rico:isOrWasMemberOf rdf:resource="agent/050919"/>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/050921-050925"/><rico:hasFamilyAssociationWith rdf:resource="agent/050925"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050919-050921-17020101-17661231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050919"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/050921-050925"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/050925"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb10642461t#about"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/053515-050921"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-053515"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/053515-050921"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-053515"/>
    </rico:Agent>
 </rdf:RDF>

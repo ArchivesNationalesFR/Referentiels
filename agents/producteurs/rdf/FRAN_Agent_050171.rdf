@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050171">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050171"/>
@@ -10,27 +18,26 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-02-02</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Raphael BAUMARD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Raphael BAUMARD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-02-02</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 2 février 2016 : revu le nom, ajouté ISNI, notice BnF, fonctions</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 2 février 2016 : revu le nom, ajouté ISNI, notice BnF, fonctions</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb118710680</html:p>
-      </rico:source>
-      <rico:hasSource rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb118710680"/>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000107228735/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb118710680"/>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000107228735"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050171">
-            <rico:isInstantiationOf rdf:resource="record/050171"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050171"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050171</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050171"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050171">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -48,31 +55,33 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1945-01-01</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1992-12-31</rico:endDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050171-d5bhvil20q--uuew3ia85vzc">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050171"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050171-d5bhvil20q--uuew3ia85vzc"/>
+            <rico:relationHasTarget rdf:resource="agent/050171"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d167144e99">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050171-d5bhvil20q--uuew3ia85vzc"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvil20q--uuew3ia85vzc"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvil20q--uuew3ia85vzc"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d167144e99"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050171-d3nyuh22j7-1un996fsc6m08">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050171"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050171-d3nyuh22j7-1un996fsc6m08"/>
+            <rico:relationHasTarget rdf:resource="agent/050171"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d167144e105">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050171-d3nyuh22j7-1un996fsc6m08"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuh22j7-1un996fsc6m08"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">coopération France-URSS</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuh22j7-1un996fsc6m08"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d167144e105"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>L’association France-URSS est créée à Paris en janvier 1945 ; déclarée au<html:i>Journal officiel</html:i>le 10 juin 1945, elle a pour but de « favoriser, dans l’intérêt de la nation et de la paix, la connaissance mutuelle et la coopération amicale des deux pays ».</html:p>
@@ -83,6 +92,7 @@
             <html:p>Considérant qu’elle est arrivée au terme de sa mission avec la disparition de l’URSS et en proie à des problèmes financiers insurmontables, l’Association France-URSS prononce sa dissolution lors de l’assemblée générale extraordinaire du 2 février 1992.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/050171-051025-19930516-*"/><rico:hasSuccessor rdf:resource="agent/051025"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentTemporalRelation/050171-051025-19930516-*"/>
+      <rico:hasSuccessor rdf:resource="agent/051025"/>
    </rico:Agent>
 </rdf:RDF>

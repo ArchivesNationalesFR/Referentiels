@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052417">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052417"/>
@@ -11,31 +19,29 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-12-16</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Vivien RICHARD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Vivien RICHARD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-12-16</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Vivien RICHARD)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Vivien RICHARD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-12-16</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 16/12/2019 : ajout lien d'identité BnF, pas de notice wikipédia, indexation lieu revue</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 16/12/2019 : ajout lien d'identité BnF, pas de notice wikipédia, indexation lieu revue</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Notice d'autorité BNF (https://catalogue.bnf.fr/ark:/12148/cb121540625)</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000032795363/about"/>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice d'autorité BNF (https://catalogue.bnf.fr/ark:/12148/cb121540625)</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000032795363"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052417">
-            <rico:isInstantiationOf rdf:resource="record/052417"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052417"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052417</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052417"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052417">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -52,54 +58,58 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1945-12-05</rico:birthDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052417"/>
-            <rico:placeRelationHasSource rdf:resource="place/Nice"/>
+            <rico:relationHasTarget rdf:resource="agent/052417"/>
+            <rico:relationHasSource rdf:resource="place/Nice"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Nice"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Nice"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052417"/>
-            <rico:placeRelationHasSource rdf:resource="place/Paris"/>
+            <rico:relationHasTarget rdf:resource="agent/052417"/>
+            <rico:relationHasSource rdf:resource="place/Paris"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Paris"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Paris"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052417"/>
-            <rico:placeRelationHasSource rdf:resource="place/Courcouronnes"/>
+            <rico:relationHasTarget rdf:resource="agent/052417"/>
+            <rico:relationHasSource rdf:resource="place/Courcouronnes"/>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1997-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Maire de Courcouronnes</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Courcouronnes"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Courcouronnes"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052417-d699msjdbik--d0t57s3zykhu">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052417"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052417-d699msjdbik--d0t57s3zykhu"/>
+            <rico:relationHasTarget rdf:resource="agent/052417"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d201858e147">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052417-d699msjdbik--d0t57s3zykhu"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjdbik--d0t57s3zykhu"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjdbik--d0t57s3zykhu"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjdbik--d0t57s3zykhu"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d201858e147"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052417-d699msjyazt-1f0ggfyf3is8u">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052417"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052417-d699msjyazt-1f0ggfyf3is8u"/>
+            <rico:relationHasTarget rdf:resource="agent/052417"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d201858e153">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052417-d699msjyazt-1f0ggfyf3is8u"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d201858e153"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Né le 5 décembre 1945 à Paris (12e arrondissement), Bernard Bragard effectue des études de droit à l’Institut d’études juridiques de Nice, d’anglais à l’Institut des sciences politiques d’Aix-en-Provence, puis de linguistique et civilisations américaines à Paris-Sorbonne.</html:p>

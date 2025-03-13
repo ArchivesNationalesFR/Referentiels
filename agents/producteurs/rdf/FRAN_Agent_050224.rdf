@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050224">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050224"/>
@@ -11,42 +19,39 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-09</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Virginie POTIN)</rico:name>
+            <rico:name xml:lang="fr">Création (par Virginie POTIN)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-10-17</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Virginie GREGOIRE)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Virginie GREGOIRE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-11-13</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Ajout lien identité (BnF, wikipédia), correction historique. Ajouts autres formes du nom. Corrections sources.</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Ajout lien identité (BnF, wikipédia), correction historique. Ajouts autres formes du nom. Corrections sources.</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-09</rico:date>
-            <rico:descriptiveNote xml:lang="fr">NP révisée</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">NP révisée</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Notice wikipédia https://fr.wikipedia.org/wiki/Charles_Maurras</rico:source>
-      <rico:source xml:lang="fr">Notice autorité BnF n°FRBNF11915277</rico:source>
-      <rico:source xml:lang="fr">Archives nationales : fonds Charles Maurras (576AP)</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121171552/about"/>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice wikipédia https://fr.wikipedia.org/wiki/Charles_Maurras</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice autorité BnF n°FRBNF11915277</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Archives nationales : fonds Charles Maurras (576AP)</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121171552"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Charles_Maurras"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050224">
-            <rico:isInstantiationOf rdf:resource="record/050224"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050224"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050224</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050224"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050224">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -118,46 +123,52 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1868-01-01</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-12-31</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050224"/>
-            <rico:placeRelationHasSource rdf:resource="place/Martigues"/>
+            <rico:relationHasTarget rdf:resource="agent/050224"/>
+            <rico:relationHasSource rdf:resource="place/Martigues"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Martigues"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Martigues"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050224-d699msipbvu--al53jh9equfg">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050224"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050224-d699msipbvu--al53jh9equfg"/>
+            <rico:relationHasTarget rdf:resource="agent/050224"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d168039e240">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050224-d699msipbvu--al53jh9equfg"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msipbvu--al53jh9equfg"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msipbvu--al53jh9equfg"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msipbvu--al53jh9equfg"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d168039e240"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050224-d699msizce3-1fkn61hd3lpjw">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050224"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050224-d699msizce3-1fkn61hd3lpjw"/>
+            <rico:relationHasTarget rdf:resource="agent/050224"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d168039e246">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050224-d699msizce3-1fkn61hd3lpjw"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msizce3-1fkn61hd3lpjw"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msizce3-1fkn61hd3lpjw"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msizce3-1fkn61hd3lpjw"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d168039e246"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050224-d699msj3i51--hevk1gms21cg">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050224"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050224-d699msj3i51--hevk1gms21cg"/>
+            <rico:relationHasTarget rdf:resource="agent/050224"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d168039e252">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050224-d699msj3i51--hevk1gms21cg"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d168039e252"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Né à Martigues le 20 avril 1868, Charles Maurras (1868-1952) est orphelin de père à six ans, atteint de surdité à 14 ans, et fait ses études à Aix-en-Provence, puis à Paris où il s'inscrit à la faculté des Lettres. Il écrit dans plusieurs revues, dont<html:i>La Réforme sociale</html:i>de Frédéric Leplay, les<html:i>Annales de philosophie chrétienne</html:i>et le<html:i>Polybiblion littéraire</html:i>(comptes-rendus d’ouvrages sociologiques). De 1886 à 1890, il rédige le feuilleton bibliographique (« Les livres de la semaine ») de<html:i>L’Instruction publique</html:i>, revue de l’enseignement supérieur d’inspiration conservatrice et libérale. Jusqu'en 1898, c'est dans la<html:i>Revue encyclopédique</html:i>que Maurras livre la plupart de ses articles littéraires. Il écrit aussi dans<html:i>La Libre Parole</html:i>et<html:i>Le Soleil</html:i>(organe royaliste).</html:p>
@@ -173,10 +184,12 @@
          </html:div>
       </rico:history>
       <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Charles_Maurras"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050224-050384-19300101-19521231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050384"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050224-052740-19260101-19371231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/052740"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050224-050384-19300101-19521231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050384"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050224-052740-19260101-19371231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/052740"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb11915277d#about"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/003502-050224"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-003502"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/003502-050224"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-003502"/>
    </rico:Agent>
 </rdf:RDF>

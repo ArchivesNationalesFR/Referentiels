@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/053158">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/053158"/>
@@ -11,34 +19,32 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-03-10</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Vivien BARRO)</rico:name>
+            <rico:name xml:lang="fr">Création (par Vivien BARRO)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-03-07</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-03-10</rico:date>
-            <rico:descriptiveNote xml:lang="fr">10/03/2022, J. Gaillard_Ajout d'une autre forme du nom | Ajout d'informations sur le lien d'association avec l'INED et sur les liens d'identité | Ajout d'index lieux</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">10/03/2022, J. Gaillard_Ajout d'une autre forme du nom | Ajout d'informations sur le lien d'association avec l'INED et sur les liens d'identité | Ajout d'index lieux</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Notice Bnf n° : FRBNF11908413 (https://catalogue.bnf.fr/ark:/12148/cb119084137)</rico:source>
-      <rico:source xml:lang="fr">Notice Wikipédia (https://fr.wikipedia.org/wiki/Albert_Jacquard)</rico:source>
-      <rico:source xml:lang="fr">Site internet de France culture, consulté le 7 mars 2022. (https://www.franceculture.fr/personne-albert-jacquard.html)</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000120962045/about"/>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice Bnf n° : FRBNF11908413 (https://catalogue.bnf.fr/ark:/12148/cb119084137)</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice Wikipédia (https://fr.wikipedia.org/wiki/Albert_Jacquard)</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Site internet de France culture, consulté le 7 mars 2022. (https://www.franceculture.fr/personne-albert-jacquard.html)</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000120962045"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Albert_Jacquard"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/053158">
-            <rico:isInstantiationOf rdf:resource="record/053158"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/053158"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_053158</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_053158"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/053158">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -63,58 +69,62 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1925-12-23</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-09-11</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/053158"/>
-            <rico:placeRelationHasSource rdf:resource="place/Lyon"/>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:relationHasTarget rdf:resource="agent/053158"/>
+            <rico:relationHasSource rdf:resource="place/Lyon"/>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Lieu de naissance</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Lyon"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Lyon"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/053158"/>
-            <rico:placeRelationHasSource rdf:resource="place/Paris"/>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:relationHasTarget rdf:resource="agent/053158"/>
+            <rico:relationHasSource rdf:resource="place/Paris"/>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Lieu de décès</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Paris"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Paris"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/053158"/>
-            <rico:placeRelationHasSource rdf:resource="place/Universit%C3%A9%20Stanford"/>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:relationHasTarget rdf:resource="agent/053158"/>
+            <rico:relationHasSource rdf:resource="place/Universit%C3%A9%20Stanford"/>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Étudie à l'Université Stanford (San Francisco) de 1966 à 1968</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Universit%C3%A9%20Stanford"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Universit%C3%A9%20Stanford"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/053158-d699msk5oth-xqvujelh8c39">
-            <rico:performanceRelationHasTarget rdf:resource="agent/053158"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/053158-d699msk5oth-xqvujelh8c39"/>
+            <rico:relationHasTarget rdf:resource="agent/053158"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d212112e166">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/053158-d699msk5oth-xqvujelh8c39"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msk5oth-xqvujelh8c39"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk5oth-xqvujelh8c39"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk5oth-xqvujelh8c39"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d212112e166"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/053158-d699msj02xm-19qbb7wdtto3j">
-            <rico:performanceRelationHasTarget rdf:resource="agent/053158"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/053158-d699msj02xm-19qbb7wdtto3j"/>
+            <rico:relationHasTarget rdf:resource="agent/053158"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d212112e172">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/053158-d699msj02xm-19qbb7wdtto3j"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d212112e172"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Albert Jacquard naît en 1925 à Lyon. Après des études à l’École polytechnique (X 1945) et à l’Institut de statistiques de l’Université de Paris, il entame un carrière d’ingénieur et de haut fonctionnaire à la Société d’exploitation industrielle du tabac et des allumettes (SEITA) puis au sein de diverses administrations. Il travaille ensuite un an, de 1965 à 1966, comme chargé de recherche à l’Institut national d’études démographiques (INED). Au milieu des années 1960, il commence à s’intéresser à la génétique et reprend ses études qui le mènent durant deux ans, entre 1966 et 1968, à l’université Stanford aux États-Unis. De retour en France, il est titulaire d’un diplôme d’études approfondies et réintègre l’INED comme directeur de recherches, poste qu’il occupe jusqu’en 1991. En parallèle, il complète son cursus universitaire par deux doctorats, l’un en génétique, obtenu en 1970, puis un second en biologie humaine, obtenu en 1972. Ces diplômes lui permettent d’entamer une carrière universitaire dans plusieurs pays, dont la Suisse, la Belgique et la France, où l’université Paris VI lui confie un poste à partir de 1978. Il le conserve jusqu’en 1990.</html:p>
@@ -122,9 +132,13 @@
             <html:p>La brillante carrière d’Albert Jacquard lui vaut de nombreuses récompenses, dont, en France, le grade d’officier de la Légion d’honneur et le grade de grand officier de l’Ordre national du mérite. A l’étranger, plusieurs universités lui décernent un doctorat<html:i>honoris causa</html:i>. Albert Jacquard s’éteint à Paris le 11 septembre 2013.</html:p>
          </html:div>
       </rico:history>
-      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/053158-051196-19650101-19911231"/><rico:isOrWasLeaderOf rdf:resource="agent/051196"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/003768-053158-19780101-19901231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/003768"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/053158-051196-19650101-19911231"/>
+      <rico:isOrWasLeaderOf rdf:resource="agent/051196"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/003768-053158-19780101-19901231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/003768"/>
       <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Albert_Jacquard"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb119084137#about"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/061331-053158"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-061331"/>
    </rico:Agent>
 </rdf:RDF>

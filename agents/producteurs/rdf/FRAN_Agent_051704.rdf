@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051704">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051704"/>
@@ -11,35 +19,33 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-09-27</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Constance DE VERGNETTE DE LAMOTTE)</rico:name>
+            <rico:name xml:lang="fr">Création (par Constance DE VERGNETTE DE LAMOTTE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-09-13</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Il n'existe pas d'IR.</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Il n'existe pas d'IR.</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-09-27</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Notice BnF : FRBNF11964230</rico:source>
-      <rico:source xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/Jacques_Ignace_Hittorff</rico:source>
-      <rico:source xml:lang="fr">Kiene (Michael), Jacques Ignace Hittorff, précurseur du Paris d'Haussmann, traduit de l'allemand par Claude Checconi, éd. du Patrimoine, 2011.</rico:source>
-      <rico:source xml:lang="fr">État sommaire des fonds d'archives privées. Séries AP et AB XIX, Paris, Centre historique des Archives nationales, 2004, p. 858-859 (notice 469 AP).</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000066420850/about"/>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice BnF : FRBNF11964230</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/Jacques_Ignace_Hittorff</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Kiene (Michael), Jacques Ignace Hittorff, précurseur du Paris d'Haussmann, traduit de l'allemand par Claude Checconi, éd. du Patrimoine, 2011.</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">État sommaire des fonds d'archives privées. Séries AP et AB XIX, Paris, Centre historique des Archives nationales, 2004, p. 858-859 (notice 469 AP).</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000066420850"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Jacques_Ignace_Hittorff"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051704">
-            <rico:isInstantiationOf rdf:resource="record/051704"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051704"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051704</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051704"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051704">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -64,88 +70,94 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1792-08-20</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1867-03-25</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/051704"/>
-            <rico:placeRelationHasSource rdf:resource="place/FRAN_RI_005-d3m08ztzoh2--1tgfzbiht5mwd"/>
+            <rico:relationHasTarget rdf:resource="agent/051704"/>
+            <rico:relationHasSource rdf:resource="place/FRAN_RI_005-d3m08ztzoh2--1tgfzbiht5mwd"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/FRAN_RI_005-d3m08ztzoh2--1tgfzbiht5mwd"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/051704"/>
-            <rico:placeRelationHasSource rdf:resource="place/FRAN_RI_005-d5bdppt147--176wwvjcctrx0"/>
+            <rico:relationHasTarget rdf:resource="agent/051704"/>
+            <rico:relationHasSource rdf:resource="place/FRAN_RI_005-d5bdppt147--176wwvjcctrx0"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/FRAN_RI_005-d5bdppt147--176wwvjcctrx0"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/051704"/>
-            <rico:placeRelationHasSource rdf:resource="place/FRAN_RI_005-d3m08z8t8c5-169bxlt5pamea"/>
+            <rico:relationHasTarget rdf:resource="agent/051704"/>
+            <rico:relationHasSource rdf:resource="place/FRAN_RI_005-d3m08z8t8c5-169bxlt5pamea"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/FRAN_RI_005-d3m08z8t8c5-169bxlt5pamea"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_005-d3m08ztzoh2--1tgfzbiht5mwd"/>
       <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_005-d5bdppt147--176wwvjcctrx0"/>
       <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_005-d3m08z8t8c5-169bxlt5pamea"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/051704"/>
-            <rico:placeRelationHasSource rdf:resource="place/Champ-%C3%89lys%C3%A9es"/>
+            <rico:relationHasTarget rdf:resource="agent/051704"/>
+            <rico:relationHasSource rdf:resource="place/Champ-%C3%89lys%C3%A9es"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Champ-%C3%89lys%C3%A9es"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Champ-%C3%89lys%C3%A9es"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/051704"/>
-            <rico:placeRelationHasSource rdf:resource="place/bois%20de%20Boulogne"/>
+            <rico:relationHasTarget rdf:resource="agent/051704"/>
+            <rico:relationHasSource rdf:resource="place/bois%20de%20Boulogne"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/bois%20de%20Boulogne"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/bois%20de%20Boulogne"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/051704"/>
-            <rico:placeRelationHasSource rdf:resource="place/gare%20du%20Nord"/>
+            <rico:relationHasTarget rdf:resource="agent/051704"/>
+            <rico:relationHasSource rdf:resource="place/gare%20du%20Nord"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/gare%20du%20Nord"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/gare%20du%20Nord"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/051704"/>
-            <rico:placeRelationHasSource rdf:resource="place/place%20de%20la%20Concorde"/>
+            <rico:relationHasTarget rdf:resource="agent/051704"/>
+            <rico:relationHasSource rdf:resource="place/place%20de%20la%20Concorde"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/place%20de%20la%20Concorde"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/place%20de%20la%20Concorde"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/051704"/>
-            <rico:placeRelationHasSource rdf:resource="place/salle%20Favart"/>
+            <rico:relationHasTarget rdf:resource="agent/051704"/>
+            <rico:relationHasSource rdf:resource="place/salle%20Favart"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/salle%20Favart"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/salle%20Favart"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/051704"/>
-            <rico:placeRelationHasSource rdf:resource="place/th%C3%A9%C3%A2tre%20de%20l%27Ambigu%20Comique"/>
+            <rico:relationHasTarget rdf:resource="agent/051704"/>
+            <rico:relationHasSource rdf:resource="place/th%C3%A9%C3%A2tre%20de%20l%27Ambigu%20Comique"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/th%C3%A9%C3%A2tre%20de%20l%27Ambigu%20Comique"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/th%C3%A9%C3%A2tre%20de%20l%27Ambigu%20Comique"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051704-d3nyu9yq7p-8zx3tnvrcpf0">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051704"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051704-d3nyu9yq7p-8zx3tnvrcpf0"/>
+            <rico:relationHasTarget rdf:resource="agent/051704"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d190482e203">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051704-d3nyu9yq7p-8zx3tnvrcpf0"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3nyu9yq7p-8zx3tnvrcpf0"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3nyu9yq7p-8zx3tnvrcpf0"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3nyu9yq7p-8zx3tnvrcpf0"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d190482e203"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Jacques Ignace Hittorf (1792-1867) est né à Cologne, en Allemagne, le 20 août 1792. Devenu français par le rattachement de l'Allemagne à la République en 1801, il part à Paris en 1810 où il est l’élève de Percier et Lebas. Puis il va étudier l’architecture grecque en Sicile et y constate l’utilisation de la polychromie. De retour en France en 1824, il organise des fêtes pour le roi Charles X, notamment son sacre, et les funérailles de Louis XVIII. Il restaure la salle Favart, construit le théâtre de l’Ambigu comique avec Lecointe. Devenu, en 1830, architecte de la ville de Paris et du gouvernement, il achève l’église Saint-Vincent-de-Paul commencée avec son beau-père, Jean-Baptiste Lepère, et construit la gare du Nord. En 1836-1838, le gouvernement le charge de remanier la décoration de la place de la Concorde, des Champs-Élysées et de l’avenue de l’Étoile. Il trace les plans des travaux du bois de Boulogne et de ses deux lacs. L’Académie des Beaux-arts l’élit membre en 1853 après plusieurs tentatives. Il meurt le 25 mars 1867.</html:p>
          </html:div>
       </rico:history>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/051702-051704"/><rico:hasFamilyAssociationWith rdf:resource="agent/051702"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051704-051705-18110101-18180501"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/051705"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/051702-051704"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/051702"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/051704-051705-18110101-18180501"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/051705"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb11964230j#about"/>
       <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Jacques_Ignace_Hittorff"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/060738-051704"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-060738"/>
    </rico:Agent>
 </rdf:RDF>

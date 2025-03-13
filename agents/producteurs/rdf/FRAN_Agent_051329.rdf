@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051329">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051329"/>
@@ -10,28 +18,27 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-07-04</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Création (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-07-04</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Rustenholz (A.), Treiner (S.),<html:i>La saga Servan-Schreiber</html:i>, 1993. Tome 1,<html:i>Une famille dans le siècle</html:i>. Tome 2,<html:i>Le temps des initiales</html:i>.</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Wikipedia : https://fr.wikipedia.org/wiki/Famille_Servan-Schreiber</html:p>
-      </rico:source>
-      <rico:hasSource rdf:resource="https://fr.wikipedia.org/wiki/Famille_Servan-Schreiber"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="https://fr.wikipedia.org/wiki/Famille_Servan-Schreiber"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051329">
-            <rico:isInstantiationOf rdf:resource="record/051329"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051329"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051329</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051329"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051329">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Family"/>
@@ -100,5 +107,7 @@
                <html:i>Échos</html:i>créé par son père et son oncle en 1908. Il en prend la direction de la rédaction deux ans plus tard. À la suite d'un stage approfondi dans la presse magazine américaine, il intègre en 1964<html:i>L’Express</html:i>, fondé par son frère Jean-Jacques en 1953. En 1967, JLSS crée avec Jean Boissonnat<html:i>L’Expansion</html:i>, autour duquel il développe au cours des 27 années suivantes le premier groupe de presse économique français, le Groupe Expansion, qui comprend aussi<html:i>L’Entreprise</html:i>,<html:i>La Lettre de L’Expansion</html:i>,<html:i>La Vie Financière</html:i>,<html:i>La Tribune</html:i>. Le groupe est revendu en 1994. JLSS a aussi enseigné à l'université Stanford, en Californie, de 1971 à 1973. De 1972 à 1981, il anime Questionnaire sur TF1. À la même époque, il est également chroniqueur sur France Inter et Europe 1 (Club de la presse). De 1994 à 1997, JLSS rachète et dirige<html:i>La Vie Économique</html:i>à Casablanca, dont il fera le premier hebdomadaire d’information du Maroc. Début 1997, il le revend pour acheter<html:i>Psychologies magazine</html:i>à Bernard Loiseau. Depuis 2006, il préside le comité de soutien de l'organisation Human Rights Watch en France. JLSS est aussi l'auteur de onze livres, dont<html:i>L'Entreprise à Visage Humain</html:i>(1973), et<html:i>Une vie en plus</html:i>, avec Joël de Rosnay et François de Closets (2005).</html:p>
          </html:div>
       </rico:history>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/060983-051329"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-060983"/>
    </rico:Agent>
 </rdf:RDF>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050936">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050936"/>
@@ -10,22 +18,21 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-12-16</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Florence CLAVAUD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Florence CLAVAUD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-12-16</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 16 décembre 2014 : création sur demande d'E. Van Den Neste (mission Elysée)</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 16 décembre 2014 : création sur demande d'E. Van Den Neste (mission Elysée)</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050936">
-            <rico:isInstantiationOf rdf:resource="record/050936"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050936"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050936</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050936"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050936">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -41,38 +48,42 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1964-09-23</rico:birthDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050936-d-31c1bj851u-1awh61xs7pwk3-20080101-20091231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050936"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050936-d-31c1bj851u-1awh61xs7pwk3-20080101-20091231"/>
+            <rico:relationHasTarget rdf:resource="agent/050936"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d177368e80">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050936-d-31c1bj851u-1awh61xs7pwk3-20080101-20091231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-31c1bj851u-1awh61xs7pwk3"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">conseiller presse pour les questions internationales</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-31c1bj851u-1awh61xs7pwk3"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-31c1bj851u-1awh61xs7pwk3"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d177368e80"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050936-d-30h8bmhxa1--a0l5qlo7ojo2-20070101-20081231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050936"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050936-d-30h8bmhxa1--a0l5qlo7ojo2-20070101-20081231"/>
+            <rico:relationHasTarget rdf:resource="agent/050936"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d177368e100">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050936-d-30h8bmhxa1--a0l5qlo7ojo2-20070101-20081231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-30h8bmhxa1--a0l5qlo7ojo2"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">porte-parole adjoint</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-30h8bmhxa1--a0l5qlo7ojo2"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-30h8bmhxa1--a0l5qlo7ojo2"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d177368e100"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>
@@ -81,7 +92,6 @@
             <html:p>Université Paris IX-Dauphine</html:p>
             <html:p>Université de Cambridge (Grande-Bretagne)</html:p>
             <html:p>Institut d’études politiques (Paris)</html:p>
-            <html:p/>
             <html:p>
                <html:u>Carrière</html:u>
             </html:p>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050011">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050011"/>
@@ -10,22 +18,21 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-06-17</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Michel THIBAULT)</rico:name>
+            <rico:name xml:lang="fr">Création (par Michel THIBAULT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-06-17</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Notice rédigée avec la contribution d'Éléonore ALQUIER.</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Notice rédigée avec la contribution d'Éléonore ALQUIER.</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050011">
-            <rico:isInstantiationOf rdf:resource="record/050011"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050011"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050011</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050011"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050011">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -57,12 +64,21 @@
             <html:p>Enfin, l’InVS apporte une contribution à la gestion des situations de crise sanitaire, en proposant aux pouvoirs publics toute mesure ou action nécessaire. Dans le cadre de ses missions, il participe également à l’action européenne et internationale de la France, notamment par des collaborations avec des réseaux internationaux de santé publique dédiés à la surveillance et à l’alerte sanitaires.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/050011-050012-19990101-*"/><rico:hasOrHadSubordinate rdf:resource="agent/050012"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/050011-050013-19990101-*"/><rico:hasOrHadSubordinate rdf:resource="agent/050013"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/050011-050015-19990101-*"/><rico:hasOrHadSubordinate rdf:resource="agent/050015"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/050011-050017-19990101-*"/><rico:hasOrHadSubordinate rdf:resource="agent/050017"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/050011-050016-19990101-*"/><rico:hasOrHadSubordinate rdf:resource="agent/050016"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/050011-050014-19990101-*"/><rico:hasOrHadSubordinate rdf:resource="agent/050014"/>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/009838-050011-20120516-*"/><rico:isOrWasSubordinateTo rdf:resource="agent/009838"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/050011-050012-19990101-*"/>
+      <rico:hasDirectSubordinate rdf:resource="agent/050012"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/050011-050013-19990101-*"/>
+      <rico:hasDirectSubordinate rdf:resource="agent/050013"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/050011-050015-19990101-*"/>
+      <rico:hasDirectSubordinate rdf:resource="agent/050015"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/008567-050011-19990101-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/008567"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/050011-050017-19990101-*"/>
+      <rico:hasDirectSubordinate rdf:resource="agent/050017"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/050011-050016-19990101-*"/>
+      <rico:hasDirectSubordinate rdf:resource="agent/050016"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/050011-050014-19990101-*"/>
+      <rico:hasDirectSubordinate rdf:resource="agent/050014"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/009838-050011-20120516-*"/>
+      <rico:isDirectSubordinateTo rdf:resource="agent/009838"/>
    </rico:Agent>
 </rdf:RDF>

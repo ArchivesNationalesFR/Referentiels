@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052243">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052243"/>
@@ -8,34 +16,45 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-16</rico:creationDate>
-      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-16</rico:lastModificationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-05-04</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Vanessa SZOLLOSI)</rico:name>
+            <rico:name xml:lang="fr">Création (par Vanessa SZOLLOSI)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-16</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Vanessa SZOLLOSI)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Vanessa SZOLLOSI)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-16</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 16 avril 2019 : ajout liens d'identité, identifiant ISNI, suppression relation vers NP 134</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 16 avril 2019 : ajout liens d'identité, identifiant ISNI, suppression relation vers NP 134</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000043203749/about"/>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-05-04</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-05-04</rico:date>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 4/05/2022 : correction de 2 mentions de texte de référence (indication "non publié au JO" sortie de la zone de lien web)</rico:generalDescription>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000043203749"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Christian_Rollet"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052243">
-            <rico:isInstantiationOf rdf:resource="record/052243"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052243"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052243</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052243"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052243">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -52,156 +71,153 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1944-01-01</rico:birthDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052243-d3m0bl7bbdy-s3moxyf8em8b-19860101-19931231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052243"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052243-d3m0bl7bbdy-s3moxyf8em8b-19860101-19931231"/>
+            <rico:relationHasTarget rdf:resource="agent/052243"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d198685e113">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052243-d3m0bl7bbdy-s3moxyf8em8b-19860101-19931231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3m0bl7bbdy-s3moxyf8em8b"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1986-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-12-31</rico:endDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl7bbdy-s3moxyf8em8b"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl7bbdy-s3moxyf8em8b"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d198685e113"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052243-d699msixdvh--wgctct8soc1y-19810101-19861231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052243"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052243-d699msixdvh--wgctct8soc1y-19810101-19861231"/>
+            <rico:relationHasTarget rdf:resource="agent/052243"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d198685e128">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052243-d699msixdvh--wgctct8soc1y-19810101-19861231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1981-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1986-12-31</rico:endDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d198685e128"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052243-d699msk49pq-fqetp63zthtj-19720101-20091231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052243"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052243-d699msk49pq-fqetp63zthtj-19720101-20091231"/>
+            <rico:relationHasTarget rdf:resource="agent/052243"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d198685e143">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052243-d699msk49pq-fqetp63zthtj-19720101-20091231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msk49pq-fqetp63zthtj"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1972-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-12-31</rico:endDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk49pq-fqetp63zthtj"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk49pq-fqetp63zthtj"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d198685e143"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052243-d3m0bl6svu0--1tubaqb9x6dwe-19720101-20091231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052243"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052243-d3m0bl6svu0--1tubaqb9x6dwe-19720101-20091231"/>
+            <rico:relationHasTarget rdf:resource="agent/052243"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d198685e158">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052243-d3m0bl6svu0--1tubaqb9x6dwe-19720101-20091231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3m0bl6svu0--1tubaqb9x6dwe"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1972-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">(interruption de 1976 à 2007)</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl6svu0--1tubaqb9x6dwe"/>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl6svu0--1tubaqb9x6dwe"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d198685e158"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052243"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052243"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d198685e181">
                   <rico:title>Décret du 25 février 1993 portant nomination à l’Inspection générale des affaires sociales</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000163485"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
-            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1993</rico:beginningDate>
-            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2000</rico:endDate>
+            </rico:relationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-01-01</rico:endDate>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Décret du 25 février 1993 portant nomination à l’Inspection générale des affaires sociales</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000163485"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d198685e181"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052243"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052243"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d198685e196">
                   <rico:title>Décret du 20 septembre 2000 portant nomination du directeur de la Caisse autonome nationale de la sécurité sociale dans les mines</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000767111"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
-            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2000</rico:beginningDate>
-            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2006</rico:endDate>
+            </rico:relationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2006-01-01</rico:endDate>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Décret du 20 septembre 2000 portant nomination du directeur de la Caisse autonome nationale de la sécurité sociale dans les mines</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000767111"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d198685e196"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052243"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
-                  <rico:title>Arrêté du 29 août 2006 maintenant l'intéressé en position de détachement à la Caisse autonome nationale de la sécurité sociale dans les mines (non publié au Journal officiel)</rico:title>
-               </rico:Mandate>
-            </rico:mandateRelationHasSource>
-            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2006</rico:beginningDate>
-            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2007</rico:endDate>
-         </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 29 août 2006 maintenant l'intéressé en position de détachement à la Caisse autonome nationale de la sécurité sociale dans les mines (non publié au Journal officiel)</rico:title>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
-         <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052243"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052243"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d198685e211">
                   <rico:title>Décret du 20 avril 2007 mettant fin sur demande aux fonctions de directeur général de la Caisse autonome de sécurité sociale dans les mines</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000426088"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
-            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2007</rico:beginningDate>
+            </rico:relationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007-01-01</rico:beginningDate>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Décret du 20 avril 2007 mettant fin sur demande aux fonctions de directeur général de la Caisse autonome de sécurité sociale dans les mines</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000426088"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d198685e211"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052243"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
-                  <rico:title>Arrêté de 2006 portant réintégration à l’Inspection générale des affaires sociales (non publié au Journal officiel)</rico:title>
-               </rico:Mandate>
-            </rico:mandateRelationHasSource>
-         </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté de 2006 portant réintégration à l’Inspection générale des affaires sociales (non publié au Journal officiel)</rico:title>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
-         <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052243"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052243"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d198685e223">
                   <rico:title>Arrêté du 23 juillet 2008 de radiation des cadres et d'admission à la retraite</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000019267478"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
-            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2009</rico:beginningDate>
+            </rico:relationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-01-01</rico:beginningDate>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 23 juillet 2008 de radiation des cadres et d'admission à la retraite</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000019267478"/>
-               </rico:Mandate></rico:authorizedBy>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d198685e223"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/052243"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d198685e235">
+                  <rico:title>Arrêté du 29 août 2006 maintenant l'intéressé en position de détachement à la Caisse autonome nationale de la sécurité sociale dans les mines (non publié au Journal officiel)</rico:title>
+               </rico:Mandate>
+            </rico:relationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2006-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007-01-01</rico:endDate>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d198685e235"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/052243"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d198685e250">
+                  <rico:title>Arrêté de 2006 portant réintégration à l’Inspection générale des affaires sociales (non publié au Journal officiel)</rico:title>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d198685e250"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Études et diplômes :</html:p>
             <html:p>- 1966 : École des Hautes études commerciales (HEC).</html:p>
             <html:p>- 1967 : Licence en sciences économiques.</html:p>
             <html:p>- 1972 : École nationale d’administration (ENA).</html:p>
-            <html:p/>
             <html:p>Carrière :</html:p>
             <html:p>- de 1972 à 1976 : inspecteur adjoint à l’Inspection générale des affaires sociales.</html:p>
             <html:p>- de 1976 à 1981 : chargé de mission au Commissariat général au plan.</html:p>
@@ -212,21 +228,26 @@
             <html:p>- de 1993 à 2000 : chef du service de l’Inspection générale des affaires sociales.</html:p>
             <html:p>- de 2000 à 2007 : directeur général de la Caisse autonome de sécurité sociale dans les mines.</html:p>
             <html:p>- de 2007 à 2009 : inspecteur général des affaires sociales.</html:p>
-            <html:p/>
             <html:p>Distinctions honorifiques :</html:p>
             <html:p>- Chevalier des palmes académiques,</html:p>
             <html:p>- Chevalier de la Légion d’honneur.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000270-052243-19760101-19811231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000270"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009633-052243-19840101-19851231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/009633"/>
-      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/052243-009291-20000101-20071231"/><rico:isOrWasLeaderOf rdf:resource="agent/009291"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/004053-052243-19720101-20091231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/004053"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000270-052243-19760101-19811231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000270"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009633-052243-19840101-19851231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/009633"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/052243-009291-20000101-20071231"/>
+      <rico:isOrWasLeaderOf rdf:resource="agent/009291"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/052243-053397-19810521-19840717"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/053397"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/004053-052243-19720101-20091231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/004053"/>
       <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Christian_Rollet"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb13519893v#about"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/013186-052243"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-013186"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/058113-052243"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-058113"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/013186-052243"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-013186"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/058113-052243"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-058113"/>
    </rico:Agent>
 </rdf:RDF>

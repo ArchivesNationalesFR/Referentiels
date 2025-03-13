@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050426">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050426"/>
@@ -11,37 +19,34 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-09</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Pascal DAVID)</rico:name>
+            <rico:name xml:lang="fr">Création (par Pascal DAVID)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-02-04</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Pascal DAVID-DORMIEN)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Pascal DAVID-DORMIEN)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-11-07</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Pas d'ISNI, pas de notice wikipédia, pas de notice d'autorité BnF.</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Pas d'ISNI, pas de notice wikipédia, pas de notice d'autorité BnF.</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-09</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Archives nationales, fonds Goerduck (84AP).</rico:source>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Archives nationales, fonds Goerduck (84AP).</rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050426">
-            <rico:isInstantiationOf rdf:resource="record/050426"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050426"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050426</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050426"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050426">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -73,56 +78,60 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1756-08-22</rico:birthDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050426"/>
-            <rico:placeRelationHasSource rdf:resource="place/Chaumont"/>
+            <rico:relationHasTarget rdf:resource="agent/050426"/>
+            <rico:relationHasSource rdf:resource="place/Chaumont"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Chaumont"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Chaumont"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050426"/>
-            <rico:placeRelationHasSource rdf:resource="place/Etats-Unis"/>
+            <rico:relationHasTarget rdf:resource="agent/050426"/>
+            <rico:relationHasSource rdf:resource="place/Etats-Unis"/>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1781-01-01</rico:beginningDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Expéditions de Yorktown et de la Nouvelle-Londres (New-London).</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Etats-Unis"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Etats-Unis"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050426-d699msjpuqr-66gt6kmedjiv-17840101-17941231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050426"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050426-d699msjpuqr-66gt6kmedjiv-17840101-17941231"/>
+            <rico:relationHasTarget rdf:resource="agent/050426"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d170796e174">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050426-d699msjpuqr-66gt6kmedjiv-17840101-17941231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1784-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1794-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">premier lieutenant de cavalerie, caitaine du régiment de Van der Borch, et capitaine en second au régiment de Royal-Liégeois, capitaine au régiment d'infanterie allemand de Wittgenstein.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d170796e174"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050426-d699msj53l0-1180obzunmkm7-17780101-17941231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050426"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050426-d699msj53l0-1180obzunmkm7-17780101-17941231"/>
+            <rico:relationHasTarget rdf:resource="agent/050426"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d170796e194">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050426-d699msj53l0-1180obzunmkm7-17780101-17941231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj53l0-1180obzunmkm7"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1778-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1794-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">volontaire au service du prince Hesse-Hanau, participe aux expéditions de la Nouvelle-Londres et de Yorktown et missions à Venise pour lever un coprs de chasseurs.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj53l0-1180obzunmkm7"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj53l0-1180obzunmkm7"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d170796e194"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>D'une famille originaire de Francfort-sur-le Main (Allemagne) et natif en août 1756 de Chaumont-en-Bassigny, aujourd'hui Chaumont (Haute-Marne), André-Frédérik Goerduck (1756- ) est le fils de Frédéric Goerduck, maître de musique, et de Anne Mondolot.</html:p>
@@ -131,7 +140,7 @@
             <html:p>Mais ces perspectives ne satisfont plus ses ambitions comme il l'écrit le 9 avril 1794 : « la partie de l'Europe que nous habitons n'offre plus aucune carrière à parcourir aux hommes avides de gloire et de célébrité ». Il conçoit alors le projet de fonder un Empire illyrien. À partir de ce moment, on perd la trace de Goerduck dont le frère, émigré en Angleterre dès 1795, vit encore sous la Restauration.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054137-050426"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-054137"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054137-050426"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054137"/>
    </rico:Agent>
 </rdf:RDF>

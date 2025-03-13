@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052200">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052200"/>
@@ -11,30 +19,28 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-09</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Samuel GIBIAT)</rico:name>
+            <rico:name xml:lang="fr">Création (par Samuel GIBIAT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-02-18</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Samuel GIBIAT)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Samuel GIBIAT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-09</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Notice créée par Samuel Gibiat le 7 février 2019 à la demande du service des archives de la présidence de la République et soumise à publication le 25 mars 2019.</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Notice créée par Samuel Gibiat le 7 février 2019 à la demande du service des archives de la présidence de la République et soumise à publication le 25 mars 2019.</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Notice documentaire du service des Archives et de l'information documentaire de la présidence de la République.</rico:source>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice documentaire du service des Archives et de l'information documentaire de la présidence de la République.</rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052200">
-            <rico:isInstantiationOf rdf:resource="record/052200"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052200"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052200</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052200"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052200">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -50,103 +56,107 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1980-04-09</rico:birthDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052200-d699msjqtlt--8qlp1v5rp9ov">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052200"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052200-d699msjqtlt--8qlp1v5rp9ov"/>
+            <rico:relationHasTarget rdf:resource="agent/052200"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d198216e94">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052200-d699msjqtlt--8qlp1v5rp9ov"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjqtlt--8qlp1v5rp9ov"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjqtlt--8qlp1v5rp9ov"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjqtlt--8qlp1v5rp9ov"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d198216e94"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052200-d-31c1bj851u-1awh61xs7pwk3-20170518-*">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052200"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052200-d-31c1bj851u-1awh61xs7pwk3-20170518-*"/>
+            <rico:relationHasTarget rdf:resource="agent/052200"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d198216e100">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052200-d-31c1bj851u-1awh61xs7pwk3-20170518-*"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-31c1bj851u-1awh61xs7pwk3"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-18</rico:beginningDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Conseillère Asie, Russie, Caucase, Turquie, Balkans, réfugiés (depuis mai 2017)</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-31c1bj851u-1awh61xs7pwk3"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-31c1bj851u-1awh61xs7pwk3"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d198216e100"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052200-d-83rsabopx--acx1k0qkuhci-20170101-*">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052200"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052200-d-83rsabopx--acx1k0qkuhci-20170101-*"/>
+            <rico:relationHasTarget rdf:resource="agent/052200"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d198216e117">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052200-d-83rsabopx--acx1k0qkuhci-20170101-*"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-83rsabopx--acx1k0qkuhci"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-01-01</rico:beginningDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Conseillère référendaire</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-83rsabopx--acx1k0qkuhci"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-83rsabopx--acx1k0qkuhci"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d198216e117"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052200-d-31c1bj851u-1awh61xs7pwk3-20120101-20170104">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052200"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052200-d-31c1bj851u-1awh61xs7pwk3-20120101-20170104"/>
+            <rico:relationHasTarget rdf:resource="agent/052200"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d198216e134">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052200-d-31c1bj851u-1awh61xs7pwk3-20120101-20170104"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-31c1bj851u-1awh61xs7pwk3"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-01-04</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Conseillère technique Asie et politique culturelle (2012-2014), conseillère Sommets internationaux et Asie (2014-2016) puis conseillère Sommets internationaux Nations-Unies, Amérique et Asie (2016-2017)</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-31c1bj851u-1awh61xs7pwk3"/>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-31c1bj851u-1awh61xs7pwk3"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d198216e134"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052200"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052200"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d198216e157">
                   <rico:title>- arrêté du 12 juillet 2014, publié au Journal officiel le 16, portant nomination au cabinet du président de la République - NOR : PREX1417024A (https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000029238138)</rico:title>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>- arrêté du 12 juillet 2014, publié au Journal officiel le 16, portant nomination au cabinet du président de la République - NOR : PREX1417024A (https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000029238138)</rico:title>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d198216e157"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052200"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052200"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d198216e162">
                   <rico:title>- arrêté du 4 janvier 2017, publié au Journal officiel le 5, portant cessation de fonctions à la présidence de la République - NOR : PREX1701160A (https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000033860611)</rico:title>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>- arrêté du 4 janvier 2017, publié au Journal officiel le 5, portant cessation de fonctions à la présidence de la République - NOR : PREX1701160A (https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000033860611)</rico:title>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d198216e162"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052200"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052200"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d198216e167">
                   <rico:title>- arrêté du 15 mai 2017, publié au Journal officiel le 18, relatif à la composition du cabinet du Président de la République - NOR : PREX1717921A (https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000034952050)</rico:title>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>- arrêté du 15 mai 2017, publié au Journal officiel le 18, relatif à la composition du cabinet du Président de la République - NOR : PREX1717921A (https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000034952050)</rico:title>
-               </rico:Mandate></rico:authorizedBy>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d198216e167"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Née le 9 avril 1980 à Toulon (Var).</html:p>
-            <html:p/>
             <html:p>
                <html:b>Diplômes</html:b>
             </html:p>
@@ -155,7 +165,6 @@
             <html:p>Institut d'études politiques de Paris (2001-2005)</html:p>
             <html:p>Ecole normale supérieure (2001-2005)</html:p>
             <html:p>Ecole nationale d'administration, promotion Emile Zola (2008-2010)</html:p>
-            <html:p/>
             <html:p>
                <html:b>Carrière</html:b>
             </html:p>
@@ -169,9 +178,13 @@
             <html:p>- conseillère Asie, Russie, Caucase, Turquie, Balkans, réfugiés au cabinet d'Emmanuel Macron, président de la République, à compter du 18 mai 2017.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/003781-052200-20010101-20051231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/003781"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/003779-052200-20010101-20051231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/003779"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000165-052200-20080101-20101231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000165"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000096-052200-20170101-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000096"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/003781-052200-20010101-20051231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/003781"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/003779-052200-20010101-20051231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/003779"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000165-052200-20080101-20101231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000165"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000096-052200-20170101-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000096"/>
    </rico:Agent>
 </rdf:RDF>

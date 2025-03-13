@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052415">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052415"/>
@@ -11,32 +19,30 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-02-07</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Isabelle AUTIN-DONSEZ)</rico:name>
+            <rico:name xml:lang="fr">Création (par Isabelle AUTIN-DONSEZ)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-12-11</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Geneviève PROFIT)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Geneviève PROFIT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-02-07</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 07/02/2020 : suppression ISNI (celui de la ministre et non du cabinet), modification forme autorisée du nom</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 07/02/2020 : suppression ISNI (celui de la ministre et non du cabinet), modification forme autorisée du nom</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Site internet du ministère de la Culture et de la Communication (https://www.culture.gouv.fr/)</rico:source>
-      <rico:source xml:lang="fr">Notice Wikipedia de Françoise Nyssen (https://fr.wikipedia.org/wiki/Fran%C3%A7oise_Nyssen)</rico:source>
-      <rico:hasSource rdf:resource="https://data.bnf.fr/ark:/12148/cb16707466x"/>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Site internet du ministère de la Culture et de la Communication (https://www.culture.gouv.fr/)</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice Wikipedia de Françoise Nyssen (https://fr.wikipedia.org/wiki/Fran%C3%A7oise_Nyssen)</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="https://data.bnf.fr/ark:/12148/cb16707466x"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052415">
-            <rico:isInstantiationOf rdf:resource="record/052415"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052415"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052415</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052415"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052415">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -54,222 +60,199 @@
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-17</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-10-16</rico:endDate>
       <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5blonb04s-1nqrprwwl75h0"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052415-d3nyug261d--1cyxwnocz7hzo">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052415"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052415-d3nyug261d--1cyxwnocz7hzo"/>
+            <rico:relationHasTarget rdf:resource="agent/052415"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d201819e116">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052415-d3nyug261d--1cyxwnocz7hzo"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyug261d--1cyxwnocz7hzo"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyug261d--1cyxwnocz7hzo"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d201819e116"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052415-d-5y3g3ef6o-1651r6rgctc85">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052415"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052415-d-5y3g3ef6o-1651r6rgctc85"/>
+            <rico:relationHasTarget rdf:resource="agent/052415"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d201819e122">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052415-d-5y3g3ef6o-1651r6rgctc85"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d-5y3g3ef6o-1651r6rgctc85"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d-5y3g3ef6o-1651r6rgctc85"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d201819e122"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052415-d5bhviikk9--y6te63k761ib">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052415"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052415-d5bhviikk9--y6te63k761ib"/>
+            <rico:relationHasTarget rdf:resource="agent/052415"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d201819e128">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052415-d5bhviikk9--y6te63k761ib"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d201819e128"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052415"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052415"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d201819e137">
                   <rico:title>• Décret n° 2017-1077 du 24 mai 2017 relatif aux attributions du ministre de la culture (NOR: MICX1714820D)</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000034807155"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>• Décret n° 2017-1077 du 24 mai 2017 relatif aux attributions du ministre de la culture (NOR: MICX1714820D)</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000034807155"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d201819e137"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052415"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052415"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d201819e143">
                   <rico:title>• Décret n° 2018-591 du 9 juillet 2018 pris en application de l'article 2-1 du décret n° 59-178 du 22 janvier 1959 relatif aux attributions des ministres (NOR: MICX1813829D)</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000037165617"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>• Décret n° 2018-591 du 9 juillet 2018 pris en application de l'article 2-1 du décret n° 59-178 du 22 janvier 1959 relatif aux attributions des ministres (NOR: MICX1813829D)</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000037165617"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d201819e143"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052415"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052415"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d201819e149">
                   <rico:title>• Arrêté du 18 mai 2017 portant nomination au cabinet de la ministre de la culture (NOR: MICA1714762A)</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000034802322"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>• Arrêté du 18 mai 2017 portant nomination au cabinet de la ministre de la culture (NOR: MICA1714762A)</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000034802322"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d201819e149"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052415"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052415"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d201819e155">
                   <rico:title>• Arrêté du 6 juin 2017 portant nomination au cabinet de la ministre de la culture (NOR: MICA1715952A)</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000034968853"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>• Arrêté du 6 juin 2017 portant nomination au cabinet de la ministre de la culture (NOR: MICA1715952A)</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000034968853"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d201819e155"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052415"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052415"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d201819e161">
                   <rico:title>• Arrêté du 21 juin 2017 portant nomination au cabinet de la ministre de la culture (NOR : MICA1718790A)</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000035070918"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>• Arrêté du 21 juin 2017 portant nomination au cabinet de la ministre de la culture (NOR : MICA1718790A)</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000035070918"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d201819e161"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052415"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052415"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d201819e168">
                   <rico:title>• Arrêté du 21 juin 2017 portant nomination au cabinet de la ministre de la culture (NOR: MICA1718287A)</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000035013789"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>• Arrêté du 21 juin 2017 portant nomination au cabinet de la ministre de la culture (NOR: MICA1718287A)</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000035013789"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d201819e168"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052415"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052415"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d201819e174">
                   <rico:title>• Arrêté du 27 juin 2017 portant cessation de fonctions et nomination au cabinet de la ministre de la culture (NOR: MICA1717708A)</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000035070925"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>• Arrêté du 27 juin 2017 portant cessation de fonctions et nomination au cabinet de la ministre de la culture (NOR: MICA1717708A)</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000035070925"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d201819e174"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052415"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052415"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d201819e180">
                   <rico:title>• Arrêté du 19 septembre 2017 portant nomination au cabinet de la ministre de la culture (NOR : MICA1726276A)</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000035666341"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>• Arrêté du 19 septembre 2017 portant nomination au cabinet de la ministre de la culture (NOR : MICA1726276A)</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000035666341"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d201819e180"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052415"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052415"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d201819e186">
                   <rico:title>• Arrêté du 5 décembre 2017 portant cessation de fonctions et nomination au cabinet de la ministre de la culture (NOR: MICA1733396A)</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000036172591"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>• Arrêté du 5 décembre 2017 portant cessation de fonctions et nomination au cabinet de la ministre de la culture (NOR: MICA1733396A)</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000036172591"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d201819e186"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052415"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052415"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d201819e192">
                   <rico:title>• Arrêté du 9 janvier 2018 portant cessation de fonctions et nomination au cabinet de la ministre de la culture (NOR: MICA1733075A)</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000036484958"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>• Arrêté du 9 janvier 2018 portant cessation de fonctions et nomination au cabinet de la ministre de la culture (NOR: MICA1733075A)</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000036484958"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d201819e192"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052415"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052415"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d201819e198">
                   <rico:title>• Arrêté du 5 février 2018 portant nominations et cessation de fonctions au cabinet de la ministre de la culture (NOR: MICA1802768A)</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000036609417"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>• Arrêté du 5 février 2018 portant nominations et cessation de fonctions au cabinet de la ministre de la culture (NOR: MICA1802768A)</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000036609417"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d201819e198"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052415"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052415"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d201819e205">
                   <rico:title>• Arrêté du 13 février 2018 portant nominations au cabinet de la ministre de la culture (NOR: MICA1804152A)</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000036619819"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>• Arrêté du 13 février 2018 portant nominations au cabinet de la ministre de la culture (NOR: MICA1804152A)</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000036619819"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d201819e205"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052415"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052415"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d201819e211">
                   <rico:title>• Arrêté du 3 septembre 2018 portant cessation de fonctions et nomination au cabinet de la ministre de la culture (NOR: MICA1823226A)</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000037382122"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>• Arrêté du 3 septembre 2018 portant cessation de fonctions et nomination au cabinet de la ministre de la culture (NOR: MICA1823226A)</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000037382122"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d201819e211"/>
+      <rico:generalDescription rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Organisation interne ou généalogie</h4>
             <html:p>Le cabinet du ministre :</html:p>
@@ -282,7 +265,6 @@
             <html:p>• Directeur adjoint du cabinet : Laurence Tison-Vuillaume (mai 2017-janvier 2018) puis Pierre-Emmanuel Lecerf (février-septembre 2018), puis Philippe Lonné (septembre-octobre 2018)</html:p>
             <html:p>• Chef de cabinet : Loic Turpin (mai 2017-octobre 2018)</html:p>
             <html:p>• Chef adjoint de cabinet : Jeanne Guesdon (mai-juillet 2017) puis Ambre Cerny (juillet 2017-février 2018), puis Pierrick Perrot (février-octobre 2018)</html:p>
-            <html:p/>
             <html:p>Conseillers techniques :</html:p>
             <html:p>• Sarah Gallitre, conseillère en charge de la prospective et des discours (juin 2017-octobre 2018)</html:p>
             <html:p>• Frédérique Gérardin, conseillère en charge des questions européennes et internationales, de la francophonie et du patrimoine (juin 2017-février 2018)</html:p>
@@ -296,7 +278,7 @@
             <html:p>• Jean-Miguel Pire, conseiller en charge de l'accès à la culture, de l'enseignement artistique, du livre et de la lecture (mai-septembre 2017)</html:p>
             <html:p>• Céline Léger-Danion, conseillère en charge de l'accès à la culture, de l’éducation artistique et culturelle, du livre et de la lecture (septembre 2017-octobre 2018)</html:p>
          </html:div>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Françoise Nyssen est nommée ministre de la Culture le 17 mai 2017, sous la présidence d’Emmanuel Macron, dans le premier gouvernement d’Edouard Philippe (mai-juin 2017) et reconduite dans son second gouvernement (juin 2017-....).</html:p>
@@ -317,17 +299,25 @@
             <html:p>Lors du remaniement ministériel du 16 octobre 2018, Françoise Nyssen est remplacée par Franck Riester à la tête du ministère de la Culture.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000005-052415-20170517-20181016"/><rico:isOrWasSubordinateTo rdf:resource="agent/000005"/>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/052022-052415-20170517-*"/><rico:isSuccessorOf rdf:resource="agent/052022"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/058388-052415"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-058388"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/058890-052415"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-058890"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/058980-052415"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-058980"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/058778-052415"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-058778"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/058475-052415"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-058475"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/000005-052415-20170517-20181016"/>
+      <rico:wasSubordinateTo rdf:resource="agent/000005"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentTemporalRelation/052415-053112-20181016-*"/>
+      <rico:hasSuccessor rdf:resource="agent/053112"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/052022-052415-20170517-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/052022"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/058388-052415"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-058388"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/058890-052415"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-058890"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/058980-052415"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-058980"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/058778-052415"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-058778"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/058475-052415"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-058475"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/059001-052415"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-059001"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/059634-052415"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-059634"/>
    </rico:Agent>
 </rdf:RDF>

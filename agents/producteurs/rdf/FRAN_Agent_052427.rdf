@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052427">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052427"/>
@@ -11,29 +19,27 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-10-15</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Alexia RAIMONDO)</rico:name>
+            <rico:name xml:lang="fr">Création (par Alexia RAIMONDO)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-12-26</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Solange BIDOU)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Solange BIDOU)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-10-15</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 15/10/2020 : ajout statut juridique, ajout relation chrono vers 52426</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 15/10/2020 : ajout statut juridique, ajout relation chrono vers 52426</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052427">
-            <rico:isInstantiationOf rdf:resource="record/052427"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052427"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052427</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052427"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052427">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -60,18 +66,17 @@
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1806-01-01</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1914-12-31</rico:endDate>
       <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5blonaxbw--1mt8t42bokzts"/>
-      <rico:agentIsTargetOfMandateRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052427"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052427"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d202037e120">
                   <rico:title>Arrêté du 5 vendémiaire an IX</rico:title>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 5 vendémiaire an IX</rico:title>
-               </rico:Mandate></rico:authorizedBy>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d202037e120"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Le bureau consultatif des Arts et Manufactures est créé en 1806 à partir des bases de son prédécesseur, le bureau de consultation des Arts et Métiers. Ce dernier est vidé de tous les représentants de sociétés d’inventeurs. Le nouveau bureau qui dépend du ministère de l’Intérieur puis du ministère des Manufactures et du Commerce reprend des fonctions similaires : il distribue des récompenses ou autorise l’attribution du brevet. Il est en fait, plus précisément, chargé de valider le dossier administrativement en vertu de l’arrêté du 5 vendémiaire an IX.</html:p>
@@ -84,7 +89,11 @@
             <html:p>Au début du XXe siècle le comité consultatif semble bien n’être saisi que d’un petit nombre d’affaires, mais sans doute parmi les plus sensibles. C’est en effet le directeur de l’Institut national de la propriété industrielle qui sollicite l’avis du Comité consultatif avant de proposer une décision de rejet au ministre.</html:p>
          </html:div>
       </rico:history>
-      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000008-052427-18060101-19141231"/><rico:isOrwasSubdivisionOf rdf:resource="agent/000008"/>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/052426-052427-18060101-*"/><rico:isSuccessorOf rdf:resource="agent/052426"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/000008-052427-18060101-19141231"/>
+      <rico:wasSubdivisionOf rdf:resource="agent/000008"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/052426-052427-18060101-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/052426"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/057993-052427"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-057993"/>
    </rico:Agent>
 </rdf:RDF>

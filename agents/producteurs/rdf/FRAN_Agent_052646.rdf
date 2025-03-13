@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052646">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052646"/>
@@ -11,30 +19,28 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-12-09</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Création (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-07</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Pas de notice wikipédia, pas de notice d'autorité BnF, pas de numéro ISNI</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Pas de notice wikipédia, pas de notice d'autorité BnF, pas de numéro ISNI</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-12-09</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 09/12/2020 : suppression des liens déjà présents en sens inverses</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 09/12/2020 : suppression des liens déjà présents en sens inverses</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052646">
-            <rico:isInstantiationOf rdf:resource="record/052646"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052646"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052646</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052646"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052646">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -51,22 +57,24 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1826-05-28</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1906-09-18</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052646-d699msiribo--1dn34eg8lht4f-18630101-18691231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052646"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052646-d699msiribo--1dn34eg8lht4f-18630101-18691231"/>
+            <rico:relationHasTarget rdf:resource="agent/052646"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d205395e91">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052646-d699msiribo--1dn34eg8lht4f-18630101-18691231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1863-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1869-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Député de Seine-et-Marne</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d205395e91"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Fils de Louis Charles François Lévisse de Montigny de Jaucourt (1786-1877), qui a été adopté en 1821 par Arnail François de Jaucourt (1757-1852), et d'Henriette Fanny Mathieu de Faviers, Jean<html:i>François</html:i>Charles Lévisse de Montigny de Jaucourt (1826-1906), est maître des requêtes au Conseil d'État et entre de bonne heure dans la diplomatie. Il a été attaché de l'ambassade française à Vienne, et en 1861, directeur de cabinet de Persigny, ministre de l'Intérieur. Il est également député de Seine-et-Marne au Corps législatif de 1863 à 1869. Il épouse Caroline Steiner (v. 1840-1925), fille de l'industriel anglais Frédéric Steiner.</html:p>
@@ -74,8 +82,9 @@
                <html:i>pendant le congrès de Vienne</html:i>. Il décède à Baden-Baden (Allemagne) en 1906 et est enterré à Paris, au cimetière du Père Lachaise.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050402-052646-18610101-18720113"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050402"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/001865-052646"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-001865"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050402-052646-18610101-18720113"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050402"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/001865-052646"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-001865"/>
    </rico:Agent>
 </rdf:RDF>

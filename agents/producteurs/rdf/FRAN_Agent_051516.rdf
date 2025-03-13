@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051516">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051516"/>
@@ -11,37 +19,34 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-06-14</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Marine ZELVERTE)</rico:name>
+            <rico:name xml:lang="fr">Création (par Marine ZELVERTE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-30</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Marine ZELVERTE)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Marine ZELVERTE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-30</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-06-14</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 14 juin 2017 : revu le nom, ajouté descripteur fonctions</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 14 juin 2017 : revu le nom, ajouté descripteur fonctions</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Monte_Carlo_Doualiya"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051516">
-            <rico:isInstantiationOf rdf:resource="record/051516"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051516"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051516</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051516"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051516">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -105,17 +110,18 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1970-01-01</rico:beginningDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051516-d-bpuim5dgy-lj4n6430gdtb">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051516"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051516-d-bpuim5dgy-lj4n6430gdtb"/>
+            <rico:relationHasTarget rdf:resource="agent/051516"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d186523e180">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051516-d-bpuim5dgy-lj4n6430gdtb"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d-bpuim5dgy-lj4n6430gdtb"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d-bpuim5dgy-lj4n6430gdtb"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d186523e180"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>
@@ -133,10 +139,12 @@
          </html:div>
       </rico:history>
       <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Monte_Carlo_Doualiya"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005433-051516-19700101-19961231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/005433"/>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/050803-051516-20080401-*"/><rico:isOrWasSubordinateTo rdf:resource="agent/050803"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/005433-051516-19700101-19961231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/005433"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/050803-051516-20080401-*"/>
+      <rico:isDirectSubordinateTo rdf:resource="agent/050803"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb16982361q#about"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054364-051516"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-054364"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054364-051516"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054364"/>
    </rico:Agent>
 </rdf:RDF>

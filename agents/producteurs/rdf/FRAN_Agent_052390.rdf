@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052390">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052390"/>
@@ -11,31 +19,29 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-11-15</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Pascal DAVID-DORMIEN)</rico:name>
+            <rico:name xml:lang="fr">Création (par Pascal DAVID-DORMIEN)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-11-13</rico:date>
-            <rico:descriptiveNote xml:lang="fr">pas de n°ISNI, pas de notice wikipédia</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">pas de n°ISNI, pas de notice wikipédia</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-11-15</rico:date>
-            <rico:descriptiveNote xml:lang="fr">nouvelle notice</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">nouvelle notice</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Notice BnF n° : FRBNF10928253</rico:source>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice BnF n° : FRBNF10928253</rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052390">
-            <rico:isInstantiationOf rdf:resource="record/052390"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052390"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052390</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052390"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052390">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -52,54 +58,60 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1923-06-08</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-05-10</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052390-d3m0bl7bbdy-s3moxyf8em8b-19620101-19861231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052390"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052390-d3m0bl7bbdy-s3moxyf8em8b-19620101-19861231"/>
+            <rico:relationHasTarget rdf:resource="agent/052390"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d201449e99">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052390-d3m0bl7bbdy-s3moxyf8em8b-19620101-19861231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3m0bl7bbdy-s3moxyf8em8b"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1962-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1986-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Direction du Centre de formation d'éducateurs spécialisés (institut Henri Wallon), puis l'École de formation psycho-pédagogique (EFPP) à Paris (1974-1986).</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl7bbdy-s3moxyf8em8b"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl7bbdy-s3moxyf8em8b"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d201449e99"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052390-d699msj3i51--hevk1gms21cg-19580101-19581231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052390"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052390-d699msj3i51--hevk1gms21cg-19580101-19581231"/>
+            <rico:relationHasTarget rdf:resource="agent/052390"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d201449e119">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052390-d699msj3i51--hevk1gms21cg-19580101-19581231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1958-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1958-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Traducteur en français d'un ouvrage américain.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d201449e119"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052390-d3m0bl6wug5-uopxzo8mxp1p-19470101-19861231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052390"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052390-d3m0bl6wug5-uopxzo8mxp1p-19470101-19861231"/>
+            <rico:relationHasTarget rdf:resource="agent/052390"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d201449e139">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052390-d3m0bl6wug5-uopxzo8mxp1p-19470101-19861231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3m0bl6wug5-uopxzo8mxp1p"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1947-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1986-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Cadre rééducateur (diplômé) et éducateur spécialisé.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl6wug5-uopxzo8mxp1p"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl6wug5-uopxzo8mxp1p"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d201449e139"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Jean Ughetto naît à Lyon en juin 1923. Après ses études universitaires à Lyon, son service militaire, puis un premier stage au Prado de Saint-Romain-le-Puy (dép. Loire), il intègre l’école de cadres rééducateurs de Montesson en Seine-et-Oise, dont il décroche le diplôme en 1947. Jean Pinaud, le directeur de l’école, le recrute à l’école Théophile-Roussel de Montesson, qu’il dirige également. Puis Jean Ughetto repart dans sa région d’origine exercer à l’internat du Prado du Cantin, près de Lyon, auprès du Père Filliâtre.</html:p>
@@ -109,6 +121,7 @@
          </html:div>
       </rico:history>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb109282536#about"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050841-052390-19940101-20100510"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050841"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050841-052390-19940101-20100510"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050841"/>
    </rico:Agent>
 </rdf:RDF>

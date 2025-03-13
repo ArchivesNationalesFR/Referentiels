@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050369">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050369"/>
@@ -10,23 +18,22 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-26</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Vanessa ASPART)</rico:name>
+            <rico:name xml:lang="fr">Création (par Vanessa ASPART)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-26</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 26/03/2018 : recherche de notice d'autorité BnF et Wikipédia infructueuse, ajout lien IR</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 26/03/2018 : recherche de notice d'autorité BnF et Wikipédia infructueuse, ajout lien IR</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Archives nationales, Fonds La Tour d’Auvergne-Lauragais (1304-1925), 644 AP.</rico:source>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Archives nationales, Fonds La Tour d’Auvergne-Lauragais (1304-1925), 644 AP.</rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050369">
-            <rico:isInstantiationOf rdf:resource="record/050369"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050369"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050369</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050369"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050369">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Family"/>
@@ -43,12 +50,12 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1304-01-01</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1925-12-31</rico:endDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050369"/>
-            <rico:placeRelationHasSource rdf:resource="place/Saint-Paulet"/>
+            <rico:relationHasTarget rdf:resource="agent/050369"/>
+            <rico:relationHasSource rdf:resource="place/Saint-Paulet"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Saint-Paulet"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Saint-Paulet"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
@@ -59,7 +66,7 @@
             <html:p>Son frère, Charles-Amable (1826-1879) après des études au séminaire Saint-Sulpice à Paris, est appelé par son oncle le cardinal pour devenir vicaire général de l’évêque d’Arras (1848-1855, puis succède à Monseigneur de Ségur comme auditeur de rote à Rome (1855-1861). Il est enfin archevêque de Bourges jusqu’à sa mort en 1879 et assiste au premier concile du Vatican en 1869-1870.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/003570-050369"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-003570"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/003570-050369"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-003570"/>
    </rico:Agent>
 </rdf:RDF>

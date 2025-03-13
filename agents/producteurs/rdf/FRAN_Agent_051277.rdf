@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051277">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051277"/>
@@ -10,29 +18,28 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-09-08</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Emeline ROTOLO)</rico:name>
+            <rico:name xml:lang="fr">Création (par Emeline ROTOLO)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-09-08</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Elsa Camus, 6 septembre 2016 : modification forme autorisée du nom, ajout sources, ajout liens</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Elsa Camus, 6 septembre 2016 : modification forme autorisée du nom, ajout sources, ajout liens</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Almanach impérial</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice BnF FRBNF10749720 : http://catalogue.bnf.fr/ark:/12148/cb10749720x</html:p>
-      </rico:source>
-      <rico:hasSource rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb10749720x"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb10749720x"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051277">
-            <rico:isInstantiationOf rdf:resource="record/051277"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051277"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051277</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051277"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051277">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -49,47 +56,50 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1804-07-10</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1814-04-03</rico:endDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/051277"/>
-            <rico:placeRelationHasSource rdf:resource="place/Paris"/>
+            <rico:relationHasTarget rdf:resource="agent/051277"/>
+            <rico:relationHasSource rdf:resource="place/Paris"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Paris"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Paris"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051277-d3nyugqf1y-blcz6vh7uoov">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051277"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051277-d3nyugqf1y-blcz6vh7uoov"/>
+            <rico:relationHasTarget rdf:resource="agent/051277"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d182847e113">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051277-d3nyugqf1y-blcz6vh7uoov"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugqf1y-blcz6vh7uoov"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugqf1y-blcz6vh7uoov"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d182847e113"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051277-d5bhvikvro-1p99atu7o3qwy">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051277"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051277-d5bhvikvro-1p99atu7o3qwy"/>
+            <rico:relationHasTarget rdf:resource="agent/051277"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d182847e119">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051277-d5bhvikvro-1p99atu7o3qwy"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvikvro-1p99atu7o3qwy"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvikvro-1p99atu7o3qwy"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d182847e119"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051277-d3nyui1pz3--1xo3byar8jzxv">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051277"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051277-d3nyui1pz3--1xo3byar8jzxv"/>
+            <rico:relationHasTarget rdf:resource="agent/051277"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d182847e125">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051277-d3nyui1pz3--1xo3byar8jzxv"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyui1pz3--1xo3byar8jzxv"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyui1pz3--1xo3byar8jzxv"/></rico:Activity></rico:performsOrPerformed>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d182847e125"/>
+      <rico:generalDescription rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Organisation interne ou généalogie</h4>
             <html:p>Au cours des dix années d'existence du ministère des Cultes, trois ministres se sont succédé : Jean-Étienne-Marie Portalis (10 juillet 1804 au 25 août 1807) décédé en fonction et dont le fils, Charles-Étienne-Marie Portalis alors secrétaire général au sein de ce ministère, assure brièvement l'<html:i>interim</html:i>(1er septembre 1807 au 4 janvier 1808) avant d'être remplacé par Bigot de Préameneu (4 janvier 1808 au 1er avril 1814).</html:p>
@@ -101,28 +111,30 @@
                <html:li>La 3ème division gère la comptabilité et se subdivise en trois bureaux.</html:li>
             </html:ul>
          </html:div>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Après avoir oeuvré à l'élaboration de la Convention du 26 messidor an IX (15 juillet 1801) et de la loi d'application du 18 germinal an X (8 avril 1802) qualifié de Concordat, Jean-Étienne-Marie Portalis est nommé le 16 vendemiaire an X (8 octobre 1801) conseiller d'État chargé de toutes les affaires des Cultes. A partir du 10 juillet 1804 il est nommé ministre des Cultes, fonction antérieurement exercée par le ministère de l'Intérieur.</html:p>
             <html:p>Avec le gouvernement provisoire, les cultes reviennent dans les attributions du ministère de l'Intérieur (Administration générale des Cultes ; 95 rue du Bac) perpétuant la séparation en trois grandes divisions qui ont les mêmes missions mais dont le personnel semble s'étoffer et l'organisation se complexifier pour la division du culte catholique (1ère division). Parallèlement, la fonction de grand aumônier est créée à compter du 24 septembre 1814.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000008-051277-18040710-18140403"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000008"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050990-051277-18040710-18070825"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050990"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/003932-051277"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-003932"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/003962-051277"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-003962"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/003966-051277"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-003966"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/003957-051277"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-003957"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/003951-051277"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-003951"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/003939-051277"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-003939"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/003941-051277"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-003941"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000008-051277-18040710-18140403"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000008"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050990-051277-18040710-18070825"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050990"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/003932-051277"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-003932"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/003962-051277"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-003962"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/003966-051277"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-003966"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/003957-051277"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-003957"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/003951-051277"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-003951"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/003939-051277"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-003939"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/003941-051277"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-003941"/>
    </rico:Agent>
 </rdf:RDF>

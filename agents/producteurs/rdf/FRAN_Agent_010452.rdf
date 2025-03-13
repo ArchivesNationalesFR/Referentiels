@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/010452">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/010452"/>
@@ -11,30 +19,27 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-11-19</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Dérivation
-                (Migration ETANOT)</rico:name>
+            <rico:name xml:lang="fr">Dérivation (Migration ETANOT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Marie-Françoise LIMON-BONNET)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Marie-Françoise LIMON-BONNET)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-11-18</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Marie-Françoise Limon-Bonnet, auteur du champ Historique (novembre 2019). Ajout dates vie et mort. Reprise des liens vers IR. Ajout Notice autorité BnF</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Marie-Françoise Limon-Bonnet, auteur du champ Historique (novembre 2019). Ajout dates vie et mort. Reprise des liens vers IR. Ajout Notice autorité BnF</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Marie-Françoise LIMON-BONNET)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Marie-Françoise LIMON-BONNET)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-11-19</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 19 novembre 2019 : suppression lien d’asso vers NP 10134 déjà présent en sens inverse, indexation lieu revue, ajout lien d'identité pour notice BnF et suppression du lien dans l'historique</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 19 novembre 2019 : suppression lien d’asso vers NP 10134 déjà présent en sens inverse, indexation lieu revue, ajout lien d'identité pour notice BnF et suppression du lien dans l'historique</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/010452">
-            <rico:isInstantiationOf rdf:resource="record/010452"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/010452"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_010452</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
@@ -42,7 +47,7 @@
             <rico:identifier>FRDAFANCH00MC_NANOTAIRE00157</rico:identifier>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/010452">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -73,59 +78,73 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1804-08-10</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1886-10-18</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/010452"/>
-            <rico:placeRelationHasSource rdf:resource="place/17%20rue%20Bleue"/>
+            <rico:relationHasTarget rdf:resource="agent/010452"/>
+            <rico:relationHasSource rdf:resource="place/17%20rue%20Bleue"/>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1843-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1886-10-18</rico:endDate>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/17%20rue%20Bleue"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/17%20rue%20Bleue"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/010452"/>
-            <rico:placeRelationHasSource rdf:resource="place/25%20rue%20Neuve-Saint-Augustin"/>
+            <rico:relationHasTarget rdf:resource="agent/010452"/>
+            <rico:relationHasSource rdf:resource="place/25%20rue%20Neuve-Saint-Augustin"/>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1835-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1842-12-31</rico:endDate>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/25%20rue%20Neuve-Saint-Augustin"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/25%20rue%20Neuve-Saint-Augustin"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/010452"/>
-            <rico:placeRelationHasSource rdf:resource="place/10%20rue%20Gaillon"/>
+            <rico:relationHasTarget rdf:resource="agent/010452"/>
+            <rico:relationHasSource rdf:resource="place/10%20rue%20Gaillon"/>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1831-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1834-12-31</rico:endDate>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/10%20rue%20Gaillon"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/10%20rue%20Gaillon"/>
-      <rico:agentIsTargetOfPerformanceRelation><rico:PerformanceRelation rdf:about="performanceRelation/010452-d3nyu9x713-9kcjiv44l4wh-18311215-18861018"><rico:performanceRelationHasTarget rdf:resource="agent/010452"/><rico:performanceRelationHasSource><rico:Activity><rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/010452-d3nyu9x713-9kcjiv44l4wh-18311215-18861018"/><rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3nyu9x713-9kcjiv44l4wh"/></rico:Activity></rico:performanceRelationHasSource><rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1831-12-15</rico:beginningDate><rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1886-10-18</rico:endDate></rico:PerformanceRelation></rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3nyu9x713-9kcjiv44l4wh"/>
-      <rico:agentIsTargetOfPerformanceRelation>
-         <rico:PerformanceRelation rdf:about="performanceRelation/010452-d3nyu9x713-9kcjiv44l4wh-18311215-18861018">
-            <rico:performanceRelationHasTarget rdf:resource="agent/010452"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/010452-d3nyu9x713-9kcjiv44l4wh-18311215-18861018"/>
-                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3nyu9x713-9kcjiv44l4wh"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/010452-d3nyui3o8w--11y7jgy8q3wnt-18311215-18861018">
+            <rico:relationHasTarget rdf:resource="agent/010452"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d129205e186">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/010452-d3nyui3o8w--11y7jgy8q3wnt-18311215-18861018"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyui3o8w--11y7jgy8q3wnt"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1831-12-15</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1886-10-18</rico:endDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3nyu9x713-9kcjiv44l4wh"/>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d129205e186"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/010452-d3nyu9x713-9kcjiv44l4wh-18311215-18861018">
+            <rico:relationHasTarget rdf:resource="agent/010452"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d129205e204">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/010452-d3nyu9x713-9kcjiv44l4wh-18311215-18861018"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3nyu9x713-9kcjiv44l4wh"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1831-12-15</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1886-10-18</rico:endDate>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3nyu9x713-9kcjiv44l4wh"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d129205e204"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/010452"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/010452"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d129205e222">
                   <rico:title>Dossier de nomination, 6 décembre 1831 (BB/10/846).</rico:title>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Dossier de nomination, 6 décembre 1831 (BB/10/846).</rico:title>
-               </rico:Mandate></rico:authorizedBy>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d129205e222"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Antoine Juste Alphonse Thomas est né le 22 thermidor an XII (10 août 1804), à Paris. Il meurt le 18 octobre 1886 et est inhumé au cimetière du Père-Lachaise (36e division, allée des Acacias, première ligne). Le dernier acte qu'il reçoit est daté du 11 octobre 1886.</html:p>
@@ -139,13 +158,20 @@
             <html:p>Thomas laisse aussi un récit de vie, intitulée "Vie d'un notaire. Allocution intime prononcée dans la séance de clôture de la chambre des notaires du 13 mai 1875", quand Thomas quitte ses responsabilités de président, récit qui représente tout de même une plaquette de 183 pages, parue en 1875 (https://catalogue.bnf.fr/ark:/12148/cb31459918z)</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010134-010452-18311215-18861018"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/010134"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010134-010452-18311215-18861018"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/010134"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb10671756f#about"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/051215-010452"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-051215"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/041253-010452"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-041253"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/059024-010452"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-059024"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/051215-010452"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-051215"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/041253-010452"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-041253"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/059024-010452"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-059024"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/060241-010452"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-060241"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/059968-010452"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-059968"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/060246-010452"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-060246"/>
    </rico:Agent>
 </rdf:RDF>

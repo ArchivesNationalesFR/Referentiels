@@ -24,14 +24,29 @@
             <eventDateTime>2015-09-30</eventDateTime>
             <agentType>machine</agentType>
             <agent>Migration ETANOT</agent>
+            <eventDescription>P. Charbonnier, 05/05/2022 : Modification de la forme autorisée du nom, indexation lieu corrigée, ajout indexation notaire, lien SujectOf IR corrigé, ajout lien successeur, lien vers dossier de num et ordonnance passés de lien IR à source</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2022-05-05</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Mission.referentiels MISSION.REFERENTIELS</agent>
          </maintenanceEvent>
       </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry> RE/XLVII/20, 9 août 1848, dépôt par Louis HAVE, rue Saint-Victor, n° 120, d'une ordonnance de référé qui commet Me MOREL d'ARLEUX pour recevoir les actes de l'étude de Me DORIVAL en l'absence de Me VIEFVILLE.</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>BB/10/709, 5 avril 1825, dossier de nomination</sourceEntry>
+         </source>
+      </sources>
    </control>
    <cpfDescription>
       <identity>
          <entityType>person</entityType>
          <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
-            <part>Morel d'arleux, Louis Jean-Marie</part>
+            <part>Morel d'arleux, Louis Jean-Marie (1792-18..)</part>
          </nameEntry>
       </identity>
       <description>
@@ -47,20 +62,37 @@
          <places>
             <place>
                <placeRole>Lieu de Paris</placeRole>
-               <placeEntry localType="voie" vocabularySource="d3nz8r5k5y-14uu85ncyt871">baudoyer (place)</placeEntry>
-               <placeEntry localType="voie" vocabularySource="d3nzbkxlc3--rm1kdtszvbhe">jouy (rue de)</placeEntry>
-               <placeEntry localType="nomLieu">6 place Baudoyer (de 1825 à 1848), 11 rue de Jouy (de 1848 à 1851), puis 9 (de 1851 à 1853)</placeEntry>
+               <placeEntry localType="nomLieu">11 rue de Jouy (de 1848 à 1851), puis 9 (de 1851 à 1853)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzbkxlc3--rm1kdtszvbhe">Jouy (rue de)</placeEntry>
+               <dateRange>
+                  <fromDate standardDate="1848-01-01">1848</fromDate>
+                  <toDate standardDate="1853-12-31">1853</toDate>
+               </dateRange>
+            </place>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">6 place Baudoyer</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nz8r5k5y-14uu85ncyt871">Baudoyer (place)</placeEntry>
+               <dateRange>
+                  <fromDate standardDate="1825-04-27">27 avril 1825</fromDate>
+                  <toDate standardDate="1848-12-31">1848</toDate>
+               </dateRange>
             </place>
          </places>
          <functions>
             <function>
-               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à Paris</term>
                <dateRange>
                   <fromDate standardDate="1825-04-27">27 avril 1825</fromDate>
                   <toDate standardDate="1858-05-12">12 mai 1858</toDate>
                </dateRange>
             </function>
          </functions>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d3nyu9x713-9kcjiv44l4wh">notaire</term>
+            </occupation>
+         </occupations>
          <biogHist>
             <p>Né le 24 mars 1792 à Paris</p>
          </biogHist>
@@ -76,30 +108,6 @@
                <toDate standardDate="1858-05-12">12 mai 1858</toDate>
             </dateRange>
          </cpfRelation>
-         <resourceRelation resourceRelationType="other">
-            <relationEntry localType="archival">BB/10/709, 5 avril 1825, dossier de nomination</relationEntry>
-         </resourceRelation>
-         <resourceRelation resourceRelationType="other">
-            <relationEntry localType="archival">RE/XLVII/20, 9 août 1848, dépôt par Louis HAVE, rue Saint-Victor, n° 120, d'une ordonnance de référé qui commet Me MOREL d'ARLEUX pour recevoir les actes de l'étude de Me DORIVAL en l'absence de Me VIEFVILLE.</relationEntry>
-         </resourceRelation>
-         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
-                           resourceRelationType="subjectOf"
-                           xlink:href="FRAN_IR_043095"
-                           xlink:type="simple">
-            <relationEntry localType="archival">Minutes et répertoires du notaire Louis Jean Marie MOREL d'ARLEUX, 27 avril 1825 - décembre 1832 (étude CI)</relationEntry>
-         </resourceRelation>
-         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
-                           resourceRelationType="subjectOf"
-                           xlink:href="FRAN_IR_043098"
-                           xlink:type="simple">
-            <relationEntry localType="archival">Minutes et répertoires du notaire Louis Jean Marie MOREL d'ARLEUX, janvier 1853 - 11 mai 1858 (étude CI)</relationEntry>
-         </resourceRelation>
-         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
-                           resourceRelationType="creatorOf"
-                           xlink:href="FRAN_IR_043097"
-                           xlink:type="simple">
-            <relationEntry localType="archival">Minutes et répertoires du notaire Louis Jean Marie MOREL d'ARLEUX, janvier 1843 - décembre 1852 (étude CI)</relationEntry>
-         </resourceRelation>
          <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
                            resourceRelationType="creatorOf"
                            xlink:href="FRAN_IR_053220"
@@ -111,6 +119,24 @@
                            xlink:href="FRAN_IR_043094"
                            xlink:type="simple">
             <relationEntry localType="archival">Minutes et répertoires du notaire Louis Jean Marie MOREL d'ARLEUX, 27 avril 1825 - 11 mai 1858 (étude CI)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043095"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Louis Jean Marie MOREL d'ARLEUX, 27 avril 1825 - décembre 1832 (étude CI)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043097"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Louis Jean Marie MOREL d'ARLEUX, janvier 1843 - décembre 1852 (étude CI)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043098"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Louis Jean Marie MOREL d'ARLEUX, janvier 1853 - 11 mai 1858 (étude CI)</relationEntry>
          </resourceRelation>
       </relations>
    </cpfDescription>

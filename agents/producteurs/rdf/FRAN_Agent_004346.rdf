@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/004346">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/004346"/>
@@ -11,29 +19,26 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-11-16</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Dérivation
-                (Import_SIA)</rico:name>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-11-15</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 15 novembre 2016 : modifications sur demande de la mission. en outre, révision du nom, des dates, ajout indexation fonctions, révision lien IR et lien hiérarchique</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 15 novembre 2016 : modifications sur demande de la mission. en outre, révision du nom, des dates, ajout indexation fonctions, révision lien IR et lien hiérarchique</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-11-16</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/004346">
-            <rico:isInstantiationOf rdf:resource="record/004346"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/004346"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_004346</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
@@ -41,7 +46,7 @@
             <rico:identifier>4104/P</rico:identifier>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/004346">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -77,48 +82,51 @@
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1970-01-01</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-12-31</rico:endDate>
       <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5blonaxbw--1mt8t42bokzts"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/004346-d3nyugtbte--13rem7tfg1o1y">
-            <rico:performanceRelationHasTarget rdf:resource="agent/004346"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/004346-d3nyugtbte--13rem7tfg1o1y"/>
+            <rico:relationHasTarget rdf:resource="agent/004346"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d47751e146">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/004346-d3nyugtbte--13rem7tfg1o1y"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugtbte--13rem7tfg1o1y"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">contentieux sur les questions de pharmacie et de médicaments</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugtbte--13rem7tfg1o1y"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d47751e146"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/004346-d3nyugz67a--1w8i06e8b1ck1">
-            <rico:performanceRelationHasTarget rdf:resource="agent/004346"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/004346-d3nyugz67a--1w8i06e8b1ck1"/>
+            <rico:relationHasTarget rdf:resource="agent/004346"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d47751e157">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/004346-d3nyugz67a--1w8i06e8b1ck1"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugz67a--1w8i06e8b1ck1"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">exercice professionnel de la pharmacie et des professions annexes</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugz67a--1w8i06e8b1ck1"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d47751e157"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/004346-d3nyui1pz3--1xo3byar8jzxv">
-            <rico:performanceRelationHasTarget rdf:resource="agent/004346"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/004346-d3nyui1pz3--1xo3byar8jzxv"/>
+            <rico:relationHasTarget rdf:resource="agent/004346"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d47751e168">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/004346-d3nyui1pz3--1xo3byar8jzxv"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyui1pz3--1xo3byar8jzxv"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">élaboration des textes législatifs et réglementaires sur la pharmacie et le médicament</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyui1pz3--1xo3byar8jzxv"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d47751e168"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>L’arrêté du 24 novembre 1970 crée au sein du service central de la pharmacie et du médicament une division des affaires générales. Elle traite de tous les problèmes concernant l’exercice de la pharmacie et des professions annexes : officines, établissements de fabrication et de répartition des médicaments, laboratoires d’analyses médicales, pharmacies hospitalières et mutualistes, dépôts de médicaments. Elle est chargée du contentieux se rapportant à son domaine de compétence, délivre les documents nécessaires à l’importation et à l’exportation des médicaments et effectue les achats de produits pharmaceutiques destinés aux pays ayant conclu des accords de coopération ou d’assistance avec la France.</html:p>
@@ -136,12 +144,17 @@
             <html:p>Cette organisation subsiste jusqu’à la suppression de la direction de la pharmacie et du médicament et la création d’une sous-direction de la pharmacie au sein de la direction générale de la santé.</html:p>
          </html:div>
       </rico:history>
-      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/004346-004342-19760101-19851231"/><rico:hasOrHadSubdivision rdf:resource="agent/004342"/>
-      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/004346-004344-19760101-19851231"/><rico:hasOrHadSubdivision rdf:resource="agent/004344"/>
-      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/004346-004345-19850101-19931231"/><rico:hasOrHadSubdivision rdf:resource="agent/004345"/>
-      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/004346-004343-19760101-19931231"/><rico:hasOrHadSubdivision rdf:resource="agent/004343"/>
-      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/004357-004346-19700101-19931231"/><rico:isOrwasSubdivisionOf rdf:resource="agent/004357"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/022445-004346"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-022445"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/004346-004342-19760101-19851231"/>
+      <rico:hadSubdivision rdf:resource="agent/004342"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/004346-004344-19760101-19851231"/>
+      <rico:hadSubdivision rdf:resource="agent/004344"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/004346-004345-19850101-19931231"/>
+      <rico:hadSubdivision rdf:resource="agent/004345"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/004346-004343-19760101-19931231"/>
+      <rico:hadSubdivision rdf:resource="agent/004343"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/004357-004346-19700101-19931231"/>
+      <rico:wasSubdivisionOf rdf:resource="agent/004357"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/022445-004346"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-022445"/>
    </rico:Agent>
 </rdf:RDF>

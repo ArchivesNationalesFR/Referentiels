@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052525">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052525"/>
@@ -11,35 +19,33 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-01</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Charlène FANCHON)</rico:name>
+            <rico:name xml:lang="fr">Création (par Charlène FANCHON)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-06-11</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-01</rico:date>
-            <rico:descriptiveNote xml:lang="fr">nouvelle NP</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">nouvelle NP</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">HUTEAU (Jean), ULLMANN (Bernand), A.F.P : une histoire de l’Agence France-Presse (1944-1990), Paris, Éditions Robert Laffont, 1991, 570 p.</rico:source>
-      <rico:source xml:lang="fr">Notice BNF : FRBNF11868725 (https://catalogue.bnf.fr/ark:/12148/cb118687254)</rico:source>
-      <rico:source xml:lang="fr">Notice Wikipédia (https://fr.wikipedia.org/wiki/Agence_France-Presse)</rico:source>
-      <rico:source xml:lang="fr">Archives nationales, fonds Agence France-Presse (9AR).</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000406439815/about"/>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">HUTEAU (Jean), ULLMANN (Bernand), A.F.P : une histoire de l’Agence France-Presse (1944-1990), Paris, Éditions Robert Laffont, 1991, 570 p.</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice BNF : FRBNF11868725 (https://catalogue.bnf.fr/ark:/12148/cb118687254)</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice Wikipédia (https://fr.wikipedia.org/wiki/Agence_France-Presse)</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Archives nationales, fonds Agence France-Presse (9AR).</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000406439815"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Agence_France-Presse"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052525">
-            <rico:isInstantiationOf rdf:resource="record/052525"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052525"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052525</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052525"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052525">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -64,35 +70,37 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1944-01-01</rico:beginningDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052525"/>
-            <rico:placeRelationHasSource rdf:resource="place/Paris"/>
+            <rico:relationHasTarget rdf:resource="agent/052525"/>
+            <rico:relationHasSource rdf:resource="place/Paris"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Paris"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Paris"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052525-d3nyuhczpp-bjob9jyon7ou">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052525"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052525-d3nyuhczpp-bjob9jyon7ou"/>
+            <rico:relationHasTarget rdf:resource="agent/052525"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d203500e140">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052525-d3nyuhczpp-bjob9jyon7ou"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhczpp-bjob9jyon7ou"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhczpp-bjob9jyon7ou"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d203500e140"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052525-d3nyuhqgah-1dgirf2dmzbkz">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052525"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052525-d3nyuhqgah-1dgirf2dmzbkz"/>
+            <rico:relationHasTarget rdf:resource="agent/052525"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d203500e146">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052525-d3nyuhqgah-1dgirf2dmzbkz"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhqgah-1dgirf2dmzbkz"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhqgah-1dgirf2dmzbkz"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d203500e146"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Créée le 30 septembre 1944, l’Agence France-Presse (AFP) est une agence de presse mondiale et généraliste chargée de la collecte, de la vérification et de la diffusion de l’information sous une forme qui soit suffisamment neutre et fiable pour qu’elle puisse être utilisée directement aussi bien par les médias (radios, télévision, presse écrite, sites internet) que par les entreprises et les administrations. L’AFP propose une couverture complète de l’actualité mondiale sous la forme de photographie, d’infographie, de vidéo et de texte dans six langues. À la différence de son ancêtre, l’Agence Havas, l’AFP ne compte pas d’actionnaire, son conseil d’administration étant composé majoritairement d’éditeurs de presse. Pour garantir son indépendance, la loi exige que l’AFP équilibre son budget, après amortissement comptable des investissements. Par ailleurs, l’AFP bénéficie d’un accès aux marchés financiers pour emprunter.</html:p>
@@ -112,14 +120,18 @@
             <html:p>Le Contrat d’objectif et de moyen (COM) entre l’AFP et l’État est signé le 15 juin 2015. Mais, devant l’ampleur des difficultés rencontrées par l’AFP dans un contexte général de crise de la presse écrite, l’État accorde une dotation supplémentaire de 1,6 million d’euros pour l’année 2016, puis de 4,3 millions d’euros en 2017.</html:p>
             <html:p>Basée à Paris, l’AFP couvre actuellement 152 pays grâce à ses 201 bureaux, 50 correspondants locaux et cinq centres régionaux situés à Washington (Amérique du Nord), Hong Kong (Asie-Pacifique), San Felipe y Santiago de Montevideo (Amérique latine), Nicosie (Moyen-Orient) et Paris (Europe et Afrique).</html:p>
             <html:p>L’AFP transmet les informations dans six langues (français, anglais, espagnol, allemand, portugais et arabe), 24 heures sur 24. Depuis 2010, elle possède également des pages officielles sur Facebook, en français et en anglais.</html:p>
-            <html:p/>
             <html:p>[1] L’OFI est supprimé le 9 avril 1944.</html:p>
          </html:div>
       </rico:history>
       <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Agence_France-Presse"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/052525-053605-19700101-19781231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/053605"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/052525-053738-19440930-20000530"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/053738"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb118687254#about"/>
-      <rico:groupIsTargetOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050203-052525-19440815-19460115"/><rico:hasOrHadLeader rdf:resource="agent/050203"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/004453-052525"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-004453"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/050203-052525-19440815-19460115"/>
+      <rico:hasOrHadLeader rdf:resource="agent/050203"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/004453-052525"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-004453"/>
    </rico:Agent>
 </rdf:RDF>

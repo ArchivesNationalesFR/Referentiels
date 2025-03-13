@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050173">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050173"/>
@@ -10,31 +18,30 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-02-02</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Virginie POTIN)</rico:name>
+            <rico:name xml:lang="fr">Création (par Virginie POTIN)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-02-02</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 2 février 2016 : revu le nom, ajouté ISNI, notices BnF et Wikipédia, activités</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 2 février 2016 : revu le nom, ajouté ISNI, notices BnF et Wikipédia, activités</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb119034340</html:p>
-      </rico:source>
-      <rico:hasSource rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb119034340"/>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb119034340"/>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice Wikipédia : https://fr.wikipedia.org/wiki/Andr%C3%A9_Fran%C3%A7ois-Poncet</html:p>
-      </rico:source>
-      <rico:hasSource rdf:resource="https://fr.wikipedia.org/wiki/Andr%C3%A9_Fran%C3%A7ois-Poncet"/>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/000000011023356X/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="https://fr.wikipedia.org/wiki/Andr%C3%A9_Fran%C3%A7ois-Poncet"/>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/000000011023356X"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050173">
-            <rico:isInstantiationOf rdf:resource="record/050173"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050173"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050173</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050173"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050173">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -52,52 +59,64 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1887-06-13</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1978-01-08</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050173-d699msj3i51--hevk1gms21cg">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050173"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050173-d699msj3i51--hevk1gms21cg"/>
+            <rico:relationHasTarget rdf:resource="agent/050173"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d167157e93">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050173-d699msj3i51--hevk1gms21cg"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d167157e93"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050173-d699msjqtlt--8qlp1v5rp9ov-19310101-19551231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050173"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050173-d699msjqtlt--8qlp1v5rp9ov-19310101-19551231"/>
+            <rico:relationHasTarget rdf:resource="agent/050173"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d167157e99">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050173-d699msjqtlt--8qlp1v5rp9ov-19310101-19551231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjqtlt--8qlp1v5rp9ov"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1931-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1955-12-31</rico:endDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjqtlt--8qlp1v5rp9ov"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjqtlt--8qlp1v5rp9ov"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d167157e99"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050173-d699msj5les--1kxyfzhpd7g0m-19280101-19311231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050173"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050173-d699msj5les--1kxyfzhpd7g0m-19280101-19311231"/>
+            <rico:relationHasTarget rdf:resource="agent/050173"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d167157e114">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050173-d699msj5les--1kxyfzhpd7g0m-19280101-19311231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj5les--1kxyfzhpd7g0m"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1928-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1931-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">sous-secrétaire d'Etat chargé de l'enseignement technique, des beaux-arts et de l'économie nationale</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj5les--1kxyfzhpd7g0m"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj5les--1kxyfzhpd7g0m"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d167157e114"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Ancien élève du collège Stanislas et de l'Ecole normale supérieure, André François-Poncet (1887-1978) commence sa carrière dans le journalisme. Elu député d'union républicaine, il occupe les postes de sous-secrétaire d'Etat chargé de l'Enseignement technique, des Beaux-Arts et de l'Economie nationale, entre 1928 et 1931. Il avait été précédemment membre de la commission économique internationale aux Etats-Unis et avait fondé la Société d'information et d'études économiques. Il devient ensuite ambassadeur à Berlin, de 1931 à 1938, et à Rome de 1938 à 1940. De ces deux missions capitales, destinées à sauver la paix, il laisse la narration dans deux volumes de souvenirs. Après la Seconde Guerre mondiale, il est élu à l'Académie française au siège du maréchal Pétain. Haut-commissaire (1949) puis ambassadeur à Bonn (1953-1955), André François-Poncet est également président de la Commission permanente de la Croix-Rouge internationale (1949-1965) et de la Croix-Rouge française (1955-1967). Il est le père du ministre des Affaires étrangères du président Giscard d'Estaing.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009213-050173-19490101-19521231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/009213"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050173-050178-19250101-19281231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050178"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009213-050173-19490101-19521231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/009213"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050173-053198-19310101-19310930"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/053198"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050173-050178-19250101-19281231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050178"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050173-053224-19610101-19641231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/053224"/>
    </rico:Agent>
 </rdf:RDF>

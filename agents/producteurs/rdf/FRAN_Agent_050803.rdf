@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050803">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050803"/>
@@ -10,21 +18,20 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-05-14</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Florence CLAVAUD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Florence CLAVAUD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-05-14</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050803">
-            <rico:isInstantiationOf rdf:resource="record/050803"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050803"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050803</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050803"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050803">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -62,12 +69,12 @@
       <rico:authorizingMandate rdf:parseType="Literal">
          <html:p xml:lang="fr">LOI n° 2009-258 du 5 mars 2009 relative à la communication audiovisuelle et au nouveau service public de la télévision.</html:p>
       </rico:authorizingMandate>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      <rico:generalDescription rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Organisation interne ou généalogie</h4>
             <html:p>Le siège social de France Médias Monde est au 80 rue Camille Desmoulins, 92130 Issy-les-Moulineaux</html:p>
          </html:div>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>L’idée de regrouper dans une société holding les différentes entreprises de l’audiovisuel extérieur est née au milieu de la décennie 2000 et en 2007 une mission de concertation et de propositions est mise en place. Cette mission a débouché en décembre 2007 sur un rapport qui a préconisé une réforme d’ensemble afin d’assurer une présence accrue de la France dans le domaine de l’information internationale.</html:p>
@@ -83,12 +90,17 @@
             <html:p>Les enjeux de France Médias Monde sont la convergence des différents médias de diffusion (radio, télévision, Internet) et la contribution au rayonnement de la culture française en direction des publics francophones et francophiles, par l’offre d’un point de vue français sur l’actualité.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/002084-050803-20080401-20101231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/002084"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005439-050803-20100113-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/005439"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/050803-051516-20080401-*"/><rico:hasOrHadSubordinate rdf:resource="agent/051516"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005419-050803-20080401-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/005419"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010118-050803-20080401-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/010118"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054374-050803"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-054374"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/002084-050803-20080401-20101231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/002084"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/005439-050803-20100113-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/005439"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/050803-051516-20080401-*"/>
+      <rico:hasDirectSubordinate rdf:resource="agent/051516"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/005419-050803-20080401-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/005419"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010118-050803-20080401-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/010118"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054374-050803"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054374"/>
    </rico:Agent>
 </rdf:RDF>

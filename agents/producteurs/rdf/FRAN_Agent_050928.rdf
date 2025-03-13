@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050928">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050928"/>
@@ -10,26 +18,25 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-02-05</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Thibaut HAIR)</rico:name>
+            <rico:name xml:lang="fr">Création (par Thibaut HAIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-02-05</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 5 février 2015 : ajouté indexation activités et liens d'association vers notices AN et ENSBA</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 5 février 2015 : ajouté indexation activités et liens d'association vers notices AN et ENSBA</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice BnF FRBNF12004518</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/000000007829904X/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/000000007829904X"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050928">
-            <rico:isInstantiationOf rdf:resource="record/050928"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050928"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050928</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050928"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050928">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -47,31 +54,35 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1881-02-19</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1964-12-22</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050928-d3nyu9yq7p-8zx3tnvrcpf0">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050928"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050928-d3nyu9yq7p-8zx3tnvrcpf0"/>
+            <rico:relationHasTarget rdf:resource="agent/050928"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d177328e91">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050928-d3nyu9yq7p-8zx3tnvrcpf0"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3nyu9yq7p-8zx3tnvrcpf0"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3nyu9yq7p-8zx3tnvrcpf0"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3nyu9yq7p-8zx3tnvrcpf0"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d177328e91"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050928-d699msj02xm-19qbb7wdtto3j">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050928"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050928-d699msj02xm-19qbb7wdtto3j"/>
+            <rico:relationHasTarget rdf:resource="agent/050928"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d177328e97">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050928-d699msj02xm-19qbb7wdtto3j"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">P. Tournon, professeur à l'ENSBA à partir de 1925</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d177328e97"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Paul Tournon naît à Marseille le 19 février 1881, où il effectue sa scolarité et montre dès cette époque un grand talent pour le dessin. Il entre par la suite comme dessinateur à l'École régionale d'Architecture avant de travailler chez l'architecte Gaudensi Allard, chef d'agence de l'architecte Espérandieu.</html:p>
@@ -92,9 +103,13 @@
             <html:p>Paul Tournon décède à Paris le 22 décembre 1964.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005061-050928-19390101-19641222"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/005061"/>
-      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050928-009958-18810219-19471231"/><rico:isOrWasLeaderOf rdf:resource="agent/009958"/>
-      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050928-005136-19430101-19451231"/><rico:isOrWasLeaderOf rdf:resource="agent/005136"/>
-      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050928-005137-19250101-19491231"/><rico:isOrWasLeaderOf rdf:resource="agent/005137"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/005061-050928-19390101-19641222"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/005061"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/050928-009958-18810219-19471231"/>
+      <rico:isOrWasLeaderOf rdf:resource="agent/009958"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/050928-005136-19430101-19451231"/>
+      <rico:isOrWasLeaderOf rdf:resource="agent/005136"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/050928-005137-19250101-19491231"/>
+      <rico:isOrWasLeaderOf rdf:resource="agent/005137"/>
    </rico:Agent>
 </rdf:RDF>

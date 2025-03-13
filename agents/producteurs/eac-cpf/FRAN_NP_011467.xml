@@ -4,7 +4,7 @@
    <control>
       <recordId>FRAN_NP_011467</recordId>
       <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE01261</otherRecordId>
-      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceStatus>revised</maintenanceStatus>
       <maintenanceAgency>
          <agencyName>Archives nationales de France</agencyName>
       </maintenanceAgency>
@@ -24,6 +24,19 @@
             <eventDateTime>2013-04-23</eventDateTime>
             <agentType>machine</agentType>
             <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2024-08-08</eventDateTime>
+            <agentType>human</agentType>
+            <agent>François CHANCEREL</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2024-08-09</eventDateTime>
+            <agentType>human</agentType>
+            <agent>François CHANCEREL</agent>
+            <eventDescription>09/08/2024, J. Gaillard : Ajout activité 'notaire' | Précisions sur placeEntry @localType="nomLieu"</eventDescription>
          </maintenanceEvent>
       </maintenanceHistory>
    </control>
@@ -47,21 +60,29 @@
          <places>
             <place>
                <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">Siège de l'étude</placeEntry>
                <placeEntry localType="arrondissement_actuel"
                            vocabularySource="d3nyv5jo07--11vv6ggdeixfq">01e arrondissement</placeEntry>
-               <placeEntry localType="voie" vocabularySource="d3nza88pl2-t1qbrwdnx2w1">echelle (rue de l')</placeEntry>
-               <placeEntry localType="nomLieu">8bis rue de l'Echelle</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nza88pl2-t1qbrwdnx2w1">Echelle (rue de l')</placeEntry>
+               <descriptiveNote>
+                  <p>8bis rue de l'Échelle</p>
+               </descriptiveNote>
             </place>
          </places>
          <functions>
             <function>
-               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à Paris</term>
                <dateRange>
                   <fromDate standardDate="1899-04-26">26 avril 1899</fromDate>
                   <toDate standardDate="1932-08-10">10 août 1932</toDate>
                </dateRange>
             </function>
          </functions>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d3nyu9x713-9kcjiv44l4wh">notaire</term>
+            </occupation>
+         </occupations>
       </description>
       <relations>
          <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -74,23 +95,25 @@
                <toDate standardDate="1932-08-10">10 août 1932</toDate>
             </dateRange>
          </cpfRelation>
-         <resourceRelation resourceRelationType="creatorOf">
-            <relationEntry localType="archival">minutes</relationEntry>
-            <descriptiveNote>
-               <p>les minutes de ce notaire sont conservées à l'étude</p>
-            </descriptiveNote>
-         </resourceRelation>
          <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
                            resourceRelationType="creatorOf"
-                           xlink:href="FRAN_IR_041480"
-                           xlink:type="simple">
-            <relationEntry localType="archival">Minutes et répertoires du notaire Charles Amédée LEFEBVRE, 27 avril 1899 - 19 septembre 1900 (étude XVI)</relationEntry>
+                           xlink:href="Information">
+            <relationEntry localType="archival"/>
+            <descriptiveNote>
+               <p>les minutes de ce notaire postérieures au 19 septembre 1900 sont conservées par l'étude</p>
+            </descriptiveNote>
          </resourceRelation>
          <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
                            resourceRelationType="creatorOf"
                            xlink:href="FRAN_IR_051820"
                            xlink:type="simple">
             <relationEntry localType="archival">Images du répertoire du notaire Charles Amédée Lefebvre pour l'étude XVI</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041480"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Charles Amédée LEFEBVRE, 27 avril 1899 - 19 septembre 1900 (étude XVI)</relationEntry>
          </resourceRelation>
       </relations>
    </cpfDescription>

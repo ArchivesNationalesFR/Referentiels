@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/004644">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/004644"/>
@@ -8,17 +16,43 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
-      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:lastModificationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-06</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Dérivation
-                (Import_SIA)</rico:name>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Vanessa SZOLLOSI)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-08-22</rico:date>
+            <rico:generalDescription xml:lang="fr">22/08/2017, V. Szollosi : rajout d'éléments historiques. 04/12/2024, J. Gaillard : Suppression des liens vers IR 18897 &amp; 18938</rico:generalDescription>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Administration.referentiels ADMINISTRATION RÉFÉRENTIELS DOCUMENTAIRES)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-04</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Administration.referentiels ADMINISTRATION RÉFÉRENTIELS DOCUMENTAIRES)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-06</rico:date>
+            <rico:generalDescription xml:lang="fr">06/12/2024, J. Gaillard : Suppression des liens vers IR 18897 &amp; 60411</rico:generalDescription>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Administration.referentiels ADMINISTRATION RÉFÉRENTIELS DOCUMENTAIRES)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-06</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000110918892"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/004644">
-            <rico:isInstantiationOf rdf:resource="record/004644"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/004644"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_004644</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
@@ -26,11 +60,12 @@
             <rico:identifier>4280</rico:identifier>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/004644">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:isOrWasDescribedBy rdf:resource="record/004644"/>
+      <owl:sameAs rdf:resource="https://isni.org/isni/0000000110918892"/>
       <rdfs:label xml:lang="fr">Caisse nationale d'assurance maladie des travailleurs salariés</rdfs:label>
       <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/004644-Caisse%20nationale%20d%27assurance%20maladie%20des%20travailleurs%20salari%C3%A9s">
@@ -50,28 +85,102 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1967-01-01</rico:beginningDate>
       <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5blonb3ky--u69ytier8ih6"/>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/009838-004644-20120516-*"/><rico:isOrWasSubordinateTo rdf:resource="agent/009838"/>
-      <rico:groupIsTargetOfLeadershipRelation rdf:resource="agentHierarchicalRelation/051264-004644-20140101-*"/><rico:hasOrHadLeader rdf:resource="agent/051264"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/004644-052064-19730604-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/052064"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/004644-052365-20040101-20121231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/052365"/>
-      <rico:groupIsTargetOfLeadershipRelation rdf:resource="agentHierarchicalRelation/052388-004644-19990101-20031231"/><rico:hasOrHadLeader rdf:resource="agent/052388"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/004644-004643-19760101-*"/><rico:hasOrHadSubordinate rdf:resource="agent/004643"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/004644-007079-20120516-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/007079"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056421-004644"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-056421"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056446-004644"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-056446"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056447-004644"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-056447"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/026715-004644"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-026715"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/028252-004644"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-028252"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/028382-004644"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-028382"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/028251-004644"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-028251"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/028381-004644"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-028381"/>
+      <rico:generalDescription rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>
+               <html:u>Le Conseil et ses commissions</html:u>
+            </html:p>
+            <html:p>Instance politique de la CNAMTS, le Conseil est consulté sur tout projet de loi, de décret et d'arrêté qui a un impact sur l’assurance maladie. Il est composé de représentants d'assurés sociaux, d'employeurs, de mutuelles et d'institutions intervenant dans le domaine de l’assurance maladie.</html:p>
+            <html:p>Le Conseil peut constituer en son sein des commissions et leur déléguer une partie de ses attributions. La Commission de la réglementation (COR) a un pouvoir délibératif. La Commission de l'organisation des soins (COS), la Commission de l'animation du réseau et des moyens (CARM), la Commission des relations aux publics et de l'action sanitaire et sociale (CORPASS), la Commission de suivi des dépenses de santé (CSDS), la Commission santé-prévention (CSP) et la Commission des systèmes d'information (CSI) ont uniquement un pouvoir consultatif.</html:p>
+            <html:p>
+               <html:u>La Commission des accidents du travail et des maladies professionnelles</html:u>(CAT/MP) se caractérise par son autonomie. Elle a la même structure de type paritaire (représentants des employeurs et des salariés) que le Conseil et obéit au même fonctionnement.</html:p>
+            <html:p>En revanche, elle possède un règlement intérieur distinct. Elle exerce les compétences du Conseil en matière d'accidents du travail et de maladies professionnelles. Elle a en charge l'équilibre financier de la branche AT/MP, la tarification, la réparation et la prévention des AT/MP. Dans ce cadre, elle détermine les orientations de la convention d'objectifs et de gestion (COG) de la branche et approuve les budgets du Fonds national de prévention des accidents du travail et des maladies professionnelles.</html:p>
+            <html:p>
+               <html:u>Les fonds d'aide et d'intervention</html:u>
+            </html:p>
+            <html:p>Le Fonds d'aide à la qualité des soins de ville (FAQSV) est un dispositif créé par la loi de financement de la Sécurité sociale pour 1999. Ses modalités de fonctionnement ont été précisées par le décret n° 99-940 du 12 novembre 1999. Le FAQSV avait pour principale mission de contribuer à l'amélioration de la qualité et de la coordination des soins dispensés en ville, en promouvant de nouvelles formes d'organisation entre professionnels d'exercice libéral d'une part, et entre médecine de ville et médecine hospitalière d'autre part.</html:p>
+            <html:p>Créé au sein de la CNAMTS, le FAQSV était co-géré à deux niveaux (national et régional) par des instances où siégeaient des représentants des Caisses d'assurance maladie et des professionnels de santé. En 2007, le FAQSV a été regroupé avec la Dotation nationale de développement du réseau (DNDR) au sein d'un nouveau dispositif, le Fonds d’intervention pour la qualité et la coordination des soins (FIQCS).</html:p>
+            <html:p>
+               <html:u>Le Fonds d'intervention pour la qualité et la coordination des soins</html:u>a été créé par la loi de financement de la Sécurité sociale pour 2007. Ses modalités de fonctionnement ont été déterminées par le décret n° 2007-973 du 15 mai 2007.</html:p>
+            <html:p>Ce nouveau fonds finançait des actions, expérimentations ou structures concourant à l'amélioration de divers aspects de la pratique médicale :</html:p>
+            <html:p>- la qualité et la coordination des soins dispensés en ville,</html:p>
+            <html:p>- le développement de nouveaux modes d'exercice et de réseaux de santé,</html:p>
+            <html:p>- la permanence des soins (maisons médicales de garde, centres de régulation libérale),</html:p>
+            <html:p>- le maintien de l'activité et à l'installation des professionnels de santé en zones déficitaires,</html:p>
+            <html:p>- l'exercice pluridisciplinaire et regroupé des professionnels de santé,</html:p>
+            <html:p>- le développement du dossier médical personnel.</html:p>
+            <html:p>La gouvernance du fonds était assurée par un comité national de gestion (CNG), composé de représentants de l'Etat et du collège des directeurs de l'UNCAM, et par un Conseil national de la qualité et de la coordination des soins (CNQCS), composé de représentants du Conseil de l'UNCAM, des professionnels de santé, des fédérations d'établissements de santé et médico-sociaux et de personnalités qualifiées.</html:p>
+            <html:p>Le CNG élaborait les propositions présentées au Conseil national, répartissait la dotation annuelle réservée aux actions régionales entre les missions régionales de santé et attribuait les aides pour les actions à caractère national ou inter-régional.</html:p>
+            <html:p>Le CNQCS délibérait sur les orientations stratégiques concernant les priorités d'action du fonds et d'affectation de la dotation, le financement d'expérimentations concernant les soins de ville, la dotation annuelle consacrée au financement des actions à caractère national ou inter-régional et celle réservée au financement des actions à caractère régional, ainsi que le rapport d'activité annuel.</html:p>
+            <html:p>Le 1er mars 2012, les fonds régionaux du FIQCS, soit 80% des crédits du FIQCS, ont été transférés au Fonds d'intervention régional (FIR) géré par les Agences régionales de santé (ARS). L'article 40 de la loi de financement de la Sécurité sociale pour 2014 a tiré les conséquences de cette évolution de périmètre et supprimé le fonds à compter du 1er janvier 2014.</html:p>
+            <html:p>
+               <html:u>Le Fonds de réorientation et de modernisation de la médecine libérale</html:u>(FORMMEL) a été créé au sein de la CNAMTS par l'article 4 de l'ordonnance n° 96-345 du 24 avril 1996.</html:p>
+            <html:p>Ce fonds a vocation à financer l'allocation de remplacement prévue par l'article 4 de la loi n° 88-16 du 5 janvier 1988 relative à la Sécurité sociale ainsi que des aides de toute nature et des primes qui peuvent être modulées en fonction de différents critères (âge, activité, implantation géographique) en vue de faciliter l'orientation, la réorientation, la reconversion ou la cessation anticipée d'activité des médecins exerçant à titre libéral. Il participe par ailleurs au financement des aides à l'informatisation des professionnels de santé.</html:p>
+            <html:p>
+               <html:u>Le Conseil scientifique</html:u>
+            </html:p>
+            <html:p>Créé en 1999, le Conseil scientifique est composé de personnalités indépendantes.</html:p>
+            <html:p>Sa composition multidisciplinaire (disciplines médicales, sciences infirmières, économie, sociologie, géographie, santé publique, représentant des usagers, droit, éthique...) vise à favoriser l'émergence d'une vision prospective sur les évolutions de l'offre et des besoins de soins, et doit lui permettre d'être force de propositions pour aider la CNAMTS dans sa stratégie d'amélioration de la qualité et de l'efficience du système de santé.</html:p>
+            <html:p>La CNAMTS et son conseil scientifique promeuvent la recherche sur les services de santé. Il soutient notamment des projets scientifiques par un financement complémentaire de celui offert par les autres dispositifs d'appels à projets.</html:p>
+            <html:p>Dans ce cadre, il propose des bourses de soudure de 4e année de thèse, participe au financement de projets scientifiques portés par des chaires ou autres dispositifs d'émergence (jeune équipe, etc.), accompagne des participations à un appel à projet national ou européen.</html:p>
+            <html:p>En cohérence avec les priorités de la CNAMTS, les sujets de recherche éligibles peuvent être :</html:p>
+            <html:p>- les parcours des patients et l'organisation des soins de premier recours ;</html:p>
+            <html:p>- les inégalités de santé et d'accès aux soins ;</html:p>
+            <html:p>- les pratiques des professionnels et les leviers permettant de faire évoluer ces pratiques dans le sens d'une meilleure pertinence, conformité aux recommandations et efficience ;</html:p>
+            <html:p>- les politiques de santé portant en particulier sur les liens entre recherche et décision.</html:p>
+            <html:p>
+               <html:u>Le Conseil de surveillance</html:u>
+            </html:p>
+            <html:p>L'ordonnance n° 96-344 du 24 avril 1996 portant mesures relatives à l'organisation de la Sécurité sociale a institué auprès de chaque caisse nationale du régime général (CNAMTS, CNAF, CNAVTS et ACOSS) un Conseil de surveillance. Cette disposition a été intégrée à l'article L. 228-1 du Code de la sécurité sociale, modifié par la loi n° 2004-1370 du 20 décembre 2004 (art. 4) puis abrogé par la loi n° 2011-1906 du 21 décembre 2011 (art. 110, V).</html:p>
+            <html:p>Le Conseil de surveillance avait pour missions d'examiner les conditions de mise en œuvre des conventions d'objectifs et de gestion (COG) et de remettre un avis au Parlement. Il pouvait également entendre toute personne dont l'audition lui paraissait utile et émettre des recommandations sur le contenu ou l'exécution des conventions. Son secrétariat était assuré par celui du Conseil d'administration de la Caisse nationale auprès de laquelle il était placé.</html:p>
+            <html:p>
+               <html:u>Le Conseil de surveillance SESAM-Vitale 2</html:u>
+            </html:p>
+            <html:p>Le Conseil de surveillance SESAM-Vitale 2 a été institué par l'accord-cadre du 25 avril 2000 entre les organismes d'assurance maladie obligatoire et les organismes d'assurance maladie complémentaire pour assurer le pilotage stratégique de la maîtrise d'ouvrage SESAM-Vitale. Il arrête les grandes orientations du programme SESAM-Vitale et veille notamment à ce que les fonctionnalités du système puissent s'appliquer à tout acteur participant à son financement. Cette organisation issue de l'accord-cadre a été dénoncée en février 2016. Il lui succède une nouvelle gouvernance, issue de l'accord de partenariat du 18 février 2016 entre les mêmes partenaires.</html:p>
+         </html:div>
+      </rico:generalDescription>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>La Caisse nationale de l'assurance maladie des travailleurs salariés (CNAMTS) est un établissement public national à caractère administratif, ce qui lui octroie la personnalité juridique et une autonomie financière. Elle est placée sous la double tutelle du ministère chargé de la Sécurité sociale et du ministère de l'Economie et des finances. Constituée de 2208 agents au 31 décembre 2015, la CNAMTS pilote au plan national la gestion des branches maladie et accidents du travail-maladies professionnelles du régime général de sécurité sociale.</html:p>
+            <html:p>La loi n° 2004-810 du 13 août 2004 relative à l'assurance maladie renforce et complète les responsabilités de la CNAMTS. En application des objectifs prioritaires définis, dont la gestion du risque, elle définit les orientations stratégiques et pilote le réseau des organismes chargés de les mettre en œuvre.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/009838-004644-20120516-*"/>
+      <rico:isDirectSubordinateTo rdf:resource="agent/009838"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/051264-004644-20140101-*"/>
+      <rico:hasOrHadLeader rdf:resource="agent/051264"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/004644-052365-20040101-20121231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/052365"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/052388-004644-19990101-20031231"/>
+      <rico:hasOrHadLeader rdf:resource="agent/052388"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/004644-052064-19730604-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/052064"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/004644-004643-19760101-*"/>
+      <rico:hasDirectSubordinate rdf:resource="agent/004643"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/004644-007079-20120516-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/007079"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/008887-004644"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-008887"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/028382-004644"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-028382"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/028251-004644"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-028251"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/026715-004644"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-026715"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/028252-004644"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-028252"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/061619-004644"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-061619"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/061044-004644"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-061044"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/028381-004644"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-028381"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/056421-004644"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-056421"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/056446-004644"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-056446"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/056447-004644"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-056447"/>
    </rico:Agent>
 </rdf:RDF>

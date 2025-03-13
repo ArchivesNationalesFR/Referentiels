@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052011">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052011"/>
@@ -11,33 +19,31 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-05</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Véronique AUBER)</rico:name>
+            <rico:name xml:lang="fr">Création (par Véronique AUBER)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-12</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Pas de notice wikipedia</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Pas de notice wikipedia</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-05</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 05/07/2019 : suppresion lien familial en double, ISNI revu, indexation lieu revue</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 05/07/2019 : suppresion lien familial en double, ISNI revu, indexation lieu revue</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Notice BNF : FRBNF12805980</rico:source>
-      <rico:source xml:lang="fr">Archives nationales, fonds Flandin (423 AP).</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000000464412/about"/>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice BNF : FRBNF12805980</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Archives nationales, fonds Flandin (423 AP).</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000000464412"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052011">
-            <rico:isInstantiationOf rdf:resource="record/052011"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052011"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052011</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052011"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052011">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -55,52 +61,58 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1882-12-12</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1955-07-04</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052011"/>
-            <rico:placeRelationHasSource rdf:resource="place/Domecy-sur-Cure"/>
+            <rico:relationHasTarget rdf:resource="agent/052011"/>
+            <rico:relationHasSource rdf:resource="place/Domecy-sur-Cure"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Domecy-sur-Cure"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Domecy-sur-Cure"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052011"/>
-            <rico:placeRelationHasSource rdf:resource="place/Yonne"/>
+            <rico:relationHasTarget rdf:resource="agent/052011"/>
+            <rico:relationHasSource rdf:resource="place/Yonne"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Yonne"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Yonne"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052011-d699msjarlu--l5x9bzdkopz8">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052011"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052011-d699msjarlu--l5x9bzdkopz8"/>
+            <rico:relationHasTarget rdf:resource="agent/052011"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d195175e132">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052011-d699msjarlu--l5x9bzdkopz8"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjarlu--l5x9bzdkopz8"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjarlu--l5x9bzdkopz8"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjarlu--l5x9bzdkopz8"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d195175e132"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052011-d699msjyazt-1f0ggfyf3is8u">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052011"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052011-d699msjyazt-1f0ggfyf3is8u"/>
+            <rico:relationHasTarget rdf:resource="agent/052011"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d195175e138">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052011-d699msjyazt-1f0ggfyf3is8u"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d195175e138"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Charles Flandin (1882-1955) est le fils du député de l’Yonne Étienne Flandin. Sa mère, née Pauline Ribière, est la fille du sénateur de l’Yonne Hippolyte Ribière. Comme son grand-père Charles (1803-1887), il s’oriente vers la médecine et la chimie. Médecin des hôpitaux de Paris (notamment hôpital Bichat et hôpital Saint-Louis), il travaille plus spécifiquement sur les maladies infectieuses. Il a publié plusieurs articles ou ouvrages :<html:i>Cholestérinémie et glycémie au cours du xanthome. Essai du traitement par l'insuline</html:i>(1926) ;<html:i>L’intoxication par les somnifères</html:i>(1934) ;<html:i>Action de l'eau de Charrier sur les fonctions intestinales</html:i>(1934).</html:p>
             <html:p>À l’instar de son grand-père et de son père, il s’engage en politique en tant que conseiller général de l’Yonne. Il a aussi été maire de Domecy-sur-Cure de 1947 à 1953.</html:p>
          </html:div>
       </rico:history>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/052010-052011"/><rico:hasFamilyAssociationWith rdf:resource="agent/052010"/>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/052009-052011"/><rico:hasFamilyAssociationWith rdf:resource="agent/052009"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/052010-052011"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/052010"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/052009-052011"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/052009"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb128059800#about"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/004958-052011"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-004958"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/004958-052011"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-004958"/>
    </rico:Agent>
 </rdf:RDF>

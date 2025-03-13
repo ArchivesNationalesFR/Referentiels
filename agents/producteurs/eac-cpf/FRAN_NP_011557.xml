@@ -4,7 +4,7 @@
    <control>
       <recordId>FRAN_NP_011557</recordId>
       <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE01363</otherRecordId>
-      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceStatus>revised</maintenanceStatus>
       <maintenanceAgency>
          <agencyName>Archives nationales de France</agencyName>
       </maintenanceAgency>
@@ -25,12 +25,38 @@
             <agentType>machine</agentType>
             <agent>Migration ETANOT</agent>
          </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2024-04-25</eventDateTime>
+            <agentType>human</agentType>
+            <agent>François CHANCEREL</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2024-04-26</eventDateTime>
+            <agentType>human</agentType>
+            <agent>François CHANCEREL</agent>
+            <eventDescription>26/04/2024, J. Gaillard : ajout activité 'notaire'. F. Chancerel : modification de lien</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2024-08-07</eventDateTime>
+            <agentType>human</agentType>
+            <agent>François CHANCEREL</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2024-08-08</eventDateTime>
+            <agentType>human</agentType>
+            <agent>François CHANCEREL</agent>
+            <eventDescription>08/08/2024, J. Gaillard : Précisions sur placeEntry @localType="nomLieu"</eventDescription>
+         </maintenanceEvent>
       </maintenanceHistory>
    </control>
    <cpfDescription>
       <identity>
          <entityType>person</entityType>
-         <nameEntry scriptCode="Latn" localType="autorisée" xml:lang="fre">
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
             <part>Leroy, André Jean</part>
          </nameEntry>
       </identity>
@@ -47,21 +73,29 @@
          <places>
             <place>
                <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">Siège de l'étude</placeEntry>
                <placeEntry localType="arrondissement_actuel"
                            vocabularySource="d3nyv5kgoa--eky836cf0y0d">03e arrondissement</placeEntry>
-               <placeEntry localType="voie" vocabularySource="d3nzd1qcz3-1uo6irlfxdnjr">saint-denis (boulevard)</placeEntry>
-               <placeEntry localType="nomLieu">9 boulevard Saint-Denis</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd1qcz3-1uo6irlfxdnjr">Saint-Denis (boulevard)</placeEntry>
+               <descriptiveNote>
+                  <p>9 boulevard Saint-Denis (à partir de 1874)</p>
+               </descriptiveNote>
             </place>
          </places>
          <functions>
             <function>
-               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à Paris</term>
                <dateRange>
                   <fromDate standardDate="1909-03-31">31 mars 1909</fromDate>
                   <toDate standardDate="1914-12-30">30 décembre 1914</toDate>
                </dateRange>
             </function>
          </functions>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d3nyu9x713-9kcjiv44l4wh">notaire</term>
+            </occupation>
+         </occupations>
       </description>
       <relations>
          <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -74,11 +108,17 @@
                <toDate standardDate="1914-12-30">30 décembre 1914</toDate>
             </dateRange>
          </cpfRelation>
-         <resourceRelation resourceRelationType="creatorOf">
-            <relationEntry localType="archival">minutes</relationEntry>
-            <descriptiveNote>
-               <p>les minutes de ce notaire sont conservées à l'étude</p>
-            </descriptiveNote>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_060715"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire André Jean Leroy pour l'étude XXX</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_060890"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire André Jean LEROY, 31 mars 1909 - 30 décembre 1914 (étude XXX)</relationEntry>
          </resourceRelation>
       </relations>
    </cpfDescription>

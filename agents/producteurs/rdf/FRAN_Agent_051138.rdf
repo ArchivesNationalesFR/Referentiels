@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051138">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051138"/>
@@ -10,28 +18,27 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-20</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Catherine MÉROT)</rico:name>
+            <rico:name xml:lang="fr">Création (par Catherine MÉROT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-20</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">notice BNF FRBNF11862690</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Introduction du versement 20120299</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000123239928/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000123239928"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051138">
-            <rico:isInstantiationOf rdf:resource="record/051138"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051138"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051138</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051138"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051138">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -49,17 +56,18 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1966-01-01</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-12-31</rico:endDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051138-d3nyuic5p0-ktmsglhlnhvr">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051138"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051138-d3nyuic5p0-ktmsglhlnhvr"/>
+            <rico:relationHasTarget rdf:resource="agent/051138"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d179754e99">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051138-d3nyuic5p0-ktmsglhlnhvr"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuic5p0-ktmsglhlnhvr"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuic5p0-ktmsglhlnhvr"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d179754e99"/>
       <rico:authorizingMandate rdf:parseType="Literal">
          <html:p xml:lang="fr">convention CNRS/DMF en 1966 créant le Centre d'ethnologie française, laboratoire associé au MNATP.</html:p>
       </rico:authorizingMandate>
@@ -71,13 +79,15 @@
             <html:p>Il est alors entendu que le laboratoire accompagnerait le musée dans cette évolution, l'équipe CNRS ayant contribué largement à la rédaction des différents « projets scientifiques et culturels » du futur établissement. Or, en 2005, la direction du CNRS décide de ne pas renouveler la convention liant le musée au laboratoire et de fermer ce dernier.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051138-051949-19660101-20051231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/051949"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009922-051138-19660101-20051231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/009922"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/050748-051138"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-050748"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/050831-051138"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-050831"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/050877-051138"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-050877"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/051138-051949-19660101-20051231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/051949"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009922-051138-19660101-20051231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/009922"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/050748-051138"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-050748"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/050831-051138"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-050831"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/050877-051138"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-050877"/>
    </rico:Agent>
 </rdf:RDF>

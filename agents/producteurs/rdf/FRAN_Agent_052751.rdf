@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052751">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052751"/>
@@ -11,31 +19,29 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-01</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Matthieu RAJOHNSON)</rico:name>
+            <rico:name xml:lang="fr">Création (par Matthieu RAJOHNSON)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-03</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Solange BIDOU)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Solange BIDOU)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-01</rico:date>
-            <rico:descriptiveNote xml:lang="fr">01/02/2022, J. Gaillard : ajout fonction agriculture et d'un lien d'identité</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">01/02/2022, J. Gaillard : ajout fonction agriculture et d'un lien d'identité</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Journal Officiel</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000123151539/about"/>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Journal Officiel</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000123151539"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052751">
-            <rico:isInstantiationOf rdf:resource="record/052751"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052751"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052751</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052751"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052751">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -53,81 +59,77 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1869-07-17</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1881-11-14</rico:endDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052751"/>
-            <rico:placeRelationHasSource rdf:resource="place/Paris"/>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:relationHasTarget rdf:resource="agent/052751"/>
+            <rico:relationHasSource rdf:resource="place/Paris"/>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Hôtel de Villeroy, 78 rue de Varenne (après 1873-1881)</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Paris"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Paris"/>
       <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5bloo2gwk-sgl3fc00gzgl"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052751-d5bhvikz03--iqa08pprge9n">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052751"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052751-d5bhvikz03--iqa08pprge9n"/>
+            <rico:relationHasTarget rdf:resource="agent/052751"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d207202e131">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052751-d5bhvikz03--iqa08pprge9n"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvikz03--iqa08pprge9n"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvikz03--iqa08pprge9n"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d207202e131"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052751"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052751"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d207202e140">
                   <rico:title>Décret du 17 juillet 1869 portant création du ministère de l’Agriculture et du Commerce.</rico:title>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Décret du 17 juillet 1869 portant création du ministère de l’Agriculture et du Commerce.</rico:title>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d207202e140"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052751"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052751"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d207202e145">
                   <rico:title>Décret du 14 novembre 1881 nommant Maurice Rouvier ministre du Commerce et des Colonies (Journal officiel, 15 novembre 1881, p. 6346).</rico:title>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Décret du 14 novembre 1881 nommant Maurice Rouvier ministre du Commerce et des Colonies (Journal officiel, 15 novembre 1881, p. 6346).</rico:title>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d207202e145"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052751"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052751"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d207202e150">
                   <rico:title>Décret du 14 novembre 1881 portant création d’un ministère de l’Agriculture (Journal officiel, 15 novembre 1881, p. 6347).</rico:title>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Décret du 14 novembre 1881 portant création d’un ministère de l’Agriculture (Journal officiel, 15 novembre 1881, p. 6347).</rico:title>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d207202e150"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052751"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052751"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d207202e155">
                   <rico:title>Décret du 14 novembre 1881 nommant Paul Devès ministre de l’Agriculture (Journal officiel, 15 novembre 1881, p. 6346).</rico:title>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Décret du 14 novembre 1881 nommant Paul Devès ministre de l’Agriculture (Journal officiel, 15 novembre 1881, p. 6346).</rico:title>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d207202e155"/>
+      <rico:generalDescription rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Organisation interne ou généalogie</h4>
             <html:p>Outre le secrétariat général, le service du matériel et des archives, la division de la comptabilité centrale et le service de la caisse (d’abord distincts puis peu à peu réunis pour devenir en 1879 la direction du secrétariat et de la comptabilité), et le cabinet du ministre, le ministère comprend les divisions de l’Agriculture, des Haras, du Commerce intérieur, du Commerce extérieur, et, à partir de décembre 1877, une administration des forêts.</html:p>
-            <html:p/>
             <html:p>Almanach national, 1873</html:p>
             <html:p>Ministère de l’Agriculture et du Commerce</html:p>
             <html:ul>
@@ -141,7 +143,6 @@
                <html:li>Direction du commerce intérieur</html:li>
                <html:li>Direction du commerce extérieur</html:li>
             </html:ul>
-            <html:p/>
             <html:p>Almanach national, 1876</html:p>
             <html:p>Ministère de l’Agriculture et du Commerce</html:p>
             <html:ul>
@@ -154,7 +155,6 @@
                <html:li>Direction du commerce intérieur</html:li>
                <html:li>Direction du commerce extérieur</html:li>
             </html:ul>
-            <html:p/>
             <html:p>Almanach national, 1879</html:p>
             <html:p>Ministère de l’Agriculture et du Commerce</html:p>
             <html:ul>
@@ -166,7 +166,6 @@
                <html:li>Direction du commerce extérieur</html:li>
                <html:li>Administration des forêts</html:li>
             </html:ul>
-            <html:p/>
             <html:p>Almanach national, 1880-1881</html:p>
             <html:p>Ministère de l’Agriculture et du Commerce</html:p>
             <html:ul>
@@ -179,7 +178,7 @@
                <html:li>Administration des forêts</html:li>
             </html:ul>
          </html:div>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>La dissociation des travaux publics d’une part et de l’agriculture et du commerce d’autre part amène la création, par le décret du 17 juillet 1869, d’un « ministère de l’Agriculture et du Commerce » propre.</html:p>
@@ -210,6 +209,12 @@
             </html:ul>
          </html:div>
       </rico:history>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/052751-053199-18760101-18801231"/>
+      <rico:hadSubordinate rdf:resource="agent/053199"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/052751-051257-18771215-18811114"/>
+      <rico:hadSubdivision rdf:resource="agent/051257"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb12268225v#about"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/057993-052751"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-057993"/>
    </rico:Agent>
 </rdf:RDF>

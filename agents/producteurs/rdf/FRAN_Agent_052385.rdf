@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052385">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052385"/>
@@ -11,32 +19,30 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-12-03</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Véronique AUBER)</rico:name>
+            <rico:name xml:lang="fr">Création (par Véronique AUBER)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-24</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-12-03</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Notice d’autorité de la Bibliothèque nationale n° FRBNF12561773</rico:source>
-      <rico:source xml:lang="fr">Castries, Scipion de, Souvenirs maritimes, 1997</rico:source>
-      <rico:source xml:lang="fr">Fonds Marine, état des services de Scipion de Castries : MARC/C/7/56, dossier 3</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000032262751/about"/>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice d’autorité de la Bibliothèque nationale n° FRBNF12561773</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Castries, Scipion de, Souvenirs maritimes, 1997</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Fonds Marine, état des services de Scipion de Castries : MARC/C/7/56, dossier 3</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000032262751"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052385">
-            <rico:isInstantiationOf rdf:resource="record/052385"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052385"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052385</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052385"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052385">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -75,116 +81,125 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1756-05-10</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1829-03-29</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052385"/>
-            <rico:placeRelationHasSource rdf:resource="place/Barjac"/>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:relationHasTarget rdf:resource="agent/052385"/>
+            <rico:relationHasSource rdf:resource="place/Barjac"/>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Lieu de décès</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Barjac"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Barjac"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052385"/>
-            <rico:placeRelationHasSource rdf:resource="place/Ceylan"/>
+            <rico:relationHasTarget rdf:resource="agent/052385"/>
+            <rico:relationHasSource rdf:resource="place/Ceylan"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Ceylan"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Ceylan"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052385"/>
-            <rico:placeRelationHasSource rdf:resource="place/Chine"/>
+            <rico:relationHasTarget rdf:resource="agent/052385"/>
+            <rico:relationHasSource rdf:resource="place/Chine"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Chine"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Chine"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052385"/>
-            <rico:placeRelationHasSource rdf:resource="place/Isle%20de%20France"/>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:relationHasTarget rdf:resource="agent/052385"/>
+            <rico:relationHasSource rdf:resource="place/Isle%20de%20France"/>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Ancien nom de l'Île Maurice</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Isle%20de%20France"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Isle%20de%20France"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052385"/>
-            <rico:placeRelationHasSource rdf:resource="place/Madagascar"/>
+            <rico:relationHasTarget rdf:resource="agent/052385"/>
+            <rico:relationHasSource rdf:resource="place/Madagascar"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Madagascar"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Madagascar"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052385"/>
-            <rico:placeRelationHasSource rdf:resource="place/Manille"/>
+            <rico:relationHasTarget rdf:resource="agent/052385"/>
+            <rico:relationHasSource rdf:resource="place/Manille"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Manille"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Manille"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052385"/>
-            <rico:placeRelationHasSource rdf:resource="place/Pondich%C3%A9ry"/>
+            <rico:relationHasTarget rdf:resource="agent/052385"/>
+            <rico:relationHasSource rdf:resource="place/Pondich%C3%A9ry"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Pondich%C3%A9ry"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Pondich%C3%A9ry"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052385"/>
-            <rico:placeRelationHasSource rdf:resource="place/Saint-Pierre-et-Miquelon"/>
+            <rico:relationHasTarget rdf:resource="agent/052385"/>
+            <rico:relationHasSource rdf:resource="place/Saint-Pierre-et-Miquelon"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Saint-Pierre-et-Miquelon"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Saint-Pierre-et-Miquelon"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052385"/>
-            <rico:placeRelationHasSource rdf:resource="place/S%C3%A9n%C3%A9gal"/>
+            <rico:relationHasTarget rdf:resource="agent/052385"/>
+            <rico:relationHasSource rdf:resource="place/S%C3%A9n%C3%A9gal"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/S%C3%A9n%C3%A9gal"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/S%C3%A9n%C3%A9gal"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052385-d699msjpuqr-66gt6kmedjiv-17780101-18171231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052385"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052385-d699msjpuqr-66gt6kmedjiv-17780101-18171231"/>
+            <rico:relationHasTarget rdf:resource="agent/052385"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d201346e237">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052385-d699msjpuqr-66gt6kmedjiv-17780101-18171231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1778-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1817-12-31</rico:endDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d201346e237"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052385-d699msk0wvv--1bg7dn8l97jrf-17740101-18171231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052385"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052385-d699msk0wvv--1bg7dn8l97jrf-17740101-18171231"/>
+            <rico:relationHasTarget rdf:resource="agent/052385"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d201346e252">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052385-d699msk0wvv--1bg7dn8l97jrf-17740101-18171231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msk0wvv--1bg7dn8l97jrf"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1774-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1817-12-31</rico:endDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk0wvv--1bg7dn8l97jrf"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk0wvv--1bg7dn8l97jrf"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d201346e252"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Scipion de Castries (1756-1829), vicomte de Castries et comte de Vagnas, est le fils de Henri Félix de Castries et de Marguerite de Monteil. En 1774, il entre à l’école des élèves de la marine, au Havre. Enseigne de vaisseau, sous les ordres du comte d'Estaing, il participe à la campagne d'Amérique de 1778-79 sur le vaisseau amiral<html:i>Le Languedoc</html:i>. Il y effectue trois missions : l’une de surveillance des côtes africaines pour intercepter le commerce anglais de la traite ; l’autre au début de l’année 1783, pour annoncer au Sénégal la nouvelle de la paix et la troisième pour reprendre possession des îles Saint-Pierre et Miquelon occupées par les Anglais et leur rendre certaines îles des Antilles. Scipion de Castries opère ensuite dans les mers d'Inde et de Chine : ses voyages l’amènent ainsi, sur la frégate<html:i>La Subtile</html:i>, à Pondichéry, l’Île de France (Maurice) puis Ceylan, les Indes et Madagascar. Il s’aventure jusqu’en Chine sous les ordres du chevalier d’Entrecasteaux. À Manille il rencontre même La Pérouse, en route pour le Pacifique Sud. En 1784 il est promu lieutenant de vaisseau. En 1791, il décide d’émigrer et se met au service du futur Louis XVIII. Aussi, à la restauration, est-il nommé capitaine de vaisseau le 31 décembre 1814. Trois ans plus tard, le 1er novembre 1817, il fait valoir ses droits à la retraite. En 1825, il est nommé contre-amiral honoraire. Il décède en 1829 à Barjac, dans le Gard.</html:p>
             <html:p>Il laisse un ouvrage intitulé<html:i>Souvenirs maritimes</html:i>, où il raconte ses campagnes en mer.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050158-052385-17560510-17941231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050158"/>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/051886-052385"/><rico:hasFamilyAssociationWith rdf:resource="agent/051886"/>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/051885-052385"/><rico:hasFamilyAssociationWith rdf:resource="agent/051885"/>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/051887-052385"/><rico:hasFamilyAssociationWith rdf:resource="agent/051887"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050158-052385-17560510-17941231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050158"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/051886-052385"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/051886"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/051885-052385"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/051885"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/051887-052385"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/051887"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb12561773x#about"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051884-052385-17560510-18290329"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/051884"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/003449-052385"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-003449"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/003450-052385"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-003450"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/051884-052385-17560510-18290329"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/051884"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/003449-052385"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-003449"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/003450-052385"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-003450"/>
    </rico:Agent>
 </rdf:RDF>

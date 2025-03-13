@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052207">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052207"/>
@@ -11,31 +19,29 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-05-07</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Patricia GILLET)</rico:name>
+            <rico:name xml:lang="fr">Création (par Patricia GILLET)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-02-26</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Samuel GIBIAT)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Samuel GIBIAT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-05-07</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 07/05/2019 : indexation lieu revue, pas d'identifiant bnf ou wikipédia</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 07/05/2019 : indexation lieu revue, pas d'identifiant bnf ou wikipédia</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Notice biographique de Louis-Henri Boussel, rédigée par Frantz Malassis, en ligne sur le site internet de la Fondation de la Résistance (http://www.fondationresistance.org/pages/rech_doc/louis-henri-boussel_portrait31.htm)</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000423323873/about"/>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice biographique de Louis-Henri Boussel, rédigée par Frantz Malassis, en ligne sur le site internet de la Fondation de la Résistance (http://www.fondationresistance.org/pages/rech_doc/louis-henri-boussel_portrait31.htm)</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000423323873"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052207">
-            <rico:isInstantiationOf rdf:resource="record/052207"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052207"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052207</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052207"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052207">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -53,76 +59,82 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1916-01-02</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-01-19</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052207"/>
-            <rico:placeRelationHasSource rdf:resource="place/Autriche"/>
+            <rico:relationHasTarget rdf:resource="agent/052207"/>
+            <rico:relationHasSource rdf:resource="place/Autriche"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Autriche"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Autriche"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052207"/>
-            <rico:placeRelationHasSource rdf:resource="place/Istambul"/>
+            <rico:relationHasTarget rdf:resource="agent/052207"/>
+            <rico:relationHasSource rdf:resource="place/Istambul"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Istambul"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Istambul"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052207"/>
-            <rico:placeRelationHasSource rdf:resource="place/Mauthausen"/>
+            <rico:relationHasTarget rdf:resource="agent/052207"/>
+            <rico:relationHasSource rdf:resource="place/Mauthausen"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Mauthausen"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Mauthausen"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052207"/>
-            <rico:placeRelationHasSource rdf:resource="place/Tunisie"/>
+            <rico:relationHasTarget rdf:resource="agent/052207"/>
+            <rico:relationHasSource rdf:resource="place/Tunisie"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Tunisie"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Tunisie"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052207"/>
-            <rico:placeRelationHasSource rdf:resource="place/Turquie"/>
+            <rico:relationHasTarget rdf:resource="agent/052207"/>
+            <rico:relationHasSource rdf:resource="place/Turquie"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Turquie"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Turquie"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052207-d699msjgtw3-1ton3i1q2op31">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052207"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052207-d699msjgtw3-1ton3i1q2op31"/>
+            <rico:relationHasTarget rdf:resource="agent/052207"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d198271e158">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052207-d699msjgtw3-1ton3i1q2op31"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjgtw3-1ton3i1q2op31"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjgtw3-1ton3i1q2op31"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjgtw3-1ton3i1q2op31"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d198271e158"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052207-d699msjc4qa-1rm5osxqzj5v1">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052207"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052207-d699msjc4qa-1rm5osxqzj5v1"/>
+            <rico:relationHasTarget rdf:resource="agent/052207"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d198271e164">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052207-d699msjc4qa-1rm5osxqzj5v1"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjc4qa-1rm5osxqzj5v1"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjc4qa-1rm5osxqzj5v1"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjc4qa-1rm5osxqzj5v1"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d198271e164"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052207-d-2dlouru40-16uts12xdm4zl-19400101-19431231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052207"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052207-d-2dlouru40-16uts12xdm4zl-19400101-19431231"/>
+            <rico:relationHasTarget rdf:resource="agent/052207"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d198271e170">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052207-d-2dlouru40-16uts12xdm4zl-19400101-19431231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-2dlouru40-16uts12xdm4zl"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1940-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1943-12-31</rico:endDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-2dlouru40-16uts12xdm4zl"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-2dlouru40-16uts12xdm4zl"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d198271e170"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Louis-Henri Boussel, né le 2 janvier 1916 à Smyrne (Turquie) où son père est directeur des chemins de fer français en Syrie et Turquie, arrive en France en 1926. Devenu ingénieur des Arts et Métiers, il effectue son service militaire en 1937 au 8e régiment de tirailleurs à Bizerte (Tunisie). Maintenu sous les drapeaux après la déclaration de guerre, il combat en métropole près de Fontainebleau en mai-juin 1940.</html:p>

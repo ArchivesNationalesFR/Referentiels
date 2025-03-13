@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051404">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051404"/>
@@ -11,29 +19,27 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-10-14</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:name xml:lang="fr">Création (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-10-13</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Elsa Camus, 13 octobre 2016 : notice créée par Evelyne Van den Neste</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Elsa Camus, 13 octobre 2016 : notice créée par Evelyne Van den Neste</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-10-14</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051404">
-            <rico:isInstantiationOf rdf:resource="record/051404"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051404"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051404</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051404"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051404">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -49,22 +55,24 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1963-04-08</rico:birthDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051404-d699msixdvh--wgctct8soc1y-19970101-20011231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051404"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051404-d699msixdvh--wgctct8soc1y-19970101-20011231"/>
+            <rico:relationHasTarget rdf:resource="agent/051404"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d184515e86">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051404-d699msixdvh--wgctct8soc1y-19970101-20011231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1997-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">cheffe de cabinet puis conseillère au Logement</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d184515e86"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>
@@ -74,7 +82,6 @@
             <html:p>Ancienne élève de l'Ecole normale supérieure (1983) ;</html:p>
             <html:p>Lauréate de l'Institut d'études politiques de Paris (1988) ;</html:p>
             <html:p>Ancienne élève de l'Ecole nationale d'administration (promotion Victor Hugo)</html:p>
-            <html:p/>
             <html:p>
                <html:u>Carrière</html:u>
             </html:p>
@@ -92,9 +99,13 @@
             <html:p>- Directrice de la Caisse nationale de solidarité pour l'autonomie (CNSA), depuis 2014 (Décret du 31.07.2014, JO du 01.08.2014).</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/003779-051404-19830101-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/003779"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/003781-051404-19880101-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/003781"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000165-051404-19910101-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000165"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/004666-051404-19910101-19951231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/004666"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/003779-051404-19830101-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/003779"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/003781-051404-19880101-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/003781"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000165-051404-19910101-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000165"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/004666-051404-19910101-19951231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/004666"/>
    </rico:Agent>
 </rdf:RDF>

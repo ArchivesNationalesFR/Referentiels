@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052814">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052814"/>
@@ -11,30 +19,28 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-12-09</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Création (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-12-01</rico:date>
-            <rico:descriptiveNote xml:lang="fr">pas de notice wikipédia, pas de notice d'autorité BnF, pas de numéro ISNI</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">pas de notice wikipédia, pas de notice d'autorité BnF, pas de numéro ISNI</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-12-09</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier 09/12/2020 : suppression des relations présentes en sens inverse</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier 09/12/2020 : suppression des relations présentes en sens inverse</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052814">
-            <rico:isInstantiationOf rdf:resource="record/052814"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052814"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052814</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052814"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052814">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -51,34 +57,36 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1857-11-22</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1918-03-27</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052814"/>
-            <rico:placeRelationHasSource rdf:resource="place/Yerres"/>
+            <rico:relationHasTarget rdf:resource="agent/052814"/>
+            <rico:relationHasSource rdf:resource="place/Yerres"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Yerres"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Yerres"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052814-d699msjyazt-1f0ggfyf3is8u">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052814"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052814-d699msjyazt-1f0ggfyf3is8u"/>
+            <rico:relationHasTarget rdf:resource="agent/052814"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d207923e105">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052814-d699msjyazt-1f0ggfyf3is8u"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">maire d'Yerres (auj. Essonne), conseiller général de Seine-et-Marne</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d207923e105"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Honoré Gaspard Napoléon, baron Gourgaud (1857-1918) est le fils de Louis Marie Napoléon Hélène, baron Gourgaud (1823-1879) et d'Alexandrine Victoire Catherine Melin Ramond du Taillis (1836-1915). Il devient conseiller général et maire d'Yerres. Il épouse Henriette Chevreau (1857-1940), fille du préfet et ministre Henri Chevreau (ministre de l'Intérieur de janvier à septembre 1870). Ils ont un fils, Marie Amédée Henri Napoléon, baron Gourgaud (1881-1944).</html:p>
             <html:p>C'est lui qui en 1899 fait éditer le journal de son grand-père :<html:i>Sainte-Hélène, journal inédit de 1815 à 1818</html:i>, préface et notes de MM. Le vicomte de Grouchy et Antoine Guillois, Paris, Flammarion, 2 volumes.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/003457-052814"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-003457"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/003457-052814"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-003457"/>
    </rico:Agent>
 </rdf:RDF>

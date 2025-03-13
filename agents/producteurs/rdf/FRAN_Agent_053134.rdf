@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/053134">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/053134"/>
@@ -11,29 +19,27 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-04</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Cécile FABRIS)</rico:name>
+            <rico:name xml:lang="fr">Création (par Cécile FABRIS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-02</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Notice rédigée par le Bureau des archives du ministère des Affaires sociales. Pas de référence ISNI, pas de notice Wikipedia, pas de notice BnF</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Notice rédigée par le Bureau des archives du ministère des Affaires sociales. Pas de référence ISNI, pas de notice Wikipedia, pas de notice BnF</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Cécile FABRIS)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Cécile FABRIS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-04</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/053134">
-            <rico:isInstantiationOf rdf:resource="record/053134"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/053134"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_053134</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_053134"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/053134">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -50,467 +56,404 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1997-06-04</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-05-06</rico:endDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:placeRelationHasSource rdf:resource="place/Paris"/>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource rdf:resource="place/Paris"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Paris"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Paris"/>
       <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5blonb04s-1nqrprwwl75h0"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/053134-d3nyug261d--1cyxwnocz7hzo">
-            <rico:performanceRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/053134-d3nyug261d--1cyxwnocz7hzo"/>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d211763e112">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/053134-d3nyug261d--1cyxwnocz7hzo"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyug261d--1cyxwnocz7hzo"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyug261d--1cyxwnocz7hzo"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d211763e112"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/053134-d5bhvil9kb-z13sh6nxqq1z">
-            <rico:performanceRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/053134-d5bhvil9kb-z13sh6nxqq1z"/>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d211763e118">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/053134-d5bhvil9kb-z13sh6nxqq1z"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvil9kb-z13sh6nxqq1z"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvil9kb-z13sh6nxqq1z"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d211763e118"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/053134-d5bhvimp30-1crwo1pfymd1z">
-            <rico:performanceRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/053134-d5bhvimp30-1crwo1pfymd1z"/>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d211763e124">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/053134-d5bhvimp30-1crwo1pfymd1z"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvimp30-1crwo1pfymd1z"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvimp30-1crwo1pfymd1z"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d211763e124"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d211763e133">
                   <rico:title>Décret du 4 juin 1997 relatif à la composition du gouvernement</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000566649"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Décret du 4 juin 1997 relatif à la composition du gouvernement</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000566649"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d211763e133"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d211763e139">
                   <rico:title>Décret n°97-718 du 11 juin 1997 relatif aux attributions du ministre de la jeunesse et des sports</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000368165"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Décret n°97-718 du 11 juin 1997 relatif aux attributions du ministre de la jeunesse et des sports</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000368165"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d211763e139"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d211763e145">
                   <rico:title>Arrêté du 17 juin 1997 portant nomination au cabinet du ministre</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000566126"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 17 juin 1997 portant nomination au cabinet du ministre</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000566126"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d211763e145"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d211763e151">
                   <rico:title>Arrêté du 7 juillet 1997 portant nomination au cabinet du ministre</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000200383"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 7 juillet 1997 portant nomination au cabinet du ministre</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000200383"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d211763e151"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d211763e157">
                   <rico:title>Arrêté du 15 juillet 1997 portant nomination au cabinet du ministre</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000383557"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 15 juillet 1997 portant nomination au cabinet du ministre</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000383557"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d211763e157"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d211763e164">
                   <rico:title>Arrêté du 1er août 1997 portant nomination au cabinet du ministre</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000382461"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 1er août 1997 portant nomination au cabinet du ministre</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000382461"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d211763e164"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d211763e170">
                   <rico:title>Arrêté du 12 décembre 1997 portant nomination au cabinet du ministre</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000569060"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 12 décembre 1997 portant nomination au cabinet du ministre</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000569060"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d211763e170"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d211763e176">
                   <rico:title>Arrêté du 17 février 1998 portant cessation de fonctions et nomination au cabinet du ministre</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000187298"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 17 février 1998 portant cessation de fonctions et nomination au cabinet du ministre</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000187298"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d211763e176"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d211763e182">
                   <rico:title>Arrêté du 18 février 1998 portant nomination au cabinet du ministre</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000552939"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 18 février 1998 portant nomination au cabinet du ministre</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000552939"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d211763e182"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d211763e188">
                   <rico:title>Arrêté du 15 juin 1998 portant nomination au cabinet de la ministre</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000194179"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 15 juin 1998 portant nomination au cabinet de la ministre</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000194179"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d211763e188"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d211763e194">
                   <rico:title>Arrêté du 30 octobre 1998 portant nomination au cabinet de la ministre</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000758068"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 30 octobre 1998 portant nomination au cabinet de la ministre</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000758068"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d211763e194"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d211763e201">
                   <rico:title>Arrêté du 12 janvier 1999 portant cessation de fonctions et nomination au cabinet de la ministre</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000208816"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 12 janvier 1999 portant cessation de fonctions et nomination au cabinet de la ministre</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000208816"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d211763e201"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d211763e207">
                   <rico:title>Arrêté du 17 mai 1999 portant nomination au cabinet de la ministre</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000759183"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 17 mai 1999 portant nomination au cabinet de la ministre</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000759183"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d211763e207"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d211763e213">
                   <rico:title>Arrêté du 7 septembre 1999 portant nomination au cabinet de la ministre</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000396976"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 7 septembre 1999 portant nomination au cabinet de la ministre</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000396976"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d211763e213"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d211763e219">
                   <rico:title>Arrêté du 30 septembre 1999 portant cessation de fonctions et nomination au cabinet de la ministre</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000744705"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 30 septembre 1999 portant cessation de fonctions et nomination au cabinet de la ministre</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000744705"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d211763e219"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d211763e225">
                   <rico:title>Arrêté du 11 octobre 1999 portant cessation de fonctions et nomination au cabinet de la ministre</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000762566"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 11 octobre 1999 portant cessation de fonctions et nomination au cabinet de la ministre</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000762566"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d211763e225"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d211763e231">
                   <rico:title>Arrêté du 6 décembre 1999 portant cessation de fonctions et nomination au cabinet de la ministre</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000396847"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 6 décembre 1999 portant cessation de fonctions et nomination au cabinet de la ministre</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000396847"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d211763e231"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d211763e238">
                   <rico:title>Arrêté du 21 avril 2000 portant nomination au cabinet de la ministre</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000763527"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 21 avril 2000 portant nomination au cabinet de la ministre</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000763527"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d211763e238"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d211763e244">
                   <rico:title>Arrêté du 24 octobre 2000 portant cessation de fonctions et nomination au cabinet de la ministre</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000402483"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 24 octobre 2000 portant cessation de fonctions et nomination au cabinet de la ministre</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000402483"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d211763e244"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d211763e250">
                   <rico:title>Arrêté du 2 novembre 2000 portant cessation de fonctions au cabinet de la ministre</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000220443"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 2 novembre 2000 portant cessation de fonctions au cabinet de la ministre</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000220443"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d211763e250"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d211763e256">
                   <rico:title>Arrêté du 26 décembre 2000 portant cessation de fonctions et nomination au cabinet de la ministre</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000391208"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 26 décembre 2000 portant cessation de fonctions et nomination au cabinet de la ministre</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000391208"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d211763e256"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d211763e262">
                   <rico:title>Arrêté du 5 février 2001 portant cessation de fonctions et nomination au cabinet de la ministre</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000221366"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 5 février 2001 portant cessation de fonctions et nomination au cabinet de la ministre</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000221366"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d211763e262"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d211763e268">
                   <rico:title>Arrêté du 9 avril 2001 portant nomination au cabinet de la ministre</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000391295"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 9 avril 2001 portant nomination au cabinet de la ministre</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000391295"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d211763e268"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d211763e275">
                   <rico:title>Arrêtés du 5 septembre 2001 portant cessation de fonctions et nomination au cabinet de la ministre</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000591913"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêtés du 5 septembre 2001 portant cessation de fonctions et nomination au cabinet de la ministre</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000591913"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d211763e275"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d211763e281">
                   <rico:title>Arrêtés du 14 novembre 2001 portant cessation de fonctions et nomination au cabinet de la ministre</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000402922"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêtés du 14 novembre 2001 portant cessation de fonctions et nomination au cabinet de la ministre</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000402922"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d211763e281"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d211763e287">
                   <rico:title>Arrêté du 14 janvier 2002 portant cessation de fonctions et nomination au cabinet de la ministre</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000585879"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 14 janvier 2002 portant cessation de fonctions et nomination au cabinet de la ministre</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000585879"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d211763e287"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d211763e293">
                   <rico:title>Arrêté du 25 janvier 2002 portant cessation de fonctions au cabinet de la ministre</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000584846"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 25 janvier 2002 portant cessation de fonctions au cabinet de la ministre</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000584846"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d211763e293"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/053134"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/053134"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d211763e299">
                   <rico:title>Arrêté du 25 janvier 2002 portant nomination au cabinet de la ministre</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000398585"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 25 janvier 2002 portant nomination au cabinet de la ministre</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000398585"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d211763e299"/>
+      <rico:generalDescription rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Organisation interne ou généalogie</h4>
             <html:p>Directeur de cabinet : Philippe Sultan (juin 1997-février 1998), René Mabit (février 1998-octobre 1999) puis François Signoles (octobre 1999-avril 2002)</html:p>
-            <html:p/>
             <html:p>Chef de cabinet : Gilles Smadja (juin 1997-avril 2000), Gilles Garnier (avril 2000-2002)</html:p>
-            <html:p/>
             <html:p>Chef adjoint de cabinet : Nicole Beltrando (juin-juillet 1997), Gilles Garnier (août 1997-avril 2000), Christian Garcia (avril 2000-octobre 2001), Olivier Meïer (novembre 2001-2002)</html:p>
-            <html:p/>
             <html:p>Conseiller en charge des affaires budgétaires : Charles Arambourou (juillet 1997)</html:p>
-            <html:p/>
             <html:p>Conseiller parlementaire : Martine Timsit (1997-2001), Djénane Toma (2001-2002)</html:p>
-            <html:p/>
             <html:p>Conseillère technique femmes et sports, personnes handicapées : Lilian Halls-French (février 1998-octobre 2000), Maryse Lelarge (octobre 2000-2002)</html:p>
-            <html:p/>
             <html:p>Conseiller technique jeunesse : Michel Fize (juin 1997-1998), Jean-Raymond Pacouret (1998, 2001), Vincent Bony (octobre 1998-octobre 2001)</html:p>
-            <html:p/>
             <html:p>Conseiller technique jeunesse et vie associative : Manuel Colombat (décembre 1997-janvier 1999), Yvan Vigier (janvier 1999-janvier 2002), Philippe Bradfer (janvier-mai 2002)</html:p>
-            <html:p/>
             <html:p>Conseillers techniques sports :</html:p>
             <html:ul>
                <html:li>Christian Loussert (avril 2001)</html:li>
                <html:li>Alain Mouchel (septembre 1999-février 2001) puis Maurice Pichon (février 2001)</html:li>
                <html:li>Jean Poczobut (juillet 1997-décembre 1999) puis Jacques Donzel (décembre 1999-)</html:li>
             </html:ul>
-            <html:p/>
             <html:p>Conseillère technique statistiques et économie du sport : Catherine Blum (octobre 1999-janvier 2002)</html:p>
-            <html:p/>
             <html:p>Conseillers techniques :</html:p>
             <html:ul>
                <html:li>Joël Delplanque (juillet 1997)</html:li>
@@ -518,28 +461,38 @@
                <html:li>Olivier Meïer (mai 1999-octobre 2001). Après octobre 2001, il reste également en charge des affaires internationales.</html:li>
                <html:li>Eugène-Henri More (janvier 2002)</html:li>
             </html:ul>
-            <html:p/>
             <html:p>Conseiller spécial : Gilles Smadja (avril-novembre 2000)</html:p>
-            <html:p/>
             <html:p>Chargé de mission sports : Serge Mesonès (1997-2002)</html:p>
-            <html:p/>
             <html:p>Cheffe du secrétariat particulier : Nicole Beltrando (juillet 1997-septembre 1999), Danielle Fath (septembre 1999-septembre 2001), Catherine Thibault (septembre 2001)</html:p>
-            <html:p/>
             <html:p>Attachée de presse : Fériel Barrère (juillet 1997-décembre 2000, Jenny Leoni (janvier 2001-2002)</html:p>
          </html:div>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Suite aux élections législatives anticipées de 1997 et à la nomination de Lionel Jospin comme Premier ministre par décret du 2 juin 1997, le gouvernement est nommé par décret du 4 juin 1997.</html:p>
-            <html:p/>
             <html:p>Marie-George Buffet est nommée ministre de la jeunesse et des sports le 4 juin 1997 et le reste jusqu'à la démission du gouvernement le 6 mai 2002.</html:p>
             <html:p>Elle succède à Guy Drut, ministre de la jeunesse et des sports au sein du gouvernement d’Alain Juppé (mai 1995 à juin 1997).</html:p>
-            <html:p/>
             <html:p>Aux termes du décret d'attribution (décret n° 97-718 du 11 juin 1997), la ministre de la jeunesse et des sports prépare et met en œuvre la politique du Gouvernement relative aux activités physiques et sportives et à la pratique des sports, ainsi qu’aux actions en faveur de la jeunesse et des loisirs.</html:p>
-            <html:p/>
             <html:p>Parmi les principales réalisations du ministère durant la période, on peut citer la création d'une taxe sur les droits de retransmission télévisée afin de financer les petits clubs amateurs et l’interdiction de la cotation en bourse des clubs de football. La ministre mobilise également ses homologues européens en faveur d’une harmonisation des législations européennes contre le dopage et porte une réforme de l’action du ministère en faveur des jeunes.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000020-053134-19970604-20020506"/><rico:isOrWasSubordinateTo rdf:resource="agent/000020"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentTemporalRelation/053134-053419-20020507-*"/>
+      <rico:hasSuccessor rdf:resource="agent/053419"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/000020-053134-19970604-20020506"/>
+      <rico:wasSubordinateTo rdf:resource="agent/000020"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/059946-053134"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-059946"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/010823-053134"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-010823"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/010826-053134"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-010826"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/020174-053134"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-020174"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/010821-053134"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-010821"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/026612-053134"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-026612"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/010369-053134"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-010369"/>
    </rico:Agent>
 </rdf:RDF>

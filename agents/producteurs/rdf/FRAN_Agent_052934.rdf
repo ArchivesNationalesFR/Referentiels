@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052934">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052934"/>
@@ -11,29 +19,27 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-07-15</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Clémence LESCUYER)</rico:name>
+            <rico:name xml:lang="fr">Création (par Clémence LESCUYER)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-04-22</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Solange BIDOU)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Solange BIDOU)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-07-15</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 15/07/2021 : création des liens hiérarchiques</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 15/07/2021 : création des liens hiérarchiques</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052934">
-            <rico:isInstantiationOf rdf:resource="record/052934"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052934"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052934</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052934"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052934">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -123,39 +129,38 @@
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1880-01-01</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1905-12-31</rico:endDate>
       <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5blonaxbw--1mt8t42bokzts"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052934-d5bhvijq5z-zaaj99p5tmch">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052934"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052934-d5bhvijq5z-zaaj99p5tmch"/>
+            <rico:relationHasTarget rdf:resource="agent/052934"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d209310e235">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052934-d5bhvijq5z-zaaj99p5tmch"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvijq5z-zaaj99p5tmch"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvijq5z-zaaj99p5tmch"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d209310e235"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052934"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052934"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d209310e244">
                   <rico:title>Décret du 28 juillet 1887 relatif à l’organisation de l’administration centrale des postes et des télégraphes</rico:title>
                   <rdfs:seeAlso rdf:resource="https://gallica.bnf.fr/ark:/12148/bpt6k62712226"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Décret du 28 juillet 1887 relatif à l’organisation de l’administration centrale des postes et des télégraphes</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://gallica.bnf.fr/ark:/12148/bpt6k62712226"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d209310e244"/>
+      <rico:generalDescription rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Organisation interne ou généalogie</h4>
             <html:p>Le bureau du personnel, divisé entre bureau du personnel des postes et bureau du personnel des télégraphes jusqu’en 1879, est réuni en un seul bureau en 1880.</html:p>
             <html:p>Le service médical semble rattaché à ce service en 1881.</html:p>
             <html:p>En 1900 apparaît une distinction entre premier bureau, chargé de la gestion des agents du service actif, des recettes, des pensions et des congés, et deuxième bureau chargé de l’administration centrale, des directions et services spéciaux, des sous-agents, des secours, de la télégraphie militaire et de la trésorerie, division qui subsiste jusqu’en 1903.</html:p>
          </html:div>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Contexte général</h4>
@@ -167,10 +172,15 @@
             <html:p>Créé en 1880 par la réunion du bureau du personnel des postes et du bureau du personnel des télégraphes, le service du personnel reste marqué dans un premier temps par la distinction entre les deux domaines d’activité. Il distingue ensuite entre 1900 et 1903 les agents du service actif et ceux d’administration centrale. Il est rattaché à des niveaux hiérarchiques élevés, soit le ministère directement, soit le service central ou le cabinet.</html:p>
          </html:div>
       </rico:history>
-      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/052514-052934-18800101-18841231"/><rico:isOrwasSubdivisionOf rdf:resource="agent/052514"/>
-      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/052968-052934-18850101-18901231"/><rico:isOrwasSubdivisionOf rdf:resource="agent/052968"/>
-      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/052934-007894-19060101-*"/><rico:hasSuccessor rdf:resource="agent/007894"/>
-      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/052602-052934-18910101-18951231"/><rico:isOrwasSubdivisionOf rdf:resource="agent/052602"/>
-      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/052968-052934-18960101-19051231"/><rico:isOrwasSubdivisionOf rdf:resource="agent/052968"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/052514-052934-18800101-18841231"/>
+      <rico:wasSubdivisionOf rdf:resource="agent/052514"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/052968-052934-18850101-18901231"/>
+      <rico:wasSubdivisionOf rdf:resource="agent/052968"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentTemporalRelation/052934-007894-19060101-*"/>
+      <rico:hasSuccessor rdf:resource="agent/007894"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/052602-052934-18910101-18951231"/>
+      <rico:wasSubdivisionOf rdf:resource="agent/052602"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/052968-052934-18960101-19051231"/>
+      <rico:wasSubdivisionOf rdf:resource="agent/052968"/>
    </rico:Agent>
 </rdf:RDF>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050729">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050729"/>
@@ -11,40 +19,37 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-05-03</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Emmanuelle GIRY)</rico:name>
+            <rico:name xml:lang="fr">Création (par Emmanuelle GIRY)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-02-27</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 27 février 2014 : changé nom, ajouté n° notice BnF et lien vers fiche SCI branche française</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 27 février 2014 : changé nom, ajouté n° notice BnF et lien vers fiche SCI branche française</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Emmanuelle GIRY)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Emmanuelle GIRY)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-07-23</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Emmanuelle GIRY)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Emmanuelle GIRY)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-05-03</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 5 mai 2018 : ajout lien d'identité vers notice BnF, indexation activité, indexation lieu</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 5 mai 2018 : ajout lien d'identité vers notice BnF, indexation activité, indexation lieu</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Inventaire du PAJEP, consulté au mois de février 2014</rico:source>
-      <rico:source xml:lang="fr">Notice d'autorité BnF n° FRBNF12137484</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000000151918/about"/>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Inventaire du PAJEP, consulté au mois de février 2014</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice d'autorité BnF n° FRBNF12137484</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000000151918"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050729">
-            <rico:isInstantiationOf rdf:resource="record/050729"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050729"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050729</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050729"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050729">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -62,31 +67,33 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1912-01-01</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1998-06-22</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050729"/>
-            <rico:placeRelationHasSource rdf:resource="place/Alg%C3%A9rie"/>
+            <rico:relationHasTarget rdf:resource="agent/050729"/>
+            <rico:relationHasSource rdf:resource="place/Alg%C3%A9rie"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Alg%C3%A9rie"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Alg%C3%A9rie"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050729"/>
-            <rico:placeRelationHasSource rdf:resource="place/S%C3%A9n%C3%A9gal"/>
+            <rico:relationHasTarget rdf:resource="agent/050729"/>
+            <rico:relationHasSource rdf:resource="place/S%C3%A9n%C3%A9gal"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/S%C3%A9n%C3%A9gal"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/S%C3%A9n%C3%A9gal"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050729-d699msk3h6v--1a7obp35gqwv3">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050729"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050729-d699msk3h6v--1a7obp35gqwv3"/>
+            <rico:relationHasTarget rdf:resource="agent/050729"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d174668e142">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050729-d699msk3h6v--1a7obp35gqwv3"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msk3h6v--1a7obp35gqwv3"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk3h6v--1a7obp35gqwv3"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk3h6v--1a7obp35gqwv3"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d174668e142"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Pierre Martin est né en 1912 à Chartres et est décédé à Grasse le 22 juin 1998. Militant ajiste durant l’Entre-deux-guerres, Pierre Martin est alors emprisonné parce qu’objecteur de conscience. Il devient par la suite un des animateurs de la branche française de l'Internationale des résistants à la guerre (IRG), organisation pacifiste d'obédience libertaire, au moins jusque dans les années 1960.</html:p>
@@ -97,9 +104,10 @@
             <html:p>Après sa retraite en 1972, toute la famille fait une halte de quelques années en Algérie, avant de se retirer à Grasse, dans les Alpes Maritimes.</html:p>
          </html:div>
       </rico:history>
-      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050729-050706-19460101-19491231"/><rico:isOrWasLeaderOf rdf:resource="agent/050706"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/050729-050706-19460101-19491231"/>
+      <rico:isOrWasLeaderOf rdf:resource="agent/050706"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb12137484w#about"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/050951-050729"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-050951"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/050951-050729"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-050951"/>
    </rico:Agent>
 </rdf:RDF>

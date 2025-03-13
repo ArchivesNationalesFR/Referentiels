@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052875">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052875"/>
@@ -11,31 +19,29 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-03-09</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Véronique AUBER)</rico:name>
+            <rico:name xml:lang="fr">Création (par Véronique AUBER)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-19</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Pas d'ISNI</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Pas d'ISNI</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-03-09</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Notice wikipedia : https://fr.wikipedia.org/wiki/Anne_de_Laval_(1505-1554)</rico:source>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice wikipedia : https://fr.wikipedia.org/wiki/Anne_de_Laval_(1505-1554)</rico:recordResourceSourceOfInformation>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Anne_de_Laval_(1505-1554)"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052875">
-            <rico:isInstantiationOf rdf:resource="record/052875"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052875"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052875</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052875"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052875">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -59,15 +65,15 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1505-09-23</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1554-12-31</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052875"/>
-            <rico:placeRelationHasSource rdf:resource="place/Vitr%C3%A9"/>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:relationHasTarget rdf:resource="agent/052875"/>
+            <rico:relationHasSource rdf:resource="place/Vitr%C3%A9"/>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Lieu de naissance et de mariage</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Vitr%C3%A9"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Vitr%C3%A9"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
@@ -77,9 +83,10 @@
             <html:p>C’est par elle que le comté de Laval passe en 1605 à la famille de La Trémoille après la mort sans descendants de Guy XX, son cousin au 4e degré, Henri de La Trémoille, arrière petit-fils d’Anne, étant son plus proche parent.</html:p>
          </html:div>
       </rico:history>
-      <rico:personIsTargetOfMembershipRelation rdf:resource="membershipRelation/050023-052875"/><rico:isOrWasMemberOf rdf:resource="agent/050023"/>
+      <rico:thingIsTargetOfRelation rdf:resource="membershipRelation/050023-052875"/>
+      <rico:isOrWasMemberOf rdf:resource="agent/050023"/>
       <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Anne_de_Laval_(1505-1554)"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/000607-052875"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-000607"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/000607-052875"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-000607"/>
    </rico:Agent>
 </rdf:RDF>

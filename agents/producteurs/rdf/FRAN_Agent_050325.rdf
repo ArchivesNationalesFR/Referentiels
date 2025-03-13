@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050325">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050325"/>
@@ -11,30 +19,28 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-13</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Zénaïde ANDRIEU-ROMANEIX)</rico:name>
+            <rico:name xml:lang="fr">Création (par Zénaïde ANDRIEU-ROMANEIX)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-08-22</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-13</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 13/01/2020 : modification forme autorisée du nom, modification relation fam en relation d’asso pour 50326 (Hüe de Miromesnil), indexation lieu revue, pas de notice wikipédia, BNF ou id ISNI</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 13/01/2020 : modification forme autorisée du nom, modification relation fam en relation d’asso pour 50326 (Hüe de Miromesnil), indexation lieu revue, pas de notice wikipédia, BNF ou id ISNI</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Archives nationales, Fonds Miromesnil (512 AP).</rico:source>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Archives nationales, Fonds Miromesnil (512 AP).</rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050325">
-            <rico:isInstantiationOf rdf:resource="record/050325"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050325"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050325</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050325"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050325">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Family"/>
@@ -51,19 +57,19 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1501-01-01</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1900-12-31</rico:endDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050325"/>
-            <rico:placeRelationHasSource rdf:resource="place/Bretteville"/>
+            <rico:relationHasTarget rdf:resource="agent/050325"/>
+            <rico:relationHasSource rdf:resource="place/Bretteville"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Bretteville"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Bretteville"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050325"/>
-            <rico:placeRelationHasSource rdf:resource="place/Rouen"/>
+            <rico:relationHasTarget rdf:resource="agent/050325"/>
+            <rico:relationHasSource rdf:resource="place/Rouen"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Rouen"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Rouen"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
@@ -77,8 +83,11 @@
             <html:p>- Marie Charles (-1793), seigneur de Brametot, Ronfeugère, Criquetot-sur-Ouville, Hyémanville et Commainville. Ce dernier est capitaine de cavalerie, chevalier de Saint-Louis. Il épouse Marie Madeleine Andrienne Françoise de La Houssaye. De ce mariage naissent deux filles dont Marie Charlotte Guillaume (1749-après 1796). Dame de Criquetot-sur-Ouville, elle épouse Louis César Auguste de Corday seigneur d'Orbigny.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050325-050326-17230101-17961231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050326"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/004393-050325"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-004393"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050324-050325-15010101-19001231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050324"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050325-050326-17230101-17961231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050326"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/004393-050325"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-004393"/>
    </rico:Agent>
 </rdf:RDF>

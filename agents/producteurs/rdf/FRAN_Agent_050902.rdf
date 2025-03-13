@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050902">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050902"/>
@@ -11,40 +19,37 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-01-08</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Pascal DAVID)</rico:name>
+            <rico:name xml:lang="fr">Création (par Pascal DAVID)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-02-20</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 20 février 2015 : revu nom, ajouté n°s ISNI et notice BnF, liens d'association et indexation activités</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 20 février 2015 : revu nom, ajouté n°s ISNI et notice BnF, liens d'association et indexation activités</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Pascal DAVID-DORMIEN)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Pascal DAVID-DORMIEN)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-02-15</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Pas de notice Wikipedia.</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Pas de notice Wikipedia.</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-01-08</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Notice d'autorité BnF n° FRBNF11896425</rico:source>
-      <rico:source xml:lang="fr">Archives nationales, fonds du CNAHES, sous-fonds Michel Chauvière (AS/208(XXX)/).</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000116175444/about"/>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice d'autorité BnF n° FRBNF11896425</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Archives nationales, fonds du CNAHES, sous-fonds Michel Chauvière (AS/208(XXX)/).</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000116175444"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050902">
-            <rico:isInstantiationOf rdf:resource="record/050902"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050902"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050902</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050902"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050902">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -61,53 +66,59 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1946-10-29</rico:birthDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050902-d699msj3i51--hevk1gms21cg-19760101-20101231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050902"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050902-d699msj3i51--hevk1gms21cg-19760101-20101231"/>
+            <rico:relationHasTarget rdf:resource="agent/050902"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d177032e114">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050902-d699msj3i51--hevk1gms21cg-19760101-20101231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1976-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">ouvrages de sociologie.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d177032e114"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050902-d699msj02xm-19qbb7wdtto3j-20000101-*">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050902"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050902-d699msj02xm-19qbb7wdtto3j-20000101-*"/>
+            <rico:relationHasTarget rdf:resource="agent/050902"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d177032e134">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050902-d699msj02xm-19qbb7wdtto3j-20000101-*"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-01-01</rico:beginningDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">CNAM, universités et écoles de travailleurs sociaux.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d177032e134"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050902-d699msk5oth-xqvujelh8c39-19860101-19891231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050902"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050902-d699msk5oth-xqvujelh8c39-19860101-19891231"/>
+            <rico:relationHasTarget rdf:resource="agent/050902"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d177032e151">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050902-d699msk5oth-xqvujelh8c39-19860101-19891231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msk5oth-xqvujelh8c39"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1986-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1989-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">sociologue et chargé de recherche au CRNS.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk5oth-xqvujelh8c39"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk5oth-xqvujelh8c39"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d177032e151"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Michel Chauvière est né en octobre 1946. Sociologue de formation, c’est en tant que formateur en école d’éducateurs spécialisés que Michel Chauvière débute sa carrière de sociologue. Cette expérience se solde par son licenciement au milieu des années 1970 au terme d’une crise dont, avec deux collègues également remerciés, il relate la chronique dans<html:i>Les Socio-Clercs : bienfaisance ou travail social</html:i>(Paris, F. Maspero, 1976). Il entreprend alors un travail de recherche où il met en évidence les continuités entre la période de Vichy et l’après-guerre en matière de politique de l’enfance inadaptée, recherche qui est publiée en 1980 sous le titre :<html:i>Enfance inadaptée : l’héritage de Vichy</html:i>(Paris, éditions ouvrières, 1980). En 1982, il devient chargé de mission de la MIRE (Mission interministérielle recherche-expérimentation) jusqu’en 1986, puis il est chargé de recherche au Centre national de la recherche scientifique (CNRS), directeur du Centre de recherche interdisciplinaire de Vaucresson (CRIV) en 1989, puis membre du Centre d’études et de recherches de sciences administratives et politiques (CERSA à l'université Paris 2).</html:p>
@@ -115,11 +126,14 @@
             <html:p>Il a publié également plusieurs ouvrages spécialisés, dont :<html:i>Le Travail social dans l’action publique, Sociologie d’une qualification controversée</html:i>, Dunod, 2004 ;<html:i>Trop de gestion tue le social. Essai sur une discrète chalandisation</html:i>, La découverte, 2010.</html:p>
          </html:div>
       </rico:history>
-      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050902-000736-19890101-19951231"/><rico:isOrWasLeaderOf rdf:resource="agent/000736"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000048-050902-19810101-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000048"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050841-050902-19940101-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050841"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/050902-000736-19890101-19951231"/>
+      <rico:isOrWasLeaderOf rdf:resource="agent/000736"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000048-050902-19810101-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000048"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050841-050902-19940101-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050841"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb11896425f#about"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054652-050902"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-054652"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054652-050902"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054652"/>
    </rico:Agent>
 </rdf:RDF>

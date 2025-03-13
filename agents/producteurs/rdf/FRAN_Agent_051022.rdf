@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051022">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051022"/>
@@ -10,22 +18,21 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-05-12</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Florence CLAVAUD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Florence CLAVAUD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-05-12</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 11 mai 2015 : création sur demande de la mission des archives. revu nom, ajouté fonction, un lien hiérarchique</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 11 mai 2015 : création sur demande de la mission des archives. revu nom, ajouté fonction, un lien hiérarchique</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051022">
-            <rico:isInstantiationOf rdf:resource="record/051022"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051022"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051022</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051022"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051022">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -49,28 +56,30 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1971-01-01</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1981-12-31</rico:endDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051022-d5bhvijq5z-zaaj99p5tmch">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051022"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051022-d5bhvijq5z-zaaj99p5tmch"/>
+            <rico:relationHasTarget rdf:resource="agent/051022"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d178791e91">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051022-d5bhvijq5z-zaaj99p5tmch"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvijq5z-zaaj99p5tmch"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">gestion du personnel enseignant d'éducation physique et sportive</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvijq5z-zaaj99p5tmch"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d178791e91"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Le bureau dit AG/P3 est chargé, en liaison avec le ministère de l'éducation nationale, de la gestion des personnels enseignants d'éducation physique et sportive (professeurs chargés d'enseignement, professeurs adjoints, maîtres) : nominations, affectations, mutations, avancement, reclassement, détachement, retraite. Il est également chargé de l'élaboration des textes statutaires et indemnitaires concernant ces catégories de personnels.</html:p>
             <html:p>En 1981, ces compétences relevant de l'organisation de l'enseignement de l'éducation physique et sportive sont transférées au ministère de l'éducation nationale.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/005814-051022-19710101-19741231"/><rico:isOrWasSubordinateTo rdf:resource="agent/005814"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057522-051022"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-057522"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/005814-051022-19710101-19741231"/>
+      <rico:wasSubordinateTo rdf:resource="agent/005814"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/057522-051022"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-057522"/>
    </rico:Agent>
 </rdf:RDF>

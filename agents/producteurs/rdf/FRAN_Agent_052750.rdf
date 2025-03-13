@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052750">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052750"/>
@@ -11,30 +19,28 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-01</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Matthieu RAJOHNSON)</rico:name>
+            <rico:name xml:lang="fr">Création (par Matthieu RAJOHNSON)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-03</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Solange BIDOU)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Solange BIDOU)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-01</rico:date>
-            <rico:descriptiveNote xml:lang="fr">01/02/2022, J. Gaillard : ajout lien d'identité, fonction agriculture</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">01/02/2022, J. Gaillard : ajout lien d'identité, fonction agriculture</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000107909741/about"/>
-      <rico:hasInstantiation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000107909741"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052750">
-            <rico:isInstantiationOf rdf:resource="record/052750"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052750"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052750</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052750"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052750">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -52,34 +58,34 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1853-06-23</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1869-07-17</rico:endDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052750"/>
-            <rico:placeRelationHasSource rdf:resource="place/Paris"/>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:relationHasTarget rdf:resource="agent/052750"/>
+            <rico:relationHasSource rdf:resource="place/Paris"/>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">62-64 rue Saint-Dominique-Saint-Germain</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Paris"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Paris"/>
       <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5bloo2gwk-sgl3fc00gzgl"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052750-d5bhvikz03--iqa08pprge9n">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052750"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052750-d5bhvikz03--iqa08pprge9n"/>
+            <rico:relationHasTarget rdf:resource="agent/052750"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d207194e120">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052750-d5bhvikz03--iqa08pprge9n"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvikz03--iqa08pprge9n"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvikz03--iqa08pprge9n"/></rico:Activity></rico:performsOrPerformed>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d207194e120"/>
+      <rico:generalDescription rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Organisation interne ou généalogie</h4>
             <html:p>De 1853 à 1855, le ministère comprend une administration de l’Agriculture et du Commerce, ainsi qu’une administration distincte pour les Chemins de fer, les Ponts et chaussées et les Mines.</html:p>
             <html:p>A partir de 1855, ces trois dernières sont rassemblées au sein d’une administration générale des Travaux publics, tandis que l’administration des Haras est disjointe de celle de l’Agriculture et que l’administration du Commerce intérieur se trouve dissociée de celle du Commerce extérieur.</html:p>
-            <html:p/>
             <html:p>Almanach impérial, 1854, 1855</html:p>
             <html:p>Ministère de l’Agriculture, du Commerce et des Travaux publics</html:p>
             <html:ul>
@@ -90,7 +96,6 @@
                <html:li>Direction des Ponts et chaussées</html:li>
                <html:li>Direction des Mines</html:li>
             </html:ul>
-            <html:p/>
             <html:p>Almanach impérial, 1856</html:p>
             <html:p>Ministère de l’Agriculture, du Commerce et des Travaux publics</html:p>
             <html:ul>
@@ -103,7 +108,6 @@
                <html:li>Division du commerce extérieur</html:li>
                <html:li>Direction générale des travaux publics</html:li>
             </html:ul>
-            <html:p/>
             <html:p>Almanach impérial, 1857-1868</html:p>
             <html:p>Ministère de l’Agriculture, du Commerce et des Travaux publics</html:p>
             <html:ul>
@@ -117,13 +121,12 @@
                <html:li>Direction générale des travaux publics</html:li>
             </html:ul>
          </html:div>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Le rattachement de l’agriculture et du commerce aux travaux publics, précédemment disjoints, recrée le 23 juin 1853 un large « ministère de l’Agriculture, du Commerce et des Travaux publics ».</html:p>
             <html:p>En son sein se développe notamment l’Inspection générale de l’Agriculture, dont le nombre d’inspecteurs passe, par l’arrêté du 7 décembre 1860, de deux à six inspecteurs.</html:p>
             <html:p>Le 17 juillet 1869, les portefeuilles de ce ministère élargi sont de nouveau détachés en deux ministères distincts, l’un dédié aux Travaux publics, l’autre à l’Agriculture et au Commerce.</html:p>
-            <html:p/>
             <html:p>
                <html:u>Responsables</html:u>:</html:p>
             <html:ul>
@@ -135,7 +138,12 @@
             </html:ul>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/052749-052750-18530623-*"/><rico:isSuccessorOf rdf:resource="agent/052749"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/052749-052750-18530623-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/052749"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/052750-053537-18530623-18690717"/>
+      <rico:hadSubdivision rdf:resource="agent/053537"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb122682088#about"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/057993-052750"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-057993"/>
    </rico:Agent>
 </rdf:RDF>

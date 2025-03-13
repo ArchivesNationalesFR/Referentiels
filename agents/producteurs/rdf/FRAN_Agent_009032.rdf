@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/009032">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/009032"/>
@@ -11,44 +19,39 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-05-22</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Dérivation
-                (Import_SIA)</rico:name>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Florence CLAVAUD)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Florence CLAVAUD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-07-07</rico:date>
-            <rico:descriptiveNote xml:lang="fr"/>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Catherine MÉROT)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Catherine MÉROT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-05-22</rico:date>
-            <rico:descriptiveNote xml:lang="fr"/>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice d'autorité BnF n° FRBNF12173355</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Introduction du répertoire numérique du versement 20140520</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000111300322/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000111300322"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/009032">
-            <rico:isInstantiationOf rdf:resource="record/009032"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/009032"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_009032</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_009032"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/009032">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -74,34 +77,34 @@
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-04-29</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-03-26</rico:endDate>
       <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5blonb3ky--u69ytier8ih6"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/009032-d5bhviiyko--q661mlo9uy50">
-            <rico:performanceRelationHasTarget rdf:resource="agent/009032"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/009032-d5bhviiyko--q661mlo9uy50"/>
+            <rico:relationHasTarget rdf:resource="agent/009032"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d91831e131">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/009032-d5bhviiyko--q661mlo9uy50"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviiyko--q661mlo9uy50"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviiyko--q661mlo9uy50"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d91831e131"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/009032-d5bhvij9kg--1s0ew89cwo2rz">
-            <rico:performanceRelationHasTarget rdf:resource="agent/009032"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/009032-d5bhvij9kg--1s0ew89cwo2rz"/>
+            <rico:relationHasTarget rdf:resource="agent/009032"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d91831e137">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/009032-d5bhvij9kg--1s0ew89cwo2rz"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvij9kg--1s0ew89cwo2rz"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvij9kg--1s0ew89cwo2rz"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d91831e137"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Le Centre national d’études vétérinaires et alimentaires (CNEVA) est l’héritier des laboratoires nationaux vétérinaires dont le plus prestigieux fut le Laboratoire central de recherches sur les maladies infectieuses des animaux créé à Maisons-Alfort en 1901 et qui s’illustra par les travaux, dans la lignée pastorienne, des professeurs Roux et Nocard puis du professeur Carré sur la fièvre aphteuse et sur la pathologie bovine. Ce dernier prit, par la suite, la dénomination de Laboratoire central de recherches vétérinaires (LCRV).</html:p>
-            <html:p/>
             <html:p>Un audit externe conduit par le professeur Parodi à la demande du ministère de l’Agriculture en 1983 eut pour objectif d’analyser l’organisation et le fonctionnement des laboratoires nationaux vétérinaires de l’ancienne direction de la qualité du ministère afin de répondre à leur diversification et à l’imprécision de leurs missions et de leurs programmes de recherche et de faire toute proposition structurelle. Son rapport remis en juin 1984 mit l’accent sur deux constats : d’une part une “ crise d’identité ” des laboratoires et d’autre part une inadaptation de leurs structures administratives, financières et comptables résultant “ d’une absence paralysante d’autonomie ”. La commission résuma ses recommandations à la fin de son rapport en proposant pour les laboratoires “ … des missions élargies mais redéfinies, une structure permettant d’une part de concilier autonomie et autorité et … d’associer des partenaires publics et éventuellement privés, mieux insérer ces laboratoires dans la communauté scientifique, prendre la mesure enfin des conséquences de la décentralisation. ”. Elle préconisa la transformation en établissement public autonome et argumenta la volonté des pouvoirs publics de rendre moins artisanale l’expertise et l’évaluation du risque.</html:p>
-            <html:p/>
             <html:p>Après une première tentative de création d’un établissement public à caractère scientifique et technologique (EPST) - INSV / Institut national des sciences vétérinaires en 1985 et CNAVRSQ / Centre national agronomique et vétérinaire de recherche sur la santé et la qualité - le CNEVA vit le jour en 1988 (décret 88-478 du 29 avril 1988). Etablissement public à caractère administratif (EPA) et à vocation scientifique et technique dans le domaine du génie vétérinaire, il fut placé sous la tutelle du Ministère de l’agriculture et sous celle du ministère de la Santé à partir de 1995, date de la création de l’Agence nationale du médicament vétérinaire (ANMV). Le CNEVA devint opérationnel le 1er janvier 1989 en regroupant les neufs laboratoires nationaux vétérinaires existants, à savoir :</html:p>
             <html:p>le Laboratoire central de recherches vétérinaires (LCRV) de Maisons-Alfort</html:p>
             <html:p>le Laboratoire central d’hygiène alimentaire (LCHA) à Paris créé en 1973</html:p>
@@ -113,14 +116,15 @@
             <html:p>le Laboratoire national de pathologie aviaire (LNPA) à Ploufragan créé en 1969.</html:p>
             <html:p>le Laboratoire national des médicaments vétérinaires (LMV) à Fougères créé en 1978.</html:p>
             <html:p>Lui furent rattachés par la suite le Centre informatique sur la qualité des aliments (CIQUAL) à Paris, le Laboratoire central de recherche avicole et porcine (LCRAP) de Ploufragan, le Laboratoire d’études sur les produits de la pêche (LEPP) à Boulogne-sur-Mer ainsi que l’Institut de pathologie du cheval (IPC) à Dozulé. Il comptait en outre deux structures associées : la Station régionale de pathologie caprine (SRPC) à Niort et l’unité de virologie bovine (LPB) de l’Ecole nationale vétérinaire de Toulouse.</html:p>
-            <html:p/>
             <html:p>Le CNEVA avait pour principale mission d'apporter l'appui scientifique et technique nécessaire à l'élaboration, l'application et l'évaluation des mesures prises par les pouvoirs publics dans le domaine de la santé animale et de la qualité des l'alimentation liée à la consommation de denrées d'origine animale. Il contribuait en outre à la mise en œuvre de programmes tendant à la protection sanitaire et à la salubrité alimentaire, à la conception et utilisation de nouvelles techniques, à l'établissement de normes applicables aux aliments pour valoriser leur qualité (voir bibliographie ci-dessous : décret n°88-478 du 29 avril 1988).</html:p>
-            <html:p/>
             <html:p>Le CNEVA fut intégré à l'Agence française de sécurité sanitaire des aliments (AFSSA) en 1998.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/009032-009020-19990326-*"/><rico:hasSuccessor rdf:resource="agent/009020"/>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000004-009032-19880429-19990326"/><rico:isOrWasSubordinateTo rdf:resource="agent/000004"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/004951-009032-19970604-19990326"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/004951"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentTemporalRelation/009032-009020-19990326-*"/>
+      <rico:hasSuccessor rdf:resource="agent/009020"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/000004-009032-19880429-19990326"/>
+      <rico:wasSubordinateTo rdf:resource="agent/000004"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/004951-009032-19970604-19990326"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/004951"/>
    </rico:Agent>
 </rdf:RDF>

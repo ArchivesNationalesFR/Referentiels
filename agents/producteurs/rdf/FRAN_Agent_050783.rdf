@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050783">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050783"/>
@@ -8,33 +16,48 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-04-16</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-02-14</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Florence CLAVAUD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Florence CLAVAUD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-04-16</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Création sur demande de C. Martin, mission des archives auprès des services du Premier ministre</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Création sur demande de C. Martin, mission des archives auprès des services du Premier ministre</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Bénédicte FICHET)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-02-14</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Bénédicte FICHET)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-02-14</rico:date>
+            <rico:generalDescription xml:lang="fr">14/02/2023, J. Gaillard : Correction de la forme autorisée du nom | Ajout identifiant Wikidata | Correction de coquilles dans l'historique | Ajout liens d'identité BnF et IdRef</rico:generalDescription>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q16641381"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050783">
-            <rico:isInstantiationOf rdf:resource="record/050783"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050783"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050783</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050783"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050783">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:isOrWasDescribedBy rdf:resource="record/050783"/>
-      <rdfs:label xml:lang="fr">Haute Autorité pour la transparence de la vie publique</rdfs:label>
+      <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q16641381"/>
+      <rdfs:label xml:lang="fr">France. Haute autorité pour la transparence de la vie publique (2013-….)</rdfs:label>
       <rico:hasOrHadAgentName>
-         <rico:AgentName rdf:about="agentName/050783-Haute%20Autorit%C3%A9%20pour%20la%20transparence%20de%20la%20vie%20publique">
-            <rdfs:label xml:lang="fr">Haute Autorité pour la transparence de la vie publique</rdfs:label>
-            <rico:textualValue xml:lang="fr">Haute Autorité pour la transparence de la vie publique</rico:textualValue>
+         <rico:AgentName rdf:about="agentName/050783-France.%20Haute%20autorit%C3%A9%20pour%20la%20transparence%20de%20la%20vie%20publique%20%282013-%E2%80%A6.%29">
+            <rdfs:label xml:lang="fr">France. Haute autorité pour la transparence de la vie publique (2013-….)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Haute autorité pour la transparence de la vie publique (2013-….)</rico:textualValue>
             <rico:isOrWasAgentNameOf rdf:resource="agent/050783"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
@@ -48,21 +71,64 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-10-11</rico:beginningDate>
-      <rico:authorizingMandate rdf:parseType="Literal">
-         <html:p xml:lang="fr">Loi 2013-907 du 11 octobre 2013 relative à la transparence de la vie publique (section IV)</html:p>
-      </rico:authorizingMandate>
+      <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5bloo28po-1bei6cefdzkj"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/050783"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d175565e116">
+                  <rico:title>Loi n° 2013-907 relative à la transparence de la vie publique </rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000028056315"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d175565e116"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/050783"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d175565e122">
+                  <rico:title>Décret n° 2013-1212 relatif aux déclarations de situation patrimoniale et déclarations d'intérêts adressées à la Haute autorité pour la transparence de la vie publique.</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000028386947"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d175565e122"/>
+      <rico:generalDescription rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>La Haute autorité est dirigée par un président nommé par décret du président de la République.</html:p>
+            <html:p>Elle comprend, deux conseillers d’État, deux conseillers à la Cour de cassation, deux conseillers-maîtres à la Cour des comptes et six personnalités qualifiées désignées par le président de l’Assemblée nationale, le président du Sénat et par décret.</html:p>
+            <html:p>Elle est assistée de rapporteurs désignés par le Conseil d’Etat, la Cour de cassation et la Cour des comptes.</html:p>
+            <html:p>Un secrétaire général est également nommé, chargé de la direction et du fonctionnement des services, dont il assure la gestion administrative et financière.</html:p>
+            <html:p>Elle comprend en 2023 plusieurs directions : contrôle des responsables publics ; contrôle des représentants d’intérêt ; juridique et déontologie ; publics, information et communication ; administration et finances ; systèmes d’information.</html:p>
+            <html:p>Présidents de la HATVP :</html:p>
+            <html:ul>
+               <html:li>Jean-Louis Nadal (19 décembre 2013-19 décembre 2019)</html:li>
+               <html:li>Didier Migaud (depuis le 31 janvier 2020).</html:li>
+            </html:ul>
+         </html:div>
+      </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
-            <html:p>La Haute Autorité pour la transparence de la vie publique (HATVP) est créée le 11 octobre 2013 (loi 2013-907 sur la transparence de la vie publique) ; elle remplace la Commission pour la transparence financière de la vie politique (1988-2013), supprimée par la loi ci-dessus.</html:p>
-            <html:p>C'est une autorité administrative indépendante (AAI) chargée de promouvoir la probité des responsables publics qui comporte un collège de neuf membres, un Secrétaire général, une dizaine de rapporteurs et une trentaine d’agents.</html:p>
-            <html:p>M. Jean-Louis NADAL a été nommé Président de la Haute Autorité par décret du Président de la République en date du 19 décembre 2013.</html:p>
-            <html:p>La Haute Autorité dispose de missions et de compétences nouvelles conférées par les lois du 11 octobre 2013 relatives à la transparence de la vie publique.</html:p>
-            <html:p>Elle reçoit et contrôle les déclarations de situation patrimoniale et d'intérêts des 9 000 plus hauts responsables publics. Elle est également chargée d’une mission de conseil sur les questions de déontologie comme de recommandation à l’égard des membres du Gouvernement et du Parlement, des dirigeants d’entreprises publiques comme des emplois à décision du Gouvernement ainsi qu’à l’égard des autres autorités administratives indépendantes.</html:p>
-            <html:p>Elle peut se saisir des situations de conflit d'intérêts et éventuellement prononcer une injonction d'y mettre fin. Elle se prononce sur la compatibilité de l'exercice d'une activité libérale ou d'une activité rémunérée dans le secteur concurrentiel parallèlement ou dans les trois années suivant l'exercice de fonctions gouvernementales ou de fonctions exécutives locales.</html:p>
-            <html:p>Elle développe et conduit des actions de formation à destination des grandes écoles de service public. Elle est le point de contact des programmes internationaux de son champ (Commission et parlement européens, Conseil de l’Europe, OCDE, ONU).</html:p>
-            <html:p>Elle publie un rapport annuel remis au Président de la République, au Premier ministre et au Parlement et peut formuler des recommandations pour l’application de la législation en matière notamment de relations avec les représentants d’intérêts.</html:p>
+            <html:p>Dans un contexte d’affaires récurrentes mettant en cause des élus ou des membres du Gouvernement, les structures existantes étant jugées insuffisantes, François Hollande, président de la République, annonce la création d’une nouvelle Haute autorité le 10 avril 2013.</html:p>
+            <html:p>En application de la loi 2013-907 du 11 octobre 2013 relative à la transparence de la vie publique, la Haute autorité pour la transparence de la vie publique est organisée par le décret du 23 décembre 2013.</html:p>
+            <html:p>Prenant la suite de la Commission pour la transparence financière de la vie politique créée en 1988, ses missions sont les suivantes :</html:p>
+            <html:ul>
+               <html:li>elle reçoit des membres du Gouvernement, des députés et des sénateurs, des parlementaires européens, des conseillers régionaux, départementaux et territoriaux, des maires et présidents d’intercommunalités à partir d’un certain seuil de population… leurs déclarations de situation patrimoniale et leurs déclarations d'intérêts, en assure la vérification, le contrôle et, le cas échéant, la publicité ;</html:li>
+               <html:li>elle se prononce sur les situations pouvant constituer un conflit d'intérêts, le cas échéant, enjoint d'y mettre fin ;</html:li>
+               <html:li>elle répond aux demandes d'avis des personnes mentionnées sur les questions d'ordre déontologique qu'elles rencontrent dans l'exercice de leur mandat ou de leurs fonctions. Ces avis, ainsi que les documents sur la base desquels ils sont rendus, ne sont pas rendus publics ;</html:li>
+               <html:li>elle se prononce sur la compatibilité de l'exercice d'une activité libérale ou d'une activité rémunérée au sein d'un organisme ou d'une entreprise exerçant son activité dans un secteur concurrentiel conformément aux règles du droit privé avec des fonctions gouvernementales ou des fonctions exécutives locales exercées au cours des trois années précédant le début de cette activité ;</html:li>
+               <html:li>à la demande du Premier ministre ou de sa propre initiative, elle émet des recommandations pour l'application de la présente loi, qu'elle adresse au Premier ministre et aux autorités publiques intéressées qu'elle détermine. Elle définit, à ce titre, des recommandations portant sur les relations avec les représentants d'intérêts et la pratique des libéralités et avantages donnés et reçus dans l'exercice des fonctions et mandats.</html:li>
+            </html:ul>
+            <html:p>Elle recense par ailleurs les « représentants d’intérêts », est habilitée à agréer certaines associations se proposant, dans leurs statuts, de lutter contre la corruption et les conflits d’intérêts, et peut transmettre à la justice des dossiers en cas de manquements graves.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/000038-050783-20131011-*"/><rico:isSuccessorOf rdf:resource="agent/000038"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/000038-050783-20131011-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/000038"/>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb17768310n#about"/>
+      <owl:sameAs rdf:resource="http://www.idref.fr/195488598/id"/>
    </rico:Agent>
 </rdf:RDF>

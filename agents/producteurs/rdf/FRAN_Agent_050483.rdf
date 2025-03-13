@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050483">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050483"/>
@@ -10,25 +18,24 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-12-10</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Pascal DAVID)</rico:name>
+            <rico:name xml:lang="fr">Création (par Pascal DAVID)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-12-10</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 10 décembre 2013 : changé le nom.</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 10 décembre 2013 : changé le nom.</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Archives nationales, fonds Rostaing (100AP).</html:p>
-      </rico:source>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050483">
-            <rico:isInstantiationOf rdf:resource="record/050483"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050483"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050483</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050483"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050483">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Family"/>
@@ -50,7 +57,7 @@
             <html:p>Originaire d’Embrun, la famille de Rostaing remonte au xiiie siècle et elle a compté quelques administrateurs et militaires importants. Philippe-Joseph, comte de Rostaing (1719-1796), fut commissaire ordinaire puis inspecteur général de l’artillerie, commanda tour à tour les écoles d’artillerie de Grenelle et d’Auxonne et mourut lieutenant-général. Il eut un grand rôle à l’île de France où, associé à un certain Jean-Auguste-Thomas-Gilles Hermans puis au comte de Latour de Saint-Igest, il créa et installa les premières forges de cette colonie, puis en Espagne, où il prit part, comme commandant des Équipages de l’artillerie, à la campagne de 1762 à 1764. Rentré en France en 1774, il commanda tour à tour les écoles d’artillerie de Grenelle et d’Auxonne. Inspecteur général d’artillerie en 1779, maréchal de camp en 1780, lieutenant général en 1791, il fut suspendu de ses fonctions le 25 août 1793 et arrêté le 3 décembre 1794. Il mourut le 9 germinal an IV (21 avril 1796), ne laissant que deux filles de son mariage avec Marie-Henriette de Lur de Saluces.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/001881-050483"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-001881"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/001881-050483"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-001881"/>
    </rico:Agent>
 </rdf:RDF>

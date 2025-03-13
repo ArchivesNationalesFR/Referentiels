@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051266">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051266"/>
@@ -11,40 +19,37 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-11-27</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Pascal DAVID-DORMIEN)</rico:name>
+            <rico:name xml:lang="fr">Création (par Pascal DAVID-DORMIEN)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-02-25</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 25 février 2016 : revu le nom, l'historique, ajouté lien BnF, supprimé fonction</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 25 février 2016 : revu le nom, l'historique, ajouté lien BnF, supprimé fonction</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Constance DE VERGNETTE DE LAMOTTE)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Constance DE VERGNETTE DE LAMOTTE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-27</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Il n'y a pas de notice Wikipedia.</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Il n'y a pas de notice Wikipedia.</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-11-27</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Notice BNF : http://catalogue.bnf.fr/ark:/12148/cb12089588w</rico:source>
-      <rico:source xml:lang="fr">Archives nationales, fonds Louisette Battais : 758 AP.</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000083912267/about"/>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice BNF : http://catalogue.bnf.fr/ark:/12148/cb12089588w</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Archives nationales, fonds Louisette Battais : 758 AP.</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000083912267"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051266">
-            <rico:isInstantiationOf rdf:resource="record/051266"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051266"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051266</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051266"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051266">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -61,48 +66,54 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1953-06-10</rico:birthDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051266-d699msirr1g-3naumnfaswc">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051266"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051266-d699msirr1g-3naumnfaswc"/>
+            <rico:relationHasTarget rdf:resource="agent/051266"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d182682e114">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051266-d699msirr1g-3naumnfaswc"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msirr1g-3naumnfaswc"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">responsable du service des archives confédérales (CFDT)</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msirr1g-3naumnfaswc"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msirr1g-3naumnfaswc"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d182682e114"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051266-d699msj1t4q--erdp2b9cjr2g">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051266"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051266-d699msj1t4q--erdp2b9cjr2g"/>
+            <rico:relationHasTarget rdf:resource="agent/051266"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d182682e125">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051266-d699msj1t4q--erdp2b9cjr2g"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj1t4q--erdp2b9cjr2g"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Doctorat de 3e cycle</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj1t4q--erdp2b9cjr2g"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj1t4q--erdp2b9cjr2g"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d182682e125"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051266-d699msjmbyz-yxpcx7wpwsnq">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051266"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051266-d699msjmbyz-yxpcx7wpwsnq"/>
+            <rico:relationHasTarget rdf:resource="agent/051266"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d182682e136">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051266-d699msjmbyz-yxpcx7wpwsnq"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjmbyz-yxpcx7wpwsnq"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Secrétaire confédérale de la CFDT</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjmbyz-yxpcx7wpwsnq"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjmbyz-yxpcx7wpwsnq"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d182682e136"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Louisette Battais est née à Paris en juin 1953.</html:p>

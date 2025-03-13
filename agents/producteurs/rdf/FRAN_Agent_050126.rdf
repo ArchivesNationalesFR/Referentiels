@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050126">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050126"/>
@@ -11,41 +19,38 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-02-19</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Raphael BAUMARD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Raphael BAUMARD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-10-16</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Zénaïde ANDRIEU-ROMANEIX)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Zénaïde ANDRIEU-ROMANEIX)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-09-11</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Révisée en septembre 2017 : ISNI, liens association, liens identité et sources (BnF et Wikipédia), historique complété, indexation lieu et activité. Pas d'IR en SIV.</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Révisée en septembre 2017 : ISNI, liens association, liens identité et sources (BnF et Wikipédia), historique complété, indexation lieu et activité. Pas d'IR en SIV.</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-02-19</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Archives nationales : fonds Lucien Paye (364AP).</rico:source>
-      <rico:source xml:lang="fr">Notice BnF n° FRBNF12891130.</rico:source>
-      <rico:source xml:lang="fr">Notice Wikipédia : https://fr.wikipedia.org/wiki/Lucien_Paye.</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000118475942/about"/>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Archives nationales : fonds Lucien Paye (364AP).</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice BnF n° FRBNF12891130.</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice Wikipédia : https://fr.wikipedia.org/wiki/Lucien_Paye.</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000118475942"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Lucien_Paye"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050126">
-            <rico:isInstantiationOf rdf:resource="record/050126"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050126"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050126</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050126"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050126">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -63,76 +68,82 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1907-06-28</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1972-04-25</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050126"/>
-            <rico:placeRelationHasSource rdf:resource="place/Chine"/>
+            <rico:relationHasTarget rdf:resource="agent/050126"/>
+            <rico:relationHasSource rdf:resource="place/Chine"/>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1964-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Ambassadeur de France.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Chine"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Chine"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050126"/>
-            <rico:placeRelationHasSource rdf:resource="place/S%C3%A9n%C3%A9gal"/>
+            <rico:relationHasTarget rdf:resource="agent/050126"/>
+            <rico:relationHasSource rdf:resource="place/S%C3%A9n%C3%A9gal"/>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1962-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1964-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Haut représentant de la France.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/S%C3%A9n%C3%A9gal"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/S%C3%A9n%C3%A9gal"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050126-d699msj1t4q--erdp2b9cjr2g">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050126"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050126-d699msj1t4q--erdp2b9cjr2g"/>
+            <rico:relationHasTarget rdf:resource="agent/050126"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d166561e173">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050126-d699msj1t4q--erdp2b9cjr2g"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj1t4q--erdp2b9cjr2g"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Docteur es lettres. Agrégé de lettre.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj1t4q--erdp2b9cjr2g"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj1t4q--erdp2b9cjr2g"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d166561e173"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050126-d699msjqtlt--8qlp1v5rp9ov-19620101-19691231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050126"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050126-d699msjqtlt--8qlp1v5rp9ov-19620101-19691231"/>
+            <rico:relationHasTarget rdf:resource="agent/050126"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d166561e184">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050126-d699msjqtlt--8qlp1v5rp9ov-19620101-19691231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjqtlt--8qlp1v5rp9ov"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1962-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Haut représentant de la France au Sénégal (1962-1964) ; ambassadeur de France en Chine (1964-1969).</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjqtlt--8qlp1v5rp9ov"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjqtlt--8qlp1v5rp9ov"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d166561e184"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050126-d699msjnw86-64seh0fmw8hj-19610220-19620415">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050126"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050126-d699msjnw86-64seh0fmw8hj-19610220-19620415"/>
+            <rico:relationHasTarget rdf:resource="agent/050126"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d166561e204">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050126-d699msjnw86-64seh0fmw8hj-19610220-19620415"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1961-02-20</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1962-04-15</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Ministre de l'Éducation nationale.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d166561e204"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Normalien, agrégé de lettres, docteur ès lettres, Lucien Paye (1907-1972) est ministre de l’Education nationale de février 1961 à avril 1962, haut représentant de la France au Sénégal en 1962, ambassadeur de France à Pékin de 1964 à 1969, et premier président de la Cour des comptes. Il préside la commission de réforme du statut de l’O.R.T.F. de 1968 à 1970.</html:p>
@@ -142,9 +153,14 @@
             <html:p>Il préside également la commission de réforme du statut de l'ORTF de 1968 à 1970.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000016-050126-19070628-19720425"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000016"/>
-      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050126-000347-19680101-19701231"/><rico:isOrWasLeaderOf rdf:resource="agent/000347"/>
-      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050126-000096-19700101-19720425"/><rico:isOrWasLeaderOf rdf:resource="agent/000096"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000016-050126-19070628-19720425"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000016"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/050126-000347-19680101-19701231"/>
+      <rico:isOrWasLeaderOf rdf:resource="agent/000347"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050126-053541-19610220-19620414"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/053541"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/050126-000096-19700101-19720425"/>
+      <rico:isOrWasLeaderOf rdf:resource="agent/000096"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb128911304#about"/>
       <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Lucien_Paye"/>
    </rico:Agent>

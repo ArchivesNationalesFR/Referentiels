@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051231">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051231"/>
@@ -10,28 +18,27 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-17</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Monique LEBLOIS-PECHON)</rico:name>
+            <rico:name xml:lang="fr">Création (par Monique LEBLOIS-PECHON)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-17</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 17 décembre 2015 : changé le nom, ajouté n° notice BnF, statut, fonction</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 17 décembre 2015 : changé le nom, ajouté n° notice BnF, statut, fonction</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Préface de l'inventaire des cotes F/9/2001 à 3693 par Marie-Thérèse Chabord.</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice d'autorité BnF n° FRBNF12354656</html:p>
-      </rico:source>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051231">
-            <rico:isInstantiationOf rdf:resource="record/051231"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051231"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051231</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051231"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051231">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -48,23 +55,24 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1944-09-10</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1946-01-26</rico:endDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051231-d5bhviigwc-1qian10iesyuo-19440910-19460126">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051231"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051231-d5bhviigwc-1qian10iesyuo-19440910-19460126"/>
+            <rico:relationHasTarget rdf:resource="agent/051231"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d181956e104">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051231-d5bhviigwc-1qian10iesyuo-19440910-19460126"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviigwc-1qian10iesyuo"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1944-09-10</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1946-01-26</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">prisonniers, déportés et réfugiés</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviigwc-1qian10iesyuo"/></rico:Activity></rico:performsOrPerformed>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d181956e104"/>
+      <rico:generalDescription rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Organisation interne ou généalogie</h4>
             <html:p>En septembre 1944, le Ministère s'installa avenue Foch (n°72 à 86) ; des services furent établis, en outre, 41 avenue Foch (Inspection générale et Direction des Réfugiés), 60 avenue Foch (Inspection générale de la Santé), 6 square du Bois de Boulogne (Direction de la Captivité), 14 square du Bois de Boulogne (Service psychologique - information), 3 rue Meyerbeer (Direction des Services techniques), 47 rue Cortambert (Direction des Services internationaux), etc., en tout vingt-deux groupes d'immeubles.</html:p>
@@ -77,7 +85,6 @@
             <html:p>La Direction des Services administratifs et financiers gérait le matériel ( Sous-direction du matériel), la comptabilité ( Sous-Direction des services financiers) et s'occupait du personnel, notamment du personnel militaire qu'elle recrutait et mettait à la disposition des services demandeurs : missions à l'étranger, encadrements de camps d'étrangers, rapatriement.</html:p>
             <html:p>La Direction des Services techniques exécutait les travaux mobiliers et immobiliers ( Sous-Direction des Travaux) et approvisionnait les différents services ( Sous-direction de Transports).</html:p>
             <html:p>Enfin, la Direction des Réfugiés assistait les réfugiés français - et ils étaient nombreux en raison même des opérations militaires (Alsace-Lorraine, Dunkerque, proche de l'Atlantique) - hébergeait et rapatriait les réfugiés étrangers.</html:p>
-            <html:p/>
             <html:p>Missions à l'étranger.</html:p>
             <html:p>Le Commissariat d'Alger avait entretenu des missions à Londres et en Suisse. Celle de Londres, organe de préparation du rapatriement, donna logiquement naissance à la Mission française de rapatriement en Allemagne, organe d'exécution. Mais bien des Français que les faits de guerre avaient amenés à l'étranger échappaient à la compétence des missions d'Angleterre, d'Allemagne ou de Suisse. Pour eux furent créées, par ordonnance du 8 février 1945, les missions françaises de rapatriement à l'étranger, chargées de représenter le Ministère dans un certain nombre de pays alliés où neutres. Ces missions avaient pour objet d'assurer, dans les meilleures conditions, le séjour des réfugiés français et de prendre toutes dispositions pour leur retour rapide.</html:p>
             <html:p>Ces missions dépendaient de la Direction des Services internationaux. Dans chaque pays, elles étaient placées sous la haute autorité du représentant diplomatique de la France. Elles étaient prévues pour quinze pays (l'Allemagne, l'Angleterre, la Suisse, mises à part) : Autriche, Belgique, Danemark, Hollande, Hongrie, Italie, Luxembourg, Norvège, Pologne, Roumanie, Russie, Suède, Tchécoslovaquie, U.S.A., Yougoslavie.</html:p>
@@ -119,7 +126,6 @@
             <html:p>La Mission de Suède s'occupa du rapatriement des évadés dont certains résidaient dans le pays depuis plusieurs années. Elle menait en même temps des négociations avec la Suède et le C.I.C.R. pour le ravitaillement par Lübeck des camps de prisonniers et déportés. Elle s'occupa surtout des déportés : des pourparlers furent engagés, avant même la fin des hostilités, pour obtenir de l'Allemagne la libération et l'envoi de déportés en Suède, notamment ceux de Ravensbruck ; par la suite, la Suède accueillit de nombreux déportés au cours de leur transit vers la France. En juin 1945, les Français réfugiés en Suède, au nombre de 2 500 environ, dont 1 650 déportés politiques, étaient répartis en trente camps et hôpitaux.</html:p>
             <html:p>Les Français stationnés en Norvège comprenaient environ 2 300 Alsaciens-Lorrains qui avaient été incorporés aux troupes allemandes de Norvège et 1 050 travailleurs amenés par l'organisation Todt ; 3 000 prisonniers de guerre, libérés par l'avance russe et amenés par bateau de Mourmansk se joignirent à eux. La Mission du Ministère, commandée par le Capitaine GIESECKE, s'occupa de leur rapatriement, elle fut dissoute également le 30 septembre 1945.</html:p>
             <html:p>Il y avait 3 000 Français environ au Danemark. La mission dirigée par le Capitaine BOSQUET auquel succéda en septembre 1945 le Capitaine PAU poursuivit son activité jusqu'en mars 1946. Une partie de son rôle semble avoir été de transiter des réfugiés se trouvant en Suède afin de hâter leur retour en France.</html:p>
-            <html:p/>
             <html:p>
                <html:b>Organigramme du Ministère des Prisonniers, Déportés et Réfugiés</html:b>
             </html:p>
@@ -156,7 +162,7 @@
             <html:p>Sous-direction des Réfugiés français M. FAUTRIERE.</html:p>
             <html:p>Sous-direction des Réfugiés étrangers, 78 avenue Foch Cap. RAYMOND.</html:p>
          </html:div>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Le Ministère des Prisonniers, Déportés et Réfugiés doit son origine au Commissariat aux Prisonniers, Déportés et Réfugiés du Gouvernement d'Alger, créé le 9 novembre 1943 et dont l'activité peut être considérée comme une préparation à la tâche qui allait incomber au Ministère lui-même dès la Libération.</html:p>
@@ -166,16 +172,21 @@
             <html:p>En novembre 1945, le Ministère avait accompli l'essentiel de sa tâche. Par décret du 29 novembre, ses services furent rattachés au Ministère de la Population sous l'autorité d'un Secrétaire des Prisonniers de Guerre, Déportés et Réfugiés, M. de MONSEGOU, qui relevait directement du Ministre. Par décret du 23 janvier 1946, les services du Secrétariat général des Prisonniers, Déportés et Réfugiés furent transférés au Ministère des Anciens Combattants et Victimes de la Guerre.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051231-005026-19460126-*"/><rico:hasSuccessor rdf:resource="agent/005026"/>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051226-051231-19440910-*"/><rico:isSuccessorOf rdf:resource="agent/051226"/>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051228-051231-19441001-*"/><rico:isSuccessorOf rdf:resource="agent/051228"/>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051229-051231-19440910-*"/><rico:isSuccessorOf rdf:resource="agent/051229"/>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051230-051231-19440910-*"/><rico:isSuccessorOf rdf:resource="agent/051230"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/004493-051231"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-004493"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/031003-051231"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-031003"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/052879-051231"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-052879"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentTemporalRelation/051231-005026-19460126-*"/>
+      <rico:hasSuccessor rdf:resource="agent/005026"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/051226-051231-19440910-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/051226"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/051228-051231-19441001-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/051228"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/051229-051231-19440910-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/051229"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/051230-051231-19440910-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/051230"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/004493-051231"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-004493"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/031003-051231"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-031003"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/052879-051231"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-052879"/>
    </rico:Agent>
 </rdf:RDF>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050706">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050706"/>
@@ -10,32 +18,31 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-09-30</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Emmanuelle GIRY)</rico:name>
+            <rico:name xml:lang="fr">Création (par Emmanuelle GIRY)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-09-30</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F.Clavaud, 20 février 2014 : changé forme du nom, ajouté n° notice BnF et adresse du site web</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F.Clavaud, 20 février 2014 : changé forme du nom, ajouté n° notice BnF et adresse du site web</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">
             <html:i>Guide des sources du PAJEP</html:i>, consulté au mois de février 2014</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice d'autorité BnF n° FRBNF12105886</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Site web de l'association : http://www.sci-france.org/</html:p>
-      </rico:source>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050706">
-            <rico:isInstantiationOf rdf:resource="record/050706"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050706"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050706</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050706"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050706">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -70,12 +77,17 @@
             <html:p>Le SCI participe au démarrage d’un certain nombre de coordinations, la principale étant Cotravaux, organisme de cogestion puis de coordination pour le travail volontaire (principalement autour des chantiers internationaux). Il est également à l’origine de la création du Comité de coordination du service civil (réunissant les associations accueillant des objecteurs en service) et du Corps mondial de secours, puis d’Action d’urgence internationale (collectif international d’associations pour les interventions d’urgence suite aux catastrophes naturelles).</html:p>
          </html:div>
       </rico:history>
-      <rico:groupIsTargetOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050729-050706-19460101-19491231"/><rico:hasOrHadLeader rdf:resource="agent/050729"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050706-050991-19560101-19711231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050991"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050705-050706-19921207-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050705"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/050951-050706"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-050951"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/059236-050706"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-059236"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/050729-050706-19460101-19491231"/>
+      <rico:hasOrHadLeader rdf:resource="agent/050729"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050706-053555-19590526-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/053555"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050706-050991-19560101-19711231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050991"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050705-050706-19921207-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050705"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/050951-050706"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-050951"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/059236-050706"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-059236"/>
    </rico:Agent>
 </rdf:RDF>

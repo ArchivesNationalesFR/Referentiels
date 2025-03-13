@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051421">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051421"/>
@@ -11,29 +19,27 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-11-16</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:name xml:lang="fr">Création (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-11-16</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 16 novembre 2016 : création sur demande de la mission. Ajout n°s des textes de référence et indexation fonctions</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 16 novembre 2016 : création sur demande de la mission. Ajout n°s des textes de référence et indexation fonctions</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-11-16</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051421">
-            <rico:isInstantiationOf rdf:resource="record/051421"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051421"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051421</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051421"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051421">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -57,57 +63,63 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1994-01-01</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-12-31</rico:endDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051421-d3nyuicsjl-tb7ampjet3iu">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051421"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051421-d3nyuicsjl-tb7ampjet3iu"/>
+            <rico:relationHasTarget rdf:resource="agent/051421"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d184801e102">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051421-d3nyuicsjl-tb7ampjet3iu"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuicsjl-tb7ampjet3iu"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">réglementation des produits cosmétiques</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuicsjl-tb7ampjet3iu"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d184801e102"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051421-d5bhviiyko--q661mlo9uy50">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051421"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051421-d5bhviiyko--q661mlo9uy50"/>
+            <rico:relationHasTarget rdf:resource="agent/051421"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d184801e113">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051421-d5bhviiyko--q661mlo9uy50"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviiyko--q661mlo9uy50"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">prix des médicaments ; réglementation des cosmétiques</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviiyko--q661mlo9uy50"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d184801e113"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Le bureau des médicaments et des cosmétiques est créé par arrêté du 17 octobre 1994 au sein de la sous-direction de la pharmacie (direction générale de la santé).</html:p>
-            <html:p/>
             <html:p>En liaison avec la direction de la sécurité sociale, il participe à la préparation des décisions relatives à la fixation des prix des médicaments proposés au remboursement par les régimes de sécurité sociale et participe au traitement des problèmes économiques concernant les officines et les établissements de distribution en gros. Il est chargé de la réglementation des produits cosmétiques au regard de l'évaluation toxicologique des produits et de leurs matières premières ainsi que des questions relatives, d'une part, à la définition du médicament et, d'autre part, à l'information et à la publicité pour les produits, objets, appareils et méthodes présentés comme bénéfiques pour la santé ; il exerce les missions dévolues au ministère chargé de la santé en matière de médicaments à usage humain et vétérinaire.</html:p>
             <html:p>Ce nouveau bureau hérite des compétences précédemment exercées par plusieurs bureaux de la direction entre 1993 et 1994 :</html:p>
             <html:p>- la cosmétologie, compétence précédemment exercée par le bureau des risques du milieu (VS3) ;</html:p>
             <html:p>- l’ouverture et le fonctionnement des établissements de fabrication vétérinaire, exercée auparavant par le bureau PH2 (affaires professionnelles) ;</html:p>
             <html:p>- l'intégralité des compétences du bureau de l’économie du médicament (SQ4), supprimé à cette date. Le bureau SQ4 devient alors un bureau de la transfusion sanguine et des produits biologiques ;</html:p>
             <html:p>- les questions relatives à l’information à la publicité pour les produits, objets, appareils et méthodes présentés comme bénéfiques pour la santé, précédemment exercées par le bureau des affaires juridiques (PH3).</html:p>
-            <html:p/>
             <html:p>Le bureau est supprimé lors de la réorganisation de la direction par arrêté du 21 juillet 2000. L'essentiel de ses compétences est repris par les bureaux de la sous-direction de la politique des produits de santé :</html:p>
             <html:p>- bureau « Médicament » (SD3A) : conciliation de l'objectif de maîtrise des dépenses de médicaments avec le respect des impératifs de santé publique, information sur le médicament et publicité ;</html:p>
             <html:p>- bureau des dispositifs médicaux et autres produits de santé (SD3B) : orientation de la politique concernant les dispositifs médicaux, ceux de diagnostic in vitro, les produits cosmétiques, les aliments diététiques destinés à des fins médicales spéciales, les matières premières à usage pharmaceutique et les médicaments vétérinaires en termes de santé publique, législation et réglementation, conciliation de l'objectif de maîtrise des dépenses de dispositifs médicaux et autres produits de santé avec le respect des impératifs de santé publique.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/051310-051421-19940101-20001231"/><rico:isOrWasSubordinateTo rdf:resource="agent/051310"/>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/004183-051421-19940101-*"/><rico:isSuccessorOf rdf:resource="agent/004183"/>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051420-051421-19940101-*"/><rico:isSuccessorOf rdf:resource="agent/051420"/>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051407-051421-19940101-*"/><rico:isSuccessorOf rdf:resource="agent/051407"/>
-      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051421-004152-20000101-*"/><rico:hasSuccessor rdf:resource="agent/004152"/>
-      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051421-004151-20000101-*"/><rico:hasSuccessor rdf:resource="agent/004151"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057288-051421"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-057288"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/051310-051421-19940101-20001231"/>
+      <rico:wasSubordinateTo rdf:resource="agent/051310"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/004183-051421-19940101-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/004183"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/051420-051421-19940101-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/051420"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/051407-051421-19940101-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/051407"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentTemporalRelation/051421-004152-20000101-*"/>
+      <rico:hasSuccessor rdf:resource="agent/004152"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentTemporalRelation/051421-004151-20000101-*"/>
+      <rico:hasSuccessor rdf:resource="agent/004151"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/057288-051421"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-057288"/>
    </rico:Agent>
 </rdf:RDF>

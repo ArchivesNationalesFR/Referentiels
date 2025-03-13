@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050519">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050519"/>
@@ -10,31 +18,30 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-02-04</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Pascal DAVID)</rico:name>
+            <rico:name xml:lang="fr">Création (par Pascal DAVID)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-02-04</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 4 février 2014 : modifié forme du nom, ajouté n°s ISNI et notice BnF</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 4 février 2014 : modifié forme du nom, ajouté n°s ISNI et notice BnF</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Archives nationales, fonds Jean-Baptiste Treilhard (117AP).</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Numéro identifiant ISNI : ISNI 0000 0000 8365 2063</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice d'autorité BnF n° FRBNF12211844</html:p>
-      </rico:source>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050519">
-            <rico:isInstantiationOf rdf:resource="record/050519"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050519"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050519</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050519"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050519">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -56,7 +63,7 @@
             <html:p>Avocat au parlement de Paris, en 1761, protégé par Turgot, Jean-Baptiste Treilhard (1742-1810) fut élu député du Tiers de Paris aux états généraux. Membre du Comité ecclésiastique, il joua un rôle important dans les débats qui précédèrent la nationalisation des biens de l’Église et la Constitution civile du clergé. Après la séparation de la Constituante, il présida le tribunal criminel de Paris. En 1792, le département de Seine-et-Oise l’envoya siéger à la Convention. Lors du procès de Louis XVI, il se prononça pour la mort avec sursis. Élu au Conseil des Cinq-Cents le 23 vendémiaire an IV, il s’y illustra par son célèbre serment comme président : « Je jure haine à la royauté ». Après avoir quitté le Conseil, le 20 mai 1797, il fut appelé à se rendre au congrès de Rastadt. Le 15 mai 1798, il devint membre du Directoire exécutif, en remplacement de François de Neufchâteau, mais son élection fut cassée lors du coup d’État de prairial. Vice-président du tribunal d’appel de Paris après le coup d’État du 18 brumaire, il fut appelé au Conseil d’État en 1802. Inspirateur des principaux codes entre 1808 et 1810, Treilhard fut créé comte, sénateur, puis ministre d’État par Napoléon Ier.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/004294-050519"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-004294"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/004294-050519"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-004294"/>
    </rico:Agent>
 </rdf:RDF>

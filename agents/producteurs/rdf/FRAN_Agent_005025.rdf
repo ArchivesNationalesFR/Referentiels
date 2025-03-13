@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/005025">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/005025"/>
@@ -11,27 +19,25 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-01-11</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Dérivation
-                (Import_SIA)</rico:name>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Monique LEBLOIS-PECHON)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Monique LEBLOIS-PECHON)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-01-11</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 11 janvier 2016 : revu les liens IR, l'URI BnF, ajouté fonction</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 11 janvier 2016 : revu les liens IR, l'URI BnF, ajouté fonction</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice d'autorité BNF : http://catalogue.bnf.fr/ark:/12148/cb11883840h</html:p>
-      </rico:source>
-      <rico:hasSource rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb11883840h"/>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121056693/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb11883840h"/>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121056693"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/005025">
-            <rico:isInstantiationOf rdf:resource="record/005025"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/005025"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_005025</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
@@ -39,7 +45,7 @@
             <rico:identifier>4480</rico:identifier>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/005025">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -91,33 +97,33 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1916-03-02</rico:beginningDate>
       <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5blonb3ky--u69ytier8ih6"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/005025-d5bhvik770--15ma0n1oncnzo-19160302-*">
-            <rico:performanceRelationHasTarget rdf:resource="agent/005025"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005025-d5bhvik770--15ma0n1oncnzo-19160302-*"/>
+            <rico:relationHasTarget rdf:resource="agent/005025"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d53934e174">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/005025-d5bhvik770--15ma0n1oncnzo-19160302-*"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvik770--15ma0n1oncnzo"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1916-03-02</rico:beginningDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">aide aux anciens combattants et victimes de guerre</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvik770--15ma0n1oncnzo"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d53934e174"/>
       <rico:authorizingMandate rdf:parseType="Literal">
          <html:p xml:lang="fr">Par décret du 29-05-1946, l'Office national des mutilés, combattants, victimes de guerre et pupilles de la nation, se voit adjoindre le Service d'action sociale du Ministère des prisonniers, déportés et réfugiés et reçoit son titre actuel.</html:p>
       </rico:authorizingMandate>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      <rico:generalDescription rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Organisation interne ou généalogie</h4>
             <html:p>L'ONAC est une originalité française. Il est fondamentalement le lieu où s'exerce la cogestion des questions concernant le monde combattant car il est géré de façon paritaire entre les associations et l'Etat.</html:p>
             <html:p>Son Directeur général est nommé en Conseil des ministres par décret et sur proposition du Ministre délégué aux Anciens Combattants. Il est assisté d'un conseil d'administration composé de 70 membres répartis en trois collèges et nommés par décret. Il comprend les représentants des assemblées, des grands corps de l'Etat, du Gouvernement, des titulaires de distinctions honorifiques, des différentes catégories de ressortissants de l'ONAC. Il est présidé par le Ministre délégué aux Anciens Combattants. Son rôle est de définir la politique générale de l'établissement.</html:p>
-            <html:p/>
             <html:p>Pour accomplir sa mission, l'ONAC dispose de moyens financiers et en personnel. Ses moyens budgétaires proviennent de son activité propre, maisons de retraite et écoles de reconversion professionnelle (E.R.P.).</html:p>
          </html:div>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>L'histoire de l'Office National des Anciens Combattants et Victimes de guerre est la résultante de la fusion de plusieurs organismes créés au cours du XXe siècle pour répondre aux besoins générés par une série de conflits d'une ampleur jusque là inconnue. La Première Guerre mondiale marque l'entrée dans un mode de conflit terriblement meurtrier et pose la question de la prise en charge des personnes affectées par le conflit : mutilés, veuves, orphelins...</html:p>
@@ -141,20 +147,21 @@
             <html:p>L'Office National des Anciens Combattants et Victimes de guerre (ONAC) est un établissement public d'Etat à caractère administratif aujourd'hui sous tutelle du Ministère de la Défense, doté d'une personnalité civile et d'une autonomie financière.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005025-051274-19290101-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/051274"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005025-052432-19451222-20160227"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/052432"/>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/005028-005025-19951107-*"/><rico:isOrWasSubordinateTo rdf:resource="agent/005028"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/007527-005025"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-007527"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/020077-005025"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-020077"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/023560-005025"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-023560"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/023731-005025"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-023731"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/020133-005025"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-020133"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/020063-005025"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-020063"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/005025-051274-19290101-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/051274"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/005025-052432-19451222-20160227"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/052432"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/005028-005025-19951107-*"/>
+      <rico:isDirectSubordinateTo rdf:resource="agent/005028"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/007527-005025"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-007527"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/020077-005025"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-020077"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/023560-005025"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-023560"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/023731-005025"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-023731"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/020133-005025"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-020133"/>
    </rico:Agent>
 </rdf:RDF>

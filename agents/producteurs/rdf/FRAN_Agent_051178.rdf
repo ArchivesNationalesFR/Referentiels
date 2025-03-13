@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051178">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051178"/>
@@ -10,29 +18,28 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Thierry GUILPIN)</rico:name>
+            <rico:name xml:lang="fr">Création (par Thierry GUILPIN)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 23 octobre 2015 : revu le lien IR.</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 23 octobre 2015 : revu le lien IR.</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">- Notice BnF n° FRBNF13013975.</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">- Universalis, « EUGÉNIE DE MONTIJO (1826-1920) impératrice des Français »,<html:i>Encyclopædia Universalis</html:i>[en ligne], www.universalis.fr/encyclopedie.</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121290535/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121290535"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051178">
-            <rico:isInstantiationOf rdf:resource="record/051178"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051178"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051178</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051178"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051178">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -71,22 +78,24 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1826-05-05</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1920-07-11</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051178-d699msjvr33-1uifysnie6i1p-18530101-18711231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051178"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051178-d699msjvr33-1uifysnie6i1p-18530101-18711231"/>
+            <rico:relationHasTarget rdf:resource="agent/051178"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d181146e113">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051178-d699msjvr33-1uifysnie6i1p-18530101-18711231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjvr33-1uifysnie6i1p"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1853-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1871-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Impératrice des Français.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjvr33-1uifysnie6i1p"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjvr33-1uifysnie6i1p"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d181146e113"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Impératrice des Français (1853-1870), épouse de Napoléon III, née le 5 mai 1826 à Grenade, en Espagne, morte le 11 juillet 1920 à Madrid.</html:p>
@@ -95,15 +104,19 @@
             <html:p>Eugénie, que ses origines rendent très sensible à la question, soutient avec l'opposition française un candidat prussien au trône vacant d'Espagne, lors de la controverse qui précipite la guerre franco-prussienne de 1870. Après la bataille de Sedan (1er septembre 1870), elle rejoint sa famille en exil en Angleterre et, après la mort de son mari (1873), continue de jouer un rôle important dans la vie politique bonapartiste. À la mort de son fils, en 1879, elle se cantonne à un rôle de grande dame en exil.</html:p>
          </html:div>
       </rico:history>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/051178-051179"/><rico:hasFamilyAssociationWith rdf:resource="agent/051179"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051178-052732-18810101-19071231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/052732"/>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/051177-051178"/><rico:hasFamilyAssociationWith rdf:resource="agent/051177"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051178-051642-18620105-19200711"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/051642"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/053754-cswxs40906--g9trwmonphew-051178"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/053754-cswxs40906--g9trwmonphew"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/053754-051178"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-053754"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/001912-051178"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-001912"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/051178-051179"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/051179"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/051178-052732-18810101-19071231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/052732"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/051177-051178"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/051177"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/051178-051642-18620105-19200711"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/051642"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/053754-cswxs40906--g9trwmonphew-051178"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/053754-cswxs40906--g9trwmonphew"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/053754-051178"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-053754"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/001912-051178"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-001912"/>
    </rico:Agent>
 </rdf:RDF>

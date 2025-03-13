@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051250">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051250"/>
@@ -10,33 +18,32 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-02-08</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Monique LEBLOIS-PECHON)</rico:name>
+            <rico:name xml:lang="fr">Création (par Monique LEBLOIS-PECHON)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-02-08</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 8 février 2016 : revu le nom, ajouté fonction, lien ARK</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 8 février 2016 : revu le nom, ajouté fonction, lien ARK</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice d'autorité BNF : http://catalogue.bnf.fr/ark:/12148/cb11991811t</html:p>
-      </rico:source>
-      <rico:hasSource rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb11991811t"/>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb11991811t"/>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Sites internet de l'Amicale www.campmauthausen.org et http://www.monument-mauthausen.org</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Bulletins de l'Amicale de Mauthausen n°323 (janvier 2011) et n° 342 (octobre 2015)</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000123240478/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000123240478"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051250">
-            <rico:isInstantiationOf rdf:resource="record/051250"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051250"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051250</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051250"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051250">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -79,24 +86,25 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1945-05-16</rico:beginningDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051250-d5bhvil20q--uuew3ia85vzc">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051250"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051250-d5bhvil20q--uuew3ia85vzc"/>
+            <rico:relationHasTarget rdf:resource="agent/051250"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d182177e149">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051250-d5bhvil20q--uuew3ia85vzc"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvil20q--uuew3ia85vzc"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">honorer la mémoire des déportés de Mauthausen, aider les déportés et leurs familles, collecter les témoignages, former et informer</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvil20q--uuew3ia85vzc"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d182177e149"/>
       <rico:authorizingMandate rdf:parseType="Literal">
          <html:p xml:lang="fr">Statuts de l'Amicale adoptés à l'été 1945, modifiés par l'Assemblée générale extraordinaire du 22 mars 1999, puis par l'Assemblée générale extraordinaire du 13 novembre 2010.</html:p>
       </rico:authorizingMandate>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      <rico:generalDescription rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Organisation interne ou généalogie</h4>
             <html:p>L'Amicale est constituée en association régie par la loi de 1901. Ses statuts actuels sont ceux qui ont été adoptés par l'Assemblée générale extraordinaire du 13 novembre 2010.</html:p>
@@ -107,10 +115,9 @@
                <html:li>des personnes sans lien de parenté avec les déportés, sous la même condition et si ces personnes sont présentées par deux membres de l'Amicale.</html:li>
             </html:ul>
             <html:p>L'Amicale accepte également des membres bienfaiteurs.</html:p>
-            <html:p/>
             <html:p>L'Amicale est administrée par un Conseil d'administration, élu par l'Assemblée générale. Le bureau, élu par le Conseil d'administration, comprend notamment un président, un vice-président, un secrétaire général, un trésorier, des membres responsables de secteurs d'activités.</html:p>
          </html:div>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>L'amicale de Mauthausen a été créée en 1945 par les rescapés français du camp de Mauthausen et de ses Kommandos pour « garder le souvenir de la solidarité internationale du camp » (comme l'affirme le serment de Mauthausen prononcé le 16 mai 1945 par le responsable du Comité international de Mauthausen, Emile Valley), assister les familles des disparus et œuvrer en faveur d'un statut de déporté.</html:p>
@@ -119,11 +126,11 @@
             <html:p>L'Amicale est affiliée au Comité international de Mauthausen.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/031025-051250"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-031025"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/031022-051250"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-031022"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/031021-051250"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-031021"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/031025-051250"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-031025"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/031022-051250"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-031022"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/031021-051250"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-031021"/>
    </rico:Agent>
 </rdf:RDF>

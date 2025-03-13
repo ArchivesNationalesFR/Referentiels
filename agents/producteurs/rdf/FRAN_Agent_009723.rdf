@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/009723">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/009723"/>
@@ -8,33 +16,45 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
-      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:lastModificationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-03</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Dérivation
-                (Import_SIA)</rico:name>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Thomas MOREL)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-25</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Bénédicte FICHET)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-03</rico:date>
+            <rico:generalDescription xml:lang="fr">03/05/2024, J. Gaillard : Correction de coquilles &amp; remplacement des tirets par des puces dans l'historique et l'organisation interne et généalogie | Suppression index activité</rico:generalDescription>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/009723">
-            <rico:isInstantiationOf rdf:resource="record/009723"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/009723"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_009723</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_009723"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/009723">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:isOrWasDescribedBy rdf:resource="record/009723"/>
-      <rdfs:label xml:lang="fr">Cabinet de François Fillon, Premier ministre</rdfs:label>
+      <rdfs:label xml:lang="fr">France. Cabinet de François Fillon, Premier ministre (2007-2012)</rdfs:label>
       <rico:hasOrHadAgentName>
-         <rico:AgentName rdf:about="agentName/009723-Cabinet%20de%20Fran%C3%A7ois%20Fillon%2C%20Premier%20ministre">
-            <rdfs:label xml:lang="fr">Cabinet de François Fillon, Premier ministre</rdfs:label>
-            <rico:textualValue xml:lang="fr">Cabinet de François Fillon, Premier ministre</rico:textualValue>
+         <rico:AgentName rdf:about="agentName/009723-France.%20Cabinet%20de%20Fran%C3%A7ois%20Fillon%2C%20Premier%20ministre%20%282007-2012%29">
+            <rdfs:label xml:lang="fr">France. Cabinet de François Fillon, Premier ministre (2007-2012)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Cabinet de François Fillon, Premier ministre (2007-2012)</rico:textualValue>
             <rico:isOrWasAgentNameOf rdf:resource="agent/009723"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
@@ -43,6 +63,1714 @@
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007-05-17</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-05-10</rico:endDate>
       <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5blonb04s-1nqrprwwl75h0"/>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000144-009723-20070517-20120510"/><rico:isOrWasSubordinateTo rdf:resource="agent/000144"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/009723-d3nyug261d--1cyxwnocz7hzo">
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d97572e109">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/009723-d3nyug261d--1cyxwnocz7hzo"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyug261d--1cyxwnocz7hzo"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d97572e109"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e118">
+                  <rico:title>Décret du 17 mai 2007 portant nomination du Premier ministre, NOR : HRUX0710386D</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000649193"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e118"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e124">
+                  <rico:title>Arrêté du 18 mai 2007 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0710389A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000822233"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e124"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e130">
+                  <rico:title>Arrêté du 22 mai 2007 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0710395A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000274543"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e130"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e136">
+                  <rico:title>Arrêté du 8 juin 2007 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0710463A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000466569"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e136"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e142">
+                  <rico:title>Arrêté du 27 juin 2007 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0710554A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000467957"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e142"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e149">
+                  <rico:title>Arrêté du 5 juillet 2007 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0710610A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000649579"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e149"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e155">
+                  <rico:title>Arrêté du 20 juillet 2007 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0710724A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000428789"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e155"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e161">
+                  <rico:title>Arrêté du 26 juillet 2007 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0710741A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000791465"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e161"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e167">
+                  <rico:title>Arrêté du 9 octobre 2007 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0710938A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000618470"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e167"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e173">
+                  <rico:title>Arrêté du 4 janvier 2008 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0811169A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000017790838"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e173"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e179">
+                  <rico:title>Arrêté du 9 janvier 2008 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0811184A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000017847246"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e179"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e186">
+                  <rico:title>Arrêté du 2 mai 2008 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0811189A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018743491"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e186"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e192">
+                  <rico:title>Arrêté du 18 juin 2008 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0814705A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000019018212"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e192"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e198">
+                  <rico:title>Arrêté du 19 juin 2008 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0814601A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000019025927"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e198"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e204">
+                  <rico:title>Arrêté du 7 juillet 2008 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0816679A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000019140847"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e204"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e210">
+                  <rico:title>Arrêté du 1er août 2008 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0819333A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000019278339"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e210"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e216">
+                  <rico:title>Arrêté du 22 août 2008 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0811299A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000019354948"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e216"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e223">
+                  <rico:title>Arrêté du 29 août 2008 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0821056A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000019390648"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e223"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e229">
+                  <rico:title>Arrêté du 11 septembre 2008 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0821961A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000019460979"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e229"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e235">
+                  <rico:title>Arrêté du 29 septembre 2008 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0811303A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000019552907"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e235"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e241">
+                  <rico:title>Arrêté du 7 octobre 2008 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0823872A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000019588442"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e241"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e247">
+                  <rico:title>Arrêté du 3 novembre 2008 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0826207A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000019720791"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e247"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e253">
+                  <rico:title>Arrêté du 31 décembre 2008 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0831575A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000020021487"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e253"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e260">
+                  <rico:title>Arrêté du 25 mars 2009 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0907143A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000020436513"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e260"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e266">
+                  <rico:title>Arrêté du 30 mars 2009 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0811312A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000020460331"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e266"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e272">
+                  <rico:title>Arrêté du 10 avril 2009 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0908495A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000020506490"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e272"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e278">
+                  <rico:title>Arrêté du 16 avril 2009 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0908868A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000020527741"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e278"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e284">
+                  <rico:title>Arrêté du 30 avril 2009 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0910067A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000020568047"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e284"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e290">
+                  <rico:title>Arrêté du 8 juin 2009 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0913480A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000020736152"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e290"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e297">
+                  <rico:title>Arrêté du 10 juin 2009 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0911654A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000020724002"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e297"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e303">
+                  <rico:title>Arrêté du 15 juin 2009 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0913518A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000020741034"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e303"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e309">
+                  <rico:title>Arrêté du 18 juin 2009 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0901909A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000020764268"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e309"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e315">
+                  <rico:title>Arrêté du 19 juin 2009 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0913570A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000020764271"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e315"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e321">
+                  <rico:title>Arrêté du 29 juin 2009 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0914813A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000020816093"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e321"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e327">
+                  <rico:title>Arrêté du 2 juillet 2009 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0915357A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000020835276"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e327"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e334">
+                  <rico:title>Arrêté du 3 juillet 2009 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0915549A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000020816098"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e334"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e340">
+                  <rico:title>Arrêté du 8 juillet 2009 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0915961A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000020830933"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e340"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e346">
+                  <rico:title>Arrêté du 15 juillet 2009 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0916553A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000020857291"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e346"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e352">
+                  <rico:title>Arrêté du 22 juillet 2009 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0916923A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000020887394"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e352"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e358">
+                  <rico:title>Arrêté du 27 août 2009 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0920162A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021006117"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e358"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e364">
+                  <rico:title>Arrêté du 28 août 2009 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0920193A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021006120"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e364"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e371">
+                  <rico:title>Arrêté du 31 août 2009 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0920318A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021012150"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e371"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e377">
+                  <rico:title>Arrêté du 15 septembre 2009 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0921459A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021040924"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e377"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e383">
+                  <rico:title>Arrêté du 29 septembre 2009 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0922585A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021087806"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e383"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e389">
+                  <rico:title>Arrêté du 12 octobre 2009 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0923288A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021145541"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e389"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e395">
+                  <rico:title>Arrêté du 17 octobre 2009 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0924277A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021164154"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e395"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e401">
+                  <rico:title>Arrêté du 23 octobre 2009 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0924599A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021190670"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e401"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e408">
+                  <rico:title>Arrêté du 29 octobre 2009 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0925469A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021218489"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e408"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e414">
+                  <rico:title>Arrêté du 15 novembre 2009 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0926922A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021277173"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e414"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e420">
+                  <rico:title>Arrêté du 23 décembre 2009 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0931643A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021528567"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e420"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e426">
+                  <rico:title>Arrêté du 24 décembre 2009 relatif à la composition du cabinet du Premier ministre, NOR : PRMX0931714A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021534360"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e426"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e432">
+                  <rico:title>Arrêté du 31 décembre 2009 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1000128A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021601664"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e432"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e438">
+                  <rico:title>Arrêté du 13 janvier 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1001311A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021683752"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e438"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e445">
+                  <rico:title>Arrêté du 15 janvier 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1000124A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021696268"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e445"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e451">
+                  <rico:title>Arrêté du 22 janvier 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1001950A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021726055"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e451"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e457">
+                  <rico:title>Arrêté du 25 février 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1005606A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021879602"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e457"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e463">
+                  <rico:title>Arrêté du 26 février 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1005748A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021879084"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e463"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e469">
+                  <rico:title>Arrêté du 11 mars 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1007074A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021961544"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e469"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e475">
+                  <rico:title>Arrêté du 12 mars 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1007154A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021965283"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e475"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e482">
+                  <rico:title>Arrêté du 31 mars 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1008827A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000022042843"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e482"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e488">
+                  <rico:title>Arrêté du 1er avril 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1009142A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000022050600"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e488"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e494">
+                  <rico:title>Arrêté du 6 avril 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1009399A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000022070272"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e494"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e500">
+                  <rico:title>Arrêté du 28 avril 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1011639A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000022145367"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e500"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e506">
+                  <rico:title>Arrêté du 30 avril 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1011700A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000022154063"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e506"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e512">
+                  <rico:title>Arrêté du 12 mai 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1012847A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000022205502"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e512"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e519">
+                  <rico:title>Arrêté du 25 mai 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1013619A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000022265340"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e519"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e525">
+                  <rico:title>Arrêté du 31 mai 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1014435A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000022289729"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e525"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e531">
+                  <rico:title>Arrêté du 15 juin 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1014435A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000022289729"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e531"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e537">
+                  <rico:title>Arrêté du 1er juillet 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1018053A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000022447805"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e537"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e543">
+                  <rico:title>Arrêté du 7 juillet 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1018364A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000022455002"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e543"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e549">
+                  <rico:title>Arrêté du 12 juillet 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1018548A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000022472284"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e549"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e556">
+                  <rico:title>Arrêté du 13 juillet 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1019409A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000022503103"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e556"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e562">
+                  <rico:title>Arrêté du 21 juillet 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1019622A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000022506783"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e562"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e568">
+                  <rico:title>Arrêté du 22 juillet 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1019715A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000022509388"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e568"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e574">
+                  <rico:title>Arrêté du 23 juillet 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1019937A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000022511846"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e574"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e580">
+                  <rico:title>Arrêté du 24 août 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1022389A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000022744123"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e580"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e586">
+                  <rico:title>Arrêté du 10 septembre 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1002471A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000022809776"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e586"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e593">
+                  <rico:title>Arrêté du 13 septembre 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1023589A0</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000022816858"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e593"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e599">
+                  <rico:title>Arrêté du 15 septembre 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1023787A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000022821028"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e599"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e605">
+                  <rico:title>Arrêté du 20 septembre 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1024058A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000022834929"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e605"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e611">
+                  <rico:title>Arrêté du 28 septembre 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1024862A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000022863043"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e611"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e617">
+                  <rico:title>Arrêté du 27 octobre 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1027357A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000022969934"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e617"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e623">
+                  <rico:title>Arrêté du 28 octobre 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1027775A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000022969944"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e623"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e630">
+                  <rico:title>Arrêté du 8 novembre 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1027359A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000023023260"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e630"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e636">
+                  <rico:title>Arrêté du 15 novembre 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1029063A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000023087090"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e636"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e642">
+                  <rico:title>Arrêté du 22 novembre 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1029785A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000023124135"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e642"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e648">
+                  <rico:title>Arrêté du 29 novembre 2010 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1030358A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000023149487"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e648"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e654">
+                  <rico:title>Arrêté du 10 janvier 2011 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1103911A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000023398347"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e654"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e660">
+                  <rico:title>Arrêté du 15 janvier 2011 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1101387A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000023428782"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e660"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e667">
+                  <rico:title>Arrêté du 28 janvier 2011 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1102523A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000023492234"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e667"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e673">
+                  <rico:title>Arrêté du 15 février 2011 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1104886A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000023589452"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e673"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e679">
+                  <rico:title>Arrêté du 19 février 2011 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1105181A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000023603609"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e679"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e685">
+                  <rico:title>Arrêté du 1er avril 2011 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1109769A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000023823405"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e685"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e691">
+                  <rico:title>Arrêté du 12 avril 2011 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1110267A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000023850916"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e691"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e697">
+                  <rico:title>Arrêté du 27 avril 2011 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1111659A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000023926393"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e697"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e704">
+                  <rico:title>Arrêté du 9 mai 2011 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1112717A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000023971543"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e704"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e710">
+                  <rico:title>Arrêté du 25 mai 2011 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1114565A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000024063943"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e710"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e716">
+                  <rico:title>Arrêté du 15 juin 2011 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1116285A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000024186290"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e716"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e722">
+                  <rico:title>Arrêté du 29 juin 2011 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1117954A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000024278846"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e722"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e728">
+                  <rico:title>Arrêté du 13 juillet 2011 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1120244A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000024382412"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e728"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e734">
+                  <rico:title>Arrêté du 16 août 2011 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1122911A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000024473371"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e734"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e741">
+                  <rico:title>Arrêté du 29 septembre 2011 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1126621A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000024612105"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e741"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e747">
+                  <rico:title>Arrêté du 15 octobre 2011 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1106547A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000024668767"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e747"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e753">
+                  <rico:title>Arrêté du 27 octobre 2011 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1129549A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000024720853"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e753"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e759">
+                  <rico:title>Arrêté du 11 janvier 2012 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1201078A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000025135527"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e759"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e765">
+                  <rico:title>Arrêté du 31 janvier 2012 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1202212A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000025264090"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e765"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e771">
+                  <rico:title>Arrêté du 1er février 2012 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1203208A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000025270730"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e771"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e778">
+                  <rico:title>Arrêté du 9 février 2012 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1204233A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000025362502"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e778"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e784">
+                  <rico:title>Arrêté du 23 février 2012 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1205894A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000025398356"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e784"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e790">
+                  <rico:title>Arrêté du 24 février 2012 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1205975A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000025400574"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e790"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e796">
+                  <rico:title>Arrêté du 27 février 2012 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1206116A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000025411777"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e796"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e802">
+                  <rico:title>Arrêté du 2 mars 2012 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1206547A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000025431636"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e802"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e808">
+                  <rico:title>Arrêté du 8 mars 2012 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1207581A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000025495994"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e808"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e815">
+                  <rico:title>Arrêté du 12 mars 2012 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1207580A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000025495997"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e815"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e821">
+                  <rico:title>Arrêté du 30 mars 2012 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1209434A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000025597341"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e821"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e827">
+                  <rico:title>Arrêté du 1er avril 2012 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1209699A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000025623174"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e827"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e833">
+                  <rico:title>Arrêté du 17 avril 2012 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1220769A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000025706352"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e833"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e839">
+                  <rico:title>Arrêté du 30 avril 2012 relatif à la composition du cabinet du Premier ministre, NOR : PRMX1222531A</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000025790173"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e839"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:MandateRelation>
+            <rico:relationHasTarget rdf:resource="agent/009723"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d97572e845">
+                  <rico:title>Décret du 10 mai 2012 relatif à la cessation des fonctions du Gouvernement, NOR : HRUX1223041D</rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000025844025"/>
+               </rico:Mandate>
+            </rico:relationHasSource>
+         </rico:MandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d97572e845"/>
+      <rico:generalDescription rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>
+               <html:b>Directeur du cabinet</html:b>
+            </html:p>
+            <html:ul>
+               <html:li>Jean-Paul Faugère (18 mai 2007-10 mai 2012)</html:li>
+            </html:ul>
+            <html:p>
+               <html:b>Directeur</html:b>
+               <html:b>adjoint du cabinet</html:b>
+            </html:p>
+            <html:ul>
+               <html:li>Antoine Gosset-Grainville (18 mai 2007-1er mai 2010) remplacé par Marie-Anne Barbat-Layani (1er avril 2010-10 mai 2012)</html:li>
+            </html:ul>
+            <html:p>
+               <html:b>Conseillers auprès du Premier ministre</html:b>
+            </html:p>
+            <html:ul>
+               <html:li>Igor Mitrofanoff (18 mai 2007-10 mai 2012)</html:li>
+               <html:li>Myriam Lévy, pour la communication (18 mai 2007-10 mai 2012)</html:li>
+               <html:li>François Séners (22 juillet 2009-17 octobre 2009)</html:li>
+            </html:ul>
+            <html:p>
+               <html:b>Chargés de mission auprès du Premier ministre</html:b>
+            </html:p>
+            <html:ul>
+               <html:li>Jean de Boishue, en charge notamment des dossiers culturels (18 mai 2007-1er mars 2012), poursuit ses activités à titre non officiel jusqu’en mai 2012</html:li>
+               <html:li>Daniel-Georges Courtois (18 mai 2007-1er janvier 2009)</html:li>
+               <html:li>Pierre David (18 mai 2007-10 mai 2012)</html:li>
+               <html:li>Jean-Marc Monteil (18 mai 2007-15 novembre 2010)</html:li>
+               <html:li>Claude Gaillard, pour les affaires parlementaires et les relations avec les élus (15 janvier 2010-30 avril 2011), anciennement en charge des relations avec les élus uniquement (18 juin 2008-15 janvier 2010)</html:li>
+            </html:ul>
+            <html:p>
+               <html:b>Chef du cabinet, conseiller parlementaire</html:b>
+            </html:p>
+            <html:ul>
+               <html:li>Franck Robine (18 mai 2007-10 mai 2012) (également conseiller parlementaire à partir du 25 mai 2011)</html:li>
+            </html:ul>
+            <html:p>
+               <html:b>Chefs</html:b>
+               <html:b>adjoint</html:b>s<html:b>du cabinet</html:b>
+            </html:p>
+            <html:ul>
+               <html:li>Gilles Dufeigneux (22 mai 2007-10 septembre 2010), également conseiller technique pour les sports et la politique sportive (1er janvier-10 septembre 2010), remplacé par Grégory Canal, conseiller technique en charge des relations avec les élus, précédemment chargé de mission depuis 2007 (20 septembre 2010-10 mai 2012)</html:li>
+               <html:li>Pierre Molager (15 juin 2011-10 mai 2012), précédemment conseiller technique affaires locales (18 mai 2007-10 juin 2009) avant d'être nommé directeur de cabinet du préfet de Corse de 2009 à 2011</html:li>
+            </html:ul>
+            <html:p>
+               <html:b>Chef du secrétariat particulier, conseillère</html:b>
+            </html:p>
+            <html:ul>
+               <html:li>Sylvie Fourmont (18 mai 2007-10 mai 2012)</html:li>
+            </html:ul>
+            <html:p>
+               <html:b>Service de presse</html:b>
+            </html:p>
+            <html:ul>
+               <html:li>Delphine Peyrat-Stricker, chef du Service de presse (8 juin 2007-23 octobre 2009) remplacée par Guillemette Rolland (15 octobre 2009-10 mai 2012)</html:li>
+               <html:li>Isabelle de Lacharrière, conseillère technique presse (8 juin 2007-10 mai 2012)</html:li>
+               <html:li>Lorène Thiebaut, conseillère technique presse (12 juillet 2010-10 mai 2012)</html:li>
+               <html:li>Matthieu Labaume, chargé de mission déplacements de la presse (8 juin 2007-31 mai 2010), promu conseiller technique déplacements de la presse (31 mai 2010-1er novembre 2010), puis renommé dans les mêmes fonctions (1er juillet 2011-10 mai 2012)</html:li>
+               <html:li>Louis-Gonzague Adam, conseiller technique déplacements de la presse (1er décembre 2010-10 mai 2012)</html:li>
+               <html:li>Séverin Naudet, conseiller technique presse (8 juin 2007-1er avril 2010) nommé conseiller technique (multimédia) (1er avril 2010-30 novembre 2010)</html:li>
+               <html:li>Vincent Fleurot, conseiller technique déplacements de la presse (8 juin 2007-10 mai 2012)</html:li>
+               <html:li>Anne Dorsemaine, conseillère technique presse (23 février 2012-10 mai 2012)</html:li>
+            </html:ul>
+            <html:p>
+               <html:b>Pôle législation électorale</html:b>
+            </html:p>
+            <html:ul>
+               <html:li>Hervé Fabre-Aubrespy, conseiller pour la législation électorale (26 juin 2008-10 mai 2012)</html:li>
+            </html:ul>
+            <html:p>
+               <html:b>Pôle diplomatique</html:b>
+            </html:p>
+            <html:ul>
+               <html:li>Jacques Lapouge, conseiller diplomatique (8 juin 2007-15 novembre 2009) remplacé par Charles Fries (15 novembre 2009-10 mai 2012)</html:li>
+               <html:li>Arnaud Barthelemy, conseiller technique pour les affaires diplomatiques (8 juin 2007-23 octobre 2009) remplacé par Arnaud Guillois (26 octobre 2009-10 mai 2012)</html:li>
+               <html:li>Etienne Oudot de Dainville, conseiller technique pour les affaires économiques internationales (8 juin 2007-6 juillet 2009). Ses attributions ne semblent pas avoir été reprises sous cet intitulé.</html:li>
+               <html:li>Joachim Bertele, conseiller technique pour les affaires diplomatiques et la coopération franco-allemande (26 juillet 2007-31 août 2009) remplacé par Jan Grünhage (31 août 2009-20 septembre 2010), lui-même remplacé par Sebastian Groth (20 septembre 2010-10 mai 2012) (rattaché aussi au pôle Europe)</html:li>
+            </html:ul>
+            <html:p>
+               <html:b>Pôle Europe</html:b>
+            </html:p>
+            <html:ul>
+               <html:li>Gilles Briatta, conseiller pour l'Europe (27 juin 2007-1er novembre 2011), remplacé par Pierre Heilbronn (1er novembre 2011-10 mai 2012)</html:li>
+               <html:li>Joachim Bertele, conseiller technique pour les affaires diplomatiques et la coopération franco-allemande (26 juillet 2007-31 août 2009) remplacé par Jan Grünhage (31 août 2009-20 septembre 2010), lui-même remplacé par Sebastian Groth (20 septembre 2010-10 mai 2012) (rattaché aussi au pôle diplomatique)</html:li>
+            </html:ul>
+            <html:p>
+               <html:b>Pôle affaires économiques et financières</html:b>
+            </html:p>
+            <html:ul>
+               <html:li>Delphine d'Amarzit, conseillère pour les finances (18 mai-8 juin 2007) puis conseillère pour les affaires économiques et financières (8 juin 2007-19 juin 2009) remplacée par Corso Bavagnoli, conseiller pour l'économie, les finances et l'entreprise (22 juin 2009-11 janvier 2012), lui-même remplacé par Charles Sarrazin (11 janvier 2012-10 mai 2012), Pascal Helwaser étant promu conseiller pour la macroéconomie et les prévisions économiques (11 janvier 2012-24 février 2012)</html:li>
+               <html:li>Sophie Boissard, conseillère chargée des études et de la prospective (18 mai-8 juin 2007)</html:li>
+               <html:li>Franck Demaille, conseiller technique pour le financement des entreprises, services, artisanat, concurrence, consommation et tourisme (8 juin 2007-1er novembre 2009), remplacé par Romain Launay, financement des entreprises, PME, artisanat, services, concurrence, consommation et tourisme (1er novembre 2009-31 janvier 2012). Une partie de ses attributions ont été reprises par Ferdinand Tomarchio, conseiller technique industrie, services, compétitivité (1er février 2012-10 mai 2012)</html:li>
+               <html:li>Philippe Ravalet, conseiller technique pour la macroéconomie et emploi (18 mai 2007-19 juin 2008), remplacé par Clotilde L'Angevin, conseillère technique macroéconomie et prévisions économiques (7 juillet 2008-22 juin 2009) (elle était précédemment chargée de mission prévisions économiques, 8 juin 2007-7 juillet 2008) puis par Pascal Helwaser, macroéconomie et prévisions économiques (22 juin 2009-11 janvier 2012), promu conseiller à cette date.</html:li>
+            </html:ul>
+            <html:p>
+               <html:b>Pôle développement durable, énergie, logement, transports et politiques industrielles</html:b>
+            </html:p>
+            <html:ul>
+               <html:li>François Jacq, conseiller pour l'industrie, la recherche et l'énergie (18 mai 2007-29 août 2008), nommé conseiller pour le développement durable, la recherche et l'industrie (29 août 2008-6 avril 2009), remplacé par Jean-François Monteils (10 avril 2009-19 juillet 2010) puis par Marie Bonnet le 23 juillet 2010.</html:li>
+               <html:li>Pierre Sallenave, conseiller pour le développement durable (18 mai 2007-1er août 2008) remplacé par François Jacq, conseiller pour le développement durable, la recherche et l'industrie (29 août 2008-6 avril 2009) remplacé par Jean-François Monteils (10 avril 2009-19 juillet 2010) puis par Marie Bonnet (23 juillet 2010-15 novembre 2010), promue conseillère pour le développement durable, l'énergie, le logement, les transports et les politiques industrielles (15 novembre 2010-30 avril 2012). Marie Bonnet est en outre nommée directrice du cabinet du ministre de l'écologie, du développement durable, des transports et du logement le 23 février 2012.</html:li>
+               <html:li>Martin Guespereau, conseiller technique pour l'écologie et l'urbanisme (8 juin 2007-31 décembre 2008)</html:li>
+               <html:li>Cécile Prévieu, conseillère technique pour le climat, les transports et règles de construction (8 juin 2007-1er septembre 2010) remplacée par Matthieu Chabanel, climat, transports et règles de construction puis transports, infrastructures et urbanisme (1er septembre 2010-1er avril 2012)</html:li>
+               <html:li>Yohann Leroy, conseiller technique pour les stratégies industrielles, PME-PMI, technologies et la société de l'information (8 juin 2007-28 février 2010), remplacé par Nicolas Potier, politiques industrielles, nouvelles technologies et recherche (4 mars 2010-31 janvier 2012). Ses attributions PME sont reprises en novembre 2009 par Romain Launay.</html:li>
+               <html:li>David Molho, conseiller technique pour l'énergie, la politique industrielle et la sûreté nucléaire (8 juin 2007-15 juillet 2009) remplacé par Bertrand de Singly, conseiller technique énergie, politique industrielle et sûreté nucléaire puis énergie, risques et milieux naturels (15 juillet 2009-1er avril 2012). Ses attributions sont ensuite partiellement reprises par Emmanuel Moreau et Arnaud Tomasi, conseillers techniques écologie (24 février 2012-10 mai 2012)</html:li>
+               <html:li>Eva Portier, conseillère technique pour l’espace et la recherche industrielle (18 mai-8 juin 2007) puis pour l'espace, les industries de défense, la recherche et l'innovation (8 juin 2007-13 septembre 2010), peut-être remplacée par Nicolas Potier, politiques industrielles, nouvelles technologies et recherche (4 mars 2010-31 janvier 2012). Ce dernier est remplacé par Ferdinand Tomarchio, industrie, services, compétitivité (1er février 2012-10 mai 2012)</html:li>
+               <html:li>Nadia Bouyer, chargée de mission pour l'aménagement et le logement (8 juin 2007-7 juillet 2008) puis conseillère technique aménagement et logement (7 juillet 2008-1er octobre 2009). Ses attributions logement sont reprises en novembre 2010 par Marie Bonnet, ses attributions aménagement ne semblent pas avoir été reprises.</html:li>
+            </html:ul>
+            <html:p>
+               <html:b>Pôle social</html:b>
+            </html:p>
+            <html:ul>
+               <html:li>Eric Aubry, conseiller social (18 mai 2007-16 août 2011) remplacé par Hervé Monange (16 août 2011-9 mai 2012)</html:li>
+               <html:li>Eric Etienne, conseiller technique pour la politique de la ville, l'intégration et la lutte contre l'exclusion (8 juin 2007-27 août 2009). Ses attributions ville et intégration sont reprises par Mathilde Lignot-Leloup, finances sociales + ville et intégration d'après Internet (15 juillet 2009-14 février 2011), elle-même remplacée par Alexandre Pascal, protection sociale, ville et comptes sociaux (1er avril 2011-10 mai 2012)</html:li>
+               <html:li>Pierre Mayeur, conseiller technique pour les finances sociales (18 mai 2007-15 juillet 2009) remplacé par Mathilde Lignot-Leloup, finances sociales + ville et intégration d'après Internet (15 juillet 2009-14 février 2011), elle-même remplacée par Alexandre Pascal, protection sociale, ville et comptes sociaux (1er avril 2011-10 mai 2012)</html:li>
+               <html:li>Alexandre Pascal, conseiller technique pour la protection sociale, la ville et les comptes sociaux, officieux à partir du 28 mai 2010, officiel à compter du 1er avril 2011 jusqu'au 10 mai 2012.</html:li>
+               <html:li>Hervé Monange, conseiller technique pour le travail et formation professionnelle (18 mai 2007-24 décembre 2009) puis travail, emploi, formation professionnelle, jeunesse et vie associative (1er janvier 2010-16 août 2011), promu conseiller social (16 août 2011-9 mai 2012)</html:li>
+               <html:li>Cédric Grouchka, conseiller technique pour la santé (8 juin 2007-12 mars 2010) remplacé par David Gruson (6 avril 2010-18 avril 2012)</html:li>
+            </html:ul>
+            <html:p>
+               <html:b>Pôle affaires intérieures</html:b>
+            </html:p>
+            <html:ul>
+               <html:li>Stéphane Bouillon, conseiller pour les affaires intérieures (18 mai 2007-22 août 2008) remplacé par Michel Fuzeau (1er septembre 2008-15 janvier 2011), remplacé par Denis Robin (17 janvier 2011-5 mars 2012), remplacé par Frédéric Veau (5 mars 2012-10 mai 2012)</html:li>
+               <html:li>Frédéric Lauze, conseiller technique pour la sécurité (8 juin 2007-10 mai 2012)</html:li>
+               <html:li>Olivier Magnaval, conseiller technique pour l'administration territoriale, les collectivités locales et l'outre-mer (8 juin 2007-29 juin 2009) remplacé par Frédéric Veau (29 juin 2009-5 mars 2012), promu conseiller intérieur à cette date</html:li>
+               <html:li>Laurence Marion, conseillère technique pour les libertés publiques (18 mai 2007-22 janvier 2010) remplacée par Rémi Décout-Paolini (1er février 2010-12 avril 2011) lui-même remplacé par Alexandre Lallet (18 avril 2011-27 février 2012), promu conseiller pour la justice (27 février 2012-10 mai 2012) (rattaché aussi au pôle justice)</html:li>
+            </html:ul>
+            <html:p>
+               <html:b>Pôle justice</html:b>
+            </html:p>
+            <html:ul>
+               <html:li>Maryvonne Caillibotte, conseillère pour la justice (18 mai 2007-25 février 2010) remplacée par Jérôme Deharveng (1er mars 2010-27 février 2012), lui-même remplacé par Alexandre Lallet, conseiller pour la justice, les libertés publiques et les questions constitutionnelles (27 février 2012-10 mai 2012)</html:li>
+               <html:li>Laurence Marion, conseillère technique pour les libertés publiques (18 mai 2007-22 janvier 2010) remplacée par Rémi Décout-Paolini (1er février 2010-12 avril 2011) lui-même remplacé par Alexandre Lallet (18 avril 2011-27 février 2012), promu conseiller pour la justice (27 février 2012-10 mai 2012) (rattaché aussi au pôle intérieur)</html:li>
+            </html:ul>
+            <html:p>
+               <html:b>Pôle budget</html:b>
+            </html:p>
+            <html:ul>
+               <html:li>Julien Dubertret, conseiller pour le budget (18 mai 2007-16 avril 2009) nommé conseiller pour le budget, la réforme de l'Etat et la fonction publique (16 avril 2009-9 mai 2011), remplacé par Julien Lagubeau, conseiller pour le budget (9 mai 2011-10 mai 2012)</html:li>
+               <html:li>Clément Lecuivre, conseiller technique pour le budget (10 avril 2009-30 septembre 2010) remplacé par Julien Lagubeau (18 février 2011-9 mai 2011) lui-même remplacé par Marion Dewagenaere (9 mai 2011-10 mai 2012)</html:li>
+               <html:li>Yohann Bénard, conseiller technique pour la fiscalité et les prélèvements obligatoires (18 mai 2007-2 juillet 2009), remplacé par Christophe Pourreau (8 juillet 2009-28 janvier 2011), lui-même remplacé par Charlotte Chevalier (1er février 2011-1er octobre 2011)</html:li>
+            </html:ul>
+            <html:p>
+               <html:b>Pôle réforme de l’État et fonction publique</html:b>
+            </html:p>
+            <html:ul>
+               <html:li>Yves Chevalier, conseiller pour la fonction publique et la réforme de l’État (8 juin-5 juillet 2007), remplacé par Jean-François Monteils, conseiller pour la réforme de l’État et la fonction publique (5 juillet 2007-10 avril 2009). Ses attributions réforme de l'État et fonction publique sont transmises en avril 2009 à Julien Dubertret, conseiller budget (avril 2009-mai 2011), qui délègue à Arnaud Freyder et Yorick de Mombynes</html:li>
+               <html:li>Yorick de Mombynes, conseiller technique pour la réforme de l’État (16 avril 2009-28 février 2010). Attribution transmise à Arnaud Freyder le 1er mars 2010</html:li>
+               <html:li>Arnaud Freyder, conseiller technique pour la fonction publique (16 avril 2009-1er mars 2010), puis fonction publique et réforme de l’État (1er mars 2010-21 juillet 2010), puis fonction publique, réforme de l’État et dossiers culturels (21 juillet 2010-10 mai 2012)</html:li>
+               <html:li>Mélanie Joder, chargée de mission pour la révision générale des politiques publiques (à titre officieux) (juillet 2007-mars 2008)</html:li>
+            </html:ul>
+            <html:p>
+               <html:b>Pôle éducation nationale, enseignement supérieur et recherche</html:b>
+            </html:p>
+            <html:ul>
+               <html:li>Patrick Hetzel, conseiller pour l'éducation nationale, l'enseignement supérieur et la recherche (18 mai 2007-22 août 2008) remplacé par Jean-Baptiste Carpentier (11 septembre 2008-1er juillet 2010) lui-même remplacé par Jean Sarrazin (22 juillet 2010-9 février 2012). Ses attributions sont réparties entre Laurence Piketty (conseillère technique recherche et enseignement supérieur) et Didier Vin-Datiche (conseiller technique éducation).</html:li>
+               <html:li>Roger Chudeau, conseiller technique pour l'éducation (8 juin 2007-29 septembre 2008) remplacé par Denis Boullier (7 octobre 2008-13 juillet 2010), lui-même remplacé par M. Didier Vin-Datiche (10 janvier 2011-8 mars 2012)</html:li>
+               <html:li>Claire Giry, conseillère technique pour l'enseignement supérieur et la recherche (8 juin 2007-1er avril 2009) remplacée par Didier Hoffschir (10 avril 2009-1er novembre 2010), lui-même remplacé par Laurence Piketty (21 février 2011-10 mai 2012)</html:li>
+               <html:li>Sandrine Javelaud, chargée de mission pour l'éducation (8 juin 2007-11 septembre 2008)</html:li>
+            </html:ul>
+            <html:p>
+               <html:b>Pôle culture</html:b>
+            </html:p>
+            <html:ul>
+               <html:li>Voir Jean de Boishue, conseiller auprès du Premier ministre pour les dossiers culturels</html:li>
+               <html:li>Aline Sylla-Walbaum, conseillère technique pour la culture et la communication (18 mai 2007-11 septembre 2008), remplacée par Hervé Cassagnabère, dossiers culturels et discours (2 mai 2008-7 juillet 2010), lui-même remplacé par Arnaud Freyder, fonction publique, réforme de l’État et dossiers culturels (21 juillet 2010-10 mai 2012)</html:li>
+            </html:ul>
+            <html:p>
+               <html:b>Pôle agriculture</html:b>
+            </html:p>
+            <html:ul>
+               <html:li>Fabien Bova, conseiller technique pour l'agriculture, la pêche et la forêt (18 mai 2007-4 janvier 2008), remplacé par Gaëlle Regnard (9 janvier 2008-12 juillet 2010), elle-même remplacée par Caroline Le Poultier-Helleisen (19 juillet 2010-12 mars 2012), remplacée par Didier Garnier, nommé à titre officieux (12 mars 2012-10 mai 2012)</html:li>
+            </html:ul>
+            <html:p>
+               <html:b>Pôle jeunesse et sports</html:b>
+            </html:p>
+            <html:ul>
+               <html:li>Vincent Roger, conseiller technique pour la jeunesse et les faits de société (18 mai-8 juin 2007) remplacé par Xavier Malenfer, conseiller technique pour les sports, la jeunesse et la vie associative (8 juin 2007-31 décembre 2009). Ses attributions sports sont reprises par Gilles Dufeigneux, chef-adjoint du cabinet (1er janvier 2010-10 septembre 2010), puis par Guillemette Rolland, chef du Service de presse (16 septembre 2010-10 mai 2012). Ses attributions jeunesse et vie associative sont reprises par Hervé Monange, CT travail, emploi et formation professionnelle à partir du 1er janvier 2010.</html:li>
+            </html:ul>
+            <html:p>
+               <html:b>Discours</html:b>
+            </html:p>
+            <html:ul>
+               <html:li>Jean-Dominique Langlais, conseiller technique pour les discours (18 mai 2007-30 avril 2009) remplacé par Olivier Babeau (15 juin 2009-19 juin 2009) lui-même remplacé par Maël Renouard (1er septembre 2009-10 mai 2012). On notera également le rôle d'Hervé Cassagnabère, CT dossiers culturels et discours (2 mai 2008-7 juillet 2010).</html:li>
+               <html:li>Yorick de Mombynes, conseiller technique pour les discours (8 juin 2007-16 avril 2009), puis conseiller technique pour la réforme de l’État.</html:li>
+               <html:li>Marie-Doha Besancenot, chargée de mission discours (15 septembre 2009-15 novembre 2010) puis conseillère technique discours (15 novembre 2010-10 mai 2012).</html:li>
+            </html:ul>
+            <html:p>
+               <html:b>Élus et Parlement</html:b>
+            </html:p>
+            <html:ul>
+               <html:li>Voir Claude Gaillard, chargé de mission auprès du Premier ministre pour les affaires parlementaires et les relations avec les élus</html:li>
+               <html:li>Jean-Pierre Camby, conseiller parlementaire, chargé de la réforme institutionnelle (27 juin 2007-9 octobre 2007), remplacé par Vincent Chriqui, conseiller parlementaire (9 octobre 2007-13 janvier 2010), remplacé par Franck Robine, par ailleurs chef du cabinet (25 mai 2011-10 mai 2012)</html:li>
+               <html:li>Grégory Canal, chargé de mission chargé des relations avec les élus (27 juin 2007-31 mai 2010), promu conseiller technique (relations avec les élus) (31 mai 2010-20 septembre 2010) puis chef-adjoint du cabinet (20 septembre 2010-10 mai 2012).</html:li>
+               <html:li>Céline Finon, conseillère technique relations avec l'Assemblée nationale et l'Assemblée parlementaire du conseil de l'Europe et de l'UEO (8 juin 2007-17 mai 2010) remplacée par Nicolas Bodilis-Reguer, relations avec l'Assemblée nationale et le Parlement européen (1er juin 2010-10 mai 2012)</html:li>
+               <html:li>Edgar Radelet, chargé de mission pour les relations avec l'Assemblée nationale et le Parlement (8 juin 2007-30 avril 2010), remplacé par Caroline Doucerain, conseillère technique Assemblée nationale (28 juin 2010-10 mai 2012)</html:li>
+               <html:li>Delphine Burgaud, conseillère technique pour les relations avec le Sénat et les associations d'élus (8 juin 2007-31 décembre 2009), remplacée par Aude Rothenburger-Giard (1er janvier 2010-10 mai 2012)</html:li>
+               <html:li>Eric Chomaudon, chargé de mission pour le Sénat (3 novembre 2008-31 mai 2010) puis conseiller technique Sénat (31 mai 2010-22 novembre 2010), remplacé par Isabelle Fenoy (22 novembre 2010-13 juillet 2011). Eric Chomaudon devient ensuite conseiller technique élus et affaires politiques (22 novembre 2010-10 mai 2012)</html:li>
+            </html:ul>
+            <html:p>
+               <html:b>Analyse</html:b>
+            </html:p>
+            <html:p>Vincent Chriqui, conseiller chargé de l’analyse (18 mai 2007-9 octobre 2007), nommé à cette date conseiller parlementaire.</html:p>
+            <html:p>
+               <html:b>Affaires réservées et stratégiques</html:b>
+            </html:p>
+            <html:ul>
+               <html:li>Emmanuel Mignot, conseiller technique affaires stratégiques (8 juin 2007-31 août 2009) remplacé par Fabien Fieschi (31 août 2009-avril 2012)</html:li>
+               <html:li>Pierre Molager, conseiller technique pour les affaires locales (18 mai 2007-10 juin 2009) remplacé par Romain Royet (18 juin 2009-15 octobre 2011), lui-même remplacé par Anne Faguer, affaires réservées (15 octobre 2011-10 mai 2012)</html:li>
+            </html:ul>
+            <html:p>
+               <html:b>Conseiller sans attribution</html:b>
+            </html:p>
+            <html:ul>
+               <html:li>Arno Klarsfeld, conseiller (20 juillet 2007-28 octobre 2010).</html:li>
+            </html:ul>
+         </html:div>
+      </rico:generalDescription>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Nommé Premier ministre par décret du 17 mai 2007, François Fillon, constitue immédiatement une première équipe de 32 membres, comprenant une part importante de collaborateurs rencontrés lors de ses fonctions ministérielles antérieures, et en premier lieu son directeur de cabinet, Jean-Paul Faugère , mais également Igor Mitrofanoff , Daniel-Georges Courtois (ancien chef de cabinet au ministère des Affaires sociales en mai 2002) ou Pierre Molager (ancien conseiller technique au même ministère, en juillet 2002). Il comprend aussi d’anciens membres d’autres cabinets ministériels, à l’image de son chef de cabinet Franck Robine .</html:p>
+            <html:p>Cette équipe initiale est étoffée et connait quelques modifications par les arrêtés des 8 et 27 juin 2007, les dernières nominations de conseiller chef de pôle intervenant à cette date (Gilles Briatta, sur la fonction de conseiller Europe). Elle marque un certain rajeunissement et une nette rupture avec les cabinets de Dominique de Villepin et Jean-Pierre Raffarin. En outre les origines professionnelles révèlent une part plus importante d’anciens élèves des grands écoles spécialisées (Mines, Polytechnique...), ayant souvent effectué un passage dans le secteur privé, et, sans en exagérer l’importance, un plus faible nombre d’énarques.</html:p>
+            <html:p>Le cabinet se structure en une quinzaine de pôles, outre les proches immédiats du Premier ministre, dont six conseillers ou chargés de mission. Il est marqué par une certaine souplesse, certains membres pouvant intervenir en fonction des circonstances sur des sujets hors de leur champ de compétence officielle .</html:p>
+            <html:p>Si des mouvements se déroulent alors au fil de l’eau, la composition du cabinet connaît plusieurs évolutions plus marquées, notamment</html:p>
+            <html:ul>
+               <html:li>fin août 2008 (avec le départ des conseillers Stéphane Bouillon, ancien conseiller technique au cabinet de Lionel Jospin, et Patrick Hetzel, et le remplacement du chef du Cabinet militaire),</html:li>
+               <html:li>en mars-avril 2009 (affectant les pôles développement durable, recherche et industrie et budget),</html:li>
+               <html:li>en juin-juillet 2009 (important mouvement de conseillers techniques et nomination de Corso Bavagnoli, conseiller pour les affaires économiques et financières),</html:li>
+               <html:li>en octobre 2009 (mouvement de conseillers techniques et départ de François Séners, conseiller auprès du Premier ministre),</html:li>
+               <html:li>et fin décembre 2009 (mouvement de conseillers techniques).</html:li>
+            </html:ul>
+            <html:p>Une nette accélération se produit en 2010 : départ de Vincent Chriqui, conseiller parlementaire en janvier, départ de Maryvonne Caillibotte conseillère pour la justice et important mouvement de conseiller techniques en février, remplacement d’Antoine Gosset-Grainville, directeur-adjoint du cabinet par Marie-Anne Barbat-Layani en avril, remplacement des conseillers pour l’éducation, pour le développement durable, la recherche et l'industrie et de conseillers techniques en juillet et en septembre.</html:p>
+            <html:p>Le 13 novembre 2010, François Fillon présente sa démission et est reconduit par le président de la République par décret du lendemain. L’arrêté du 15 novembre 2010 reconduit le cabinet sans changement important, si ce n’est le départ de Jean-Marc Monteil, chargé de mission auprès du Premier ministre.</html:p>
+            <html:p>L’année 2011 voit également se dérouler des mouvements, dont le remplacement de plusieurs conseillers au fur et à mesure. En revanche, les départs s’accélèrent dès janvier 2012, souvent sans remplacement, d’autres membres du cabinet assurant alors l’intérim des fonctions jusqu’au mois de mai 2012.</html:p>
+            <html:p>Les fonctions de François Fillon, Premier ministre, prennent fin le 10 mai 2012.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009723-053333-20120222-20120510"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/053333"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009723-053444-20070608-20091113"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/053444"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/000144-009723-20070517-20120510"/>
+      <rico:wasSubordinateTo rdf:resource="agent/000144"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/033039-009723"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-033039"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/033034-009723"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-033034"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/033033-009723"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-033033"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/055764-009723"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-055764"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/033083-009723"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-033083"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/033097-009723"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-033097"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/033095-009723"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-033095"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/033089-009723"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-033089"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/033077-009723"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-033077"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/033041-009723"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-033041"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054787-009723"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054787"/>
    </rico:Agent>
 </rdf:RDF>

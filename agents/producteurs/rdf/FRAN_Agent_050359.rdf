@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050359">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050359"/>
@@ -10,34 +18,33 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-06-03</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Vanessa ASPART)</rico:name>
+            <rico:name xml:lang="fr">Création (par Vanessa ASPART)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-06-03</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Elsa Camus, 30 mai 2016 : modification de la forme du nom, ajout n° ISNI, modification de l'historique (conjugaison des verbes), modification des sources, ajout des activités, ajout de lieu</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Elsa Camus, 30 mai 2016 : modification de la forme du nom, ajout n° ISNI, modification de l'historique (conjugaison des verbes), modification des sources, ajout des activités, ajout de lieu</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Archives nationales, Fonds Maurice Thorez et Jeannette Vermeersch (XXe siècle), 626 AP.</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/Maurice_Thorez</html:p>
-      </rico:source>
-      <rico:hasSource rdf:resource="https://fr.wikipedia.org/wiki/Maurice_Thorez"/>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="https://fr.wikipedia.org/wiki/Maurice_Thorez"/>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb119265828</html:p>
-      </rico:source>
-      <rico:hasSource rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb119265828"/>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121024608/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb119265828"/>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121024608"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050359">
-            <rico:isInstantiationOf rdf:resource="record/050359"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050359"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050359</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050359"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050359">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -55,111 +62,123 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1900-04-28</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1964-07-11</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050359"/>
-            <rico:placeRelationHasSource rdf:resource="place/FRAN_RI_005-d3ntxfg9m7--p938vq7ntyw9"/>
+            <rico:relationHasTarget rdf:resource="agent/050359"/>
+            <rico:relationHasSource rdf:resource="place/FRAN_RI_005-d3ntxfg9m7--p938vq7ntyw9"/>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1932-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1964-07-11</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Député d'Ivry-sur-Seine</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/FRAN_RI_005-d3ntxfg9m7--p938vq7ntyw9"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_005-d3ntxfg9m7--p938vq7ntyw9"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050359-d699msjoa3b--rixjtrrcp6f0-19460126-19470504">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050359"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050359-d699msjoa3b--rixjtrrcp6f0-19460126-19470504"/>
+            <rico:relationHasTarget rdf:resource="agent/050359"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d169913e120">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050359-d699msjoa3b--rixjtrrcp6f0-19460126-19470504"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjoa3b--rixjtrrcp6f0"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1946-01-26</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1947-05-04</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Vice-président du Conseil</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjoa3b--rixjtrrcp6f0"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjoa3b--rixjtrrcp6f0"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d169913e120"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050359-d699msjnw86-64seh0fmw8hj-19451121-19460126">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050359"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050359-d699msjnw86-64seh0fmw8hj-19451121-19460126"/>
+            <rico:relationHasTarget rdf:resource="agent/050359"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d169913e140">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050359-d699msjnw86-64seh0fmw8hj-19451121-19460126"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1945-11-21</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1946-01-26</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">ministre d'Etat</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d169913e140"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050359-d699msiribo--1dn34eg8lht4f-19320101-19640711">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050359"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050359-d699msiribo--1dn34eg8lht4f-19320101-19640711"/>
+            <rico:relationHasTarget rdf:resource="agent/050359"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d169913e160">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050359-d699msiribo--1dn34eg8lht4f-19320101-19640711"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1932-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1964-07-11</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Député d'Ivry sur Seine, député de la Seine (1945-1946), député à l'Assemblée nationale (1946-1965)</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d169913e160"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050359-d699msipbvu--al53jh9equfg-19270101-19640711">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050359"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050359-d699msipbvu--al53jh9equfg-19270101-19640711"/>
+            <rico:relationHasTarget rdf:resource="agent/050359"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d169913e180">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050359-d699msipbvu--al53jh9equfg-19270101-19640711"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msipbvu--al53jh9equfg"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1927-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1964-07-11</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Dirigeant du Parti Communiste Français</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msipbvu--al53jh9equfg"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msipbvu--al53jh9equfg"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d169913e180"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050359-d699msk3h6v--1a7obp35gqwv3-19190101-19640711">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050359"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050359-d699msk3h6v--1a7obp35gqwv3-19190101-19640711"/>
+            <rico:relationHasTarget rdf:resource="agent/050359"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d169913e200">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050359-d699msk3h6v--1a7obp35gqwv3-19190101-19640711"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msk3h6v--1a7obp35gqwv3"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1919-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1964-07-11</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Milite au S.F.I.O puis au Parti Communiste</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk3h6v--1a7obp35gqwv3"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk3h6v--1a7obp35gqwv3"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d169913e200"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050359-d699msjwc2y--1sprujko1h4ru-19130101-19201231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050359"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050359-d699msjwc2y--1sprujko1h4ru-19130101-19201231"/>
+            <rico:relationHasTarget rdf:resource="agent/050359"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d169913e221">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050359-d699msjwc2y--1sprujko1h4ru-19130101-19201231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjwc2y--1sprujko1h4ru"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1913-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1920-12-31</rico:endDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjwc2y--1sprujko1h4ru"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjwc2y--1sprujko1h4ru"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d169913e221"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Né en 1900 dans une famille de mineurs du Pas-de-Calais, Maurice Thorez travaille lui-même à la mine dès 1913. Militant à la Section française de l'Internationale ouvrière (S.F.I.O.), il opte pour les communistes lors du congrès de Tours de 1920 et occupe rapidement des postes importants, passant de la fonction de secrétaire de la fédération du Pas-de-Calais (1923) à celle de membre du bureau politique (1925).</html:p>
@@ -170,6 +189,9 @@
             <html:p>Maurice Thorez a écrit une autobiographie,<html:i>Fils du peuple</html:i>(1937), et<html:i>Une politique de grandeur française</html:i>(1949).</html:p>
          </html:div>
       </rico:history>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/050359-050360"/><rico:hasFamilyAssociationWith rdf:resource="agent/050360"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009220-050359-19331228-19640711"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/009220"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/050359-050360"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/050360"/>
    </rico:Agent>
 </rdf:RDF>

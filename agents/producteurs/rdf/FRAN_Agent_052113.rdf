@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052113">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052113"/>
@@ -11,29 +19,27 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-09-27</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Violaine CHALLEAT-FONCK)</rico:name>
+            <rico:name xml:lang="fr">Création (par Violaine CHALLEAT-FONCK)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-09-21</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Violaine CHALLEAT-FONCK)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Violaine CHALLEAT-FONCK)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-09-27</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 27 septembre 2018 : pas d'identifiant ISNI, pas de notice d'autorité BnF, pas de notice wikipédia</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 27 septembre 2018 : pas d'identifiant ISNI, pas de notice d'autorité BnF, pas de notice wikipédia</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052113">
-            <rico:isInstantiationOf rdf:resource="record/052113"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052113"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052113</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052113"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052113">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -49,28 +55,30 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-08-12</rico:beginningDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052113-d3nyug261d--1cyxwnocz7hzo">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052113"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052113-d3nyug261d--1cyxwnocz7hzo"/>
+            <rico:relationHasTarget rdf:resource="agent/052113"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d196593e99">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052113-d3nyug261d--1cyxwnocz7hzo"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyug261d--1cyxwnocz7hzo"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyug261d--1cyxwnocz7hzo"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d196593e99"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052113-d3nyui2p3z-1lwqvc8okclce">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052113"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052113-d3nyui2p3z-1lwqvc8okclce"/>
+            <rico:relationHasTarget rdf:resource="agent/052113"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d196593e105">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052113-d3nyui2p3z-1lwqvc8okclce"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyui2p3z-1lwqvc8okclce"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyui2p3z-1lwqvc8okclce"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d196593e105"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>La direction de l'accueil, de l'accompagnement des étrangers et de la nationalité (DAAEN) succède à la direction de l'accueil, de l'intégration et de la citoyenneté (DAIC) du secrétariat général à l'immigration et à l'intégration (SGII). Créée par le décret n°2013-728 du 12 août 2013, son organisation est précisée par l'arrêté du même jour portant organisation de la DGEF (art. 6) : elle comprend la sous-direction de l'accueil et de la prévention des discriminations ; la sous-direction de l'accès à la nationalité française (SDANF) ; le secrétariat de la commission interministérielle pour le logement des populations immigrées (CILPI).</html:p>
@@ -79,6 +87,7 @@
             <html:p>La DAAEN est chargée des questions concernant l’accueil des étrangers primo-arrivants ainsi que de celles relatives à l’égalité des chances et à la lutte contre les discriminations. Elle élabore et met en œuvre les règles en matière d’acquisition et de retrait de la nationalité française.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/052112-052113-20130812-*"/><rico:isOrWasSubordinateTo rdf:resource="agent/052112"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/052112-052113-20130812-*"/>
+      <rico:isDirectSubordinateTo rdf:resource="agent/052112"/>
    </rico:Agent>
 </rdf:RDF>

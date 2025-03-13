@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052286">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052286"/>
@@ -11,32 +19,30 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-08</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Magalie BONNET)</rico:name>
+            <rico:name xml:lang="fr">Création (par Magalie BONNET)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-05-27</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Solange BIDOU)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Solange BIDOU)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-08</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 03/07/2019 : ajout lien d'identité BnF, pas de notice wikipédia</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 03/07/2019 : ajout lien d'identité BnF, pas de notice wikipédia</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Beaumont-Maillet, Laure, Françoise Denoyelle et Dominique Versavel (dir.). La photographie humaniste, 1945-1968 : autour d'Izis, Boubat, Brassaï, Doisneau, Ronis… Paris : Bibliothèque nationale de France, 2006.</rico:source>
-      <rico:source xml:lang="fr">Identifiant ARK de la notice d'autorité BnF (http://catalogue.bnf.fr/ark:/12148/cb12086878p)</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000107877575/about"/>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Beaumont-Maillet, Laure, Françoise Denoyelle et Dominique Versavel (dir.). La photographie humaniste, 1945-1968 : autour d'Izis, Boubat, Brassaï, Doisneau, Ronis… Paris : Bibliothèque nationale de France, 2006.</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Identifiant ARK de la notice d'autorité BnF (http://catalogue.bnf.fr/ark:/12148/cb12086878p)</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000107877575"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052286">
-            <rico:isInstantiationOf rdf:resource="record/052286"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052286"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052286</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052286"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052286">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -54,49 +60,55 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1922-04-01</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-12-31</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052286"/>
-            <rico:placeRelationHasSource rdf:resource="place/Aix-en-Provence"/>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:relationHasTarget rdf:resource="agent/052286"/>
+            <rico:relationHasSource rdf:resource="place/Aix-en-Provence"/>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Lieu de naissance de Patrice Molinard</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Aix-en-Provence"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Aix-en-Provence"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052286-d699msj6ko3-txrlhfhic7fv">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052286"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052286-d699msj6ko3-txrlhfhic7fv"/>
+            <rico:relationHasTarget rdf:resource="agent/052286"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d199359e124">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052286-d699msj6ko3-txrlhfhic7fv"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj6ko3-txrlhfhic7fv"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj6ko3-txrlhfhic7fv"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj6ko3-txrlhfhic7fv"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d199359e124"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052286-d699msjc4qa-1rm5osxqzj5v1">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052286"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052286-d699msjc4qa-1rm5osxqzj5v1"/>
+            <rico:relationHasTarget rdf:resource="agent/052286"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d199359e130">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052286-d699msjc4qa-1rm5osxqzj5v1"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjc4qa-1rm5osxqzj5v1"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjc4qa-1rm5osxqzj5v1"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjc4qa-1rm5osxqzj5v1"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d199359e130"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Très attiré par le dessin dans sa jeunesse, Patrice Molinard pense se diriger dans cette voie. De ses études techniques pour devenir ingénieur des Arts et Métiers, il conserve le goût pour le dessin industriel, les formes, les volumes, le graphisme. Ayant reçu le premier prix à un concours de photographie d’amateurs organisé par le ministère de l’Information, il passe cette période à effectuer des reportages sur la jeunesse française et décide, lors de son retour à la vie civile, de faire de la photographie son métier. Il entre au service photographique des Musées nationaux, puis travaille pour les Monuments historiques et le Commissariat général au tourisme. Il publie en tant qu’illustrateur plus de cinquante ouvrages. À partir de 1954, il travaille exclusivement pour la publicité.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/007096-052286-19590101-19741231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/007096"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005228-052286-19220401-20021231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/005228"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/007096-052286-19590101-19741231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/007096"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/005228-052286-19220401-20021231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/005228"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb12086878p#about"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057888-A426-052286"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/057888-A426"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057888-052286"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-057888"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/057888-A426-052286"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/057888-A426"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/057888-052286"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-057888"/>
    </rico:Agent>
 </rdf:RDF>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052317">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052317"/>
@@ -11,33 +19,31 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-15</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Cécile FABRIS)</rico:name>
+            <rico:name xml:lang="fr">Création (par Cécile FABRIS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-09</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Cécile FABRIS)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Cécile FABRIS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-15</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 11/07/2019 : modification forme autorisée du nom (ajout dates), suppression indexation fonction, ajout lien d'identité BnF et wikipédia, suppression indexation fonction, ajout relation chronologique a pour prédécesseur Albert Grenier (NP 52320), ajout relation d'association NP 3778 EPHE</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 11/07/2019 : modification forme autorisée du nom (ajout dates), suppression indexation fonction, ajout lien d'identité BnF et wikipédia, suppression indexation fonction, ajout relation chronologique a pour prédécesseur Albert Grenier (NP 52320), ajout relation d'association NP 3778 EPHE</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Notice Wikipédia (https://fr.wikipedia.org/wiki/Paul-Marie_Duval)</rico:source>
-      <rico:source xml:lang="fr">Notice BNF (https://data.bnf.fr/fr/11901471/paul-marie_duval/)</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000112403059/about"/>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice Wikipédia (https://fr.wikipedia.org/wiki/Paul-Marie_Duval)</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice BNF (https://data.bnf.fr/fr/11901471/paul-marie_duval/)</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000112403059"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Paul-Marie_Duval"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052317">
-            <rico:isInstantiationOf rdf:resource="record/052317"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052317"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052317</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052317"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052317">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -55,17 +61,19 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1912-08-06</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1997-01-14</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052317-d699msj02xm-19qbb7wdtto3j">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052317"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052317-d699msj02xm-19qbb7wdtto3j"/>
+            <rico:relationHasTarget rdf:resource="agent/052317"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d199979e105">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052317-d699msj02xm-19qbb7wdtto3j"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d199979e105"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Paul-Marie Duval entre à l’École normale supérieure en 1934 après des études au Lycée Louis-le-Grand. Il passe l'agrégation d'histoire et de géographie en 1939. Il enseigne alors au lycée Claude-Bernard à Paris puis est nommé pour ordre membre de l’École française de Rome (alors fermée) entre 1942 et 1944.</html:p>
@@ -73,12 +81,15 @@
             <html:p>En 1971, il entre à l'Institut, comme membre de l'Académie des inscriptions et belles-lettres puis en devient le président en 1983. Paul-Marie Duval, tout comme Albert Grenier auparavant, participe activement à l'organisation de l'archéologie nationale. Ainsi, il convainc André Malraux, ministre de la Culture, de créer le Conseil supérieur de la recherche archéologique, dont il assure la présidence entre 1971 et 1978. Considérant la publication comme une activité capitale, il développe et enrichit la revue "Gallia" durant 25 ans. Son œuvre dans les domaines de l'histoire et de l'archéologie de la Gaule et du monde celtique est considérable. Sa bibliographie compte, en effet, plus de 250 références d'ouvrages et d'articles. Après sa mort, le 14 janvier 1997, la famille de Paul-Marie Duval décide de faire don de sa bibliothèque et de ses archives à la Bibliothèque d'Art et d'Archéologie Jacques Doucet (Institut national d'histoire de l'art).</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/052261-052317-19961209-19970114"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/052261"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/052261-052317-19961209-19970114"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/052261"/>
       <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Paul-Marie_Duval"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb11901471q#about"/>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/052320-052317-19460101-*"/><rico:isSuccessorOf rdf:resource="agent/052320"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/003774-052317-19460101-19801231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/003774"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/058224-052317"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-058224"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/052320-052317-19460101-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/052320"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/003774-052317-19460101-19801231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/003774"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/058224-052317"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-058224"/>
    </rico:Agent>
 </rdf:RDF>

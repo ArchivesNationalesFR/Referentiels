@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052888">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052888"/>
@@ -11,32 +19,30 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-03-04</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Magalie BONNET)</rico:name>
+            <rico:name xml:lang="fr">Création (par Magalie BONNET)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-29</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Solange BIDOU)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Solange BIDOU)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-03-04</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Rapport d'information n° 42 (2003-2004) de Mme Marie-Claude BEAUDEAU, fait au nom de la commission des finances, déposé le 23 octobre 2003 (https://www.senat.fr/rap/r03-042/r03-042_mono.html)</rico:source>
-      <rico:source xml:lang="fr">Legifrance (https://www.legifrance.gouv.fr/)</rico:source>
-      <rico:source xml:lang="fr">Bottins administratifs (1994-2005)</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121694804/about"/>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Rapport d'information n° 42 (2003-2004) de Mme Marie-Claude BEAUDEAU, fait au nom de la commission des finances, déposé le 23 octobre 2003 (https://www.senat.fr/rap/r03-042/r03-042_mono.html)</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Legifrance (https://www.legifrance.gouv.fr/)</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Bottins administratifs (1994-2005)</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121694804"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052888">
-            <rico:isInstantiationOf rdf:resource="record/052888"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052888"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052888</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052888"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052888">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -73,61 +79,59 @@
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-03-16</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-01-24</rico:endDate>
       <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5bloo2d8n--lnot744delnh"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052888-d3nyugsjkt--7vpbe5hqjvzi">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052888"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052888-d3nyugsjkt--7vpbe5hqjvzi"/>
+            <rico:relationHasTarget rdf:resource="agent/052888"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d208513e151">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052888-d3nyugsjkt--7vpbe5hqjvzi"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugsjkt--7vpbe5hqjvzi"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugsjkt--7vpbe5hqjvzi"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d208513e151"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052888-d5bhviklf7-e9hkyea32yl1">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052888"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052888-d5bhviklf7-e9hkyea32yl1"/>
+            <rico:relationHasTarget rdf:resource="agent/052888"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d208513e157">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052888-d5bhviklf7-e9hkyea32yl1"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviklf7-e9hkyea32yl1"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviklf7-e9hkyea32yl1"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d208513e157"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052888"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052888"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d208513e166">
                   <rico:title>Arrêté du 16 mars 1993 portant approbation de la convention constitutive d'un groupement d'intérêt public</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000346919"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 16 mars 1993 portant approbation de la convention constitutive d'un groupement d'intérêt public</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000346919"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d208513e166"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052888"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052888"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d208513e172">
                   <rico:title>Arrêté du 24 janvier 2005 approuvant le renouvellement et les modifications de la convention constitutive d'un groupement d'intérêt public (ODIT-France)</rico:title>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 24 janvier 2005 approuvant le renouvellement et les modifications de la convention constitutive d'un groupement d'intérêt public (ODIT-France)</rico:title>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d208513e172"/>
+      <rico:generalDescription rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Organisation interne ou généalogie</h4>
             <html:p>À sa création, au 17 mars 1993, l'AFIT comprend 24 membres.</html:p>
             <html:p>Son assemblée générale est composée de l'ensemble des membres du groupement et présidée par le ministre chargé du tourisme en exercice.</html:p>
             <html:p>Son conseil d'administration est composé de 25 membres, dont 13 représentants de l'État et 12 représentants des autres partenaires (entreprises privées, fédérations nationales et établissements publics). Ses actions sont mises en œuvre par une équipe d'environ 45 collaborateurs regroupés à son siège et en liaison avec le service d'études et d'aménagement touristique de la montagne implantés à Chambéry, Gap et Toulouse.</html:p>
-            <html:p/>
             <html:p>Liste des présidents du conseil d'administration de l'AFIT :</html:p>
             <html:ul>
                <html:li>Antoine Veil (1993-1995).</html:li>
@@ -137,15 +141,12 @@
                <html:li>Michel Becot (2002-2005).</html:li>
             </html:ul>
          </html:div>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>L'Agence française de l'ingénierie touristique est un groupement d'intérêt public (GIP) issu du regroupement de plusieurs services de la direction du tourisme. L'AFIT est créée en mars 1993, en vue de se substituer à la délégation aux investissements et aux produits touristiques (DIP), créée par le décret du 30 août 1989 relatif à l'organisation de l'administration centrale du tourisme, afin de "<html:i>favoriser le développement et l'adaptation des équipements et des produits touristiques</html:i>".</html:p>
-            <html:p/>
             <html:p>La convention constitutive de l'AFIT est approuvée le 16 mars 1993 par arrêté du ministre de l'Économie et des Finances, du ministre du Budget et du ministre délégué au Tourisme. Elle prévoit la constitution du GIP pour une durée de six ans. À l'issue d'une première période de six ans, elle est renouvelée à compter du 16 mars 1999, à nouveau pour une durée de six ans. En 2005, l'AFIT fusionne avec l'Observatoire national du tourisme (ONT) et le Service d'études et d'aménagement touristique de la montagne (SEATM) pour former le GIP Observation, développement et ingénierie touristiques "ODIT France". Ce groupement se substitue à ces différentes organisations à compter du 1er janvier 2005 ; consacré par un arrêté interministériel du 24 janvier 2005.</html:p>
-            <html:p/>
             <html:p>L'AFIT remplit une mission d'ingénierie, ayant pour objet "<html:i>le soutien à l’adaptation de l’offre touristique, l’étude des financements des investissements ; en liaison avec les organismes compétents, il conduit des actions à l’étranger en faveur de l’ingénierie touristique française</html:i>".</html:p>
-            <html:p/>
             <html:p>Afin de remplir cette mission, l'AFIT :</html:p>
             <html:ul>
                <html:li>réalise des études générales et des diagnostics sur l'adéquation entre l'état de l'offre et celui de la demande économique et sociale, procède à des évaluations et propose des préconisations en cohérence avec les politiques publiques ;</html:li>
@@ -155,19 +156,21 @@
                <html:li>étudie les mécanismes de financement de l'offre touristique et propose des schémas de financement susceptibles de faciliter le développement et d'en améliorer la qualité. Elle peut apporter son expertise à ses membres dans la programmation de leurs interventions financières ;</html:li>
                <html:li>peut préparer des rapports techniques à la demande de tout organisme ou entreprise concourant au développement du tourisme français, adhérent ou non.</html:li>
             </html:ul>
-            <html:p/>
             <html:p>En outre, la convention précise que l'AFIT doit apporter son concours aux administrations ou établissements spécialisés en matière d'export et de savoir-faire et d'investissements.</html:p>
          </html:div>
       </rico:history>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb12402093f#about"/>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/007190-052888-19930316-*"/><rico:isSuccessorOf rdf:resource="agent/007190"/>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/052351-052888-19930316-20050124"/><rico:isOrWasSubordinateTo rdf:resource="agent/052351"/>
-      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/052888-007224-20050101-*"/><rico:hasSuccessor rdf:resource="agent/007224"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/018418-052888"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-018418"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/018617-052888"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-018617"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/022744-052888"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-022744"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/007190-052888-19930316-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/007190"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/052351-052888-19930316-20050124"/>
+      <rico:wasSubordinateTo rdf:resource="agent/052351"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentTemporalRelation/052888-007224-20050101-*"/>
+      <rico:hasSuccessor rdf:resource="agent/007224"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/018418-052888"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-018418"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/018617-052888"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-018617"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/022744-052888"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-022744"/>
    </rico:Agent>
 </rdf:RDF>

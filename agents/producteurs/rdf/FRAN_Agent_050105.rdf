@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050105">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050105"/>
@@ -8,32 +16,49 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-08-13</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-07-12</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Raphael BAUMARD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Raphael BAUMARD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-08-13</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Véronique AUBER)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-11-16</rico:date>
+            <rico:generalDescription xml:lang="fr">pas de notice wikipédia, pas de notice d'autorité BnF, pas d'ISNI</rico:generalDescription>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-07-12</rico:date>
+            <rico:generalDescription xml:lang="fr">12/07/2023, J. Gaillard : Normalisation de la forme autorisée du nom</rico:generalDescription>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Site internet "Patrons de France" : http://www.patronsdefrance.fr/?q=sippaf-actor-record/22676&amp;qt-sippaf_info_actr_tabs=1 (consulté en novembre 2022).</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Fonds Jacques et Jules Hubert (339 AP)</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Revue de la métallurgie, n°2, février 1936, p. 140-141 : http://clio.ish-lyon.cnrs.fr/patrons/AC000008277/AC000008277Doc1569.pdf</rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050105">
-            <rico:isInstantiationOf rdf:resource="record/050105"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050105"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050105</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050105"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050105">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/050105"/>
-      <rdfs:label xml:lang="fr">Hubert, Jules</rdfs:label>
+      <rdfs:label xml:lang="fr">Hubert, Jules (1843-1935)</rdfs:label>
       <rico:hasOrHadAgentName>
-         <rico:AgentName rdf:about="agentName/050105-Hubert%2C%20Jules">
-            <rdfs:label xml:lang="fr">Hubert, Jules</rdfs:label>
-            <rico:textualValue xml:lang="fr">Hubert, Jules</rico:textualValue>
+         <rico:AgentName rdf:about="agentName/050105-Hubert%2C%20Jules%20%281843-1935%29">
+            <rdfs:label xml:lang="fr">Hubert, Jules (1843-1935)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Hubert, Jules (1843-1935)</rico:textualValue>
             <rico:isOrWasAgentNameOf rdf:resource="agent/050105"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl002"/>
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
@@ -41,10 +66,41 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1843-01-01</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1935-12-31</rico:deathDate>
+      <rico:thingIsTargetOfRelation>
+         <rico:PlaceRelation>
+            <rico:relationHasTarget rdf:resource="agent/050105"/>
+            <rico:relationHasSource rdf:resource="place/Imphy"/>
+         </rico:PlaceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadLocation rdf:resource="place/Imphy"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PlaceRelation>
+            <rico:relationHasTarget rdf:resource="agent/050105"/>
+            <rico:relationHasSource rdf:resource="place/Vincennes"/>
+         </rico:PlaceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadLocation rdf:resource="place/Vincennes"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/050105-d699msjj72d-1dedn4099xfyy">
+            <rico:relationHasTarget rdf:resource="agent/050105"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d166307e145">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050105-d699msjj72d-1dedn4099xfyy"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjj72d-1dedn4099xfyy"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjj72d-1dedn4099xfyy"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d166307e145"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
-            <html:p>Co-gérant des Usines Dalifol, entreprise de forges, fonderies et aciers, directeur administratif puis directeur de la société des Agrafes françaises, Jules Hubert (1843-1935) fut l’un des promoteurs du procédé sidérurgique « Bessemer ». Jules Hubert fut également administrateur de la compagnie française du « Bi-Métal », de 1893 à 1926.</html:p>
+            <html:p>Né en 1843, Jules Hubert fait un stage de trois ans au laboratoire de chimie du Muséum de Paris, où il se forme aux analyses des fontes et des aciers avant d'être recruté par son professeur (Frémy) pour réaliser les installations du procédé Bessemer (procédé permettant d'affiner la fonte en acier) à Imphy, dans la Nièvre. C'est là en effet que la Société d'Imphy-Saint-Seurin, créée en 1863 par William Jackson, a construit deux gros convertisseurs Bessemer. Jules Hubert fait son apprentissage pendant un an à l'usine de Saint-Seurin sous la direction de Jackson, puis, au bout d'un an, se voit confier l'installation d'Imphy. En décembre 1863, J. Hubert élabore la première coulée d'acier Bessemer fondue à Imphy. En 1870, il est nommé directeur des usines Dalifol à Paris, spécialisées dans la coulée de fonte malléable, où il devient associé en 1880. En 1891, il est nommé directeur administratif de la Société des « Agrafes Françaises », puis, en 1893, administrateur de la Compagnie Française du « Bi-Métal », où il reste jusqu'en 1926. Il décède en 1935 à Vincennes.</html:p>
          </html:div>
       </rico:history>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/050105-050106"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/050106"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/060010-050105"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-060010"/>
    </rico:Agent>
 </rdf:RDF>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050366">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050366"/>
@@ -10,25 +18,24 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-07-04</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Vanessa ASPART)</rico:name>
+            <rico:name xml:lang="fr">Création (par Vanessa ASPART)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-07-04</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Elsa Camus, 4 juillet 2016 : modification forme autorisée du nom, ajout autres formes du nom, modification historique (verbes), ajout activités</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Elsa Camus, 4 juillet 2016 : modification forme autorisée du nom, ajout autres formes du nom, modification historique (verbes), ajout activités</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Archives nationales, Fonds Heureudé, 632 AP.</html:p>
-      </rico:source>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050366">
-            <rico:isInstantiationOf rdf:resource="record/050366"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050366"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050366</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050366"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050366">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -52,60 +59,68 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1893-05-18</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-12-31</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050366-d699msjgtw3-1ton3i1q2op31">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050366"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050366-d699msjgtw3-1ton3i1q2op31"/>
+            <rico:relationHasTarget rdf:resource="agent/050366"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d169967e94">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050366-d699msjgtw3-1ton3i1q2op31"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjgtw3-1ton3i1q2op31"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjgtw3-1ton3i1q2op31"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjgtw3-1ton3i1q2op31"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d169967e94"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050366-d699msixdvh--wgctct8soc1y">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050366"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050366-d699msixdvh--wgctct8soc1y"/>
+            <rico:relationHasTarget rdf:resource="agent/050366"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d169967e100">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050366-d699msixdvh--wgctct8soc1y"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Chef de cabinet ministériel</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d169967e100"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050366-d3nyu9xige-1dbbvsqzr0tfp">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050366"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050366-d3nyu9xige-1dbbvsqzr0tfp"/>
+            <rico:relationHasTarget rdf:resource="agent/050366"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d169967e111">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050366-d3nyu9xige-1dbbvsqzr0tfp"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3nyu9xige-1dbbvsqzr0tfp"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3nyu9xige-1dbbvsqzr0tfp"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3nyu9xige-1dbbvsqzr0tfp"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d169967e111"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050366-d699msj9z2z-1l1dmark2fa5i">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050366"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050366-d699msj9z2z-1l1dmark2fa5i"/>
+            <rico:relationHasTarget rdf:resource="agent/050366"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d169967e117">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050366-d699msj9z2z-1l1dmark2fa5i"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj9z2z-1l1dmark2fa5i"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj9z2z-1l1dmark2fa5i"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj9z2z-1l1dmark2fa5i"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d169967e117"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Né à Coudras (Gironde) le 18 mai 1893, Jean René Heureudé est agent technique (1912) puis ingénieur (1915) au service vicinal de Dordogne. Attaché au cabinet du ministre de l'instruction publique (1926), il devient chef du secrétariat particulier du ministre Camille Chautemps. Sous-préfet de Montmorillon (1928), de Saint-Jean de Maurienne (1929), de Rochechouart (1931), rattaché à la préfecture de Seine-et-Oise (1932), Jean René Heureudé devient successivement chef de cabinet du ministre de l'Agriculture, de la Justice, du Budget (A. Gardey, son beau-frère). Secrétaire général de l'Eure (1934), des Basses-Pyrénées (1935), il est ensuite préfet des Hautes-Alpes (1938), de la Creuse (1939) et du Lot-et-Garonne (septembre 1940).</html:p>
             <html:p>Il est admis à la retraite en mai 1941.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057554-050366"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-057554"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/057554-050366"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-057554"/>
    </rico:Agent>
 </rdf:RDF>

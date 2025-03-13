@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052868">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052868"/>
@@ -11,30 +19,28 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-22</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Sophie HENNET)</rico:name>
+            <rico:name xml:lang="fr">Création (par Sophie HENNET)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-11</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Solange BIDOU)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Solange BIDOU)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-22</rico:date>
-            <rico:descriptiveNote xml:lang="fr">21/02/2022, J. Gaillard : Ajout lien d'identité vers la notice de la BnF | Ajout de fonctions</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">21/02/2022, J. Gaillard : Ajout lien d'identité vers la notice de la BnF | Ajout de fonctions</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121945351/about"/>
-      <rico:hasInstantiation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121945351"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052868">
-            <rico:isInstantiationOf rdf:resource="record/052868"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052868"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052868</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052868"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052868">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -53,52 +59,52 @@
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1965-07-06</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1968-03-05</rico:endDate>
       <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5blonaxbw--1mt8t42bokzts"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052868-d5bhvikz03--iqa08pprge9n">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052868"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052868-d5bhvikz03--iqa08pprge9n"/>
+            <rico:relationHasTarget rdf:resource="agent/052868"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d208219e101">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052868-d5bhvikz03--iqa08pprge9n"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvikz03--iqa08pprge9n"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvikz03--iqa08pprge9n"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d208219e101"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052868-d-9mj3jm8ph-kc1jkjrnt3uj">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052868"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052868-d-9mj3jm8ph-kc1jkjrnt3uj"/>
+            <rico:relationHasTarget rdf:resource="agent/052868"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d208219e107">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052868-d-9mj3jm8ph-kc1jkjrnt3uj"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d-9mj3jm8ph-kc1jkjrnt3uj"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d-9mj3jm8ph-kc1jkjrnt3uj"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d208219e107"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052868"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052868"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d208219e116">
                   <rico:title>Décret n°65-537 du 6 juillet 1965 portant réorganisation du ministère de l’agriculture (JORF du 7 juillet 1965 p. 5782) </rico:title>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Décret n°65-537 du 6 juillet 1965 portant réorganisation du ministère de l’agriculture (JORF du 7 juillet 1965 p. 5782) </rico:title>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d208219e116"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052868"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052868"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d208219e121">
                   <rico:title>Décret n° 68-216 du 6 mars 1968 portant réorganisation du ministère de l'Agriculture (JORF du 7 mars 1968, p. 2447)</rico:title>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Décret n° 68-216 du 6 mars 1968 portant réorganisation du ministère de l'Agriculture (JORF du 7 mars 1968, p. 2447)</rico:title>
-               </rico:Mandate></rico:authorizedBy>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d208219e121"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>La réforme de l'administration centrale de 1965 est menée par le ministre Edgar Pisani autour d'un programme résumé en trois points : l'homme, le produit, l'espace. Elle crée quatre directions générales au sein du ministère de l'Agriculture : direction générale des études et des affaires générales, direction générale de la production et des marchés, direction générale de l’enseignement et des affaires professionnelles et sociales, et enfin la direction générale de l’espace rural.</html:p>
@@ -107,6 +113,9 @@
          </html:div>
       </rico:history>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb10123220n#about"/>
-      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000004-052868-19650706-19680305"/><rico:isOrwasSubdivisionOf rdf:resource="agent/000004"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/052868-008642-19650706-19680305"/>
+      <rico:hadSubdivision rdf:resource="agent/008642"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/000004-052868-19650706-19680305"/>
+      <rico:wasSubdivisionOf rdf:resource="agent/000004"/>
    </rico:Agent>
 </rdf:RDF>

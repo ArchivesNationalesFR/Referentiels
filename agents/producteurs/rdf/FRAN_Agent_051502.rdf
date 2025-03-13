@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051502">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051502"/>
@@ -11,30 +19,28 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-03</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:name xml:lang="fr">Création (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-03</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-03</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 3 mai 2017 : création sur demande de la mission des archives auprès des services du Premier ministre. Ajout sources, lien d'association, indexation fonctions</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 3 mai 2017 : création sur demande de la mission des archives auprès des services du Premier ministre. Ajout sources, lien d'association, indexation fonctions</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Site internet du CIREM : http://www.cepii.fr/cirem/</rico:source>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Site internet du CIREM : http://www.cepii.fr/cirem/</rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051502">
-            <rico:isInstantiationOf rdf:resource="record/051502"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051502"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051502</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051502"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051502">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -66,45 +72,45 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1981-11-13</rico:beginningDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051502-d5bhviluwl--h5xbasqtef53">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051502"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051502-d5bhviluwl--h5xbasqtef53"/>
+            <rico:relationHasTarget rdf:resource="agent/051502"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d186286e124">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051502-d5bhviluwl--h5xbasqtef53"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviluwl--h5xbasqtef53"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">économie mondiale</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviluwl--h5xbasqtef53"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d186286e124"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051502-d3nyuhp1um--qolq4osvi6b5">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051502"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051502-d3nyuhp1um--qolq4osvi6b5"/>
+            <rico:relationHasTarget rdf:resource="agent/051502"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d186286e135">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051502-d3nyuhp1um--qolq4osvi6b5"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhp1um--qolq4osvi6b5"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhp1um--qolq4osvi6b5"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d186286e135"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Le 13 novembre 1981 naît un club d’entreprises nommé CIREM (Club d’information et de réflexion sur l’économie mondiale). Il rassemble une vingtaine de membres issus des grandes entreprises, des banques, des chambres syndicales, des chambres de commerce ou encore d’organismes publics.</html:p>
-            <html:p/>
             <html:p>Cette association loi 1901, à but non lucratif, vise à développer les liens entre la recherche du Centre d’études prospectives et d’informations internationales (CEPII) et le monde de l’économie : d’une part, en organisant des événements autour de thèmes d’actualité, à partir des travaux du Centre ; d’autre part, en gérant des conventions d’études entre le CEPII et des adhérents du club ou des organisations internationales.</html:p>
-            <html:p/>
             <html:p>Devant la montée en puissance de cette deuxième activité, il est décidé en 2001 de scinder le CIREM en deux associations distinctes : le Club du CEPII reprend l’activité « club » (organisation de réunions et de conférences pour ses adhérents), tandis que le CIREM se concentre sur la gestion des conventions d’étude et l’insertion du CEPII dans les réseaux de recherche internationaux. Le CIREM est alors renommé Centre d’information et de recherche sur l’économie mondiale (CIREM).</html:p>
-            <html:p/>
             <html:p>Le CIREM aide le CEPII à répondre aux demandes d’études qui lui sont adressées par les entreprises et les organisations internationales. Son activité donne lieu à la publication, par le CEPII, de documents de travail, rapports d’études et bases de données. Sa contribution a, en particulier, été décisive pour le développement de certains modèles du CEPII (MIRAGE et INGENUE) et pour la mise au point de bases de données.</html:p>
-            <html:p/>
             <html:p>De 1981 à 2001, le CIREM a été successivement présidé par Yves Berthelot, directeur du CEPII (1981-1985), Christian Beullac, ancien ministre de l’Education (1985-1987), Henri Martre, président de l’Aérospatiale (1987-1998) et François David, président de la Coface (1998-2001). Depuis 2002, Francis Ailhaud, ancien directeur général de Groupama AM, assure la présidence du CIREM.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051502-051503-20010404-*"/><rico:hasSuccessor rdf:resource="agent/051503"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000272-051502-19811113-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000272"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentTemporalRelation/051502-051503-20010404-*"/>
+      <rico:hasSuccessor rdf:resource="agent/051503"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000272-051502-19811113-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000272"/>
    </rico:Agent>
 </rdf:RDF>
