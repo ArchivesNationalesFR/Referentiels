@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051302">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051302"/>
@@ -8,24 +16,37 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-09-05</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-03-10</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Martine SIN BLIMA-BARRU)</rico:name>
+            <rico:name xml:lang="fr">Création (par Martine SIN BLIMA-BARRU)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-09-05</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Elsa Camus, 5 septembre 2016 : modification forme autorisée du nom, ajout autres formes du nom, ajout liens, modification historique (conjugaison)</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Elsa Camus, 5 septembre 2016 : modification forme autorisée du nom, ajout autres formes du nom, ajout liens, modification historique (conjugaison)</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-02-24</rico:date>
+            <rico:generalDescription xml:lang="fr">24/02/2023, J. Gaillard : Suppression lien hiérar asc vers NP8 | Création lien hiérar asc vers NP9203 | Suppression lien d'association avec NP9203</rico:generalDescription>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Administration.referentiels ADMINISTRATION RÉFÉRENTIELS DOC)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-03-10</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051302">
-            <rico:isInstantiationOf rdf:resource="record/051302"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051302"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051302</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051302"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051302">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -55,6 +76,7 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2004-10-08</rico:beginningDate>
+      <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5blom9zjl-l45jh5o3uznu"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Le ministère de l’Intérieur et de l’Aménagement du territoire se dote d’un comité d’orientation et de sélection des archives orales des préfets le 8 octobre 2004. Ce comité est instauré à la suite d’un rapport rendu par le sous-préfet Jean Fuerxer, chargé par le Directeur de la modernisation et de l’action territoriale, M. Comet, d’une étude sur la réalisation d’une campagne d’archives orales au sein du ministère de l’Intérieur.</html:p>
@@ -66,7 +88,9 @@
             <html:p>L'Association du corps préfectoral et des hauts fonctionnaire auprès du ministère de l'Intérieur assure le suivi des versements de ces campagnes.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000008-051302-20041008-*"/><rico:isOrWasSubordinateTo rdf:resource="agent/000008"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009203-051302-20041008-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/009203"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/009203-051302-20041008-*"/>
+      <rico:isDirectSubordinateTo rdf:resource="agent/009203"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/023838-051302"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-023838"/>
    </rico:Agent>
 </rdf:RDF>

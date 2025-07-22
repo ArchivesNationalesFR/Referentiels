@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052159">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052159"/>
@@ -11,31 +19,29 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-12-20</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Constance DE VERGNETTE DE LAMOTTE)</rico:name>
+            <rico:name xml:lang="fr">Création (par Constance DE VERGNETTE DE LAMOTTE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-12-18</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Il n'existe ni numéro ISNI, ni notice BnF, ni notice Wikipedia. Création de la notice le 18/12/2018.</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Il n'existe ni numéro ISNI, ni notice BnF, ni notice Wikipedia. Création de la notice le 18/12/2018.</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Pauline CHARBONNIER)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Pauline CHARBONNIER)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-12-20</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Voir le site consacré à Renée Théobald : (www.theobald-art.com)</rico:source>
-      <rico:source xml:lang="fr">Archives nationales, fonds Renée Théobald : 788AP.</rico:source>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Voir le site consacré à Renée Théobald : (www.theobald-art.com)</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Archives nationales, fonds Renée Théobald : 788AP.</rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052159">
-            <rico:isInstantiationOf rdf:resource="record/052159"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052159"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052159</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052159"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052159">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -52,29 +58,30 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1926-03-07</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-07-30</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052159"/>
-            <rico:placeRelationHasSource rdf:resource="place/Paris"/>
+            <rico:relationHasTarget rdf:resource="agent/052159"/>
+            <rico:relationHasSource rdf:resource="place/Paris"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Paris"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Paris"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052159-d699msit6xq-1e7tbhtd3o7v6">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052159"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052159-d699msit6xq-1e7tbhtd3o7v6"/>
+            <rico:relationHasTarget rdf:resource="agent/052159"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d197485e116">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052159-d699msit6xq-1e7tbhtd3o7v6"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msit6xq-1e7tbhtd3o7v6"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msit6xq-1e7tbhtd3o7v6"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msit6xq-1e7tbhtd3o7v6"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d197485e116"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Renée Théobald, née le 7 mars 1926 à Paris, est une artiste-peintre française de l’Ecole de Paris qui signait sa peinture « Théobald ». Elle est morte à Paris le 30 juillet 2014, à 88 ans.</html:p>
             <html:p>Renée Théobald est parisienne. Sa mère, Florentine Durr, née aussi à Paris, lui transmet ses origines alsaciennes, son amour de la France, sa joie de vivre et ses convictions féministes. Son père, Michel Théobald, né en Lorraine, professeur agrégé d'allemand, enseignant au lycée Chaptal à Paris, lui donne son sens du travail et son goût des langues. Après ses études au lycée Lamartine, Renée Théobald est admise au concours de l'Ecole nationale supérieure des Beaux-Arts de Paris en 1946. Elle suit aussi les cours de l'Ecole nationale supérieure des arts décoratifs. L’année suivante, elle épouse Bernard Dubois de Montreynaud et ils auront cinq enfants. Elle mène de front une vie d’épouse, de mère de famille et d’artiste-peintre, figurative, paysagiste, avec des expositions en France, en Europe, au Japon et surtout aux Etats-Unis pendant plus de cinquante ans. Renée Théobald est la mère de l’écrivaine Florence Montreynaud et la grand-mère de l’historienne Raphaëlle Branche.</html:p>
-            <html:p/>
             <html:p>
                <html:u>Premières expositions et récompenses</html:u>
             </html:p>
@@ -82,14 +89,12 @@
             <html:p>Gauchère contrariée, Renée Théobald dessine de la main droite mais peint de la main gauche. Elle signe de son seul nom, sans prénom, pour ne pas être considérée comme une « femme-peintre » sur qui pèsent les a priori condescendants de l'époque, mais comme peintre à part entière. D’ailleurs, quand la critique analyse sa peinture à l’huile, au couteau, elle met en avant sa « spatule vigoureuse », sa « pâte savoureuse », sa « touche virile et sûre » d'après Jean Bardiot, la « puissance de ses paysages ». Que ce soit dans ses gouaches, ses peintures à l’huile et plus tard ses lithographies, Théobald est d'abord coloriste.</html:p>
             <html:p>Elle obtient le 1er prix de paysage au Concours international de Deauville en 1953, une Bourse de voyage de la Ville de Paris en 1956, et le 1er prix de composition au Grand Prix international de peinture de Cannes en 1957. Elle est récompensée en 1962 par le 1er prix de la Société des amateurs d’art et collectionneurs, qui lui vaut la couverture de<html:i>L’Amateur d’art</html:i>. En 1967, elle reçoit la médaille de vermeil des Arts-Sciences-Lettres.</html:p>
             <html:p>Dans les années 60, époque marquée en France par la domination de l'art abstrait qu’encourage André Malraux, ministre de la culture de 1959 à 1969, Théobald conserve son propre langage. Résolument figurative, elle est fidèle à l'Ecole de Paris. Peu soucieuse de recherches formelles, elle peint ses voyages et veut « donner l’envie de se promener dans ses toiles ». En 1963, après Munich et Francfort, elle expose à Paris, à l’Atelier Matignon, vingt-quatre toiles montrant les États-Unis et la Grèce. La presse met en avant « la solidité des paysages et des marines, la fermeté des compositions ». En 1973, elle expose encore à Paris et fait partager ses nouveaux voyages dans ses toiles.</html:p>
-            <html:p/>
             <html:p>
                <html:u>Une carrière américaine</html:u>
             </html:p>
             <html:p>En 1963, Théobald est invitée par le De Young Museum de San Francisco à présenter quarante paysages, orchestres et rues de Paris. Ces toiles sont ensuite montrées au Musée d'art moderne de Miami. Elle expose la même année à Beverly Hills, puis c’est son premier one-woman-show à New York en 1964. La presse titre : « Renée Théobald : le figuratif à son meilleur ». C’est une femme élégante comme les Américains aiment à s’imaginer les Françaises, anglophone contrairement à la majorité des peintres français de cette époque, post-impressionniste dans une tradition appréciée par les amateurs d’art américains. Sa peinture et sa personnalité séduisent. Son succès aux États-Unis est immédiat. Hal Boyle, de l’Associated Press, écrit en décembre 1968 un article repris par plus de 300 quotidiens à travers les États-Unis sur cette Parisienne dont la peinture se veut une fenêtre ouverte sur le monde : « J’avais besoin, dit Renée Théobald en anglais, d’ouvrir une fenêtre dans ma vie de femme et de mère de famille […]. Je peins pour communiquer, pour être comprise. […] Les peintres abstraits parlent un langage qui nécessitent un dictionnaire que la plupart des gens n’ont pas. […] ».</html:p>
             <html:p>A travers ses paysages et ses marines, elle fait découvrir aux Américains la France dans sa diversité. Des ciels de Bretagne à la Méditerranée, du soleil de Provence aux petits villages d'Alsace, de la campagne bretonne aux vignes de Bourgogne, elle montre les paysages de la France qu'elle aime, sans oublier Paris, qu’elle appelle son « village », avec ses quais, ses péniches, ses places, ses ponts et Notre-Dame.</html:p>
             <html:p>La carrière américaine de Théobald dure plus de quarante ans entre New York, Washington, Palm Beach, Dallas et Houston. Elle s'y rend tous les ans, y développe de nombreuses amitiés. Sensible au tonus des Américains, à leur optimisme, leur pragmatisme et leur capacité à voir grand, elle distingue aussi ce qui différencie l’art en Europe et aux Etats-Unis : « l’air et la lumière ». Active dans l’amitié franco-américaine à Paris, ouvertement gaulliste, elle conserve le regard de la jeune fille qui a vu les Américains libérer Paris. Parallèlement à ses one-woman-shows réguliers aux États-Unis, elle expose en Finlande à Helsinki puis en Suède à Stockholm.</html:p>
-            <html:p/>
             <html:p>
                <html:u>Les grands Salons parisiens et les expositions de groupe à l’étranger</html:u>
             </html:p>
@@ -100,7 +105,6 @@
             <html:p>C’est à partir de 1972 que commencent ses relations avec le Japon. Participant régulièrement aux expositions de groupe organisées par Marubeni à Tokyo, elle exécute pour le marché japonais, très amateur de fleurs, un grand nombre de bouquets. Jaunes, roses, tricolores, bouquets joyeux, printaniers, ensoleillés, simples anémones ou marguerites, Théobald ne coupe les fleurs que pour les peindre. En 1973 et 1974, elle participe au Salon des peintres témoins de leur temps au Japon.</html:p>
             <html:p>En 1977, Renée Théobald divorce et se remarie. Elle continue de partager sa vie entre Paris, dans son atelier où elle travaille tous les après-midis, et ses voyages en Europe, au Moyen-Orient, au Mexique, dont elle nourrit ses toiles qu'elle expose en Europe et aux États-Unis. Elle aime la vie, les couleurs, les lieux ensoleillés, les îles grecques, le désert de la Cappadoce, les marchés mexicains, les villages de Provence, et la mer quand les bateaux dansent.</html:p>
             <html:p>En 1994, Théobald est dans la sélection des peintres français présentés à Pékin et Shanghaï. Elle participe à l'exposition franco-japonaise de la Société nationale des Beaux-Arts en 1997.</html:p>
-            <html:p/>
             <html:p>
                <html:u>Plus de cinquante ans de peinture</html:u>
             </html:p>
@@ -108,8 +112,9 @@
             <html:p>La Ville de Paris a acquis trois de ses œuvres ; la Ville de Londres, le musée de Bougie à Alger, la Ville d’Ovar au Portugal, le De Young museum de San Francisco et le musée Paul Delouvrier attaché à la Cathédrale d’Evry possèdent chacun une de ses toiles. L’essentiel de son travail a pris place dans les collections privées d'Europe, du Japon et des États-Unis.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005137-052159-19460101-19491231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/005137"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/059420-052159"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-059420"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/005137-052159-19460101-19491231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/005137"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/059420-052159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-059420"/>
    </rico:Agent>
 </rdf:RDF>

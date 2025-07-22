@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051608">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051608"/>
@@ -11,33 +19,31 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-01</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Pascal DAVID-DORMIEN)</rico:name>
+            <rico:name xml:lang="fr">Création (par Pascal DAVID-DORMIEN)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-22</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-01</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 27/06/2019 : forme autorisée du nom revue, ajout relations familiales</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 27/06/2019 : forme autorisée du nom revue, ajout relations familiales</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Article Louis XVI de Wikipédia en français (http://fr.wikipedia.org/wiki/Louis_XVI).</rico:source>
-      <rico:source xml:lang="fr">Notice d'autorité BnF n°FRBNF12008165.</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000358861922/about"/>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Article Louis XVI de Wikipédia en français (http://fr.wikipedia.org/wiki/Louis_XVI).</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice d'autorité BnF n°FRBNF12008165.</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000358861922"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Louis_XVI"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051608">
-            <rico:isInstantiationOf rdf:resource="record/051608"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051608"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051608</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051608"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051608">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -76,43 +82,45 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1754-08-23</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1793-01-21</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/051608"/>
-            <rico:placeRelationHasSource rdf:resource="place/Versailles"/>
+            <rico:relationHasTarget rdf:resource="agent/051608"/>
+            <rico:relationHasSource rdf:resource="place/Versailles"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Versailles"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Versailles"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/051608"/>
-            <rico:placeRelationHasSource rdf:resource="place/ch%C3%A2teau%20des%20Tuileries"/>
+            <rico:relationHasTarget rdf:resource="agent/051608"/>
+            <rico:relationHasSource rdf:resource="place/ch%C3%A2teau%20des%20Tuileries"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/ch%C3%A2teau%20des%20Tuileries"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/ch%C3%A2teau%20des%20Tuileries"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/051608"/>
-            <rico:placeRelationHasSource rdf:resource="place/prison%20du%20Temple"/>
+            <rico:relationHasTarget rdf:resource="agent/051608"/>
+            <rico:relationHasSource rdf:resource="place/prison%20du%20Temple"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/prison%20du%20Temple"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/prison%20du%20Temple"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051608-d699msjvr33-1uifysnie6i1p-17740101-17921231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051608"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051608-d699msjvr33-1uifysnie6i1p-17740101-17921231"/>
+            <rico:relationHasTarget rdf:resource="agent/051608"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d188533e157">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051608-d699msjvr33-1uifysnie6i1p-17740101-17921231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjvr33-1uifysnie6i1p"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1774-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1792-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Roi de France</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjvr33-1uifysnie6i1p"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjvr33-1uifysnie6i1p"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d188533e157"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Louis-Auguste de France, futur Louis XVI, d'abord titré duc de Berry, naît à Versailles le 23 août 1754. Il est le troisième fils du dauphin Louis-Ferdinand de France (1729-1765), seul fils de Louis XV, et de sa seconde épouse Marie-Josèphe de Saxe (1731-1767). Il devient dauphin de France à 11 ans en 1765 suite au décès de son père et du décès prématuré de ses frères, le duc d'Aquitaine (1753-1754) et le duc de Bourgogne (1751-1761). Il a pour frères cadets Louis Stanislas Xavier de France (1755-1824), comte de Provence, qui deviendra roi sous le nom de Louis XVIII en 1814 et Charles Philippe de France (1757-1836), comte d'Artois, qui deviendra roi sous le nom de Charles X en 1824. L'une de ses soeurs, la princesse Clotilde de France (1759-1802) épouse en 1775 le duc Charles-Emmanuel de Savoie et sera reine de Sardaigne en 1796. Enfin sa soeur la princesse Élisabeth de France (1764-1794), dite Madame Élisabeth, ne se marie pas et reste auprès lui jusqu'à ses derniers jours.</html:p>
@@ -124,11 +132,23 @@
       </rico:history>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb120081657#about"/>
       <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Louis_XVI"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051608-051810-17900101-17930121"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/051810"/>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/051607-051608"/><rico:hasFamilyAssociationWith rdf:resource="agent/051607"/>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/051606-051608"/><rico:hasFamilyAssociationWith rdf:resource="agent/051606"/>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/051364-051608"/><rico:hasFamilyAssociationWith rdf:resource="agent/051364"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054912-051608"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-054912"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/051608-051810-17900101-17930121"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/051810"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/051608-053392-17740101-17930121"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/053392"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050997-051608-17921201-17930121"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050997"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/051608-053384"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/053384"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/051607-051608"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/051607"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/051606-051608"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/051606"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/051364-051608"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/051364"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054912-051608"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054912"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/053856-051608"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-053856"/>
    </rico:Agent>
 </rdf:RDF>

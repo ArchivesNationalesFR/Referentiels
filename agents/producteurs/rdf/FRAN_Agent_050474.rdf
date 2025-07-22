@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050474">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050474"/>
@@ -10,29 +18,28 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-04-04</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Vanessa ASPART)</rico:name>
+            <rico:name xml:lang="fr">Création (par Vanessa ASPART)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-04-04</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 4 avril 2014 : changé nom, ajouté n°s ISNI et notice BnF</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 4 avril 2014 : changé nom, ajouté n°s ISNI et notice BnF</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Archives nationales, Fonds Charles Cousin-Montauban, comte de Palikao (1857-1873), 682 AP.</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice d'autorité BnF n° FRBNF13743826</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000109695150/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000109695150"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050474">
-            <rico:isInstantiationOf rdf:resource="record/050474"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050474"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050474</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050474"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050474">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -70,8 +77,9 @@
             <html:p>Charles Cousin-Montauban occupe, après son retour en France, différentes fonctions de commandement au sein de l'État-major de l'armée. Commandant le corps d'armée de Lyon depuis 1865, il sollicite en vain de participer aux opérations militaires contre les Allemands lors de la déclaration de la guerre de 1870. Après les premières défaites, l'opinion réclamant le renvoi du maréchal Leboeuf et le maréchal Trochu ayant refusé le poste, Émile Ollivier, avec l'accord de l'Empereur, le nomme, le 9 avril 1870, ministre de la Guerre. Le 9 août suivant, il prend, à la demande de l'Impératrice Eugénie, la direction du Gouvernement jusqu'à la capitulation française de septembre. Il sera le dernier chef de Gouvernement du Second Empire.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050474-052127-18700809-18700904"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/052127"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/050099-050474"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-050099"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050474-052127-18700809-18700904"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/052127"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/050099-050474"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-050099"/>
    </rico:Agent>
 </rdf:RDF>

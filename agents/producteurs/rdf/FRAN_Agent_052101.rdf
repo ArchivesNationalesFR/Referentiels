@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052101">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052101"/>
@@ -11,32 +19,30 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-01-17</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Samuel GIBIAT)</rico:name>
+            <rico:name xml:lang="fr">Création (par Samuel GIBIAT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-08-20</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Notice créée par Samuel Gibiat le 20 août 2018. Il n'existe pas de numéro ISNI, ni de notice d'autorité BnF à la date de création de la présente notice.</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Notice créée par Samuel Gibiat le 20 août 2018. Il n'existe pas de numéro ISNI, ni de notice d'autorité BnF à la date de création de la présente notice.</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-01-17</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Service historique de la Défense, GR 8 Yf 14417, états signalétique et des services.</rico:source>
-      <rico:source xml:lang="fr">Archives nationales, LH/1247/82, dossier de chevalier de la Légion d'honneur.</rico:source>
-      <rico:source xml:lang="fr">Archives nationales, fonds 786 AP, papiers Hector Guise.</rico:source>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Service historique de la Défense, GR 8 Yf 14417, états signalétique et des services.</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Archives nationales, LH/1247/82, dossier de chevalier de la Légion d'honneur.</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Archives nationales, fonds 786 AP, papiers Hector Guise.</rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052101">
-            <rico:isInstantiationOf rdf:resource="record/052101"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052101"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052101</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052101"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052101">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -53,38 +59,42 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1861-09-04</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1913-02-03</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052101-d-11hasr639--1mmaoyj7hl5zc-19090101-19130203">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052101"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052101-d-11hasr639--1mmaoyj7hl5zc-19090101-19130203"/>
+            <rico:relationHasTarget rdf:resource="agent/052101"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d196512e107">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052101-d-11hasr639--1mmaoyj7hl5zc-19090101-19130203"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-11hasr639--1mmaoyj7hl5zc"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1909-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1913-02-03</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">officier d'ordonnance</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-11hasr639--1mmaoyj7hl5zc"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-11hasr639--1mmaoyj7hl5zc"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d196512e107"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052101-d699msjpuqr-66gt6kmedjiv-18840101-19130203">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052101"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052101-d699msjpuqr-66gt6kmedjiv-18840101-19130203"/>
+            <rico:relationHasTarget rdf:resource="agent/052101"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d196512e127">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052101-d699msjpuqr-66gt6kmedjiv-18840101-19130203"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1884-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1913-02-03</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">officier de cavalerie</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d196512e127"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Né le 4 septembre 1861 à Hesdin (Nord), Antoine Victor<html:i>Hector</html:i>Guise a épousé Stéphanie Suzanne Mesnier le 10 novembre 1894. Fils d'officier de cavalerie, il a lui-même effectué une carrière d'officier de cavalerie exemplaire avant d'être affecté en qualité d'officier d'ordonnance à la Présidence de la République. Engagé volontaire au 1er régiment de Cuirassiers le 3 novembre 1881, rapidement promu brigadier puis maréchal des logis (16 novembre 1882), il intègre l'Ecole de cavalerie en qualité d'élève officier le 1er octobre 1884. Sorti au 11e rang sur 98 élèves le 31 août 1885, il est nommé sous-lieutenant au 10e Dragons le 11 septembre 1885, puis promu lieutenant au 12e Dragons le 1er septembre 1889. Après avoir suivi les cours de l'Ecole de cavalerie en qualité d'officier d'instruction du 10 octobre 1892 au 31 août 1893, il est nommé professeur d'histoire et de géographie militaire au sein de cet établissement le 10 juillet 1894. Promu capitaine le 23 mars 1895, il est affecté au 10e Hussards en qualité de capitaine commandant le 11 février 1899.</html:p>
@@ -105,6 +115,9 @@
             <html:p>Officier d'académie le 1er janvier 1910.</html:p>
          </html:div>
       </rico:history>
-      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/052101-000001-19090101-19130203"/><rico:isOrWasLeaderOf rdf:resource="agent/000001"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/052101-000001-19090101-19130203"/>
+      <rico:isOrWasLeaderOf rdf:resource="agent/000001"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/060453-052101"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-060453"/>
    </rico:Agent>
 </rdf:RDF>

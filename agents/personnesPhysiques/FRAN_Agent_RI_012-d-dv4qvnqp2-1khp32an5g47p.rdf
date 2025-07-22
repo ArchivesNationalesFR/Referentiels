@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:dcterms="http://purl.org/dc/terms/"
-         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/FRAN_RI_012-d-dv4qvnqp2-1khp32an5g47p">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/FRAN_RI_012-d-dv4qvnqp2-1khp32an5g47p"/>
@@ -17,20 +17,24 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
       <rdfs:seeAlso rdf:resource="http://www.purl.org/inha/agorha/002/76041"/>
-      <rdfs:seeAlso rdf:resource="http://elec.enc.sorbonne.fr/architectes/70"/>
-      <rico:hasInstantiation>
+      <!--Contenu de biblio :  Identifiant
+        Répertoire des architectes diocésains : http://elec.enc.sorbonne.fr/architectes/70 -->
+      <!--Contenu de biblio : 
+        Identifiant Wikidata : http://www.wikidata.org/entity/Q26237056-->
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/FRAN_RI_012-d-dv4qvnqp2-1khp32an5g47p">
-            <rico:isInstantiationOf rdf:resource="record/FRAN_RI_012-d-dv4qvnqp2-1khp32an5g47p"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/FRAN_RI_012-d-dv4qvnqp2-1khp32an5g47p"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_RI_012-d-dv4qvnqp2-1khp32an5g47p</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/FRAN_RI_012-d-dv4qvnqp2-1khp32an5g47p">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/FRAN_RI_012-d-dv4qvnqp2-1khp32an5g47p"/>
       <rdfs:label xml:lang="fr">Boivin, Jean (1807-1854)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Boivin, Jean (1807-1854)</skos:prefLabel>
       <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/FRAN_RI_012-d-dv4qvnqp2-1khp32an5g47p-Boivin%2C%20Jean%20%281807-1854%29">
             <rdfs:label xml:lang="fr">Boivin, Jean (1807-1854)</rdfs:label>
@@ -44,9 +48,13 @@
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1854-01-01</rico:deathDate>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
-            <html:p>Né le 25/10/1807 à Verdun. Décédé en 1854 à Auxerre. Architecte diocésain. A œuvré à la restauration des cathédrales de Nevers, Sens.</html:p>
+            <html:p>Né le 25/10/1807 à Verdun. Décédé en 1854 à Auxerre. Architecte diocésain. A œuvré à la
+        restauration des cathédrales de Nevers, Sens.</html:p>
          </html:div>
       </rico:history>
+      <!--Contenu de biblio : Identifiant AGORHA : http://www.purl.org/inha/agorha/002/76041 -->
+      <!--Contenu de biblio :  Identifiant
+        Répertoire des architectes diocésains : http://elec.enc.sorbonne.fr/architectes/70 -->
       <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q26237056"/>
    </rico:Agent>
 </rdf:RDF>

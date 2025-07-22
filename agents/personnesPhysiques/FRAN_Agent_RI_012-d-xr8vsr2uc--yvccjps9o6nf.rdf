@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:dcterms="http://purl.org/dc/terms/"
-         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/FRAN_RI_012-d-xr8vsr2uc--yvccjps9o6nf">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/FRAN_RI_012-d-xr8vsr2uc--yvccjps9o6nf"/>
@@ -17,19 +17,21 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
       <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000001351022/about"/>
-      <rico:hasInstantiation>
+      <!--Contenu de biblio :  http://data.bnf.fr/ark:/12148/cb145704709-->
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/FRAN_RI_012-d-xr8vsr2uc--yvccjps9o6nf">
-            <rico:isInstantiationOf rdf:resource="record/FRAN_RI_012-d-xr8vsr2uc--yvccjps9o6nf"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/FRAN_RI_012-d-xr8vsr2uc--yvccjps9o6nf"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_RI_012-d-xr8vsr2uc--yvccjps9o6nf</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/FRAN_RI_012-d-xr8vsr2uc--yvccjps9o6nf">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/FRAN_RI_012-d-xr8vsr2uc--yvccjps9o6nf"/>
       <rdfs:label xml:lang="fr">Feydeau de Brou, Paul Esprit (1682-1767)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Feydeau de Brou, Paul Esprit (1682-1767)</skos:prefLabel>
       <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/FRAN_RI_012-d-xr8vsr2uc--yvccjps9o6nf-Feydeau%20de%20Brou%2C%20Paul%20Esprit%20%281682-1767%29">
             <rdfs:label xml:lang="fr">Feydeau de Brou, Paul Esprit (1682-1767)</rdfs:label>
@@ -43,9 +45,18 @@
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1767-08-03</rico:deathDate>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
-            <html:p>Reçu avocat au parlement de Paris le 15 mars 1703, il devient conseiller au parlement de Paris le 18 mars 1705 et maître des requêtes de l'Hôtel du roi le 12 février 17102. Intendant de police, justice et finances d'Alençon (1713-1715), de Bretagne (de juin 1716 à 1728), de Strasbourg (du 14 août 1728 à 1742), de l'armée d'Alsace (le 1er mai 1735) puis de l'armée du Rhin, et enfin de Paris (du 13 octobre 1742 à 1744). Conseiller d'État semestre en 1725, et ordinaire en 1737, il est nommé conseiller au Conseil royal des finances le 20 novembre 1744, et en 1761, conseiller au Conseil royal des dépêches. Louis XV le nomme garde des sceaux de France le 27 septembre 17625 ; il démissionne de ces fonctions le 3 octobre 1763.</html:p>
+            <html:p>Reçu avocat au parlement de Paris le 15 mars 1703, il devient conseiller au parlement de
+        Paris le 18 mars 1705 et maître des requêtes de l'Hôtel du roi le 12 février 17102.
+        Intendant de police, justice et finances d'Alençon (1713-1715), de Bretagne (de juin 1716 à
+        1728), de Strasbourg (du 14 août 1728 à 1742), de l'armée d'Alsace (le 1er mai 1735) puis de
+        l'armée du Rhin, et enfin de Paris (du 13 octobre 1742 à 1744). Conseiller d'État semestre
+        en 1725, et ordinaire en 1737, il est nommé conseiller au Conseil royal des finances le 20
+        novembre 1744, et en 1761, conseiller au Conseil royal des dépêches. Louis XV le nomme garde
+        des sceaux de France le 27 septembre 17625 ; il démissionne de ces fonctions le 3 octobre
+        1763.</html:p>
          </html:div>
       </rico:history>
       <owl:sameAs rdf:resource="https://isni.org/isni/0000000001351022"/>
+      <!--Contenu de biblio :  http://data.bnf.fr/ark:/12148/cb145704709-->
    </rico:Agent>
 </rdf:RDF>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051232">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051232"/>
@@ -10,21 +18,20 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Marine ZELVERTE)</rico:name>
+            <rico:name xml:lang="fr">Création (par Marine ZELVERTE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051232">
-            <rico:isInstantiationOf rdf:resource="record/051232"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051232"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051232</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051232"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051232">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -41,17 +48,18 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1944-01-01</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-12-31</rico:endDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051232-d3nyugp6nd-1m2amxlhij5ib">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051232"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051232-d3nyugp6nd-1m2amxlhij5ib"/>
+            <rico:relationHasTarget rdf:resource="agent/051232"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d181962e84">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051232-d3nyugp6nd-1m2amxlhij5ib"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugp6nd-1m2amxlhij5ib"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugp6nd-1m2amxlhij5ib"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d181962e84"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Le service des relations avec la presse et le public de la RDF, puis de la RTF, puis de l'ORTF, puis de Radio France, dont le nom et les attributions ont peu évolué entre 1944 et 1983 a pour principales missions, d'une part, d'informer les différents médias français et étrangers sur tout ce qui concerne l'institution et, d'autre part, d'informer les directions et les services intéressés sur les réactions des médias vis-à-vis de l'institution.</html:p>
@@ -60,9 +68,11 @@
             <html:p>Les reportages photographiques sur les productions les plus importantes et l'action promotionnelle (campagnes publicitaires tous supports, opérations extérieures, jeux concours, conception d'objets promotionnelles...) sont aujourd'hui assurées par la direction de la communication externe de Radio France ou par les services de communication des chaînes et des formations musicales.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000347-051232-19640101-19741231"/><rico:isOrWasSubordinateTo rdf:resource="agent/000347"/>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/005419-051232-19750101-19831231"/><rico:isOrWasSubordinateTo rdf:resource="agent/005419"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054644-051232"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-054644"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/000347-051232-19640101-19741231"/>
+      <rico:wasSubordinateTo rdf:resource="agent/000347"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/005419-051232-19750101-19831231"/>
+      <rico:wasSubordinateTo rdf:resource="agent/005419"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054644-051232"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054644"/>
    </rico:Agent>
 </rdf:RDF>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052214">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052214"/>
@@ -11,36 +19,33 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-06-04</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Sandrine BULA)</rico:name>
+            <rico:name xml:lang="fr">Création (par Sandrine BULA)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-03-20</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Sandrine BULA)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Sandrine BULA)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-05-06</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-06-04</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 4 juin 2019 : ajouté dates à la forme autorisée du nom et note à la fonction</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 4 juin 2019 : ajouté dates à la forme autorisée du nom et note à la fonction</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052214">
-            <rico:isInstantiationOf rdf:resource="record/052214"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052214"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052214</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052214"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052214">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -74,31 +79,32 @@
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1965-03-23</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1975-12-31</rico:endDate>
       <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5blonav6b-7jwfyyjh3efl"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052214-d-25ub5bepd--1a98b90ydj2ye">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052214"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052214-d-25ub5bepd--1a98b90ydj2ye"/>
+            <rico:relationHasTarget rdf:resource="agent/052214"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d198326e136">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052214-d-25ub5bepd--1a98b90ydj2ye"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d-25ub5bepd--1a98b90ydj2ye"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">édition de cartes postales</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d-25ub5bepd--1a98b90ydj2ye"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d198326e136"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>A la suite d'un jugement du tribunal de commerce de la Seine du 10 mars 1965, déclarant la société LAPIE en règlement judiciaire, est fondée le 23 mars 1965, une SARL sous la dénomination de Société d’exploitation LAPIE, dont le siège se trouve à Saint-Jorioz (Haute-Savoie). Elle est destinée à exploiter le fonds de commerce appartenant à la société LAPIE en vertu d'une convention de location gérance datée du même jour. Ce contrat est destiné à sauvegarder les intérêts des créanciers et des associés, et à éviter le dépérissement des éléments d’actif de la société. Il a pour durée un an et renouvelable par tacite reconduction. Dans le cas où une procédure de règlement judiciaire ou de faillite serait ouverte, le contrat serait exécuté jusqu’à la clôture des opérations de règlement judiciaire ou, en cas de faillite, jusqu’à la mise en vente des éléments du fonds de commerce.</html:p>
             <html:p>La Société d'exploitation LAPIE reprend le fonds de commerce et entretient à sa charge exclusive le matériel et le mobilier concédés, notamment la collection de clichés.</html:p>
-            <html:p/>
             <html:p>La société d’exploitation LAPIE prend le nom de Société française d’éditions réunies (SOFER) le 1er avril 1965 (modification inscrite au greffe du tribunal de commerce d’Annecy le 6 avril 1965). Elle est enregistrée au registre du commerce d’Annecy sous le n° 65 B 45. Elle a pour activité l’édition de cartes postales. Les services administratifs et commerciaux se trouvent à Saint-Maur, le siège social à Saint-Jorioz.</html:p>
             <html:p>Un administrateur provisoire de la société LAPIE en avril 1965. Le 18 mai 1965 est conclu un contrat de location gérance avec la SOFER, en accord avec l’administrateur provisoire, ce contrat faisant suite à celui du 23 mars 1965. La SOFER reste active jusqu’au début des années 1970.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/052067-052214-19650323-*"/><rico:isSuccessorOf rdf:resource="agent/052067"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/055325-052214"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-055325"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/052067-052214-19650323-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/052067"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/055325-052214"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-055325"/>
    </rico:Agent>
 </rdf:RDF>

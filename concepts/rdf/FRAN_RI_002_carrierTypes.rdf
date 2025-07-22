@@ -1,19 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+<rdf:RDF xmlns:cc="http://creativecommons.org/ns#"
          xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcat="http://www.w3.org/ns/dcat#"
+         xmlns:dct="http://purl.org/dc/terms/"
          xmlns:dcterms="http://purl.org/dc/terms/"
-         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:cc="http://creativecommons.org/ns#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
          xmlns:html="http://www.w3.org/1999/xhtml"
-         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+         xmlns:iso-thes="http://purl.org/iso25964/skos-thes#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <skos:ConceptScheme rdf:about="carrierTypes">
-      <dc:description xml:lang="fr">Thésaurus des types de supports des instantiations. Résulte de la conversion automatique en RDF, conforme à SKOS et RiC-O 0.2, du référentiel XML correspondant. Des enrichissements, modifications de structure et alignements sont prévus dans les prochains mois.</dc:description>
-      <dc:source xml:lang="fr">FRAN_RI_002</dc:source>
-      <dc:title xml:lang="fr">Thésaurus des types de supports des instantiations</dc:title>
+      <dcterms:title xml:lang="fr">Supports des archives</dcterms:title>
+      <dcterms:description rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Thésaurus des types de supports des instanciations des archives. Résulte de la conversion automatique en RDF, conforme à SKOS et RiC-O 1.1, d’une partie du référentiel XML correspondant dit des supports des documents (fichier FRAN_RI_002.xml, version 1.2) dans le système d’information archivistique (SIA) des Archives nationales de France (AnF). Des enrichissements, modifications de
+                                    structure et alignements sont prévus dans les prochains
+                                    mois.</html:p>
+            <html:p>Nombre de concepts : 51.</html:p>
+         </html:div>
+      </dcterms:description>
+      <dcat:version xml:lang="fr">2.0</dcat:version>
+      <dc:source xml:lang="fr">Fichier FRAN_RI_002.xml, version 1.2 ; exporté du système d’information archivistique (SIA) des Archives nationales de France (AnF) le 21 janvier 2025 (date de dernière modification dans le SIA : 2023-06-29)</dc:source>
       <dcterms:creator>
          <foaf:Organization>
             <foaf:mbox>le-lab.archives-nationales@culture.gouv.fr</foaf:mbox>
@@ -21,16 +32,51 @@
             <foaf:name xml:lang="fr">Archives nationales (France). Lab</foaf:name>
          </foaf:Organization>
       </dcterms:creator>
+      <dcterms:publisher>
+         <foaf:Organization>
+            <foaf:name xml:lang="fr">Archives nationales de France</foaf:name>
+            <owl:sameAs rdf:resource="https://rdf.archives-nationales.culture.gouv.fr/agent/005061"/>
+         </foaf:Organization>
+      </dcterms:publisher>
       <dcterms:created>2021-04-16</dcterms:created>
       <dcterms:modified>2022-03-20</dcterms:modified>
-      <dcterms:modified>2022-04-13T16:25:08.42+02:00</dcterms:modified>
+      <dcterms:modified>2024-10-10T17:32:28.2566262+02:00</dcterms:modified>
+      <dcterms:modified>2025-04-16T15:52:49.1196444+02:00</dcterms:modified>
       <dc:coverage xml:lang="fr">du Moyen Âge à nos jours</dc:coverage>
       <dc:language>fr-FR</dc:language>
-      <dc:type xml:lang="fr">Thésaurus</dc:type>
-      <dc:rights xml:lang="fr">Ces données étant des informations publiques, l'usager dispose d'un droit non exclusif et gratuit de libre « réutilisation » à des fins commerciales ou non, dans le monde entier et pour une durée illimitée. Il doit accompagner chaque rediffusion des informations de l'indication précise de l'origine des métadonnées : « Archives nationales (France) », date des métadonnées (mars 2022), nom du référentiel (fourni dans le fichier Excel qui en donne la liste). Voir à ce sujet la page : https://www.archives-nationales.culture.gouv.fr/fr/web/guest/reutilisation-des-donnees-publiques.</dc:rights>
+      <dcterms:language rdf:resource="http://id.loc.gov/vocabulary/iso639-2/fre"/>
+      <dc:type xml:lang="fr">thésaurus</dc:type>
+      <dc:rights xml:lang="fr">Ces données étant des informations publiques, l’usager dispose d’un droit non exclusif
+        et gratuit de libre « réutilisation » à des fins commerciales ou non, dans le monde entier
+        et pour une durée illimitée, de ce référentiel. Il doit accompagner chaque rediffusion des
+        informations de l’indication précise de l’origine des métadonnées : « Archives nationales de
+        France », du nom du référentiel, de son identifiant (URI), du numéro et de la date de la version
+        du référentiel.</dc:rights>
+      <dcat:distribution>
+         <dcat:Distribution>
+            <dcat:title xml:lang="fr">Version RDF/XML</dcat:title>
+            <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/application/rdf+xml"/>
+            <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/ArchivesNationalesFR/Referentiels/refs/heads/main/concepts/rdf/FRAN_RI_002_carrierTypes.rdf"/>
+         </dcat:Distribution>
+      </dcat:distribution>
+      <dcat:distribution>
+         <dcat:Distribution>
+            <dcat:title xml:lang="fr">Version CSV générée à partir du fichier
+                                    RDF/XML</dcat:title>
+            <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/csv"/>
+            <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/ArchivesNationalesFR/Referentiels/refs/heads/main/concepts/csv/FRAN_RI_002_carrierTypes.csv"/>
+         </dcat:Distribution>
+      </dcat:distribution>
       <skos:historyNote rdf:parseType="Literal">
          <html:ul>
-            <html:li xml:lang="fr">Mars-avril 2022 : regénéré le fichier. Enrichissement des métadonnées du vocabulaire.</html:li>
+            <html:li xml:lang="fr">Mars-avril 2022 : regénéré le fichier.
+                                Enrichissement des métadonnées du vocabulaire.</html:li>
+            <html:li xml:lang="fr">Mai 2024 : regénéré le fichier. Mise à jour des
+                                métadonnées. Suppression de notes éditoriales et historiques non pertinentes. Ajout de deux concepts : papier à en-tête ; papier
+                                timbré.</html:li>
+            <html:li xml:lang="fr">Mars 2025 : regénéré le fichier. Cette
+                                    version du vocabulaire ne compte pas de nouveau concept. Les
+                                    métadonnées du fichier SKOS ont été enrichies.</html:li>
          </html:ul>
       </skos:historyNote>
       <skos:hasTopConcept rdf:resource="carrierType/FRAN_RI_002-d3nd9xqsl6--1i2m77rgllo7c"/>
@@ -63,26 +109,26 @@
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9xqsl6--1i2m77rgllo7c">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:topConceptOf rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">bande sonore</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9xrmc2--1la2ksxvxfm7u">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:topConceptOf rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">cassette audio</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9xsgy0-1rufo8atcgi3c">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:topConceptOf rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">diapositive</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9xtawo-1cju6vmj9nwi">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:topConceptOf rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">disque vinyl</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
       <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9xu4nk--6jvte7hqi4co"/>
       <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9xuyeh-ixoxypjcl6r7"/>
       <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9xvrxm-83y52pb67jnj"/>
@@ -91,28 +137,25 @@
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">disque 33 tours</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
       <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9xtawo-1cju6vmj9nwi"/>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9xuyeh-ixoxypjcl6r7">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">disque 45 tours</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
       <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9xtawo-1cju6vmj9nwi"/>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9xvrxm-83y52pb67jnj">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">disque 78 tours</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
       <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9xtawo-1cju6vmj9nwi"/>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9xwloi-1e8dcour7zw3a">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:topConceptOf rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">film</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
       <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9xz6sw--1p8r72p03p45d"/>
       <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9xyawe-1w15jcvccsdbo"/>
    </skos:Concept>
@@ -120,21 +163,19 @@
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">film couleur</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
       <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9xwloi-1e8dcour7zw3a"/>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9xyawe-1w15jcvccsdbo">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">film noir et blanc</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
       <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9xwloi-1e8dcour7zw3a"/>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9xzzwi--1tei3696g4oji">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:topConceptOf rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">pellicule photographique</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
       <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9y1oh4-akwtq4srdkk"/>
       <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9y0uq7-87gu63j9087y"/>
    </skos:Concept>
@@ -142,88 +183,86 @@
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">négatif couleur</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
       <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9xzzwi--1tei3696g4oji"/>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9y0uq7-87gu63j9087y">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">négatif noir et blanc</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
       <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9xzzwi--1tei3696g4oji"/>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9y2ifs--9yvs0ds5wc0l">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:topConceptOf rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">vidéocassette</skos:prefLabel>
       <skos:altLabel xml:lang="fr">VHS</skos:altLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9y5u2n-1xzki8sl1gotg">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:topConceptOf rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">bande magnétique</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9y465c-1roarykontz6f">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:topConceptOf rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">carte perforée</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9y4zw8--1cka6o7kme4au">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:topConceptOf rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">cd-rom</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9y6ne1--1dp9ldvaf0ypx">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:topConceptOf rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">clé usb</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9y7gx6--v1k9nk96x1pc">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:topConceptOf rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">disque dur</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9y8g22-7n8e3bh6bkj4">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:topConceptOf rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">disquette</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9y9ag9-1e6kjoezbpmo8">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:topConceptOf rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">dvd</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9ya7v2-1mbrwg1qcmax8">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:topConceptOf rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">bois</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yb2os-13bce7gkn2yv1">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:topConceptOf rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">cire</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9ybwnf--jubck3g5wary">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:topConceptOf rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">métal</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9ycqec--roxx49bu81co">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:topConceptOf rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">microforme</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
       <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9ydnle-640nybt9jpv2"/>
       <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9yg64n-o4lkrvohks94"/>
    </skos:Concept>
@@ -231,7 +270,6 @@
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">microfilm</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
       <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9ycqec--roxx49bu81co"/>
       <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9yeif3-nnhvcbnswtv3"/>
       <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9yfcdr-5rahg3nt8csk"/>
@@ -240,37 +278,50 @@
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">microfilm 16 mm</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
       <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9ydnle-640nybt9jpv2"/>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yfcdr-5rahg3nt8csk">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">microfilm 35 mm</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
       <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9ydnle-640nybt9jpv2"/>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yg64n-o4lkrvohks94">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">microfiche</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
       <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9ycqec--roxx49bu81co"/>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yh03b--1lx80czdt83ae">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:topConceptOf rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">papier</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
       <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9yhu9q--1xxwk4uknurum"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d-9zin931c0--1opq4i4jearv2"/>
       <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9yjlfg-j0aeuv1yo4o2"/>
       <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9ykeyl-1hz3si2gg29jw"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d-9qaz8mkdw-3vr78iepev"/>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yhu9q--1xxwk4uknurum">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">carton</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9yh03b--1lx80czdt83ae"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d-9zin931c0--1opq4i4jearv2">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">papier à en-tête</skos:prefLabel>
+      <skos:definition xml:lang="fr">Feuille de papier de correspondance sur laquelle sont imprimés le sigle, l’adresse le logo de l’expéditeur. (source : https://fr.wikipedia.org/wiki/Papier_%C3%A0_en-t%C3%AAte)</skos:definition>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Papier_%C3%A0_en-t%C3%AAte"/>
+      <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q3180817"/>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>22/06/2023</dc:date>
+            <rdf:value xml:lang="fr">concept ajouté le [22/06/2023]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9yh03b--1lx80czdt83ae"/>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yjlfg-j0aeuv1yo4o2">
@@ -278,7 +329,6 @@
       <skos:inScheme rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">papier calque</skos:prefLabel>
       <skos:altLabel xml:lang="fr">papier-calque</skos:altLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>14/04/2021</dc:date>
@@ -291,7 +341,6 @@
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">papier photographique</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
       <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9yh03b--1lx80czdt83ae"/>
       <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9ym28n--19infadmaqc3f"/>
       <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9yl8x9-13t4wc729h1we"/>
@@ -300,48 +349,60 @@
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">tirage couleur</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
+      <skos:editorialNote xml:lang="fr">nota : à voir avec Mission Photo</skos:editorialNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>14/04/2021</dc:date>
             <rdf:value xml:lang="fr">définition ajoutée le [14/04/2021]</rdf:value>
          </rdf:Description>
       </skos:changeNote>
-      <skos:editorialNote xml:lang="fr">nota : à voir avec Mission Photo</skos:editorialNote>
       <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9ykeyl-1hz3si2gg29jw"/>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yl8x9-13t4wc729h1we">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">tirage noir et blanc</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
+      <skos:editorialNote xml:lang="fr">nota : à voir avec Mission Photo</skos:editorialNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>14/04/2021</dc:date>
             <rdf:value xml:lang="fr">définition ajoutée le [14/04/2021]</rdf:value>
          </rdf:Description>
       </skos:changeNote>
-      <skos:editorialNote xml:lang="fr">nota : à voir avec Mission Photo</skos:editorialNote>
       <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9ykeyl-1hz3si2gg29jw"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d-9qaz8mkdw-3vr78iepev">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">papier timbré</skos:prefLabel>
+      <skos:definition xml:lang="fr">Papier mis en vente par l’administration de l’enregistrement, marqué d’un timbre officiel et dont l’emploi est obligatoire pour certains actes. (Source : TLFI notice "Papier")</skos:definition>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Papier_timbr%C3%A9_en_France"/>
+      <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q3362874"/>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>22/06/2023</dc:date>
+            <rdf:value xml:lang="fr">concept ajouté le [22/06/2023]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9yh03b--1lx80czdt83ae"/>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9ymvrs--1j9b552uq3p83">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:topConceptOf rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">papyrus</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9ynpio-1os5cfwa3mwrz">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
-      <skos:prefLabel xml:lang="fr">peau d'animal</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
+      <skos:topConceptOf rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">peau d’animal</skos:prefLabel>
       <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9yoi6s--g4lm976pg0ie"/>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yoi6s--g4lm976pg0ie">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">parchemin</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
       <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9ynpio-1os5cfwa3mwrz"/>
       <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9ypb2n--1qt8j6uavxhrp"/>
    </skos:Concept>
@@ -349,47 +410,46 @@
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">velin</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
+      <skos:definition xml:lang="fr">Peau de veau mort-né (ou d’un autre animal, comme l’agneau ou le chevreau), préparée pour l’écriture, l’illustration, l’imprimerie ou la reliure, plus lisse et plus fine que le parchemin ordinaire.</skos:definition>
       <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9yoi6s--g4lm976pg0ie"/>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yq469-11pb6p2b6nbmn">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:topConceptOf rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">pierre</skos:prefLabel>
       <skos:altLabel xml:lang="fr">calcaire</skos:altLabel>
       <skos:altLabel xml:lang="fr">marbre</skos:altLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d-a6whhopl4-vm3abmyfyreq">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:topConceptOf rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">plastique</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yqxx5-qvkdsy4y1kkr">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:topConceptOf rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">plâtre</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yrrvt-fmgd6rjip7cm">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:topConceptOf rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">tissu</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yskro-1u09woxr0xd8n">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:topConceptOf rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">verre</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
       <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9ytdva-n9m6cluzchnx"/>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9ytdva-n9m6cluzchnx">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">plaque de verre</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
       <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9yskro-1u09woxr0xd8n"/>
       <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9yv45z--1olpjujdxtwkd"/>
       <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9yu6yw-1gylq6x4ots0l"/>
@@ -400,56 +460,52 @@
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">négatif verre couleur</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
+      <skos:editorialNote xml:lang="fr">nota : à voir avec Mission Photo</skos:editorialNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>14/04/2021</dc:date>
             <rdf:value xml:lang="fr">définition ajoutée le [14/04/2021]</rdf:value>
          </rdf:Description>
       </skos:changeNote>
-      <skos:editorialNote xml:lang="fr">nota : à voir avec Mission Photo</skos:editorialNote>
       <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9ytdva-n9m6cluzchnx"/>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yu6yw-1gylq6x4ots0l">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">négatif verre noir et blanc</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
+      <skos:editorialNote xml:lang="fr">nota : à voir avec Mission Photo</skos:editorialNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>14/04/2021</dc:date>
             <rdf:value xml:lang="fr">définition ajoutée le [14/04/2021]</rdf:value>
          </rdf:Description>
       </skos:changeNote>
-      <skos:editorialNote xml:lang="fr">nota : à voir avec Mission Photo</skos:editorialNote>
       <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9ytdva-n9m6cluzchnx"/>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9ywsb2-is0ux4jbqyki">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">positif verre couleur</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
+      <skos:editorialNote xml:lang="fr">nota : à voir avec Mission Photo</skos:editorialNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>14/04/2021</dc:date>
             <rdf:value xml:lang="fr">définition ajoutée le [14/04/2021]</rdf:value>
          </rdf:Description>
       </skos:changeNote>
-      <skos:editorialNote xml:lang="fr">nota : à voir avec Mission Photo</skos:editorialNote>
       <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9ytdva-n9m6cluzchnx"/>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yvyzo-1vw3scmftdhpp">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
       <skos:inScheme rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">positif verre noir et blanc</skos:prefLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : CarrierType</skos:editorialNote>
+      <skos:editorialNote xml:lang="fr">nota : à voir avec Mission Photo</skos:editorialNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>14/04/2021</dc:date>
             <rdf:value xml:lang="fr">définition ajoutée le [14/04/2021]</rdf:value>
          </rdf:Description>
       </skos:changeNote>
-      <skos:editorialNote xml:lang="fr">nota : à voir avec Mission Photo</skos:editorialNote>
       <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9ytdva-n9m6cluzchnx"/>
    </skos:Concept>
 </rdf:RDF>

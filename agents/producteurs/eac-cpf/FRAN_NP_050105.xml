@@ -3,7 +3,7 @@
          xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
    <control>
       <recordId>FRAN_NP_050105</recordId>
-      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceStatus>revised</maintenanceStatus>
       <maintenanceAgency>
          <agencyName>Archives nationales de France</agencyName>
       </maintenanceAgency>
@@ -15,7 +15,7 @@
          <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
       </conventionDeclaration>
       <localControl localType="niveau_de_detail">
-         <term>Élémentaire</term>
+         <term>Moyenne</term>
       </localControl>
       <maintenanceHistory>
          <maintenanceEvent>
@@ -24,13 +24,38 @@
             <agentType>human</agentType>
             <agent>Raphael BAUMARD</agent>
          </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2022-11-16</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Véronique AUBER</agent>
+            <eventDescription>pas de notice wikipédia, pas de notice d'autorité BnF, pas d'ISNI</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2023-07-12</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+            <eventDescription>12/07/2023, J. Gaillard : Normalisation de la forme autorisée du nom</eventDescription>
+         </maintenanceEvent>
       </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Site internet "Patrons de France" : http://www.patronsdefrance.fr/?q=sippaf-actor-record/22676&amp;qt-sippaf_info_actr_tabs=1 (consulté en novembre 2022).</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Fonds Jacques et Jules Hubert (339 AP)</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Revue de la métallurgie, n°2, février 1936, p. 140-141 : http://clio.ish-lyon.cnrs.fr/patrons/AC000008277/AC000008277Doc1569.pdf</sourceEntry>
+         </source>
+      </sources>
    </control>
    <cpfDescription>
       <identity>
          <entityType>person</entityType>
          <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
-            <part>Hubert, Jules</part>
+            <part>Hubert, Jules (1843-1935)</part>
          </nameEntry>
       </identity>
       <description>
@@ -40,9 +65,43 @@
                <toDate standardDate="1935-12-31">1935</toDate>
             </dateRange>
          </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Imphy</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d3ntnk1ej0-omw5jdce6k20">Imphy (Nièvre)</placeEntry>
+            </place>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Vincennes</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d3ntxfqxqs-hiibmu39cc86">Vincennes (Val-de-Marne)</placeEntry>
+            </place>
+         </places>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msjj72d-1dedn4099xfyy">chef d'entreprise</term>
+            </occupation>
+         </occupations>
          <biogHist>
-            <p>Co-gérant des Usines Dalifol, entreprise de forges, fonderies et aciers, directeur administratif puis directeur de la société des Agrafes françaises, Jules Hubert (1843-1935) fut l’un des promoteurs du procédé sidérurgique « Bessemer ». Jules Hubert fut également administrateur de la compagnie française du « Bi-Métal », de 1893 à 1926.</p>
+            <p>Né en 1843, Jules Hubert fait un stage de trois ans au laboratoire de chimie du Muséum de Paris, où il se forme aux analyses des fontes et des aciers avant d'être recruté par son professeur (Frémy) pour réaliser les installations du procédé Bessemer (procédé permettant d'affiner la fonte en acier) à Imphy, dans la Nièvre. C'est là en effet que la Société d'Imphy-Saint-Seurin, créée en 1863 par William Jackson, a construit deux gros convertisseurs Bessemer. Jules Hubert fait son apprentissage pendant un an à l'usine de Saint-Seurin sous la direction de Jackson, puis, au bout d'un an, se voit confier l'installation d'Imphy. En décembre 1863, J. Hubert élabore la première coulée d'acier Bessemer fondue à Imphy. En 1870, il est nommé directeur des usines Dalifol à Paris, spécialisées dans la coulée de fonte malléable, où il devient associé en 1880. En 1891, il est nommé directeur administratif de la Société des « Agrafes Françaises », puis, en 1893, administrateur de la Compagnie Française du « Bi-Métal », où il reste jusqu'en 1926. Il décède en 1935 à Vincennes.</p>
          </biogHist>
       </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_050106"
+                      xlink:type="simple">
+            <relationEntry>Hubert, Jacques (1880-1971)</relationEntry>
+            <descriptiveNote>
+               <p> Jules Hubert est le père de Jacques Hubert. </p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_060010"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Papiers de Jules et de Jacques Hubert (1728-1979)</relationEntry>
+         </resourceRelation>
+      </relations>
    </cpfDescription>
 </eac-cpf>

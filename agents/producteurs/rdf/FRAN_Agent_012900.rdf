@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/012900">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/012900"/>
@@ -11,14 +19,13 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Dérivation
-                (Migration ETANOT)</rico:name>
+            <rico:name xml:lang="fr">Dérivation (Migration ETANOT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/012900">
-            <rico:isInstantiationOf rdf:resource="record/012900"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/012900"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_012900</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
@@ -26,7 +33,7 @@
             <rico:identifier>FRDAFANCH00MC_NANOTAIRE02815</rico:identifier>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/012900">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -41,14 +48,27 @@
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
       </rico:hasOrHadAgentName>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/012900"/>
-            <rico:placeRelationHasSource rdf:resource="place/16%20avenue%20Pierre%20Ier%20de%20Serbie"/>
+            <rico:relationHasTarget rdf:resource="agent/012900"/>
+            <rico:relationHasSource rdf:resource="place/16%20avenue%20Pierre%20Ier%20de%20Serbie"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/16%20avenue%20Pierre%20Ier%20de%20Serbie"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/16%20avenue%20Pierre%20Ier%20de%20Serbie"/>
-      <rico:agentIsTargetOfPerformanceRelation><rico:PerformanceRelation rdf:about="performanceRelation/012900-d3nyu9x713-9kcjiv44l4wh-19980701-20100510"><rico:performanceRelationHasTarget rdf:resource="agent/012900"/><rico:performanceRelationHasSource><rico:Activity><rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/012900-d3nyu9x713-9kcjiv44l4wh-19980701-20100510"/><rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3nyu9x713-9kcjiv44l4wh"/></rico:Activity></rico:performanceRelationHasSource><rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1998-07-01</rico:beginningDate><rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-05-10</rico:endDate></rico:PerformanceRelation></rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3nyu9x713-9kcjiv44l4wh"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/012900-d3nyui3o8w--11y7jgy8q3wnt-19980701-20100510">
+            <rico:relationHasTarget rdf:resource="agent/012900"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d157789e101">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/012900-d3nyui3o8w--11y7jgy8q3wnt-19980701-20100510"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyui3o8w--11y7jgy8q3wnt"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1998-07-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-05-10</rico:endDate>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d157789e101"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Exerce d'abord dans une étude de Sevran (93) de 1992 à 1998.</html:p>
@@ -56,6 +76,7 @@
             <html:p>Quitte l'étude en 2010. Il est remplacé par Coralie Pesqué (voir arrêté du Ministre de la Justice du 10 mai 2010, JORF du 21 mai 2010, p. 9394)</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010266-012900-19980701-20100510"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/010266"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010266-012900-19980701-20100510"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/010266"/>
    </rico:Agent>
 </rdf:RDF>

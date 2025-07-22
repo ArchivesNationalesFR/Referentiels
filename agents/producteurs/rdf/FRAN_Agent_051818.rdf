@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051818">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051818"/>
@@ -11,29 +19,27 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-01-10</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Emmanuelle GIRY)</rico:name>
+            <rico:name xml:lang="fr">Création (par Emmanuelle GIRY)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-11-22</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Emmanuelle GIRY)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Emmanuelle GIRY)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-01-10</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Nécessaire dans le cadre d'un versement de la Mission de l'Éducation nationale ; pas d'ISNI ni de notice d'autorité BnF, vérifications faites de ce côté.</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Nécessaire dans le cadre d'un versement de la Mission de l'Éducation nationale ; pas d'ISNI ni de notice d'autorité BnF, vérifications faites de ce côté.</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051818">
-            <rico:isInstantiationOf rdf:resource="record/051818"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051818"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051818</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051818"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051818">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -56,29 +62,31 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-01-01</rico:beginningDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051818-d5bhvil6bx-16xdm3apll64m">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051818"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051818-d5bhvil6bx-16xdm3apll64m"/>
+            <rico:relationHasTarget rdf:resource="agent/051818"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d191445e99">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051818-d5bhvil6bx-16xdm3apll64m"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvil6bx-16xdm3apll64m"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvil6bx-16xdm3apll64m"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d191445e99"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>L'ambassadeur, haut représentant pour la réalisation en France du projet international de réacteur expérimental thermonucléaire dit " projet ITER " est une fonction instituée par décret du 21 novembre 2005 (décret n°2005-1438) auprès du ministre chargé des Affaires étrangères, du ministre de l'Industrie, et du ministre de l'Enseignement supérieur et de la Recherche. L'ambassadeur a pour rôle de coordonner l'action des administrations et des organismes d'enseignement et de recherche chargés de la réalisation en France du projet ITER. Il prépare la position de la France et représente le pays auprès des instances internationales compétentes, de l'Union européenne et des Etats étrangers.</html:p>
-            <html:p/>
             <html:p>Le projet ITER (International Thermonuclear Experimental Reactor), est un projet de réacteur de recherche civil à fusion nucléaire en cours de réalisation à Cadarache dans les Bouches-du-Rhône. Le projet de recherche s'inscrit dans une démarche à long terme et associe 35 pays : ceux de l'Union Européenne mais aussi l'Inde, le Japon, la Chine, la Russie, la Corée du Sud, les Etats-Unis et la Suisse. le projet est initialement proposé en novembre 1985 lors du sommet de Genève par Mikhaïl Gorbatchev. Les Etats-Unis, l'Europe et le Japon rejoignent le projet en 1986.</html:p>
             <html:p>Plusieurs sites avaient été initialement proposés pour la construction du réacteur. C'est finalement le site de Cadarache qui est retenu le 28 juin 2005 lors de la signature d'une déclaration commune de tous les membres du programme à Moscou. Le 21 novembre 2006 est signé à l'Elysée l'accord final sur la construction d'ITER, par les représentants de la Chine, de la Corée du Sud, des États-Unis, de l'Inde, du Japon, de la Russie et de l'Union européenne.</html:p>
             <html:p>Parmi les différentes instances décisionnelles du projet (Conseil ITER, comité scientifique et technique, comité de gestion), l'ambassadeur jour un rôle de coordination auprès des organisations nationales chargées de mettre en oeuvre le projet, et un rôle de représentation auprès des partenaires internationaux. François d'Aubert est nommé premier ambassadeur, haut représentant pour la réalisation du projet ITER le 25 novembre 2005. Il garde ses fonctions jusqu'en 2007.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/002084-051818-20050101-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/002084"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000016-051818-20050101-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000016"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057558-051818"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-057558"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/002084-051818-20050101-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/002084"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000016-051818-20050101-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000016"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/057558-051818"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-057558"/>
    </rico:Agent>
 </rdf:RDF>

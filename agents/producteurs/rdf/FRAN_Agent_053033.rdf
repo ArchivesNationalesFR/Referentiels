@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/053033">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/053033"/>
@@ -11,31 +19,29 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-09</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Barbara PROENÇA)</rico:name>
+            <rico:name xml:lang="fr">Création (par Barbara PROENÇA)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-03</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Solange BIDOU)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Solange BIDOU)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-09</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 09/09/2021 : ajout relations d'asso, indexation activité, ISNI, liens d'identité. pas de notice wikipédia</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 09/09/2021 : ajout relations d'asso, indexation activité, ISNI, liens d'identité. pas de notice wikipédia</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Curriculum vitae de Patrick Legrand (http://www.cgedd.developpement-durable.gouv.fr/IMG/pdf/CV_Legrand_cle7bd6b5.pdf)</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000000899117/about"/>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Curriculum vitae de Patrick Legrand (http://www.cgedd.developpement-durable.gouv.fr/IMG/pdf/CV_Legrand_cle7bd6b5.pdf)</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000000899117"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/053033">
-            <rico:isInstantiationOf rdf:resource="record/053033"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/053033"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_053033</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_053033"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/053033">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -52,64 +58,70 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1948-07-25</rico:birthDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/053033-d3nyu9yq7p-8zx3tnvrcpf0">
-            <rico:performanceRelationHasTarget rdf:resource="agent/053033"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/053033-d3nyu9yq7p-8zx3tnvrcpf0"/>
+            <rico:relationHasTarget rdf:resource="agent/053033"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d210712e97">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/053033-d3nyu9yq7p-8zx3tnvrcpf0"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3nyu9yq7p-8zx3tnvrcpf0"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3nyu9yq7p-8zx3tnvrcpf0"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3nyu9yq7p-8zx3tnvrcpf0"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d210712e97"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/053033-d699msjgtw3-1ton3i1q2op31">
-            <rico:performanceRelationHasTarget rdf:resource="agent/053033"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/053033-d699msjgtw3-1ton3i1q2op31"/>
+            <rico:relationHasTarget rdf:resource="agent/053033"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d210712e103">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/053033-d699msjgtw3-1ton3i1q2op31"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjgtw3-1ton3i1q2op31"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjgtw3-1ton3i1q2op31"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjgtw3-1ton3i1q2op31"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d210712e103"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/053033-d699msixdvh--wgctct8soc1y">
-            <rico:performanceRelationHasTarget rdf:resource="agent/053033"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/053033-d699msixdvh--wgctct8soc1y"/>
+            <rico:relationHasTarget rdf:resource="agent/053033"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d210712e109">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/053033-d699msixdvh--wgctct8soc1y"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d210712e109"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Patrick Legrand est architecte et ingénieur de recherche de l'INRA (Institut national de la recherche agronomique) ; il a fait des études complémentaires en linguistique, lettres modernes et archéologie.</html:p>
-            <html:p/>
             <html:p>Durant les années 1970, et après trois ans dans une agence d'architecture comme chef du bureau de dessin, chargé d'études dans l'un des premiers bureaux d'études en environnement (Eco-Projet) puis chargé de recherche dans un centre d'enseignement et de recherche nouvellement créé par l’École nationale des Ponts et Chaussées (le CERGRENE (Centre d'Enseignement et de Recherche pour la Gestion des Ressources Naturelles et de l'Environnement), maintenant CEREVE(Centre d'Enseignement et de Recherche Eau, Ville, Environnement)), il se spécialise dans les domaines de la morphologie urbaine, de l'analyse opérationnelle des paysages et des végétations urbaines (co-inventeur du Cadastre vert®), des méthodologies d'évaluation environnementale et d'aménagement intégré en milieu rural ou urbain, et des cartographies associées.</html:p>
-            <html:p/>
             <html:p>De 1983 à 1984, il est conseiller technique au cabinet de Madame Huguette Bouchardeau, alors ministre de l'Environnement, et chef de la mission du paysage (direction de la protection de la nature). Entre 1986 et 2008, à l'INRA, il participe à l'intégration de l'environnement et du développement durable dans les politiques, les programmes et les recherches de l'Institut, à la valorisation et à la diffusion des travaux et des résultats (il y crée notamment le Courrier de l'environnement de l'INRA) et y suit les relations avec les acteurs politiques, administratifs, professionnels et sociaux intervenant dans ces domaines.</html:p>
-            <html:p/>
             <html:p>Entre 1986 et 1992, il est l'administrateur de la Fédération française des sociétés de protection de la nature (France Nature Environnement) et de 1992 à 1995, il en est le président.</html:p>
-            <html:p/>
             <html:p>De 1989 à 1992, il est le président du CEDI (Collectif Environnement-Développement international) ; il y dirige les travaux préparatoires et la délégation des associations françaises d'environnement à la conférence de Rio de Janeiro sur l'environnement et le développement de 1992. En 1996, il fait partie de la commission d'experts pour la consultation de la population sur le projet de canal Rhin-Rhône.</html:p>
-            <html:p/>
             <html:p>Il est également ancien membre du Conseil économique et social (1994-1999), du Comité national d'évaluation des établissements à caractère scientifique, culturel et professionnel (1995-1999), de la Commission française du développement durable (1996 -2000), de la Commission nationale du débat public (1997-2007) ; de 2003 à 2006, président de la commission particulière du débat public ITER (International Thermonuclear Experimental Reactor, Cadarache en Provence) et de la Commission d'étude de la dissémination des produits issus du génie biomoléculaire (1998-2000). Il est correspondant national de l’Académie d’Agriculture de France (depuis 2002 - section des Sciences de l’homme et de la société) et membre associé du Conseil général des Ponts et Chaussées (2001). Il est fait chevalier de l'Ordre national du Mérite et officier du Mérite agricole.</html:p>
-            <html:p/>
             <html:p>De septembre 1999 à août 2000, il est conseiller chargé de la nature et de la chasse au cabinet de Madame Dominique Voynet, alors ministre de l’Aménagement du territoire et de l’Environnement.</html:p>
-            <html:p/>
             <html:p>Depuis février 2008, il est vice-président de la CNDP (Commission nationale du débat public, autorité administrative indépendante).</html:p>
          </html:div>
       </rico:history>
-      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/053033-051300-19860101-19951231"/><rico:isOrWasLeaderOf rdf:resource="agent/051300"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/006188-053033-20010101-20011231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/006188"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050682-053033-19830322-19841231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050682"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009004-053033-19480725-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/009004"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050687-053033-19990901-20000831"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050687"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/053033-051300-19860101-19951231"/>
+      <rico:isOrWasLeaderOf rdf:resource="agent/051300"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/006188-053033-20010101-20011231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/006188"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050682-053033-19830322-19841231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050682"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009004-053033-19480725-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/009004"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050687-053033-19990901-20000831"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050687"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb119122123#about"/>
       <owl:sameAs rdf:resource="https://www.idref.fr/026980169"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/060128-053033"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-060128"/>
    </rico:Agent>
 </rdf:RDF>

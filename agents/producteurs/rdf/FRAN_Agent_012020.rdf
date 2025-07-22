@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/012020">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/012020"/>
@@ -11,14 +19,13 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-09-30</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Dérivation
-                (Migration ETANOT)</rico:name>
+            <rico:name xml:lang="fr">Dérivation (Migration ETANOT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-09-30</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/012020">
-            <rico:isInstantiationOf rdf:resource="record/012020"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/012020"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_012020</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
@@ -26,7 +33,7 @@
             <rico:identifier>FRDAFANCH00MC_NANOTAIRE01862</rico:identifier>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/012020">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -41,27 +48,41 @@
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
       </rico:hasOrHadAgentName>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/012020"/>
-            <rico:placeRelationHasSource rdf:resource="place/rue%20Saint-Jacques"/>
+            <rico:relationHasTarget rdf:resource="agent/012020"/>
+            <rico:relationHasSource rdf:resource="place/rue%20Saint-Jacques"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/rue%20Saint-Jacques"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/rue%20Saint-Jacques"/>
-      <rico:agentIsTargetOfPerformanceRelation><rico:PerformanceRelation rdf:about="performanceRelation/012020-d3nyu9x713-9kcjiv44l4wh-15801101-16291231"><rico:performanceRelationHasTarget rdf:resource="agent/012020"/><rico:performanceRelationHasSource><rico:Activity><rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/012020-d3nyu9x713-9kcjiv44l4wh-15801101-16291231"/><rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3nyu9x713-9kcjiv44l4wh"/></rico:Activity></rico:performanceRelationHasSource><rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1580-11-01</rico:beginningDate><rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1629-12-31</rico:endDate></rico:PerformanceRelation></rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3nyu9x713-9kcjiv44l4wh"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/012020-d3nyui3o8w--11y7jgy8q3wnt-15801101-16291231">
+            <rico:relationHasTarget rdf:resource="agent/012020"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d147501e101">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/012020-d3nyui3o8w--11y7jgy8q3wnt-15801101-16291231"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyui3o8w--11y7jgy8q3wnt"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1580-11-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1629-12-31</rico:endDate>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d147501e101"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Marié à Marie Le Doyen (voir ET/XXXIII/207, folio 95, 23 mars 1590, Donation par Geneviève Rolland à Marie Fardeau, fille émancipée de Jacques Frardeau et Marie Le Doyen)</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010176-012020-15801101-16291231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/010176"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/041363-012020"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-041363"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/043254-012020"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-043254"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/052093-012020"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-052093"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/042189-012020"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-042189"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010176-012020-15801101-16291231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/010176"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/041363-012020"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-041363"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/043254-012020"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-043254"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/052093-012020"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-052093"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/042189-012020"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-042189"/>
    </rico:Agent>
 </rdf:RDF>

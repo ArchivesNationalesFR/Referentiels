@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051140">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051140"/>
@@ -10,22 +18,21 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-28</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Marine ZELVERTE)</rico:name>
+            <rico:name xml:lang="fr">Création (par Marine ZELVERTE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-28</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 28 juillet 2015 : ajouté descripteur fonctions</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 28 juillet 2015 : ajouté descripteur fonctions</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051140">
-            <rico:isInstantiationOf rdf:resource="record/051140"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051140"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051140</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051140"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051140">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -41,20 +48,21 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1946-01-01</rico:beginningDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051140-d3nyuidsbr-1umshw9gnudo9">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051140"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051140-d3nyuidsbr-1umshw9gnudo9"/>
+            <rico:relationHasTarget rdf:resource="agent/051140"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d179774e83">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051140-d3nyuidsbr-1umshw9gnudo9"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuidsbr-1umshw9gnudo9"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">cinéma</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuidsbr-1umshw9gnudo9"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d179774e83"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>La direction des affaires européennes et internationales est chargée de la définition et de la mise en œuvre de la politique internationale du CNC en liaison avec les autres directions. Elle a entre autres missions l'élaboration et le suivi des accords bilatéraux et multilatéraux de coproduction et d'échange de films et d’œuvres audiovisuelles, la négociation des directives en cours d'élaboration dans l'Union européenne, l'exportation et la promotion du film français à l'étranger. Elle assure la représentation du CNC dans les instances européennes (Conseil de l'Europe, Commission des Communautés européennes, Eurimages).</html:p>
@@ -66,13 +74,15 @@
                <html:li>L'aide à la prospection à l'étranger a pour objectif de soutenir la stratégie de prospection mise en place pour un film donné ou pour un catalogue de films. Les sociétés bénéficiaires sont les sociétés d'exportation. Une commission étudie les dossiers lors de deux commissions par ans : une au printemps et une à l’automne (pour l'audiovisuel, cette commission est composée de quatre membres professionnels et d'un observateur de la TVFI ; pour le cinéma, la commission est composée de trois exportateurs, de deux producteurs et d'un président). Pour une demande concernant les supports de prospection pour un film donné, un exportateur ne peut soumettre son dossier qu'une fois la prospection terminée pour ce film, c'est-à-dire lorsqu'il ne réalisera plus de supports éligibles à l’aide (plaquette, publicité dans la presse, attaché de presse). Un film ne peut donc être présenté qu'à une commission. Une société d'exportation ne peut pas soumettre une demande de soutien pour plus de dix films par an. Pour les supports de prospection concernant un catalogue de films (site internat, line-up, catalogue papier) les dossiers ne sont soumis qu'à la commission d'automne. Les sociétés présentent les factures acquittées et le matériel réalisé sur l'ensemble de l'année. Chaque société est auditionnée pour présenter sa stratégie. L'ensemble de ces aides est attribué sous forme de subvention.</html:li>
                <html:li>L'aide au doublage et au sous-titrage a pour objectif de soutenir la réalisation d'un doublage ou d'un sous-titrage en langue anglaise, en espagnol, en allemand, e japonais ou en italien afin de favoriser les ventes à l'international d'un film donné. Les sociétés bénéficiaires sont les sociétés de production et d'exportation (deux demandes de doublage par an par société ainsi qu'une demande de doublage pour un film d'animation). Pour les films bénéficiaires de l'aide aux cinémas du monde, seuls ceux dont le budget global de production est inférieur à 2,5 millions d'euros sont éligibles. Cette aide est automatique (c'est-à-dire sans sélection) et est attribuée, à posteriori, sur la base des factures acquittées relatives à la réalisation du doublage ou du sous-titrage d'un film. Elle est attribuée sous forme de subvention. La demande d'aide au doublage est présentée à l'avis de la commission prospection.</html:li>
             </html:ul>
-            <html:p/>
             <html:p>Le Fonds Sud est une aide sélective qui a pour objectif de soutenir la diversité cinématographique dans le monde. Elle est réservée aux longs métrages destinés à une exploitation en salles (fiction, animation ou documentaire) réalisés par des ressortissants des pays du Sud et tournée majoritairement dans les zones géographiques éligibles. Depuis 1984, le Fonds Sud Cinéma soutient la diversité cinématographique dans le monde. Financée par le ministère des Affaires étrangères et le ministère de la Culture et de la Communication, cette aide sélective a soutenu la production de plus de 500 longs métrages. Une commission composée de professionnels du cinéma, renouvelable tous les deux ans, est chargée d'examiner les demandes. Elle émet un avis sur chaque projet en fonction de sa qualité artistique et de sa faisabilité.</html:p>
             <html:p>Les pays bénéficiant de cette aide sont les pays d'Afrique, les pays de la zone Caraïbes et de l'Océan Indien, les pays d'Amérique latine, de l'Asie (à l'exception de la Corée, du Japon, de Singapour et de Taïwan), ceux du Proche et du Moyen-Orient ainsi que les pays d'Europe Centrale et Orientale. Le dispositif Fonds sud a été clos le 31 décembre 2011. une nouvelle forme de soutien à la coproduction internationale a été lancée récemment sous le nom d'aide aux cinémas du monde.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/005418-051140-19461025-*"/><rico:isOrWasSubordinateTo rdf:resource="agent/005418"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054114-051140"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-054114"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/005418-051140-19461025-*"/>
+      <rico:isDirectSubordinateTo rdf:resource="agent/005418"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054114-051140"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054114"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/060805-051140"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-060805"/>
    </rico:Agent>
 </rdf:RDF>

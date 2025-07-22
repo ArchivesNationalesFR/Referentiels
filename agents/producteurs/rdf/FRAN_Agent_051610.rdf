@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051610">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051610"/>
@@ -11,30 +19,28 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-26</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Zénaïde ANDRIEU-ROMANEIX)</rico:name>
+            <rico:name xml:lang="fr">Création (par Zénaïde ANDRIEU-ROMANEIX)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Emmanuel ROUSSEAU)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Emmanuel ROUSSEAU)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-26</rico:date>
-            <rico:descriptiveNote xml:lang="fr">MR : recherche infructueuse dans la base ISNI (26/07/17).</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">MR : recherche infructueuse dans la base ISNI (26/07/17).</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Archives nationales, Fonds Lucien Gâtineau (768 AP).</rico:source>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Archives nationales, Fonds Lucien Gâtineau (768 AP).</rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051610">
-            <rico:isInstantiationOf rdf:resource="record/051610"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051610"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051610</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051610"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051610">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -60,7 +66,7 @@
             <html:p>Décoré de la Croix de guerre 1939-1945, Lucien Gâtineau est officier de l'ordre tunisien du Nichan Iftikhar (1954), officier des Palmes académiques (1957), chevalier de la Légion d'honneur (1963).</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057143-051610"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-057143"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/057143-051610"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-057143"/>
    </rico:Agent>
 </rdf:RDF>

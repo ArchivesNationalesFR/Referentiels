@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050308">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050308"/>
@@ -10,28 +18,27 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-12-10</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Zénaïde ANDRIEU-ROMANEIX)</rico:name>
+            <rico:name xml:lang="fr">Création (par Zénaïde ANDRIEU-ROMANEIX)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-12-10</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 10 décembre 2013 : ajout forme du nom et n° notice BnF</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 10 décembre 2013 : ajout forme du nom et n° notice BnF</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Archives nationales, Fonds Saint-Nectaire (498 AP).</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice d'autorité BnF n° FRBNF16660676</html:p>
-      </rico:source>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050308">
-            <rico:isInstantiationOf rdf:resource="record/050308"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050308"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050308</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050308"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050308">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Family"/>
@@ -66,7 +73,7 @@
             <html:p>Originaire d’Auvergne, la famille de Saint-Nectaire ou Sennecterre est connue dès le XIIIe siècle, avec Louis, seigneur de Saint-Nectaire en 1234. François de Saint-Nectaire, seigneur de La Ferté-Nabert (auj. La Ferté-Saint-Aubin, Loiret), chevalier des ordres du roi, servit au siège de Perpignan en 1542, dans les guerres de Champagne en 1544, passa en Écosse en 1548 et dans le Piémont en 1552. Il fut nommé lieutenant général au gouvernement de Metz en 1556, date à laquelle la ville fut cédée à la France. Maréchal de camp en 1561, il combattit à Dreux (1562) et Jarnac (1569). Il mourut en 1587. Son fils, Henri, marquis de La Ferté-Nabert, lieutenant général au gouvernement de Champagne, ambassadeur en Angleterre et à Rome, fut ministre d’État. Il mourut en 1662. Henri II, duc de La Ferté, fut maréchal de camp, gouverneur de Lorraine, lieutenant général puis maréchal de France. Il mourut en 1681.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057291-050308"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-057291"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/057291-050308"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-057291"/>
    </rico:Agent>
 </rdf:RDF>

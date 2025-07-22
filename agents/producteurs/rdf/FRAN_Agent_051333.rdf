@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051333">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051333"/>
@@ -10,31 +18,30 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-07-06</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Zénaïde ANDRIEU-ROMANEIX)</rico:name>
+            <rico:name xml:lang="fr">Création (par Zénaïde ANDRIEU-ROMANEIX)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-07-06</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Elsa Camus, 6 juillet 2016 : ajout activité, ajout lieu, ajout ISNI, ajout sources, ajout autres formes du nom</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Elsa Camus, 6 juillet 2016 : ajout activité, ajout lieu, ajout ISNI, ajout sources, ajout autres formes du nom</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb12480770w</html:p>
-      </rico:source>
-      <rico:hasSource rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb12480770w"/>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb12480770w"/>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/Genevi%C3%A8ve_de_Gaulle-Anthonioz</html:p>
-      </rico:source>
-      <rico:hasSource rdf:resource="https://fr.wikipedia.org/wiki/Genevi%C3%A8ve_de_Gaulle-Anthonioz"/>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121328708/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="https://fr.wikipedia.org/wiki/Genevi%C3%A8ve_de_Gaulle-Anthonioz"/>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121328708"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051333">
-            <rico:isInstantiationOf rdf:resource="record/051333"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051333"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051333</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051333"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051333">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -94,26 +101,28 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1920-10-25</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-02-14</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/051333"/>
-            <rico:placeRelationHasSource rdf:resource="place/FRAN_RI_005-d5bdp2ayrw--vngga1nfrpwv"/>
+            <rico:relationHasTarget rdf:resource="agent/051333"/>
+            <rico:relationHasSource rdf:resource="place/FRAN_RI_005-d5bdp2ayrw--vngga1nfrpwv"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/FRAN_RI_005-d5bdp2ayrw--vngga1nfrpwv"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_005-d5bdp2ayrw--vngga1nfrpwv"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051333-d-2dlouru40-16uts12xdm4zl-19400101-19451231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051333"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051333-d-2dlouru40-16uts12xdm4zl-19400101-19451231"/>
+            <rico:relationHasTarget rdf:resource="agent/051333"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d183378e135">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051333-d-2dlouru40-16uts12xdm4zl-19400101-19451231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-2dlouru40-16uts12xdm4zl"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1940-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1945-12-31</rico:endDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-2dlouru40-16uts12xdm4zl"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-2dlouru40-16uts12xdm4zl"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d183378e135"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Geneviève de Gaulle naît le 25 octobre 1920 à Saint-Jean-de-Valériscle, dans le Gard. Elle est la fille de Xavier de Gaulle, frère aîné du général de Gaulle et ingénieur des mines nommé en 1922 dans la Sarre où Geneviève passe toute son enfance. En 1935, la Sarre redevient allemande et la famille de Gaulle s'installe à Rennes.</html:p>
@@ -124,9 +133,11 @@
             <html:p>Première femme élevée à la dignité de grand-croix de la Légion d'honneur en 1997, Geneviève de Gaulle-Anthonioz rentre au Panthéon le 27 mai 2015 aux côtés de Germaine Tillion, Pierre Brossolette et Jean Zay.</html:p>
          </html:div>
       </rico:history>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/051333-051334"/><rico:hasFamilyAssociationWith rdf:resource="agent/051334"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051333-052209-19440201-20020214"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/052209"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057193-051333"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-057193"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/051333-051334"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/051334"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/051333-052209-19440201-20020214"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/052209"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/057193-051333"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-057193"/>
    </rico:Agent>
 </rdf:RDF>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051479">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051479"/>
@@ -11,32 +19,30 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-11-22</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Pascal DAVID-DORMIEN)</rico:name>
+            <rico:name xml:lang="fr">Création (par Pascal DAVID-DORMIEN)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-15</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-11-22</rico:date>
-            <rico:descriptiveNote xml:lang="fr">nouvelle notice</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">nouvelle notice</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Notice BNF : FRBNF15681904</rico:source>
-      <rico:source xml:lang="fr">Archives nationales, fonds 96 AP</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000079272383/about"/>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice BNF : FRBNF15681904</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Archives nationales, fonds 96 AP</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000079272383"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051479">
-            <rico:isInstantiationOf rdf:resource="record/051479"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051479"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051479</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051479"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051479">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -61,61 +67,78 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1863-06-06</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1949-10-29</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/051479"/>
-            <rico:placeRelationHasSource rdf:resource="place/Dunkerque"/>
+            <rico:relationHasTarget rdf:resource="agent/051479"/>
+            <rico:relationHasSource rdf:resource="place/Dunkerque"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Dunkerque"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Dunkerque"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/051479"/>
-            <rico:placeRelationHasSource rdf:resource="place/Lille"/>
+            <rico:relationHasTarget rdf:resource="agent/051479"/>
+            <rico:relationHasSource rdf:resource="place/Lille"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Lille"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Lille"/>
-      
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/051479-d5bhvimw73--1s2f8w95l5ufq">
+            <rico:relationHasTarget rdf:resource="agent/051479"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d185848e134">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051479-d5bhvimw73--1s2f8w95l5ufq"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvimw73--1s2f8w95l5ufq"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d185848e134"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051479-d699msj742x--12cnnohd8i9wj">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051479"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051479-d699msj742x--12cnnohd8i9wj"/>
+            <rico:relationHasTarget rdf:resource="agent/051479"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d185848e143">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051479-d699msj742x--12cnnohd8i9wj"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj742x--12cnnohd8i9wj"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Licencié en droit et avocat à la Cour d'appel de Paris</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj742x--12cnnohd8i9wj"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj742x--12cnnohd8i9wj"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d185848e143"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051479-d3nyu9xige-1dbbvsqzr0tfp-19010101-19181231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051479"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051479-d3nyu9xige-1dbbvsqzr0tfp-19010101-19181231"/>
+            <rico:relationHasTarget rdf:resource="agent/051479"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d185848e154">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051479-d3nyu9xige-1dbbvsqzr0tfp-19010101-19181231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3nyu9xige-1dbbvsqzr0tfp"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1901-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1918-12-31</rico:endDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3nyu9xige-1dbbvsqzr0tfp"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3nyu9xige-1dbbvsqzr0tfp"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d185848e154"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051479-d699msj9z2z-1l1dmark2fa5i-18900101-19011231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051479"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051479-d699msj9z2z-1l1dmark2fa5i-18900101-19011231"/>
+            <rico:relationHasTarget rdf:resource="agent/051479"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d185848e169">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051479-d699msj9z2z-1l1dmark2fa5i-18900101-19011231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj9z2z-1l1dmark2fa5i"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1890-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1901-12-31</rico:endDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj9z2z-1l1dmark2fa5i"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj9z2z-1l1dmark2fa5i"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d185848e169"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Félix Trépont (1863-1949) est né le 6 juin 1863 à Beaumont-de-Lomagne (Tarn-et-Garonne), fils de Jean Trépont et de Marie Thérèse Garros. Licencié en droit il devient avocat à la cour d'appel de Paris. Attaché au cabinet du sous-secrétaire d'État au ministère de l'intérieur, il est nommé sous-préfet de Calvi (1890), de Saint-Pol (1892) et de Dôle (1896), puis secrétaire général du département de l'Aisne (1898), préfet du Jura (1901), du Loiret (1905), du Pas-de-Calais (1907) et du Nord (1909). Dès le début du mois d'août 1914, Lille est déclarée « ville ouverte » et l’État-major évacué le 24 août. Le gouvernement, devant l'arrivée des Allemands, ordonne au préfet Félix Trepont de se replier avec les services administratifs et postaux à Dunkerque. Puis quelques jours plus tard, un contre-ordre. À son retour, le préfet découvre les bureaux des édifices militaires ouverts à tous vents et le matériel laissé à l'abandon. Dès le 27 août, Trepont fait le nécessaire pour faire transporter tout le matériel militaire vers Dunkerque. Le 2 septembre, les Allemands pénétrent pour la première fois dans Lille, qui est bombardée du 3 au 13 octobre 1914 et mise sous occupation allemande jusqu'à la fin de la guerre..</html:p>
@@ -125,7 +148,8 @@
             <html:p>Félix Trépont décède le 29 octobre 1949 dans sa commune d'origine.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/050082-051479"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-050082"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/15681904/felix_trepont/"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/050082-051479"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-050082"/>
    </rico:Agent>
 </rdf:RDF>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/000736">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/000736"/>
@@ -11,26 +19,24 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-01-29</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Dérivation
-                (Import_SIA)</rico:name>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Florence CLAVAUD)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Florence CLAVAUD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-01-29</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 29 janvier 2015 : changé le nom, ajouté ISNI, notice descriptive, statut, n° notice BnF, fonction, revu liens IR, créé plusieurs liens</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 29 janvier 2015 : changé le nom, ajouté ISNI, notice descriptive, statut, n° notice BnF, fonction, revu liens IR, créé plusieurs liens</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice d'autorité BnF n° FRBNF11990852</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121714334/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121714334"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/000736">
-            <rico:isInstantiationOf rdf:resource="record/000736"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/000736"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_000736</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
@@ -38,7 +44,7 @@
             <rico:identifier>2179/CRIV</rico:identifier>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/000736">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -63,20 +69,21 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-01-01</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-12-31</rico:endDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/000736-d3nyuic5p0-ktmsglhlnhvr">
-            <rico:performanceRelationHasTarget rdf:resource="agent/000736"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/000736-d3nyuic5p0-ktmsglhlnhvr"/>
+            <rico:relationHasTarget rdf:resource="agent/000736"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d15026e118">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/000736-d3nyuic5p0-ktmsglhlnhvr"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuic5p0-ktmsglhlnhvr"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">recherche dans le domaine de l'éducation surveillée</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuic5p0-ktmsglhlnhvr"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d15026e118"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>La direction de l'Éducation surveillée du Ministère de la Justice crée en 1951 le Centre de formation et d'études de l'Éducation Surveillée (CFEES) qui a pour mission principale de former des éducateurs.</html:p>
@@ -84,32 +91,37 @@
             <html:p>Officiellement, depuis le 13 mai 1958, il est doté d'un service de recherches : le Centre de formation et de recherches de l'Éducation surveillée (CFRES). En 1983, la réforme de la recherche au ministère de la Justice entraîne des modifications dans l'organisation du centre : le CFRES se subdivise en Centre de recherches interdisciplinaire de Vaucresson (CRIV), unité de recherche associée au CNRS qui fonctionne jusqu’en 1995, et en Centre de formation et d'études de l'Éducation surveillée (CFEES). Ce dernier continue à prendre en charge la formation continue et conserve un petit service d'études. Il devient en 1991 le Centre de formation et d'études de la Protection judiciaire de la jeunesse (CFEPJJ) puis le Centre national de formation et d'études de la protection judiciaire de la jeunesse (CNFEPJJ) en 1992. Depuis l'an 2000, le CNFEPJJ comprend à nouveau les départements de formation, de service d'études et de ressources pour la recherche justice (2RJ, créée en 1993).</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000009-000736-19830101-19951231"/><rico:isOrWasSubordinateTo rdf:resource="agent/000009"/>
-      <rico:groupIsTargetOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050902-000736-19890101-19951231"/><rico:hasOrHadLeader rdf:resource="agent/050902"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000736-050912-19830101-19951231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050912"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000048-000736-19830101-19951231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000048"/>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/050967-000736-19830101-*"/><rico:isSuccessorOf rdf:resource="agent/050967"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/022982-000736"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-022982"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/019819-000736"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-019819"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/013510-000736"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-013510"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/019378-000736"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-019378"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/026560-000736"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-026560"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/026558-000736"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-026558"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/026561-000736"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-026561"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/026562-000736"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-026562"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/006003-000736"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-006003"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/026559-000736"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-026559"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054657-000736"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-054657"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/000009-000736-19830101-19951231"/>
+      <rico:wasSubordinateTo rdf:resource="agent/000009"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/050902-000736-19890101-19951231"/>
+      <rico:hasOrHadLeader rdf:resource="agent/050902"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000736-050912-19830101-19951231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050912"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000048-000736-19830101-19951231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000048"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/050967-000736-19830101-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/050967"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/022982-000736"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-022982"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/019819-000736"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-019819"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/013510-000736"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-013510"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/019378-000736"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-019378"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/026560-000736"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-026560"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/026558-000736"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-026558"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/026561-000736"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-026561"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/026562-000736"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-026562"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/006003-000736"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-006003"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/026559-000736"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-026559"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054657-000736"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054657"/>
    </rico:Agent>
 </rdf:RDF>

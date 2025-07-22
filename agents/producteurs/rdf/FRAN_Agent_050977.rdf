@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050977">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050977"/>
@@ -10,22 +18,21 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-02-25</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Florence CLAVAUD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Florence CLAVAUD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-02-25</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 25 février 2015 : création à l'occasion de l'arrivée aux AN des archives des musées nationaux. Infos fuornies par A. Clergeau (mission culture)</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 25 février 2015 : création à l'occasion de l'arrivée aux AN des archives des musées nationaux. Infos fuornies par A. Clergeau (mission culture)</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050977">
-            <rico:isInstantiationOf rdf:resource="record/050977"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050977"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050977</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050977"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050977">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -42,27 +49,29 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1852-02-15</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1872-05-08</rico:endDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050977-d5bhviikk9--y6te63k761ib">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050977"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050977-d5bhviikk9--y6te63k761ib"/>
+            <rico:relationHasTarget rdf:resource="agent/050977"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d178267e78">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050977-d5bhviikk9--y6te63k761ib"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">musée</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d178267e78"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Par le décret du 15 février 1852, le Prince-Président Louis Napoléon crée un musée spécial destiné à recevoir tous les objets ayant appartenu aux souverains français, au sein du musée du Louvre. Le musée est supprimé par le décret du 8 mai 1872 et les objets rejoignent le département de Sculptures et Objets d’art du Louvre ou leurs institutions d’origine.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005223-050977-18520215-18720508"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/005223"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/053805-050977"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-053805"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/005223-050977-18520215-18720508"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/005223"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/053805-050977"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-053805"/>
    </rico:Agent>
 </rdf:RDF>

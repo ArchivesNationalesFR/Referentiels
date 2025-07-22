@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050528">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050528"/>
@@ -10,24 +18,23 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-12-03</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Pascal DAVID)</rico:name>
+            <rico:name xml:lang="fr">Création (par Pascal DAVID)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-12-03</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Archives nationales, fonds Claude Eymard (124AP)</html:p>
-      </rico:source>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050528">
-            <rico:isInstantiationOf rdf:resource="record/050528"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050528"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050528</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050528"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050528">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -49,7 +56,7 @@
             <html:p>Claude-François Eymard (1772-1859) était le fils de François Eymard, procureur du roi, et de Thècle de la Cour. Dès 1800, il entra dans la police. Au cours de sa carrière, il se vit confier des missions de confiance. Ainsi, en septembre 1809, il fut nommé secrétaire général à Boulogne-sur-Mer au commissariat de police des ports de la Manche. Il occupa ce poste, durant deux années. C’est à La Haye qu’il devint commissaire spécial, de février 1812 à décembre 1813. De janvier à avril 1814, il fut commissaire spécial à Mayence. En juillet 1814, il fut nommé délégué de la direction générale de la police dans les départements de l’Ardèche, du Gard, de l’Hérault, de la Lozère, de l’Aveyron et de la Haute-Loire. Il eut pour mission de s’informer sur l’opinion publique. Après un court passage à Boulogne, comme lieutenant de police, il fut envoyé de nouveau comme délégué en Saône-et-Loire, Ain, Rhône, Doubs, Jura et Côte-d’Or. Le 11 mars 1817, il fut nommé inspecteur général. À Marseille, Eymard exerça les fonctions de lieutenant de police, de juillet 1818 au 1er mars 1820. Après Marseille, il obtint, par Decazes, le poste de préfet de Corse. Il fut ensuite membre du Conseil général de la Drôme de 1836 à 1841.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/004302-050528"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-004302"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/004302-050528"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-004302"/>
    </rico:Agent>
 </rdf:RDF>

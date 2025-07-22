@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051419">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051419"/>
@@ -11,33 +19,31 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-11-16</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:name xml:lang="fr">Création (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-11-16</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 16 novembre 2016 : création sur demande de la mission. Ajout de : n° ISNI, liens d'association et d'identité, indexation fonctions, un texte de référence</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 16 novembre 2016 : création sur demande de la mission. Ajout de : n° ISNI, liens d'association et d'identité, indexation fonctions, un texte de référence</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-11-16</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Site web du FDS : http://www.fonds-de-solidarite.fr/</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000120973596/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000120973596"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051419">
-            <rico:isInstantiationOf rdf:resource="record/051419"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051419"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051419</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051419"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051419">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -61,37 +67,39 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1982-01-01</rico:beginningDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051419-d3nyug3e0g-1xzlvri8dg416">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051419"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051419-d3nyug3e0g-1xzlvri8dg416"/>
+            <rico:relationHasTarget rdf:resource="agent/051419"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d184738e112">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051419-d3nyug3e0g-1xzlvri8dg416"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyug3e0g-1xzlvri8dg416"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyug3e0g-1xzlvri8dg416"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d184738e112"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051419-d3nyuhqsd2--1a8m2jo9iv12q">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051419"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051419-d3nyuhqsd2--1a8m2jo9iv12q"/>
+            <rico:relationHasTarget rdf:resource="agent/051419"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d184738e118">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051419-d3nyuhqsd2--1a8m2jo9iv12q"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhqsd2--1a8m2jo9iv12q"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Financement et gestion des allocations de solidarité en faveur des travailleurs privés d'emploi</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhqsd2--1a8m2jo9iv12q"/></rico:Activity></rico:performsOrPerformed>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d184738e118"/>
+      <rico:generalDescription rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Organisation interne ou généalogie</h4>
             <html:p>Le Fonds est administré par un conseil d'administration dont le président est nommé par décret.</html:p>
          </html:div>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Créé par la loi du du 4 novembre 1982 relative à la contribution exceptionnelle de solidarité en faveur des travailleurs privés d’emploi, le FDS est placé sous la tutelle conjointe des ministres en charge des affaires sociales et de l'économie.</html:p>
@@ -111,18 +119,27 @@
          </html:div>
       </rico:history>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb118637446#about"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/007079-051419-19820101-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/007079"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000013-051419-19820629-19860320"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000013"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009648-051419-19860320-19880622"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/009648"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009841-051419-20120516-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/009841"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009623-051419-20101114-20120510"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/009623"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000027-051419-20020507-20101113"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000027"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/004951-051419-19970604-20020506"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/004951"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009626-051419-19951107-19970602"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/009626"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009649-051419-19880628-19950511"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/009649"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057343-051419"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-057343"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/055933-051419"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-055933"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/007079-051419-19820101-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/007079"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000013-051419-19820629-19860320"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000013"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009648-051419-19860320-19880622"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/009648"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009841-051419-20120516-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/009841"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009623-051419-20101114-20120510"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/009623"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000027-051419-20020507-20101113"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000027"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/004951-051419-19970604-20020506"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/004951"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009626-051419-19951107-19970602"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/009626"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009649-051419-19880628-19950511"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/009649"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/057343-051419"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-057343"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/055933-051419"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-055933"/>
    </rico:Agent>
 </rdf:RDF>

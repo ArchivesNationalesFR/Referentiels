@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050829">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050829"/>
@@ -10,22 +18,21 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Clotilde LE CALVE)</rico:name>
+            <rico:name xml:lang="fr">Création (par Clotilde LE CALVE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Marine Zelverte, avril 2015: changement de nom, compléments organigramme.</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Marine Zelverte, avril 2015: changement de nom, compléments organigramme.</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050829">
-            <rico:isInstantiationOf rdf:resource="record/050829"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050829"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050829</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050829"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050829">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -51,7 +58,7 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1964-01-01</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1974-12-31</rico:endDate>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      <rico:generalDescription rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Organisation interne ou généalogie</h4>
             <html:p>Sous-directeurs de l'actualité parlée puis de l'information radiophonique:</html:p>
@@ -63,7 +70,7 @@
                <html:li>Roger Gicquel (1973-1974).</html:li>
             </html:ul>
          </html:div>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>De 1964 à 1974, la sous-direction de l'information radiophonique est chargée :</html:p>
@@ -72,8 +79,9 @@
             <html:p>De 1973 à 1974, les radios-services (notamment Inter-service route et le service Inf 1) y sont rattachées.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000346-050829-19640101-19741231"/><rico:isOrWasSubordinateTo rdf:resource="agent/000346"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/050536-050829"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-050536"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/000346-050829-19640101-19741231"/>
+      <rico:wasSubordinateTo rdf:resource="agent/000346"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/050536-050829"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-050536"/>
    </rico:Agent>
 </rdf:RDF>

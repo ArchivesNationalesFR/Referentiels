@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051139">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051139"/>
@@ -10,22 +18,21 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-28</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Marine ZELVERTE)</rico:name>
+            <rico:name xml:lang="fr">Création (par Marine ZELVERTE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-28</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 28 juillet 2015 : ajouté descripteur fonctions et statut juridique</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 28 juillet 2015 : ajouté descripteur fonctions et statut juridique</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051139">
-            <rico:isInstantiationOf rdf:resource="record/051139"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051139"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051139</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051139"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051139">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -50,18 +57,19 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1991-01-01</rico:beginningDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051139-d3nyugp6nd-1m2amxlhij5ib">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051139"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051139-d3nyugp6nd-1m2amxlhij5ib"/>
+            <rico:relationHasTarget rdf:resource="agent/051139"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d179769e100">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051139-d3nyugp6nd-1m2amxlhij5ib"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugp6nd-1m2amxlhij5ib"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugp6nd-1m2amxlhij5ib"/></rico:Activity></rico:performsOrPerformed>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d179769e100"/>
+      <rico:generalDescription rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Organisation interne ou généalogie</h4>
             <html:p>La direction de la communication se divise en trois départements :</html:p>
@@ -70,7 +78,6 @@
                <html:li>Un département de la communication externe qui rassemble les relations publiques, les relations presse et l’internet</html:li>
                <html:li>Un département de la documentation</html:li>
             </html:ul>
-            <html:p/>
             <html:ul>
                <html:li>Le<html:b>département de la communication interne</html:b>, des publications et d’intranet a pour attributions la mise en œuvre des actions suivantes :</html:li>
             </html:ul>
@@ -87,7 +94,6 @@
             <html:p>Il est garant de l’application de la charte graphique du CNC.</html:p>
             <html:p>Il est chargé de l’animation et du développement du site intranet du CNC en liaison avec le système d’organisation et des systèmes d’information (SOSI) et le service des ressources humaines.</html:p>
             <html:p>Le département de la communication interne a pour objectif de favoriser la communication des agents entre eux. Pour ce faire, le département essai d’associer le personnel aux événements initiés par le CNC et privilégie les rencontres hors les murs de l’établissement.</html:p>
-            <html:p/>
             <html:ul>
                <html:li>Le<html:b>département de la communication externe</html:b>comprend les relations publiques, les relations presse et l’internet.</html:li>
             </html:ul>
@@ -98,7 +104,6 @@
             <html:p>Le département de la communication externe procède à la diffusion de l’information en France et à l’étranger et à l’envoi de tout dossier et invitations.</html:p>
             <html:p>Il anime, coordonne et développe le site internet du CNC, crée des bases de données en liaison avec le SOSI et les directions concernées.</html:p>
             <html:p>Enfin, il gère et instruit les dossiers de proposition de distinctions honorifiques destinées aux personnalités françaises et étrangères du secteur. Cela concerne les trois ordres nationaux : Arts et Lettres, Ordre du mérite et Légion d'honneur. Les distinctions honorifiques sont entièrement traitées de la proposition à l’obtention de la distinction ainsi que de la remise de la médaille.</html:p>
-            <html:p/>
             <html:ul>
                <html:li>Le<html:b>département de la documentation</html:b>fut créé en 1953 et est chargé de collecter, de traiter, de diffuser et de conserver toute l’information ayant trait à l’ensemble des domaines d’intervention du CNC.</html:li>
             </html:ul>
@@ -123,7 +128,7 @@
             <html:p>En externe, le département répond aux demandes des usagers (professionnels, journalistes, étudiants et chercheurs) en mettant à leur disposition l’accès au fonds documentaire, la consultation des catalogues, un service de renseignements téléphoniques.</html:p>
             <html:p>Le département de la documentation du CNC travaille en étroite collaboration avec la bibliothèque du film (BIFI) depuis la création de la BIFI en 1992. Dans ce cadre, un échange organisé des données a été mis en place afin d’établir une diffusion de l’information de façon complémentaire pour le public.</html:p>
          </html:div>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>En 2000, le service de la communication du Centre national de la cinématographie qui existait depuis 1991, fut transformé en direction de la communication.</html:p>
@@ -139,12 +144,13 @@
             <html:p>- Le ministère de la Culture et de la Communication.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/051127-051139-19910101-*"/><rico:isOrWasSubordinateTo rdf:resource="agent/051127"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054112-051139"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-054112"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/028315-051139"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-028315"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/032501-051139"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-032501"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/051127-051139-19910101-*"/>
+      <rico:isDirectSubordinateTo rdf:resource="agent/051127"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054112-051139"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054112"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/028315-051139"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-028315"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/032501-051139"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-032501"/>
    </rico:Agent>
 </rdf:RDF>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/010893">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/010893"/>
@@ -8,20 +16,30 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
-      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:lastModificationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-10-17</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Dérivation
-                (Migration ETANOT)</rico:name>
+            <rico:name xml:lang="fr">Dérivation (Migration ETANOT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
-         <html:p xml:lang="fr">Noémie SANTACANA Les notaires au Châtelet de Paris à l'époque du Cardinal de Fleury, mémoire de maîtrise 2003-2004, dact., p. 291-292</html:p>
-      </rico:source>
-      <rico:hasInstantiation>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Administration.referentiels ADMINISTRATION RÉFÉRENTIELS DOCUMENTAIRES)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-10-17</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Administration.referentiels ADMINISTRATION RÉFÉRENTIELS DOCUMENTAIRES)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-10-17</rico:date>
+            <rico:generalDescription xml:lang="fr">17/10/2024, J. Gaillard : Ajout lien IR 42993 | Ajout activité 'notaire' | Reprise 'nom du lieu'</rico:generalDescription>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Noémie SANTACANA Les notaires au Châtelet de Paris à l'époque du Cardinal de Fleury, mémoire de maîtrise 2003-2004, dact., p. 291-292</rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/010893">
-            <rico:isInstantiationOf rdf:resource="record/010893"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/010893"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_010893</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
@@ -29,7 +47,7 @@
             <rico:identifier>FRDAFANCH00MC_NANOTAIRE00640</rico:identifier>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/010893">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -44,36 +62,66 @@
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
       </rico:hasOrHadAgentName>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/010893"/>
-            <rico:placeRelationHasSource rdf:resource="place/%C3%A9tude%20XCV%20%3A%20rue%20Coquill%C3%A8re"/>
+            <rico:relationHasTarget rdf:resource="agent/010893"/>
+            <rico:relationHasSource rdf:resource="place/Si%C3%A8ge%20de%20l%27%C3%A9tude%20V"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/%C3%A9tude%20XCV%20%3A%20rue%20Coquill%C3%A8re"/>
-      <rico:hasOrHadLocation rdf:resource="place/%C3%A9tude%20XCV%20%3A%20rue%20Coquill%C3%A8re"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadLocation rdf:resource="place/Si%C3%A8ge%20de%20l%27%C3%A9tude%20V"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/010893"/>
-            <rico:placeRelationHasSource rdf:resource="place/%C3%A9tude%20V%20%3A%20rue%20Coquill%C3%A8re"/>
+            <rico:relationHasTarget rdf:resource="agent/010893"/>
+            <rico:relationHasSource rdf:resource="place/Si%C3%A8ge%20de%20l%27%C3%A9tude%20XCV"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/%C3%A9tude%20V%20%3A%20rue%20Coquill%C3%A8re"/>
-      <rico:hasOrHadLocation rdf:resource="place/%C3%A9tude%20V%20%3A%20rue%20Coquill%C3%A8re"/>
-      <rico:agentIsTargetOfPerformanceRelation><rico:PerformanceRelation rdf:about="performanceRelation/010893-d3nyu9x713-9kcjiv44l4wh-17240201-17530122"><rico:performanceRelationHasTarget rdf:resource="agent/010893"/><rico:performanceRelationHasSource><rico:Activity><rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/010893-d3nyu9x713-9kcjiv44l4wh-17240201-17530122"/><rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3nyu9x713-9kcjiv44l4wh"/></rico:Activity></rico:performanceRelationHasSource><rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1724-02-01</rico:beginningDate><rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1753-01-22</rico:endDate></rico:PerformanceRelation></rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3nyu9x713-9kcjiv44l4wh"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadLocation rdf:resource="place/Si%C3%A8ge%20de%20l%27%C3%A9tude%20XCV"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/010893-d3nyui3o8w--11y7jgy8q3wnt-17240201-17530122">
+            <rico:relationHasTarget rdf:resource="agent/010893"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d134418e153">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/010893-d3nyui3o8w--11y7jgy8q3wnt-17240201-17530122"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyui3o8w--11y7jgy8q3wnt"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1724-02-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1753-01-22</rico:endDate>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d134418e153"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/010893-d3nyu9x713-9kcjiv44l4wh">
+            <rico:relationHasTarget rdf:resource="agent/010893"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d134418e171">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/010893-d3nyu9x713-9kcjiv44l4wh"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3nyu9x713-9kcjiv44l4wh"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3nyu9x713-9kcjiv44l4wh"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d134418e171"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
-            <html:p>Baptisé le 6 mars 1686</html:p>
-            <html:p>marié à Claude Marie-Anne Demuys (voir ET/LXV/214, 18 décembre 1724, homologation d'un contrat de mariage passé sous seing privé le 30 octobre 1723)</html:p>
-            <html:p>notaire substituant dans les études LXXV (d'avril à mai 1745) et LXXXIV (du 29 juillet au 1er octobre 1749)</html:p>
-            <html:p>décédé le 11 janvier 1753</html:p>
+            <html:p>Baptisé le 6 mars 1686.</html:p>
+            <html:p>Marié à Claude Marie-Anne Demuys (voir ET/LXV/214, 18 décembre 1724, homologation d'un contrat de mariage passé sous seing privé le 30 octobre 1723).</html:p>
+            <html:p>Notaire substituant dans les études LXXV (d'avril à mai 1745) et LXXXIV (du 29 juillet au 1er octobre 1749).</html:p>
+            <html:p>Décédé le 11 janvier 1753.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010222-010893-17240201-17530122"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/010222"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010132-010893-17460101-17481231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/010132"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/041190-010893"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-041190"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/051282-010893"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-051282"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056778-010893"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-056778"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010222-010893-17240201-17530122"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/010222"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010132-010893-17460101-17481231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/010132"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/056778-010893"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-056778"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/051282-010893"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-051282"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/041190-010893"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-041190"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/042993-010893"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-042993"/>
    </rico:Agent>
 </rdf:RDF>

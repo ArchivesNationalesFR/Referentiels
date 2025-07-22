@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052878">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052878"/>
@@ -11,32 +19,30 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-20</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Véronique AUBER)</rico:name>
+            <rico:name xml:lang="fr">Création (par Véronique AUBER)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-19</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-20</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 20/08/2021 : modification forme autorisée du nom</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 20/08/2021 : modification forme autorisée du nom</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Notice de la BNF n° : FRBNF16191907</rico:source>
-      <rico:source xml:lang="fr">https://maitron.fr/spip.php?article130253, notice SAINT-PRIX (de) Marguerite, Joséphine, Marie, Louise de SOUBEYRAN, née LOUBET Marguerite par Marie-Laure Prévost, version mise en ligne le 30 novembre 2010, dernière modification le 9 novembre 2020.</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/000000046357110X/about"/>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice de la BNF n° : FRBNF16191907</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">https://maitron.fr/spip.php?article130253, notice SAINT-PRIX (de) Marguerite, Joséphine, Marie, Louise de SOUBEYRAN, née LOUBET Marguerite par Marie-Laure Prévost, version mise en ligne le 30 novembre 2010, dernière modification le 9 novembre 2020.</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/000000046357110X"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052878">
-            <rico:isInstantiationOf rdf:resource="record/052878"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052878"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052878</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052878"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052878">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -75,17 +81,19 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1870-06-28</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1964-06-05</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052878-d699msk3h6v--1a7obp35gqwv3">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052878"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052878-d699msk3h6v--1a7obp35gqwv3"/>
+            <rico:relationHasTarget rdf:resource="agent/052878"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d208415e121">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052878-d699msk3h6v--1a7obp35gqwv3"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msk3h6v--1a7obp35gqwv3"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk3h6v--1a7obp35gqwv3"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk3h6v--1a7obp35gqwv3"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d208415e121"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Marguerite Loubet (1870-1964) est la fille aînée de l’homme politique Émile Loubet et Marie-Louise Picard. Elle épouse en 1892 Humbert de Soubeyran de Saint-Prix, avocat à Lyon, futur conseiller d’État et issu d’une vieille famille républicaine. Lors du mandat présidentiel de son père (1899-1906), elle remplace fréquemment sa mère, peu portée sur les mondanités, aux côtés de son père. Son goût personnel la porte à s’occuper en premier lieu d’œuvres caritatives : hôpitaux, crèches écoles.</html:p>
@@ -96,8 +104,9 @@
          </html:div>
       </rico:history>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb161919075#about"/>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/051776-052878"/><rico:hasFamilyAssociationWith rdf:resource="agent/051776"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/003647-052878"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-003647"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/051776-052878"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/051776"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/003647-052878"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-003647"/>
    </rico:Agent>
 </rdf:RDF>

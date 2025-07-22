@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050976">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050976"/>
@@ -11,34 +19,32 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-03-25</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Florence CLAVAUD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Florence CLAVAUD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-02-25</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 25 février 2015 : création à l'occasion de l'arrivée aux AN des archives des musées nationaux. Infos en partie fournies par A. Clergeau (mission culture)</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 25 février 2015 : création à l'occasion de l'arrivée aux AN des archives des musées nationaux. Infos en partie fournies par A. Clergeau (mission culture)</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Pascal RIVIALE)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Pascal RIVIALE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-03-25</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 25 février 2015 : création à l'occasion de l'arrivée aux AN des archives des musées nationaux. Infos en partie fournies par A. Clergeau (mission culture). P.Riviale (23/03/2015): complément de l'historique, datation des autres formes du nom, lien avec l'IR.</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 25 février 2015 : création à l'occasion de l'arrivée aux AN des archives des musées nationaux. Infos en partie fournies par A. Clergeau (mission culture). P.Riviale (23/03/2015): complément de l'historique, datation des autres formes du nom, lien avec l'IR.</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice d'autorité BnF n° FRBNF11877413</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121563054/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121563054"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050976">
-            <rico:isInstantiationOf rdf:resource="record/050976"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050976"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050976</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050976"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050976">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -64,20 +70,21 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1862-01-01</rico:beginningDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050976-d5bhviikk9--y6te63k761ib">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050976"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050976-d5bhviikk9--y6te63k761ib"/>
+            <rico:relationHasTarget rdf:resource="agent/050976"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d178262e126">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050976-d5bhviikk9--y6te63k761ib"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">musée d'archéologie</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d178262e126"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>En 1852 est proposé la formation d’un musée gaulois au Louvre. Le 8 mars 1862, Napoléon III décide par décret impérial la création et l’installation d’un musée gallo-romain au Château de Saint Germain.</html:p>
@@ -89,8 +96,13 @@
             <html:p>Le musée des Antiquités nationales devient musée d’Archéologie nationale en 2005 par décret ministériel du 22 juin 2005.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000005-050976-19590108-*"/><rico:isOrWasSubordinateTo rdf:resource="agent/000005"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/053811-050976"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-053811"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/000005-050976-19590108-*"/>
+      <rico:isDirectSubordinateTo rdf:resource="agent/000005"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/053811-050976"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-053811"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/060372-050976"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-060372"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/060786-050976"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-060786"/>
    </rico:Agent>
 </rdf:RDF>

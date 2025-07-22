@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051310">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051310"/>
@@ -10,22 +18,21 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-05-26</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par null MISSION.REFERENTIELS)</rico:name>
+            <rico:name xml:lang="fr">Création (par null MISSION.REFERENTIELS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-05-26</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 26 mai 2016 : création sur demande de la mission des archives ; revu le nom, ajouté n°s NOR des arrêtés et indexation fonctions</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 26 mai 2016 : création sur demande de la mission des archives ; revu le nom, ajouté n°s NOR des arrêtés et indexation fonctions</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051310">
-            <rico:isInstantiationOf rdf:resource="record/051310"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051310"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051310</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051310"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051310">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -42,20 +49,21 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-01-01</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-12-31</rico:endDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051310-d5bhviiyko--q661mlo9uy50">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051310"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051310-d5bhviiyko--q661mlo9uy50"/>
+            <rico:relationHasTarget rdf:resource="agent/051310"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d183181e86">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051310-d5bhviiyko--q661mlo9uy50"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviiyko--q661mlo9uy50"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">coordination des pharmaciens inspecteurs au sein des DRASS, affaires relatives à la profession de pharmacien, affaires juridiques, économie du médicament</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviiyko--q661mlo9uy50"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d183181e86"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>La création de l'Agence du médicament (ADM) par la loi n° 93-5 de janvier 1993 conduit à la suppression de la direction de la pharmacie. La sous-direction de la pharmacie hérite des compétences qui n'ont pas été transférées à l'ADM.</html:p>
@@ -70,14 +78,19 @@
             <html:p>Les compétences relatives aux officines de pharmacie (élaboration et suivi des textes, traitement des recours hiérarchiques et contentieux) sont reprises par le bureau des officines de pharmacie et des laboratoires d'analyse de biologie médicale (O5) de la nouvelle direction de l'hospitalisation et de l'organisation des soins (DHOS).</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/004229-051310-19930101-20001231"/><rico:isOrWasSubordinateTo rdf:resource="agent/004229"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/051310-051407-19930101-20001231"/><rico:hasOrHadSubordinate rdf:resource="agent/051407"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/051310-051421-19940101-20001231"/><rico:hasOrHadSubordinate rdf:resource="agent/051421"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/051310-051420-19930101-20001231"/><rico:hasOrHadSubordinate rdf:resource="agent/051420"/>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/004357-051310-19930101-*"/><rico:isSuccessorOf rdf:resource="agent/004357"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057324-051310"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-057324"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057328-051310"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-057328"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/004229-051310-19930101-20001231"/>
+      <rico:wasSubordinateTo rdf:resource="agent/004229"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/051310-051407-19930101-20001231"/>
+      <rico:hadSubordinate rdf:resource="agent/051407"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/051310-051421-19940101-20001231"/>
+      <rico:hadSubordinate rdf:resource="agent/051421"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/051310-051420-19930101-20001231"/>
+      <rico:hadSubordinate rdf:resource="agent/051420"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/004357-051310-19930101-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/004357"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/057324-051310"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-057324"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/057328-051310"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-057328"/>
    </rico:Agent>
 </rdf:RDF>

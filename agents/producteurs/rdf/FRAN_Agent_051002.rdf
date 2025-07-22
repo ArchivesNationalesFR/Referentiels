@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051002">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051002"/>
@@ -11,33 +19,31 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Florence CLAVAUD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Florence CLAVAUD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-04-27</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 26 avril 2015 : création sur demande d'E. Van den Neste (mission présidence de la République)</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 26 avril 2015 : création sur demande d'E. Van den Neste (mission présidence de la République)</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Florence CLAVAUD)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Florence CLAVAUD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 27 octobre 2015 : revu le nom, le rattachement hiérarchique et le lien d'association, la notice historique.</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 27 octobre 2015 : revu le nom, le rattachement hiérarchique et le lien d'association, la notice historique.</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Référé de la Cour des comptes n° 68183 du 18 novembre 2013 sur l'organisation et la mise en oeuvre de la présidence française du G8 à Deauville et du G20 à Cannes en 2011</html:p>
-      </rico:source>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051002">
-            <rico:isInstantiationOf rdf:resource="record/051002"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051002"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051002</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051002"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051002">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -54,22 +60,23 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-07-22</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-12-31</rico:endDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051002-d3nyuidsbr-1umshw9gnudo9-20100722-20111231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051002"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051002-d3nyuidsbr-1umshw9gnudo9-20100722-20111231"/>
+            <rico:relationHasTarget rdf:resource="agent/051002"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d178610e110">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051002-d3nyuidsbr-1umshw9gnudo9-20100722-20111231"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuidsbr-1umshw9gnudo9"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-07-22</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">présidence des sommets du G8 et du G20</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuidsbr-1umshw9gnudo9"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d178610e110"/>
       <rico:authorizingMandate rdf:parseType="Literal">
          <html:p xml:lang="fr">Décret n° 2010-833 du 22 juillet 2010 (NOR: PRMX1019500D)</html:p>
       </rico:authorizingMandate>
@@ -83,14 +90,16 @@
             <html:p>- celui des Affaires Etrangères,</html:p>
             <html:p>- celui de l’économie, de l’industrie et de l’emploi,</html:p>
             <html:p>- celui de l’intérieur, de l’outre-mer et des collectivités territoriales.</html:p>
-            <html:p/>
             <html:p>Il est rattaché, pour sa gestion administrative, au Secrétariat Général du Gouvernement. Il coordonne l’élaboration, en lien avec les ministères concernés, de la liste des évènements, dont il doit évaluer le coût avec les administrations concernées, au titre de la Présidence française. La programmation des crédits correspondants à ces évènements lui est soumise, il est tenu informé des engagements de crédits. Il lui est rendu compte de leur exécution.</html:p>
             <html:p>Il est chargé notamment de la communication, de la recherche de partenariats avec les entreprises et les collectivités territoriales, de la définition des modalités d’accréditation, de la définition des modalités d’association de la société civile aux évènements et activités de la présidence française. Il procède, en liaison avec les ministères concernés, à l’évaluation des opérations de la présidence et de leur coût final.</html:p>
             <html:p>Le Secrétariat Général a ses bureaux situés avenue de Marigny (dans les locaux de la Présidence de la République), et ce dès le 9 juillet 2010. Le responsable du secrétariat général est en même temps le chef du protocole de la Présidence de la République.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/009872-051002-20100722-20111231"/><rico:isOrWasSubordinateTo rdf:resource="agent/009872"/>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000221-051002-20100722-20111231"/><rico:isOrWasSubordinateTo rdf:resource="agent/000221"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000002-051002-20100722-20111231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000002"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/009872-051002-20100722-20111231"/>
+      <rico:wasSubordinateTo rdf:resource="agent/009872"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/000221-051002-20100722-20111231"/>
+      <rico:wasSubordinateTo rdf:resource="agent/000221"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000002-051002-20100722-20111231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000002"/>
    </rico:Agent>
 </rdf:RDF>

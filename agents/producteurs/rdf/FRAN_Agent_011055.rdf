@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/011055">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/011055"/>
@@ -11,17 +19,16 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Dérivation
-                (Migration ETANOT)</rico:name>
+            <rico:name xml:lang="fr">Dérivation (Migration ETANOT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Marc DURAND, Documents du Mainutier central concernant l'histoire de la photographie (1810-1904), Archives nationales, Paris, à paraître.</html:p>
-      </rico:source>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/011055">
-            <rico:isInstantiationOf rdf:resource="record/011055"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/011055"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_011055</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
@@ -29,7 +36,7 @@
             <rico:identifier>FRDAFANCH00MC_NANOTAIRE00815</rico:identifier>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/011055">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -51,25 +58,38 @@
             <rico:isOrWasAgentNameOf rdf:resource="agent/011055"/>
          </rico:AgentName>
       </rico:hasOrHadAgentName>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/011055"/>
-            <rico:placeRelationHasSource rdf:resource="place/14%20rue%20Saint-Marc"/>
+            <rico:relationHasTarget rdf:resource="agent/011055"/>
+            <rico:relationHasSource rdf:resource="place/14%20rue%20Saint-Marc"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/14%20rue%20Saint-Marc"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/14%20rue%20Saint-Marc"/>
-      <rico:agentIsTargetOfPerformanceRelation><rico:PerformanceRelation rdf:about="performanceRelation/011055-d3nyu9x713-9kcjiv44l4wh-18370826-18490804"><rico:performanceRelationHasTarget rdf:resource="agent/011055"/><rico:performanceRelationHasSource><rico:Activity><rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/011055-d3nyu9x713-9kcjiv44l4wh-18370826-18490804"/><rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3nyu9x713-9kcjiv44l4wh"/></rico:Activity></rico:performanceRelationHasSource><rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1837-08-26</rico:beginningDate><rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1849-08-04</rico:endDate></rico:PerformanceRelation></rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3nyu9x713-9kcjiv44l4wh"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/011055-d3nyui3o8w--11y7jgy8q3wnt-18370826-18490804">
+            <rico:relationHasTarget rdf:resource="agent/011055"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d136218e114">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/011055-d3nyui3o8w--11y7jgy8q3wnt-18370826-18490804"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyui3o8w--11y7jgy8q3wnt"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1837-08-26</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1849-08-04</rico:endDate>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d136218e114"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Né en 1807</html:p>
             <html:p>Fils d'Henri Mailand, notaire de l'étude LXVI.</html:p>
             <html:p>Il quitte le notariat pour se consacrer à la photographie ; membre fondateur de la société française de photographie en 1855</html:p>
             <html:p>Il meurt en 1872</html:p>
-            <html:p/>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010179-011055-18370826-18490804"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/010179"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/052993-011055"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-052993"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010179-011055-18370826-18490804"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/010179"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/052993-011055"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-052993"/>
    </rico:Agent>
 </rdf:RDF>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051322">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051322"/>
@@ -10,28 +18,27 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-06-13</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Florence CLAVAUD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Florence CLAVAUD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-06-13</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 9 juin 2016 : création sur demande de la mission ; indexation fonctions</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 9 juin 2016 : création sur demande de la mission ; indexation fonctions</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Intranet du MEDDE : http://intra.portail.i2/</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Textes de référence : arrêté et décret d’organisation</html:p>
-      </rico:source>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051322">
-            <rico:isInstantiationOf rdf:resource="record/051322"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051322"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051322</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051322"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051322">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -54,21 +61,22 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-01</rico:beginningDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051322-d5bhvijq5z-zaaj99p5tmch">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051322"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051322-d5bhvijq5z-zaaj99p5tmch"/>
+            <rico:relationHasTarget rdf:resource="agent/051322"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d183303e101">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051322-d5bhvijq5z-zaaj99p5tmch"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvijq5z-zaaj99p5tmch"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">élaboration de la politique ministérielle des ressources humaines ; gestion administrative et de la paye du personnel ; relations sociales ; modernisation des statuts ; parcours professionnels ; formation professionnelle</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvijq5z-zaaj99p5tmch"/></rico:Activity></rico:performsOrPerformed>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d183303e101"/>
+      <rico:generalDescription rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Organisation interne ou généalogie</h4>
             <html:p>La direction des ressources humaines élabore et met en œuvre la politique ministérielle des ressources humaines. Elle élabore le plan national de gestion prévisionnelle des effectifs, des emplois et des compétences et en conduit la mise en œuvre. Elle élabore le budget du personnel du ministère, en effectifs et en crédits, et en assure la mise en place. Elle anime et coordonne les parcours professionnels. Elle met en œuvre la politique de modernisation des statuts des personnels et élabore les statuts particuliers auxquels ils sont soumis, à l’exception des personnels gérés par la direction générale de l’aviation civile. Elle organise les recrutements et les mobilités des personnels. Elle élabore le plan national annuel de formation et le document d’orientation à moyen terme de la formation professionnelle, et les met en œuvre. Elle coordonne et anime les services en charge du développement des compétences et de la formation professionnelle, et oriente leur activité. Elle est chargée des politiques sociales. Elle conduit l’action du ministère en matière de conditions de travail, de sécurité et de santé au travail, et de prévention des risques professionnels. Elle conduit la politique d’emploi, pour le ministère, des travailleurs handicapés. Elle instruit les dossiers relatifs aux droits à pension des agents et concourt à la mise en œuvre du droit à l’information sur les retraites. Elle assure la gestion administrative et la paye des personnels, à l’exception de ceux qui sont gérés par la direction générale de l’aviation civile et de ceux ne relevant pas du périmètre de l’administration centrale et dont la gestion ou la paye est déconcentrée. Elle définit et anime la mise en œuvre, dans les services, de la politique de rémunération des personnels. Elle est chargée des relations sociales et anime le dialogue social national. Elle assure la coordination des entités chargées de la gestion de proximité dans les directions générales. Elle promeut la parité et l’égalité professionnelle entre les femmes et les hommes et l’égalité des chances pour l’accès aux emplois au sein du ministère.</html:p>
@@ -86,7 +94,6 @@
             <html:p>– la mission d’appui à la mise en place de l’opérateur national de paye et de pilotage des pôles supports intégrés (MOPPSI) ;</html:p>
             <html:p>– la mission d’appui à la maîtrise d’ouvrage informatique (MAPMOI) ;</html:p>
             <html:p>La directrice des ressources humaines est assisté d’un adjoint, chef de service. Elle est également assistée d’un chef de service, chargé dans le domaine des ressources humaines, de la modernisation, de l’innovation et de la qualité, et d’un chef de service, chargé des questions sociales.</html:p>
-            <html:p/>
             <html:p>
                <html:u>La Sous-direction du pilotage, de la performance et de la synthèse</html:u> :</html:p>
             <html:p>Cette sous-direction :</html:p>
@@ -105,7 +112,6 @@
             <html:p>- le bureau des effectifs ;</html:p>
             <html:p>- le bureau du budget de personnel ;</html:p>
             <html:p>- le bureau de la prévision, de l’animation et de la performance.</html:p>
-            <html:p/>
             <html:p>
                <html:u>La Sous-direction des carrières et de l’encadrement</html:u> :</html:p>
             <html:p>Cette sous-direction anime et coordonne les parcours professionnels ;</html:p>
@@ -118,7 +124,6 @@
             <html:p>- le bureau des parcours professionnels ;</html:p>
             <html:p>- le bureau de l’évaluation.</html:p>
             <html:p>Le centre interministériel de gestion des ingénieurs des ponts, des eaux et des forêts, service à compétence nationale, lui est rattaché.</html:p>
-            <html:p/>
             <html:p>
                <html:u>La sous-direction de la modernisation et de la gestion statutaires</html:u> :</html:p>
             <html:p>Cette sous-direction :</html:p>
@@ -134,7 +139,6 @@
             <html:p>- le bureau de la modernisation et de la gestion statutaires des corps de catégories B et C ;</html:p>
             <html:p>- le bureau de la modernisation et de la gestion statutaires des personnels contractuels, des personnels d’exploitation et des personnels maritimes ;</html:p>
             <html:p>- le bureau de l’expertise statutaire et du suivi des agents en position normale d’activité ou mis à disposition.</html:p>
-            <html:p/>
             <html:p>
                <html:u>La sous-direction du recrutement et de la mobilité</html:u> :</html:p>
             <html:p>Cette sous-direction :</html:p>
@@ -146,7 +150,6 @@
             <html:p>- le bureau des recrutements par concours ;</html:p>
             <html:p>- le bureau des mobilités et des recrutements interministériels ;</html:p>
             <html:p>- le bureau de l’appui aux services pour les recrutements.</html:p>
-            <html:p/>
             <html:p>
                <html:u>La sous-direction de la formation, des compétences et des qualifications</html:u>
             </html:p>
@@ -157,9 +160,7 @@
             <html:p>- coordonne et anime les centres interrégionaux de formation professionnelle du ministère, oriente leur activité et en assure le pilotage technique et organisationnel ;</html:p>
             <html:p>- assure l’évaluation de l’activité de formation des maîtrises d’ouvrage métier et veille à leur professionnalisation ;</html:p>
             <html:p>- assure l’animation des instances nationales de concertation en matière de formation.</html:p>
-            <html:p/>
             <html:p>À partir des orientations stratégiques définies par le secrétariat général et des besoins formulés par les directions d’administration centrale et les services territoriaux mettant en œuvre les politiques du ministère chargé du développement durable, le CMVRH contribue à la politique des ressources humaines du ministère et à sa mise en œuvre ainsi qu’au développement des compétences des services et des agents.</html:p>
-            <html:p/>
             <html:p>La sous-direction de la formation, des compétences et des qualifications comprend :</html:p>
             <html:p>- le bureau du budget, de la réglementation et des statistiques de la formation ;</html:p>
             <html:p>- le bureau du pilotage du plan national de formation ;</html:p>
@@ -168,7 +169,6 @@
             <html:p>Le Centre ministériel de Valorisation des Ressources humaines est composé :</html:p>
             <html:p>- du centre d’évaluation, de documentation et d’innovation pédagogiques (CEDIP) situé à Montpellier ;</html:p>
             <html:p>- des centres de valorisation des ressources humaines (CVRH) issus de la fusion des centres interrégionaux de formation professionnelle et des cellules de gestion unifiée et partagée des ressources humaines.</html:p>
-            <html:p/>
             <html:p>
                <html:u>La sous-direction des politiques sociales, de la prévention et des pensions</html:u> :</html:p>
             <html:p>Cette sous-direction :</html:p>
@@ -183,7 +183,6 @@
             <html:p>- le bureau de la prévention, de la santé au travail, du service social et des travailleurs handicapés ;</html:p>
             <html:p>- le bureau des prestations d’action sociale ;</html:p>
             <html:p>- le bureau des pensions.</html:p>
-            <html:p/>
             <html:p>
                <html:u>La sous-direction de la gestion administrative et de la paye</html:u> :</html:p>
             <html:p>Cette sous-direction :</html:p>
@@ -198,8 +197,6 @@
             <html:p>- le bureau de la gestion administrative et de la paye des agents de la filière technique ;</html:p>
             <html:p>- le bureau de la gestion administrative et de la paye des agents de la filière maritime et des personnels contractuels ;</html:p>
             <html:p>- le pôle de validation des mouvements de paye.</html:p>
-            <html:p/>
-            <html:p/>
             <html:p>
                <html:u>Le département de la politique de rémunération, de l’organisation du temps de travail, et de la réglementation </html:u>:</html:p>
             <html:p>Ce département :</html:p>
@@ -214,7 +211,6 @@
             <html:p>- le bureau de l’organisation du temps de travail ;</html:p>
             <html:p>- le bureau de la politique de rémunération ;</html:p>
             <html:p>- le bureau de la réglementation.</html:p>
-            <html:p/>
             <html:p>
                <html:u>Le département de la coordination des ressources humaines de l’administration centrale et de gestion de proximité du secrétariat général</html:u> :</html:p>
             <html:p>Ce département :</html:p>
@@ -233,7 +229,6 @@
             <html:p>- le bureau de l’action médico-sociale et de la prévention en administration centrale ;</html:p>
             <html:p>- le bureau de la formation des agents de l’administration centrale ;</html:p>
             <html:p>- le pôle de la coordination de la gestion des ressources humaines en administration centrale.</html:p>
-            <html:p/>
             <html:p>
                <html:u>Le département des relations sociales</html:u>
             </html:p>
@@ -245,26 +240,29 @@
             <html:p>Le département des relations sociales comprend :</html:p>
             <html:p>- le bureau du dialogue social national ;</html:p>
             <html:p>- le bureau du courrier parlementaire du secrétariat général et du courrier réservé de la direction des ressources humaines.</html:p>
-            <html:p/>
             <html:p>
                <html:u>La mission d’appui à la mise en place de l’opérateur national de paye et de pilotage des pôles supports intégrés</html:u> :</html:p>
             <html:p>- représente le ministère auprès de l’opérateur national de paye ;</html:p>
             <html:p>- anime la mise en place de la gestion administrative et de la paye dans les pôles supports intégrés des services déconcentrés du ministère.</html:p>
-            <html:p/>
             <html:p>
                <html:u>La mission d’appui à la maîtrise d’ouvrage informatique</html:u> :</html:p>
             <html:p>- propose au directeur des ressources humaines les priorités à retenir en termes de maîtrise d’ouvrage informatique dans les champs de compétence de la direction ;</html:p>
             <html:p>- assiste, en tant que de besoin, les services de la direction, sur le plan technique et méthodologique, pour faciliter l’exercice de leurs missions en matière de maîtrise d’ouvrage informatique ;</html:p>
             <html:p>- constitue l’interlocuteur de référence du service des politiques support et des systèmes d’information, en matière de systèmes d’information.</html:p>
          </html:div>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Tout comme l’ensemble du Secrétariat général dont elle fait partie, la DRH est créée en 2008 lors de la fusion des ministères chargés de l’Équipement et de l’Environnement.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/051316-051322-20080101-*"/><rico:isOrWasSubordinateTo rdf:resource="agent/051316"/>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/006019-051322-20080101-*"/><rico:isSuccessorOf rdf:resource="agent/006019"/>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/006326-051322-20080101-*"/><rico:isSuccessorOf rdf:resource="agent/006326"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/051316-051322-20080101-*"/>
+      <rico:isDirectSubordinateTo rdf:resource="agent/051316"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/007029-051322-20080709-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/007029"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/053052-051322-20080709-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/053052"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/006019-051322-20080101-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/006019"/>
    </rico:Agent>
 </rdf:RDF>

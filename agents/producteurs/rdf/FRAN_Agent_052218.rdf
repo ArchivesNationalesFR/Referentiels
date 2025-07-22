@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052218">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052218"/>
@@ -11,29 +19,27 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-08</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Sandrine BULA)</rico:name>
+            <rico:name xml:lang="fr">Création (par Sandrine BULA)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-03-22</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Sandrine BULA)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Sandrine BULA)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-08</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 08 avril 2019 : absence d'identifiant ISNI, de notice BnF et Wikipédia, forme autorisée du nom revue, ajout indexation activité</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 08 avril 2019 : absence d'identifiant ISNI, de notice BnF et Wikipédia, forme autorisée du nom revue, ajout indexation activité</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052218">
-            <rico:isInstantiationOf rdf:resource="record/052218"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052218"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052218</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052218"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052218">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -49,17 +55,19 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1932-01-01</rico:birthDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052218-d699msjc4qa-1rm5osxqzj5v1">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052218"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052218-d699msjc4qa-1rm5osxqzj5v1"/>
+            <rico:relationHasTarget rdf:resource="agent/052218"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d198362e86">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052218-d699msjc4qa-1rm5osxqzj5v1"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjc4qa-1rm5osxqzj5v1"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjc4qa-1rm5osxqzj5v1"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjc4qa-1rm5osxqzj5v1"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d198362e86"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Après avoir obtenu en 1950 son certificat d’aptitude professionnelle (CAP) de photographie à Orléans, Michel Roi devient, de 1957 à 1960, assistant photographe au musée Guimet, et photographe free lance pour Les nouvelles littéraires.</html:p>

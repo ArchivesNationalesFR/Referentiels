@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050447">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050447"/>
@@ -10,33 +18,32 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-07-04</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Pascal DAVID)</rico:name>
+            <rico:name xml:lang="fr">Création (par Pascal DAVID)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-07-04</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Elsa Camus, 4 juillet 2016 : modification forme autorisée du nom, ajout autres formes du nom, modification historique (verbes), ajout activités, ajout lieu, ajout lien d'association, modification sources</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Elsa Camus, 4 juillet 2016 : modification forme autorisée du nom, ajout autres formes du nom, modification historique (verbes), ajout activités, ajout lieu, ajout lien d'association, modification sources</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Archives nationales, fonds Luxure-Luxeuil (72AP).</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb12528917v</html:p>
-      </rico:source>
-      <rico:hasSource rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb12528917v"/>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb12528917v"/>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/Alexandre_de_Lameth</html:p>
-      </rico:source>
-      <rico:hasSource rdf:resource="https://fr.wikipedia.org/wiki/Alexandre_de_Lameth"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="https://fr.wikipedia.org/wiki/Alexandre_de_Lameth"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050447">
-            <rico:isInstantiationOf rdf:resource="record/050447"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050447"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050447</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050447"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050447">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -74,41 +81,46 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1760-10-28</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1829-03-18</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050447"/>
-            <rico:placeRelationHasSource rdf:resource="place/FRAN_RI_005-d5bdpnc6n8--6t8agr79pl90"/>
+            <rico:relationHasTarget rdf:resource="agent/050447"/>
+            <rico:relationHasSource rdf:resource="place/FRAN_RI_005-d5bdpnc6n8--6t8agr79pl90"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/FRAN_RI_005-d5bdpnc6n8--6t8agr79pl90"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_005-d5bdpnc6n8--6t8agr79pl90"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050447-d699msiribo--1dn34eg8lht4f">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050447"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050447-d699msiribo--1dn34eg8lht4f"/>
+            <rico:relationHasTarget rdf:resource="agent/050447"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d170968e119">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050447-d699msiribo--1dn34eg8lht4f"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d170968e119"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050447-d699msjpuqr-66gt6kmedjiv">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050447"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050447-d699msjpuqr-66gt6kmedjiv"/>
+            <rico:relationHasTarget rdf:resource="agent/050447"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d170968e125">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050447-d699msjpuqr-66gt6kmedjiv"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d170968e125"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Alexandre-Théodore-Victor, comte de Lameth, combat sous les ordres de Rochambeau en Amérique. Il suit La Fayette à l’armée du Nord en 1792 et partage sa disgrâce. Fait prisonnier par les Autrichiens, il subit une captivité de trois ans. Il revient en France en 1799.</html:p>
             <html:p>Élu député pendant la Restauration, il siège parmi les libéraux.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050404-050447-18160101-18290318"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050404"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050404-050447-18160101-18290318"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050404"/>
    </rico:Agent>
 </rdf:RDF>

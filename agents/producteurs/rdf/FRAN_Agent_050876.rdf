@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050876">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050876"/>
@@ -10,29 +18,28 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-09-30</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Florence CLAVAUD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Florence CLAVAUD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-09-30</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 10 octobre 2014 : création sur demande d'A. Facon (mission des archives du ministère de l'Education nationale)</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 10 octobre 2014 : création sur demande d'A. Facon (mission des archives du ministère de l'Education nationale)</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Page web : http://www.cahiers-pedagogiques.com/-Le-Cercle-de-recherche-et-d-action-pedagogiques-</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice d'autorité BnF n° FRBNF11883701</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121084336/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121084336"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050876">
-            <rico:isInstantiationOf rdf:resource="record/050876"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050876"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050876</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050876"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050876">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -64,11 +71,11 @@
             <html:p>N° de SIRET : 317 804 698 0049</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054033-050876"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-054033"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054044-050876"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-054044"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054045-050876"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-054045"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054033-050876"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054033"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054044-050876"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054044"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054045-050876"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054045"/>
    </rico:Agent>
 </rdf:RDF>

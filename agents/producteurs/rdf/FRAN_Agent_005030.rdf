@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/005030">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/005030"/>
@@ -11,29 +19,27 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-09-25</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Dérivation
-                (Import_SIA)</rico:name>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Monique LEBLOIS-PECHON)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Monique LEBLOIS-PECHON)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-09-25</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 28 août 2015 : revu le nom, les liens producteurs, ajouté indexation fonctions</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 28 août 2015 : revu le nom, les liens producteurs, ajouté indexation fonctions</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/005030">
-            <rico:isInstantiationOf rdf:resource="record/005030"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/005030"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_005030</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005030"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/005030">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -51,31 +57,33 @@
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1984-01-01</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1986-12-31</rico:endDate>
       <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5blonaxbw--1mt8t42bokzts"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/005030-d3nyug3e0g-1xzlvri8dg416">
-            <rico:performanceRelationHasTarget rdf:resource="agent/005030"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005030-d3nyug3e0g-1xzlvri8dg416"/>
+            <rico:relationHasTarget rdf:resource="agent/005030"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d54096e98">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/005030-d3nyug3e0g-1xzlvri8dg416"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyug3e0g-1xzlvri8dg416"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">réinsertion des anciens combattants</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyug3e0g-1xzlvri8dg416"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d54096e98"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/005030-d5bhvik770--15ma0n1oncnzo">
-            <rico:performanceRelationHasTarget rdf:resource="agent/005030"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005030-d5bhvik770--15ma0n1oncnzo"/>
+            <rico:relationHasTarget rdf:resource="agent/005030"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d54096e109">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/005030-d5bhvik770--15ma0n1oncnzo"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvik770--15ma0n1oncnzo"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvik770--15ma0n1oncnzo"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d54096e109"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Créé en 1946, le Ministère des Anciens Combattants et Victimes de guerre est organisé en trois grandes directions qui sont, jusqu'en 1955, la Direction de l'administration générale, la Direction des pensions et des services médicaux et la Direction du contentieux, de l'état civil et des recherches. L'institution nationale des Invalides et l'Office national des anciens combattants et victimes de guerre dépendent également de ce ministère.</html:p>
@@ -86,9 +94,13 @@
             <html:p>Depuis 1999 le Secrétariat d'État aux Anciens Combattants est rattaché au Ministère de la Défense.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005030-005019-19870101-*"/><rico:hasSuccessor rdf:resource="agent/005019"/>
-      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005030-005016-19840101-19861231"/><rico:hasOrHadSubdivision rdf:resource="agent/005016"/>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005005-005030-19850101-*"/><rico:isSuccessorOf rdf:resource="agent/005005"/>
-      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005026-005030-19840101-19861231"/><rico:isOrwasSubdivisionOf rdf:resource="agent/005026"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentTemporalRelation/005030-005019-19870101-*"/>
+      <rico:hasSuccessor rdf:resource="agent/005019"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/005030-005016-19840101-19861231"/>
+      <rico:hadSubdivision rdf:resource="agent/005016"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/005005-005030-19850101-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/005005"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/005026-005030-19840101-19861231"/>
+      <rico:wasSubdivisionOf rdf:resource="agent/005026"/>
    </rico:Agent>
 </rdf:RDF>

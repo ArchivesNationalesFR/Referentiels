@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052395">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052395"/>
@@ -11,31 +19,29 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-12-11</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Emmanuelle RONDOUIN)</rico:name>
+            <rico:name xml:lang="fr">Création (par Emmanuelle RONDOUIN)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-11-20</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Notice rédigée par Mégane PACKE, stagiaire au service des archives d'Air France.</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Notice rédigée par Mégane PACKE, stagiaire au service des archives d'Air France.</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Solange BIDOU)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Solange BIDOU)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-12-11</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier , 11/12/2019 : modification forme autorisée du nom, modification dates d'existence, indexation lieu, indexation activité, ajout des liens d'identité BnF et wikipédia, pas d'identifiant ISNI, ajout relation NP 9155 Air France. </rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier , 11/12/2019 : modification forme autorisée du nom, modification dates d'existence, indexation lieu, indexation activité, ajout des liens d'identité BnF et wikipédia, pas d'identifiant ISNI, ajout relation NP 9155 Air France. </rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Jean-Cyril_Spinetta"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052395">
-            <rico:isInstantiationOf rdf:resource="record/052395"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052395"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052395</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052395"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052395">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -51,30 +57,32 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1943-10-04</rico:birthDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052395"/>
-            <rico:placeRelationHasSource rdf:resource="place/A%C3%A9roport%20Charles%20de%20Gaulle"/>
+            <rico:relationHasTarget rdf:resource="agent/052395"/>
+            <rico:relationHasSource rdf:resource="place/A%C3%A9roport%20Charles%20de%20Gaulle"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/A%C3%A9roport%20Charles%20de%20Gaulle"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/A%C3%A9roport%20Charles%20de%20Gaulle"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052395-d699msjnphp--ogopux4anfqf-19970101-20081231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052395"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052395-d699msjnphp--ogopux4anfqf-19970101-20081231"/>
+            <rico:relationHasTarget rdf:resource="agent/052395"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d201496e128">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052395-d699msjnphp--ogopux4anfqf-19970101-20081231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjnphp--ogopux4anfqf"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1997-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Président du groupe Air France puis du Groupe Air France-KLM</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjnphp--ogopux4anfqf"/>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjnphp--ogopux4anfqf"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d201496e128"/>
+      <rico:generalDescription rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Organisation interne ou généalogie</h4>
             <html:p>
@@ -94,7 +102,7 @@
             <html:p>- Christian Blanc : prédécesseur à la présidence de la Compagnie nationale Air France (1993-1997). Il assura le onzième mandat de président de la compagnie aérienne.</html:p>
             <html:p>- Pierre-Henri Gourgeon : Directeur général exécutif d’Air France (1998-2008), bras droit de Jean-Cyril Spinetta.</html:p>
          </html:div>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Contexte général</h4>
@@ -102,7 +110,6 @@
                <html:u>Contexte politique :</html:u>
             </html:p>
             <html:p>En 1946, avec la nationalisation d’Air France, l’État renforce sa tutelle et affirme sa position d’acteur de premier plan. Ainsi, Air France exerce des missions de service public. De plus, le choix du président de la compagnie s’effectue selon la couleur politique des hommes au pouvoir. Membre du parti socialiste, Jean-Cyril Spinetta est nommé de 1994 à 1995 auprès du président de la République François Mitterrand en tant que conseiller pour les affaires industrielles. En septembre 1997, Jean-Cyril Spinetta se retrouve à la tête de la présidence de la compagnie.</html:p>
-            <html:p/>
             <html:p>
                <html:u>Contexte économique</html:u>
             </html:p>
@@ -111,7 +118,6 @@
             <html:p>Malgré les attentats du 11 septembre 2001 paralysant tout le trafic aérien partout dans le monde, Air France connaît des résultats positifs en raison de l’augmentation du trafic à hauteur de 7%. La compagnie développe ses atouts en créant une alliance Skyteam. Après l’ouverture du capital, la suite logique est la privatisation progressive d’Air France.</html:p>
             <html:p>Malgré la succession de crises depuis 2001, Air France affiche des résultats satisfaisants. En 2003, Air France signe un accord de rapprochement avec KLM donnant ainsi naissance en mai 2004 à une société holding. Malgré la crise du 11 septembre et de ses conséquences, les résultats financiers sont en hausse dès 2004 permettant de multiplier son résultat d’exploitation par 3,4 en trois ans.</html:p>
             <html:p>Toutefois, avec la crise économique de 2008, Air France perd 4,5% de ces capacités dans l’activité passager en raison du ralentissement de la demande de transport aérien et de la hausse du prix du pétrole.</html:p>
-            <html:p/>
             <html:p>
                <html:u>Contexte sociale</html:u>
             </html:p>
@@ -126,8 +132,6 @@
             <html:p>Dès la création d’Air France, Ernest Roume devient en 1933 président d’Air France. Après consultation des rapports d’activité annuels postérieurs à 1933, il n’y a plus de mention de président mais seulement du directeur général et de ses directeurs généraux adjoints jusqu’en 1967. Sur proposition du conseil d’administration, Georges Galichon a été nommé président du conseil d’administration et de la Compagnie Air France par le décret du 23 janvier 1967 remplaçant ainsi Joseph Ross, dont son mandat de directeur général est venu à expiration. C’est à partir de ce décret qu’Air France a commencé à avoir un président à la tête de sa compagnie en plus d’un directeur général. Ce président prend à la fois les rennes d’Air France mais préside également le conseil d’administration, ce qui n’était pas le cas antérieurement. Ainsi, Jean-Cyril Spinetta est nommé président-directeur général d’Air France le 22 septembre 1997, succédant à Christian Blanc.</html:p>
             <html:p>En mai 2004, Jean-Cyril Spinetta devient président-directeur général d’Air France-KLM au même moment que l’alliance avec la compagnie néerlandaise. Les deux compagnies s’allient sans pour autant perdre leur identité. En effet, chaque compagnie conserve son président-directeur général.</html:p>
             <html:p>Toutefois, il faut dissocier et distinguer la fonction de président-directeur général de celle de directeur général. En effet, selon une loi relative aux nouvelles régulations économiques en date du 15 mai 2001, les sociétés peuvent dissocier les fonctions de président et de directeur général. Toutefois, cette loi est passée un peu inaperçue au sein de la compagnie. Le 26 septembre 2008, Jean-Cyril Spinetta décide, sur proposition aux conseils d’administration d’Air France et d’Air France-KLM, de dissocier les fonctions de président du conseil d’administration et de directeur général exécutif d’Air France-KLM et d’Air France. En application de la loi de 2001, les conseils d’administration d’Air France et d’Air France-KLM décident conjointement de dissocier les deux fonctions en désignant deux personnes distinctes, Jean-Cyril Spinetta en tant que président du conseil d’administration et Pierre-Henri Gourgeon en la qualité de directeur général exécutif de l’entreprise.</html:p>
-            <html:p/>
-            <html:p/>
             <html:p>
                <html:u>Fonctions et activités</html:u>
             </html:p>
@@ -136,8 +140,12 @@
          </html:div>
       </rico:history>
       <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Jean-Cyril_Spinetta"/>
-      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/052395-052396-20090101-*"/><rico:hasSuccessor rdf:resource="agent/052396"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentTemporalRelation/052395-052396-20090101-*"/>
+      <rico:hasSuccessor rdf:resource="agent/052396"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/052395-053090-20130101-20141231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/053090"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb15619031j#about"/>
-      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/052395-009155-19970101-20081231"/><rico:isOrWasLeaderOf rdf:resource="agent/009155"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/052395-009155-19970101-20081231"/>
+      <rico:isOrWasLeaderOf rdf:resource="agent/009155"/>
    </rico:Agent>
 </rdf:RDF>

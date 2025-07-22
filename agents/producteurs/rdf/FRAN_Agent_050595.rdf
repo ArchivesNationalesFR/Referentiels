@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050595">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050595"/>
@@ -10,25 +18,24 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-02-04</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Pascal DAVID)</rico:name>
+            <rico:name xml:lang="fr">Création (par Pascal DAVID)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-02-04</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 4 février 2014 : changé formes du nom</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 4 février 2014 : changé formes du nom</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Archives nationales, fonds Fourquevaux (159AP).</html:p>
-      </rico:source>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050595">
-            <rico:isInstantiationOf rdf:resource="record/050595"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050595"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050595</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050595"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050595">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Family"/>
@@ -57,7 +64,7 @@
             <html:p>Raymond de Beccaria de Pavie de Rouër, baron de Fourquevaux (1508-1574), d’ascendance italienne, fut diplomate, homme de guerre et homme de lettres. En 1527, étudiant à Toulouse, il s’engagea dans une expédition destinée à délivrer le pape Clément VII, prisonnier des Espagnols. Fait prisonnier au siège de Naples en 1528, il parvint à s’échapper et rentra à Toulouse, où il reprit en 1530 ses études interrompues. Élu capitoul de Toulouse, Raymond de Beccaria de Fourquevaux fut envoyé en Écosse par le connétable de Montmorency en 1548, afin de secourir la reine Marie de Lorraine. Rentré en France, il fut nommé capitaine et gouverneur de Narbonne par Henri II. Dès 1550, il accompagna en Italie Charles de Cossé, comte de Brissac, nommé lieutenant général des armées du roi au-delà des monts. De 1550 à 1555, il effectua des missions diplomatiques et militaires auprès de Maximilien d’Autriche, roi de Bohême, et auprès d’Octave Farnèse, duc de Parme. En 1565, le baron de Fourquevaux remplaça Monsieur de Saint-Sulpice comme ambassadeur auprès du roi d’Espagne, Philippe II. Il resta à Madrid jusqu’à la fin de l’année 1572, date à laquelle il reprit ses fonctions de gouverneur à Narbonne, qu’il conserva jusqu’à sa mort, en 1574.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/001894-050595"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-001894"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/001894-050595"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-001894"/>
    </rico:Agent>
 </rdf:RDF>

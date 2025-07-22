@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051233">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051233"/>
@@ -10,25 +18,24 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Marine ZELVERTE)</rico:name>
+            <rico:name xml:lang="fr">Création (par Marine ZELVERTE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice BnF n° FRBNF11896007</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000109134425/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000109134425"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051233">
-            <rico:isInstantiationOf rdf:resource="record/051233"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051233"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051233</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051233"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051233">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -53,39 +60,45 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1928-07-02</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-12-23</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051233-d3m0bl759we-1qfz4kgpyc2dp">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051233"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051233-d3m0bl759we-1qfz4kgpyc2dp"/>
+            <rico:relationHasTarget rdf:resource="agent/051233"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d181969e94">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051233-d3m0bl759we-1qfz4kgpyc2dp"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3m0bl759we-1qfz4kgpyc2dp"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl759we-1qfz4kgpyc2dp"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl759we-1qfz4kgpyc2dp"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d181969e94"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051233-d-1axy38anu-1ua8su5ef37p1">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051233"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051233-d-1axy38anu-1ua8su5ef37p1"/>
+            <rico:relationHasTarget rdf:resource="agent/051233"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d181969e100">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051233-d-1axy38anu-1ua8su5ef37p1"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-1axy38anu-1ua8su5ef37p1"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-1axy38anu-1ua8su5ef37p1"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-1axy38anu-1ua8su5ef37p1"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d181969e100"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051233-d699msizce3-1fkn61hd3lpjw">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051233"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051233-d699msizce3-1fkn61hd3lpjw"/>
+            <rico:relationHasTarget rdf:resource="agent/051233"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d181969e106">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051233-d699msizce3-1fkn61hd3lpjw"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msizce3-1fkn61hd3lpjw"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msizce3-1fkn61hd3lpjw"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msizce3-1fkn61hd3lpjw"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d181969e106"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Jacques Chancel, de son vrai nom Joseph Jacques André Régis Crampes, est un journaliste et écrivain français (1928-2014).</html:p>
@@ -97,12 +110,17 @@
             <html:p>Jacques Chancel a reçu de nombreux prix et distinctions : Prix Ondas de la radiodiffusion espagnole en 1971, Grand Prix arts, sciences et lettres de l’ORTF en 1974, 7 d’Or de la meilleure émission musicale pour Le Grand échiquier en 1987, Prix Louis Lumière de l’Académie du disque français en 1981, Prix Balzac en 1983, Prix Georges Dupau de l’Académie française pour Le Guetteur de rives en 1985, Prix Henri Desgrange de l'Académie des sports en 2005. Jacques Chancel est par ailleurs commandeur de la Légion d’honneur, officier de l’Ordre national du Mérite et commandeur des Arts et des Lettres. Il a enfin été décoré de la croix du combattant volontaire avec agrafe « Indochine », de la médaille coloniale avec agrafe « Extrême-Orient » et de la médaille commémorative de la campagne d'Indochine.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005419-051233-19750101-20051231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/005419"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010125-051233-19900101-20041231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/010125"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000063-051233-19840101-20021231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000063"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000347-051233-19640101-19741231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000347"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010124-051233-19750101-19941231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/010124"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054647-051233"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-054647"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/005419-051233-19750101-20051231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/005419"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010125-051233-19900101-20041231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/010125"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000063-051233-19840101-20021231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000063"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000347-051233-19640101-19741231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000347"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010124-051233-19750101-19941231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/010124"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054647-051233"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054647"/>
    </rico:Agent>
 </rdf:RDF>

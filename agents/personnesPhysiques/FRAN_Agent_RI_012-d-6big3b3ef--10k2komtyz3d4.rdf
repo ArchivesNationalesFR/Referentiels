@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:dcterms="http://purl.org/dc/terms/"
-         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/FRAN_RI_012-d-6big3b3ef--10k2komtyz3d4">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/FRAN_RI_012-d-6big3b3ef--10k2komtyz3d4"/>
@@ -16,21 +16,27 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl002"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
-      <rico:source xml:lang="fr">FRBNF14976693Création:03/12/10Miseàjour:07/05/22</rico:source>
-      <rdfs:seeAlso rdf:resource="https://catalogue.bnf.fr/ark:/12148/cb14976693n"/>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice BnF n° : FRBNF14976693</rico:recordResourceSourceOfInformation>
+      <!--Contenu de biblio :  Identifiant
+        BNF : https://catalogue.bnf.fr/ark:/12148/cb14976693n -->
+      <!--Contenu de biblio :  Source : Inventaire après décès (du
+        16 octobre 1919) conservé au Minutier central (Archives nationales) sous la cote
+        MC/ET/LXXVI/1289.-->
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/FRAN_RI_012-d-6big3b3ef--10k2komtyz3d4">
-            <rico:isInstantiationOf rdf:resource="record/FRAN_RI_012-d-6big3b3ef--10k2komtyz3d4"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/FRAN_RI_012-d-6big3b3ef--10k2komtyz3d4"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_RI_012-d-6big3b3ef--10k2komtyz3d4</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/FRAN_RI_012-d-6big3b3ef--10k2komtyz3d4">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/FRAN_RI_012-d-6big3b3ef--10k2komtyz3d4"/>
       <rdfs:label xml:lang="fr">Penthièvre, Pierre Philippe d'Orléans (1845-1919 , duc de)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Penthièvre, Pierre Philippe d'Orléans (1845-1919 , duc de)</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">Orléans, Pierre d' (1845-1919)</skos:altLabel>
       <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/FRAN_RI_012-d-6big3b3ef--10k2komtyz3d4-Penthi%C3%A8vre%2C%20Pierre%20Philippe%20d%27Orl%C3%A9ans%20%281845-1919%20%2C%20duc%20de%29">
             <rdfs:label xml:lang="fr">Penthièvre, Pierre Philippe d'Orléans (1845-1919 , duc de)</rdfs:label>
@@ -58,14 +64,19 @@
          <rico:RecordResource>
             <rico:title xml:lang="fr">Inventaire après décès (du 16 octobre 1919) conservé au Minutier central (Archives nationales) sous la cote MC/ET/LXXVI/1289.</rico:title>
             <rdfs:label xml:lang="fr">Inventaire après décès (du 16 octobre 1919) conservé au Minutier central (Archives nationales) sous la cote MC/ET/LXXVI/1289.</rdfs:label>
-            <rico:hasInstantiation>
+            <rico:hasOrHadInstantiation>
                <rico:Instantiation>
                   <rico:title xml:lang="fr">Inventaire après décès (du 16 octobre 1919) conservé au Minutier central (Archives nationales) sous la cote MC/ET/LXXVI/1289.</rico:title>
                   <rdfs:label xml:lang="fr">Inventaire après décès (du 16 octobre 1919) conservé au Minutier central (Archives nationales) sous la cote MC/ET/LXXVI/1289.</rdfs:label>
                </rico:Instantiation>
-            </rico:hasInstantiation>
+            </rico:hasOrHadInstantiation>
          </rico:RecordResource>
       </rico:isOrWasMainSubjectOf>
-      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb14976693n#about"/>
+      <!--Contenu de biblio : Notice BnF n° : FRBNF14976693 -->
+      <!--Contenu de biblio :  Identifiant
+        BNF : https://catalogue.bnf.fr/ark:/12148/cb14976693n -->
+      <!--Contenu de biblio :  Source : Inventaire après décès (du
+        16 octobre 1919) conservé au Minutier central (Archives nationales) sous la cote
+        MC/ET/LXXVI/1289.-->
    </rico:Agent>
 </rdf:RDF>

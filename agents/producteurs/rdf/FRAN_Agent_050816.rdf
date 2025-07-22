@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050816">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050816"/>
@@ -10,26 +18,25 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-07-03</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Arnaud ROMONT)</rico:name>
+            <rico:name xml:lang="fr">Création (par Arnaud ROMONT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-07-03</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 3 juillet 2014 : ajouté sigle, description d'après site web, n° ISNI, n° notice BnF</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 3 juillet 2014 : ajouté sigle, description d'après site web, n° ISNI, n° notice BnF</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice d'autorité BnF n° FRBNF11869988</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121881095/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121881095"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050816">
-            <rico:isInstantiationOf rdf:resource="record/050816"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050816"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050816</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050816"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050816">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -59,7 +66,9 @@
             <html:p>Son but est de promouvoir le perfectionnement des méthodes et des techniques administratives et l’amélioration des services publics de la France, ainsi que des organismes internationaux à la gestion desquels la France participe.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/053509-050816"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-053509"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/053648-050816-19950423-20061003"/>
+      <rico:hasOrHadLeader rdf:resource="agent/053648"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/053509-050816"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-053509"/>
    </rico:Agent>
 </rdf:RDF>

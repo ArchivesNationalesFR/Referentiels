@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050580">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050580"/>
@@ -11,41 +19,38 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-02-19</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Thierry GUILPIN)</rico:name>
+            <rico:name xml:lang="fr">Création (par Thierry GUILPIN)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-26</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 26 octobre 2015 : revu lien IR.</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 26 octobre 2015 : revu lien IR.</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Constance DE VERGNETTE DE LAMOTTE)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Constance DE VERGNETTE DE LAMOTTE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-12</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Ajout du lien IR du fonds Charles Murat le 12 juillet 2017. Pas de notice wikipedia.</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Ajout du lien IR du fonds Charles Murat le 12 juillet 2017. Pas de notice wikipedia.</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-02-19</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 19 février 2019 : ajout lien d'identité BnF</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 19 février 2019 : ajout lien d'identité BnF</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Notice BnF n° FRBNF13090204.</rico:source>
-      <rico:source xml:lang="fr">Archives nationales, fonds Charles Murat (31 AP II).</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/000000000171281X/about"/>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice BnF n° FRBNF13090204.</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Archives nationales, fonds Charles Murat (31 AP II).</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/000000000171281X"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050580">
-            <rico:isInstantiationOf rdf:resource="record/050580"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050580"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050580</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050580"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050580">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -63,51 +68,59 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1892-06-16</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1973-12-31</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050580"/>
-            <rico:placeRelationHasSource rdf:resource="place/Maroc"/>
+            <rico:relationHasTarget rdf:resource="agent/050580"/>
+            <rico:relationHasSource rdf:resource="place/Maroc"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Maroc"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Maroc"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050580-d699msjj72d-1dedn4099xfyy">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050580"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050580-d699msjj72d-1dedn4099xfyy"/>
+            <rico:relationHasTarget rdf:resource="agent/050580"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d172973e134">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050580-d699msjj72d-1dedn4099xfyy"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjj72d-1dedn4099xfyy"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjj72d-1dedn4099xfyy"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjj72d-1dedn4099xfyy"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d172973e134"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050580-d699msjpuqr-66gt6kmedjiv">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050580"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050580-d699msjpuqr-66gt6kmedjiv"/>
+            <rico:relationHasTarget rdf:resource="agent/050580"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d172973e140">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050580-d699msjpuqr-66gt6kmedjiv"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d172973e140"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Le prince Charles Murat (1892-1973) est le cinquième enfant du prince Joachim Napoléon Murat (1856-1932) et de sa femme Cécile, née d’Elchingen. Il découvre le Maroc lorsqu’il est affecté aux troupes auxiliaires marocaines comme maréchal des logis de spahis en février 1913. En 1914-1918, il prend part aux combats de l’Argonne puis à la bataille des Dardanelles.</html:p>
             <html:p>En 1919, il organise une entreprise de transports à Fedala, au Maroc. Président du premier aéro-club marocain, il part pour le Brésil en mission pendant quatre ans pour participer à l’organisation de la première ligne de navigation aérienne à travers le Sud Atlantique. Après avoir épousé une Américaine, Margaret Rutherfurd, le prince Murat gère au Maroc deux propriétés agricoles. Il dirige aussi le journal<html:i>Le Petit Casablancais</html:i>. En 1939, il est mobilisé et commande le bataillon de chars d’assaut du Levant. Il sert en 1942-1945 à la 5e D. B.</html:p>
          </html:div>
       </rico:history>
-      <rico:personIsTargetOfMembershipRelation rdf:resource="membershipRelation/050577-050580"/><rico:isOrWasMemberOf rdf:resource="agent/050577"/>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/050551-050580"/><rico:hasFamilyAssociationWith rdf:resource="agent/050551"/>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/050580-052634"/><rico:hasFamilyAssociationWith rdf:resource="agent/052634"/>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/050575-050580"/><rico:hasFamilyAssociationWith rdf:resource="agent/050575"/>
+      <rico:thingIsTargetOfRelation rdf:resource="membershipRelation/050577-050580"/>
+      <rico:isOrWasMemberOf rdf:resource="agent/050577"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/050551-050580"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/050551"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/050580-052634"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/052634"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/050575-050580"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/050575"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb13090204c#about"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/000640-050580"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-000640"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/050305-G9713-050580"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/050305-G9713"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/050305-050580"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-050305"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/000640-050580"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-000640"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/050305-G9713-050580"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/050305-G9713"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/050305-050580"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-050305"/>
    </rico:Agent>
 </rdf:RDF>

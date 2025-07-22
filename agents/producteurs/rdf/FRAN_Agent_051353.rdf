@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051353">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051353"/>
@@ -10,30 +18,29 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-07-29</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par null MISSION.REFERENTIELS)</rico:name>
+            <rico:name xml:lang="fr">Création (par null MISSION.REFERENTIELS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-07-29</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 29 juillet 2016 : création sur demande d'H. Pinoteau (DEATA) ; ajout ISNI, notice BnF, lien hiérarchique, indexation fonctions et lieux</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 29 juillet 2016 : création sur demande d'H. Pinoteau (DEATA) ; ajout ISNI, notice BnF, lien hiérarchique, indexation fonctions et lieux</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb12210141v</html:p>
-      </rico:source>
-      <rico:hasSource rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb12210141v"/>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb12210141v"/>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Site web de la bergerie nationale : http://www.bergerie-nationale.educagri.fr/</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000120971910/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000120971910"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051353">
-            <rico:isInstantiationOf rdf:resource="record/051353"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051353"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051353</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051353"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051353">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -81,38 +88,40 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1783-01-01</rico:beginningDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/051353"/>
-            <rico:placeRelationHasSource rdf:resource="place/Rambouillet"/>
+            <rico:relationHasTarget rdf:resource="agent/051353"/>
+            <rico:relationHasSource rdf:resource="place/Rambouillet"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Rambouillet"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Rambouillet"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051353-d5bhvikz03--iqa08pprge9n">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051353"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051353-d5bhvikz03--iqa08pprge9n"/>
+            <rico:relationHasTarget rdf:resource="agent/051353"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d183636e154">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051353-d5bhvikz03--iqa08pprge9n"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvikz03--iqa08pprge9n"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">élevage</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvikz03--iqa08pprge9n"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d183636e154"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051353-d5bhvilxx8--luy0yoz68j8c">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051353"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051353-d5bhvilxx8--luy0yoz68j8c"/>
+            <rico:relationHasTarget rdf:resource="agent/051353"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d183636e165">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051353-d5bhvilxx8--luy0yoz68j8c"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvilxx8--luy0yoz68j8c"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvilxx8--luy0yoz68j8c"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d183636e165"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>L’établissement naît de l’achat par Louis XVI de ce domaine, pour en faire une ferme modèle et source d’innovations sur l’agriculture et l’élevage. L’arrivée d’un troupeau de mérinos espagnols en 1786 fonde dès lors sa célébrité, puisque troupeau est élevé jusqu’à nos jours dans une parfaite consanguinité contrôlée, et permet le développement de nouvelles races mérinos en France.</html:p>
@@ -120,9 +129,11 @@
             <html:p>En 1955, les trois écoles sont réunies au sein du CEZ, Centre d’enseignement zootechnique, qui devient un EPN en 1985 et un EPA en 1994. Le CEZ-Bergerie nationale délivre plusieurs diplômes d’enseignement et d’apprentissage, et relève de la DGER du ministère chargé de l’Agriculture.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051353-052131-19380727-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/052131"/>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/008086-051353-19700101-*"/><rico:isOrWasSubordinateTo rdf:resource="agent/008086"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/055298-051353"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-055298"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/051353-052131-19380727-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/052131"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/008086-051353-19700101-*"/>
+      <rico:isDirectSubordinateTo rdf:resource="agent/008086"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/055298-051353"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-055298"/>
    </rico:Agent>
 </rdf:RDF>

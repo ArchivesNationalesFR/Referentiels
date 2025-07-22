@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/012286">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/012286"/>
@@ -8,20 +16,24 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
-      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:lastModificationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-05-04</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Dérivation
-                (Migration ETANOT)</rico:name>
+            <rico:name xml:lang="fr">Dérivation (Migration ETANOT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
-         <html:p xml:lang="fr">Noémie SANTACANA Les notaires au Châtelet de Paris à l'époque du Cardinal de Fleury, mémoire de maîtrise 2003-2004, dact., p. 261-262</html:p>
-      </rico:source>
-      <rico:hasInstantiation>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Marie-Françoise LIMON-BONNET)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-05-04</rico:date>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 04/05/2022 : modification forme autorisée du nom, ajout relation fam, indexation lieu revue</rico:generalDescription>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Noémie SANTACANA, Les notaires au Châtelet de Paris à l'époque du Cardinal de Fleury, mémoire de maîtrise 2003-2004, dact., p. 261-262.</rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/012286">
-            <rico:isInstantiationOf rdf:resource="record/012286"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/012286"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_012286</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
@@ -29,16 +41,16 @@
             <rico:identifier>FRDAFANCH00MC_NANOTAIRE02143</rico:identifier>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/012286">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/012286"/>
-      <rdfs:label xml:lang="fr">Dutartre, Antoine</rdfs:label>
+      <rdfs:label xml:lang="fr">Dutartre, Antoine (1714-1803)</rdfs:label>
       <rico:hasOrHadAgentName>
-         <rico:AgentName rdf:about="agentName/012286-Dutartre%2C%20Antoine">
-            <rdfs:label xml:lang="fr">Dutartre, Antoine</rdfs:label>
-            <rico:textualValue xml:lang="fr">Dutartre, Antoine</rico:textualValue>
+         <rico:AgentName rdf:about="agentName/012286-Dutartre%2C%20Antoine%20%281714-1803%29">
+            <rdfs:label xml:lang="fr">Dutartre, Antoine (1714-1803)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Dutartre, Antoine (1714-1803)</rico:textualValue>
             <rico:isOrWasAgentNameOf rdf:resource="agent/012286"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl002"/>
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
@@ -51,19 +63,71 @@
             <rico:isOrWasAgentNameOf rdf:resource="agent/012286"/>
          </rico:AgentName>
       </rico:hasOrHadAgentName>
-      <rico:agentIsTargetOfPerformanceRelation><rico:PerformanceRelation rdf:about="performanceRelation/012286-d3nyu9x713-9kcjiv44l4wh-17390717-17680505"><rico:performanceRelationHasTarget rdf:resource="agent/012286"/><rico:performanceRelationHasSource><rico:Activity><rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/012286-d3nyu9x713-9kcjiv44l4wh-17390717-17680505"/><rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3nyu9x713-9kcjiv44l4wh"/></rico:Activity></rico:performanceRelationHasSource><rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1739-07-17</rico:beginningDate><rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1768-05-05</rico:endDate></rico:PerformanceRelation></rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3nyu9x713-9kcjiv44l4wh"/>
+      <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1714-12-21</rico:birthDate>
+      <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1803-05-25</rico:deathDate>
+      <rico:thingIsTargetOfRelation>
+         <rico:PlaceRelation>
+            <rico:relationHasTarget rdf:resource="agent/012286"/>
+            <rico:relationHasSource rdf:resource="place/rue%20de%20la%20Monnaie%2C%20vis-%C3%A0-vis%20la%20Monnaie"/>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1752-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1766-12-31</rico:endDate>
+         </rico:PlaceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadLocation rdf:resource="place/rue%20de%20la%20Monnaie%2C%20vis-%C3%A0-vis%20la%20Monnaie"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PlaceRelation>
+            <rico:relationHasTarget rdf:resource="agent/012286"/>
+            <rico:relationHasSource rdf:resource="place/rue%20de%20l%27Arbre-Sec"/>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1740-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1751-12-31</rico:endDate>
+         </rico:PlaceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadLocation rdf:resource="place/rue%20de%20l%27Arbre-Sec"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/012286-d3nyui3o8w--11y7jgy8q3wnt-17390717-17680505">
+            <rico:relationHasTarget rdf:resource="agent/012286"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d150624e167">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/012286-d3nyui3o8w--11y7jgy8q3wnt-17390717-17680505"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyui3o8w--11y7jgy8q3wnt"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1739-07-17</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1768-05-05</rico:endDate>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d150624e167"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/012286-d3nyu9x713-9kcjiv44l4wh">
+            <rico:relationHasTarget rdf:resource="agent/012286"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d150624e185">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/012286-d3nyu9x713-9kcjiv44l4wh"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3nyu9x713-9kcjiv44l4wh"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3nyu9x713-9kcjiv44l4wh"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d150624e185"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
-            <html:p>Baptisé le 21 septembre 1714 à Paris</html:p>
-            <html:p>fils de Jean Dutartre, seigneur de Goussainville, notaire auquel il est associé avant de lui succéder</html:p>
-            <html:p>marié en premières noces à Elisabeth Gaultier (voir ET/XLI/485, 10 février 1744, contrat de mariage)</html:p>
-            <html:p>marié en secondes noces à Antoinette Melin, fille de Pierre Melin, notaire (voir ET/XLI/524, 22 juillet 1753, contrat de mariage ; parmi les témoins, la marquise de Pompadour)</html:p>
-            <html:p>trésorier général des bâtiments, jardins arts et manufactures du roi (de 1764 à 1774)</html:p>
-            <html:p>décédé le 25 mai 1803</html:p>
+            <html:p>Baptisé le 21 septembre 1714 à Paris. Antoine Dutratre est le fils de Jean Dutartre, seigneur de Goussainville, notaire auquel il est associé avant de lui succéder. Il obtient des lettres de provision d'office le 14 juillet 1739 (Arch. nat. V/1/321, pièce 412).</html:p>
+            <html:p>Marié le 10 février 1744 en premières noces à Elisabeth Thérèse Gaultier (MC/ET/XLI/485, contrat de mariage), ils ont un fils Jean Louis, pour lequel est pris un avis de parents le 29 mai 1759, à la suite du décès de sa mère (MC/ET/XLI/548), afin d'autoriser le remboursement d'une rente. Antoine Dutartre assure la tutelle de son fils mineur par sentence du Châtelet du 15 décembre 1759 (Arch. nat., Y 4811 A).</html:p>
+            <html:p>Antoine Dutartre est marié en secondes noces le 22 juillet 1753 à Antoinette Melin, fille de Pierre Melin, notaire (MC/ET/XLI/524, contrat de mariage ; parmi les témoins, la marquise de Pompadour).</html:p>
+            <html:p>Il devient trésorier général des bâtiments, jardins arts et manufactures du roi (de 1764 à 1774).</html:p>
+            <html:p>Il meurt le 25 mai 1803. Son inventaire après décès est daté du 10 juin 1803 [21 prairial an XI] (MC/ET/LVI/478).</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010183-012286-17390717-17680505"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/010183"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/052193-012286"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-052193"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010183-012286-17390717-17680505"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/010183"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/012286-013104"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/013104"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/012286-012396"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/012396"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/052193-012286"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-052193"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/042321-012286"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-042321"/>
    </rico:Agent>
 </rdf:RDF>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051222">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051222"/>
@@ -10,32 +18,31 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-11-26</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Florence CLAVAUD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Florence CLAVAUD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-11-26</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 26 nov. 2015 : création sur demande de la mission d'archives auprès des services du premier ministre ; ajout ISNI, n° BnF, texte de référence, indexation fonctions, liens d'association</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 26 nov. 2015 : création sur demande de la mission d'archives auprès des services du premier ministre ; ajout ISNI, n° BnF, texte de référence, indexation fonctions, liens d'association</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">notice d'autorité BnF n° FRBNF13511227</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">informations fournies par la mission des archives auprès des services du premier ministre</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">site web de l'OFDT : http://www.ofdt.fr</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000105614990/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000105614990"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051222">
-            <rico:isInstantiationOf rdf:resource="record/051222"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051222"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051222</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051222"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051222">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -73,48 +80,51 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-03-05</rico:beginningDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051222-d5bhvih1do--ryj2votztf8z">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051222"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051222-d5bhvih1do--ryj2votztf8z"/>
+            <rico:relationHasTarget rdf:resource="agent/051222"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d181912e116">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051222-d5bhvih1do--ryj2votztf8z"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvih1do--ryj2votztf8z"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">drogues et toxicomanies</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvih1do--ryj2votztf8z"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d181912e116"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051222-d5bhviiyko--q661mlo9uy50">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051222"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051222-d5bhviiyko--q661mlo9uy50"/>
+            <rico:relationHasTarget rdf:resource="agent/051222"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d181912e127">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051222-d5bhviiyko--q661mlo9uy50"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviiyko--q661mlo9uy50"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">drogues et toxicomanies</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviiyko--q661mlo9uy50"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d181912e127"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051222-d3nyuhp1um--qolq4osvi6b5">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051222"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051222-d3nyuhp1um--qolq4osvi6b5"/>
+            <rico:relationHasTarget rdf:resource="agent/051222"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d181912e138">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051222-d3nyuhp1um--qolq4osvi6b5"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhp1um--qolq4osvi6b5"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">observatoire des drogues et toxicomanies</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhp1um--qolq4osvi6b5"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d181912e138"/>
       <rico:authorizingMandate rdf:parseType="Literal">
          <html:p xml:lang="fr">Arrêté du 5 mars 1993 portant approbation d'une convention constitutive d'un groupement d'intérêt public (NOR: SPSX9300135A)</html:p>
       </rico:authorizingMandate>
@@ -127,7 +137,9 @@
             <html:p>À l'échelle européenne, l'ODFT est un point focal de l'Observatoire européen des drogues et toxicomanies (OEDT ou en anglais EMCDDA qui est l'une des agences de l'Union européenne), et à ce titre fournit des informations permettant des comparaisons objectives et fiables sur le phénomène de la drogue en Europe, conformément aux engagements européens dans le cadre du réseau REITOX.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009649-051222-19930305-19950511"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/009649"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009626-051222-19951107-19970602"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/009626"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009649-051222-19930305-19950511"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/009649"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009626-051222-19951107-19970602"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/009626"/>
    </rico:Agent>
 </rdf:RDF>

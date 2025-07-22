@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050738">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050738"/>
@@ -10,26 +18,25 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-05-06</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Création (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-05-06</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 6 mai 2014 : ajouté n°s ISNI et notice BnF, changé forme du nom</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 6 mai 2014 : ajouté n°s ISNI et notice BnF, changé forme du nom</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice d'autorité BnF n° FRBNF12458620</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000108867336/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000108867336"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050738">
-            <rico:isInstantiationOf rdf:resource="record/050738"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050738"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050738</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050738"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050738">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -55,7 +62,7 @@
             <html:p>À partir de 1902, Paul Alphandéry collabore à la<html:i>Revue de l'histoire des religions</html:i>; en 1919, il participe activement à la création de la société Ernest Renan, dont il est nommé secrétaire général. En 1923, à l'occasion du centenaire de la naissance d'Ernest Renan, il organise le congrès international d'histoire des religions qui se tient à Paris ; lui-même présente régulièrement des communications aux différents congrès internationaux d'histoire des religions ; il intervient également à plusieurs reprises dans les cycles de conférences destinées à un large public organisées le dimanche matin au musée Guimet.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/050950-050738"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-050950"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/050950-050738"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-050950"/>
    </rico:Agent>
 </rdf:RDF>

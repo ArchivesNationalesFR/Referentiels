@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051213">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051213"/>
@@ -10,26 +18,25 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-11-16</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Virginie GREGOIRE)</rico:name>
+            <rico:name xml:lang="fr">Création (par Virginie GREGOIRE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-11-16</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 10 novembre : changé nom, ajouté liens et indexation activités. 16 novembre 2015 :supprimé liens vers les mnistères agriculture et transports pour que la notice passe...</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 10 novembre : changé nom, ajouté liens et indexation activités. 16 novembre 2015 :supprimé liens vers les mnistères agriculture et transports pour que la notice passe...</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice BNF : FRBNF11915703</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000116106692/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000116106692"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051213">
-            <rico:isInstantiationOf rdf:resource="record/051213"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051213"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051213</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051213"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051213">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -46,70 +53,78 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1931-01-01</rico:birthDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051213-d699msj9l7t-1gb5a09kkzrmp-20010101-20111231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051213"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051213-d699msj9l7t-1gb5a09kkzrmp-20010101-20111231"/>
+            <rico:relationHasTarget rdf:resource="agent/051213"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d181777e88">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051213-d699msj9l7t-1gb5a09kkzrmp-20010101-20111231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj9l7t-1gb5a09kkzrmp"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">sénateur de l'Isère</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj9l7t-1gb5a09kkzrmp"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj9l7t-1gb5a09kkzrmp"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d181777e88"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051213-d699msjnw86-64seh0fmw8hj-19810101-19931231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051213"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051213-d699msjnw86-64seh0fmw8hj-19810101-19931231"/>
+            <rico:relationHasTarget rdf:resource="agent/051213"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d181777e108">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051213-d699msjnw86-64seh0fmw8hj-19810101-19931231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1981-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Ministre de l’Équipement et des Transports du 22 mai au 22 juin 1981 ; ministre des Transports du 12 mai au 22 juin 1988 ; ministre de l'Agriculture et de la Forêt du 3 octobre 1990 au 2 octobre 1992 ; ministre des Relations avec le Parlement, porte-parole du Gouvernement du 2 octobre 1992 au 29 mars 1993</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d181777e108"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051213-d699msjyazt-1f0ggfyf3is8u-19710101-20011231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051213"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051213-d699msjyazt-1f0ggfyf3is8u-19710101-20011231"/>
+            <rico:relationHasTarget rdf:resource="agent/051213"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d181777e128">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051213-d699msjyazt-1f0ggfyf3is8u-19710101-20011231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1971-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">maire de Vienne de 1971 à 2001 : conseiller général de l'Isère ; conseiller régional Rhône-Alpes</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d181777e128"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051213-d699msiribo--1dn34eg8lht4f-19670101-20011231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051213"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051213-d699msiribo--1dn34eg8lht4f-19670101-20011231"/>
+            <rico:relationHasTarget rdf:resource="agent/051213"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d181777e148">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051213-d699msiribo--1dn34eg8lht4f-19670101-20011231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1967-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Député de l'Isère en 1967, battu en 1968, il retrouve son siège de 1973 à 1993 et de 1997 à 2001. Président de l'Assemblée nationale, de 1981 à 1986. Président du groupe socialiste de l'Assemblée nationale de 1988 à 1990.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d181777e148"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Louis Mermaz est né à Paris le 20 août 1931. Agrégé d'histoire, il entame sa carrière d'enseignant au lycée du Mans puis celui de Lakanal à Sceaux.</html:p>
@@ -122,15 +137,25 @@
             </html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000024-051213-19920101-19931231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000024"/>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/050193-051213"/><rico:hasFamilyAssociationWith rdf:resource="agent/050193"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051213-052128-19640606-19710613"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/052128"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051213-053028-19310101-20200728"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/053028"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051213-052182-19690504-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/052182"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/006651-051213-19810521-19810623"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/006651"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000066-051213-19710101-20011231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000066"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000067-051213-20010101-20111231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000067"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/055735-051213"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-055735"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000024-051213-19920101-19931231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000024"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/050193-051213"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/050193"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/051213-052128-19640606-19710613"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/052128"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/051213-053028-19310101-20200728"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/053028"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/051213-053273-19420127-20210924"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/053273"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/051213-052182-19690504-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/052182"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/006651-051213-19810521-19810623"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/006651"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000066-051213-19710101-20011231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000066"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000067-051213-20010101-20111231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000067"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/055735-051213"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-055735"/>
    </rico:Agent>
 </rdf:RDF>

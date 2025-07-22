@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/005159">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/005159"/>
@@ -11,33 +19,30 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-10-20</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Dérivation
-                (Import_SIA)</rico:name>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Elsa CAMUS)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Elsa CAMUS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-13</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Modification du nom, des liens entre producteurs. Ajout de l'historique, des sources, des textes de référence, du numéro ISNI</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Modification du nom, des liens entre producteurs. Ajout de l'historique, des sources, des textes de référence, du numéro ISNI</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-10-20</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Site du Ministère de la Culture et de la Communication dédié à la Mission ethnologique : http://www.culture.gouv.fr/mpe/</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000107287970/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000107287970"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/005159">
-            <rico:isInstantiationOf rdf:resource="record/005159"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/005159"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_005159</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
@@ -45,7 +50,7 @@
             <rico:identifier>5105/ET</rico:identifier>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/005159">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -74,9 +79,11 @@
             <html:p>Suite à la fusion des deux directions de l'architecture et du patrimoine en 1998, la mission du patrimoine ethnologique est transférée à la nouvelle direction de l'architecture et du patrimoine.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005159-005386-19980101-*"/><rico:hasSuccessor rdf:resource="agent/005386"/>
-      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005170-005159-19800101-19981231"/><rico:isOrwasSubdivisionOf rdf:resource="agent/005170"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/058755-005159"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-058755"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentTemporalRelation/005159-005386-19980101-*"/>
+      <rico:hasSuccessor rdf:resource="agent/005386"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/005170-005159-19800101-19981231"/>
+      <rico:wasSubdivisionOf rdf:resource="agent/005170"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/058755-005159"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-058755"/>
    </rico:Agent>
 </rdf:RDF>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050897">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050897"/>
@@ -10,22 +18,21 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-11-26</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Florence CLAVAUD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Florence CLAVAUD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-11-26</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Informations incomplètes fournies par A. Clergeau en novembre 2014</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Informations incomplètes fournies par A. Clergeau en novembre 2014</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050897">
-            <rico:isInstantiationOf rdf:resource="record/050897"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050897"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050897</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050897"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050897">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -56,10 +63,13 @@
             <html:p>Ce service de la direction des musées de France a notamment pour mission le contrôle des exportations d'oeuvres. Le bureau des mouvements des collections reprend cette mission de 1978 à 1979 au sein de la Division des affaires générales et de l'équipement.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/005237-050897-19640101-19781231"/><rico:isOrWasSubordinateTo rdf:resource="agent/005237"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/050897-050898-19780101-19791231"/><rico:hasOrHadSubordinate rdf:resource="agent/050898"/>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/050896-050897-19640101-*"/><rico:isSuccessorOf rdf:resource="agent/050896"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/053713-050897"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-053713"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/005237-050897-19640101-19781231"/>
+      <rico:wasSubordinateTo rdf:resource="agent/005237"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/050897-050898-19780101-19791231"/>
+      <rico:hadSubordinate rdf:resource="agent/050898"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/050896-050897-19640101-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/050896"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/053713-050897"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-053713"/>
    </rico:Agent>
 </rdf:RDF>

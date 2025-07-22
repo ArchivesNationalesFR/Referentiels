@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050769">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050769"/>
@@ -11,31 +19,29 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-18</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Thierry GUILPIN)</rico:name>
+            <rico:name xml:lang="fr">Création (par Thierry GUILPIN)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-04-01</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 18/07/2019 : ajout lien d'identité BnF et Wikipédia, ISNI, indexation lieu et activité</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 18/07/2019 : ajout lien d'identité BnF et Wikipédia, ISNI, indexation lieu et activité</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-18</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000055117266/about"/>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000055117266"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Charles_Coquebert_de_Montbret"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050769">
-            <rico:isInstantiationOf rdf:resource="record/050769"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050769"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050769</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050769"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050769">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -74,39 +80,45 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1755-07-03</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1831-04-09</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050769-d-1jcitfegi20-19rkja1mzd9x0">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050769"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050769-d-1jcitfegi20-19rkja1mzd9x0"/>
+            <rico:relationHasTarget rdf:resource="agent/050769"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d175419e108">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050769-d-1jcitfegi20-19rkja1mzd9x0"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-1jcitfegi20-19rkja1mzd9x0"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-1jcitfegi20-19rkja1mzd9x0"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-1jcitfegi20-19rkja1mzd9x0"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d175419e108"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050769-d699msj02xm-19qbb7wdtto3j">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050769"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050769-d699msj02xm-19qbb7wdtto3j"/>
+            <rico:relationHasTarget rdf:resource="agent/050769"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d175419e114">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050769-d699msj02xm-19qbb7wdtto3j"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d175419e114"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050769-d-6jo73y19j--kj4ht9vy2mvf">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050769"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050769-d-6jo73y19j--kj4ht9vy2mvf"/>
+            <rico:relationHasTarget rdf:resource="agent/050769"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d175419e120">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050769-d-6jo73y19j--kj4ht9vy2mvf"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-6jo73y19j--kj4ht9vy2mvf"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-6jo73y19j--kj4ht9vy2mvf"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-6jo73y19j--kj4ht9vy2mvf"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d175419e120"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Fils d’un correcteur à la Chambre des comptes de Paris, Charles-Etienne Coquebert de Montbret (1755-1831) commence sa carrière au bureau des consulats, à Versailles, en 1773. En 1774, il part pour Hambourg comme commissaire de la marine. En 1777, il est nommé consul général auprès des villes hanséatiques. À son retour à Paris, en 1786, il succède à son père à la Chambre des comptes. En 1789, il est nommé consul à Dublin. La guerre de 1792 entre la France et l’Angleterre interrompt ses activités. Professeur à l’École des Mines, il assume la rédaction du journal de cet établissement de septembre 1793 à avril 1795. En 1800, il repasse dans les consulats. D’abord consul général à Amsterdam, il est nommé agent général des relations commerciales à Londres en 1802. En 1803, il négocie avec l’Allemagne un traité sur la navigation du Rhin. Il est nommé directeur de la statistique au ministère de l’Intérieur en 1806, et maître des requêtes au Conseil d’État en 1808. En 1809, il est fait baron. En novembre 1810, il part pour la Hollande pour y organiser la douane. En 1812, il est nommé secrétaire général du ministère du Commerce. Il prend sa retraite en 1814.</html:p>
@@ -114,7 +126,7 @@
       </rico:history>
       <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Charles_Coquebert_de_Montbret"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb12447869t#about"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/001919-050769"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-001919"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/001919-050769"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-001919"/>
    </rico:Agent>
 </rdf:RDF>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052047">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052047"/>
@@ -11,34 +19,32 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-07-26</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Edith PIRIO)</rico:name>
+            <rico:name xml:lang="fr">Création (par Edith PIRIO)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-05-18</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Catherine MÉROT)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Catherine MÉROT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-07-26</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 26 juillet 2018 : ajout indexation activité et relations d'identité</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 26 juillet 2018 : ajout indexation activité et relations d'identité</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Éléments biographiques fournis par Mathieu Muglioni, petit-fils de Jacques Muglioni</rico:source>
-      <rico:source xml:lang="fr">Notice Wikipédia https://fr.wikipedia.org/wiki/Jacques_Muglioni</rico:source>
-      <rico:source xml:lang="fr">Notice d'autorité de la BNF http://catalogue.bnf.fr/ark:/12148/cb120360177</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000109170397/about"/>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Éléments biographiques fournis par Mathieu Muglioni, petit-fils de Jacques Muglioni</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice Wikipédia https://fr.wikipedia.org/wiki/Jacques_Muglioni</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice d'autorité de la BNF http://catalogue.bnf.fr/ark:/12148/cb120360177</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000109170397"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/w/index.php?title=Jacques_Muglioni&amp;oldid=142772819"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052047">
-            <rico:isInstantiationOf rdf:resource="record/052047"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052047"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052047</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052047"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052047">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -56,31 +62,35 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1921-07-31</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1996-01-22</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052047-d699msj02xm-19qbb7wdtto3j">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052047"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052047-d699msj02xm-19qbb7wdtto3j"/>
+            <rico:relationHasTarget rdf:resource="agent/052047"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d195833e109">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052047-d699msj02xm-19qbb7wdtto3j"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Jacques Muglioni est professeur de philosophie.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d195833e109"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052047-d699msk3h6v--1a7obp35gqwv3">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052047"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052047-d699msk3h6v--1a7obp35gqwv3"/>
+            <rico:relationHasTarget rdf:resource="agent/052047"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d195833e120">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052047-d699msk3h6v--1a7obp35gqwv3"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msk3h6v--1a7obp35gqwv3"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk3h6v--1a7obp35gqwv3"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk3h6v--1a7obp35gqwv3"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d195833e120"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Né à la Garenne-Colombes dans l'actuel département des Hauts-de-Seine en 1921, Jacques Muglioni est élève du lycée Louis-Pasteur de Neuilly-sur-Seine durant toute sa scolarité secondaire jusqu'en 1939. Il suit ensuite les cours d'hypokhâgne et de khâgne du lycée parisien Henri-IV de 1939 à 1941. En 1942, il est titulaire d'un diplôme d'études supérieures en philisophie, son directeur de mémoire est Émile Bréhier. L'année suivante, il obtient le certificat d'aptitude à l'enseignement des collèges, mention philosophie. Il est agrégé de philosophie en 1948.</html:p>
@@ -91,10 +101,11 @@
             <html:p>Jacques Miglioni a épousé Yvette Michel à Roanne en juillet 1945 et ils ont eu deux enfants.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/002156-052047-19450101-19960122"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/002156"/>
-      <owl:sameAs rdf:resource="https://fr.wikipedia.org/w/index.php?title=Jacques_Muglioni&amp;oldid=142772819"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/002156-052047-19450101-19960122"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/002156"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb120360177#about"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057244-052047"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-057244"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/057244-052047"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-057244"/>
    </rico:Agent>
 </rdf:RDF>

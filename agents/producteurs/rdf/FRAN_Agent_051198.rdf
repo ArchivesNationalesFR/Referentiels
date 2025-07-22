@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051198">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051198"/>
@@ -10,21 +18,20 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-15</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Cecile BOSQUIER-BRITTEN)</rico:name>
+            <rico:name xml:lang="fr">Création (par Cecile BOSQUIER-BRITTEN)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-15</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051198">
-            <rico:isInstantiationOf rdf:resource="record/051198"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051198"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051198</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051198"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051198">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -41,7 +48,7 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2004-03-31</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-05-31</rico:endDate>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      <rico:generalDescription rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Organisation interne ou généalogie</h4>
             <html:p>Le cabinet était composé de :</html:p>
@@ -70,21 +77,35 @@
             <html:p>Claudie Quillien</html:p>
             <html:p>Anne Peyricot, attachée parlementaire</html:p>
          </html:div>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Cabinet de Philippe Douste-Blazy, ministre de la santé et de la protection sociale du 31 mars 2004 au 29 novembre 2004. Le 29 novembre 2004 son titre est élargi en ministre des solidarités, de la santé et de la famille au sein du gouvernement Raffarin III, sous la présidence de Jacques Chirac.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051198-051538-20040331-20050531"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/051538"/>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051802-051198-20040331-*"/><rico:isSuccessorOf rdf:resource="agent/051802"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051198-052150-20040428-20050531"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/052150"/>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/010001-051198-20041129-20050531"/><rico:isOrWasSubordinateTo rdf:resource="agent/010001"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054619-051198"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-054619"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/058157-051198"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-058157"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/058896-051198"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-058896"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/051198-051538-20040331-20050531"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/051538"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/051802-051198-20040331-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/051802"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/051198-053451-20040331-20041027"/>
+      <rico:isOrWasControllerOf rdf:resource="agent/053451"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/051198-052150-20040428-20050531"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/052150"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/010001-051198-20041129-20050531"/>
+      <rico:wasSubordinateTo rdf:resource="agent/010001"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054619-051198"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054619"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/058157-051198"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-058157"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/058896-051198"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-058896"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/060152-051198"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-060152"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/060164-051198"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-060164"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/060165-051198"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-060165"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/060166-051198"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-060166"/>
    </rico:Agent>
 </rdf:RDF>

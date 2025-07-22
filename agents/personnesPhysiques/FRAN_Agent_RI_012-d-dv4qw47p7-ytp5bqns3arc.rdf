@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:dcterms="http://purl.org/dc/terms/"
-         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/FRAN_RI_012-d-dv4qw47p7-ytp5bqns3arc">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/FRAN_RI_012-d-dv4qw47p7-ytp5bqns3arc"/>
@@ -17,21 +17,26 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
       <rdfs:seeAlso rdf:resource="https://catalogue.bnf.fr/ark:/12148/cb104329322"/>
+      <!--Contenu de biblio :  Identifiant VIAF :
+        https://viaf.org/viaf/55757081 -->
       <rdfs:seeAlso rdf:resource="http://elec.enc.sorbonne.fr/architectes/185"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Louis_Dupasquier"/>
-      <rico:hasInstantiation>
+      <!--Contenu de biblio :  Identifiant Wikidata :
+        http://www.wikidata.org/entity/Q3261803-->
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/FRAN_RI_012-d-dv4qw47p7-ytp5bqns3arc">
-            <rico:isInstantiationOf rdf:resource="record/FRAN_RI_012-d-dv4qw47p7-ytp5bqns3arc"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/FRAN_RI_012-d-dv4qw47p7-ytp5bqns3arc"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_RI_012-d-dv4qw47p7-ytp5bqns3arc</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/FRAN_RI_012-d-dv4qw47p7-ytp5bqns3arc">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/FRAN_RI_012-d-dv4qw47p7-ytp5bqns3arc"/>
       <rdfs:label xml:lang="fr">Dupasquier, Louis (1800-1870)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Dupasquier, Louis (1800-1870)</skos:prefLabel>
       <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/FRAN_RI_012-d-dv4qw47p7-ytp5bqns3arc-Dupasquier%2C%20Louis%20%281800-1870%29">
             <rdfs:label xml:lang="fr">Dupasquier, Louis (1800-1870)</rdfs:label>
@@ -45,11 +50,16 @@
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1870-10-15</rico:deathDate>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
-            <html:p>Né le 04/12/1800 à Lyon. Décédé le 15/10/1870 à Blacé. Architecte diocésain. A œuvré à la restauration des cathédrales de Brou, Autun, Belley.</html:p>
+            <html:p>Né le 04/12/1800 à Lyon. Décédé le 15/10/1870 à Blacé. Architecte diocésain. A œuvré à la
+        restauration des cathédrales de Brou, Autun, Belley.</html:p>
          </html:div>
       </rico:history>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb104329322#about"/>
       <owl:sameAs rdf:resource="https://viaf.org/viaf/55757081"/>
+      <!--Contenu de biblio :  Identifiant Répertoire des architectes diocésains :
+        http://elec.enc.sorbonne.fr/architectes/185 -->
+      <!--Contenu de biblio :  Article Wikipedia :
+        https://fr.wikipedia.org/wiki/Louis_Dupasquier -->
       <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q3261803"/>
    </rico:Agent>
 </rdf:RDF>

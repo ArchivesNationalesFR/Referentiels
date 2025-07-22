@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050751">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050751"/>
@@ -10,24 +18,23 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-03-11</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Florence CLAVAUD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Florence CLAVAUD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-03-11</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Informations fournies par la mission des archives auprès des services du Premier ministre le 7 mars 2014</html:p>
-      </rico:source>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050751">
-            <rico:isInstantiationOf rdf:resource="record/050751"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050751"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050751</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050751"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050751">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -59,9 +66,11 @@
             <html:p>Le CCA a examiné 16 projets au cours de ses deux ans d’activité dont 9 ont pu être mené à bien. Le 29 avril 2011, le CCA remet son bilan au président de la République puis est supprimé.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000001-050751-20090130-20110527"/><rico:isOrWasSubordinateTo rdf:resource="agent/000001"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000002-050751-20090130-20110527"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000002"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054785-050751"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-054785"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/000001-050751-20090130-20110527"/>
+      <rico:wasSubordinateTo rdf:resource="agent/000001"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000002-050751-20090130-20110527"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000002"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054785-050751"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054785"/>
    </rico:Agent>
 </rdf:RDF>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051188">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051188"/>
@@ -10,26 +18,25 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-09-25</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Pascal DAVID-DORMIEN)</rico:name>
+            <rico:name xml:lang="fr">Création (par Pascal DAVID-DORMIEN)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-09-25</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 25 septembre 2015 : changé nom, ajouté ISNI et n° notice BnF, descripteurs fonctions et lien d'association</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 25 septembre 2015 : changé nom, ajouté ISNI et n° notice BnF, descripteurs fonctions et lien d'association</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice d'autorité BnF n° FRBNF12222376</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000122873863/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000122873863"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051188">
-            <rico:isInstantiationOf rdf:resource="record/051188"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051188"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051188</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051188"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051188">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -54,42 +61,45 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1985-01-01</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-30</rico:endDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051188-d5bhvil20q--uuew3ia85vzc">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051188"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051188-d5bhvil20q--uuew3ia85vzc"/>
+            <rico:relationHasTarget rdf:resource="agent/051188"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d181470e104">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051188-d5bhvil20q--uuew3ia85vzc"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvil20q--uuew3ia85vzc"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvil20q--uuew3ia85vzc"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d181470e104"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051188-d5bhviikk9--y6te63k761ib">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051188"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051188-d5bhviikk9--y6te63k761ib"/>
+            <rico:relationHasTarget rdf:resource="agent/051188"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d181470e110">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051188-d5bhviikk9--y6te63k761ib"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">photographie</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d181470e110"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051188-d-25ub5bepd--1a98b90ydj2ye">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051188"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051188-d-25ub5bepd--1a98b90ydj2ye"/>
+            <rico:relationHasTarget rdf:resource="agent/051188"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d181470e121">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051188-d-25ub5bepd--1a98b90ydj2ye"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d-25ub5bepd--1a98b90ydj2ye"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d-25ub5bepd--1a98b90ydj2ye"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d181470e121"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Le Bar Floréal est un collectif de photographes fondé en 1985 dans le but de défendre une photographie engagée et humaniste. Le siège du collectif se trouve dans un ancien bar parisien, 43 rue des Couronnes dans le vingtième arrondissement, où dès 1986 sont réalisées régulièrement des expositions de photographes réputés et de photo-reportages sur des sujets les plus variés.</html:p>
@@ -97,6 +107,7 @@
             <html:p>Apès trente ans d'existence, en raison de problèmes financiers, le collectif est dissous par une liquidation judiciaire effective en juillet 2015.</html:p>
          </html:div>
       </rico:history>
-      <rico:groupIsTargetOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050825-051188-19850101-20150730"/><rico:hasOrHadLeader rdf:resource="agent/050825"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/050825-051188-19850101-20150730"/>
+      <rico:hasOrHadLeader rdf:resource="agent/050825"/>
    </rico:Agent>
 </rdf:RDF>

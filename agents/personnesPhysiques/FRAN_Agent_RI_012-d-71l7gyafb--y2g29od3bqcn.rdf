@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:dcterms="http://purl.org/dc/terms/"
-         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/FRAN_RI_012-d-71l7gyafb--y2g29od3bqcn">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/FRAN_RI_012-d-71l7gyafb--y2g29od3bqcn"/>
@@ -16,21 +16,23 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl002"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
-      <rico:source xml:lang="fr">FRBNF12714806Création:87/01/01Miseàjour:12/06/13</rico:source>
-      <rdfs:seeAlso rdf:resource="https://catalogue.bnf.fr/ark:/12148/cb127148063"/>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice BnF n° : FRBNF12714806</rico:recordResourceSourceOfInformation>
+      <!--Contenu de biblio :  Identifiant
+        BNF : https://catalogue.bnf.fr/ark:/12148/cb127148063-->
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/FRAN_RI_012-d-71l7gyafb--y2g29od3bqcn">
-            <rico:isInstantiationOf rdf:resource="record/FRAN_RI_012-d-71l7gyafb--y2g29od3bqcn"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/FRAN_RI_012-d-71l7gyafb--y2g29od3bqcn"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_RI_012-d-71l7gyafb--y2g29od3bqcn</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/FRAN_RI_012-d-71l7gyafb--y2g29od3bqcn">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/FRAN_RI_012-d-71l7gyafb--y2g29od3bqcn"/>
       <rdfs:label xml:lang="fr">Bénédite, Léonce (1859-1925)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Bénédite, Léonce (1859-1925)</skos:prefLabel>
       <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/FRAN_RI_012-d-71l7gyafb--y2g29od3bqcn-B%C3%A9n%C3%A9dite%2C%20L%C3%A9once%20%281859-1925%29">
             <rdfs:label xml:lang="fr">Bénédite, Léonce (1859-1925)</rdfs:label>
@@ -44,9 +46,14 @@
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1925-01-01</rico:deathDate>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
-            <html:p>Conservateur de musée et historien de l'art. - Conservateur du Musée du Luxembourg (1889-) et au Musée Rodin, Paris, France. - Président de la Société des peintres orientalistes, de la Société des peintres lithographes et de la Société des peintres graveurs français.</html:p>
+            <html:p>Conservateur de musée et historien de l'art. - Conservateur du Musée du Luxembourg
+        (1889-) et au Musée Rodin, Paris, France. - Président de la Société des peintres
+        orientalistes, de la Société des peintres lithographes et de la Société des peintres
+        graveurs français.</html:p>
          </html:div>
       </rico:history>
-      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb127148063#about"/>
+      <!--Contenu de biblio : Notice BnF n° : FRBNF12714806-->
+      <!--Contenu de biblio :  Identifiant
+        BNF : https://catalogue.bnf.fr/ark:/12148/cb127148063-->
    </rico:Agent>
 </rdf:RDF>

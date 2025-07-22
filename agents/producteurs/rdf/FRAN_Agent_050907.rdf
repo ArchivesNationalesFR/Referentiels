@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050907">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050907"/>
@@ -10,29 +18,28 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-04-27</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Pascal DAVID)</rico:name>
+            <rico:name xml:lang="fr">Création (par Pascal DAVID)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-04-27</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 27 avril 2015 : changé nom, ajouté ISNI, statut, indexation fonctions, n° notice BnF</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 27 avril 2015 : changé nom, ajouté ISNI, statut, indexation fonctions, n° notice BnF</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">CNAHES</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice d'autorité BnF n° FRBNF12953856</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000091357064/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000091357064"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050907">
-            <rico:isInstantiationOf rdf:resource="record/050907"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050907"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050907</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050907"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050907">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -56,37 +63,39 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1948-02-09</rico:beginningDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050907-d5bhvil20q--uuew3ia85vzc">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050907"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050907-d5bhvil20q--uuew3ia85vzc"/>
+            <rico:relationHasTarget rdf:resource="agent/050907"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d177086e103">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050907-d5bhvil20q--uuew3ia85vzc"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvil20q--uuew3ia85vzc"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvil20q--uuew3ia85vzc"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d177086e103"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050907-d5bhviliu0--ghc74xbke76o">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050907"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050907-d5bhviliu0--ghc74xbke76o"/>
+            <rico:relationHasTarget rdf:resource="agent/050907"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d177086e109">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050907-d5bhviliu0--ghc74xbke76o"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviliu0--ghc74xbke76o"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">magistrats de la jeunesse</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviliu0--ghc74xbke76o"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d177086e109"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>L’Association Française des Magistrats de la Jeunesse et de la Famille (AFMJF) est une association loi 1901 créée le 9 février 1948 au Palais de Justice de Paris. Son but est de coordonner les magistrats de la jeunesse afin de recenser les difficultés rencontrées dans l’exercice de leurs fonctions, de les représenter auprès des autorités compétentes, de les défendre si nécessaire, et d’étudier leur statut, leur formation, et tout problème juridique ou judiciaire de l’enfance et de la famille.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054797-050907"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-054797"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054797-050907"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054797"/>
    </rico:Agent>
 </rdf:RDF>

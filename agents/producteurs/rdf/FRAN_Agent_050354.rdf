@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050354">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050354"/>
@@ -10,30 +18,29 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-05-26</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Vanessa ASPART)</rico:name>
+            <rico:name xml:lang="fr">Création (par Vanessa ASPART)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-05-26</rico:date>
-            <rico:descriptiveNote xml:lang="fr">E. Camus, 23 mai 2016 : modification forme autorisée du nom (dates), dates, historique (conjugaison des verbes), sources (notice BnF) ; ajout ISNI, activités, relations</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">E. Camus, 23 mai 2016 : modification forme autorisée du nom (dates), dates, historique (conjugaison des verbes), sources (notice BnF) ; ajout ISNI, activités, relations</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Archives nationales, Fonds Michel Hulin (1963-1993), 631 AP.</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb11908005h</html:p>
-      </rico:source>
-      <rico:hasSource rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb11908005h"/>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000108551251/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb11908005h"/>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000108551251"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050354">
-            <rico:isInstantiationOf rdf:resource="record/050354"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050354"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050354</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050354"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050354">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -51,50 +58,56 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1936-07-26</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-11-22</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050354-d699msk5oth-xqvujelh8c39">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050354"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050354-d699msk5oth-xqvujelh8c39"/>
+            <rico:relationHasTarget rdf:resource="agent/050354"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d169894e93">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050354-d699msk5oth-xqvujelh8c39"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msk5oth-xqvujelh8c39"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Chercheur en physique des solides</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk5oth-xqvujelh8c39"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk5oth-xqvujelh8c39"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d169894e93"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050354-d699msj02xm-19qbb7wdtto3j">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050354"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050354-d699msj02xm-19qbb7wdtto3j"/>
+            <rico:relationHasTarget rdf:resource="agent/050354"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d169894e104">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050354-d699msj02xm-19qbb7wdtto3j"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Professeur d'université en physique et didactique de la physique</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d169894e104"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050354-d-l0jya1ik6x--16fn7glte863o-19840101-19881122">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050354"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050354-d-l0jya1ik6x--16fn7glte863o-19840101-19881122"/>
+            <rico:relationHasTarget rdf:resource="agent/050354"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d169894e115">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050354-d-l0jya1ik6x--16fn7glte863o-19840101-19881122"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-l0jya1ik6x--16fn7glte863o"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1984-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-11-22</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Directeur du Palais de la Découverte</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-l0jya1ik6x--16fn7glte863o"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-l0jya1ik6x--16fn7glte863o"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d169894e115"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Ancien élève de l'École normale supérieure (section sciences), agrégé de sciences physiques, Michel Hulin (1936-1988) mène de nombreuses recherches dans le domaine de la physique des solides. De 1977 à 1979, il dirige le groupe de physique des solides de l'École normale supérieure, s'efforçant de définir une politique de recherche. Il se tourne ensuite vers la didactique de la physique et crée, en 1979, à l'Université Paris VI, l'Equipe de recherche sur la diffusion et l'enseignement de la physique (ERDEP).</html:p>
@@ -103,7 +116,9 @@
             <html:p>Enfin, Michel Hulin est directeur du Palais de la découverte de 1984 à 1988.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/003768-050354-19790101-19861231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/003768"/>
-      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050354-003751-19840101-19881122"/><rico:isOrWasLeaderOf rdf:resource="agent/003751"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/003768-050354-19790101-19861231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/003768"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/050354-003751-19840101-19881122"/>
+      <rico:isOrWasLeaderOf rdf:resource="agent/003751"/>
    </rico:Agent>
 </rdf:RDF>

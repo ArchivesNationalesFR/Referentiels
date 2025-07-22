@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052271">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052271"/>
@@ -11,33 +19,31 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-05-28</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Vivien RICHARD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Vivien RICHARD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-05-10</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Samuel GIBIAT)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Samuel GIBIAT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-05-28</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Notice créée par Vivien Richard le 10 mai 2019, relue, validée et soumise à publication par Samuel Gibiat le 15 mai 2019</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Notice créée par Vivien Richard le 10 mai 2019, relue, validée et soumise à publication par Samuel Gibiat le 15 mai 2019</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Notice de la Bibliothèque nationale de France (https://catalogue.bnf.fr/ark:/12148/cb16752125b)</rico:source>
-      <rico:source xml:lang="fr">Notice Wikipedia (https://fr.wikipedia.org/wiki/Jean-Vincent_Plac%C3%A9)</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000428522425/about"/>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice de la Bibliothèque nationale de France (https://catalogue.bnf.fr/ark:/12148/cb16752125b)</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice Wikipedia (https://fr.wikipedia.org/wiki/Jean-Vincent_Plac%C3%A9)</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000428522425"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Jean-Vincent_Plac%C3%A9"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052271">
-            <rico:isInstantiationOf rdf:resource="record/052271"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052271"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052271</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052271"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052271">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -54,60 +60,64 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1968-03-12</rico:birthDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052271-d699msj5les--1kxyfzhpd7g0m-20160211-20170510">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052271"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052271-d699msj5les--1kxyfzhpd7g0m-20160211-20170510"/>
+            <rico:relationHasTarget rdf:resource="agent/052271"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d199135e102">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052271-d699msj5les--1kxyfzhpd7g0m-20160211-20170510"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj5les--1kxyfzhpd7g0m"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-02-11</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-10</rico:endDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj5les--1kxyfzhpd7g0m"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj5les--1kxyfzhpd7g0m"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d199135e102"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052271-d699msjyazt-1f0ggfyf3is8u-20040328-*">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052271"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052271-d699msjyazt-1f0ggfyf3is8u-20040328-*"/>
+            <rico:relationHasTarget rdf:resource="agent/052271"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d199135e117">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052271-d699msjyazt-1f0ggfyf3is8u-20040328-*"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2004-03-28</rico:beginningDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d199135e117"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052271-d699msj9l7t-1gb5a09kkzrmp-20111001-20170901">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052271"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052271-d699msj9l7t-1gb5a09kkzrmp-20111001-20170901"/>
+            <rico:relationHasTarget rdf:resource="agent/052271"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d199135e129">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052271-d699msj9l7t-1gb5a09kkzrmp-20111001-20170901"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj9l7t-1gb5a09kkzrmp"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-10-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-09-01</rico:endDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj9l7t-1gb5a09kkzrmp"/>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj9l7t-1gb5a09kkzrmp"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d199135e129"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052271"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052271"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d199135e147">
                   <rico:title>Décret du 11 février 2016 relatifs à la composition du Gouvernement</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jo_pdf.do?id=JORFTEXT000032036286"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate>11 février 2016</rico:beginningDate>
             <rico:endDate>10 mai 2017</rico:endDate>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Décret du 11 février 2016 relatifs à la composition du Gouvernement</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/jo_pdf.do?id=JORFTEXT000032036286"/>
-               </rico:Mandate></rico:authorizedBy>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d199135e147"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Jean-Vincent Placé est né le 12 mars 1968 à Séoul (Corée du Sud).</html:p>
@@ -123,7 +133,8 @@
             <html:p>-<html:i>Pourquoi pas moi !</html:i>, avec Rodolphe Geisler, Paris, Plon, 2015.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/052270-052271-20160211-20170510"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/052270"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/052270-052271-20160211-20170510"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/052270"/>
       <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Jean-Vincent_Plac%C3%A9"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb16752125b#about"/>
    </rico:Agent>

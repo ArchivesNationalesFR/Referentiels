@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050520">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050520"/>
@@ -10,24 +18,23 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-12-03</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Pascal DAVID)</rico:name>
+            <rico:name xml:lang="fr">Création (par Pascal DAVID)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-12-03</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Archives nationales, fonds Langeron (118AP).</html:p>
-      </rico:source>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050520">
-            <rico:isInstantiationOf rdf:resource="record/050520"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050520"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050520</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050520"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050520">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -63,7 +70,7 @@
             <html:p>Charles-Claude, comte puis marquis de Langeron (1720-1792) fut lieutenant-colonel du régiment de Condé en 1743, brigadier en 1748, maréchal de camp en 1758 et lieutenant général en 1762. De 1755 à 1790, il fut gouverneur des ports et châteaux de Brest. Son frère, Alexandre-Claude-Nicolas, comte de Langeron (né en 1732) fut capitaine en 1757, colonel du régiment Royal-Barrois en 1759, colonel du régiment de Foix puis brigadier en 1762, maréchal de camp en 1770 et lieutenant général en 1784.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/004295-050520"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-004295"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/004295-050520"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-004295"/>
    </rico:Agent>
 </rdf:RDF>

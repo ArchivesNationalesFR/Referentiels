@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052237">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052237"/>
@@ -11,30 +19,28 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-11</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Vanessa SZOLLOSI)</rico:name>
+            <rico:name xml:lang="fr">Création (par Vanessa SZOLLOSI)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-11</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Vanessa SZOLLOSI)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Vanessa SZOLLOSI)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-11</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000085170658/about"/>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000085170658"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Caisse_de_retraite_et_de_pr%C3%A9voyance_des_clercs_et_employ%C3%A9s_de_notaires"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052237">
-            <rico:isInstantiationOf rdf:resource="record/052237"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052237"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052237</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052237"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052237">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -58,55 +64,53 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1937-07-12</rico:beginningDate>
-      <rico:thingIsTargetOfTypeRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:TypeRelation rdf:about="relationToType/052237-d5blooi3ij--n2hur9uc3des-19370712-*">
-            <rico:typeRelationHasTarget rdf:resource="agent/052237"/>
-            <rico:typeRelationHasSource rdf:resource="corporateBodyType/FRAN_RI_104-d5blooi3ij--n2hur9uc3des"/>
+            <rico:relationHasTarget rdf:resource="agent/052237"/>
+            <rico:relationHasSource rdf:resource="corporateBodyType/FRAN_RI_104-d5blooi3ij--n2hur9uc3des"/>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1937-07-12</rico:beginningDate>
          </rico:TypeRelation>
-      </rico:thingIsTargetOfTypeRelation><rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5blooi3ij--n2hur9uc3des"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5blooi3ij--n2hur9uc3des"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052237-d699mt06sp1-i5s4bsim5cld-19370712-*">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052237"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052237-d699mt06sp1-i5s4bsim5cld-19370712-*"/>
+            <rico:relationHasTarget rdf:resource="agent/052237"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d198642e107">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052237-d699mt06sp1-i5s4bsim5cld-19370712-*"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d699mt06sp1-i5s4bsim5cld"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1937-07-12</rico:beginningDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d699mt06sp1-i5s4bsim5cld"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d198642e107"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052237"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052237"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d198642e122">
                   <rico:title>Loi du 12 juillet 1937 instituant une caisse de retraite et d'assistance des clercs de notaires</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000692648"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1937</rico:beginningDate>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Loi du 12 juillet 1937 instituant une caisse de retraite et d'assistance des clercs de notaires</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000692648"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d198642e122"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052237"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052237"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d198642e133">
                   <rico:title>Décret n°90-1215 du 20 décembre 1990 portant application de la loi du 12 juillet 1937 instituant une caisse de retraite et de prévoyance des clercs et employés de notaires et modifiant certaines dispositions relatives à cette caisse.</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000717193"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1990</rico:beginningDate>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Décret n°90-1215 du 20 décembre 1990 portant application de la loi du 12 juillet 1937 instituant une caisse de retraite et de prévoyance des clercs et employés de notaires et modifiant certaines dispositions relatives à cette caisse.</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000717193"/>
-               </rico:Mandate></rico:authorizedBy>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d198642e133"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Contexte général</h4>
@@ -119,7 +123,6 @@
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>La genèse de cet organisme, héritier de la «Fédération Nationale Autonome des Clercs de Notaires de France» remonte aux années 1920. La caisse actuelle est créée en tant que régime spécial par la loi du 12 juillet 1937 instituant une Caisse de retraite et d’assistance des clercs de notaires. Ce n’est que le 1er juillet 1939 que la Caisse devint la Caisse de retraite et de prévoyance des clercs et employés de notaires et débuta son fonctionnement. Les fondateurs de CRPCEN sont Abel DELCLOY, Théophile BOSSEAU et René HUOT.</html:p>
-            <html:p/>
             <html:p>La mission de la CRPCEN est d’assurer aux ressortissants du régime (assurés actifs, bénéficiaires et retraités) les prestations suivantes :</html:p>
             <html:p>• Assurances maladie, maternité, invalidité et décès</html:p>
             <html:p>• Pensions de retraite et de réversion</html:p>
@@ -129,7 +132,9 @@
       </rico:history>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb123568897#about"/>
       <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Caisse_de_retraite_et_de_pr%C3%A9voyance_des_clercs_et_employ%C3%A9s_de_notaires"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/058357-052237"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-058357"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/058357-052237"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-058357"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/060311-052237"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-060311"/>
    </rico:Agent>
 </rdf:RDF>

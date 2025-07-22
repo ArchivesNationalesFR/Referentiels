@@ -4,7 +4,7 @@
    <control>
       <recordId>FRAN_NP_012308</recordId>
       <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE02170</otherRecordId>
-      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceStatus>revised</maintenanceStatus>
       <maintenanceAgency>
          <agencyName>Archives nationales de France</agencyName>
       </maintenanceAgency>
@@ -24,6 +24,19 @@
             <eventDateTime>2013-04-23</eventDateTime>
             <agentType>machine</agentType>
             <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2024-08-13</eventDateTime>
+            <agentType>human</agentType>
+            <agent>François CHANCEREL</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2024-08-14</eventDateTime>
+            <agentType>human</agentType>
+            <agent>François CHANCEREL</agent>
+            <eventDescription>14/08/2024, J. Gaillard : Précisions sur placeEntry @localType="nomLieu" | Ajout activité 'notaire'</eventDescription>
          </maintenanceEvent>
       </maintenanceHistory>
    </control>
@@ -50,24 +63,32 @@
          <places>
             <place>
                <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">Sièges de l'étude</placeEntry>
                <placeEntry localType="arrondissement_actuel"
                            vocabularySource="d3nyv5mvjm--gvfz3ej8yx8n">09e arrondissement</placeEntry>
                <placeEntry localType="arrondissement_actuel"
                            vocabularySource="d3nyv5mj9a-19vhxeonx80mi">08e arrondissement</placeEntry>
-               <placeEntry localType="voie" vocabularySource="d3nzbcqdtk-vr86sq5gwxb9">havre (rue du)</placeEntry>
-               <placeEntry localType="voie" vocabularySource="d3nzbzszdf--12a0ismfxuvz7">mathurins (rue des)</placeEntry>
-               <placeEntry localType="nomLieu">10 rue du Havre (de 1881 à 1886), 32 rue des Mathurins (de 1886 à 1902)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzbcqdtk-vr86sq5gwxb9">Havre (rue du)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzbzszdf--12a0ismfxuvz7">Mathurins (rue des)</placeEntry>
+               <descriptiveNote>
+                  <p>10 rue du Havre (de 1881 à 1886), 32 rue des Mathurins (de 1886 à 1902)</p>
+               </descriptiveNote>
             </place>
          </places>
          <functions>
             <function>
-               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à Paris</term>
                <dateRange>
                   <fromDate standardDate="1881-06-14">14 juin 1881</fromDate>
                   <toDate standardDate="1902-09-11">11 septembre 1902</toDate>
                </dateRange>
             </function>
          </functions>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d3nyu9x713-9kcjiv44l4wh">notaire</term>
+            </occupation>
+         </occupations>
       </description>
       <relations>
          <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -81,16 +102,24 @@
             </dateRange>
          </cpfRelation>
          <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
-                           resourceRelationType="subjectOf"
-                           xlink:href="FRAN_IR_042493"
-                           xlink:type="simple">
-            <relationEntry localType="archival">Minutes et répertoires du notaire François Adolphe DUPUY, 14 juin 1881 - 11 septembre 1902 (étude LXV)</relationEntry>
+                           resourceRelationType="creatorOf"
+                           xlink:href="Information">
+            <relationEntry localType="archival"/>
+            <descriptiveNote>
+               <p>les minutes de ce notaire postérieures au 31 décembre 1901 sont conservées par l'étude</p>
+            </descriptiveNote>
          </resourceRelation>
          <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
                            resourceRelationType="creatorOf"
                            xlink:href="FRAN_IR_052313"
                            xlink:type="simple">
             <relationEntry localType="archival">Images des répertoires du notaire François Adolphe Dupuy pour l'étude LXV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042493"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire François Adolphe DUPUY, 14 juin 1881 - 11 septembre 1902 (étude LXV)</relationEntry>
          </resourceRelation>
       </relations>
    </cpfDescription>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/010196">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/010196"/>
@@ -8,17 +16,29 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
-      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:lastModificationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-02-16</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Dérivation
-                (Migration ETANOT)</rico:name>
+            <rico:name xml:lang="fr">Dérivation (Migration ETANOT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-02-16</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-02-16</rico:date>
+            <rico:generalDescription xml:lang="fr">16/02/2023, J. Gaillard : Correction de la forme autorisée du nom | Ajout index statut juridique office notarial | Correction type de liens IR</rico:generalDescription>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/010196">
-            <rico:isInstantiationOf rdf:resource="record/010196"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/010196"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_010196</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
@@ -26,16 +46,16 @@
             <rico:identifier>FRDAFANCH00MC_NAETUDE_069</rico:identifier>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/010196">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:isOrWasDescribedBy rdf:resource="record/010196"/>
-      <rdfs:label xml:lang="fr">Etude LXIX</rdfs:label>
+      <rdfs:label xml:lang="fr">Étude notariale LXIX (Paris ; 1518-….)</rdfs:label>
       <rico:hasOrHadAgentName>
-         <rico:AgentName rdf:about="agentName/010196-Etude%20LXIX">
-            <rdfs:label xml:lang="fr">Etude LXIX</rdfs:label>
-            <rico:textualValue xml:lang="fr">Etude LXIX</rico:textualValue>
+         <rico:AgentName rdf:about="agentName/010196-%C3%89tude%20notariale%20LXIX%20%28Paris%20%3B%201518-%E2%80%A6.%29">
+            <rdfs:label xml:lang="fr">Étude notariale LXIX (Paris ; 1518-….)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Étude notariale LXIX (Paris ; 1518-….)</rico:textualValue>
             <rico:isOrWasAgentNameOf rdf:resource="agent/010196"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
@@ -49,115 +69,182 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1518-01-01</rico:beginningDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5blomr902-13lmns87apgev"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/010196-d3nyui3o8w--11y7jgy8q3wnt-15180101-*">
-            <rico:performanceRelationHasTarget rdf:resource="agent/010196"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/010196-d3nyui3o8w--11y7jgy8q3wnt-15180101-*"/>
+            <rico:relationHasTarget rdf:resource="agent/010196"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d115992e125">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/010196-d3nyui3o8w--11y7jgy8q3wnt-15180101-*"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyui3o8w--11y7jgy8q3wnt"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1518-01-01</rico:beginningDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyui3o8w--11y7jgy8q3wnt"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d115992e125"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Cette étude est installée rue Saint-Denis du XVIème siècle jusqu'au XIXème siècle, dans le voisinage de l'hôpital de la Trinité. Elle déménage ensuite rue de la Trinité, puis rue Neuve-Saint-Merri, enfin rue Aubry-le-Boucher. Transférée rue de Richelieu en 1814, puis rue Menars en 1833, elle se retrouve avenue de l'Opéra en 1878 et se fixe rue Saint-Florentin (1896).</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-010344-16791222-17060518"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/010344"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-010995-15910308-16231128"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/010995"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-010996-16250214-16340523"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/010996"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-010997-16231128-16510318"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/010997"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-011470-16830116-17070802"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/011470"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-011183-16280101-16311231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/011183"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-012626-16620228-16760626"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/012626"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-012624-17460120-17460515"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/012624"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-011059-18101128-18281126"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/011059"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-010442-18290626-18530820"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/010442"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-011806-17330902-17590613"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/011806"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-011852-16510318-16791222"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/011852"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-012804-18890508-19241222"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/012804"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-013047-18281126-18290626"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/013047"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-011766-16760626-16830116"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/011766"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-011736-17720215-17840918"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/011736"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-012095-17840918-18101128"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/012095"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-013121-15610101-15631231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/013121"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-011730-15740407-15910410"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/011730"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-010664-19890913-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/010664"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-013019-19760128-20011129"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/013019"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-012803-18530820-18890508"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/012803"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-012805-19241222-19480323"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/012805"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-011854-17070803-17270910"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/011854"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-011044-15180101-15871231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/011044"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-011045-15621119-16081231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/011045"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-012623-17270910-17451216"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/012623"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-012625-17060518-17330902"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/012625"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-010582-17590613-17720215"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/010582"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-010557-19840717-20100521"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/010557"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-011500-19480323-19760128"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/011500"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-011655-19930331-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/011655"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-012222-16360730-16620228"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/012222"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-013510-20110719-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/013510"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010196-013511-20110719-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/013511"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/042559-010196"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-042559"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/042560-010196"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-042560"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/052366-010196"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-052366"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/042547-010196"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-042547"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/042546-010196"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-042546"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/042548-010196"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-042548"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/042552-010196"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-042552"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/052380-010196"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-052380"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/052372-010196"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-052372"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/052368-010196"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-052368"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/052383-010196"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-052383"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/052382-010196"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-052382"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/052369-010196"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-052369"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/052358-010196"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-052358"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/052381-010196"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-052381"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/052370-010196"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-052370"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/052374-010196"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-052374"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/052371-010196"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-052371"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/052367-010196"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-052367"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/052373-010196"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-052373"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/052377-010196"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-052377"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/052357-010196"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-052357"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/052379-010196"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-052379"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/052378-010196"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-052378"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/042544-010196"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-042544"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/042567-010196"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-042567"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/055913-010196"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-055913"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/042566-010196"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-042566"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/058100-010196"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-058100"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-010344-16791222-17060518"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/010344"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-010995-15910308-16231128"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/010995"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-010996-16250214-16340523"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/010996"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-010997-16231128-16510318"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/010997"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-011470-16830116-17070802"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/011470"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-011183-16280101-16311231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/011183"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-012626-16620228-16760626"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/012626"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-012624-17460120-17460515"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/012624"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-011059-18101128-18281126"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/011059"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-010442-18290626-18530820"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/010442"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-011806-17330902-17590613"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/011806"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-011852-16510318-16791222"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/011852"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-012804-18890508-19241222"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/012804"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-013047-18281126-18290626"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/013047"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-011766-16760626-16830116"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/011766"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-011736-17720215-17840918"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/011736"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-012095-17840918-18101128"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/012095"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-012805-19241222-19460112"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/012805"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-013121-15610101-15631231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/013121"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-011730-15740407-15910410"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/011730"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-010664-19890913-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/010664"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-013019-19760128-20011129"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/013019"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-012803-18530820-18890508"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/012803"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-011854-17070803-17270910"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/011854"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-011044-15180101-15871231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/011044"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-011045-15621119-16081231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/011045"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-012623-17270910-17451216"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/012623"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-012625-17060518-17330902"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/012625"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-010582-17590613-17720215"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/010582"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-010557-19840717-20100521"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/010557"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-011500-19480323-19760128"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/011500"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-011655-19930331-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/011655"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-012222-16360730-16620228"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/012222"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-013510-20110719-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/013510"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010196-013511-20110719-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/013511"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/042562-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-042562"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/042550-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-042550"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/042557-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-042557"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/042561-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-042561"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/042565-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-042565"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/042559-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-042559"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/042560-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-042560"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/052366-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-052366"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/042547-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-042547"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/042546-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-042546"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/042548-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-042548"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/042552-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-042552"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/052380-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-052380"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/052372-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-052372"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/052368-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-052368"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/052383-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-052383"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/052382-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-052382"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/052369-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-052369"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/052358-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-052358"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/052381-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-052381"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/052370-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-052370"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/052374-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-052374"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/052371-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-052371"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/052367-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-052367"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/052373-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-052373"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/052377-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-052377"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/052357-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-052357"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/052379-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-052379"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/052378-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-052378"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/042544-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-042544"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/042567-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-042567"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/055913-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-055913"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/042566-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-042566"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/058100-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-058100"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/042549-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-042549"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/042554-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-042554"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/042553-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-042553"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/042563-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-042563"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/042551-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-042551"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/042555-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-042555"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/042556-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-042556"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/042558-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-042558"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/042545-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-042545"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/042564-010196"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-042564"/>
    </rico:Agent>
 </rdf:RDF>

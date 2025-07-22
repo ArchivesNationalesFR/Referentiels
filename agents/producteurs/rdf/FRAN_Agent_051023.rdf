@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051023">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051023"/>
@@ -10,22 +18,21 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-09</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Florence CLAVAUD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Florence CLAVAUD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-09</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 11 mai 2015 : création sur demande de la mission. Revu nom, ajouté fonctions et qques textes de référence</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 11 mai 2015 : création sur demande de la mission. Revu nom, ajouté fonctions et qques textes de référence</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051023">
-            <rico:isInstantiationOf rdf:resource="record/051023"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051023"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051023</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051023"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051023">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -48,34 +55,36 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-01-01</rico:beginningDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051023-d5bhvijq5z-zaaj99p5tmch">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051023"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051023-d5bhvijq5z-zaaj99p5tmch"/>
+            <rico:relationHasTarget rdf:resource="agent/051023"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d178796e88">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051023-d5bhvijq5z-zaaj99p5tmch"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvijq5z-zaaj99p5tmch"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">personnels de la jeunesse et des sports</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvijq5z-zaaj99p5tmch"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d178796e88"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051023-d5bhvil9kb-z13sh6nxqq1z">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051023"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051023-d5bhvil9kb-z13sh6nxqq1z"/>
+            <rico:relationHasTarget rdf:resource="agent/051023"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d178796e99">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051023-d5bhvil9kb-z13sh6nxqq1z"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvil9kb-z13sh6nxqq1z"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">jeunesse et sports</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvil9kb-z13sh6nxqq1z"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d178796e99"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Au sein de la sous-direction du personnel, elle-même subdivision de la direction des ressources humaines de l'administration centrale des ministères chargés des affaires sociales, le bureau des personnels de la jeunesse et des sports, de l'éducation nationale et des instituts spécialisés est chargé en 2009 de la gestion individuelle et collective de tous les corps spécifiques du secteur "jeunesse et sports" ( professeurs de sport, conseillers techniques et pédagogiques et Conseillers techniques et pédagogiques supérieurs, chargés d'éducation populaire et de jeunesse...), des relations avec les organisations syndicales, de l'organisation de toutes les commissions administratives paritaires (CAP).</html:p>
@@ -85,7 +94,7 @@
             <html:p>En 2013, un secrétariat général des ministères chargés des affaires sociales est créé, qui comprend notamment une direction des ressources humaines. Cette DRH comprend une sous-direction des carrières, des parcours et de la rémunération des personnels, au sein de laquelle on retrouve un bureau de même nom.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057521-051023"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-057521"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/057521-051023"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-057521"/>
    </rico:Agent>
 </rdf:RDF>

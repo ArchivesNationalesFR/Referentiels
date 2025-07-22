@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051457">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051457"/>
@@ -11,29 +19,27 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-06-21</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Marine ZELVERTE)</rico:name>
+            <rico:name xml:lang="fr">Création (par Marine ZELVERTE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-02-24</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Marine ZELVERTE)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Marine ZELVERTE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-06-21</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Olivier_Nanteau"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051457">
-            <rico:isInstantiationOf rdf:resource="record/051457"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051457"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051457</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051457"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051457">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -50,17 +56,19 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1949-01-01</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-12-31</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051457-d-2pycceevo--1n3omf4gf5txm">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051457"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051457-d-2pycceevo--1n3omf4gf5txm"/>
+            <rico:relationHasTarget rdf:resource="agent/051457"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d185485e89">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051457-d-2pycceevo--1n3omf4gf5txm"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-2pycceevo--1n3omf4gf5txm"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-2pycceevo--1n3omf4gf5txm"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-2pycceevo--1n3omf4gf5txm"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d185485e89"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Olivier Nanteau (1949-2009), ancien élève de l'école des Beaux-Arts de Paris, collabore avec France Inter pour la première fois en 1968. Il devient ensuite producteur, auteur et réalisateur d'émissions régulières sur cette même chaîne. Il lance « Le Charme discret de la gourmandise » en 1982 sur France Inter puis le programme sur l'Europe « Eureka » en septembre 1988. Suivent dès 1993 « Les Échos du bordel ambiant » et « C'est à vous » sur France Inter et les chroniques gastronomiques « Portraits toqués » de 1993 à 1999 sur France Info.</html:p>
@@ -70,19 +78,21 @@
       </rico:history>
       <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Olivier_Nanteau"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb135227755#about"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000347-051457-19680101-19741231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000347"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005419-051457-19750101-19991231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/005419"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/009384-051457"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-009384"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/010595-051457"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-010595"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/010613-051457"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-010613"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/010614-051457"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-010614"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/009533-051457"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-009533"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054989-051457"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-054989"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000347-051457-19680101-19741231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000347"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/005419-051457-19750101-19991231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/005419"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/009384-051457"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-009384"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/010595-051457"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-010595"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/010613-051457"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-010613"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/010614-051457"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-010614"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/009533-051457"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-009533"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054989-051457"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054989"/>
    </rico:Agent>
 </rdf:RDF>

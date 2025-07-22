@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051135">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051135"/>
@@ -10,22 +18,21 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Marine ZELVERTE)</rico:name>
+            <rico:name xml:lang="fr">Création (par Marine ZELVERTE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 28 juillet 2015 : revu dates de certains liens</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 28 juillet 2015 : revu dates de certains liens</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051135">
-            <rico:isInstantiationOf rdf:resource="record/051135"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051135"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051135</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051135"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051135">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -41,50 +48,61 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1949-01-01</rico:birthDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051135-d699msk49pq-fqetp63zthtj">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051135"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051135-d699msk49pq-fqetp63zthtj"/>
+            <rico:relationHasTarget rdf:resource="agent/051135"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d179624e75">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051135-d699msk49pq-fqetp63zthtj"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msk49pq-fqetp63zthtj"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk49pq-fqetp63zthtj"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk49pq-fqetp63zthtj"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d179624e75"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051135-d699msixdvh--wgctct8soc1y">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051135"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051135-d699msixdvh--wgctct8soc1y"/>
+            <rico:relationHasTarget rdf:resource="agent/051135"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d179624e81">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051135-d699msixdvh--wgctct8soc1y"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d179624e81"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051135-d-l0jya1ik6x--16fn7glte863o">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051135"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051135-d-l0jya1ik6x--16fn7glte863o"/>
+            <rico:relationHasTarget rdf:resource="agent/051135"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d179624e87">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051135-d-l0jya1ik6x--16fn7glte863o"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-l0jya1ik6x--16fn7glte863o"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-l0jya1ik6x--16fn7glte863o"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-l0jya1ik6x--16fn7glte863o"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d179624e87"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Jean-Wilfrid Pré est diplômé de Sciences-Po Paris, ancien élève de l’ENA, il a été, notamment, chef du service du personnel et des statuts au ministère de la Culture (1983-1991), avant d’intégrer le cabinet de Michel Durafour au ministère de la Fonction publique et des Réformes administratives, en qualité de conseiller technique. Il fut nommé directeur général adjoint du CNC en 1992.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/003781-051135-19600101-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/003781"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000165-051135-19720101-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000165"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000005-051135-19820101-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000005"/>
-      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/051135-051127-19920101-19961231"/><rico:isOrWasLeaderOf rdf:resource="agent/051127"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000114-051135-19910101-19921231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000114"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054110-051135"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-054110"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/003781-051135-19600101-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/003781"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000165-051135-19720101-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000165"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000005-051135-19820101-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000005"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/051135-051127-19920101-19961231"/>
+      <rico:isOrWasLeaderOf rdf:resource="agent/051127"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000114-051135-19910101-19921231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000114"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054110-051135"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054110"/>
    </rico:Agent>
 </rdf:RDF>

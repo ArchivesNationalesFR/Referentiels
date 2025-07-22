@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052682">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052682"/>
@@ -11,35 +19,33 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-09</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Charlène FANCHON)</rico:name>
+            <rico:name xml:lang="fr">Création (par Charlène FANCHON)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-21</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-09</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 09/09/2021 : suppression relation vers 51732 et 52906 en cours de rédaction</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 09/09/2021 : suppression relation vers 51732 et 52906 en cours de rédaction</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">JOLLY (Jean) dir., Dictionnaire des parlementaires français (1889-1940), 1960-1977.</rico:source>
-      <rico:source xml:lang="fr">YVERT (Benoît), Dictionnaire des ministres (1789-1989), Perrin, 1990.</rico:source>
-      <rico:source xml:lang="fr">Notice BNF : FRBNF12215354 (https://catalogue.bnf.fr/ark:/12148/cb12215354z)</rico:source>
-      <rico:source xml:lang="fr">Notice Wikipédia (https://fr.wikipedia.org/wiki/Pierre_Laval)</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121245515/about"/>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">JOLLY (Jean) dir., Dictionnaire des parlementaires français (1889-1940), 1960-1977.</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">YVERT (Benoît), Dictionnaire des ministres (1789-1989), Perrin, 1990.</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice BNF : FRBNF12215354 (https://catalogue.bnf.fr/ark:/12148/cb12215354z)</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice Wikipédia (https://fr.wikipedia.org/wiki/Pierre_Laval)</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121245515"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Pierre_Laval"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052682">
-            <rico:isInstantiationOf rdf:resource="record/052682"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052682"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052682</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052682"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052682">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -57,181 +63,193 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1883-06-28</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1945-10-15</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052682"/>
-            <rico:placeRelationHasSource rdf:resource="place/Aubervilliers%20"/>
+            <rico:relationHasTarget rdf:resource="agent/052682"/>
+            <rico:relationHasSource rdf:resource="place/Aubervilliers%20"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Aubervilliers%20"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Aubervilliers%20"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052682"/>
-            <rico:placeRelationHasSource rdf:resource="place/Ch%C3%A2teldon%20"/>
+            <rico:relationHasTarget rdf:resource="agent/052682"/>
+            <rico:relationHasSource rdf:resource="place/Ch%C3%A2teldon%20"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Ch%C3%A2teldon%20"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Ch%C3%A2teldon%20"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052682"/>
-            <rico:placeRelationHasSource rdf:resource="place/Dijon%20"/>
+            <rico:relationHasTarget rdf:resource="agent/052682"/>
+            <rico:relationHasSource rdf:resource="place/Dijon%20"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Dijon%20"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Dijon%20"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052682"/>
-            <rico:placeRelationHasSource rdf:resource="place/Espagne"/>
+            <rico:relationHasTarget rdf:resource="agent/052682"/>
+            <rico:relationHasSource rdf:resource="place/Espagne"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Espagne"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Espagne"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052682"/>
-            <rico:placeRelationHasSource rdf:resource="place/Fresnes%20"/>
+            <rico:relationHasTarget rdf:resource="agent/052682"/>
+            <rico:relationHasSource rdf:resource="place/Fresnes%20"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Fresnes%20"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Fresnes%20"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052682"/>
-            <rico:placeRelationHasSource rdf:resource="place/La%20Fert%C3%A9-Hauterive%20"/>
+            <rico:relationHasTarget rdf:resource="agent/052682"/>
+            <rico:relationHasSource rdf:resource="place/La%20Fert%C3%A9-Hauterive%20"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/La%20Fert%C3%A9-Hauterive%20"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/La%20Fert%C3%A9-Hauterive%20"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052682"/>
-            <rico:placeRelationHasSource rdf:resource="place/Lyon%20"/>
+            <rico:relationHasTarget rdf:resource="agent/052682"/>
+            <rico:relationHasSource rdf:resource="place/Lyon%20"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Lyon%20"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Lyon%20"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052682"/>
-            <rico:placeRelationHasSource rdf:resource="place/Paris%20"/>
+            <rico:relationHasTarget rdf:resource="agent/052682"/>
+            <rico:relationHasSource rdf:resource="place/Paris%20"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Paris%20"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Paris%20"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052682"/>
-            <rico:placeRelationHasSource rdf:resource="place/Puy-de-D%C3%B4me%20"/>
+            <rico:relationHasTarget rdf:resource="agent/052682"/>
+            <rico:relationHasSource rdf:resource="place/Puy-de-D%C3%B4me%20"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Puy-de-D%C3%B4me%20"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Puy-de-D%C3%B4me%20"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052682"/>
-            <rico:placeRelationHasSource rdf:resource="place/Saint-Florentin%20"/>
+            <rico:relationHasTarget rdf:resource="agent/052682"/>
+            <rico:relationHasSource rdf:resource="place/Saint-Florentin%20"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Saint-Florentin%20"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Saint-Florentin%20"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052682"/>
-            <rico:placeRelationHasSource rdf:resource="place/Seine%20"/>
+            <rico:relationHasTarget rdf:resource="agent/052682"/>
+            <rico:relationHasSource rdf:resource="place/Seine%20"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Seine%20"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Seine%20"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052682"/>
-            <rico:placeRelationHasSource rdf:resource="place/Sigmaringen%20"/>
+            <rico:relationHasTarget rdf:resource="agent/052682"/>
+            <rico:relationHasSource rdf:resource="place/Sigmaringen%20"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Sigmaringen%20"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Sigmaringen%20"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052682-d699msj742x--12cnnohd8i9wj">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052682"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052682-d699msj742x--12cnnohd8i9wj"/>
+            <rico:relationHasTarget rdf:resource="agent/052682"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d205681e252">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052682-d699msj742x--12cnnohd8i9wj"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj742x--12cnnohd8i9wj"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj742x--12cnnohd8i9wj"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj742x--12cnnohd8i9wj"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d205681e252"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052682-d699msjoa3b--rixjtrrcp6f0-19310127-19360122">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052682"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052682-d699msjoa3b--rixjtrrcp6f0-19310127-19360122"/>
+            <rico:relationHasTarget rdf:resource="agent/052682"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d205681e258">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052682-d699msjoa3b--rixjtrrcp6f0-19310127-19360122"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjoa3b--rixjtrrcp6f0"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1931-01-27</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1936-01-22</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Du 27 janvier 1931 au 13 juin 1931 ; 13 juin 1931 au 12 janvier 1932 ; 14 janvier 1932 au 6 février 1932 ; 7 juin 1935 au 22 janvier 1936.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjoa3b--rixjtrrcp6f0"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjoa3b--rixjtrrcp6f0"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d205681e258"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052682-d699msj9l7t-1gb5a09kkzrmp-19270109-19441231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052682"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052682-d699msj9l7t-1gb5a09kkzrmp-19270109-19441231"/>
+            <rico:relationHasTarget rdf:resource="agent/052682"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d205681e278">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052682-d699msj9l7t-1gb5a09kkzrmp-19270109-19441231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj9l7t-1gb5a09kkzrmp"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1927-01-09</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1944-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">sénateur de la Seine du 9 janvier 1927 au 24 janvier 1936 ; sénateur du Puy-de-Dôme du 25 janvier 1936 au 31 décembre 1944.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj9l7t-1gb5a09kkzrmp"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj9l7t-1gb5a09kkzrmp"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d205681e278"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052682-d699msjnw86-64seh0fmw8hj-19250417-19400710">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052682"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052682-d699msjnw86-64seh0fmw8hj-19250417-19400710"/>
+            <rico:relationHasTarget rdf:resource="agent/052682"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d205681e298">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052682-d699msjnw86-64seh0fmw8hj-19250417-19400710"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1925-04-17</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1940-07-10</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">ministre des Travaux publics (17 avril 1925-29 octobre 1925) ; sous-secrétaire d’État à la présidence du Conseil (28 novembre 1925-6 mars 1926) ; ministre de la Justice (9 mars 1926-17 juillet 1926) ; ministre du Travail et de la Prévoyance sociale (2 mars 1930-4 décembre 1930 ; 20 février 1932-3 juin 1932) ; ministre de l’Intérieur (27 janvier 1931-12 janvier 1932) ; ministre des Affaires étrangères (14 janvier 1932-6 février 1932 ; 13 octobre 1934-4 juin 1935 ; 7 juin 1935 au 22 janvier 1936) ; ministre des Colonies (9 février 1934-9 octobre 1934) ; ministre d’État (23 juin 1940-10 juillet 1940).</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d205681e298"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052682-d699msjyazt-1f0ggfyf3is8u-19230101-19441231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052682"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052682-d699msjyazt-1f0ggfyf3is8u-19230101-19441231"/>
+            <rico:relationHasTarget rdf:resource="agent/052682"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d205681e318">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052682-d699msjyazt-1f0ggfyf3is8u-19230101-19441231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1923-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1944-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Maire d’Aubervilliers.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d205681e318"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052682-d699msiribo--1dn34eg8lht4f-19140510-19270217">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052682"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052682-d699msiribo--1dn34eg8lht4f-19140510-19270217"/>
+            <rico:relationHasTarget rdf:resource="agent/052682"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d205681e339">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052682-d699msiribo--1dn34eg8lht4f-19140510-19270217"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1914-05-10</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1927-02-17</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Député de la Seine du 10 mai 1914 au 7 décembre 1919, puis du 11 mai 1924 au 17 février 1927.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d205681e339"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Pierre Laval (1883-1945) naît le 28 juin 1883 à Châteldon dans le Puy-de-Dôme. Il est le fils de Gilbert Laval, aubergiste, hôtelier et marchand de chevaux, et de Claudine Tournaire. Après avoir obtenu son baccalauréat, Laval s’oriente vers les sciences naturelles et obtient une licence à la Faculté des sciences de Lyon. Il opte finalement pour le droit qu’il étudie à la Faculté de Dijon. Licencié en droit, Laval s’inscrit au barreau de Paris en 1909.</html:p>
@@ -263,30 +281,31 @@
             <html:p>Après avoir tenté de se suicider en avalant une capsule de cyanure, Pierre Laval est fusillé le 15 octobre 1945, dans la cour de la prison de Fresnes.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050752-052682-19250417-19251029"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050752"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050386-052682-19251128-19260717"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050386"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050254-052682-19300302-19320603"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050254"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/052663-052682-19340209-19341108"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/052663"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051652-052682-19400716-19440819"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/051652"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000067-052682-19270109-19441231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000067"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050752-052682-19250417-19251029"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050752"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050386-052682-19251128-19260717"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050386"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050254-052682-19300302-19320603"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050254"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/052682-052906-19310127-19360122"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/052906"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/051652-052682-19400716-19440819"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/051652"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000067-052682-19270109-19441231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000067"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb12215354z#about"/>
       <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Pierre_Laval"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/052682-052684-19350601-19350604"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/052684"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/050775-052682"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-050775"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/028115-052682"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-028115"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/003462-052682"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-003462"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/003668-052682"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-003668"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/004943-052682"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-004943"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/003496-052682"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-003496"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/004950-052682"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-004950"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/003563-052682"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-003563"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/050775-052682"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-050775"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/028115-052682"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-028115"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/003668-052682"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-003668"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/004943-052682"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-004943"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/003496-052682"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-003496"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/003563-052682"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-003563"/>
    </rico:Agent>
 </rdf:RDF>

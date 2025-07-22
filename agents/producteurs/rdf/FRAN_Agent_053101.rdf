@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/053101">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/053101"/>
@@ -11,31 +19,29 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-12-10</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Vivien BARRO)</rico:name>
+            <rico:name xml:lang="fr">Création (par Vivien BARRO)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-12-02</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-12-10</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">ROCHE (Pierre), "Antoine Léon (1921-1998)" dans L'Orientation scolaire et professionnelle 1998, 27, n°3, p. 455-456</rico:source>
-      <rico:source xml:lang="fr">Notice Bnf n° : FRBNF11912466 (https://catalogue.bnf.fr/ark:/12148/cb11912466k)</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000384436831/about"/>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">ROCHE (Pierre), "Antoine Léon (1921-1998)" dans L'Orientation scolaire et professionnelle 1998, 27, n°3, p. 455-456</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice Bnf n° : FRBNF11912466 (https://catalogue.bnf.fr/ark:/12148/cb11912466k)</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000384436831"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/053101">
-            <rico:isInstantiationOf rdf:resource="record/053101"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/053101"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_053101</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_053101"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/053101">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -53,53 +59,59 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1921-10-01</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1998-03-07</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/053101"/>
-            <rico:placeRelationHasSource rdf:resource="place/Alger"/>
+            <rico:relationHasTarget rdf:resource="agent/053101"/>
+            <rico:relationHasSource rdf:resource="place/Alger"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Alger"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Alger"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/053101"/>
-            <rico:placeRelationHasSource rdf:resource="place/Paris"/>
+            <rico:relationHasTarget rdf:resource="agent/053101"/>
+            <rico:relationHasSource rdf:resource="place/Paris"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Paris"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Paris"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/053101-d699msk5oth-xqvujelh8c39">
-            <rico:performanceRelationHasTarget rdf:resource="agent/053101"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/053101-d699msk5oth-xqvujelh8c39"/>
+            <rico:relationHasTarget rdf:resource="agent/053101"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d211546e128">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/053101-d699msk5oth-xqvujelh8c39"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msk5oth-xqvujelh8c39"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk5oth-xqvujelh8c39"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk5oth-xqvujelh8c39"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d211546e128"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/053101-d699msj02xm-19qbb7wdtto3j">
-            <rico:performanceRelationHasTarget rdf:resource="agent/053101"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/053101-d699msj02xm-19qbb7wdtto3j"/>
+            <rico:relationHasTarget rdf:resource="agent/053101"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d211546e134">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/053101-d699msj02xm-19qbb7wdtto3j"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d211546e134"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/053101-d-8o1o09an5--1hqno6l8gqwkw">
-            <rico:performanceRelationHasTarget rdf:resource="agent/053101"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/053101-d-8o1o09an5--1hqno6l8gqwkw"/>
+            <rico:relationHasTarget rdf:resource="agent/053101"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d211546e140">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/053101-d-8o1o09an5--1hqno6l8gqwkw"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-8o1o09an5--1hqno6l8gqwkw"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-8o1o09an5--1hqno6l8gqwkw"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-8o1o09an5--1hqno6l8gqwkw"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d211546e140"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Antoine Léon, né à Alger en 1921, est un professeur des universités spécialiste des sciences de l’Éducation. Il travaille sur de très nombreux champs de recherche liés à cette discipline : l’enseignement technique, la formation continue et la formation des enseignants, l’orientation professionnelle, l’échec scolaire, l’école coloniale, pour ne retenir que quelques exemples.</html:p>

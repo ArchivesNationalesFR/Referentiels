@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051216">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051216"/>
@@ -10,26 +18,25 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-11-13</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Florence CLAVAUD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Florence CLAVAUD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-11-13</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Notice créée sur demande de la mission des archives de l'éducation nationale, de l'enseignement supérieur et de la recherche. Ajouté ISNI, n° notice BnF et indexation fonctions</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Notice créée sur demande de la mission des archives de l'éducation nationale, de l'enseignement supérieur et de la recherche. Ajouté ISNI, n° notice BnF et indexation fonctions</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice d'autorité BnF n° FRBNF12199969</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121883242/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121883242"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051216">
-            <rico:isInstantiationOf rdf:resource="record/051216"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051216"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051216</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051216"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051216">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -46,34 +53,36 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-10-01</rico:beginningDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051216-d5bhvil20q--uuew3ia85vzc">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051216"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051216-d5bhvil20q--uuew3ia85vzc"/>
+            <rico:relationHasTarget rdf:resource="agent/051216"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d181844e96">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051216-d5bhvil20q--uuew3ia85vzc"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvil20q--uuew3ia85vzc"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">actions en faveur de l'enseignement à distance, coopération entre les établissements d'enseignement supérieur qui agissent dans ce domaine.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvil20q--uuew3ia85vzc"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d181844e96"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051216-d5bhvihxhx--1dol4k5w0lb2i">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051216"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051216-d5bhvihxhx--1dol4k5w0lb2i"/>
+            <rico:relationHasTarget rdf:resource="agent/051216"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d181844e107">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051216-d5bhvihxhx--1dol4k5w0lb2i"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvihxhx--1dol4k5w0lb2i"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">enseignement à distance</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvihxhx--1dol4k5w0lb2i"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d181844e107"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>La Fédération interuniversitaire de l'enseignement à distance (FIED) a été créée le 27 octobre 1987 sur proposition de la Direction de l’Enseignement Supérieur (DES) du Ministère de l’Éducation Nationale et de l’Enseignement supérieur en avril 1987, à l’occasion de la création de l’Association Européenne des universités à Distance.</html:p>
@@ -89,9 +98,9 @@
             <html:p>Enfin, la FIED adhère à plusieurs réseaux internationaux : EDEN (European Distance and E-learning Network) depuis 2006, ICDE (International Council for Open and Distance Education) depuis 2007 et l’EADTU (European Association Distance Teaching Universities) depuis 1987.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/055198-051216"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-055198"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/055932-051216"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-055932"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/055198-051216"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-055198"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/055932-051216"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-055932"/>
    </rico:Agent>
 </rdf:RDF>

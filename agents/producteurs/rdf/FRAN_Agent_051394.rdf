@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051394">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051394"/>
@@ -11,28 +19,26 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-10-14</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Elsa CAMUS)</rico:name>
+            <rico:name xml:lang="fr">Création (par Elsa CAMUS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-09-21</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-10-14</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051394">
-            <rico:isInstantiationOf rdf:resource="record/051394"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051394"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051394</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051394"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051394">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -49,41 +55,45 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1875-01-01</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1941-12-31</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/051394"/>
-            <rico:placeRelationHasSource rdf:resource="place/FRAN_RI_005-d3ntxl3s9o-18z3mton10zrv"/>
+            <rico:relationHasTarget rdf:resource="agent/051394"/>
+            <rico:relationHasSource rdf:resource="place/FRAN_RI_005-d3ntxl3s9o-18z3mton10zrv"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/FRAN_RI_005-d3ntxl3s9o-18z3mton10zrv"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_005-d3ntxl3s9o-18z3mton10zrv"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051394-d699msjgtw3-1ton3i1q2op31">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051394"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051394-d699msjgtw3-1ton3i1q2op31"/>
+            <rico:relationHasTarget rdf:resource="agent/051394"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d184370e98">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051394-d699msjgtw3-1ton3i1q2op31"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjgtw3-1ton3i1q2op31"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">ingénieur des eaux et forêts</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjgtw3-1ton3i1q2op31"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjgtw3-1ton3i1q2op31"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d184370e98"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051394-d3m0bl6svu0--1tubaqb9x6dwe">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051394"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051394-d3m0bl6svu0--1tubaqb9x6dwe"/>
+            <rico:relationHasTarget rdf:resource="agent/051394"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d184370e109">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051394-d3m0bl6svu0--1tubaqb9x6dwe"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3m0bl6svu0--1tubaqb9x6dwe"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">inspecteur des eaux et forêts</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl6svu0--1tubaqb9x6dwe"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl6svu0--1tubaqb9x6dwe"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d184370e109"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Félix Vogeli est sorti de l'Ecole nationale des eaux et forêts de Nancy en 1897, dans la 71e promotion.</html:p>
@@ -91,8 +101,9 @@
             <html:p>Il meurt en 1941.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009031-051394-18950101-18971231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/009031"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/055073-051394"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-055073"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009031-051394-18950101-18971231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/009031"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/055073-051394"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-055073"/>
    </rico:Agent>
 </rdf:RDF>

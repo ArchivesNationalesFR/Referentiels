@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051323">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051323"/>
@@ -10,28 +18,27 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-06-13</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Florence CLAVAUD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Florence CLAVAUD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-06-13</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. clavaud, 9 juin 2016 : création sur demande de la mission ; indexation fonctions</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. clavaud, 9 juin 2016 : création sur demande de la mission ; indexation fonctions</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Intranet du MEDDE : http://intra.portail.i2/</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Textes de référence : arrêté et décret d’organisation</html:p>
-      </rico:source>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051323">
-            <rico:isInstantiationOf rdf:resource="record/051323"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051323"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051323</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051323"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051323">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -62,32 +69,34 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-01</rico:beginningDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051323-d5bhvii5wk-c5ead6thqj5l">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051323"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051323-d5bhvii5wk-c5ead6thqj5l"/>
+            <rico:relationHasTarget rdf:resource="agent/051323"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d183308e115">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051323-d5bhvii5wk-c5ead6thqj5l"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvii5wk-c5ead6thqj5l"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">payeur pour l'administration centrale ; procédures d'achat ; passation de marchés</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvii5wk-c5ead6thqj5l"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d183308e115"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051323-d5bhvijcl3--1u6l4sy8b51az">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051323"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051323-d5bhvijcl3--1u6l4sy8b51az"/>
+            <rico:relationHasTarget rdf:resource="agent/051323"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d183308e126">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051323-d5bhvijcl3--1u6l4sy8b51az"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvijcl3--1u6l4sy8b51az"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvijcl3--1u6l4sy8b51az"/></rico:Activity></rico:performsOrPerformed>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d183308e126"/>
+      <rico:generalDescription rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Organisation interne ou généalogie</h4>
             <html:p>Le service des affaires financières (SAF) exerce les fonctions de payeur pour l’administration centrale et de prestataire des marchés du Secrétariat général. De plus, le SAF passe tout type de marchés : fournitures courantes, travaux, services ou prestations intellectuelles. Il apporte son appui pour la formation de responsables des marchés des directions d’administration centrale. Le SAF est aussi en charge des procédures d’achat du secrétariat général en liaison avec les services programmeurs : en leur apportant un conseil dans l’expression de leurs besoins, en déterminant les procédures d’achat et en élaborant les documents administratifs assurant le respect des mesures de publicité et de mise en concurrence, en suivant l’exécution administrative et financière des marchés en liaison avec le bureau de la comptabilité et le service programmeur. Il apporte conseil et assistance aux directions générales pour la préparation et la passation des marchés les concernant.</html:p>
@@ -97,7 +106,6 @@
             <html:p>– une sous-direction du budget et des contrôles (BC) ;</html:p>
             <html:p>– une sous-direction des marchés et de la comptabilité (MC).</html:p>
             <html:p>Le chef de service des affaires financières est assisté d’un adjoint, chef de service.</html:p>
-            <html:p/>
             <html:p>
                <html:u>La sous-direction du budget et des contrôles</html:u>
             </html:p>
@@ -120,7 +128,6 @@
             <html:p>– le bureau de la synthèse budgétaire ;</html:p>
             <html:p>– la mission du contrôle interne comptable ;</html:p>
             <html:p>– le bureau de la réglementation financière et des contrôles.</html:p>
-            <html:p/>
             <html:p>
                <html:u>La sous direction des marchés et de la comptabilité</html:u>
             </html:p>
@@ -129,7 +136,7 @@
             <html:p>– le bureau des marchés ;</html:p>
             <html:p>– le bureau de la comptabilité de l’administration centrale.</html:p>
          </html:div>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>C’est en 2008 qu’a été créé le service des Affaires financières, lors de la création du Secrétariat général du ministère de l’Écologie, du Développement durable et de l’Énergie, et de la fusion des ministères chargés de l’Équipement et de l’Environnement.</html:p>
@@ -137,7 +144,11 @@
             <html:p>Ce service devient une direction en 2016.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/051316-051323-20080101-*"/><rico:isOrWasSubordinateTo rdf:resource="agent/051316"/>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/006227-051323-20080101-*"/><rico:isSuccessorOf rdf:resource="agent/006227"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/051316-051323-20080101-*"/>
+      <rico:isDirectSubordinateTo rdf:resource="agent/051316"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/007029-051323-20080709-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/007029"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/006227-051323-20080101-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/006227"/>
    </rico:Agent>
 </rdf:RDF>

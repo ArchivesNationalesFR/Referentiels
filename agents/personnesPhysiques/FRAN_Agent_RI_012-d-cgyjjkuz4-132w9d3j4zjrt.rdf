@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:dcterms="http://purl.org/dc/terms/"
-         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/FRAN_RI_012-d-cgyjjkuz4-132w9d3j4zjrt">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/FRAN_RI_012-d-cgyjjkuz4-132w9d3j4zjrt"/>
@@ -16,20 +16,24 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl002"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
-      <rico:source xml:lang="fr">FRBNF10543694.Création:97/07/01.Miseàjour:09/03/12.</rico:source>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice BnF n° : FRBNF10543694</rico:recordResourceSourceOfInformation>
+      <!--Contenu de biblio : 
+        Identifiant BnF: https://catalogue.bnf.fr/ark:/12148/cb10543694d-->
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/FRAN_RI_012-d-cgyjjkuz4-132w9d3j4zjrt">
-            <rico:isInstantiationOf rdf:resource="record/FRAN_RI_012-d-cgyjjkuz4-132w9d3j4zjrt"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/FRAN_RI_012-d-cgyjjkuz4-132w9d3j4zjrt"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_RI_012-d-cgyjjkuz4-132w9d3j4zjrt</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/FRAN_RI_012-d-cgyjjkuz4-132w9d3j4zjrt">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/FRAN_RI_012-d-cgyjjkuz4-132w9d3j4zjrt"/>
       <rdfs:label xml:lang="fr">Boittelle, Symphorien Casimir Joseph (1813-1897)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Boittelle, Symphorien Casimir Joseph (1813-1897)</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">Boittelle, Symphor Casimir Joseph</skos:altLabel>
       <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/FRAN_RI_012-d-cgyjjkuz4-132w9d3j4zjrt-Boittelle%2C%20Symphorien%20Casimir%20Joseph%20%281813-1897%29">
             <rdfs:label xml:lang="fr">Boittelle, Symphorien Casimir Joseph (1813-1897)</rdfs:label>
@@ -50,8 +54,13 @@
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1897-11-22</rico:deathDate>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
-            <html:p>Polytechnicien. Il a été sous-préfet de Saint-Quentin, Aisne, préfet de l'Aisne (1853), préfet de l'Yonne (1856), préfet de police de Paris (1858) et député du Nord (1863-1864), et sénateur de l'Empire (1866)</html:p>
+            <html:p>Polytechnicien. Il a été sous-préfet de Saint-Quentin, Aisne, préfet de l'Aisne (1853),
+        préfet de l'Yonne (1856), préfet de police de Paris (1858) et député du Nord (1863-1864), et
+        sénateur de l'Empire (1866)</html:p>
          </html:div>
       </rico:history>
+      <!--Contenu de biblio : Notice BnF n° : FRBNF10543694 -->
+      <!--Contenu de biblio : 
+        Identifiant BnF: https://catalogue.bnf.fr/ark:/12148/cb10543694d-->
    </rico:Agent>
 </rdf:RDF>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052499">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052499"/>
@@ -11,30 +19,28 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-12</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Emilie CHARRIER)</rico:name>
+            <rico:name xml:lang="fr">Création (par Emilie CHARRIER)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-02-14</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Violaine CHALLEAT-FONCK)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Violaine CHALLEAT-FONCK)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-12</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 11/08/2021 : ajout relation hier asc vers 52324, ajout relation a pour prédécesseur 52498, asso vers 50293</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 11/08/2021 : ajout relation hier asc vers 52324, ajout relation a pour prédécesseur 52498, asso vers 50293</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Article Wikipédia "Jules Moch" (https://fr.wikipedia.org/wiki/Jules_Moch)</rico:source>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Article Wikipédia "Jules Moch" (https://fr.wikipedia.org/wiki/Jules_Moch)</rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052499">
-            <rico:isInstantiationOf rdf:resource="record/052499"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052499"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052499</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052499"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052499">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -61,38 +67,43 @@
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1958-05-17</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1958-06-01</rico:endDate>
       <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5blonb04s-1nqrprwwl75h0"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052499-d3nyug261d--1cyxwnocz7hzo">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052499"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052499-d3nyug261d--1cyxwnocz7hzo"/>
+            <rico:relationHasTarget rdf:resource="agent/052499"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d202942e123">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052499-d3nyug261d--1cyxwnocz7hzo"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyug261d--1cyxwnocz7hzo"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyug261d--1cyxwnocz7hzo"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d202942e123"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052499-d5bhvimw73--1s2f8w95l5ufq">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052499"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052499-d5bhvimw73--1s2f8w95l5ufq"/>
+            <rico:relationHasTarget rdf:resource="agent/052499"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d202942e129">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052499-d5bhvimw73--1s2f8w95l5ufq"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvimw73--1s2f8w95l5ufq"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvimw73--1s2f8w95l5ufq"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d202942e129"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Jules Moch est ministre de l’Intérieur pour la seconde fois dans le gouvernement de Pierre Pflimlin, du 17 mai 1958 au 1er juin 1958.</html:p>
-            <html:p/>
             <html:p>Son éphémère ministère est marqué par les conséquences politiques du putsch des généraux en Algérie, l’instauration de l’état d’urgence le 16 mai 1958 et le retour de Charles de Gaulle à la présidence du Conseil.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/052324-052499-19580517-19580601"/><rico:isOrWasSubordinateTo rdf:resource="agent/052324"/>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/052498-052499-19580517-*"/><rico:isSuccessorOf rdf:resource="agent/052498"/>
-      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/052499-052500-19580601-*"/><rico:hasSuccessor rdf:resource="agent/052500"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050293-052499-19580517-19580601"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050293"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/052324-052499-19580517-19580601"/>
+      <rico:wasSubordinateTo rdf:resource="agent/052324"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/052498-052499-19580517-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/052498"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentTemporalRelation/052499-052500-19580601-*"/>
+      <rico:hasSuccessor rdf:resource="agent/052500"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050293-052499-19580517-19580601"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050293"/>
    </rico:Agent>
 </rdf:RDF>

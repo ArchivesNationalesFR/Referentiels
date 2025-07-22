@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/000018">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/000018"/>
@@ -11,21 +19,19 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-08-09</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Dérivation
-                (Import_SIA)</rico:name>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Blandine WAGNER)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Blandine WAGNER)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-08-09</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/000018">
-            <rico:isInstantiationOf rdf:resource="record/000018"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/000018"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_000018</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
@@ -33,7 +39,7 @@
             <rico:identifier>1200/FP</rico:identifier>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/000018">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -50,8 +56,13 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1967-04-07</rico:beginningDate>
       <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5blonb04s-1nqrprwwl75h0"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000018-009731-20110629-20120510"/><rico:hasOrHadSubordinate rdf:resource="agent/009731"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000018-052140-20160211-20170510"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/052140"/>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000114-000018-19670407-*"/><rico:isOrWasSubordinateTo rdf:resource="agent/000114"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/000018-009731-20110629-20120510"/>
+      <rico:hadSubordinate rdf:resource="agent/009731"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000018-052140-20160211-20170510"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/052140"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/000114-000018-19670407-*"/>
+      <rico:isDirectSubordinateTo rdf:resource="agent/000114"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/027549-000018"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-027549"/>
    </rico:Agent>
 </rdf:RDF>

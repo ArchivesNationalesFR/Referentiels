@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050204">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050204"/>
@@ -10,29 +18,28 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-03-31</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Vanessa ASPART)</rico:name>
+            <rico:name xml:lang="fr">Création (par Vanessa ASPART)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-03-31</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 31 mars 2014 : modification des dates, ajout identifiant ISNI, n° notice d'autorité BnF et lien d'association avec notice EHESS</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 31 mars 2014 : modification des dates, ajout identifiant ISNI, n° notice d'autorité BnF et lien d'association avec notice EHESS</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Archives nationales, Fonds Jean-Louis Flandrin (XXe siècle), 624 AP.</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice d'autorité BnF n° FRBNF11902888</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000114797936/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000114797936"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050204">
-            <rico:isInstantiationOf rdf:resource="record/050204"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050204"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050204</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050204"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050204">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -56,8 +63,11 @@
                <html:i>XVIe-XIXe siècles</html:i>(1975),<html:i>Familles. Parenté, maison, sexualité dans l’ancienne société</html:i>(1976),<html:i>Le Sexe et l’Occident</html:i>(1981) et<html:i>Un temps pour embrasser</html:i>(1983). Il se tourna ensuite vers l’histoire des goûts et des pratiques alimentaires. Il fut ainsi l’auteur d’une monumentale<html:i>Histoire de l’alimentation</html:i>, ouvrage collectif de quarante signatures codirigée avec Massimo Montanari (1996) ainsi que de<html:i>Tables d’hier</html:i>,<html:i>tables d’ailleurs</html:i>.<html:i>Histoire et ethnologie du repas</html:i>(1999).</html:p>
          </html:div>
       </rico:history>
-      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050204-003773-19830101-20010808"/><rico:isOrWasLeaderOf rdf:resource="agent/003773"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/003550-050204"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-003550"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050204-053632-20010101-20010808"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/053632"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/050204-003773-19830101-20010808"/>
+      <rico:isOrWasLeaderOf rdf:resource="agent/003773"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/003550-050204"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-003550"/>
    </rico:Agent>
 </rdf:RDF>

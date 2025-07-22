@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051325">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051325"/>
@@ -10,28 +18,27 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-06-13</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Florence CLAVAUD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Florence CLAVAUD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-06-13</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 13 juin 2016 : création sur demande de la mission ; indexation fonctions</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 13 juin 2016 : création sur demande de la mission ; indexation fonctions</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Intranet du MEDDE : http://intra.portail.i2/</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Textes de référence : arrêté et décret d’organisation</html:p>
-      </rico:source>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051325">
-            <rico:isInstantiationOf rdf:resource="record/051325"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051325"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051325</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051325"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051325">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -54,98 +61,106 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-01</rico:beginningDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051325-d3nyugaefk--zg9gvxs7butk">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051325"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051325-d3nyugaefk--zg9gvxs7butk"/>
+            <rico:relationHasTarget rdf:resource="agent/051325"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d183324e101">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051325-d3nyugaefk--zg9gvxs7butk"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugaefk--zg9gvxs7butk"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugaefk--zg9gvxs7butk"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d183324e101"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051325-d5bhvin02r-ewaz9566uw6d">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051325"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051325-d5bhvin02r-ewaz9566uw6d"/>
+            <rico:relationHasTarget rdf:resource="agent/051325"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d183324e107">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051325-d5bhvin02r-ewaz9566uw6d"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvin02r-ewaz9566uw6d"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvin02r-ewaz9566uw6d"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d183324e107"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051325-d699mt07vio--14jschxiie5n2">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051325"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051325-d699mt07vio--14jschxiie5n2"/>
+            <rico:relationHasTarget rdf:resource="agent/051325"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d183324e113">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051325-d699mt07vio--14jschxiie5n2"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d699mt07vio--14jschxiie5n2"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d699mt07vio--14jschxiie5n2"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d183324e113"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051325-d5bhvim4ls-1aiyuy0zts9x8">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051325"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051325-d5bhvim4ls-1aiyuy0zts9x8"/>
+            <rico:relationHasTarget rdf:resource="agent/051325"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d183324e119">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051325-d5bhvim4ls-1aiyuy0zts9x8"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvim4ls-1aiyuy0zts9x8"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvim4ls-1aiyuy0zts9x8"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d183324e119"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051325-d5bhvij64a-q0p86cou8swf">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051325"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051325-d5bhvij64a-q0p86cou8swf"/>
+            <rico:relationHasTarget rdf:resource="agent/051325"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d183324e125">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051325-d5bhvij64a-q0p86cou8swf"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvij64a-q0p86cou8swf"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvij64a-q0p86cou8swf"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d183324e125"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051325-d5bhvikr8p--1a1c4btacgnke">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051325"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051325-d5bhvikr8p--1a1c4btacgnke"/>
+            <rico:relationHasTarget rdf:resource="agent/051325"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d183324e132">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051325-d5bhvikr8p--1a1c4btacgnke"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvikr8p--1a1c4btacgnke"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvikr8p--1a1c4btacgnke"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d183324e132"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051325-d5bhviluwl--h5xbasqtef53">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051325"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051325-d5bhviluwl--h5xbasqtef53"/>
+            <rico:relationHasTarget rdf:resource="agent/051325"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d183324e138">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051325-d5bhviluwl--h5xbasqtef53"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviluwl--h5xbasqtef53"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">intelligence économique</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviluwl--h5xbasqtef53"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d183324e138"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051325-d5bhvil6bx-16xdm3apll64m">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051325"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051325-d5bhvil6bx-16xdm3apll64m"/>
+            <rico:relationHasTarget rdf:resource="agent/051325"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d183324e149">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051325-d5bhvil6bx-16xdm3apll64m"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvil6bx-16xdm3apll64m"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvil6bx-16xdm3apll64m"/></rico:Activity></rico:performsOrPerformed>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d183324e149"/>
+      <rico:generalDescription rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Organisation interne ou généalogie</h4>
             <html:p>Rattaché au Secrétariat général, le service de défense, de sécurité et d’intelligence économique assure la veille opérationnelle et les missions dévolues au commissariat général aux transports et au commissariat aux entreprises de travaux publics et de bâtiment. Il s’assure de l’articulation avec les dispositifs interministériels existants. Il constitue le centre de ressource nécessaire à la production de la doctrine de défense et de sécurité dans tous les secteurs d’activités du ministère. Il conduit la politique d’intelligence économique tant en terme de protection des savoir-faire et des entreprises qu’en terme de stratégie d’influence. Le SDSIE est plus particulièrement en charge, pour le ministère, de la veille opérationnelle et d’alerte (CMVOA), de la planification et de la gestion des crises, de la sécurité nucléaire, de l’intelligence économique et de la protection de l’information. Il exerce son activité en liaison avec les directions générales dans le champ ministériel et travaille étroitement avec le SGDSN dans le domaine interministériel. Il est en contact privilégié avec les opérateurs relevant du champ du MEDDE et du MLET.</html:p>
@@ -155,7 +170,6 @@
             <html:p>– un département de la sécurité nucléaire (DSN) ;</html:p>
             <html:p>– un département de l’intelligence économique et de la protection de l’information (DIEPI).</html:p>
             <html:p>Le chef de service de défense, de sécurité et d’intelligence économique est assisté d’un adjoint, chef de service.</html:p>
-            <html:p/>
             <html:p>
                <html:u>Le département de la planification et de la gestion de crise</html:u>
             </html:p>
@@ -177,7 +191,6 @@
             <html:p>– la mission de la préparation opérationnelle ;</html:p>
             <html:p>– la mission de protection contre le terrorisme ;</html:p>
             <html:p>– la mission de la protection contre les risques civils.</html:p>
-            <html:p/>
             <html:p>
                <html:u>Le département de sécurité nucléaire</html:u>
             </html:p>
@@ -191,8 +204,6 @@
             <html:p>– la mission protection matières et installations nucléaires ;</html:p>
             <html:p>– la mission protection transports nucléaires ;</html:p>
             <html:p>– la mission « relations internationales ».</html:p>
-            <html:p/>
-            <html:p/>
             <html:p>
                <html:u>Le département de l’intelligence économique et de la protection de l’information</html:u>
             </html:p>
@@ -227,7 +238,7 @@
             <html:p>- elle veille au déploiement, dans les services du ministère et au sein des opérateurs entrant dans son champ de compétences, des moyens sécurisés de communication électronique et assure, notamment, la gestion du chiffre ;</html:p>
             <html:p>- elle définit et déploie une politique de sensibilisation à destination des services et des entreprises en matière de SSI et fait émerger, dans ce domaine, une culture d’exercices dans les services et les entreprises.</html:p>
          </html:div>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>L’année 2007 a vu la création d’un nouveau ministère, dirigé par Jean-Louis Borloo, ministre d’Etat, et constitué à partir de plusieurs ministères.</html:p>
@@ -238,12 +249,14 @@
             <html:p>•Contribution à la gestion des crises pour en minimiser les impacts économiques, sociaux et environnementaux.</html:p>
             <html:p>•Accompagnement des acteurs économiques dans la prévention et la protection face aux risques, notamment intentionnels.</html:p>
             <html:p>•Poursuite de l’ouverture au plan communautaire et international pour valoriser les échanges d’expériences.</html:p>
-            <html:p/>
             <html:p>Ce nouveau service travaille en étroite collaboration avec les services de sécurité des autres ministères et pour définir les objectifs et les missions, le service a participé à de nombreux groupes de travail en 2007-2008.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/051316-051325-20080101-*"/><rico:isOrWasSubordinateTo rdf:resource="agent/051316"/>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/006652-051325-20080101-*"/><rico:isSuccessorOf rdf:resource="agent/006652"/>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/007033-051325-20080101-*"/><rico:isSuccessorOf rdf:resource="agent/007033"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/051316-051325-20080101-*"/>
+      <rico:isDirectSubordinateTo rdf:resource="agent/051316"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/006652-051325-20080101-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/006652"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/007033-051325-20080101-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/007033"/>
    </rico:Agent>
 </rdf:RDF>

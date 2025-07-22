@@ -4,7 +4,7 @@
    <control>
       <recordId>FRAN_NP_010517</recordId>
       <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE00230</otherRecordId>
-      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceStatus>revised</maintenanceStatus>
       <maintenanceAgency>
          <agencyName>Archives nationales de France</agencyName>
       </maintenanceAgency>
@@ -24,6 +24,19 @@
             <eventDateTime>2015-09-30</eventDateTime>
             <agentType>machine</agentType>
             <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2024-08-13</eventDateTime>
+            <agentType>human</agentType>
+            <agent>François CHANCEREL</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2024-08-14</eventDateTime>
+            <agentType>human</agentType>
+            <agent>François CHANCEREL</agent>
+            <eventDescription>14/08/2024, J. Gaillard : Précisions sur placeEntry @localType="nomLieu" | Ajout activité 'notaire'</eventDescription>
          </maintenanceEvent>
       </maintenanceHistory>
    </control>
@@ -47,21 +60,29 @@
          <places>
             <place>
                <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">Siège de l'étude</placeEntry>
                <placeEntry localType="arrondissement_actuel"
                            vocabularySource="d3nyv8ljb1--rjak82kccgxp">17e arrondissement</placeEntry>
-               <placeEntry localType="voie" vocabularySource="d3nz8vh8hv--ynclwpibhwid">biot (rue)</placeEntry>
-               <placeEntry localType="nomLieu">6 rue Biot</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nz8vh8hv--ynclwpibhwid">Biot (rue)</placeEntry>
+               <descriptiveNote>
+                  <p>6 rue Biot</p>
+               </descriptiveNote>
             </place>
          </places>
          <functions>
             <function>
-               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à Paris</term>
                <dateRange>
                   <fromDate standardDate="1877-08-29">29 août 1877</fromDate>
                   <toDate standardDate="1908-02-20">20 février 1908</toDate>
                </dateRange>
             </function>
          </functions>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d3nyu9x713-9kcjiv44l4wh">notaire</term>
+            </occupation>
+         </occupations>
       </description>
       <relations>
          <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -76,15 +97,23 @@
          </cpfRelation>
          <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
                            resourceRelationType="creatorOf"
-                           xlink:href="FRAN_IR_042666"
-                           xlink:type="simple">
-            <relationEntry localType="archival">Minutes et répertoires du notaire Edmond SABOT, 29 août 1877 - 12 juillet 1902 (étude LXXIV)</relationEntry>
+                           xlink:href="Information">
+            <relationEntry localType="archival"/>
+            <descriptiveNote>
+               <p>les minutes de ce notaire postérieures au 12 juillet 1902 sont conservées par l'étude</p>
+            </descriptiveNote>
          </resourceRelation>
          <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
                            resourceRelationType="creatorOf"
                            xlink:href="FRAN_IR_051231"
                            xlink:type="simple">
             <relationEntry localType="archival">Images des répertoires du notaire Edmond Sabot pour l'étude LXXIV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042666"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Edmond SABOT, 29 août 1877 - 12 juillet 1902 (étude LXXIV)</relationEntry>
          </resourceRelation>
       </relations>
    </cpfDescription>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/009907">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/009907"/>
@@ -11,21 +19,20 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Dérivation
-                (Import_SIA)</rico:name>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/009907">
-            <rico:isInstantiationOf rdf:resource="record/009907"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/009907"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_009907</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_009907"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/009907">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -41,15 +48,25 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1926-02-02</rico:birthDate>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/007079-009907-19620118-19660108"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/007079"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005227-009907-19780101-20031231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/005227"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009907-051191-19700101-19741231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/051191"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009907-009941-19740101-19791231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/009941"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009907-052594-19560101-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/052594"/>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/009907-051850"/><rico:hasFamilyAssociationWith rdf:resource="agent/051850"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009907-051937-19760825-19810513"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/051937"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009907-052012-19740101-19830517"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/052012"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/007079-009907-19690622-19740527"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/007079"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000001-009907-19740527-19810521"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000001"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/007079-009907-19620118-19660108"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/007079"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/005227-009907-19780101-20031231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/005227"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009907-051191-19700101-19741231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/051191"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009907-009941-19740101-19791231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/009941"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009907-052594-19560101-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/052594"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/009907-051850"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/051850"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009907-051937-19760825-19810513"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/051937"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009907-052012-19740101-19830517"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/052012"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/007079-009907-19690622-19740527"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/007079"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000001-009907-19740527-19810521"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000001"/>
    </rico:Agent>
 </rdf:RDF>

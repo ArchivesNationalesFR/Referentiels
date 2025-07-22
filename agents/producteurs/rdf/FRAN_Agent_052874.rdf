@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052874">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052874"/>
@@ -11,32 +19,30 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-17</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Vivien BARRO)</rico:name>
+            <rico:name xml:lang="fr">Création (par Vivien BARRO)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-18</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Absence de référence à ce producteur dans les notices d'autorité de la Bnf et sur Wikipédia. Il n'est donc pas possible de créer de liens d'identité.</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Absence de référence à ce producteur dans les notices d'autorité de la Bnf et sur Wikipédia. Il n'est donc pas possible de créer de liens d'identité.</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-17</rico:date>
-            <rico:descriptiveNote xml:lang="fr">nouvelle NP</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">nouvelle NP</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Informations fournies par les donateurs.</rico:source>
-      <rico:source xml:lang="fr">Archives nationales : papiers René Gouttebaron (AB/XIX/5588).</rico:source>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Informations fournies par les donateurs.</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Archives nationales : papiers René Gouttebaron (AB/XIX/5588).</rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052874">
-            <rico:isInstantiationOf rdf:resource="record/052874"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052874"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052874</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052874"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052874">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -53,26 +59,28 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1895-05-27</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1978-09-30</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/052874"/>
-            <rico:placeRelationHasSource rdf:resource="place/Alger"/>
+            <rico:relationHasTarget rdf:resource="agent/052874"/>
+            <rico:relationHasSource rdf:resource="place/Alger"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Alger"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Alger"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052874-d699msj742x--12cnnohd8i9wj-19280101-19780930">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052874"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052874-d699msj742x--12cnnohd8i9wj-19280101-19780930"/>
+            <rico:relationHasTarget rdf:resource="agent/052874"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d208387e118">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052874-d699msj742x--12cnnohd8i9wj-19280101-19780930"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj742x--12cnnohd8i9wj"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1928-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1978-09-30</rico:endDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj742x--12cnnohd8i9wj"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj742x--12cnnohd8i9wj"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d208387e118"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>René Gouttebaron naît à Alger le 27 mai 1895 et participe à la Première Guerre mondiale de 1916 à 1918. Il reprend alors ses études à la faculté de droit d'Alger, ce qui lui permet, une fois licencié, de s'inscrire au barreau pour devenir collaborateur de son père, lui-même avocat et bâtonnier du barreau d'Alger de 1911 à 1913. A la mort de ce dernier en 1928, René Gouttebaron reprend l'étude familiale.</html:p>
@@ -82,7 +90,7 @@
             <html:p>Maître Gouttebaron a poursuivi son activité d'avocat à Alger qu'il quitte en 1962 pour gagner la France et y prendre sa retraite.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/053856-052874"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-053856"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/053856-052874"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-053856"/>
    </rico:Agent>
 </rdf:RDF>

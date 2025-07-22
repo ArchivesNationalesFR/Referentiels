@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052320">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052320"/>
@@ -11,33 +19,31 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-15</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Cécile FABRIS)</rico:name>
+            <rico:name xml:lang="fr">Création (par Cécile FABRIS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-09</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Cécile FABRIS)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Cécile FABRIS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-15</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 11/07/2019 : modification forme autorisée du nom (ajout dates), suppression indexation fonction, ajout lien d'identité BnF et wikipédia, suppression indexation fonction, ajout relation d'association NP 3778 EPHE</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 11/07/2019 : modification forme autorisée du nom (ajout dates), suppression indexation fonction, ajout lien d'identité BnF et wikipédia, suppression indexation fonction, ajout relation d'association NP 3778 EPHE</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Notice Wikipédia (https://fr.wikipedia.org/wiki/Albert_Grenier)</rico:source>
-      <rico:source xml:lang="fr">Notice BNF (https://data.bnf.fr/fr/11905860/albert_grenier/)</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/000000011028165X/about"/>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice Wikipédia (https://fr.wikipedia.org/wiki/Albert_Grenier)</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice BNF (https://data.bnf.fr/fr/11905860/albert_grenier/)</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/000000011028165X"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Albert_Grenier"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052320">
-            <rico:isInstantiationOf rdf:resource="record/052320"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052320"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052320</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052320"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052320">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -55,28 +61,32 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1878-04-22</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1961-06-23</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052320-d3m0bl7bbdy-s3moxyf8em8b">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052320"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052320-d3m0bl7bbdy-s3moxyf8em8b"/>
+            <rico:relationHasTarget rdf:resource="agent/052320"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d200049e105">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052320-d3m0bl7bbdy-s3moxyf8em8b"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3m0bl7bbdy-s3moxyf8em8b"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl7bbdy-s3moxyf8em8b"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl7bbdy-s3moxyf8em8b"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d200049e105"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052320-d699msj02xm-19qbb7wdtto3j">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052320"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052320-d699msj02xm-19qbb7wdtto3j"/>
+            <rico:relationHasTarget rdf:resource="agent/052320"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d200049e111">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052320-d699msj02xm-19qbb7wdtto3j"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d200049e111"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Albert Grenier fait ses études à Nancy et est reçu à l'agrégation de grammaire en 1902. Il obtient alors une bourse pour préparer une thèse intitulée "Habitations gauloises et villas latines de la cité des Médiomatrices" à l’École pratique des hautes études. En 1904, il est membre de l’École française de Rome et se consacre à l'étude des Étrusques. Il fouille à Bologne et prépare sa thèse de doctorat intitulée "Bologne villanovienne et étrusque, VIIIe-IVe siècles avant notre ère" qu'il publie en 1912. À son retour de Rome en 1907, il obtient un poste de maître de conférences en Grammaire antique à la Faculté des Lettres de Nancy, qu'il occupe jusqu'à la déclaration de la guerre en 1914. Il est ensuite mobilisé.</html:p>
@@ -85,10 +95,12 @@
          </html:div>
       </rico:history>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb119058604#about"/>
-      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/052320-052317-19460101-*"/><rico:hasSuccessor rdf:resource="agent/052317"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentTemporalRelation/052320-052317-19460101-*"/>
+      <rico:hasSuccessor rdf:resource="agent/052317"/>
       <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Albert_Grenier"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/003774-052320-19370101-19461231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/003774"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/058223-052320"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-058223"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/003774-052320-19370101-19461231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/003774"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/058223-052320"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-058223"/>
    </rico:Agent>
 </rdf:RDF>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051226">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051226"/>
@@ -10,28 +18,27 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-17</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Monique LEBLOIS-PECHON)</rico:name>
+            <rico:name xml:lang="fr">Création (par Monique LEBLOIS-PECHON)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-17</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 17 décembre 2015 : ajouté fonction et n° notice BnF, changé le nom</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 17 décembre 2015 : ajouté fonction et n° notice BnF, changé le nom</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Préface de l'inventaire des cotes F/9/2001 à 3693 par Marie-Thérèse Chabord.</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice d'autorité BnF n° FRBNF11974030</html:p>
-      </rico:source>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051226">
-            <rico:isInstantiationOf rdf:resource="record/051226"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051226"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051226</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051226"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051226">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -64,23 +71,24 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1940-01-01</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1944-12-31</rico:endDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051226-d3nyuidsbr-1umshw9gnudo9-19400101-19441231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051226"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051226-d3nyuidsbr-1umshw9gnudo9-19400101-19441231"/>
+            <rico:relationHasTarget rdf:resource="agent/051226"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d181939e121">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051226-d3nyuidsbr-1umshw9gnudo9-19400101-19441231"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuidsbr-1umshw9gnudo9"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1940-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1944-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">négociations avec l'Allemagne sur toutes les questions relatives aux prisonniers de guerre</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuidsbr-1umshw9gnudo9"/></rico:Activity></rico:performsOrPerformed>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d181939e121"/>
+      <rico:generalDescription rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Organisation interne ou généalogie</h4>
             <html:p>L'organisation du S.D.P.G. était la suivante : de l'Ambassadeur qui avait auprès de lui un Secrétariat particulier, dépendaient un Service de Presse, un Service administratif, le Cabinet et les Services de la Correspondance privée.</html:p>
@@ -90,9 +98,7 @@
             <html:p>1) le Service des libérations et Congés de captivité (L.C.C.), service purement administratif chargé d'étudier les dossiers qui lui étaient transmis, d'opérer les vérifications nécessaires, de les complèter au besoin avant de les remettre aux représentants de l'O.K.W. à Paris.</html:p>
             <html:p>2) Les services spéciaux de la Puissance protectrice : un Service de l'Inspection des camps à Paris (I.C.) s'occupait des Frontstalags, (camps de France où étaient détenus les indigènes), un Service juridique (A.J.) suivait les affaires judiciaires et assurait la défense des prisonniers déférés devant les tribunaux allemands, un Service de la Correspondance avec les Hommes de Confiance des Camps (H.C.) centralisait tous les documents officiels à transmettre aux intéressés par l'intermédiaire des Hommes de confiance et assurait en outre avec ces derniers une volumineuse correspondance.</html:p>
             <html:p>3) Un Service des traductions et des laissez-passer complétait l'ensemble.</html:p>
-            <html:p/>
             <html:p>Les Services de la Correspondance privée étaient divisés en trois sections : le "tout-venant" qui répondait tant aux familles, aux personnalités diverses, qu'aux prisonniers eux-mêmes ; le Service des "cas douloureux, réclamations et recherches de disparus" ; le Service médical qui faisait les démarches nécessaires auprès des autorités allemandes pour demander, au titre de la Convention de Genève, le rapatriement des prisonniers malades dont les familles avaient signalé le cas au S.D.P.G. Enfin, un Service de réception était installé à la Maison du Prisonnier de la Seine.</html:p>
-            <html:p/>
             <html:p>La Délégation de Berlin du Service diplomatique, constituée à Paris le 8 décembre 1940, avec cinq personnes, dont M. BENOIST-MECHIN et le Médecin-Commandant BRUCKER partit pour Berlin le 12 décembre suivant, sans qu'aucun chef ait été nommément désigné.</html:p>
             <html:p>A la suite d'un conflit entre M. BENOIST-MECHIN et le Commandant BRUCKER, Scapini divisa les attributions : une partie, dite Schutzmacht ou Nation protectrice, fut confiée au Ct Brucker, la seconde, dite psycho-politique, qui comprenait l'aide morale et psychologique aux prisonniers, ainsi que les négociations avec les autorités allemandes, fut réservée à M. Benoist-Méchin, la prédominance de l'un sur l'autre n'étant pas fixée.</html:p>
             <html:p>L'installation était prévue au Consulat général de France à Berlin, mais celui-ci nécessitait de telles réparations que la Délégation s'établit provisoirement à l'Hôtel Continental où elle demeura jusqu'au 24 février 1941 ; les délégués ne purent loger au Consulat qu'à partir du 30 mai. Entre le 22 et le 24 novembre 1943, l'immeuble du Consulat, sévèrement atteint par deux bombardements, devint inhabitable, l'Ambassade de France fut entièrement détruite. Scapini et la D.S.O.F.A. s'installèrent au château de Cunersdorf par Wriezen, la Délégation à Letschin par Kustrin, à 80 km à l'est de Berlin. Une permanence continua à fonctionner à Berlin à l'Hôtel Adlon avec le Commandant Brucker qui représentait les deux organismes. Devant l'avance russe, la Délégation dut quitter Letschin le 31 janvier 1945 et fut relogée à Saalfeld-sur-Saale. La vie devenant impossible à Saalfeld en raison de la fréquence croissante des alertes, le Général BRIDOUX songea à la replier à Sigmaringen où se trouvait déjà le S.D.P.G. Finalement elle s'installa à Buch-am-Erlbach au début d'avril, peu de temps avant la fin des hostilités.</html:p>
@@ -107,7 +113,6 @@
             <html:p>D'autre part, un Service d'Information analysait et condensait l'ensemble des renseignements techniques provenant de Paris ou des services allemands de Berlin dans un "Bulletin d'information des délégués" qui parut chaque semaine, à partir du 15 juin 1941.</html:p>
             <html:p>De par sa situation même, la Délégation assumait une mission de liaison avec les services de Paris et jouait le rôle de plaque tournante entre l'Ambassadeur et les prisonniers. Elle entretenait également des rapports suivis avec les fonctionnaires de la Dienststelle Ribbentrop et les autorités militaires allemandes qui s'occupaient des prisonniers de guerre.</html:p>
             <html:p>C'est la Délégation de Berlin qui, après la libération du territoire français, continua à assumer le rôle de puissance protectrice et veilla autant que possible sur les prisonniers, notamment en continuant à s'occuper des affaires judiciaires.</html:p>
-            <html:p/>
             <html:p>
                <html:b>Organigramme</html:b>
             </html:p>
@@ -115,7 +120,6 @@
             <html:p>Secrétariat particulier de l'Amabassadeur, chef Mlle DADIANI</html:p>
             <html:p>Service de presse, chef M. CROSICIA</html:p>
             <html:p>Service administratif, directeur M. THIRION.</html:p>
-            <html:p/>
             <html:p>
                <html:b>A. Cabinet</html:b>, 47 rue Cortambert</html:p>
             <html:p>Directeur : M. Jean DESBONS</html:p>
@@ -128,7 +132,6 @@
                <html:li>5. Bureau de la Correspondance avec les Hommes de confiance (H.C.), 44 rue de la Faisanderie, chef M. FORT.</html:li>
                <html:li>6. Bureau de traduction et des laissez-passer, 47 rue Cortambert, chef M. KOCH.</html:li>
             </html:ul>
-            <html:p/>
             <html:p>
                <html:b>B. Services de la Correspondance privée</html:b>, 55 rue Cortambert et 79 rue de la Tour, chef M. LE COURET :</html:p>
             <html:ul>
@@ -137,7 +140,6 @@
                <html:li>Service médical</html:li>
                <html:li>Service de réception à la Maison du Prisonnier de la Seine, 1 place Clichy.</html:li>
             </html:ul>
-            <html:p/>
             <html:p>
                <html:b>C. Délégation de Berlin</html:b>. (D.F.B.)</html:p>
             <html:ul>
@@ -152,7 +154,7 @@
                <html:li>Magasin et matériel auto.</html:li>
             </html:ul>
          </html:div>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Contexte général</h4>
@@ -174,8 +176,9 @@
             <html:p>Les services restés en France furent absorbés dès la Libération par le Ministère des Prisonniers, Déportés et Réfugiés, que dirigeait M. Henri Frenay.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051226-051231-19440910-*"/><rico:hasSuccessor rdf:resource="agent/051231"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/003886-051226"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-003886"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentTemporalRelation/051226-051231-19440910-*"/>
+      <rico:hasSuccessor rdf:resource="agent/051231"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/003886-051226"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-003886"/>
    </rico:Agent>
 </rdf:RDF>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/010112">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/010112"/>
@@ -11,32 +19,30 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-04-09</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Dérivation
-                (Import_SIA)</rico:name>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Raphael BAUMARD)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Raphael BAUMARD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-04-09</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 8 avril 2014 : ajouté n° notice BnF et lien vers notice famille de Villèle</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 8 avril 2014 : ajouté n° notice BnF et lien vers notice famille de Villèle</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice d'autorité BnF n° FRBNF13196799</html:p>
-      </rico:source>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/010112">
-            <rico:isInstantiationOf rdf:resource="record/010112"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/010112"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_010112</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_010112"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/010112">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Family"/>
@@ -59,10 +65,13 @@
             <html:p>La famille se scinde ensuite en plusieurs branches, en particulier les Richemont. Elle est également allée à la famille de Villèle : deux des filles d'Henri-Paulin et d'Ombline épousent en effet des frères Villèle, dont Joseph (1773-1854), président du conseil des rois Louis XVIII et Charles X.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010112-052221-17740101-19001231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/052221"/>
-      <rico:groupIsSourceOfMembershipRelation rdf:resource="membershipRelation/010112-052879"/><rico:hasOrHadMember rdf:resource="agent/052879"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010112-050779"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050779"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/050133-010112"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-050133"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010112-052221-17740101-19001231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/052221"/>
+      <rico:thingIsSourceOfRelation rdf:resource="membershipRelation/010112-052879"/>
+      <rico:hasOrHadMember rdf:resource="agent/052879"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010112-050779"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050779"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/050133-010112"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-050133"/>
    </rico:Agent>
 </rdf:RDF>

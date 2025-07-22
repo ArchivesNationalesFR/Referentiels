@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051186">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051186"/>
@@ -11,40 +19,37 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-17</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Thierry GUILPIN)</rico:name>
+            <rico:name xml:lang="fr">Création (par Thierry GUILPIN)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 23 octobre 2015 : revu le lien IR, ajouté n° notice BnF</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 23 octobre 2015 : revu le lien IR, ajouté n° notice BnF</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Constance DE VERGNETTE DE LAMOTTE)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Constance DE VERGNETTE DE LAMOTTE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-31</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-17</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice d'autorité BnF n° FRBNF15545610</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000078486961/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000078486961"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051186">
-            <rico:isInstantiationOf rdf:resource="record/051186"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051186"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051186</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051186"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051186">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -85,15 +90,20 @@
             <html:p>Le prince Victor meurt à Bruxelles le 3 mai 1926.</html:p>
          </html:div>
       </rico:history>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/051185-051186"/><rico:hasFamilyAssociationWith rdf:resource="agent/051185"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051186-051555-18870101-19080420"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/051555"/>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/050575-051186"/><rico:hasFamilyAssociationWith rdf:resource="agent/050575"/>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/051181-051186"/><rico:hasFamilyAssociationWith rdf:resource="agent/051181"/>
-      <rico:personIsTargetOfMembershipRelation rdf:resource="membershipRelation/050805-051186"/><rico:isOrWasMemberOf rdf:resource="agent/050805"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/051185-051186"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/051185"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/051186-051555-18870101-19080420"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/051555"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/050575-051186"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/050575"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/051181-051186"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/051181"/>
+      <rico:thingIsTargetOfRelation rdf:resource="membershipRelation/050805-051186"/>
+      <rico:isOrWasMemberOf rdf:resource="agent/050805"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb15545610q#about"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/053754-cswxs4l1gm--srtpqiklgvf-051186"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/053754-cswxs4l1gm--srtpqiklgvf"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/053754-051186"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-053754"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/053754-cswxs4l1gm--srtpqiklgvf-051186"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/053754-cswxs4l1gm--srtpqiklgvf"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/053754-051186"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-053754"/>
    </rico:Agent>
 </rdf:RDF>

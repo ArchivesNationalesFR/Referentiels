@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051552">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051552"/>
@@ -11,35 +19,33 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-08</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Constance DE VERGNETTE DE LAMOTTE)</rico:name>
+            <rico:name xml:lang="fr">Création (par Constance DE VERGNETTE DE LAMOTTE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-11</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-08</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Arch. nat., 184 AP : fonds Duroc, duc de Frioul</rico:source>
-      <rico:hasSource rdf:resource="http://data.bnf.fr/14529860/geraud_christophe_michel_duroc/"/>
-      <rico:hasSource rdf:resource="https://fr.wikipedia.org/wiki/G%C3%A9raud_Christophe_Michel_Duroc"/>
-      <rico:source xml:lang="fr">Six (Georges), Dictionnaire biographique des généraux et amiraux français de la Révolution et de l'Empire (1792-1814), 1934, t. I, p. 410-411.</rico:source>
-      <rico:source xml:lang="fr">Tulard (Jean) (dir.), Dictionnaire Napoléon, Fayard, 1999, vol. 1, p. 692-693.</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000043374556/about"/>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Arch. nat., 184 AP : fonds Duroc, duc de Frioul</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="http://data.bnf.fr/14529860/geraud_christophe_michel_duroc/"/>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="https://fr.wikipedia.org/wiki/G%C3%A9raud_Christophe_Michel_Duroc"/>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Six (Georges), Dictionnaire biographique des généraux et amiraux français de la Révolution et de l'Empire (1792-1814), 1934, t. I, p. 410-411.</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Tulard (Jean) (dir.), Dictionnaire Napoléon, Fayard, 1999, vol. 1, p. 692-693.</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000043374556"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/G%C3%A9raud_Christophe_Michel_Duroc"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051552">
-            <rico:isInstantiationOf rdf:resource="record/051552"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051552"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051552</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051552"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051552">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -78,107 +84,113 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1772-10-25</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1813-05-23</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/051552"/>
-            <rico:placeRelationHasSource rdf:resource="place/Aboukir"/>
+            <rico:relationHasTarget rdf:resource="agent/051552"/>
+            <rico:relationHasSource rdf:resource="place/Aboukir"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Aboukir"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Aboukir"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/051552"/>
-            <rico:placeRelationHasSource rdf:resource="place/Bautzen"/>
+            <rico:relationHasTarget rdf:resource="agent/051552"/>
+            <rico:relationHasSource rdf:resource="place/Bautzen"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Bautzen"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Bautzen"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/051552"/>
-            <rico:placeRelationHasSource rdf:resource="place/Bayonne"/>
+            <rico:relationHasTarget rdf:resource="agent/051552"/>
+            <rico:relationHasSource rdf:resource="place/Bayonne"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Bayonne"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Bayonne"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/051552"/>
-            <rico:placeRelationHasSource rdf:resource="place/Berlin"/>
+            <rico:relationHasTarget rdf:resource="agent/051552"/>
+            <rico:relationHasSource rdf:resource="place/Berlin"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Berlin"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Berlin"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/051552"/>
-            <rico:placeRelationHasSource rdf:resource="place/B%C3%A2le"/>
+            <rico:relationHasTarget rdf:resource="agent/051552"/>
+            <rico:relationHasSource rdf:resource="place/B%C3%A2le"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/B%C3%A2le"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/B%C3%A2le"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/051552"/>
-            <rico:placeRelationHasSource rdf:resource="place/Posen"/>
+            <rico:relationHasTarget rdf:resource="agent/051552"/>
+            <rico:relationHasSource rdf:resource="place/Posen"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Posen"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Posen"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/051552"/>
-            <rico:placeRelationHasSource rdf:resource="place/Russie"/>
+            <rico:relationHasTarget rdf:resource="agent/051552"/>
+            <rico:relationHasSource rdf:resource="place/Russie"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Russie"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Russie"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/051552"/>
-            <rico:placeRelationHasSource rdf:resource="place/Pont-%C3%A0-Mousson"/>
+            <rico:relationHasTarget rdf:resource="agent/051552"/>
+            <rico:relationHasSource rdf:resource="place/Pont-%C3%A0-Mousson"/>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1772-10-25</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1789-12-31</rico:endDate>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Pont-%C3%A0-Mousson"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Pont-%C3%A0-Mousson"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051552-d699msj9l7t-1gb5a09kkzrmp">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051552"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051552-d699msj9l7t-1gb5a09kkzrmp"/>
+            <rico:relationHasTarget rdf:resource="agent/051552"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d187114e234">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051552-d699msj9l7t-1gb5a09kkzrmp"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj9l7t-1gb5a09kkzrmp"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj9l7t-1gb5a09kkzrmp"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj9l7t-1gb5a09kkzrmp"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d187114e234"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051552-d3m0bl7an80--1igec9t065fzk-18040101-18130522">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051552"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051552-d3m0bl7an80--1igec9t065fzk-18040101-18130522"/>
+            <rico:relationHasTarget rdf:resource="agent/051552"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d187114e240">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051552-d3m0bl7an80--1igec9t065fzk-18040101-18130522"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3m0bl7an80--1igec9t065fzk"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1804-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1813-05-22</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Grand officier puis grand maréchal du palais de l'Empereur.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl7an80--1igec9t065fzk"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl7an80--1igec9t065fzk"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d187114e240"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051552-d699msk3a25-1xs3m641rhiyg-18010101-18130522">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051552"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051552-d699msk3a25-1xs3m641rhiyg-18010101-18130522"/>
+            <rico:relationHasTarget rdf:resource="agent/051552"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d187114e260">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051552-d699msk3a25-1xs3m641rhiyg-18010101-18130522"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msk3a25-1xs3m641rhiyg"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1801-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1813-05-22</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Général de brigade en 1801 puis général de division en 1803. Grand maréchal du palais.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk3a25-1xs3m641rhiyg"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk3a25-1xs3m641rhiyg"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d187114e260"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Cadet gentilhomme à l’Ecole militaire de Pont-à-Mousson, Géraud Christophe Michel Duroc (1772-1813) démissionne le 22 juillet 1792. Il émigre puis revient en France.</html:p>
@@ -186,23 +198,25 @@
             <html:p>En mai 1802, il est créé duc de Frioul. Napoléon l’envoit pour négocier plusieurs traités (Posen, 1807, Bayonne, 1808). Il sert en Russie en 1812. Il est nommé sénateur, le 5 avril 1813. Il suit l’Empereur en Saxe mais il est mortellement blessé à la bataille de Bautzen en mai 1813.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051171-051552-17960101-18130523"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/051171"/>
-      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051552-050149-18130522-*"/><rico:hasSuccessor rdf:resource="agent/050149"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/051171-051552-17960101-18130523"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/051171"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentTemporalRelation/051552-050149-18130522-*"/>
+      <rico:hasSuccessor rdf:resource="agent/050149"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb145298607#about"/>
       <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/G%C3%A9raud_Christophe_Michel_Duroc"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/003827-051552"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-003827"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/003828-051552"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-003828"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/025003-051552"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-025003"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/004095-051552"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-004095"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/001657-051552"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-001657"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054358-051552"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-054358"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/003371-051552"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-003371"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/003827-051552"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-003827"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/003828-051552"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-003828"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/025003-051552"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-025003"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/004095-051552"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-004095"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/001657-051552"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-001657"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054358-051552"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054358"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/003371-051552"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-003371"/>
    </rico:Agent>
 </rdf:RDF>

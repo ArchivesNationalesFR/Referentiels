@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051141">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051141"/>
@@ -10,32 +18,31 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-20</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Florence CLAVAUD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Florence CLAVAUD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-20</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 15 juillet 2015 : création sur demande de la mission des archives auprès des services du Premier ministre. Ajout des textes de référence, sources, n° ISNI, indexation fonctions</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 15 juillet 2015 : création sur demande de la mission des archives auprès des services du Premier ministre. Ajout des textes de référence, sources, n° ISNI, indexation fonctions</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice fournie par la mission des archives auprès des services du Premier ministre</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Site web du CCNE : http://www.ccne-ethique.fr/fr</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice d'autorité BnF n° FRBNF12006954</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121510702/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121510702"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051141">
-            <rico:isInstantiationOf rdf:resource="record/051141"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051141"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051141</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051141"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051141">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -66,43 +73,46 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-02-23</rico:beginningDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051141-d3nyugsjkt--7vpbe5hqjvzi">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051141"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051141-d3nyugsjkt--7vpbe5hqjvzi"/>
+            <rico:relationHasTarget rdf:resource="agent/051141"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d179779e110">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051141-d3nyugsjkt--7vpbe5hqjvzi"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugsjkt--7vpbe5hqjvzi"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugsjkt--7vpbe5hqjvzi"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d179779e110"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051141-d3nyuic5p0-ktmsglhlnhvr">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051141"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051141-d3nyuic5p0-ktmsglhlnhvr"/>
+            <rico:relationHasTarget rdf:resource="agent/051141"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d179779e116">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051141-d3nyuic5p0-ktmsglhlnhvr"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuic5p0-ktmsglhlnhvr"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">sciences du vivant</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuic5p0-ktmsglhlnhvr"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d179779e116"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051141-d5bhviiyko--q661mlo9uy50">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051141"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051141-d5bhviiyko--q661mlo9uy50"/>
+            <rico:relationHasTarget rdf:resource="agent/051141"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d179779e127">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051141-d5bhviiyko--q661mlo9uy50"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviiyko--q661mlo9uy50"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviiyko--q661mlo9uy50"/></rico:Activity></rico:performsOrPerformed>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d179779e127"/>
+      <rico:generalDescription rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Organisation interne ou généalogie</h4>
             <html:p>Le CCNE est dirigé par un président, nommé par décret du président de la République pour deux ans, et par un vice-président élu par les membres du CCNE. Ces derniers sont au nombre de trente-neuf, nommés par diverses institutions pour un mandat de quatre ans renouvelable une fois, représentant les principales familles spirituelles et philosophiques, le secteur de la recherche et le domaine juridique et politique.</html:p>
@@ -112,7 +122,7 @@
             <html:p>•Les groupes de travail : chaque question est en premier lieu instruite par un groupe de travail composé de membres du CCNE.</html:p>
             <html:p>Ces trois instances peuvent décider d’auditionner toute personne qualifiée pour alimenter leur réflexion.</html:p>
          </html:div>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>
@@ -127,7 +137,6 @@
             <html:p>Didier Sicard (1999-2008) ;</html:p>
             <html:p>Alain Grimfeld (2008-2012) ;</html:p>
             <html:p>Jean-Claude Ameisen (depuis 2012).</html:p>
-            <html:p/>
             <html:p>
                <html:u>Missions :</html:u>
             </html:p>

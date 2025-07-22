@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050786">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050786"/>
@@ -10,28 +18,27 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-04-18</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Emmanuelle GIRY)</rico:name>
+            <rico:name xml:lang="fr">Création (par Emmanuelle GIRY)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-04-18</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 18 avril 2014 : ajouté autre forme du nom</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 18 avril 2014 : ajouté autre forme du nom</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Site internet de la FFCU, documents statutaires.</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice du<html:i>Guide des sources du PAJEP</html:i>.</html:p>
-      </rico:source>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050786">
-            <rico:isInstantiationOf rdf:resource="record/050786"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050786"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050786</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050786"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050786">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -57,13 +64,13 @@
       <rico:authorizingMandate rdf:parseType="Literal">
          <html:p xml:lang="fr">Statuts de l'association, modifiés par l'Assemblée générale du 17 mai 2008.</html:p>
       </rico:authorizingMandate>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      <rico:generalDescription rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Organisation interne ou généalogie</h4>
             <html:p>Conformément aux statuts de l'association, la fédération est constituée d'un échelon national et de représentations régionales qui constituent le niveau fédéral.</html:p>
             <html:p>Les instances décisionnelles de l'organisation sont l'assemblée générale (composée des membres de droits, membres adhérents et membres associés), le conseil fédéral, le conseil exécutif (qui comporte le bureau). Il existe un secrétariat national constitué par les personnels rétribués, détachés ou mis à disposition de la Fédération. Enfin, il existe une commission de conciliation et de contrôle.</html:p>
          </html:div>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>L’<html:i>United Nations Educational, Scientific and Cultural Organisation</html:i>(Unesco, en français « Organisation des nations unies pour l'éducation, la science et la culture ») est une institution spécialisée, dépendante de l’Organisation des Nations unies (ONU). L'Acte constitutif de l'Unesco est signé à Londres le 16 novembre 1945 par 37 pays et ratifié le 4 novembre 1946 par 20 états. Son objectif est de « contribuer au maintien de la paix et de la sécurité en resserrant, par l’éducation, la science et la culture, la collaboration entre nations, afin d’assurer le respect universel de la justice, de la loi, des droits de l’homme et des libertés fondamentales pour tous, sans distinction de race, de sexe, de langue ou de religion, que la Charte des Nations Unies reconnaît à tous les peuples ».</html:p>
@@ -85,10 +92,11 @@
             <html:p>EN 2014, la FFCU revendique regrouper plus de 200 Clubs Unesco à travers toute la France, deux tiers en milieu scolaire et un tiers en association de loi 1901 (plaquette de présentation 2012).</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050739-050786-19990101-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050739"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/059868-050786"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-059868"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/059875-050786"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-059875"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050739-050786-19990101-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050739"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/059868-050786"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-059868"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/059875-050786"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-059875"/>
    </rico:Agent>
 </rdf:RDF>

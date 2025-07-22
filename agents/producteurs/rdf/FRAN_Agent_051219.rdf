@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051219">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051219"/>
@@ -10,22 +18,21 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-03-14</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Marie-Noelle LEBLANC)</rico:name>
+            <rico:name xml:lang="fr">Création (par Marie-Noelle LEBLANC)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-03-14</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 14 mars 2016 : changé le nom, complété l'historique, ajouté activités, liens d'association</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 14 mars 2016 : changé le nom, complété l'historique, ajouté activités, liens d'association</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051219">
-            <rico:isInstantiationOf rdf:resource="record/051219"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051219"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051219</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051219"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051219">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -41,75 +48,88 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1946-01-01</rico:birthDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051219-d-1009896yv--378hf9s9l062">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051219"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051219-d-1009896yv--378hf9s9l062"/>
+            <rico:relationHasTarget rdf:resource="agent/051219"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d181866e75">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051219-d-1009896yv--378hf9s9l062"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-1009896yv--378hf9s9l062"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">au ministère de l'agriculture</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-1009896yv--378hf9s9l062"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-1009896yv--378hf9s9l062"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d181866e75"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051219-d699msiydj2--15ch8dyky11sp">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051219"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051219-d699msiydj2--15ch8dyky11sp"/>
+            <rico:relationHasTarget rdf:resource="agent/051219"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d181866e86">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051219-d699msiydj2--15ch8dyky11sp"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msiydj2--15ch8dyky11sp"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">inspecteur général des eaux et forêts</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiydj2--15ch8dyky11sp"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiydj2--15ch8dyky11sp"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d181866e86"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051219-d699msixdvh--wgctct8soc1y-19890101-19901231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051219"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051219-d699msixdvh--wgctct8soc1y-19890101-19901231"/>
+            <rico:relationHasTarget rdf:resource="agent/051219"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d181866e97">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051219-d699msixdvh--wgctct8soc1y-19890101-19901231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1989-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1990-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">directeur de cabinet du ministre des affaires européennes</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d181866e97"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051219-d699msixdvh--wgctct8soc1y-19810101-19841231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051219"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051219-d699msixdvh--wgctct8soc1y-19810101-19841231"/>
+            <rico:relationHasTarget rdf:resource="agent/051219"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d181866e117">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051219-d699msixdvh--wgctct8soc1y-19810101-19841231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1981-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1984-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">directeur adjoint du cabinet d'E. Cresson, ministre de l'agriculture</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d181866e117"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Ingénieur général des ponts, des eaux et forêts né en 1946, Jean-Louis Porry débute sa carrière comme chef de service à la direction départementale de l'agriculture du Cantal. Il rejoint ensuite les services centraux du ministère de l'agriculture où il assure un poste sur la réglementation communautaire au bureau des viandes, avant de devenir chef du bureau des affaires européennes puis sous-directeur de l'enseignement supérieur agricole. Il entre en 1981 dans le cabinet de la ministre de l'agriculture, Édith Cresson, pour être directeur adjoint du cabinet et conseiller pour les affaires européennes et internationales jusqu'en 1983 puis dans celui du ministre du commerce extérieur pour l'agroalimentaire, des affaires européennes et multilatérales jusqu'en 1984. Il est ensuite détaché à la Société générale pendant quatre ans avant de prendre le poste de directeur de cabinet du ministre des affaires européennes entre 1989 et 1990. En 1991, il devient président directeur général de la Société d'économie mixte d'aménagement et de gestion du marché d'intérêt national de la région parisienne (SEMMARIS) jusqu'en 1994. Après un bref passage au CGGREF (Conseil général du génie rural, des eaux et forêts) en 1995, il part en Chine pour devenir conseiller agricole à l'ambassade de France. A son retour en France, il réintègre le CGGREF où il préside la section « économie, agriculture et entreprises » qui devient la première section du CGAAER (Conseil général de l'agriculture, de l'alimentation et des espaces ruraux) lors de sa création en 2006.</html:p>
          </html:div>
       </rico:history>
-      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/051219-007911-20060101-20171231"/><rico:isOrWasLeaderOf rdf:resource="agent/007911"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/007923-051219-19910101-20061231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/007923"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/007800-051219-19830101-19841231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/007800"/>
-      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/051219-008947-19810101-19831231"/><rico:isOrWasLeaderOf rdf:resource="agent/008947"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050088-051219-19830322-19840719"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050088"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/051219-007911-20060101-20171231"/>
+      <rico:isOrWasLeaderOf rdf:resource="agent/007911"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/007923-051219-19910101-20061231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/007923"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/007800-051219-19830101-19841231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/007800"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/051219-008947-19810101-19831231"/>
+      <rico:isOrWasLeaderOf rdf:resource="agent/008947"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050088-051219-19830322-19840719"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050088"/>
    </rico:Agent>
 </rdf:RDF>

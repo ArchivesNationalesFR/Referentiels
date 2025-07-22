@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051282">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051282"/>
@@ -10,25 +18,24 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-04-22</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Pascal DAVID-DORMIEN)</rico:name>
+            <rico:name xml:lang="fr">Création (par Pascal DAVID-DORMIEN)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-04-22</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 22 avril 2016 : revu sources, supprimé fonction</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 22 avril 2016 : revu sources, supprimé fonction</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Pas d'identifiant ISNI ni de notice BnF au 22 avril 2016</html:p>
-      </rico:source>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051282">
-            <rico:isInstantiationOf rdf:resource="record/051282"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051282"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051282</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051282"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051282">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -52,34 +59,38 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1776-06-29</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1843-06-02</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051282-d699msiydj2--15ch8dyky11sp">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051282"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051282-d699msiydj2--15ch8dyky11sp"/>
+            <rico:relationHasTarget rdf:resource="agent/051282"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d182906e96">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051282-d699msiydj2--15ch8dyky11sp"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msiydj2--15ch8dyky11sp"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">adjoint à l'inspection générale de cavalerie (1818)</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiydj2--15ch8dyky11sp"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiydj2--15ch8dyky11sp"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d182906e96"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051282-d699msj53l0-1180obzunmkm7">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051282"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051282-d699msj53l0-1180obzunmkm7"/>
+            <rico:relationHasTarget rdf:resource="agent/051282"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d182906e107">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051282-d699msj53l0-1180obzunmkm7"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj53l0-1180obzunmkm7"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Colonel, général de brigade, commandant</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj53l0-1180obzunmkm7"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj53l0-1180obzunmkm7"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d182906e107"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Louis Pierre Alphonse de Colbert (1776-1843), comte de Chabanais, est né le 29 juin 1776 à Paris, paroisse Saint-Eustache, il est le fils puîné de Louis Henri François de Colbert (1737-1792) et de Jeanne David. Engagé volontaire, il sert de l'an II à l'an IX aux armées de l'Ouest, de Sambre-et-Meuse, d'Italie et d'Orient. Passé à Saint-Domingue, il y remplit les fonctions d'ordonnateur pendant les ans X à XI. Rentré en France, il est nommé membre de la légion d'honneur le 4 germinal an XIII (il sera promu commandeur le 20 avril 1831).</html:p>

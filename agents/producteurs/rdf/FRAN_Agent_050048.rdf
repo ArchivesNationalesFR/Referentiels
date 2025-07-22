@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050048">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050048"/>
@@ -10,21 +18,20 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-07-29</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Création (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-07-29</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050048">
-            <rico:isInstantiationOf rdf:resource="record/050048"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050048"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050048</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050048"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050048">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -46,5 +53,7 @@
             <html:p>François de Neufchâteau (1750-1828), magistrat sous l’Ancien régime, accueillit avec enthousiasme la Révolution. Élu par le département des Vosges député à la Législative, il joua un rôle actif dans cette assemblée et en devint même président. Pendant la Convention, il se tint au contraire à l’écart. Sous le Directoire, il fut ministre de l’Intérieur du 16 juillet au 14 septembre 1797 ; le 10 septembre, il avait été élu membre du Directoire exécutif et fut à nouveau ministre de l’Intérieur du 17 juin 1798 au 22 juin 1799. Après le 18 brumaire, François de Neufchâteau se rallia l’un des premiers à Bonaparte et entra, le 25 septembre 1799, au Sénat conservateur qu’il présida par la suite. La Restauration venue, il quitta la politique pour s’occuper d’agriculture. Il entra à l’Académie française en mars 1816.</html:p>
          </html:div>
       </rico:history>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/000636-050048"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-000636"/>
    </rico:Agent>
 </rdf:RDF>

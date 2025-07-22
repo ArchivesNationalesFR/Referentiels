@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050920">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050920"/>
@@ -10,22 +18,21 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-12-02</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Virginie GREGOIRE)</rico:name>
+            <rico:name xml:lang="fr">Création (par Virginie GREGOIRE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-12-02</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 2 décembre 2014 : revu forme du nom, ajouté indexation activité et lien d'association avec la notice de l'ENS</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 2 décembre 2014 : revu forme du nom, ajouté indexation activité et lien d'association avec la notice de l'ENS</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050920">
-            <rico:isInstantiationOf rdf:resource="record/050920"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050920"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050920</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050920"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050920">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -42,17 +49,19 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1767-01-01</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1847-12-31</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050920-d3m0bl7bbdy-s3moxyf8em8b">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050920"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050920-d3m0bl7bbdy-s3moxyf8em8b"/>
+            <rico:relationHasTarget rdf:resource="agent/050920"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d177196e78">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050920-d3m0bl7bbdy-s3moxyf8em8b"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3m0bl7bbdy-s3moxyf8em8b"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl7bbdy-s3moxyf8em8b"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl7bbdy-s3moxyf8em8b"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d177196e78"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Pierre Laurent Laborie (1767-1847) est un théologien et homme de lettres. Né à Opoul (Pyrénées-Orientales), il suit des études de philosophie. Il enseigne par la suite la théologie à l'université de Perpignan de 1788 à 1791. En 1792, il émigre vers l'Espagne où il sert dans les corps mi-français, mi-espagnols. De retour en France en 1808, il occupe les fonctions de directeur au sein de plusieurs établissements notamment le collège de Saint-Mihiel (Meuse) de 1812 à 1814, puis le collège de Périgueux (Dordogne) de 1814 à 1819 et le collège royal de Toulouse (Haute-Garonne) en 1819. Nommé proviseur du collège royal d'Angers (Maine-et-Loire) en 1920, il consolide ses attaches périgourdines par son union avec Jeanne de Sanzillon de Mensignac.</html:p>
@@ -64,6 +73,7 @@
             <html:p>Son influence dans le mileu de l'enseignement catholique fut considérable.</html:p>
          </html:div>
       </rico:history>
-      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050920-003779-18260101-18301231"/><rico:isOrWasLeaderOf rdf:resource="agent/003779"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/050920-003779-18260101-18301231"/>
+      <rico:isOrWasLeaderOf rdf:resource="agent/003779"/>
    </rico:Agent>
 </rdf:RDF>

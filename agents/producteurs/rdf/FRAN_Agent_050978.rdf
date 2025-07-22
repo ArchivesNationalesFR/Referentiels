@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050978">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050978"/>
@@ -10,25 +18,24 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-09-30</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Florence CLAVAUD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Florence CLAVAUD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-09-30</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 25 février 2015 : création à l'occasion de l'arrivée aux AN des archives de musées nationaux. Infos fournies en partie par A. Clergeau (mission culture)</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 25 février 2015 : création à l'occasion de l'arrivée aux AN des archives de musées nationaux. Infos fournies en partie par A. Clergeau (mission culture)</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice d'autorité BnF n° FRBNF13327512</html:p>
-      </rico:source>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050978">
-            <rico:isInstantiationOf rdf:resource="record/050978"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050978"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050978</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050978"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050978">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -51,34 +58,36 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1911-01-01</rico:beginningDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050978"/>
-            <rico:placeRelationHasSource rdf:resource="place/FRAN_RI_005-d3m08zxsvot-169jsnlf6vj5n"/>
+            <rico:relationHasTarget rdf:resource="agent/050978"/>
+            <rico:relationHasSource rdf:resource="place/FRAN_RI_005-d3m08zxsvot-169jsnlf6vj5n"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/FRAN_RI_005-d3m08zxsvot-169jsnlf6vj5n"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_005-d3m08zxsvot-169jsnlf6vj5n"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050978-d5bhviikk9--y6te63k761ib">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050978"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050978-d5bhviikk9--y6te63k761ib"/>
+            <rico:relationHasTarget rdf:resource="agent/050978"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d178276e102">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050978-d5bhviikk9--y6te63k761ib"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">musée d'histoire hippique</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d178276e102"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Le musée est situé dans le château de Maisons-Laffitte, construit par Mansart en 1641. Le château est acquis par l’État en 1905, afin d'éviter la destruction du monument. En 1911, le chateau-musée est rattaché aux musées nationaux. Il abrite le musée du cheval de course, situé aux sous-sols du château (décret du 28 février 1911). Après 1967, le domaine est géré par le Centre des monuments nationaux.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005420-050978-19670101-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/005420"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/053996-050978"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-053996"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/005420-050978-19670101-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/005420"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/053996-050978"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-053996"/>
    </rico:Agent>
 </rdf:RDF>

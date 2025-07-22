@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051028">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051028"/>
@@ -11,32 +19,30 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-02-23</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Thierry GUILPIN)</rico:name>
+            <rico:name xml:lang="fr">Création (par Thierry GUILPIN)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-05-15</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-02-23</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 23/02/2018 : ajout liens d'identité Wikipédia et BnF</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 23/02/2018 : ajout liens d'identité Wikipédia et BnF</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Notice BnF n° FRBNF13330635.</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/000000012281701X/about"/>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice BnF n° FRBNF13330635.</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/000000012281701X"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Nicolas-Charles_Oudinot"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051028">
-            <rico:isInstantiationOf rdf:resource="record/051028"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051028"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051028</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051028"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051028">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -68,44 +74,50 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1767-04-25</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1847-09-13</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051028-d699msjpuqr-66gt6kmedjiv">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051028"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051028-d699msjpuqr-66gt6kmedjiv"/>
+            <rico:relationHasTarget rdf:resource="agent/051028"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d178844e109">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051028-d699msjpuqr-66gt6kmedjiv"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d178844e109"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051028-d699msk3a25-1xs3m641rhiyg">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051028"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051028-d699msk3a25-1xs3m641rhiyg"/>
+            <rico:relationHasTarget rdf:resource="agent/051028"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d178844e115">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051028-d699msk3a25-1xs3m641rhiyg"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msk3a25-1xs3m641rhiyg"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk3a25-1xs3m641rhiyg"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk3a25-1xs3m641rhiyg"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d178844e115"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051028-d699msiribo--1dn34eg8lht4f-18031130-18040701">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051028"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051028-d699msiribo--1dn34eg8lht4f-18031130-18040701"/>
+            <rico:relationHasTarget rdf:resource="agent/051028"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d178844e121">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051028-d699msiribo--1dn34eg8lht4f-18031130-18040701"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1803-11-30</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1804-07-01</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Ch.-N. Oudinot est député de la Meuse au Corps législatif.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d178844e121"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Charles Nicolas Oudinot (1767-1847) s’engage en 1783 au régiment de Médoc et y demeur jusqu’en avril 1787.</html:p>
@@ -116,9 +128,10 @@
          </html:div>
       </rico:history>
       <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Nicolas-Charles_Oudinot"/>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/051028-051983"/><rico:hasFamilyAssociationWith rdf:resource="agent/051983"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/051028-051983"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/051983"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb133306351#about"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/004335-051028"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-004335"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/004335-051028"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-004335"/>
    </rico:Agent>
 </rdf:RDF>

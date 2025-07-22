@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052023">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052023"/>
@@ -11,36 +19,33 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-17</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Vanessa SZOLLOSI)</rico:name>
+            <rico:name xml:lang="fr">Création (par Vanessa SZOLLOSI)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-12</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Vanessa SZOLLOSI)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Vanessa SZOLLOSI)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-12</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-17</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 17 avril 2018 : ajouté indexation fonctions, remplacé lien hiérarchique par lien d'association</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 17 avril 2018 : ajouté indexation fonctions, remplacé lien hiérarchique par lien d'association</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052023">
-            <rico:isInstantiationOf rdf:resource="record/052023"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052023"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052023</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052023"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052023">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -57,38 +62,42 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-04-09</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-10</rico:endDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052023-d5bhvih1do--ryj2votztf8z">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052023"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052023-d5bhvih1do--ryj2votztf8z"/>
+            <rico:relationHasTarget rdf:resource="agent/052023"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d195333e108">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052023-d5bhvih1do--ryj2votztf8z"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvih1do--ryj2votztf8z"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvih1do--ryj2votztf8z"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d195333e108"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052023-d5bhvij20u-eiobqjac9wuo">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052023"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052023-d5bhvij20u-eiobqjac9wuo"/>
+            <rico:relationHasTarget rdf:resource="agent/052023"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d195333e114">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052023-d5bhvij20u-eiobqjac9wuo"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvij20u-eiobqjac9wuo"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvij20u-eiobqjac9wuo"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d195333e114"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Cabinet de Ségolène Neuville, secrétaire d’État chargée des personnes handicapées et de la lutte contre l’exclusion, au sein des gouvernements successifs de Manuel Vals (25 août 2014-6 décembre 2016) et Bernard Cazeneuve (6 décembre 2016-10 mai 2017), sous la présidence de François Hollande.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/009868-052023-20140409-*"/><rico:isSuccessorOf rdf:resource="agent/009868"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009838-052023-20140409-20170510"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/009838"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057308-052023"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-057308"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/058896-052023"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-058896"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/009868-052023-20140409-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/009868"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009838-052023-20140409-20170510"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/009838"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/057308-052023"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-057308"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/058896-052023"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-058896"/>
    </rico:Agent>
 </rdf:RDF>

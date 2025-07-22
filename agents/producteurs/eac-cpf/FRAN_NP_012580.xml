@@ -4,7 +4,7 @@
    <control>
       <recordId>FRAN_NP_012580</recordId>
       <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE02472</otherRecordId>
-      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceStatus>revised</maintenanceStatus>
       <maintenanceAgency>
          <agencyName>Archives nationales de France</agencyName>
       </maintenanceAgency>
@@ -25,13 +25,26 @@
             <agentType>machine</agentType>
             <agent>Migration ETANOT</agent>
          </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2024-04-03</eventDateTime>
+            <agentType>human</agentType>
+            <agent>François CHANCEREL</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2024-04-04</eventDateTime>
+            <agentType>human</agentType>
+            <agent>François CHANCEREL</agent>
+            <eventDescription>04/04/2024, J. Gaillard : ajout activité 'notaire' | correction de la forme autorisée du nom (ajout d'une majuscule)</eventDescription>
+         </maintenanceEvent>
       </maintenanceHistory>
    </control>
    <cpfDescription>
       <identity>
          <entityType>person</entityType>
-         <nameEntry scriptCode="Latn" localType="autorisée" xml:lang="fre">
-            <part>Champetier de ribes, Paul Louis Ernest</part>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Champetier de Ribes, Paul Louis Ernest</part>
          </nameEntry>
       </identity>
       <description>
@@ -49,19 +62,24 @@
                <placeRole>Lieu de Paris</placeRole>
                <placeEntry localType="arrondissement_actuel"
                            vocabularySource="d3nyv5jo07--11vv6ggdeixfq">01e arrondissement</placeEntry>
-               <placeEntry localType="voie" vocabularySource="d3nz94j4jd--tnojae5ys8e5">castiglione (rue de)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nz94j4jd--tnojae5ys8e5">Castiglione (rue de)</placeEntry>
                <placeEntry localType="nomLieu">10 rue de Castiglione</placeEntry>
             </place>
          </places>
          <functions>
             <function>
-               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à Paris</term>
                <dateRange>
                   <fromDate standardDate="1907-05-02">2 mai 1907</fromDate>
                   <toDate standardDate="1941-11-03">3 novembre 1941</toDate>
                </dateRange>
             </function>
          </functions>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d3nyu9x713-9kcjiv44l4wh">notaire</term>
+            </occupation>
+         </occupations>
       </description>
       <relations>
          <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -74,11 +92,17 @@
                <toDate standardDate="1941-11-03">3 novembre 1941</toDate>
             </dateRange>
          </cpfRelation>
-         <resourceRelation resourceRelationType="creatorOf">
-            <relationEntry localType="archival">minutes</relationEntry>
-            <descriptiveNote>
-               <p>les minutes de ce notaire sont conservées à l'étude</p>
-            </descriptiveNote>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_059928"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Paul Louis Ernest CHAMPETIER de RIBES, 2 mai 1907 - 3 novembre 1941 (étude L)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_060608"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Paul Louis Ernest Champetier de Ribes pour l'étude L</relationEntry>
          </resourceRelation>
       </relations>
    </cpfDescription>

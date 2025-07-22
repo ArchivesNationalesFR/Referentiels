@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/053056">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/053056"/>
@@ -11,31 +19,29 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-17</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Marie FEKKAR)</rico:name>
+            <rico:name xml:lang="fr">Création (par Marie FEKKAR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-16</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Solange BIDOU)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Solange BIDOU)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-17</rico:date>
-            <rico:descriptiveNote xml:lang="fr">17/01/2022, J. Gaillard : ajout lien vers la notice BnF</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">17/01/2022, J. Gaillard : ajout lien vers la notice BnF</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Who's who, édition 2020</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000362139326/about"/>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Who's who, édition 2020</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000362139326"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/053056">
-            <rico:isInstantiationOf rdf:resource="record/053056"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/053056"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_053056</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_053056"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/053056">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -52,184 +58,283 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-01-11</rico:birthDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/053056"/>
-            <rico:placeRelationHasSource rdf:resource="place/Ch%C3%A2tenay-Malabry"/>
+            <rico:relationHasTarget rdf:resource="agent/053056"/>
+            <rico:relationHasSource rdf:resource="place/Ch%C3%A2tenay-Malabry"/>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1992-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Maire</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Ch%C3%A2tenay-Malabry"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Ch%C3%A2tenay-Malabry"/>
-      
-      
-      
-      
-      
-      
-      
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/053056-d3nyug261d--1cyxwnocz7hzo">
+            <rico:relationHasTarget rdf:resource="agent/053056"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d211051e125">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/053056-d3nyug261d--1cyxwnocz7hzo"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyug261d--1cyxwnocz7hzo"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d211051e125"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/053056-d3nyug4qq8-7t9trcdja6ml">
+            <rico:relationHasTarget rdf:resource="agent/053056"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d211051e131">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/053056-d3nyug4qq8-7t9trcdja6ml"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyug4qq8-7t9trcdja6ml"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d211051e131"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/053056-d5bhvih1do--ryj2votztf8z">
+            <rico:relationHasTarget rdf:resource="agent/053056"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d211051e137">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/053056-d5bhvih1do--ryj2votztf8z"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvih1do--ryj2votztf8z"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d211051e137"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/053056-d5bhvikz03--iqa08pprge9n">
+            <rico:relationHasTarget rdf:resource="agent/053056"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d211051e143">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/053056-d5bhvikz03--iqa08pprge9n"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvikz03--iqa08pprge9n"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d211051e143"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/053056-d3nyugaefk--zg9gvxs7butk">
+            <rico:relationHasTarget rdf:resource="agent/053056"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d211051e149">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/053056-d3nyugaefk--zg9gvxs7butk"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugaefk--zg9gvxs7butk"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d211051e149"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/053056-d5bhvilmhx-1p93guv526eqf">
+            <rico:relationHasTarget rdf:resource="agent/053056"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d211051e156">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/053056-d5bhvilmhx-1p93guv526eqf"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvilmhx-1p93guv526eqf"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d211051e156"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/053056-d5bhvimhyx--nnjhi6uln1zi">
+            <rico:relationHasTarget rdf:resource="agent/053056"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d211051e162">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/053056-d5bhvimhyx--nnjhi6uln1zi"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvimhyx--nnjhi6uln1zi"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d211051e162"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/053056-d699msiydj2--15ch8dyky11sp-20020101-20061231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/053056"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/053056-d699msiydj2--15ch8dyky11sp-20020101-20061231"/>
+            <rico:relationHasTarget rdf:resource="agent/053056"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d211051e171">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/053056-d699msiydj2--15ch8dyky11sp-20020101-20061231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msiydj2--15ch8dyky11sp"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2006-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Inspecteur général de l'agriculture</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiydj2--15ch8dyky11sp"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiydj2--15ch8dyky11sp"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d211051e171"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/053056-d699msjyazt-1f0ggfyf3is8u-19920101-19951231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/053056"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/053056-d699msjyazt-1f0ggfyf3is8u-19920101-19951231"/>
+            <rico:relationHasTarget rdf:resource="agent/053056"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d211051e191">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/053056-d699msjyazt-1f0ggfyf3is8u-19920101-19951231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1992-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-12-31</rico:endDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d211051e191"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/053056-d699msiydj2--15ch8dyky11sp-19890101-19901231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/053056"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/053056-d699msiydj2--15ch8dyky11sp-19890101-19901231"/>
+            <rico:relationHasTarget rdf:resource="agent/053056"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d211051e206">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/053056-d699msiydj2--15ch8dyky11sp-19890101-19901231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msiydj2--15ch8dyky11sp"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1989-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1990-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Inspecteur Général de l'Agriculture</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiydj2--15ch8dyky11sp"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiydj2--15ch8dyky11sp"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d211051e206"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/053056-d699msixdvh--wgctct8soc1y-19880101-19911231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/053056"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/053056-d699msixdvh--wgctct8soc1y-19880101-19911231"/>
+            <rico:relationHasTarget rdf:resource="agent/053056"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d211051e226">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/053056-d699msixdvh--wgctct8soc1y-19880101-19911231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1991-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Conseiller technique-Premier Ministre</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d211051e226"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/053056-d-l0jya1ik6x--16fn7glte863o-19880101-20011231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/053056"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/053056-d-l0jya1ik6x--16fn7glte863o-19880101-20011231"/>
+            <rico:relationHasTarget rdf:resource="agent/053056"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d211051e246">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/053056-d-l0jya1ik6x--16fn7glte863o-19880101-20011231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-l0jya1ik6x--16fn7glte863o"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Président du conseil de direction de l'Office de développement de l'économie agricole dans les départements d'outre-mer (Odeadom)</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-l0jya1ik6x--16fn7glte863o"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-l0jya1ik6x--16fn7glte863o"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d211051e246"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/053056-d-1009896yv--378hf9s9l062-19840101-19871231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/053056"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/053056-d-1009896yv--378hf9s9l062-19840101-19871231"/>
+            <rico:relationHasTarget rdf:resource="agent/053056"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d211051e267">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/053056-d-1009896yv--378hf9s9l062-19840101-19871231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-1009896yv--378hf9s9l062"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1984-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Directeur des Affaires sociales-Ministère de l'Agriculture</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-1009896yv--378hf9s9l062"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-1009896yv--378hf9s9l062"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d211051e267"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/053056-d699msixdvh--wgctct8soc1y-19830101-19841231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/053056"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/053056-d699msixdvh--wgctct8soc1y-19830101-19841231"/>
+            <rico:relationHasTarget rdf:resource="agent/053056"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d211051e287">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/053056-d699msixdvh--wgctct8soc1y-19830101-19841231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1984-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Conseiller technique-Ministère de l'Agriculture</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d211051e287"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/053056-d699msixdvh--wgctct8soc1y-19810101-19821231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/053056"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/053056-d699msixdvh--wgctct8soc1y-19810101-19821231"/>
+            <rico:relationHasTarget rdf:resource="agent/053056"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d211051e307">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/053056-d699msixdvh--wgctct8soc1y-19810101-19821231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1981-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1982-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Chef de cabinet-Ministère du plan et de l'aménagement du territoire</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d211051e307"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/053056-d699msjdbik--d0t57s3zykhu-19780101-19811231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/053056"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/053056-d699msjdbik--d0t57s3zykhu-19780101-19811231"/>
+            <rico:relationHasTarget rdf:resource="agent/053056"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d211051e327">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/053056-d699msjdbik--d0t57s3zykhu-19780101-19811231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjdbik--d0t57s3zykhu"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1978-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1981-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Attaché parlementaire de Michel Rocard</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjdbik--d0t57s3zykhu"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjdbik--d0t57s3zykhu"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d211051e327"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Jean-François Merle est né le 11 janvier 1952. Ancien élève de l’Ecole normale supérieure et agrégé d'anglais, il devient assistant parlementaire de Michel Rocard entre 1978 et 1981, puis chef de cabinet quand ce dernier est ministre du Plan et de l'Aménagement du territoire (1981-1983). Il occupe les fonctions de conseiller technique au cabinet du ministre de l’Agriculture Michel Rocard entre 1983 et 1984, où il est plus particulièrement chargé des relations avec le Parlement, des questions hippiques, des DOM-TOM et de la Corse.</html:p>
             <html:p>Il devient ensuite directeur des Affaires sociales dans le même ministère (1984-1987). En 1988, il est nommé conseiller technique au cabinet du Premier Ministre chargé des questions de l’Outre-Mer. Il est alors président du conseil de direction de l'Office de développement de l'économie agricole dans les départements d'outre-mer (Odeadom), charge qu’il assume jusqu’en 2001.</html:p>
             <html:p>Il quitte officiellement le cabinet en 1989 pour être nommé inspecteur général de l'agriculture et nommé à nouveau conseiller technique en 1990. La même année, il devient premier secrétaire de la Fédération des Hauts-de-Seine du Parti socialiste, il occupe cette fonction jusqu’en 1994.</html:p>
-            <html:p/>
             <html:p>Il est choisi pour occuper la fonction de directeur de l’inspection générale de l’agriculture (IGA) entre 2002 et 2006, puis vice-président de de la Commission nationale d’hygiène et de sécurité au travail en agriculture (2006-2008)</html:p>
             <html:p>Il est nommé président du Conseil supérieur de la prud'homie en 2007, il assume cette fonction jusqu’en 2017, puis siège à la formation disciplinaire de recours du Conseil supérieur des administrations parisiennes. Il est élu président du Conseil national de l’inspection du travail (CNIT) en 2008, fonction qu’il quitte en 2016. Il est également membre honoraire du Conseil d’Etat.</html:p>
-            <html:p/>
             <html:p>Jean-François Merle est également maire de Châtenay-Malabry entre 1992 et 1995.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010089-053056-19780101-20160702"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/010089"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000004-053056-19830101-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000004"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000023-053056-19810101-19831231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000023"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/007960-053056-19700101-19871231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/007960"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000134-053056-19810101-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000134"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/007925-053056-19760101-20061231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/007925"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010089-053056-19780101-20160702"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/010089"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000004-053056-19830101-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000004"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000023-053056-19810101-19831231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000023"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/007960-053056-19700101-19871231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/007960"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000134-053056-19810101-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000134"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/007925-053056-19760101-20061231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/007925"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb133238384#about"/>
    </rico:Agent>
 </rdf:RDF>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050464">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050464"/>
@@ -11,41 +19,38 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-02-03</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Pascal DAVID)</rico:name>
+            <rico:name xml:lang="fr">Création (par Pascal DAVID)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-04-04</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 4 avril 2014 : changé forme du nom et dates, ajouté n°s ISNI et notice BnF</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 4 avril 2014 : changé forme du nom et dates, ajouté n°s ISNI et notice BnF</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Pascal DAVID-DORMIEN)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Pascal DAVID-DORMIEN)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-11-07</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-02-03</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Archives nationales, fonds Pierre-Dominique Martin (5Mi/1), [92AP].</rico:source>
-      <rico:source xml:lang="fr">Notice BnF : FRBNF15830035</rico:source>
-      <rico:source xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/Pierre-Dominique_Martin</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000117538147/about"/>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Archives nationales, fonds Pierre-Dominique Martin (5Mi/1), [92AP].</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice BnF : FRBNF15830035</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/Pierre-Dominique_Martin</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000117538147"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Pierre-Dominique_Martin"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050464">
-            <rico:isInstantiationOf rdf:resource="record/050464"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050464"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050464</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050464"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050464">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -72,94 +77,102 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1771-09-11</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1855-05-11</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050464"/>
-            <rico:placeRelationHasSource rdf:resource="place/Rions%20%28Gironde%29"/>
+            <rico:relationHasTarget rdf:resource="agent/050464"/>
+            <rico:relationHasSource rdf:resource="place/Rions%20%28Gironde%29"/>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1830-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1848-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">maire de Rions.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Rions%20%28Gironde%29"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Rions%20%28Gironde%29"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050464"/>
-            <rico:placeRelationHasSource rdf:resource="place/%C3%89gypte"/>
+            <rico:relationHasTarget rdf:resource="agent/050464"/>
+            <rico:relationHasSource rdf:resource="place/%C3%89gypte"/>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1798-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1801-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">membre de l'expédition d'Égypte.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/%C3%89gypte"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/%C3%89gypte"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050464-d699msjyazt-1f0ggfyf3is8u-18300101-18481231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050464"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050464-d699msjyazt-1f0ggfyf3is8u-18300101-18481231"/>
+            <rico:relationHasTarget rdf:resource="agent/050464"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d171116e191">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050464-d699msjyazt-1f0ggfyf3is8u-18300101-18481231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1830-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1848-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">maire de Rions (Gironde).</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d171116e191"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050464-d699msj3i51--hevk1gms21cg-18150101-18151231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050464"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050464-d699msj3i51--hevk1gms21cg-18150101-18151231"/>
+            <rico:relationHasTarget rdf:resource="agent/050464"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d171116e211">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050464-d699msj3i51--hevk1gms21cg-18150101-18151231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1815-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1815-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">autobiographie sur la Campagne d'Égypte.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d171116e211"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050464-d699msj02xm-19qbb7wdtto3j-17920101-17981231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050464"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050464-d699msj02xm-19qbb7wdtto3j-17920101-17981231"/>
+            <rico:relationHasTarget rdf:resource="agent/050464"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d171116e231">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050464-d699msj02xm-19qbb7wdtto3j-17920101-17981231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1792-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1798-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">professeur de mathématiques.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d171116e231"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050464-d699msjgtw3-1ton3i1q2op31-17920101-18301231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050464"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050464-d699msjgtw3-1ton3i1q2op31-17920101-18301231"/>
+            <rico:relationHasTarget rdf:resource="agent/050464"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d171116e251">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050464-d699msjgtw3-1ton3i1q2op31-17920101-18301231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjgtw3-1ton3i1q2op31"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1792-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1830-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">ingénieur en chef des Ponts et Chaussées.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjgtw3-1ton3i1q2op31"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjgtw3-1ton3i1q2op31"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d171116e251"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Né à Toulouse en septembre 1771, Pierre Jacques Dominique Martin est le fils de Jean-François Martin et de Gabrielle Françoise Savy.</html:p>
@@ -171,7 +184,7 @@
       </rico:history>
       <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Pierre-Dominique_Martin"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb15830035h#about"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054145-050464"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-054145"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054145-050464"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054145"/>
    </rico:Agent>
 </rdf:RDF>

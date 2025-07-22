@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050941">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050941"/>
@@ -10,22 +18,21 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-12-16</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Florence CLAVAUD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Florence CLAVAUD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-12-16</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 16 décembre 2014 : notice créée sur demande de C. Martin (mission des archives auprès des services du Premier ministre)</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 16 décembre 2014 : notice créée sur demande de C. Martin (mission des archives auprès des services du Premier ministre)</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050941">
-            <rico:isInstantiationOf rdf:resource="record/050941"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050941"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050941</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050941"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050941">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -42,42 +49,44 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-11-30</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-09</rico:endDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050941"/>
-            <rico:placeRelationHasSource rdf:resource="place/Notre-Dame%20des%20Landes"/>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:relationHasTarget rdf:resource="agent/050941"/>
+            <rico:relationHasSource rdf:resource="place/Notre-Dame%20des%20Landes"/>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">lieu d'implantation choisi pour l'aéroport du Grand-Ouest</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Notre-Dame%20des%20Landes"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Notre-Dame%20des%20Landes"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050941-d3nyugaefk--zg9gvxs7butk">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050941"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050941-d3nyugaefk--zg9gvxs7butk"/>
+            <rico:relationHasTarget rdf:resource="agent/050941"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d177445e105">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050941-d3nyugaefk--zg9gvxs7butk"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugaefk--zg9gvxs7butk"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugaefk--zg9gvxs7butk"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d177445e105"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050941-d3nyuhp1um--qolq4osvi6b5">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050941"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050941-d3nyuhp1um--qolq4osvi6b5"/>
+            <rico:relationHasTarget rdf:resource="agent/050941"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d177445e111">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050941-d3nyuhp1um--qolq4osvi6b5"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhp1um--qolq4osvi6b5"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhp1um--qolq4osvi6b5"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d177445e111"/>
       <rico:authorizingMandate rdf:parseType="Literal">
          <html:p xml:lang="fr">lettre de mission du Premier ministre (10 décembre 2012)</html:p>
       </rico:authorizingMandate>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      <rico:generalDescription rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Organisation interne ou généalogie</h4>
             <html:p>Les 3 membres de la Commission étaient :</html:p>
@@ -85,20 +94,17 @@
             <html:p>- Claude Brévan est architecte. Elle a été déléguée interministérielle à la ville et au développement social urbain (1988-2005), puis directrice adjointe de l’architecture et de l’urbanisme au ministère de l’Équipement. Elle est régulièrement membre ou présidente de commissions de débats publics sur des projets de grands équipements.</html:p>
             <html:p>- Rouchdy Kbaier est juriste et membre du Conseil général de l’environnement et du développement durable. Il a été conseiller auprès de Dominique Voynet, ministre de l'Aménagement du territoire et de l’environnement (1997-2001) puis directeur-adjoint du cabinet d’Yves Cochet, en charge notamment des questions de protection et d’aménagement du territoire (2001-2002). Spécialiste des questions d’environnement et du droit communautaire, il a été directeur du Parc national des Pyrénées (2002-2008).</html:p>
          </html:div>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Le projet de transfert de l’aéroport de Nantes-Atlantique vers le site de Notre-Dame-des-Landes, pour devenir l’aéroport du Grand Ouest, a fait l’objet depuis 1965 de nombreuses études. Soumis à débat public en 2002 et à enquête publique en 2006, il a été déclaré d’utilité publique en 2008. Le 30 décembre 2010, l’État a signé avec la société Vinci le contrat de concession pour la construction et l’exploitation du nouvel aéroport qui a vocation à être mis en service en 2017. Si, dès le début, des oppositions à la construction de cet équipement se manifestent, elles sont de plus en plus vives conduisant notamment à des interventions des forces de l’ordre à l’automne 2012. Le 30 novembre 2012, dans un souci d’apaisement, le Premier ministre Jean-Marc Ayrault décide la mise en place d’une Commission du dialogue composée de Claude Chéreau, Président, de Claude Brévan, et de Rouchdy Kbaier.</html:p>
-            <html:p/>
             <html:p>La lettre de mission en date du 10 décembre 2012 précise la mission qui lui est confiée :</html:p>
             <html:p>- Rencontrer toutes les parties prenantes au projet afin qu’elles puissent exprimer leur analyse des enjeux économiques, sociaux et environnementaux</html:p>
             <html:p>- Apporter aux parties les précisions complémentaires en s’appuyant sur les éclairages techniques nécessaires</html:p>
             <html:p>- Remettre dans un délai de quatre mois une synthèse des auditions et des propositions notamment sur la manière de poursuivre le dialogue.</html:p>
             <html:p>Après une première connaissance du dossier, la Commission a engagé un cycle de 93 auditions le 21 décembre 2012 qui s’est achevé le 15 mars 2013. Plus de 200 personnes ont ainsi été entendues. Ella a également reçu des documents émanant d’autres personnes ou organisations. La Commission a par ailleurs organisé des réunions à caractère technique avec les administrations centrales du ministère de l’Écologie, du développement durable et de l’Énergie et les administrations déconcentrées de la région Pays-de-la-Loire (notamment préfecture de Loire-Atlantique).</html:p>
             <html:p>Au terme de ces auditions fortement marquées par la volonté de chaque intervenant de convaincre la Commission de la justesse de ses arguments, la Commission a rendu compte de la radicalisation des opinions et a regretté que ne se dégage à aucun moment un consensus. Elle-même a souvent été prise à tort comme une instance d’arbitrage.</html:p>
-            <html:p/>
             <html:p>Tout en gardant son indépendance et sa spécificité et comme cela lui a été demandé dans la lettre de mission, la Commission a également travaillé en cohérence avec le collège des experts scientifiques de la « loi sur l’eau » mis en place par le préfet de région et la Commission agricole créée par Stéphane Le Foll, ministre de l’Agriculture, de l’agroalimentaire et de la forêt, qui ont tous deux remis un rapport en avril 2013.</html:p>
-            <html:p/>
             <html:p>Le rapport final de la Commission du dialogue a été remis à Frédéric Cuvillier, ministre délégué en charge des Transports, le 9 avril 2013. Il inventorie l’ensemble des arguments, établit une mise en perspective pour une meilleure compréhension des enjeux et propose des améliorations dans l’aménagement du projet.</html:p>
          </html:div>
       </rico:history>

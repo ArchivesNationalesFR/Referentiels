@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051356">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051356"/>
@@ -11,36 +19,34 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-10-20</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Pascal DAVID-DORMIEN)</rico:name>
+            <rico:name xml:lang="fr">Création (par Pascal DAVID-DORMIEN)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-08-10</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Elsa Camus, 17 octobre 2016 : ajout lien identité, modification historique (conjugaison), ajout autres formes du nom</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Elsa Camus, 17 octobre 2016 : ajout lien identité, modification historique (conjugaison), ajout autres formes du nom</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-10-20</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice BNF: FRBNF11889823</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/Roland_Bacri</html:p>
-      </rico:source>
-      <rico:hasSource rdf:resource="https://fr.wikipedia.org/wiki/Roland_Bacri"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="https://fr.wikipedia.org/wiki/Roland_Bacri"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051356">
-            <rico:isInstantiationOf rdf:resource="record/051356"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051356"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051356</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051356"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051356">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -78,34 +84,38 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1926-04-01</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-05-24</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051356-d699msizce3-1fkn61hd3lpjw">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051356"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051356-d699msizce3-1fkn61hd3lpjw"/>
+            <rico:relationHasTarget rdf:resource="agent/051356"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d183809e117">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051356-d699msizce3-1fkn61hd3lpjw"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msizce3-1fkn61hd3lpjw"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Canard enchaîné (1956-1999)</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msizce3-1fkn61hd3lpjw"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msizce3-1fkn61hd3lpjw"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d183809e117"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051356-d699msj3i51--hevk1gms21cg">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051356"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051356-d699msj3i51--hevk1gms21cg"/>
+            <rico:relationHasTarget rdf:resource="agent/051356"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d183809e128">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051356-d699msj3i51--hevk1gms21cg"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Ouvrages humoristiques et divers</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d183809e128"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Né à Alger en avril 1926, dans le quartier populaire européen de Bab-El-Oued, il entre dès 1953 au<html:i>Canard Sauvage</html:i>de Bernard Lacache à Alger, puis à Paris par intermittence au<html:i>Canard enchaîné</html:i>dès 1953 puis régulièrement trois ans plus tard. Il est collaborateur du journal jusqu'à sa retraite en 1999.</html:p>

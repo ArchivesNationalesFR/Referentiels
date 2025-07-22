@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051982">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051982"/>
@@ -11,33 +19,31 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-09</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Alexis DOUCHIN)</rico:name>
+            <rico:name xml:lang="fr">Création (par Alexis DOUCHIN)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-02-15</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-09</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">« 589AP. Fonds d’Avaray », in État sommaire des fonds d’archives privées, séries AP (1 à 629 AP) et AB XIX, Paris, Centre historique des Archives nationales, 2004, p. 1088-1090.</rico:source>
-      <rico:source xml:lang="fr">Notice BnF : FRBNF12727121 (identifiant ARK : http://catalogue.bnf.fr/ark:/12148/cb10740822q).</rico:source>
-      <rico:source xml:lang="fr">« Antoine Louis François de Béziade », in Wikipédia, encyclopédie collaborative, en ligne : http://fr.wikipedia.org/wiki/Antoine_Louis_Fran%C3%A7ois_de_B%C3%A9ziade (consulté en février 2018).</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/000000001059611X/about"/>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">« 589AP. Fonds d’Avaray », in État sommaire des fonds d’archives privées, séries AP (1 à 629 AP) et AB XIX, Paris, Centre historique des Archives nationales, 2004, p. 1088-1090.</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice BnF : FRBNF12727121 (identifiant ARK : http://catalogue.bnf.fr/ark:/12148/cb10740822q).</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">« Antoine Louis François de Béziade », in Wikipédia, encyclopédie collaborative, en ligne : http://fr.wikipedia.org/wiki/Antoine_Louis_Fran%C3%A7ois_de_B%C3%A9ziade (consulté en février 2018).</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/000000001059611X"/>
       <rdfs:seeAlso rdf:resource="http://fr.wikipedia.org/wiki/Antoine_Louis_Fran%C3%A7ois_de_B%C3%A9ziade"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051982">
-            <rico:isInstantiationOf rdf:resource="record/051982"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051982"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051982</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051982"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051982">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -73,24 +79,26 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1759-01-08</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1811-06-04</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/051982"/>
-            <rico:placeRelationHasSource rdf:resource="place/L%27Isle-Jourdain"/>
+            <rico:relationHasTarget rdf:resource="agent/051982"/>
+            <rico:relationHasSource rdf:resource="place/L%27Isle-Jourdain"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/L%27Isle-Jourdain"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/L%27Isle-Jourdain"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051982-d699msjpuqr-66gt6kmedjiv">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051982"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051982-d699msjpuqr-66gt6kmedjiv"/>
+            <rico:relationHasTarget rdf:resource="agent/051982"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d194341e156">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051982-d699msjpuqr-66gt6kmedjiv"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d194341e156"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Fils aîné de Claude-Antoine de Béziade d’Avaray (1740-1829), Antoine Louis François de Béziade (ou Bésiade), d’abord comte d’Avaray, entre au service en 1774 comme sous-lieutenant dans le régiment de La Couronne, commandé par son père, y est nommé capitaine en 1777, puis, en 1779, aide-maréchal-général des logis du corps d'armée commandé par le maréchal de Vaux, et destiné à effectuer une descente en Angleterre. En 1782, le comte d'Avaray sert au siège de Gibraltar, en qualité d'aide de camp du duc de Crillon. On le nomme colonel en second du régiment de Boulonnais en 1782, et il le commande en chef, en 1788, au camp de Saint-Omer.</html:p>
@@ -101,13 +109,15 @@
             <html:p>Avaray meurt sans descendance dans l'île de Madère le 4 juin 1811 où il était allé pour tenter de rétablir sa santé.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051607-051982-17750101-18110604"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/051607"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050231-051982-17590108-18110604"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050231"/>
-      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Antoine_Louis_Fran%C3%A7ois_de_B%C3%A9ziade"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/051607-051982-17750101-18110604"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/051607"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050231-051982-17590108-18110604"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050231"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb10740822q#about"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056725-051982"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-056725"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/005783-051982"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-005783"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/056725-051982"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-056725"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/005783-051982"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-005783"/>
    </rico:Agent>
 </rdf:RDF>

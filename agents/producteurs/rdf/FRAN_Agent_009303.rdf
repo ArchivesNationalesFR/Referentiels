@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/009303">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/009303"/>
@@ -11,33 +19,30 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-07-06</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Dérivation
-                (Import_SIA)</rico:name>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Constance DE VERGNETTE DE LAMOTTE)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Constance DE VERGNETTE DE LAMOTTE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-12-12</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Il n'existe pas de notice Wikipedia.</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Il n'existe pas de notice Wikipedia.</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-07-06</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Archives nationales, fonds du Groupement de l'Industrie sidérurgique : 66 AS.</rico:source>
-      <rico:source xml:lang="fr">Notice de collectivité BnF : FRBNF12293535</rico:source>
-      <rico:source xml:lang="fr">Informations extraites de l'introduction de l'instrument de recherche, 1992.</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121512230/about"/>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Archives nationales, fonds du Groupement de l'Industrie sidérurgique : 66 AS.</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice de collectivité BnF : FRBNF12293535</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Informations extraites de l'introduction de l'instrument de recherche, 1992.</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121512230"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/009303">
-            <rico:isInstantiationOf rdf:resource="record/009303"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/009303"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_009303</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
@@ -45,7 +50,7 @@
             <rico:identifier>9912/AS066</rico:identifier>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/009303">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -77,39 +82,42 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1946-07-30</rico:beginningDate>
       <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5blonav6b-7jwfyyjh3efl"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/009303-d3nyuhqsd2--1a8m2jo9iv12q">
-            <rico:performanceRelationHasTarget rdf:resource="agent/009303"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/009303-d3nyuhqsd2--1a8m2jo9iv12q"/>
+            <rico:relationHasTarget rdf:resource="agent/009303"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d94495e139">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/009303-d3nyuhqsd2--1a8m2jo9iv12q"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhqsd2--1a8m2jo9iv12q"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhqsd2--1a8m2jo9iv12q"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d94495e139"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/009303-d5bhvimlul-1gvgx3n53j0e">
-            <rico:performanceRelationHasTarget rdf:resource="agent/009303"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/009303-d5bhvimlul-1gvgx3n53j0e"/>
+            <rico:relationHasTarget rdf:resource="agent/009303"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d94495e145">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/009303-d5bhvimlul-1gvgx3n53j0e"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvimlul-1gvgx3n53j0e"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvimlul-1gvgx3n53j0e"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d94495e145"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/009303-d5bhviluwl--h5xbasqtef53">
-            <rico:performanceRelationHasTarget rdf:resource="agent/009303"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/009303-d5bhviluwl--h5xbasqtef53"/>
+            <rico:relationHasTarget rdf:resource="agent/009303"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d94495e151">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/009303-d5bhviluwl--h5xbasqtef53"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviluwl--h5xbasqtef53"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviluwl--h5xbasqtef53"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d94495e151"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Créé le 30 juillet 1946 sous la forme d’une société anonyme appelée « Groupement de l’industrie sidérurgique pour favoriser la reprise et le développement de la production », le G.I.S. fait partie des groupements professionnels constitués après la Seconde Guerre mondiale pour développer l’appel à l’épargne des Français dans le dessein de financer la reconstruction puis le développement industriel. C’était même le plus considérable de ces groupements, puisqu’il avait emprunté sur le marché français, jusqu’en 1977, date de son dernier emprunt sur ce marché, 14 185 500 000 F, soit 41,6% du total des montants émis par l’ensemble des groupements depuis 1946.</html:p>
@@ -118,32 +126,31 @@
             <html:p>Le G.I.S. était très lié à la Chambre syndicale de la sidérurgie française dans les locaux de laquelle il a eu son siège à plusieurs reprises ; son président directeur général et la plupart de ses dirigeants y détenaient également de hautes responsabilités ; ses actionnaires en étaient membres. De ce fait, les deux organismes travaillaient le plus souvent en étroite collaboration.</html:p>
             <html:p>Le rôle du G.I.S. est double. Il intervient comme caution en faveur de certains de ses actionnaires à l’occasion de prêts accordés par l’Etat, par les établissements spécialisés (Crédit national, Fonds de développement économique et social, Caisse des dépôts et consignations) et par la Communauté européenne du charbon et de l’acier ; et surtout il contracte des emprunts dont le produit est réparti entre les sociétés actionnaires pour le financement de leurs investissements.</html:p>
             <html:p>De 1953 à 1970, le G.I.S. a lancé chaque année un emprunt sur le marché français, puis deux entre 1971 et 1977. Il a en outre émis sur le marché international et à l’étranger, de 1974 à 1978, des emprunts en devises pour une contrevaleur globale de 2 028 000 000 F. Le montant de chaque emprunt est égal au total des demandes des sociétés acceptées par le G.I.S.</html:p>
-            <html:p/>
             <html:p>Chaque société bénéficiant de l’une ou l’autre de ces procédures (caution ou emprunt) s’engage à verser au G.I.S., à titre de garantie, une somme dont l’importance est liée à la nature et au montant du concours apporté par celui-ci. La fraction de cette somme mise effectivement à la disposition du G.I.S., dite « part appelée », est affectée soit au capital soit à des fonds de garantie du Groupement. Les capitaux gérés par le G.I.S. sont placés, pour l’essentiel, en obligations, mais aussi en actions, principalement de la Société d’investissement à capital variable (Sicav).</html:p>
-            <html:p/>
             <html:p>Le G.I.S. détient ou a détenu ainsi des participations majoritaires dans plusieurs sociétés, notamment dans la société d’investissement Acier-investissement, devenue en 1981 la Sicav Action-investissement (plus de 60 % des actions) ; dans Lotrasid, établissement financier de crédit-bail qui avait pour activités la location de matériels de manutention et de transports et l’exploitation d’un parc de wagons de particuliers et de transcontainers (sa participation à cette société était supérieur à 85 % mais son contrôle fut cédé en 1981) ; dans la Société sidérurgique de participations pour le développement économique (plus de 98 % de ses actions).</html:p>
-            <html:p/>
             <html:p>Depuis 1978, à la suite de la prise de contrôle par l’Etat des principales sociétés sidérurgiques, le G.I.S. n’a plus émis d’emprunts et son activité se limite à la gestion des emprunts en cours et de ses fonds de couverture. En 1991, il fusionna avec la Société de valeurs industrielles et commerciales : cette nouvelle société a repris le nom de Groupement de l’industrie sidérurgique.</html:p>
          </html:div>
       </rico:history>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb12293535d#about"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009301-009303-19460730-19911231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/009301"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009301-009303-19460730-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/009301"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/014577-009303"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-014577"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/022071-009303"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-022071"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/026474-009303"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-026474"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/021875-009303"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-021875"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/019746-009303"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-019746"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/019739-009303"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-019739"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/019732-009303"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-019732"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/022073-009303"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-022073"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009301-009303-19460730-19911231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/009301"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009301-009303-19460730-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/009301"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/014577-009303"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-014577"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/022071-009303"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-022071"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/026474-009303"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-026474"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/021875-009303"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-021875"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/019746-009303"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-019746"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/019739-009303"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-019739"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/019732-009303"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-019732"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/022073-009303"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-022073"/>
    </rico:Agent>
 </rdf:RDF>

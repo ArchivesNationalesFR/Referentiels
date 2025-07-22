@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050952">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050952"/>
@@ -10,32 +18,31 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-01-16</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Marine ZELVERTE)</rico:name>
+            <rico:name xml:lang="fr">Création (par Marine ZELVERTE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-01-16</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 6 janvier 2015 : revu date de début, ajouté descripteurs activités, liens d'association, début de révision des liens IR. M. Zelverte, 12 janvier 2015: correction liens IR de type sujet, ajouts dans les sources avec cotes AN. </rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 6 janvier 2015 : revu date de début, ajouté descripteurs activités, liens d'association, début de révision des liens IR. M. Zelverte, 12 janvier 2015: correction liens IR de type sujet, ajouts dans les sources avec cotes AN. </rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice d'autorité BnF n° FRBNF12311595.</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Dossier d'élève à l'ENA (janvier 1951- septembre 1953): Archives nationales (France), 19820286/72, dossier 474.</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Relations de Claude Contamine, président de FR3, avec Jacqueline Baudrier, PDG de Radio France: Archives nationales (France), 19890128/41, 19890128/77-19890128/78.</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000045003396/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000045003396"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050952">
-            <rico:isInstantiationOf rdf:resource="record/050952"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050952"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050952</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050952"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050952">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -52,65 +59,73 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1929-08-29</rico:birthDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050952-d3m0bl72k1u--1fkdzqu8xv3r8">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050952"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050952-d3m0bl72k1u--1fkdzqu8xv3r8"/>
+            <rico:relationHasTarget rdf:resource="agent/050952"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d177568e92">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050952-d3m0bl72k1u--1fkdzqu8xv3r8"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3m0bl72k1u--1fkdzqu8xv3r8"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl72k1u--1fkdzqu8xv3r8"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl72k1u--1fkdzqu8xv3r8"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d177568e92"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050952-d699msjqtlt--8qlp1v5rp9ov-19710101-19721231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050952"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050952-d699msjqtlt--8qlp1v5rp9ov-19710101-19721231"/>
+            <rico:relationHasTarget rdf:resource="agent/050952"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d177568e98">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050952-d699msjqtlt--8qlp1v5rp9ov-19710101-19721231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjqtlt--8qlp1v5rp9ov"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1971-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1972-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">C. Contamine, consul général à Milan</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjqtlt--8qlp1v5rp9ov"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjqtlt--8qlp1v5rp9ov"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d177568e98"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050952-d-l0jya1ik6x--16fn7glte863o-19640101-19891231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050952"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050952-d-l0jya1ik6x--16fn7glte863o-19640101-19891231"/>
+            <rico:relationHasTarget rdf:resource="agent/050952"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d177568e118">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050952-d-l0jya1ik6x--16fn7glte863o-19640101-19891231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-l0jya1ik6x--16fn7glte863o"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1964-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1989-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">C. Contamine, directeur général adjoint de l'ORTF (1964-1967 et 1973-1974) ; PDG de France régions 3 (1975-1981) puis d'Antenne 2 (1986-1989).</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-l0jya1ik6x--16fn7glte863o"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-l0jya1ik6x--16fn7glte863o"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d177568e118"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050952-d699msixdvh--wgctct8soc1y-19590101-19641231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050952"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050952-d699msixdvh--wgctct8soc1y-19590101-19641231"/>
+            <rico:relationHasTarget rdf:resource="agent/050952"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d177568e138">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050952-d699msixdvh--wgctct8soc1y-19590101-19641231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1959-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1964-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">C. Contamine, membre du cabinet du Premier Ministre Michel Debré en 1959. En décembre 1962, directeur de cabinet d'Alain Peyrefitte, alors secrétaire d'Etat puis ministre chargé de l'Information.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d177568e138"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Claude Contamine, né le 29 août 1929 à Metz, est diplômé de l'ENA en 1953 (promotion Paul Cambon). Il commence sa carrière en administration centrale au ministère des Affaires Étrangères, puis entre au cabinet du Premier Ministre Michel Debré en 1959. En décembre 1962, il accepte de devenir directeur de cabinet d'Alain Peyrefitte, alors secrétaire d'Etat puis ministre chargé de l'Information.</html:p>
@@ -121,13 +136,19 @@
             <html:p>De 1973 à 1980, il est membre du Haut Conseil de l'audiovisuel.</html:p>
          </html:div>
       </rico:history>
-      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050952-000347-19640101-19741231"/><rico:isOrWasLeaderOf rdf:resource="agent/000347"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000096-050952-19810101-19861231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000096"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000236-050952-19730101-19801231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000236"/>
-      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050952-010125-19750101-19811231"/><rico:isOrWasLeaderOf rdf:resource="agent/010125"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/007594-d_1-050952"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/007594-d_1"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/050189-cuqwzu8bc3r--rahl7li3flvv-050952"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/050189-cuqwzu8bc3r--rahl7li3flvv"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/050952-000347-19640101-19741231"/>
+      <rico:isOrWasLeaderOf rdf:resource="agent/000347"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000096-050952-19810101-19861231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000096"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050952-052794-19590730-19620414"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/052794"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000236-050952-19730101-19801231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000236"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/050952-010125-19750101-19811231"/>
+      <rico:isOrWasLeaderOf rdf:resource="agent/010125"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/007594-d_1-050952"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/007594-d_1"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/050189-cuqwzu8bc3r--rahl7li3flvv-050952"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/050189-cuqwzu8bc3r--rahl7li3flvv"/>
    </rico:Agent>
 </rdf:RDF>

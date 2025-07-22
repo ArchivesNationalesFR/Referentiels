@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:dcterms="http://purl.org/dc/terms/"
-         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/FRAN_RI_012-d-6wx6gh7i4--45j5379j9zgu">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/FRAN_RI_012-d-6wx6gh7i4--45j5379j9zgu"/>
@@ -16,20 +16,23 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl002"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
-      <rico:source xml:lang="fr">FRBNF12449119</rico:source>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice BnF n° : FRBNF12449119</rico:recordResourceSourceOfInformation>
+      <!--Contenu de biblio :  Source : Archives nationales MC/ET/XXIX/1521, dossier
+        46.-->
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/FRAN_RI_012-d-6wx6gh7i4--45j5379j9zgu">
-            <rico:isInstantiationOf rdf:resource="record/FRAN_RI_012-d-6wx6gh7i4--45j5379j9zgu"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/FRAN_RI_012-d-6wx6gh7i4--45j5379j9zgu"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_RI_012-d-6wx6gh7i4--45j5379j9zgu</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/FRAN_RI_012-d-6wx6gh7i4--45j5379j9zgu">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/FRAN_RI_012-d-6wx6gh7i4--45j5379j9zgu"/>
       <rdfs:label xml:lang="fr">Foucault, Léon (1819-1868)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Foucault, Léon (1819-1868)</skos:prefLabel>
       <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/FRAN_RI_012-d-6wx6gh7i4--45j5379j9zgu-Foucault%2C%20L%C3%A9on%20%281819-1868%29">
             <rdfs:label xml:lang="fr">Foucault, Léon (1819-1868)</rdfs:label>
@@ -43,20 +46,26 @@
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1868-02-11</rico:deathDate>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
-            <html:p>Physicien, inventeur du gyroscope et du pendule qui porte son nom. - Docteur ès sciences (Paris, 1853). - A notamment était chargé (1862), de mesurer la vitesse de la lumière, à la demande d'Urbain Le Verrier (1811-1877), directeur de l'Observatoire de Paris. - Membre de l'Institut, Académie des sciences (élu en 1865).</html:p>
+            <html:p>Physicien, inventeur du gyroscope et du pendule qui porte son nom. - Docteur ès sciences
+        (Paris, 1853). - A notamment était chargé (1862), de mesurer la vitesse de la lumière, à la
+        demande d'Urbain Le Verrier (1811-1877), directeur de l'Observatoire de Paris. - Membre de
+        l'Institut, Académie des sciences (élu en 1865).</html:p>
          </html:div>
       </rico:history>
       <rico:isOrWasMainSubjectOf>
          <rico:RecordResource>
             <rico:title xml:lang="fr">Archives nationales MC/ET/XXIX/1521, dossier 46.</rico:title>
             <rdfs:label xml:lang="fr">Archives nationales MC/ET/XXIX/1521, dossier 46.</rdfs:label>
-            <rico:hasInstantiation>
+            <rico:hasOrHadInstantiation>
                <rico:Instantiation>
                   <rico:title xml:lang="fr">Archives nationales MC/ET/XXIX/1521, dossier 46.</rico:title>
                   <rdfs:label xml:lang="fr">Archives nationales MC/ET/XXIX/1521, dossier 46.</rdfs:label>
                </rico:Instantiation>
-            </rico:hasInstantiation>
+            </rico:hasOrHadInstantiation>
          </rico:RecordResource>
       </rico:isOrWasMainSubjectOf>
+      <!--Contenu de biblio : Notice BnF n° : FRBNF12449119 -->
+      <!--Contenu de biblio :  Source : Archives nationales MC/ET/XXIX/1521, dossier
+        46.-->
    </rico:Agent>
 </rdf:RDF>

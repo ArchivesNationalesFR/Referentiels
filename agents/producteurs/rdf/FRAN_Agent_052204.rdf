@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052204">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052204"/>
@@ -11,39 +19,35 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-06-17</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Edith PIRIO)</rico:name>
+            <rico:name xml:lang="fr">Création (par Edith PIRIO)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-02-22</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Catherine MÉROT)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Catherine MÉROT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-10</rico:date>
-            <rico:descriptiveNote xml:lang="fr"/>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Cécile FABRIS)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Cécile FABRIS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-06-17</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 17/06/2019 : absence d'identifiant ISNI, BNF, wikipédia</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 17/06/2019 : absence d'identifiant ISNI, BNF, wikipédia</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Légifrance.</rico:source>
-      <rico:source xml:lang="fr">Informations fournies par la Mission des archives et du patrimoine culturel du ministère de l'Éducation nationale et de la Jeunesse, et du ministère de l'Enseignement supérieur, de la Recherche et de l'Innovation</rico:source>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Légifrance.</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Informations fournies par la Mission des archives et du patrimoine culturel du ministère de l'Éducation nationale et de la Jeunesse, et du ministère de l'Enseignement supérieur, de la Recherche et de l'Innovation</rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052204">
-            <rico:isInstantiationOf rdf:resource="record/052204"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052204"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052204</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052204"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052204">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -67,43 +71,45 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-07-20</rico:beginningDate>
       <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5blonaxbw--1mt8t42bokzts"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052204-d3nyuhrig1--3acyzmp9v988">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052204"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052204-d3nyuhrig1--3acyzmp9v988"/>
+            <rico:relationHasTarget rdf:resource="agent/052204"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d198251e126">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052204-d3nyuhrig1--3acyzmp9v988"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhrig1--3acyzmp9v988"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhrig1--3acyzmp9v988"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d198251e126"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052204-d3nyuicsjl-tb7ampjet3iu">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052204"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052204-d3nyuicsjl-tb7ampjet3iu"/>
+            <rico:relationHasTarget rdf:resource="agent/052204"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d198251e132">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052204-d3nyuicsjl-tb7ampjet3iu"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuicsjl-tb7ampjet3iu"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuicsjl-tb7ampjet3iu"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d198251e132"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052204-d5bhvihav4-158rf7kzztoxz">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052204"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052204-d5bhvihav4-158rf7kzztoxz"/>
+            <rico:relationHasTarget rdf:resource="agent/052204"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d198251e138">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052204-d5bhvihav4-158rf7kzztoxz"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvihav4-158rf7kzztoxz"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvihav4-158rf7kzztoxz"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d198251e138"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Le bureau des diplômes professionnels (DGESCO A2-3) a été créé par arrêté du 20 juillet 2010 au sein de la Direction générale de l'enseignement scolaire / Service de l'instruction publique et de l'action pédagogique / Sous-direction des lycées et de la formation professionnelle tout au long de la vie. Il remplace les anciens bureaux du partenariat avec le monde professionnel et commissions professionnelles (DGESCO A2-1) et de la réglementation des diplômes professionnels (DGESCO A2-2) au sein de l'ancienne sous-direction de la formation professionnelle.</html:p>
-            <html:p/>
             <html:p>Les missions de réglementation des diplômes et de secrétariat des commissions professionnelles ont été régulièrement rassemblées et séparées :</html:p>
             <html:p>- 2006-2010 : DGESCO A2-1 : Bureau du partenariat avec le monde professionnel, et DGESCO A2-2 : Bureau de la réglementation des diplômes professionnels.</html:p>
             <html:p>[Sous-direction de la formation professionnelle ; Direction générale des enseignements scolaires]</html:p>
@@ -133,7 +139,6 @@
             <html:p>- 1944-1961 : Bureau de liaison avec la profession.</html:p>
             <html:p>[Direction des enseignements techniques et professionnels, Direction générale de l'organisation des programmes scolaires (1960-1961)]</html:p>
             <html:p>[Sous-direction des liaisons et actions professionnelles, Direction des enseignements techniques et professionnels (1944-1960)]</html:p>
-            <html:p/>
             <html:p>Le bureau des diplômes professionnels a pour missions :</html:p>
             <html:p>• la définition des diplômes professionnels ;</html:p>
             <html:p>• la réglementation des diplômes professionnels et des formations diplômantes ;</html:p>
@@ -141,10 +146,13 @@
             <html:p>• le secrétariat des commissions professionnelles consultatives.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/002985-052204-20100720-*"/><rico:isSuccessorOf rdf:resource="agent/002985"/>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/002986-052204-20100720-*"/><rico:isSuccessorOf rdf:resource="agent/002986"/>
-      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/002977-052204-20100720-*"/><rico:isOrwasSubdivisionOf rdf:resource="agent/002977"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/058135-052204"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-058135"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/002985-052204-20100720-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/002985"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/002986-052204-20100720-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/002986"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/002977-052204-20100720-*"/>
+      <rico:isDirectSubdivisionOf rdf:resource="agent/002977"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/058135-052204"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-058135"/>
    </rico:Agent>
 </rdf:RDF>

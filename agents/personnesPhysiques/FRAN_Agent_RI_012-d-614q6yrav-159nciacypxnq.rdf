@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:dcterms="http://purl.org/dc/terms/"
-         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/FRAN_RI_012-d-614q6yrav-159nciacypxnq">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/FRAN_RI_012-d-614q6yrav-159nciacypxnq"/>
@@ -16,19 +16,21 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl002"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
-      <rico:hasInstantiation>
+      <!--Contenu de biblio : Wikipédia, consulté le 5 mai 2014.-->
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/FRAN_RI_012-d-614q6yrav-159nciacypxnq">
-            <rico:isInstantiationOf rdf:resource="record/FRAN_RI_012-d-614q6yrav-159nciacypxnq"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/FRAN_RI_012-d-614q6yrav-159nciacypxnq"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_RI_012-d-614q6yrav-159nciacypxnq</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/FRAN_RI_012-d-614q6yrav-159nciacypxnq">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/FRAN_RI_012-d-614q6yrav-159nciacypxnq"/>
       <rdfs:label xml:lang="fr">Storez, Maurice Sidoine (1804-1881)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Storez, Maurice Sidoine (1804-1881)</skos:prefLabel>
       <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/FRAN_RI_012-d-614q6yrav-159nciacypxnq-Storez%2C%20Maurice%20Sidoine%20%281804-1881%29">
             <rdfs:label xml:lang="fr">Storez, Maurice Sidoine (1804-1881)</rdfs:label>
@@ -42,8 +44,12 @@
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1881-12-26</rico:deathDate>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
-            <html:p>Maurice Sidoine Storez est un architecte français, membre fondateur de la Société Centrale des Architectes fondée le 27 mai 1843, et inspecteur des bâtiments publics de Paris. Il est né à Douai, rue Saint-Thomas, le 14 floréal an XII (4 mai 1804), mort à Paris 8e, 17, rue du Cirque, le 26 décembre 1881.</html:p>
+            <html:p>Maurice Sidoine Storez est un architecte français, membre fondateur de la Société
+        Centrale des Architectes fondée le 27 mai 1843, et inspecteur des bâtiments publics de
+        Paris. Il est né à Douai, rue Saint-Thomas, le 14 floréal an XII (4 mai 1804), mort à Paris
+        8e, 17, rue du Cirque, le 26 décembre 1881.</html:p>
          </html:div>
       </rico:history>
+      <!--Contenu de biblio : Wikipédia, consulté le 5 mai 2014.-->
    </rico:Agent>
 </rdf:RDF>

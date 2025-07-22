@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052399">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052399"/>
@@ -11,31 +19,29 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-02-21</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Frédéric DOUAT)</rico:name>
+            <rico:name xml:lang="fr">Création (par Frédéric DOUAT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-11-25</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Pas de notice Wikipédia.</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Pas de notice Wikipédia.</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Patricia GILLET)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Patricia GILLET)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-02-21</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 21/02/2020 : modification forme autorisée du nom</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 21/02/2020 : modification forme autorisée du nom</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000036462953/about"/>
-      <rico:hasInstantiation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000036462953"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052399">
-            <rico:isInstantiationOf rdf:resource="record/052399"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052399"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052399</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052399"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052399">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -53,19 +59,21 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007-07-01</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-06-30</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052399-d-31c1bj851u-1awh61xs7pwk3-20070701-20090630">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052399"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052399-d-31c1bj851u-1awh61xs7pwk3-20070701-20090630"/>
+            <rico:relationHasTarget rdf:resource="agent/052399"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d201543e99">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052399-d-31c1bj851u-1awh61xs7pwk3-20070701-20090630"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-31c1bj851u-1awh61xs7pwk3"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007-07-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-06-30</rico:endDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-31c1bj851u-1awh61xs7pwk3"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-31c1bj851u-1awh61xs7pwk3"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d201543e99"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>

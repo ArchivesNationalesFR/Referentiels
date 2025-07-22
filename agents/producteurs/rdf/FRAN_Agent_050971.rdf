@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050971">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050971"/>
@@ -10,26 +18,25 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-02-25</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Florence CLAVAUD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Florence CLAVAUD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-02-25</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 25 février 2015 : création de la notice sur demande d'A. Duru, mission archives des ministères sociaux ; ajout n° ISNI, notice BnF, lien association AIDES, descripteur activité</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 25 février 2015 : création de la notice sur demande d'A. Duru, mission archives des ministères sociaux ; ajout n° ISNI, notice BnF, lien association AIDES, descripteur activité</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice d'autorité BnF n° FRBNF13982015</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000001368983/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000001368983"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050971">
-            <rico:isInstantiationOf rdf:resource="record/050971"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050971"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050971</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050971"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050971">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -47,20 +54,22 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1946-02-07</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007-02-12</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050971-d699msjarlu--l5x9bzdkopz8">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050971"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050971-d699msjarlu--l5x9bzdkopz8"/>
+            <rico:relationHasTarget rdf:resource="agent/050971"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d178196e91">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050971-d699msjarlu--l5x9bzdkopz8"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjarlu--l5x9bzdkopz8"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">psychiatre</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjarlu--l5x9bzdkopz8"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjarlu--l5x9bzdkopz8"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d178196e91"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Né le 7 février 1946 à Paris et mort le 12 février 2007, Arnaud Marty-Lavauzelle était un médecin psychiatre et militant associatif français engagé dans la lutte contre le sida.</html:p>
@@ -70,8 +79,9 @@
             <html:p>Arnaud Marty-Lavauzelle qui était séropositif depuis une vingtaine d'années meurt du sida à l'âge de 61 ans, dans la nuit du 12 au 13 février 2007. Le ministre de la Santé et des Solidarités, Xavier Bertrand lui rend alors hommage en soulignant que « son témoignage de courage, de force, de vie, son combat pour une vie normale, pour l´évolution des comportements et des regards resteront dans nos mémoires ». Il rappelle également « son rôle crucial dans la promotion de la réduction des risques auprès des usagers de drogues ainsi que dans l´accès aux soins et aux traitements pour tous en France mais aussi dans les pays du Sud ».</html:p>
          </html:div>
       </rico:history>
-      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050971-009217-19870101-19981231"/><rico:isOrWasLeaderOf rdf:resource="agent/009217"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054540-050971"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-054540"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/050971-009217-19870101-19981231"/>
+      <rico:isOrWasLeaderOf rdf:resource="agent/009217"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054540-050971"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054540"/>
    </rico:Agent>
 </rdf:RDF>

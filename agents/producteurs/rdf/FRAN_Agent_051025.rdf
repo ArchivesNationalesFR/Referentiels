@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051025">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051025"/>
@@ -11,41 +19,38 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-07-10</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Magali LACOUSSE)</rico:name>
+            <rico:name xml:lang="fr">Création (par Magali LACOUSSE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-05-22</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 22 mai 2015 : changé nom, ajouté descripteurs fonction et n°s des 2 notices BnF</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 22 mai 2015 : changé nom, ajouté descripteurs fonction et n°s des 2 notices BnF</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Pascal DAVID-DORMIEN)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Pascal DAVID-DORMIEN)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-29</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-07-10</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 10 juillet 2018 : ajout identifiant ISNI</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 10 juillet 2018 : ajout identifiant ISNI</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Notices d'autorité BnF n°s FRBNF15031207 et FRBNF12484757</rico:source>
-      <rico:source xml:lang="fr">Archives nationales, fonds de l'Union nationale France-Russie-CEI-États-Baltes (212AS).</rico:source>
-      <rico:source xml:lang="fr">Site internet de l'association : http://francerussie.cei.free.fr/</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000090617901/about"/>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notices d'autorité BnF n°s FRBNF15031207 et FRBNF12484757</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Archives nationales, fonds de l'Union nationale France-Russie-CEI-États-Baltes (212AS).</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Site internet de l'association : http://francerussie.cei.free.fr/</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000090617901"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051025">
-            <rico:isInstantiationOf rdf:resource="record/051025"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051025"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051025</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051025"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051025">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -76,41 +81,43 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-05-16</rico:beginningDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/051025"/>
-            <rico:placeRelationHasSource rdf:resource="place/Russie"/>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:relationHasTarget rdf:resource="agent/051025"/>
+            <rico:relationHasSource rdf:resource="place/Russie"/>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">C.E.I.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Russie"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Russie"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051025-d5bhvil20q--uuew3ia85vzc">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051025"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051025-d5bhvil20q--uuew3ia85vzc"/>
+            <rico:relationHasTarget rdf:resource="agent/051025"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d178809e156">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051025-d5bhvil20q--uuew3ia85vzc"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvil20q--uuew3ia85vzc"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvil20q--uuew3ia85vzc"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d178809e156"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051025-d3nyuidsbr-1umshw9gnudo9">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051025"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051025-d3nyuidsbr-1umshw9gnudo9"/>
+            <rico:relationHasTarget rdf:resource="agent/051025"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d178809e162">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051025-d3nyuidsbr-1umshw9gnudo9"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuidsbr-1umshw9gnudo9"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">amitié entre France, Russie, CEI et états baltes</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuidsbr-1umshw9gnudo9"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d178809e162"/>
       <rico:authorizingMandate rdf:parseType="Literal">
          <html:p xml:lang="fr">Statuts : adoptés à Ivry-sur-Seine (94) le 16 mai 1993.</html:p>
       </rico:authorizingMandate>
@@ -126,9 +133,10 @@
             </html:ul>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/050171-051025-19930516-*"/><rico:isSuccessorOf rdf:resource="agent/050171"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/050171-051025-19930516-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/050171"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb12484757n#about"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/004510-051025"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-004510"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/004510-051025"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-004510"/>
    </rico:Agent>
 </rdf:RDF>

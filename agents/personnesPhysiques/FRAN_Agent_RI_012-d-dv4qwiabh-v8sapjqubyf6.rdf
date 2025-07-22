@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:dcterms="http://purl.org/dc/terms/"
-         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/FRAN_RI_012-d-dv4qwiabh-v8sapjqubyf6">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/FRAN_RI_012-d-dv4qwiabh-v8sapjqubyf6"/>
@@ -17,20 +17,22 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
       <rdfs:seeAlso rdf:resource="http://www.purl.org/inha/agorha/002/81347"/>
-      <rdfs:seeAlso rdf:resource="http://elec.enc.sorbonne.fr/architectes/316"/>
-      <rico:hasInstantiation>
+      <!--Contenu de biblio :  Identifiant
+        Répertoire des architectes diocésains : http://elec.enc.sorbonne.fr/architectes/316-->
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/FRAN_RI_012-d-dv4qwiabh-v8sapjqubyf6">
-            <rico:isInstantiationOf rdf:resource="record/FRAN_RI_012-d-dv4qwiabh-v8sapjqubyf6"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/FRAN_RI_012-d-dv4qwiabh-v8sapjqubyf6"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_RI_012-d-dv4qwiabh-v8sapjqubyf6</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/FRAN_RI_012-d-dv4qwiabh-v8sapjqubyf6">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/FRAN_RI_012-d-dv4qwiabh-v8sapjqubyf6"/>
       <rdfs:label xml:lang="fr">Latour, Jean Jacques (1812-1868)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Latour, Jean Jacques (1812-1868)</skos:prefLabel>
       <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/FRAN_RI_012-d-dv4qwiabh-v8sapjqubyf6-Latour%2C%20Jean%20Jacques%20%281812-1868%29">
             <rdfs:label xml:lang="fr">Latour, Jean Jacques (1812-1868)</rdfs:label>
@@ -44,8 +46,12 @@
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1868-09-14</rico:deathDate>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
-            <html:p>Né le 05/08/1812 à Tarbes. Décédé le 14/09/1868 à Tarbes. Inspecteur des édifices diocésains. A œuvré à la restauration de la cathédrale de Tarbes.</html:p>
+            <html:p>Né le 05/08/1812 à Tarbes. Décédé le 14/09/1868 à Tarbes. Inspecteur des édifices
+        diocésains. A œuvré à la restauration de la cathédrale de Tarbes.</html:p>
          </html:div>
       </rico:history>
+      <!--Contenu de biblio : Identifiant AGORHA : http://www.purl.org/inha/agorha/002/81347 -->
+      <!--Contenu de biblio :  Identifiant
+        Répertoire des architectes diocésains : http://elec.enc.sorbonne.fr/architectes/316-->
    </rico:Agent>
 </rdf:RDF>

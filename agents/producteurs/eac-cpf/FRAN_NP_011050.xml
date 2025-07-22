@@ -4,7 +4,7 @@
    <control>
       <recordId>FRAN_NP_011050</recordId>
       <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE00809</otherRecordId>
-      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceStatus>revised</maintenanceStatus>
       <maintenanceAgency>
          <agencyName>Archives nationales de France</agencyName>
       </maintenanceAgency>
@@ -25,13 +25,52 @@
             <agentType>machine</agentType>
             <agent>Migration ETANOT</agent>
          </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2024-05-13</eventDateTime>
+            <agentType>human</agentType>
+            <agent>François CHANCEREL</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2024-05-15</eventDateTime>
+            <agentType>human</agentType>
+            <agent>François CHANCEREL</agent>
+            <eventDescription>15/02/2024, J. Gaillard : Correction forme autorisée du nom | Ajout activité 'notaire'</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2024-08-07</eventDateTime>
+            <agentType>human</agentType>
+            <agent>François CHANCEREL</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2024-08-08</eventDateTime>
+            <agentType>human</agentType>
+            <agent>François CHANCEREL</agent>
+            <eventDescription>08/08/2024, J. Gaillard : Précisions sur placeEntry @localType="nomLieu"</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2024-09-06</eventDateTime>
+            <agentType>human</agentType>
+            <agent>François CHANCEREL</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2024-09-25</eventDateTime>
+            <agentType>human</agentType>
+            <agent>François CHANCEREL</agent>
+            <eventDescription>25/09/2024, J. Gaillard : validation, RAS</eventDescription>
+         </maintenanceEvent>
       </maintenanceHistory>
    </control>
    <cpfDescription>
       <identity>
          <entityType>person</entityType>
-         <nameEntry scriptCode="Latn" localType="autorisée" xml:lang="fre">
-            <part>Mahot de la quérantonnais, Jacques</part>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Mahot de la Quérantonnais, Jacques</part>
          </nameEntry>
       </identity>
       <description>
@@ -47,21 +86,29 @@
          <places>
             <place>
                <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">Siège de l'étude</placeEntry>
                <placeEntry localType="arrondissement_actuel"
                            vocabularySource="d3nyv5jo07--11vv6ggdeixfq">01e arrondissement</placeEntry>
-               <placeEntry localType="voie" vocabularySource="d3nzcqyv1i--qfbpru9etzs4">pyramides (rue des)</placeEntry>
-               <placeEntry localType="nomLieu">14 rue des Pyramides</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzcqyv1i--qfbpru9etzs4">Pyramides (rue des)</placeEntry>
+               <descriptiveNote>
+                  <p>14 rue des Pyramides</p>
+               </descriptiveNote>
             </place>
          </places>
          <functions>
             <function>
-               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à Paris</term>
                <dateRange>
                   <fromDate standardDate="1939-03-06">6 mars 1939</fromDate>
                   <toDate standardDate="1977-11-30">30 novembre 1977</toDate>
                </dateRange>
             </function>
          </functions>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d3nyu9x713-9kcjiv44l4wh">notaire</term>
+            </occupation>
+         </occupations>
       </description>
       <relations>
          <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -74,11 +121,25 @@
                <toDate standardDate="1977-11-30">30 novembre 1977</toDate>
             </dateRange>
          </cpfRelation>
-         <resourceRelation resourceRelationType="creatorOf">
-            <relationEntry localType="archival">minutes</relationEntry>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="Information">
+            <relationEntry localType="archival"/>
             <descriptiveNote>
-               <p>les minutes de ce notaire sont conservées à l'étude</p>
+               <p>les minutes de ce notaire postérieures au 31 décembre 1946 sont conservées par l'étude</p>
             </descriptiveNote>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_060444"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Jacques Mahot de La Quérantonnais pour l'étude LXVIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_061136"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jacques MAHOT de LA QUÉRANTONNAIS, 6 mars 1939 - 31 décembre 1946 (étude LXVIII)</relationEntry>
          </resourceRelation>
       </relations>
    </cpfDescription>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051240">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051240"/>
@@ -10,28 +18,27 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-15</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Florence CLAVAUD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Florence CLAVAUD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-15</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 15 décembre 2015 : création en remplacement de la notice 5194. lien vers notice 51</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 15 décembre 2015 : création en remplacement de la notice 5194. lien vers notice 51</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Dardy-Cretin Michèle,<html:i>Histoire administrative du Ministère de la culture et de la communication, 1959-2012 : les services de l'administration centrale</html:i>, Paris, Comité d'histoire du Ministère de la Culture, 2012</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Site Internet du ministère de la Culture et de la Communication. Disponible à  l'adresse suivante : http://www.culturecommunication.gouv.fr/</html:p>
-      </rico:source>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051240">
-            <rico:isInstantiationOf rdf:resource="record/051240"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051240"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051240</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051240"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051240">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -73,7 +80,9 @@
             <html:p>Suite à  la création du ministère de l'Environnement et du Cadre de vie en 1978, la direction de l'architecture est éclatée et les compétences en matière d'architecture rejoignent le nouveau ministère. Une direction du patrimoine voit le jour au sein du ministère de la Culture et récupère certains services de la direction de l'architecture : les monuments historiques, l'archéologie, l'inventaire général ainsi que les constructions publiques. Ces derniers sont gérés par la nouvelle sous-direction des affaires générales et constructions publiques dès 1979.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/051240-051239-19680101-19781231"/><rico:hasOrHadSubordinate rdf:resource="agent/051239"/>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000051-051240-19680101-19781231"/><rico:isOrWasSubordinateTo rdf:resource="agent/000051"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/051240-051239-19680101-19781231"/>
+      <rico:hadSubordinate rdf:resource="agent/051239"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/000051-051240-19680101-19781231"/>
+      <rico:wasSubordinateTo rdf:resource="agent/000051"/>
    </rico:Agent>
 </rdf:RDF>

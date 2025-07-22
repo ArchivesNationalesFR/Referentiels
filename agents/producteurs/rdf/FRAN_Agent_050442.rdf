@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050442">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050442"/>
@@ -10,30 +18,29 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-06-17</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Vanessa ASPART)</rico:name>
+            <rico:name xml:lang="fr">Création (par Vanessa ASPART)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-06-17</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Elsa Camus, 16 juin 2016 : modification forme autorisée du nom, ajout ISNI, modification historique (verbes), ajout Activité, modification sources, ajout lien familial</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Elsa Camus, 16 juin 2016 : modification forme autorisée du nom, ajout ISNI, modification historique (verbes), ajout Activité, modification sources, ajout lien familial</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Archives nationales, Fonds Charles Ozanam, 28 AS.</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb13320619k</html:p>
-      </rico:source>
-      <rico:hasSource rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb13320619k"/>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000083796307/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb13320619k"/>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000083796307"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050442">
-            <rico:isInstantiationOf rdf:resource="record/050442"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050442"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050442</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050442"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050442">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -51,17 +58,19 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1887-10-15</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1967-06-11</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050442-d699msj1bp7--sqw9bp2dwte7">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050442"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050442-d699msj1bp7--sqw9bp2dwte7"/>
+            <rico:relationHasTarget rdf:resource="agent/050442"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d170925e93">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050442-d699msj1bp7--sqw9bp2dwte7"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj1bp7--sqw9bp2dwte7"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj1bp7--sqw9bp2dwte7"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj1bp7--sqw9bp2dwte7"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d170925e93"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Charles Ozanam est né le 15 octobre 1887, à Bastia (Haute-Corse) ; il est le petit-neveu de Frédéric Ozanam (1813-1853), le créateur de la Société de Saint-Vincent-de-Paul (1833). Le 25 mai 1921, Charles Ozanam épouse Élisabeth Guiraud (1896-1992), fille du journaliste catholique Jean Guiraud (1866-1953).</html:p>
@@ -69,7 +78,9 @@
             <html:p>Charles Ozanam décède à Neuilly-sur-Seine (Hauts-de-Seine), le 11 juin 1967.</html:p>
          </html:div>
       </rico:history>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/050442-051849"/><rico:hasFamilyAssociationWith rdf:resource="agent/051849"/>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/050002-050442"/><rico:hasFamilyAssociationWith rdf:resource="agent/050002"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/050442-051849"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/051849"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/050002-050442"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/050002"/>
    </rico:Agent>
 </rdf:RDF>

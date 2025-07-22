@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050715">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050715"/>
@@ -11,37 +19,34 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-15</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Emmanuelle GIRY)</rico:name>
+            <rico:name xml:lang="fr">Création (par Emmanuelle GIRY)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-02-27</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 27 février 2014 : changé nom, ajouté lien vers notice FUAJ</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 27 février 2014 : changé nom, ajouté lien vers notice FUAJ</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Emmanuelle GIRY)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Emmanuelle GIRY)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-07-01</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 15/07/2019 : pas d'identifiant ISNI, de notice BnF ou de notices Wikipédia</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 15/07/2019 : pas d'identifiant ISNI, de notice BnF ou de notices Wikipédia</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-15</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050715">
-            <rico:isInstantiationOf rdf:resource="record/050715"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050715"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050715</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050715"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050715">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -58,36 +63,39 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1920-11-06</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2006-08-25</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050715-d699msj02xm-19qbb7wdtto3j">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050715"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050715-d699msj02xm-19qbb7wdtto3j"/>
+            <rico:relationHasTarget rdf:resource="agent/050715"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d174498e102">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050715-d699msj02xm-19qbb7wdtto3j"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d174498e102"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050715-d3m0bl6svu0--1tubaqb9x6dwe">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050715"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050715-d3m0bl6svu0--1tubaqb9x6dwe"/>
+            <rico:relationHasTarget rdf:resource="agent/050715"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d174498e108">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050715-d3m0bl6svu0--1tubaqb9x6dwe"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3m0bl6svu0--1tubaqb9x6dwe"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Maurice Tadier est inspecteur Jeunesse et Sports à la direction départementale de la Jeunesse et des Sports (DDJS) d’Ille-et-Vilaine</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl6svu0--1tubaqb9x6dwe"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl6svu0--1tubaqb9x6dwe"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d174498e108"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Maurice Tadier est né le 6 novembre 1920 à Saint-Amand-Montrond (Cher) et décédé le 25 août 2006 à Mesquer (Loire-Atlantique). Après avoir intégré l’école normale de Bourges en 1936, il est nommé instituteur stagiaire le 1er octobre 1939 puis titularisé en 1941. Il s’investit très jeune dans les auberges de jeunesse et fait partie en 1936 de l’équipe fondatrice de la Fédération Berry-Bourbonnais du Centre laïque des auberges de jeunesse.</html:p>
             <html:p>En 1941, après de longs pourparlers avec les autorités de Vichy, deux associations d’auberges de jeunesse sont créées en zone libre avec des liens très forts :</html:p>
-            <html:p/>
             <html:p> les Auberges françaises de la jeunesse, organisme technique au sein duquel sont représentés les principaux mouvements de jeunesse.</html:p>
             <html:p> les Camarades de la route, mouvement d'usagers qui rassemble des groupes ajistes.</html:p>
             <html:p>Après accord des AFJ, Maurice Tadier est nommé commissaire régional bénévole du Berry en juillet 1941. Il enseigne jusqu’au 31 juillet 1943 avec une interruption pour un stage effectué aux chantiers de jeunesse du 7 juillet 1942 au 2 mars 1943. Proposé sur une liste de départ pour le service du travail obligatoire (STO), il est averti officieusement par son inspecteur d’académie, et quitte son poste d’instituteur à l’école de garçons de Saint-Amand-Montrond au mois de mai 1943. En août de la même année, il est détaché aux AFJ pour être permanent et commissaire adjoint aux services techniques.</html:p>
@@ -97,7 +105,6 @@
             <html:p>En 1949, sous l’impulsion du ministère chargé de la Jeunesse et des Sports, se dessine une nouvelle tentative de regroupement qui, encore une fois, est un échec. Deux fédérations voient alors le jour au début de l’année 1950 :</html:p>
             <html:p> La Fédération nationale des auberges de jeunesse, qui a l’appui de l’Etat, du Centre laïque des auberges de jeunesse et du plein air (CLAJPA), principal mouvement d’usagers issu du MLAJ, de la Ligue de l’enseignement, de la Confédération générale du travail – Force ouvrière (CGT-FO) et des syndicats d’enseignants : Syndicat national des instituteurs (SNI), Fédération de l’éducation nationale (FEN).</html:p>
             <html:p> La Fédération française des auberges de la jeunesse qui regroupe notamment l’Union française des auberges de la jeunesse (UFAJ), la Ligue française pour les auberges de la jeunesse (LFAJ), l’Office central des camps et des auberges de la jeunesse (OCCAJ), la Confédération générale du travail (CGT), la confédération française des travailleurs chrétiens (CFTC), un grand nombre de mouvements de jeunesse ainsi que l’Union de la jeunesse républicaine de France (UJRF).</html:p>
-            <html:p/>
             <html:p>Maurice Tadier devient un des cadres dirigeants de la FFAJ, mais il la quitte dès 1952, suite à un conflit avec le conseil d’administration et le syndicat CGT du personnel des auberges (parents aubergistes).</html:p>
             <html:p>Du 1er avril 1952 jusqu’au début de l’année 1959, il est recruté à la direction générale de la Jeunesse et des Sports sous la direction de Gaston Roux, où il continue à oeuvrer pour les auberges de jeunesse, puisque l’Etat n’a pas renoncé à son projet d’unification. De plus, il est toujours membre de l’UFAJ et anime à partir de 1953 un bulletin non officiel Informations AJ réalisé avec André Lecuyer et Paul Mehlinger.</html:p>
             <html:p>C’est pourquoi, il joue un rôle important dans la mise en place de la Fédération unie des auberges de jeunesse, officiellement créée en 1958, après un fonctionnement probatoire qui durait depuis 1956. Elle est le résultat de la fusion de plusieurs mouvements d’auberges de jeunesse, principalement la FNAJ et la FFAJ. Les catholiques de l’Organisation centrale des camps et auberges de la jeunesse (OCCAJ) ne se joignent finalement pas à la FUAJ et transforment leur association en organisation de tourisme populaire, changeant son nom en Organisation centrale des camps et activités de la jeunesse (OCCAJ). En 1959, la LFAJ, qui ne s’est pas dissoute lors de la création de la FUAJ, quitte cette dernière. Elle lui reproche d’abandonner sa neutralité à propos des questions d’aide de l’État à l’école privée et de prendre position concernant la guerre d’Algérie. Ayant de bons rapports avec les dirigeants de la LFAJ, principalement avec Dominique Magnant, Maurice Tadier essaie en vain jusqu’au début des années 1960 de convaincre la LFAJ de rejoindre la FUAJ.</html:p>
@@ -106,9 +113,11 @@
             <html:p>Par ailleurs, Maurice Tadier est durant de très nombreuses années militant à la Section française de l’internationale ouvrière (SFIO) puis au Parti socialiste. Il a également occupé des postes importants à la Mutuelle nationale des sports, où il fut membre du bureau national et trésorier.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050715-050739-19990101-20060825"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050739"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009310-050715-19560101-20060825"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/009310"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/050480-050715"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-050480"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050715-050739-19990101-20060825"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050739"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009310-050715-19560406-20060825"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/009310"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/050480-050715"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-050480"/>
    </rico:Agent>
 </rdf:RDF>

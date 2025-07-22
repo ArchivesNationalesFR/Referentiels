@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052700">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052700"/>
@@ -11,30 +19,28 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-17</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Jean HARDOUIN-DOMPNIER)</rico:name>
+            <rico:name xml:lang="fr">Création (par Jean HARDOUIN-DOMPNIER)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-03</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-17</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 17/08/2020 : pas d'identifiant ISNI, de notice BNF ou wikipédia</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 17/08/2020 : pas d'identifiant ISNI, de notice BNF ou wikipédia</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Who's Who in France, dictionnaire biographique, Levallois-Perret, Éditions Lafitte-Hébrard, 2019.</rico:source>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Who's Who in France, dictionnaire biographique, Levallois-Perret, Éditions Lafitte-Hébrard, 2019.</rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052700">
-            <rico:isInstantiationOf rdf:resource="record/052700"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052700"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052700</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052700"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052700">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -50,122 +56,114 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1975-09-02</rico:birthDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052700-d-31c1bj851u-1awh61xs7pwk3-20151006-20170514">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052700"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052700-d-31c1bj851u-1awh61xs7pwk3-20151006-20170514"/>
+            <rico:relationHasTarget rdf:resource="agent/052700"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d205812e94">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052700-d-31c1bj851u-1awh61xs7pwk3-20151006-20170514"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-31c1bj851u-1awh61xs7pwk3"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-06</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-14</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Nicolas Machtou est conseiller développement durable, énergie, transports, logement et ville au cabinet de François Hollande, président de la République (2015-2017).</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-31c1bj851u-1awh61xs7pwk3"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-31c1bj851u-1awh61xs7pwk3"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d205812e94"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052700-d699msixdvh--wgctct8soc1y-20120622-20140331">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052700"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052700-d699msixdvh--wgctct8soc1y-20120622-20140331"/>
+            <rico:relationHasTarget rdf:resource="agent/052700"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d205812e114">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052700-d699msixdvh--wgctct8soc1y-20120622-20140331"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-22</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-03-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Nicolas Machtou est conseiller technique énergie et environnement au cabinet du Premier ministre Jean-Marc Ayrault (2012-2014)</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d205812e114"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052700"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052700"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d205812e137">
                   <rico:title>Arrêté du 22 juin 2012 paru au Journal officiel du 23 juin 2012, NOR : PRMX1227040A</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?dateTexte=&amp;categorieLien=id&amp;cidTexte=JORFTEXT000026052546"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 22 juin 2012 paru au Journal officiel du 23 juin 2012, NOR : PRMX1227040A</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?dateTexte=&amp;categorieLien=id&amp;cidTexte=JORFTEXT000026052546"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d205812e137"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052700"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052700"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d205812e143">
                   <rico:title>Décret du 22 avril 2014 paru au Journal officiel du 24 avril 2014, NOR : PRMX1409192D</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?dateTexte=&amp;categorieLien=id&amp;cidTexte=JORFTEXT000028868976"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Décret du 22 avril 2014 paru au Journal officiel du 24 avril 2014, NOR : PRMX1409192D</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?dateTexte=&amp;categorieLien=id&amp;cidTexte=JORFTEXT000028868976"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d205812e143"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052700"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052700"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d205812e149">
                   <rico:title>Décret du 5 novembre 2014 paru au Journal officiel du 7 novembre 2014,NOR : DEVT1422809D</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?dateTexte=&amp;categorieLien=id&amp;cidTexte=JORFTEXT000029717867"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Décret du 5 novembre 2014 paru au Journal officiel du 7 novembre 2014,NOR : DEVT1422809D</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?dateTexte=&amp;categorieLien=id&amp;cidTexte=JORFTEXT000029717867"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d205812e149"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052700"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052700"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d205812e155">
                   <rico:title>Arrêté du 9 octobre 2015 paru au Journal officiel du 10 octobre 2015, NOR : PREX1524022A</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?dateTexte=&amp;categorieLien=id&amp;cidTexte=JORFTEXT000031288114"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 9 octobre 2015 paru au Journal officiel du 10 octobre 2015, NOR : PREX1524022A</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?dateTexte=&amp;categorieLien=id&amp;cidTexte=JORFTEXT000031288114"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d205812e155"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052700"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052700"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d205812e161">
                   <rico:title>Arrêté du 1er mars 2016 paru au Journal officiel du 5 mars 2016, NOR : PREX1606565A</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?dateTexte=&amp;categorieLien=id&amp;cidTexte=JORFTEXT000032153318"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 1er mars 2016 paru au Journal officiel du 5 mars 2016, NOR : PREX1606565A</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?dateTexte=&amp;categorieLien=id&amp;cidTexte=JORFTEXT000032153318"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d205812e161"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052700"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052700"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-d205812e168">
                   <rico:title>Arrêté du 13 juin 2016 paru au Journal officiel du 14 juin 2016, NOR : PREX1616185A</rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?dateTexte=&amp;categorieLien=id&amp;cidTexte=JORFTEXT000032695282"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>Arrêté du 13 juin 2016 paru au Journal officiel du 14 juin 2016, NOR : PREX1616185A</rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/affichTexte.do?dateTexte=&amp;categorieLien=id&amp;cidTexte=JORFTEXT000032695282"/>
-               </rico:Mandate></rico:authorizedBy>
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-d205812e168"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Né le 2 septembre 1975 à Paris.</html:p>
@@ -191,6 +189,7 @@
             <html:p>- Président du Conseil d’administration de Citelum (2020-…).</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009837-052700-20120515-20140331"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/009837"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009837-052700-20120515-20140331"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/009837"/>
    </rico:Agent>
 </rdf:RDF>

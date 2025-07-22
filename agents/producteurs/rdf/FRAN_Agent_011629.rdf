@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/011629">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/011629"/>
@@ -11,14 +19,13 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-09-30</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Dérivation
-                (Migration ETANOT)</rico:name>
+            <rico:name xml:lang="fr">Dérivation (Migration ETANOT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-09-30</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/011629">
-            <rico:isInstantiationOf rdf:resource="record/011629"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/011629"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_011629</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
@@ -26,7 +33,7 @@
             <rico:identifier>FRDAFANCH00MC_NANOTAIRE01438</rico:identifier>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/011629">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -48,34 +55,43 @@
             <rico:isOrWasAgentNameOf rdf:resource="agent/011629"/>
          </rico:AgentName>
       </rico:hasOrHadAgentName>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/011629"/>
-            <rico:placeRelationHasSource>
+            <rico:relationHasTarget rdf:resource="agent/011629"/>
+            <rico:relationHasSource>
                <rico:Place>
-                  <rdfs:label xml:lang="fr">Lieu dont l'adresse précise
-                                    est indéterminée</rdfs:label>
-                  <rico:hasLocation rdf:resource="place/FRAN_RI_024-d3nyvovxws-1r3061wzh7bqc"/>
-                  <rico:hasLocation rdf:resource="place/FRAN_RI_025-d3nzbzvirq-hijvubm3y502"/>
+                  <rdfs:label xml:lang="fr">Lieu dont l'adresse précise est indéterminée</rdfs:label>
+                  <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_024-d3nyvovxws-1r3061wzh7bqc"/>
+                  <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_025-d3nzbzvirq-hijvubm3y502"/>
                </rico:Place>
-            </rico:placeRelationHasSource>
+            </rico:relationHasSource>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace><rico:Place>
-                  <rdfs:label xml:lang="fr">Lieu dont l'adresse précise
-                                    est indéterminée</rdfs:label>
-                  <rico:hasLocation rdf:resource="place/FRAN_RI_024-d3nyvovxws-1r3061wzh7bqc"/>
-                  <rico:hasLocation rdf:resource="place/FRAN_RI_025-d3nzbzvirq-hijvubm3y502"/>
-               </rico:Place></rico:isAssociatedWithPlace>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_024-d3nyvovxws-1r3061wzh7bqc"/>
       <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_025-d3nzbzvirq-hijvubm3y502"/>
-      <rico:agentIsTargetOfPerformanceRelation><rico:PerformanceRelation rdf:about="performanceRelation/011629-d3nyu9x713-9kcjiv44l4wh-16770127-16921002"><rico:performanceRelationHasTarget rdf:resource="agent/011629"/><rico:performanceRelationHasSource><rico:Activity><rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/011629-d3nyu9x713-9kcjiv44l4wh-16770127-16921002"/><rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3nyu9x713-9kcjiv44l4wh"/></rico:Activity></rico:performanceRelationHasSource><rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1677-01-27</rico:beginningDate><rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1692-10-02</rico:endDate></rico:PerformanceRelation></rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3nyu9x713-9kcjiv44l4wh"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010138-011629-16770127-16921002"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/010138"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010133-011629-16770127-16811231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/010133"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/041369-011629"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-041369"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/041219-011629"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-041219"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056637-011629"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-056637"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/011629-d3nyui3o8w--11y7jgy8q3wnt-16770127-16921002">
+            <rico:relationHasTarget rdf:resource="agent/011629"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d143006e106">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/011629-d3nyui3o8w--11y7jgy8q3wnt-16770127-16921002"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyui3o8w--11y7jgy8q3wnt"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1677-01-27</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1692-10-02</rico:endDate>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d143006e106"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010138-011629-16770127-16921002"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/010138"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010133-011629-16770127-16811231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/010133"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/041369-011629"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-041369"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/041219-011629"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-041219"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/056637-011629"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-056637"/>
    </rico:Agent>
 </rdf:RDF>

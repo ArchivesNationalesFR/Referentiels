@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/010500">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/010500"/>
@@ -11,14 +19,13 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Dérivation
-                (Migration ETANOT)</rico:name>
+            <rico:name xml:lang="fr">Dérivation (Migration ETANOT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/010500">
-            <rico:isInstantiationOf rdf:resource="record/010500"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/010500"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_010500</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
@@ -26,7 +33,7 @@
             <rico:identifier>FRDAFANCH00MC_NANOTAIRE00211</rico:identifier>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/010500">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -48,23 +55,38 @@
             <rico:isOrWasAgentNameOf rdf:resource="agent/010500"/>
          </rico:AgentName>
       </rico:hasOrHadAgentName>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/010500"/>
-            <rico:placeRelationHasSource rdf:resource="place/148%20rue%20Montmartre"/>
+            <rico:relationHasTarget rdf:resource="agent/010500"/>
+            <rico:relationHasSource rdf:resource="place/148%20rue%20Montmartre"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/148%20rue%20Montmartre"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/148%20rue%20Montmartre"/>
-      <rico:agentIsTargetOfPerformanceRelation><rico:PerformanceRelation rdf:about="performanceRelation/010500-d3nyu9x713-9kcjiv44l4wh-18120715-18290704"><rico:performanceRelationHasTarget rdf:resource="agent/010500"/><rico:performanceRelationHasSource><rico:Activity><rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/010500-d3nyu9x713-9kcjiv44l4wh-18120715-18290704"/><rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3nyu9x713-9kcjiv44l4wh"/></rico:Activity></rico:performanceRelationHasSource><rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1812-07-15</rico:beginningDate><rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1829-07-04</rico:endDate></rico:PerformanceRelation></rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3nyu9x713-9kcjiv44l4wh"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/010500-d3nyui3o8w--11y7jgy8q3wnt-18120715-18290704">
+            <rico:relationHasTarget rdf:resource="agent/010500"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d129818e103">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/010500-d3nyui3o8w--11y7jgy8q3wnt-18120715-18290704"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyui3o8w--11y7jgy8q3wnt"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1812-07-15</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1829-07-04</rico:endDate>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d129818e103"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Né le 23 décembre 1786 à Paris</html:p>
             <html:p>Fils et successeur de Jean Trubert</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/010501-010500-18120715-*"/><rico:isSuccessorOf rdf:resource="agent/010501"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010169-010500-18120715-18290704"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/010169"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/052006-010500"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-052006"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/010501-010500-18120715-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/010501"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/010169-010500-18120715-18290704"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/010169"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/052006-010500"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-052006"/>
    </rico:Agent>
 </rdf:RDF>

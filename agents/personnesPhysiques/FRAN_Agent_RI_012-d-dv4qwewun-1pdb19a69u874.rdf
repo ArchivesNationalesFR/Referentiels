@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:dcterms="http://purl.org/dc/terms/"
-         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/FRAN_RI_012-d-dv4qwewun-1pdb19a69u874">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/FRAN_RI_012-d-dv4qwewun-1pdb19a69u874"/>
@@ -18,19 +18,22 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
       <rdfs:seeAlso rdf:resource="http://elec.enc.sorbonne.fr/architectes/233"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Charles_Joly-Leterme"/>
-      <rico:hasInstantiation>
+      <!--Contenu de biblio :  Identifiant Wikidata :
+        https://www.wikidata.org/wiki/Q2959468-->
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/FRAN_RI_012-d-dv4qwewun-1pdb19a69u874">
-            <rico:isInstantiationOf rdf:resource="record/FRAN_RI_012-d-dv4qwewun-1pdb19a69u874"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/FRAN_RI_012-d-dv4qwewun-1pdb19a69u874"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_RI_012-d-dv4qwewun-1pdb19a69u874</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/FRAN_RI_012-d-dv4qwewun-1pdb19a69u874">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/FRAN_RI_012-d-dv4qwewun-1pdb19a69u874"/>
       <rdfs:label xml:lang="fr">Joly-Leterme, Charles (1805-1885)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Joly-Leterme, Charles (1805-1885)</skos:prefLabel>
       <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/FRAN_RI_012-d-dv4qwewun-1pdb19a69u874-Joly-Leterme%2C%20Charles%20%281805-1885%29">
             <rdfs:label xml:lang="fr">Joly-Leterme, Charles (1805-1885)</rdfs:label>
@@ -44,9 +47,14 @@
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1885-01-01</rico:deathDate>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
-            <html:p>Né en 1805 à Baugé. Décédé en 1885 à Saumur. Architecte diocésain. A œuvré à la restauration de la cathédrale d'Angers.</html:p>
+            <html:p>Né en 1805 à Baugé. Décédé en 1885 à Saumur. Architecte diocésain. A œuvré à la
+        restauration de la cathédrale d'Angers.</html:p>
          </html:div>
       </rico:history>
+      <!--Contenu de biblio : Identifiant Répertoire des architectes diocésains :
+        http://elec.enc.sorbonne.fr/architectes/233 -->
+      <!--Contenu de biblio :  Article Wikipedia :
+        https://fr.wikipedia.org/wiki/Charles_Joly-Leterme -->
       <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q2959468"/>
    </rico:Agent>
 </rdf:RDF>

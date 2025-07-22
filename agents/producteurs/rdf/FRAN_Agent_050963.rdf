@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050963">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050963"/>
@@ -11,34 +19,32 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-02-05</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Thierry GUILPIN)</rico:name>
+            <rico:name xml:lang="fr">Création (par Thierry GUILPIN)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-01-27</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 26 janvier 2015 : changé forme du nom, ajouté n°s ISNI et notice BnF, liens d'association et familial, indexation activités</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 26 janvier 2015 : changé forme du nom, ajouté n°s ISNI et notice BnF, liens d'association et familial, indexation activités</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Florence CLAVAUD)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Florence CLAVAUD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-02-05</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 26 janvier 2015 : changé forme du nom, ajouté n°s ISNI et notice BnF, liens d'association et familial, indexation activités</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 26 janvier 2015 : changé forme du nom, ajouté n°s ISNI et notice BnF, liens d'association et familial, indexation activités</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice d'autorité BnF n° FRBNF12013766</html:p>
-      </rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000107781194/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000107781194"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050963">
-            <rico:isInstantiationOf rdf:resource="record/050963"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050963"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050963</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050963"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050963">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -56,51 +62,57 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1926-08-28</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-12</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050963-d699msjyazt-1f0ggfyf3is8u-19710101-19891231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050963"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050963-d699msjyazt-1f0ggfyf3is8u-19710101-19891231"/>
+            <rico:relationHasTarget rdf:resource="agent/050963"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d177685e104">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050963-d699msjyazt-1f0ggfyf3is8u-19710101-19891231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1971-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1989-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">conseiller de Paris de 1971 à 1989, conseiller régional d'Ile-de-France de 1976 à 1986.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d177685e104"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050963-d699msjj72d-1dedn4099xfyy-19690101-19891231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050963"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050963-d699msjj72d-1dedn4099xfyy-19690101-19891231"/>
+            <rico:relationHasTarget rdf:resource="agent/050963"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d177685e124">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050963-d699msjj72d-1dedn4099xfyy-19690101-19891231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjj72d-1dedn4099xfyy"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1989-12-31</rico:endDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjj72d-1dedn4099xfyy"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjj72d-1dedn4099xfyy"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d177685e124"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050963-d699msixdvh--wgctct8soc1y-19470101-19611231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050963"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050963-d699msixdvh--wgctct8soc1y-19470101-19611231"/>
+            <rico:relationHasTarget rdf:resource="agent/050963"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d177685e139">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050963-d699msixdvh--wgctct8soc1y-19470101-19611231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1947-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1961-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">A. Veil, membre du cabinet du ministre des forces armées en 1947, puis du secrétaire d'Etat au budget en 1948. Directeur de cabinet du secrétaire d'Etat à l'industrie et au commerce, puis du ministre de la Santé publique (1959-1961).</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d177685e139"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Descendant d'une ancienne famille alsacienne, Antoine Veil est né le 28 août 1926 à Blâmont (Meurthe-et-Moselle).</html:p>
@@ -109,10 +121,15 @@
             <html:p>Antoine Veil a épousé Simone Veil (née Jacob) en 1946. Il meurt le 12 avril 2013 à Paris.</html:p>
          </html:div>
       </rico:history>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/009941-050963"/><rico:hasFamilyAssociationWith rdf:resource="agent/009941"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050963-052419-19690101-19760523"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/052419"/>
-      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050963-052356-19590101-19721231"/><rico:isOrWasLeaderOf rdf:resource="agent/052356"/>
-      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050963-007222-19860101-20001231"/><rico:isOrWasLeaderOf rdf:resource="agent/007222"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/004952-050963-19590101-19611231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/004952"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/009941-050963"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/009941"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050963-052419-19690101-19760523"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/052419"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/050963-052356-19590101-19721231"/>
+      <rico:isOrWasLeaderOf rdf:resource="agent/052356"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/050963-007222-19860101-20001231"/>
+      <rico:isOrWasLeaderOf rdf:resource="agent/007222"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/004952-050963-19590101-19611231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/004952"/>
    </rico:Agent>
 </rdf:RDF>

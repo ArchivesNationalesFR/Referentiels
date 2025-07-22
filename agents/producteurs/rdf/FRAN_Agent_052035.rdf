@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052035">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052035"/>
@@ -11,32 +19,30 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-26</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Samuel GIBIAT)</rico:name>
+            <rico:name xml:lang="fr">Création (par Samuel GIBIAT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-25</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Pas de numéro ISNI ni de notice Wikipedia à la date de création de la présente notice.</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Pas de numéro ISNI ni de notice Wikipedia à la date de création de la présente notice.</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Samuel GIBIAT)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Samuel GIBIAT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-26</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Notice créée par Samuel Gibiat à la demande du service des Archives de la Présidence de la République le 25 avril 2018 et soumise à publication ledit jour.</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Notice créée par Samuel Gibiat à la demande du service des Archives de la Présidence de la République le 25 avril 2018 et soumise à publication ledit jour.</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Notice documentaire du service des Archives de la Présidence de la République</rico:source>
-      <rico:source xml:lang="fr">Notice professionnelle Linkedin</rico:source>
-      <rico:hasInstantiation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice documentaire du service des Archives de la Présidence de la République</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice professionnelle Linkedin</rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052035">
-            <rico:isInstantiationOf rdf:resource="record/052035"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052035"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052035</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052035"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052035">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -52,61 +58,65 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1986-06-21</rico:birthDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052035-d699msjnphp--ogopux4anfqf-20170530-*">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052035"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052035-d699msjnphp--ogopux4anfqf-20170530-*"/>
+            <rico:relationHasTarget rdf:resource="agent/052035"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d195608e101">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052035-d699msjnphp--ogopux4anfqf-20170530-*"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjnphp--ogopux4anfqf"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-30</rico:beginningDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">General Manager Business Development</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjnphp--ogopux4anfqf"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjnphp--ogopux4anfqf"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d195608e101"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052035-d3m0bl6svu0--1tubaqb9x6dwe-20120101-20150228">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052035"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052035-d3m0bl6svu0--1tubaqb9x6dwe-20120101-20150228"/>
+            <rico:relationHasTarget rdf:resource="agent/052035"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d195608e118">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052035-d3m0bl6svu0--1tubaqb9x6dwe-20120101-20150228"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3m0bl6svu0--1tubaqb9x6dwe"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-02-28</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">inspecteur des finances</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl6svu0--1tubaqb9x6dwe"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl6svu0--1tubaqb9x6dwe"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d195608e118"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052035-d-31c1bj851u-1awh61xs7pwk3-20160301-20170510">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052035"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052035-d-31c1bj851u-1awh61xs7pwk3-20160301-20170510"/>
+            <rico:relationHasTarget rdf:resource="agent/052035"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d195608e138">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052035-d-31c1bj851u-1awh61xs7pwk3-20160301-20170510"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-31c1bj851u-1awh61xs7pwk3"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-03-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-10</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Conseillère Economie et Numérique au cabinet de François Hollande, président de la République</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-31c1bj851u-1awh61xs7pwk3"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-31c1bj851u-1awh61xs7pwk3"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d195608e138"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Née le 21 juin 1986</html:p>
-            <html:p/>
             <html:p>Diplômes</html:p>
             <html:p>Institut d’études politiques de Paris</html:p>
             <html:p>Ancienne élève de l’Ecole nationale d’administration (promotion Jean-Jacques Rousseau)</html:p>
-            <html:p/>
             <html:p>Carrière</html:p>
             <html:p>- Inspection générale des Finances (janvier 2012-février 2015)</html:p>
             <html:p>- Chargée de mission innovation, entrepreneuriat et économie internationale auprès du secrétaire général de la Présidence de la République, de février 2015 à février 2016,</html:p>
@@ -116,9 +126,12 @@
             <html:p>- General Manager Business Development du groupe Renault-Nissan depuis juin 2017.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/003781-052035-20040101-20081231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/003781"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000165-052035-20120101-20150228"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000165"/>
-      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/052035-000059-20160301-20170510"/><rico:isOrWasLeaderOf rdf:resource="agent/000059"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/003781-052035-20040101-20081231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/003781"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000165-052035-20120101-20150228"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000165"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/052035-000059-20160301-20170510"/>
+      <rico:isOrWasLeaderOf rdf:resource="agent/000059"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb16965719b#about"/>
    </rico:Agent>
 </rdf:RDF>

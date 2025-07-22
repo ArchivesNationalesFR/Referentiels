@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051627">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051627"/>
@@ -11,34 +19,32 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-09-04</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Virginie GREGOIRE)</rico:name>
+            <rico:name xml:lang="fr">Création (par Virginie GREGOIRE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-08-08</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-09-04</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Archives nationales : fonds Georges Bidault (457AP), fonds Vincent Auriol (552AP).</rico:source>
-      <rico:source xml:lang="fr">Archives nationales : papiers de Charles de Gaulle, chef de l'État (3AG1).</rico:source>
-      <rico:source xml:lang="fr">Notice bnf n°FRBNF12317811</rico:source>
-      <rico:source xml:lang="fr">Notice wikipédia https://fr.wikipedia.org/wiki/Georges_Bidault</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000108574453/about"/>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Archives nationales : fonds Georges Bidault (457AP), fonds Vincent Auriol (552AP).</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Archives nationales : papiers de Charles de Gaulle, chef de l'État (3AG1).</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice bnf n°FRBNF12317811</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice wikipédia https://fr.wikipedia.org/wiki/Georges_Bidault</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000108574453"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Georges_Bidault"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051627">
-            <rico:isInstantiationOf rdf:resource="record/051627"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051627"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051627</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051627"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051627">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -65,61 +71,69 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1899-05-10</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-01-27</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051627-d699msjoa3b--rixjtrrcp6f0-19491028-19500702">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051627"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051627-d699msjoa3b--rixjtrrcp6f0-19491028-19500702"/>
+            <rico:relationHasTarget rdf:resource="agent/051627"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d188836e129">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051627-d699msjoa3b--rixjtrrcp6f0-19491028-19500702"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjoa3b--rixjtrrcp6f0"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1949-10-28</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1950-07-02</rico:endDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjoa3b--rixjtrrcp6f0"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjoa3b--rixjtrrcp6f0"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d188836e129"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051627-d699msiribo--1dn34eg8lht4f-19450101-19621231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051627"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051627-d699msiribo--1dn34eg8lht4f-19450101-19621231"/>
+            <rico:relationHasTarget rdf:resource="agent/051627"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d188836e144">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051627-d699msiribo--1dn34eg8lht4f-19450101-19621231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1945-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1962-12-31</rico:endDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d188836e144"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051627-d699msjnw86-64seh0fmw8hj-19440101-19541231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051627"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051627-d699msjnw86-64seh0fmw8hj-19440101-19541231"/>
+            <rico:relationHasTarget rdf:resource="agent/051627"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d188836e159">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051627-d699msjnw86-64seh0fmw8hj-19440101-19541231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1944-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1954-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">- Ministre des Affaires étrangères -Ministre de la Défense nationale</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d188836e159"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051627-d699msj02xm-19qbb7wdtto3j-19250101-19431231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051627"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051627-d699msj02xm-19qbb7wdtto3j-19250101-19431231"/>
+            <rico:relationHasTarget rdf:resource="agent/051627"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d188836e179">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051627-d699msj02xm-19qbb7wdtto3j-19250101-19431231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1925-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1943-12-31</rico:endDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d188836e179"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Georges Bidault (1899-1983) commence sa carrière professionnelle en tant que professeur professeur agrégé d’histoire, en poste à Valenciennes (1925-1926), Reims (1926-1931), Paris (1931-1939) et Lyon (1942-1943).</html:p>
@@ -127,15 +141,19 @@
             <html:p>Le général de Gaulle lui confie en octobre 1944 le portefeuille des Affaires étrangères, qu’il conserve jusqu’en décembre 1946, exerçant la même fonction à plusieurs reprises jusqu’en juin 1954. Après avoir été six mois président du gouvernement provisoire (et ministre des Affaires étrangères, de juin à décembre 1946), Georges Bidault est investi président du Conseil en octobre 1949 et à nouveau pressenti en juin 1952. C’est sous son impulsion que la France rentre dans l’OTAN en 1949. Il défend par ailleurs l’Union française et se déclare favorable à la Communauté européenne de défense (CED). Lors des négociations internationales de Genève qui suivent le désastre de Diên Biên Phu, Georges Bidault est récusé par les Soviétiques ; le gouvernement Laniel tombe, et Georges Bidault est remplacé par Pierre Mendès France qui cumule les Affaires étrangères et la présidence du Conseil. Bidault prend totalement fait et cause pour les positions de l’Algérie française. Il quitte le MRP en 1958 et crée la Démocratie chrétienne de France. Il s’oppose violemment à la politique algérienne du général de Gaulle, au point d’être recherché pour complot contre la sûreté de l’État. Son immunité parlementaire est levée en 1962, et Georges Bidault est contraint à l’exil, se fixant finalement au Brésil où il ressuscite le CNR. Après l’amnistie de 1968, il fonde le Mouvement pour la justice et la liberté. Georges Bidault avait également été député de la Loire (1945, réélu en 1946, 1951 et 1956).</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050262-051627-19530108-19530628"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050262"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050187-051627-19450101-19830113"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050187"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051627-052467-19081110-19830127"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/052467"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051627-052592-19441101-19581231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/052592"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050262-051627-19530108-19530628"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050262"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050187-051627-19450101-19830113"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050187"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/051627-052467-19081110-19830127"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/052467"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/051627-052592-19441101-19581231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/052592"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb12317811q#about"/>
       <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Georges_Bidault"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/003630-051627"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-003630"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/003846-051627"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-003846"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/003630-051627"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-003630"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/003846-051627"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-003846"/>
    </rico:Agent>
 </rdf:RDF>

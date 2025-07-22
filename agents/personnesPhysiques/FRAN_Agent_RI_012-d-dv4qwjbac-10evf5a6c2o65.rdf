@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:dcterms="http://purl.org/dc/terms/"
-         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/FRAN_RI_012-d-dv4qwjbac-10evf5a6c2o65">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/FRAN_RI_012-d-dv4qwjbac-10evf5a6c2o65"/>
@@ -17,19 +17,22 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
       <rdfs:seeAlso rdf:resource="http://elec.enc.sorbonne.fr/architectes/328"/>
-      <rico:hasInstantiation>
+      <!--Contenu de biblio :  Identifiant Wikidata :
+        http://www.wikidata.org/entity/Q21559150-->
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/FRAN_RI_012-d-dv4qwjbac-10evf5a6c2o65">
-            <rico:isInstantiationOf rdf:resource="record/FRAN_RI_012-d-dv4qwjbac-10evf5a6c2o65"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/FRAN_RI_012-d-dv4qwjbac-10evf5a6c2o65"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_RI_012-d-dv4qwjbac-10evf5a6c2o65</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/FRAN_RI_012-d-dv4qwjbac-10evf5a6c2o65">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/FRAN_RI_012-d-dv4qwjbac-10evf5a6c2o65"/>
       <rdfs:label xml:lang="fr">Legendre, Alfred Mathurin Gustave (1838-....)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Legendre, Alfred Mathurin Gustave (1838-....)</skos:prefLabel>
       <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/FRAN_RI_012-d-dv4qwjbac-10evf5a6c2o65-Legendre%2C%20Alfred%20Mathurin%20Gustave%20%281838-....%29">
             <rdfs:label xml:lang="fr">Legendre, Alfred Mathurin Gustave (1838-....)</rdfs:label>
@@ -42,9 +45,12 @@
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1838-06-17</rico:birthDate>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
-            <html:p>Né le 17/06/1838 à Nantes. Inspecteur des travaux des édifices diocésains. A œuvré à la restauration de la cathédrale de Nantes.</html:p>
+            <html:p>Né le 17/06/1838 à Nantes. Inspecteur des travaux des édifices diocésains. A œuvré à la
+        restauration de la cathédrale de Nantes.</html:p>
          </html:div>
       </rico:history>
+      <!--Contenu de biblio : Identifiant Répertoire des architectes diocésains :
+        http://elec.enc.sorbonne.fr/architectes/328 -->
       <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q21559150"/>
    </rico:Agent>
 </rdf:RDF>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050290">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050290"/>
@@ -10,34 +18,33 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-06-22</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Vanessa ASPART)</rico:name>
+            <rico:name xml:lang="fr">Création (par Vanessa ASPART)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-06-22</rico:date>
-            <rico:descriptiveNote xml:lang="fr">Elsa Camus, 20 juin 2016 : modification forme autorisée du nom, ajout ISNI, modification Sources, ajout Activités, ajout Lieux, ajout liens d'association</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">Elsa Camus, 20 juin 2016 : modification forme autorisée du nom, ajout ISNI, modification Sources, ajout Activités, ajout Lieux, ajout liens d'association</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Archives nationales, Fonds Georges Bonnet (1837-1974), 685 AP.</html:p>
-      </rico:source>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb121016502</html:p>
-      </rico:source>
-      <rico:hasSource rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb121016502"/>
-      <rico:source rdf:parseType="Literal">
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb121016502"/>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/Georges_Bonnet_%28homme_politique,_1889-1973%29</html:p>
-      </rico:source>
-      <rico:hasSource rdf:resource="https://fr.wikipedia.org/wiki/Georges_Bonnet_%28homme_politique"/>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000109153255/about"/>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="https://fr.wikipedia.org/wiki/Georges_Bonnet_%28homme_politique"/>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000109153255"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050290">
-            <rico:isInstantiationOf rdf:resource="record/050290"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050290"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050290</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050290"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050290">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -55,109 +62,119 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1889-07-23</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1973-06-18</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050290"/>
-            <rico:placeRelationHasSource rdf:resource="place/FRAN_RI_005-d3ntfzgrpm--zoir5kj7f9nt"/>
+            <rico:relationHasTarget rdf:resource="agent/050290"/>
+            <rico:relationHasSource rdf:resource="place/FRAN_RI_005-d3ntfzgrpm--zoir5kj7f9nt"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/FRAN_RI_005-d3ntfzgrpm--zoir5kj7f9nt"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050290"/>
-            <rico:placeRelationHasSource rdf:resource="place/FRAN_RI_005-d3ntb7l0b0--1uwhs5qpi6ngo"/>
+            <rico:relationHasTarget rdf:resource="agent/050290"/>
+            <rico:relationHasSource rdf:resource="place/FRAN_RI_005-d3ntb7l0b0--1uwhs5qpi6ngo"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/FRAN_RI_005-d3ntb7l0b0--1uwhs5qpi6ngo"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050290"/>
-            <rico:placeRelationHasSource rdf:resource="place/FRAN_RI_005-d3ntbm4gav--hzgzfrq57m0r"/>
+            <rico:relationHasTarget rdf:resource="agent/050290"/>
+            <rico:relationHasSource rdf:resource="place/FRAN_RI_005-d3ntbm4gav--hzgzfrq57m0r"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/FRAN_RI_005-d3ntbm4gav--hzgzfrq57m0r"/>
-      <rico:thingIsTargetOfPlaceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050290"/>
-            <rico:placeRelationHasSource rdf:resource="place/FRAN_RI_005-d5bdpnc6n8--6t8agr79pl90"/>
+            <rico:relationHasTarget rdf:resource="agent/050290"/>
+            <rico:relationHasSource rdf:resource="place/FRAN_RI_005-d5bdpnc6n8--6t8agr79pl90"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/FRAN_RI_005-d5bdpnc6n8--6t8agr79pl90"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_005-d3ntfzgrpm--zoir5kj7f9nt"/>
       <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_005-d3ntb7l0b0--1uwhs5qpi6ngo"/>
       <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_005-d3ntbm4gav--hzgzfrq57m0r"/>
       <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_005-d5bdpnc6n8--6t8agr79pl90"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050290-d699msj742x--12cnnohd8i9wj">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050290"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050290-d699msj742x--12cnnohd8i9wj"/>
+            <rico:relationHasTarget rdf:resource="agent/050290"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d168997e115">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050290-d699msj742x--12cnnohd8i9wj"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj742x--12cnnohd8i9wj"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj742x--12cnnohd8i9wj"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj742x--12cnnohd8i9wj"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d168997e115"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050290-d699msj12zg--s5xb7u1f4uq0-19370101-19381231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050290"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050290-d699msj12zg--s5xb7u1f4uq0-19370101-19381231"/>
+            <rico:relationHasTarget rdf:resource="agent/050290"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d168997e121">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050290-d699msj12zg--s5xb7u1f4uq0-19370101-19381231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj12zg--s5xb7u1f4uq0"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1937-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1938-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">ambassadeur de France aux Etats-Unis</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj12zg--s5xb7u1f4uq0"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj12zg--s5xb7u1f4uq0"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d168997e121"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050290-d699msjnw86-64seh0fmw8hj-19250101-19401231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050290"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050290-d699msjnw86-64seh0fmw8hj-19250101-19401231"/>
+            <rico:relationHasTarget rdf:resource="agent/050290"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d168997e141">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050290-d699msjnw86-64seh0fmw8hj-19250101-19401231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1925-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1940-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">15 fois ministre entre 1925 et 1940</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d168997e141"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050290-d699msiribo--1dn34eg8lht4f-19240101-19681231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050290"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050290-d699msiribo--1dn34eg8lht4f-19240101-19681231"/>
+            <rico:relationHasTarget rdf:resource="agent/050290"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d168997e161">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050290-d699msiribo--1dn34eg8lht4f-19240101-19681231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1924-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1968-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Député de la Dordogne de 1924 à 1940 et de 1956 à 1968</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d168997e161"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050290-d699msjyazt-1f0ggfyf3is8u-19240101-19651231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050290"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050290-d699msjyazt-1f0ggfyf3is8u-19240101-19651231"/>
+            <rico:relationHasTarget rdf:resource="agent/050290"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d168997e181">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050290-d699msjyazt-1f0ggfyf3is8u-19240101-19651231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1924-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1965-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">Conseiller général, maire</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d168997e181"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Georges Bonnet, né à Bassillac (Dordogne) le 23 juillet 1889 et mort à Paris le 18 juin 1973, est un homme politique français, député radical-socialiste de la Dordogne de 1924 à 1940 et de 1956 à 1968 et plusieurs fois ministre entre 1925 et 1940.</html:p>
@@ -168,7 +185,6 @@
             <html:p>Chef de cabinet du sous-secrétaire d'État aux Postes, Télégraphes et Téléphones, Louis Deschamps, de 1919 à 1921, il est nommé chef de la délégation française à la Conférence de l'Union postale de Madrid, et fait adopter le franc-or comme monnaie internationale.</html:p>
             <html:p>Ainsi introduit dans le monde politique, il se présente aux élections générales législatives du 16 novembre 1919 dans son département natal ; il figure en deuxième position sur la liste de concentration économique et républicaine, mais essuie un échec. Il prend sa revanche aux élections générales suivantes où il est élu le 11 mai 1924, sur la liste d'Union des gauches.</html:p>
             <html:p>Le scrutin uninominal ayant été rétabli, il est battu le 22 avril 1928 dans la circonscription de Nontron. Son absence de la vie parlementaire est de courte durée. Le 24 février 1929, il emporte, à une élection partielle, le siège laissé vacant dans la première circonscription de Périgueux par l'élection de Félix Gadaud au Sénat ; il est par la suite réélu aux renouvellements du 1er mai 1932 et du 26 avril 1936.</html:p>
-            <html:p/>
             <html:p>Georges Bonnet sera quinze fois ministre. Il est nommé le 17 avril 1925 sous-secrétaire d'État à la Présidence du Conseil dans le deuxième cabinet Painlevé. Il organise les services de la présidence du Conseil, jusque là embryonnaires, rétablit la paix religieuse en Alsace-Lorraine et crée le Conseil économique. Le 29 octobre de la même année, il devient ministre du Budget dans le troisième cabinet Painlevé. Il est ensuite successivement ministre des Pensions dans le deuxième cabinet Herriot du 19 juillet 1926, ministre du Commerce et de l'Industrie dans le premier cabinet Chautemps du 21 février 1930, ministre des P.T.T. dans le cabinet Steeg du 13 décembre 1930, ministre des Travaux publics dans le cabinet Paul-Boncour du 18 décembre 1932. Il est ministre des Finances dans le premier cabinet Daladier du 31 janvier 1933, le premier cabinet Sarraut du 26 octobre 1933 et le deuxième cabinet Chautemps du 26 novembre 1933.</html:p>
             <html:p>C'est en qualité de ministre des Finances qu'il créé la loterie nationale qui devait survivre à tous les évènements, et obtient du Parlement le vote de mesures de redressement financier qui, à trois reprises, en février, en mai, et en décembre 1933, réduisent de plusieurs milliards le déficit budgétaire.</html:p>
             <html:p>Il est à nouveau ministre du Commerce et de l'Industrie dans le quatrième cabinet Laval du 7 juin 1935 et le deuxième cabinet Sarraut du 24 janvier 1936. Il prépare, à ce titre, l'exposition internationale de 1937, approuve les plans du Palais de Chaillot et signe le premier traité de commerce avec les États-Unis.</html:p>
@@ -184,8 +200,11 @@
             <html:p>Outre une riche carrière politique, Georges Bonnet exerça également la profession d'avocat et rédigea près d'une quinzaine d'ouvrages, essentiellement des souvenirs dont<html:i>Vingt ans de vie politique</html:i>et<html:i>Dans la tourmente</html:i>publiés en 1969 et 1971.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050290-050306-19380410-19400321"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050306"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050290-052423-18890723-19401231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/052423"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050290-050752-19250417-19251128"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/050752"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050290-050306-19380410-19400321"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050306"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050290-052423-18890723-19401231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/052423"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/050290-050752-19250417-19251128"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050752"/>
    </rico:Agent>
 </rdf:RDF>

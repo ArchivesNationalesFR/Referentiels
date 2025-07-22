@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050338">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050338"/>
@@ -10,24 +18,23 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-01-16</rico:creationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Zénaïde ANDRIEU-ROMANEIX)</rico:name>
+            <rico:name xml:lang="fr">Création (par Zénaïde ANDRIEU-ROMANEIX)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-01-16</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source rdf:parseType="Literal">
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Archives nationales, Fonds Moreau (524 AP).</html:p>
-      </rico:source>
-      <rico:hasInstantiation>
+      </rico:recordResourceSourceOfInformation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050338">
-            <rico:isInstantiationOf rdf:resource="record/050338"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050338"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050338</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050338"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050338">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -49,6 +56,7 @@
             <html:p>René Moreau (1858-1924), fils de Jean-Bélizaire Moreau et également architecte, participa à l’exposition des Beaux-Arts de Moulins, en 1896, comme secrétaire général de la Société d’émulation et des Beaux-Arts de cette ville. Président du comité de commémoration du centenaire de Théodore de Banville à Moulins en 1923, René Moreau dessina une plaque commémorative pour la maison du poète. Outre des restaurations de châteaux dans l’Allier (La Palice de 1856 à 1895, Contresol en 1882, La Presle en 1887), ses principales réalisations sont la construction de l’hôtel de la caisse d’épargne à Moulins (1898), de l’hôtel Carlton à Vichy (1906-1907) et du monument aux morts de Souvigny (Allier, 1922).</html:p>
          </html:div>
       </rico:history>
-      <rico:personHasFamilyRelation rdf:resource="familyRelation/050337-050338"/><rico:hasFamilyAssociationWith rdf:resource="agent/050337"/>
+      <rico:thingIsConnectedToRelation rdf:resource="familyRelation/050337-050338"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/050337"/>
    </rico:Agent>
 </rdf:RDF>

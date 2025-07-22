@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050627">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/050627"/>
@@ -11,42 +19,39 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-11-29</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Pascal DAVID)</rico:name>
+            <rico:name xml:lang="fr">Création (par Pascal DAVID)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-02-12</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 12 février 2014 : changé nom, ajouté n°s notice BnF et ISNI</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 12 février 2014 : changé nom, ajouté n°s notice BnF et ISNI</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Révision
-                (par Pascal DAVID-DORMIEN)</rico:name>
+            <rico:name xml:lang="fr">Révision (par Pascal DAVID-DORMIEN)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-09-16</rico:date>
-            <rico:descriptiveNote xml:lang="fr">IR du fonds 621AP absent du SIA.</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">IR du fonds 621AP absent du SIA.</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-11-29</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">Archives nationales, fonds Eustache-Antoine Hua (621AP).</rico:source>
-      <rico:source xml:lang="fr">Notice BnF : FRBNF12462515</rico:source>
-      <rico:source xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/Eustache_Antoine_Hua</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000002137124/about"/>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Archives nationales, fonds Eustache-Antoine Hua (621AP).</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice BnF : FRBNF12462515</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/Eustache_Antoine_Hua</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000002137124"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Eustache_Antoine_Hua"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050627">
-            <rico:isInstantiationOf rdf:resource="record/050627"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050627"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050627</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050627"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050627">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -64,82 +69,90 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1759-01-30</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1836-05-29</rico:deathDate>
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/050627"/>
-            <rico:placeRelationHasSource rdf:resource="place/Mantes-la-Jolie"/>
+            <rico:relationHasTarget rdf:resource="agent/050627"/>
+            <rico:relationHasSource rdf:resource="place/Mantes-la-Jolie"/>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1802-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1807-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">maire de Mantes (1802-1807) et procureur impérial (1807).</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation><rico:isAssociatedWithPlace rdf:resource="place/Mantes-la-Jolie"/>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/Mantes-la-Jolie"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050627-d699msjyazt-1f0ggfyf3is8u-18020101-18071231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050627"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050627-d699msjyazt-1f0ggfyf3is8u-18020101-18071231"/>
+            <rico:relationHasTarget rdf:resource="agent/050627"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d173505e150">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050627-d699msjyazt-1f0ggfyf3is8u-18020101-18071231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1802-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1807-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">maire de Mantes</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d173505e150"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050627-d699msiribo--1dn34eg8lht4f-17910101-17921231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050627"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050627-d699msiribo--1dn34eg8lht4f-17910101-17921231"/>
+            <rico:relationHasTarget rdf:resource="agent/050627"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d173505e170">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050627-d699msiribo--1dn34eg8lht4f-17910101-17921231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1791-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1792-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">membre de l'Assemblée législative et député de Seine-et-Oise.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d173505e170"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050627-d3m0bl76dik--ncxjtjvkyzcv-17890101-17911231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050627"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050627-d3m0bl76dik--ncxjtjvkyzcv-17890101-17911231"/>
+            <rico:relationHasTarget rdf:resource="agent/050627"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d173505e190">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050627-d3m0bl76dik--ncxjtjvkyzcv-17890101-17911231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3m0bl76dik--ncxjtjvkyzcv"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1789-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1791-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">au Parlement de Paris.</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl76dik--ncxjtjvkyzcv"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3m0bl76dik--ncxjtjvkyzcv"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d173505e190"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/050627-d699msj1bp7--sqw9bp2dwte7-17890101-18301231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/050627"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050627-d699msj1bp7--sqw9bp2dwte7-17890101-18301231"/>
+            <rico:relationHasTarget rdf:resource="agent/050627"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d173505e210">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/050627-d699msj1bp7--sqw9bp2dwte7-17890101-18301231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj1bp7--sqw9bp2dwte7"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1789-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1830-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">avocat avant la Révolution, à la cour de cassation (1812), puis avocat général et conseiller (1822).</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj1bp7--sqw9bp2dwte7"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj1bp7--sqw9bp2dwte7"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d173505e210"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Eustache-Antoine Hua (1759-1836) est né à Mantes-la-Jolie (Yvelines) le 30 janvier 1759. Avocat au parlement de Paris sous l’Ancien Régime, Eustache-Antoine Hua (1759-1836) devient, au début de la Révolution, juge au tribunal de Mantes, puis il est élu, le 4 septembre 1791, député de Seine-et-Oise. Sous le Directoire, Hua est pendant quelques temps administrateur de la conservation générale des hypothèques. Sous l’Empire, il fait partie du conseil général de son département, puis il est maire de Mantes (1802-1807). Il entre dans la magistrature comme procureur impérial près le tribunal de Mantes, le 7 octobre 1807, puis devient avocat à la Cour de cassation, le 5 mai 1812. Le 18 septembre 1815, il est appelé, sur la recommandation du procureur général Bellart, au poste d’avocat général près la cour royale de Paris. Il est nommé avocat général à la Cour de cassation, le 11 novembre 1818, inspecteur général des écoles de droit en 1819 et conseiller à la Cour de cassation le 8 octobre 1822. Il perd toutes ses fonctions à la révolution de 1830. Outre de nombreux articles insérés dans le<html:i>Nouveau répertoire de législation</html:i>, Hua laisse un<html:i>Projet de réformation de la législation hypothécaire</html:i>en 1812.</html:p>

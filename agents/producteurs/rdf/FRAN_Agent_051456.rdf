@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051456">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/051456"/>
@@ -11,29 +19,27 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-02-23</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Marine ZELVERTE)</rico:name>
+            <rico:name xml:lang="fr">Création (par Marine ZELVERTE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-02-23</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Marine ZELVERTE)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Marine ZELVERTE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-02-23</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Valli"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/051456">
-            <rico:isInstantiationOf rdf:resource="record/051456"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051456"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_051456</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051456"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/051456">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -56,28 +62,32 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1958-01-01</rico:birthDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051456-d-1axy38anu-1ua8su5ef37p1">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051456"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051456-d-1axy38anu-1ua8su5ef37p1"/>
+            <rico:relationHasTarget rdf:resource="agent/051456"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d185474e89">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051456-d-1axy38anu-1ua8su5ef37p1"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-1axy38anu-1ua8su5ef37p1"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-1axy38anu-1ua8su5ef37p1"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-1axy38anu-1ua8su5ef37p1"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d185474e89"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/051456-d699msk0pcw-gpdixmoh1g05">
-            <rico:performanceRelationHasTarget rdf:resource="agent/051456"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051456-d699msk0pcw-gpdixmoh1g05"/>
+            <rico:relationHasTarget rdf:resource="agent/051456"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d185474e95">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/051456-d699msk0pcw-gpdixmoh1g05"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msk0pcw-gpdixmoh1g05"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk0pcw-gpdixmoh1g05"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk0pcw-gpdixmoh1g05"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d185474e95"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Valli, née Valli Timbert le 26 décembre 1958 dans le Connecticut (États-Unis), est une chanteuse et animatrice de radio française d'origine américaine.</html:p>
@@ -86,9 +96,10 @@
          </html:div>
       </rico:history>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb139506673#about"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005419-051456-20020101-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/005419"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/005419-051456-20020101-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/005419"/>
       <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Valli"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/055871-051456"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-055871"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/055871-051456"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-055871"/>
    </rico:Agent>
 </rdf:RDF>

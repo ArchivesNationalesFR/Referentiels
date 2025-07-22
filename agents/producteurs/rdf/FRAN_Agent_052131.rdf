@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052131">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052131"/>
@@ -11,37 +19,34 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-02-20</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Patricia DA COSTA)</rico:name>
+            <rico:name xml:lang="fr">Création (par Patricia DA COSTA)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-11-05</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Solange BIDOU)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Solange BIDOU)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-02-20</rico:date>
-            <rico:descriptiveNote xml:lang="fr">La validation de cette notice est nécessaire pour gérer une entrée en instance. Solange</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">La validation de cette notice est nécessaire pour gérer une entrée en instance. Solange</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-02-20</rico:date>
-            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 20 fev. 2019 : modification forme autorisée du nom, ajout lien d’identité BnF, indexation fonctions</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 20 fev. 2019 : modification forme autorisée du nom, ajout lien d’identité BnF, indexation fonctions</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052131">
-            <rico:isInstantiationOf rdf:resource="record/052131"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052131"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052131</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052131"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052131">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -83,31 +88,33 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1938-07-27</rico:beginningDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052131-d5bhvil20q--uuew3ia85vzc">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052131"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052131-d5bhvil20q--uuew3ia85vzc"/>
+            <rico:relationHasTarget rdf:resource="agent/052131"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d197055e155">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052131-d5bhvil20q--uuew3ia85vzc"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvil20q--uuew3ia85vzc"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvil20q--uuew3ia85vzc"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d197055e155"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052131-d5bhvikz03--iqa08pprge9n">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052131"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052131-d5bhvikz03--iqa08pprge9n"/>
+            <rico:relationHasTarget rdf:resource="agent/052131"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d197055e161">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052131-d5bhvikz03--iqa08pprge9n"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvikz03--iqa08pprge9n"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            </rico:relationHasSource>
+            <rico:note rdf:parseType="Literal">
                <html:p xml:lang="fr">élevage ovin</html:p>
-            </rico:descriptiveNote>
+            </rico:note>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvikz03--iqa08pprge9n"/></rico:Activity></rico:performsOrPerformed>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d197055e161"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Créée le 27 juillet 1938, l'Association des anciens élèves de l'école technique spécialisée de bergers de Rambouillet est présidée par Pierre Jacquemin. André Moret, maître berger et formateur à l'école en est le secrétaire. Ancien élève de l'école nationale d'élevage ovin, Germain Dalin (1926-2009) en devient le président dès 1958, puis président d'honneur à partir de 1995.</html:p>
@@ -115,7 +122,8 @@
             <html:p>Au moment du renouvellement de ses statuts, en 1959, son ambition est le maintien de l'esprit de camaraderie et d'amitié de l'école, l'aide à l'emploi pour tous les anciens élèves (Statuts, 1959).</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051353-052131-19380727-*"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/051353"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/051353-052131-19380727-*"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/051353"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb12005204k#about"/>
    </rico:Agent>
 </rdf:RDF>

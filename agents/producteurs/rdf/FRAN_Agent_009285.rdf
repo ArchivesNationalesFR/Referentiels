@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/009285">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/009285"/>
@@ -8,17 +16,31 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
-      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:lastModificationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-12-20</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Dérivation
-                (Import_SIA)</rico:name>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
+            <rico:generalDescription xml:lang="fr">notice révisée en novembre 2023.</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-12-20</rico:date>
+            <rico:generalDescription xml:lang="fr">21/12/2023, J. Gaillard : Normalisation de la forme autorisée du nom | Ajout identifiant Wikidata | Ajout liens d'identité LoC, SNAC, WorldCat Entities, VIAF, IdRef, FranceArchives</rico:generalDescription>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice d'autorité BnF. (http://ark.bnf.fr/ark:/12148/cb12025050m)</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice Wikipedia. (https://fr.wikipedia.org/wiki/Ignace_Meyerson)</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice du Maitron. (https://maitron.fr/spip.php?article151352)</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Archives nationales, Fonds Ignace Meyerson (19920046) [521AP]</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000110645847"/>
+      <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q3148177"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Ignace_Meyerson"/>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/009285">
-            <rico:isInstantiationOf rdf:resource="record/009285"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/009285"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_009285</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
@@ -26,16 +48,18 @@
             <rico:identifier>9911/AP521</rico:identifier>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/009285">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/009285"/>
-      <rdfs:label xml:lang="fr">Meyerson, Ignace</rdfs:label>
+      <owl:sameAs rdf:resource="https://isni.org/isni/0000000110645847"/>
+      <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q3148177"/>
+      <rdfs:label xml:lang="fr">Meyerson, Ignace (1888-1983)</rdfs:label>
       <rico:hasOrHadAgentName>
-         <rico:AgentName rdf:about="agentName/009285-Meyerson%2C%20Ignace">
-            <rdfs:label xml:lang="fr">Meyerson, Ignace</rdfs:label>
-            <rico:textualValue xml:lang="fr">Meyerson, Ignace</rico:textualValue>
+         <rico:AgentName rdf:about="agentName/009285-Meyerson%2C%20Ignace%20%281888-1983%29">
+            <rdfs:label xml:lang="fr">Meyerson, Ignace (1888-1983)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Meyerson, Ignace (1888-1983)</rico:textualValue>
             <rico:isOrWasAgentNameOf rdf:resource="agent/009285"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl002"/>
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
@@ -43,7 +67,197 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1888-01-27</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-11-17</rico:deathDate>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/017786-009285"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-017786"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PlaceRelation>
+            <rico:relationHasTarget rdf:resource="agent/009285"/>
+            <rico:relationHasSource rdf:resource="place/Toulouse"/>
+         </rico:PlaceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadLocation rdf:resource="place/Toulouse"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PlaceRelation>
+            <rico:relationHasTarget rdf:resource="agent/009285"/>
+            <rico:relationHasSource rdf:resource="place/Varsovie"/>
+         </rico:PlaceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadLocation rdf:resource="place/Varsovie"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/009285-d699msjarlu--l5x9bzdkopz8-19140101-19181231">
+            <rico:relationHasTarget rdf:resource="agent/009285"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d94281e148">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/009285-d699msjarlu--l5x9bzdkopz8-19140101-19181231"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjarlu--l5x9bzdkopz8"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1914-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1918-12-31</rico:endDate>
+            <rico:note rdf:parseType="Literal">
+               <html:p xml:lang="fr">médecin auxiliaire dans la Légion étrangère (1914-1915), interne à l'hôpital de la Salpétrière (1916-1918).</html:p>
+            </rico:note>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjarlu--l5x9bzdkopz8"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d94281e148"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/009285-d699msk3h6v--1a7obp35gqwv3-19450101-19831117">
+            <rico:relationHasTarget rdf:resource="agent/009285"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d94281e168">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/009285-d699msk3h6v--1a7obp35gqwv3-19450101-19831117"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msk3h6v--1a7obp35gqwv3"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1945-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-11-17</rico:endDate>
+            <rico:note rdf:parseType="Literal">
+               <html:p xml:lang="fr">rejoint à la Libération les rangs du PCF, et entreprend un activité militante intense. Responsable à Toulouse des Combattants de la Liberté et participe aux débats constitutionnels de 1945-1946. Sa production savante sur la « psychologie historique » est pensée comme une contribution à la pensée marxiste et à l’action politique. Membre du PCF jusqu'à son dècès.</html:p>
+            </rico:note>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msk3h6v--1a7obp35gqwv3"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d94281e168"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/009285-d699msj02xm-19qbb7wdtto3j-19280101-19830630">
+            <rico:relationHasTarget rdf:resource="agent/009285"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d94281e188">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/009285-d699msj02xm-19qbb7wdtto3j-19280101-19830630"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1928-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-06-30</rico:endDate>
+            <rico:note rdf:parseType="Literal">
+               <html:p xml:lang="fr">chargé de cours de psychologie à la Sorbonne (1928), puis à la faculté des lettres. Professeur titulaire à la faculté des lettres de l'université de Toulouse (1948). Directeur d'études à l'EPHE (1951).</html:p>
+            </rico:note>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d94281e188"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/009285-d699msj3i51--hevk1gms21cg-19120101-19731231">
+            <rico:relationHasTarget rdf:resource="agent/009285"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d94281e208">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/009285-d699msj3i51--hevk1gms21cg-19120101-19731231"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1912-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1973-12-31</rico:endDate>
+            <rico:note rdf:parseType="Literal">
+               <html:p xml:lang="fr">auteur d'une trentaine d'ouvrages scientifiques (sur la psychologie), sociologiques, philosophiques ou sur les arts, certains en collaboration avec d'autres auteurs, ouvrages posthumes (1991-1999) et des rééditions, plus de nombreux articles.</html:p>
+            </rico:note>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d94281e208"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/009285-d699msj1t4q--erdp2b9cjr2g-19470101-19471231">
+            <rico:relationHasTarget rdf:resource="agent/009285"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d94281e228">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/009285-d699msj1t4q--erdp2b9cjr2g-19470101-19471231"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj1t4q--erdp2b9cjr2g"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1947-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1947-12-31</rico:endDate>
+            <rico:note rdf:parseType="Literal">
+               <html:p xml:lang="fr">thèse de doctorat « Les fonctions psychologiques et les œuvres ».</html:p>
+            </rico:note>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj1t4q--erdp2b9cjr2g"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d94281e228"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/009285-d-2dlouru40-16uts12xdm4zl-19420101-19441231">
+            <rico:relationHasTarget rdf:resource="agent/009285"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d94281e249">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/009285-d-2dlouru40-16uts12xdm4zl-19420101-19441231"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-2dlouru40-16uts12xdm4zl"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1942-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1944-12-31</rico:endDate>
+            <rico:note rdf:parseType="Literal">
+               <html:p xml:lang="fr">entre dans la résistance à l'Armée secrète, assure la direction du journal clandestin de l'Armée secrète du Sud-Ouest. Participe à la Libération et des Forces françaises de l’Intérieur (FFI) de la Haute-Garonne.</html:p>
+            </rico:note>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-2dlouru40-16uts12xdm4zl"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d94281e249"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/009285-d699msjadcf-jdxhdmc1t73a-19220101-19261231">
+            <rico:relationHasTarget rdf:resource="agent/009285"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d94281e269">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/009285-d699msjadcf-jdxhdmc1t73a-19220101-19261231"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjadcf-jdxhdmc1t73a"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1922-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1926-12-31</rico:endDate>
+            <rico:note rdf:parseType="Literal">
+               <html:p xml:lang="fr">traducteur de la « Traumdeutung » de Sigmund Freud sous le titre « La Science des Rêves ».</html:p>
+            </rico:note>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjadcf-jdxhdmc1t73a"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d94281e269"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/009285-d-8o1o09an5--1hqno6l8gqwkw-19140101-19831117">
+            <rico:relationHasTarget rdf:resource="agent/009285"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d94281e289">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/009285-d-8o1o09an5--1hqno6l8gqwkw-19140101-19831117"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-8o1o09an5--1hqno6l8gqwkw"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1914-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-11-17</rico:endDate>
+            <rico:note rdf:parseType="Literal">
+               <html:p xml:lang="fr">chef adjoint au laboratoire de psychologie de Sainte-Anne (Paris). Chef de travaux au laboratoire de psychologie physiologique de l'EPHE (1921), puis directeur adjoint. Fondation du Centre de recherches de psychologie comparative (1952). Président de la section sociologie et psychologie sociale du CNRS (1957-1960).</html:p>
+            </rico:note>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d-8o1o09an5--1hqno6l8gqwkw"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d94281e289"/>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Né le 27 février 1888 à Varsovie (Pologne), territoire russe à l'époque, dans une famille de médecins, Ignace Meyerson arrive à Paris en 1906, à la suite de sa participation à l'insurrection russo-polonaise de 1905. Il retrouve à Paris son oncle Émile Meyerson (1859-1933), philosophe et historien des sciences, avec lequel il entretient des rapports très réguliers, tant affectifs (en polonais) qu'intellectuels (en français). De 1907 à 1920, Ignace Meyerson poursuit des études de sciences naturelles, de médecine et de philosophie. Puis, il développe des travaux de physiologie musculaire et nerveuse qu'il mène, à partir de 1911 en qualité de préparateur bénévole au laboratoire de physiologie de la Sorbonne et du Muséum du professeur Louis Lapicque, en 1913 et 1914 en tant qu'attaché au laboratoire de physiologie de l'Institut Marey.</html:p>
+            <html:p>Engagé comme médecin auxiliaire dans la Légion étrangère dès le début de la Première Guerre mondiale, il est réformé pour raison de santé en 1915, et entre comme interne en remplacement d'Henri Wallon parti au front, dans les services de Philippe Chaslin et Jean Nageotte à l'hôpital de la Salpêtrière (Paris). Pendant la guerre, il entre en contact avec Georges Dumas et Pierre Janet et se lie avec Henri Delacroix.</html:p>
+            <html:p>Ses relations avec nombre de savants qui ont marqué l'entre-deux-guerres sont, dès cette période, déjà considérables. Par la famille Lapicque, il s'est lié à Henri Laugier, mais aussi à Pierre Curie, Jean Perrin, Paul Langevin, et avec l'historien Charles Seignobos (1854-1942) qui l'adopte comme un fils. Inscrit au parti socialiste en 1908, il y noue des liens étroits avec Victor Basch et Jeannette Halbwachs. Il devient l'un des proches de Lucien Herr et a de nombreux contacts avec Marcel Mauss et Marcel Granet. Par ailleurs, il fréquente assidûment nombre d'artistes, peintres et sculpteurs.</html:p>
+            <html:p>A la fin de la guerre, il se trouve, en tant que polonais, dans une situation professionnelle difficile car il ne peut soutenir sa thèse de médecine. Georges Dumas lui offre un poste de délégué dans les fonctions de chef adjoint au laboratoire de psychologie de l'asile clinique de Sainte-Anne (Paris). Le secrétaire du<html:i>Journal de psychologie</html:i>étant mort à la guerre, Pierre Janet charge alors Meyerson de remettre en route ce journal. C'est chose faite au début de l'année 1920. Il reçoit pour cela, en 1920, le prix Dagnan-Bouveret de l'Académie des sciences morales et politiques. Il est, cette même année, élu secrétaire de la Société française de psychologie (fonction qu'il exerce jusqu'en 1938), et secrétaire général de la fédération des sociétés françaises des sciences philosophiques, historiques, philologiques et juridiques.</html:p>
+            <html:p>En 1921, il est nommé, avec le statut de préparateur, chef de travaux au laboratoire de psychologie physiologique (en 3e section) de l'École pratique des hautes études (EPHE), à la demande de Piéron, directeur de ce laboratoire et de Delacroix, au nom du comité directeur de l'institut de psychologie que ces deux derniers viennent d'organiser. En 1922, à la demande de Georges Dumas, il commence la traduction de la « Traumdeutung » [Interprétation du rêve] de Sigmund Freud (publiée en 1926 sous le titre<html:i>La Science des Rêves</html:i>).</html:p>
+            <html:p>Naturalisé français en février 1923, il devient directeur-adjoint au laboratoire de psychologie physiologique de l'EPHE. On a peu de traces de son activité dans ce laboratoire, si ce n'est la rédaction de plusieurs centaines de comptes rendus pour<html:i>L'Année psychologique</html:i>, organe de ce laboratoire. Son activité rédactionnelle pour le<html:i>Journal de psychologie</html:i>est également considérable. Il rédige lui-même plusieurs milliers de comptes rendus ; il sollicite des articles auprès des psychologues de différents pays ainsi que des chercheurs en sciences sociales s'intéressant aux problèmes de psychologie, comme en témoigne son importante correspondance.</html:p>
+            <html:p>La direction qu'il donne au<html:i>Journal</html:i>(organe de la Société de psychologie) se manifeste plus précisément dans les numéros spéciaux qu'il organise sur la vie psychique de l'enfant, les relations de la psychologie et de la sociologie, l'art et la pensée, la psychologie du langage, et dans l'ouverture à la psychologie de la forme, à la psychologie concrète, à la phénoménologie.</html:p>
+            <html:p>Son intérêt pour la psychologie comparée se précise. Il a travaillé en 1920 sur le « signe graphique chez l'enfant » ; il rédige en 1926 un appendice pour l'ouvrage de Jean Piaget,<html:i>La représentation du monde chez l'enfant</html:i>; par ailleurs, il mène entre 1927 et 1938, avec Paul Guillaume qui vient de rentrer d'Algérie, toute une série de recherches sur les grands singes au Muséum d'histoire naturelle et à l'Institut Pasteur. Profondément marqué par l'ouvrage de Lucien Lévy-Bruhl sur la mentalité primitive, il présente dans son article sur « Les images » (<html:i>Journal de psychologie</html:i>, XXVI, 1929), repris dans le<html:i>Nouveau traité de psychologie</html:i>publié sous la direction de Georges Dumas (Paris, 1932) sa préoccupation : l'importance du signe et du symbole pour ce qu'il appelle bien plus tard « l'entrée dans l'humain » (1951). A partir de 1928, il est chargé de cours de psychologie à la Sorbonne, où il supplée Henri Delacroix absorbé par ses fonctions de doyen.</html:p>
+            <html:p>Réfugié dès le début de la Seconde Guerre mondiale à Toulouse, il est détaché par le ministère pour enseigner la psychologie à la faculté des lettres. Relevé de ses fonctions le 19 décembre 1940 en application des lois raciales de Vichy, il continue clandestinement son enseignement pendant quelques temps. Il crée à Toulouse la Société toulousaine de psychologie comparative qui organise une journée sur l'histoire du travail et des techniques. Après l'entrée des troupes allemandes dans la zone libre (novembre 1942), il assure la direction du journal clandestin de l'Armée secrète du Sud-Ouest. A la fin de la guerre, il est réintégré et mis à disposition du recteur de Toulouse pour donner un enseignement à la faculté des lettres. En 1947, il soutient sa thèse de doctorat « Les fonctions psychologiques et les œuvres », dans laquelle il fixe les principes de la « psychologie historique » en prenant pour exemple la personne. Il est nommé en 1948 professeur titulaire à la faculté des lettres de l'université de Toulouse. Il postule, sans l'obtenir, pour le poste laissé vacant à Paris par la mort de Paul Guillaume.</html:p>
+            <html:p>C'est en 1951, à soixante-trois ans, qu'il est nommé directeur d'études à la 6e section de l'EPHE. Il y crée le Centre de recherches de psychologie comparative l'année suivante, dans le cadre duquel il organise d'importants colloques, dont : « Les problèmes de la couleur » (1954), « Les problèmes de la personne » (1960), « Le signe et les systèmes de signes » (1962). De plus, il continue de diriger le<html:i>Journal de psychologie normale et pathologique</html:i>, qui depuis la création par Paul Fraisse de<html:i>Psychologie française</html:i>en 1956, a cessé d'être l'organe de la Société de psychologie ; il fait aussi paraître des numéros spéciaux sur le travail, l'espace, le temps, l'art.</html:p>
+            <html:p>Ignace Meyerson meurt à Boulogne-Billancourt (Hauts-de-Seine) le 17 novembre 1983, à l'âge de quatre-vingt-quinze ans, n'ayant abandonné son enseignement que quelques mois plus tôt.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009285-050334-18880127-19640930"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050334"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009285-052971-18880127-19420424"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/052971"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/003774-009285-18880127-19831117"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/003774"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/009285-050190-19150101-19621201"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/050190"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Ignace_Meyerson"/>
+      <owl:sameAs rdf:resource="https://maitron.fr/spip.php?article151352"/>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb12025050m#about"/>
+      <owl:sameAs rdf:resource="https://lccn.loc.gov/n86143481"/>
+      <owl:sameAs rdf:resource="http://n2t.net/ark:/99166/w62590vs"/>
+      <owl:sameAs rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJd883gbkdTkfMTJtWwV4q"/>
+      <owl:sameAs rdf:resource="http://viaf.org/viaf/59096670"/>
+      <owl:sameAs rdf:resource="http://www.idref.fr/028410106/id"/>
+      <owl:sameAs rdf:resource="https://francearchives.gouv.fr/fr/agent/278567955"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/017786-009285"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-017786"/>
    </rico:Agent>
 </rdf:RDF>

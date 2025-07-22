@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052179">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052179"/>
@@ -11,33 +19,31 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-10-19</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Emeline ROTOLO)</rico:name>
+            <rico:name xml:lang="fr">Création (par Emeline ROTOLO)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-01-02</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Geneviève PROFIT)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Geneviève PROFIT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-10-19</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 19/10/2020 : modification ISNI</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 19/10/2020 : modification ISNI</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:source xml:lang="fr">L'introduction et les archives du versement 20040219 (https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_013825)</rico:source>
-      <rico:source xml:lang="fr">Notice biographique de l'Ircam (http://brahms.ircam.fr/marcel-landowski)</rico:source>
-      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000120296329/about"/>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">L'introduction et les archives du versement 20040219 (https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_013825)</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice biographique de l'Ircam (http://brahms.ircam.fr/marcel-landowski)</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000120296329"/>
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Marcel_Landowski"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052179">
-            <rico:isInstantiationOf rdf:resource="record/052179"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052179"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052179</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052179"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052179">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -55,21 +61,22 @@
       </rico:hasOrHadAgentName>
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1915-02-18</rico:birthDate>
       <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-12-23</rico:deathDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052179-d699msjks42-vqaztu16yf9j">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052179"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052179-d699msjks42-vqaztu16yf9j"/>
+            <rico:relationHasTarget rdf:resource="agent/052179"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d197803e105">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052179-d699msjks42-vqaztu16yf9j"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjks42-vqaztu16yf9j"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjks42-vqaztu16yf9j"/>
+      </rico:thingIsTargetOfRelation>
+      <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msjks42-vqaztu16yf9j"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d197803e105"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Marcel Landowski est né à Pont-l'abbé (Finistère) le 18 février 1915 dans une famille d'artistes et d'intellectuels. Son père est le peintre Paul Landowski, lui-même petit-fils du violoniste et compositeur Henri Vieuxtemps. Sa mère, Amélie Cruppi, est la fille de l'homme politique Jean Cruppi et de la femme de lettre Louise Cruppi. Deux de ses soeurs sont également peintres : Nadine et Françoise.</html:p>
-            <html:p/>
             <html:p>
                <html:u>Fonctions occupées</html:u>
             </html:p>
@@ -81,7 +88,6 @@
                <html:li>Secrétaire perpétuel de l'Académie des Beaux-arts (1986-1994).</html:li>
                <html:li>Chancelier de l'Institut de France (1994-1999)</html:li>
             </html:ul>
-            <html:p/>
             <html:p>
                <html:u>Nouvelle politique de la musique 1967</html:u>
             </html:p>
@@ -91,9 +97,17 @@
             <html:p>Il est ensuite nommé inspecteur général de la musique au ministère de l’Éducation nationale en 1975 et enfin directeur des Affaires culturelles de la Ville de Paris de 1977 à 1979. Il est également élu à l’Académie des Beaux-Arts en 1975, en remplacement de son maître Henri Büsser, et en devient Secrétaire perpétuel en 1986.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005306-052179-19640101-19661231"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/005306"/>
-      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/052179-005319-19690101-19751231"/><rico:isOrWasLeaderOf rdf:resource="agent/005319"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/005306-052179-19640101-19661231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/005306"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/052179-005319-19690101-19751231"/>
+      <rico:isOrWasLeaderOf rdf:resource="agent/005319"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/052179-053224-19940101-19991223"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/053224"/>
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb138963154#about"/>
       <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Marcel_Landowski"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/059920-052179"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-059920"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/060142-052179"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-060142"/>
    </rico:Agent>
 </rdf:RDF>

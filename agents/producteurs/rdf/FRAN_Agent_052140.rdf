@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/052140">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/052140"/>
@@ -11,29 +19,27 @@
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-12-03</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Création
-                (par Vivien RICHARD)</rico:name>
+            <rico:name xml:lang="fr">Création (par Vivien RICHARD)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-11-30</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
-            <rico:name xml:lang="fr">Modification
-                (par Samuel GIBIAT)</rico:name>
+            <rico:name xml:lang="fr">Modification (par Samuel GIBIAT)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-12-03</rico:date>
-            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 03 décembre 2018 : absence d'identifiant ISNI</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">P. Charbonnier, 03 décembre 2018 : absence d'identifiant ISNI</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/052140">
-            <rico:isInstantiationOf rdf:resource="record/052140"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/052140"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_052140</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052140"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/052140">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -50,51 +56,49 @@
       </rico:hasOrHadAgentName>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-02-11</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-10</rico:endDate>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052140-d3nyug261d--1cyxwnocz7hzo-20160211-20170510">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052140"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052140-d3nyug261d--1cyxwnocz7hzo-20160211-20170510"/>
+            <rico:relationHasTarget rdf:resource="agent/052140"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d197227e97">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052140-d3nyug261d--1cyxwnocz7hzo-20160211-20170510"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyug261d--1cyxwnocz7hzo"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-02-11</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-10</rico:endDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyug261d--1cyxwnocz7hzo"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d197227e97"/>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/052140-d5bhviji6u--xgq7ld5a4qvr-20160211-20170510">
-            <rico:performanceRelationHasTarget rdf:resource="agent/052140"/>
-            <rico:performanceRelationHasSource>
-               <rico:Activity>
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/052140-d5bhviji6u--xgq7ld5a4qvr-20160211-20170510"/>
+            <rico:relationHasTarget rdf:resource="agent/052140"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d197227e112">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/052140-d5bhviji6u--xgq7ld5a4qvr-20160211-20170510"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviji6u--xgq7ld5a4qvr"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-02-11</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-10</rico:endDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation><rico:performsOrPerformed><rico:Activity><rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviji6u--xgq7ld5a4qvr"/></rico:Activity></rico:performsOrPerformed>
-      <rico:agentIsTargetOfMandateRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d197227e112"/>
+      <rico:thingIsTargetOfRelation>
          <rico:MandateRelation>
-            <rico:mandateRelationHasTarget rdf:resource="agent/052140"/>
-            <rico:mandateRelationHasSource>
-               <rico:Mandate>
+            <rico:relationHasTarget rdf:resource="agent/052140"/>
+            <rico:relationHasSource>
+               <rico:Mandate rdf:nodeID="_Mandate-https___www_legifrance_gouv_fr_eli_decret_2016_3_3_RDFX1604739D_jo_texte">
                   <rico:title>
                   Décret n° 2016-258 du 3 mars 2016 relatif aux attributions du ministre de la Fonction publique (NOR : RDFX1604739D) : https://www.legifrance.gouv.fr/eli/decret/2016/3/3/RDFX1604739D/jo/texte
                </rico:title>
                   <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/eli/decret/2016/3/3/RDFX1604739D/jo/texte"/>
                </rico:Mandate>
-            </rico:mandateRelationHasSource>
+            </rico:relationHasSource>
          </rico:MandateRelation>
-      </rico:agentIsTargetOfMandateRelation><rico:authorizedBy><rico:Mandate>
-                  <rico:title>
-                  Décret n° 2016-258 du 3 mars 2016 relatif aux attributions du ministre de la Fonction publique (NOR : RDFX1604739D) : https://www.legifrance.gouv.fr/eli/decret/2016/3/3/RDFX1604739D/jo/texte
-               </rico:title>
-                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/eli/decret/2016/3/3/RDFX1604739D/jo/texte"/>
-               </rico:Mandate></rico:authorizedBy>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      </rico:thingIsTargetOfRelation>
+      <rico:authorizedBy rdf:nodeID="_Mandate-https___www_legifrance_gouv_fr_eli_decret_2016_3_3_RDFX1604739D_jo_texte"/>
+      <rico:generalDescription rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <h4>Organisation interne ou généalogie</h4>
             <html:p>Le cabinet s’organise dès le 12 février 2016, les principaux conseillers étant nommés les 22 et 23 février, puis en mars. Il compte une douzaine de membres, dont seuls deux, Myriam Bernard et Marion Fonteny, avaient participé au cabinet Lebranchu. Lors du changement de gouvernement, la plupart de ses membres sont confirmés par arrêté du 6 décembre 2016, excepté Marion Fonteny, Sybille Mert qui avaient quitté le cabinet quelques jours auparavant. Toutes deux sont remplacées le 1er janvier 2017. Les mois de février et mars voient se multiplier les départs, les attributions étant alors parfois reprises par d'autres membres du cabinet. Le 13 avril 2017 voit le départ du directeur de cabinet, François Romaneix, remplacé par Myriam Bernard, d’où un dernier mouvement de réorganisation. Le cabinet cesse ses activités le 10 mai 2017.</html:p>
@@ -133,17 +137,23 @@
             <html:p>Olympio Kyprianou-Perrimond, conseiller technique en charge des relations avec les élus et le Parlement (jusqu'au 27 février 2017)</html:p>
             <html:p>Jehane Bensedira, conseillère technique innovation (à partir du 28 mars 2016)</html:p>
          </html:div>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
             <html:p>Annick Girardin est nommée ministre de la Fonction publique du gouvernement de Manuel Valls le 11 février 2016, au départ de Marylise Lebranchu. Elle reste en fonctions jusqu’au 10 mai 2017, au lendemain de l'élection présidentielle. Ses attributions sont précisées par le décret du 3 mars 2016. Outre la conduite de la politique gouvernementale générale en la matière, les priorités du ministère portent sur la rénovation de la gestion des ressources humaines et l'encouragement de la mixité sociale.</html:p>
          </html:div>
       </rico:history>
-      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051712-052140-20160211-*"/><rico:isSuccessorOf rdf:resource="agent/051712"/>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/051539-052140-20160211-20161206"/><rico:isOrWasSubordinateTo rdf:resource="agent/051539"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/052140-053043-20160211-20170510"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/053043"/>
-      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/051540-052140-20161207-20170510"/><rico:isOrWasSubordinateTo rdf:resource="agent/051540"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000114-052140-20160211-20170510"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000114"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000018-052140-20160211-20170510"/><rico:isAgentAssociatedWithAgent rdf:resource="agent/000018"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentTemporalRelation/051712-052140-20160211-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/051712"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/051539-052140-20160211-20161206"/>
+      <rico:wasSubordinateTo rdf:resource="agent/051539"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/052140-053043-20160211-20170510"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/053043"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/051540-052140-20161207-20170510"/>
+      <rico:wasSubordinateTo rdf:resource="agent/051540"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000114-052140-20160211-20170510"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000114"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000018-052140-20160211-20170510"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/000018"/>
    </rico:Agent>
 </rdf:RDF>

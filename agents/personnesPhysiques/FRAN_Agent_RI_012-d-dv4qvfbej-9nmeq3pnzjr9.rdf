@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:dcterms="http://purl.org/dc/terms/"
-         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/FRAN_RI_012-d-dv4qvfbej-9nmeq3pnzjr9">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/FRAN_RI_012-d-dv4qvfbej-9nmeq3pnzjr9"/>
@@ -17,19 +17,22 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
       <rdfs:seeAlso rdf:resource="http://elec.enc.sorbonne.fr/architectes/3"/>
-      <rico:hasInstantiation>
+      <!--Contenu de biblio :  Identifiant Wikidata :
+        http://www.wikidata.org/entity/Q21557896-->
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/FRAN_RI_012-d-dv4qvfbej-9nmeq3pnzjr9">
-            <rico:isInstantiationOf rdf:resource="record/FRAN_RI_012-d-dv4qvfbej-9nmeq3pnzjr9"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/FRAN_RI_012-d-dv4qvfbej-9nmeq3pnzjr9"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_RI_012-d-dv4qvfbej-9nmeq3pnzjr9</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/FRAN_RI_012-d-dv4qvfbej-9nmeq3pnzjr9">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/FRAN_RI_012-d-dv4qvfbej-9nmeq3pnzjr9"/>
       <rdfs:label xml:lang="fr">Aiguesparse, Étienne (1834-....)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Aiguesparse, Étienne (1834-....)</skos:prefLabel>
       <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/FRAN_RI_012-d-dv4qvfbej-9nmeq3pnzjr9-Aiguesparse%2C%20%C3%89tienne%20%281834-....%29">
             <rdfs:label xml:lang="fr">Aiguesparse, Étienne (1834-....)</rdfs:label>
@@ -42,9 +45,12 @@
       <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1834-07-10</rico:birthDate>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
-            <html:p>Né le 07/10/1834 à Aurillac. Architecte et inspecteur des travaux diocésains. A œuvré à la restauration de la cathédrale de Saint-Flour.</html:p>
+            <html:p>Né le 07/10/1834 à Aurillac. Architecte et inspecteur des travaux diocésains. A œuvré à
+        la restauration de la cathédrale de Saint-Flour.</html:p>
          </html:div>
       </rico:history>
+      <!--Contenu de biblio : Identifiant Répertoire des architectes diocésains :
+        http://elec.enc.sorbonne.fr/architectes/3 -->
       <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q21557896"/>
    </rico:Agent>
 </rdf:RDF>
