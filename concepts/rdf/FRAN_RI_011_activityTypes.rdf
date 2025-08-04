@@ -23,7 +23,7 @@
                     vocabulaire a été enrichi de concepts définis dans le cadre des travaux du Lab
                     sur le référentiel des voies de Paris. Des enrichissements, modifications de
                     structure et alignements sont prévus dans les prochains mois.</html:p>
-                <html:p>Nombre de concepts : 198, dont 42 concepts candidats.</html:p>
+                <html:p>Nombre de concepts : 199, dont 43 concepts candidats.</html:p>
             </html:div>
         </dcterms:description>
         <dcat:version xml:lang="fr">2.0</dcat:version>
@@ -33,7 +33,7 @@
         <dc:source xml:lang="fr">Version Ginco du vocabulaire, intégrant les modifications et ajouts
             décidés en 2022 par le groupe de travail AN/SIAF sur le référentiel des fonctions
             (export réalisé en décembre 2024)</dc:source>
-        <dc:source xml:lang="fr">Vocabulaire définissant sept types de fonctions du domaine de la
+        <dc:source xml:lang="fr">Vocabulaire définissant huit types de fonctions du domaine de la
             gestion des voies urbaines, élaboré par le Lab en 2023-2025 dans le cadre des travaux
             sur le référentiel des voies de Paris</dc:source>
         <dcterms:creator>
@@ -56,6 +56,7 @@
         <dcterms:modified>2025-02-22T19:24:02.4923876+01:00</dcterms:modified>
         <dcterms:modified>2025-02-23</dcterms:modified>
         <dcterms:modified>2025-07-22</dcterms:modified>
+        <dcterms:modified>2025-07-31</dcterms:modified>
         <dc:coverage xml:lang="fr">du Moyen Âge à nos jours</dc:coverage>
         <dc:language>fr-FR</dc:language>
         <dcterms:language rdf:resource="http://id.loc.gov/vocabulary/iso639-2/fre"/>
@@ -97,8 +98,8 @@
                     vocabulaire compte six nouveaux concepts définis dans le cadre du travail en
                     cours sur le référentiel des voies de Paris, et de nouvelles relations entre
                     concepts. Les métadonnées du fichier SKOS ont été enrichies.</html:li>
-                <html:li xml:lang="fr">Juillet 2025 : ajouté un nouveau concept, "classement de voie
-                    urbaine", en complément des six concepts créés en février 2025. Mis à jour les
+                <html:li xml:lang="fr">Juillet 2025 : ajouté deux nouveaux concepts, "classement de voie
+                    urbaine" et "dénomination de voie urbaine", en complément des six concepts créés en février 2025. Mis à jour les
                     métadonnées du vocabulaire.</html:li>
             </html:ul>
         </skos:historyNote>
@@ -1450,6 +1451,7 @@
         <skos:narrower rdf:resource="activityType/ouverture%20de%20voie%20urbaine"/>
         <skos:narrower rdf:resource="activityType/classement%20de%20voie%20urbaine"/>
         <skos:narrower rdf:resource="activityType/d%C3%A9classement%20de%20voie%20urbaine"/>
+        <skos:narrower rdf:resource="activityType/d%C3%A9nomination%20de%20voie%20urbaine"/>
         <skos:narrower rdf:resource="activityType/num%C3%A9rotage%20de%20voie%20urbaine"/>
         <skos:narrower rdf:resource="activityType/nivellement%20de%20voie%20urbaine"/>
         <skos:narrower rdf:resource="activityType/assainissement%20de%20voie%20urbaine"/>
@@ -1466,6 +1468,13 @@
                 <dc:date>22/07/2025</dc:date>
                 <rdf:value xml:lang="fr">ajouté une relation hiérarchique avec le nouveau concept de
                     "classement de voie urbaine".</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>31/07/2025</dc:date>
+                <rdf:value xml:lang="fr">ajouté une relation hiérarchique avec le nouveau concept de
+                    "dénomination de voie urbaine".</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
@@ -1541,6 +1550,21 @@
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>23/02/2025</dc:date>
+                <rdf:value xml:lang="fr">concept ajouté dans le cadre des travaux sur le référentiel
+                    des voies de Paris</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="activityType/d%C3%A9nomination%20de%20voie%20urbaine">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#ActivityType"/>
+        <skos:inScheme rdf:resource="activityTypes"/>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:prefLabel xml:lang="fr">dénomination de voie urbaine</skos:prefLabel>
+        <skos:definition xml:lang="fr">Acte administratif qui assigne un nom à une voie urbaine.</skos:definition>
+        <skos:broader rdf:resource="activityType/FRAN_RI_011-d3nyuimm9z--1tz0n2jqoofo0"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>31/07/2025</dc:date>
                 <rdf:value xml:lang="fr">concept ajouté dans le cadre des travaux sur le référentiel
                     des voies de Paris</rdf:value>
             </rdf:Description>

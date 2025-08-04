@@ -18,7 +18,7 @@
                     référentiels de lieux des Archives nationales de France. Des enrichissements,
                     modifications de structure et alignements sont prévus dans les prochains
                     mois.</html:p>
-                <html:p>Nombre de concepts : 107. Tous ces concepts sont des concepts candidats, le
+                <html:p>Nombre de concepts : 108. Tous ces concepts sont des concepts candidats, le
                     référentiel des types de lieux étant le seul vocabulaire directement créé en
                     RDF, et non instancié actuellement dans le SI des Archives nationales de
                     France.</html:p>
@@ -49,6 +49,7 @@
         <dcterms:modified>2021-12</dcterms:modified>
         <dcterms:modified>2022-03</dcterms:modified>
         <dcterms:modified>2025-03-12</dcterms:modified>
+        <dcterms:modified>2025-07-28</dcterms:modified>
         <dc:coverage xml:lang="fr">du Moyen Âge à nos jours</dc:coverage>
         <skos:scopeNote xml:lang="fr">Ce thésaurus est utilisé par le Lab des Archives nationales de
             France pour qualifier les lieux décrits dans les référentiels de lieux des AnF. Son
@@ -98,6 +99,9 @@
                     urbaine' obsolète (il est remplacé par le concept de 'voie'). Procédé à de
                     nombreuses corrections typographiques. Enrichi les métadonnées du
                     référentiel.</html:li>
+                <html:li xml:lang="fr">28 juillet 2025 : ajouté le concept de villa (en tant que
+                    voie ou quartie urbain), nécessaire pour catégoriser certaines voies de
+                    Paris.</html:li>
             </html:ul>
         </skos:historyNote>
         <skos:hasTopConcept rdf:resource="placeType/commune"/>
@@ -121,6 +125,7 @@
         <skos:hasTopConcept rdf:resource="placeType/ville%20nouvelle"/>
         <skos:hasTopConcept rdf:resource="placeType/voie%20urbaine"/>
         <skos:hasTopConcept rdf:resource="placeType/voie"/>
+        <skos:hasTopConcept rdf:resource="placeType/villa%20%28voie%29"/>
     </skos:ConceptScheme>
     <skos:Concept rdf:about="placeType/commune">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
@@ -1313,7 +1318,7 @@
         <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
         <skos:related rdf:resource="placeType/voie"/>
         <!--<skos:exactMatch rdf:resource="https://www.wikidata.org/entity/Q7543083"/>-->
-        <skos:exactmatch
+        <skos:exactMatch
             rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/T96-1105"/>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <skos:changeNote>
@@ -1741,7 +1746,7 @@
         <skos:prefLabel xml:lang="fr">balcon</skos:prefLabel>
         <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Balcon"/>
         <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q170552"/>
-        <skos:exactMarch
+        <skos:exactMatch
             rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/T96-1303"/>
         <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
@@ -1842,6 +1847,30 @@
             <rdf:Description>
                 <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
                 <dc:date>2025-03-12</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/villa%20%28voie%29">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:topConceptOf rdf:resource="placeTypes"/>
+        <skos:definition xml:lang="fr">«&#160;À partir du XIXe siècle, voie ou impasse bordée à
+            l’origine par des habitations individuelles. [...] Une villa peut également être une
+            forme de quartier privé dans Paris et dans certaines villes d’Île-de-France.
+            Contrairement à un domaine privé, la villa est située au cœur d’une grande ville [...].
+            Elle est généralement desservie par une ou plusieurs voies privées dont l’accès est
+            réservé aux riverains et à leurs invités&#160;» (source: Wikipédia)</skos:definition>
+        <skos:prefLabel xml:lang="fr">villa (voie)</skos:prefLabel>
+        <skos:related rdf:resource="placeType/voie"/>
+        <skos:related rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:related rdf:resource="placeType/quartier"/>
+        <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Villa_(voie)"/>
+
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2025-07-28</dc:date>
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
