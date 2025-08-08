@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
          xmlns:isni="https://isni.org/ontology#"
          xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
          xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/051213">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
@@ -21,6 +21,13 @@
             <rico:name xml:lang="fr">Création (par Virginie GREGOIRE)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-11-16</rico:date>
             <rico:generalDescription xml:lang="fr">F. Clavaud, 10 novembre : changé nom, ajouté liens et indexation activités. 16 novembre 2015 :supprimé liens vers les mnistères agriculture et transports pour que la notice passe...</rico:generalDescription>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par le Lab)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-08-07</rico:date>
+            <rico:generalDescription xml:lang="fr">X. Shen : ajout de l'identifiant de l'agent dans le référentiel d'indexation des AnF ; ajout ou modification d'informations venant de ce référentiel (Nom du producteur).</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
       <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
@@ -41,12 +48,13 @@
    <rico:Agent rdf:about="agent/051213">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/051213"/>
+      <rico:identifier xml:lang="fr">d699mu0s7wv--nfyji72lr4s7 (identifiant assigné à cet agent dans le référentiel dit d'indexation des personnes physiques (FRAN_RI_012) du SIA des Archives nationales de France)</rico:identifier>
       <owl:sameAs rdf:resource="https://isni.org/isni/0000000116106692"/>
-      <rdfs:label xml:lang="fr">Mermaz, Louis (1931-....)</rdfs:label>
+      <rdfs:label xml:lang="fr">Mermaz, Louis (1931-2024)</rdfs:label>
       <rico:hasOrHadAgentName>
-         <rico:AgentName rdf:about="agentName/051213-Mermaz%2C%20Louis%20%281931-....%29">
-            <rdfs:label xml:lang="fr">Mermaz, Louis (1931-....)</rdfs:label>
-            <rico:textualValue xml:lang="fr">Mermaz, Louis (1931-....)</rico:textualValue>
+         <rico:AgentName rdf:about="agentName/051213-Mermaz%2C%20Louis%20%281931-2024%29">
+            <rdfs:label xml:lang="fr">Mermaz, Louis (1931-2024)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Mermaz, Louis (1931-2024)</rico:textualValue>
             <rico:isOrWasAgentNameOf rdf:resource="agent/051213"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl002"/>
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>

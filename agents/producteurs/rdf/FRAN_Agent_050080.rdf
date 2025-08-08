@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
          xmlns:isni="https://isni.org/ontology#"
          xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
          xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/050080">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
@@ -22,6 +22,13 @@
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-08-13</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par le Lab)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-08-07</rico:date>
+            <rico:generalDescription xml:lang="fr">X. Shen : ajout de l'identifiant de l'agent dans le référentiel d'indexation des AnF ; ajout ou modification d'informations venant de ce référentiel (Nom du producteur).</rico:generalDescription>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
       <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050080">
             <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050080"/>
@@ -36,11 +43,12 @@
    <rico:Agent rdf:about="agent/050080">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/050080"/>
-      <rdfs:label xml:lang="fr">Lamoignon, Guillaume de</rdfs:label>
+      <rico:identifier xml:lang="fr">d699mu4fal5--aipciae1tqn8 (identifiant assigné à cet agent dans le référentiel dit d'indexation des personnes physiques (FRAN_RI_012) du SIA des Archives nationales de France)</rico:identifier>
+      <rdfs:label xml:lang="fr">Lamoignon, Guillaume de (1683-1772)</rdfs:label>
       <rico:hasOrHadAgentName>
-         <rico:AgentName rdf:about="agentName/050080-Lamoignon%2C%20Guillaume%20de">
-            <rdfs:label xml:lang="fr">Lamoignon, Guillaume de</rdfs:label>
-            <rico:textualValue xml:lang="fr">Lamoignon, Guillaume de</rico:textualValue>
+         <rico:AgentName rdf:about="agentName/050080-Lamoignon%2C%20Guillaume%20de%20%281683-1772%29">
+            <rdfs:label xml:lang="fr">Lamoignon, Guillaume de (1683-1772)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Lamoignon, Guillaume de (1683-1772)</rico:textualValue>
             <rico:isOrWasAgentNameOf rdf:resource="agent/050080"/>
             <rico:isOrWasRegulatedBy rdf:resource="rule/rl002"/>
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
