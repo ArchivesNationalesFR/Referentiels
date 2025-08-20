@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcat="http://www.w3.org/ns/dcat#"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/050657">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/050657"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl002"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-06-12</rico:creationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Création (par Patricia GILLET)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-06-12</rico:date>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 12 juin 2014 : changé forme du nom, ajouté n°s ISNI et notice BnF</rico:generalDescription>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
+         <html:p xml:lang="fr">Notice d'autorité BnF n° FRBNF12718199</html:p>
+      </rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000082142133"/>
+      <rico:hasOrHadDigitalInstantiation>
+         <rico:Instantiation rdf:about="instantiation/050657">
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050657"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_050657</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050657"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+            <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/050657-b"/>
+            <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/ArchivesNationalesFR/Referentiels/refs/heads/main/agents/eac-cpf/FRAN_NP_050657.xml"/>
+         </rico:Instantiation>
+      </rico:hasOrHadDigitalInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
+         <rico:Instantiation rdf:about="instantiation/050657-b">
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050657"/>
+            <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/050657"/>
+            <dc:format xml:lang="en">rdf+xml</dc:format>
+            <rico:identifier>FRAN_Agent_050657.rdf</rico:identifier>
+            <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/ArchivesNationalesFR/Referentiels/refs/heads/main/agents/rdf/personnes-physiques/FRAN_Agent_050657.rdf"/>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+         </rico:Instantiation>
+      </rico:hasOrHadDigitalInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/050657">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/050657"/>
+      <owl:sameAs rdf:resource="https://isni.org/isni/0000000082142133"/>
+      <rdfs:label xml:lang="fr">Choumoff, Pierre Serge (1921-2012)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/050657-Choumoff%2C%20Pierre%20Serge%20%281921-2012%29">
+            <rdfs:label xml:lang="fr">Choumoff, Pierre Serge (1921-2012)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Choumoff, Pierre Serge (1921-2012)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/050657"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl002"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1921-06-02</rico:birthDate>
+      <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-03</rico:deathDate>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Ingénieur, résistant pendant la Seconde Guerre mondiale, Pierre Serge Choumoff fut déporté au camp de Mauthausen-Gusen. Il est l'auteur d'études historiques sur la déportation et les gazages opérés par les nazis.</html:p>
+         </html:div>
+      </rico:history>
+   </rico:Agent>
+</rdf:RDF>
