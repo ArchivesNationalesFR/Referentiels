@@ -52,7 +52,7 @@
                             Paris (jeu de données de 2023)</rico:recordResourceSourceOfInformation>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-08-28+02:00</dc:date>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-09-03+02:00</dc:date>
             <rdf:value xml:lang="fr">Intégration automatique à la notice de
                                     nombreuses données relatives à ce lieu dans la nomenclature de
                                     la mairie de Paris (historique, coordonnées géographiques,
@@ -74,9 +74,9 @@
       <rico:hasOrHadIdentifier rdf:resource="identifier/12592_VdP"/>
       <rico:hasOrHadPlaceType rdf:resource="placeType/place"/>
       <rico:isOrWasAffectedBy rdf:resource="activity/denomination-FRAN_RI_025-d3nzcc6zbm-152xwozyrb0ls_1984-02-02"/>
-      <rico:hasExtent rdf:resource="extent/FRAN_RI_025-d3nzcc6zbm-152xwozyrb0ls_numero_impair"/>
       <rico:hasExtent rdf:resource="extent/FRAN_RI_025-d3nzcc6zbm-152xwozyrb0ls_numero_pair"/>
-      <anf-onto:startingOnStreet xml:lang="fr">intersection des boulevards Raspail, du Montparnasse et de la rue Delambre.</anf-onto:startingOnStreet>
+      <rico:hasExtent rdf:resource="extent/FRAN_RI_025-d3nzcc6zbm-152xwozyrb0ls_numero_impair"/>
+      <anf-onto:startingAtPoint xml:lang="fr">intersection des boulevards Raspail, du Montparnasse et de la rue Delambre.</anf-onto:startingAtPoint>
       <anf-onto:crossesOrCrossed rdf:resource="place/FRAN_RI_023-d3nyvgfhsd-7xud48ujxyxr"/>
       <anf-onto:crossesOrCrossed rdf:resource="place/FRAN_RI_023-d3nyvghr9p-1gfjh3h1l4ryc"/>
       <anf-onto:crossesOrCrossed rdf:resource="place/FRAN_RI_022-d3nyv8hmbw--1i2tdb4h5dd1p"/>
@@ -99,14 +99,14 @@
       <rico:type xml:lang="fr">identifiant du lieu dans la nomenclature des voies de Paris publiée en open data par la mairie de Paris (jeu de données de 2023)</rico:type>
       <rico:isOrWasIdentifierOf rdf:resource="place/FRAN_RI_025-d3nzcc6zbm-152xwozyrb0ls"/>
    </rico:Identifier>
-   <rico:Extent rdf:about="extent/FRAN_RI_025-d3nzcc6zbm-152xwozyrb0ls_numero_impair">
-      <rico:type xml:lang="fr">numéro impair maximal</rico:type>
-      <rico:quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</rico:quantity>
-      <rico:isExtentOf rdf:resource="place/FRAN_RI_025-d3nzcc6zbm-152xwozyrb0ls"/>
-   </rico:Extent>
    <rico:Extent rdf:about="extent/FRAN_RI_025-d3nzcc6zbm-152xwozyrb0ls_numero_pair">
       <rico:type xml:lang="fr">numéro pair maximal</rico:type>
-      <rico:quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</rico:quantity>
+      <rico:quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rico:quantity>
+      <rico:isExtentOf rdf:resource="place/FRAN_RI_025-d3nzcc6zbm-152xwozyrb0ls"/>
+   </rico:Extent>
+   <rico:Extent rdf:about="extent/FRAN_RI_025-d3nzcc6zbm-152xwozyrb0ls_numero_impair">
+      <rico:type xml:lang="fr">numéro impair maximal</rico:type>
+      <rico:quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rico:quantity>
       <rico:isExtentOf rdf:resource="place/FRAN_RI_025-d3nzcc6zbm-152xwozyrb0ls"/>
    </rico:Extent>
    <rico:Activity rdf:about="activity/denomination-FRAN_RI_025-d3nzcc6zbm-152xwozyrb0ls_1984-02-02">
@@ -121,14 +121,14 @@
       <rico:hasOrHadCoordinates rdf:resource="coordinates/FRAN_RI_025-d3nzcc6zbm-152xwozyrb0ls_WKT--point"/>
       <rico:hasOrHadCoordinates rdf:resource="coordinates/FRAN_RI_025-d3nzcc6zbm-152xwozyrb0ls_WKT_shape"/>
    </rico:PhysicalLocation>
-   <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcc6zbm-152xwozyrb0ls_WKT--point">
-      <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcc6zbm-152xwozyrb0ls"/>
-      <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3295308326523125 48.84199194733982)</rico:measure>
-      <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
-   </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcc6zbm-152xwozyrb0ls_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcc6zbm-152xwozyrb0ls"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3300150477465484 48.84166171658685, 2.3299834155229444 48.84164534814636, 2.329365044445702 48.84181709025017, 2.3291378201211868 48.84190540286752, 2.329147989753064 48.84194979140823, 2.3292079323250094 48.84232330018082, 2.3292648232087894 48.84235263808123, 2.3297350938086923 48.84216446644679, 2.3297369069478786 48.842160897133176, 2.329739768781474 48.84215651707184, 2.3297415398926575 48.842153990786024, 2.3297448645249115 48.84215060082033, 2.329748394256742 48.8421475789446, 2.3297533537984574 48.84214388336104, 2.3297581219833763 48.84214129382347, 2.3297626873053923 48.84213900983253, 2.3300150477465484 48.84166171658685))</rico:measure>
+      <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
+   </rico:Coordinates>
+   <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcc6zbm-152xwozyrb0ls_WKT--point">
+      <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcc6zbm-152xwozyrb0ls"/>
+      <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3295308326523125 48.84199194733982)</rico:measure>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

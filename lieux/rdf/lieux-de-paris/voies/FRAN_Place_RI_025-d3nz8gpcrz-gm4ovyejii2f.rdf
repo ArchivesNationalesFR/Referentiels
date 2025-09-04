@@ -52,7 +52,7 @@
                             Paris (jeu de données de 2023)</rico:recordResourceSourceOfInformation>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-08-28+02:00</dc:date>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-09-03+02:00</dc:date>
             <rdf:value xml:lang="fr">Intégration automatique à la notice de
                                     nombreuses données relatives à ce lieu dans la nomenclature de
                                     la mairie de Paris (historique, coordonnées géographiques,
@@ -73,12 +73,12 @@
       <rico:hasOrHadIdentifier rdf:resource="identifier/8905_VdP"/>
       <rico:hasOrHadIdentifier rdf:resource="identifier/d3nz8gpcrz-gm4ovyejii2f"/>
       <rico:hasOrHadPlaceType rdf:resource="placeType/place"/>
+      <rico:isOrWasAffectedBy rdf:resource="activity/alignement-FRAN_RI_025-d3nz8gpcrz-gm4ovyejii2f_1847-06-11"/>
       <rico:isOrWasAffectedBy rdf:resource="activity/numerotage-FRAN_RI_025-d3nz8gpcrz-gm4ovyejii2f_1882-10-10"/>
       <rico:isOrWasAffectedBy rdf:resource="activity/denomination-FRAN_RI_025-d3nz8gpcrz-gm4ovyejii2f_1877-02-01"/>
-      <rico:isOrWasAffectedBy rdf:resource="activity/alignement-FRAN_RI_025-d3nz8gpcrz-gm4ovyejii2f_1847-06-11"/>
-      <rico:hasExtent rdf:resource="extent/FRAN_RI_025-d3nz8gpcrz-gm4ovyejii2f_numero_impair"/>
       <rico:hasExtent rdf:resource="extent/FRAN_RI_025-d3nz8gpcrz-gm4ovyejii2f_numero_pair"/>
-      <anf-onto:startingOnStreet xml:lang="fr">boulevard Vincent Auriol, à la rencontre des rues Godefroy et Fagon et de l'avenue Stéphen Pichon.</anf-onto:startingOnStreet>
+      <rico:hasExtent rdf:resource="extent/FRAN_RI_025-d3nz8gpcrz-gm4ovyejii2f_numero_impair"/>
+      <anf-onto:startingAtPoint xml:lang="fr">boulevard Vincent Auriol, à la rencontre des rues Godefroy et Fagon et de l'avenue Stéphen Pichon.</anf-onto:startingAtPoint>
       <rico:isOrWasContainedBy rdf:resource="place/FRAN_RI_023-d3nyvh2e35--37tr8fppxuu4"/>
       <rico:isOrWasContainedBy rdf:resource="place/FRAN_RI_022-d3nyv8k5ao--5b6yxr3q757d"/>
       <rico:hasOrHadPhysicalLocation rdf:resource="physicalLocation/FRAN_RI_025-d3nz8gpcrz-gm4ovyejii2f"/>
@@ -99,16 +99,22 @@
       <rico:type xml:lang="fr">identifiant du lieu dans le référentiel des voies de Paris (FRAN_RI_025) du SIA des Archives nationales de France</rico:type>
       <rico:isOrWasIdentifierOf rdf:resource="place/FRAN_RI_025-d3nz8gpcrz-gm4ovyejii2f"/>
    </rico:Identifier>
-   <rico:Extent rdf:about="extent/FRAN_RI_025-d3nz8gpcrz-gm4ovyejii2f_numero_impair">
-      <rico:type xml:lang="fr">numéro impair maximal</rico:type>
-      <rico:quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</rico:quantity>
-      <rico:isExtentOf rdf:resource="place/FRAN_RI_025-d3nz8gpcrz-gm4ovyejii2f"/>
-   </rico:Extent>
    <rico:Extent rdf:about="extent/FRAN_RI_025-d3nz8gpcrz-gm4ovyejii2f_numero_pair">
       <rico:type xml:lang="fr">numéro pair maximal</rico:type>
-      <rico:quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</rico:quantity>
+      <rico:quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</rico:quantity>
       <rico:isExtentOf rdf:resource="place/FRAN_RI_025-d3nz8gpcrz-gm4ovyejii2f"/>
    </rico:Extent>
+   <rico:Extent rdf:about="extent/FRAN_RI_025-d3nz8gpcrz-gm4ovyejii2f_numero_impair">
+      <rico:type xml:lang="fr">numéro impair maximal</rico:type>
+      <rico:quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</rico:quantity>
+      <rico:isExtentOf rdf:resource="place/FRAN_RI_025-d3nz8gpcrz-gm4ovyejii2f"/>
+   </rico:Extent>
+   <rico:Activity rdf:about="activity/alignement-FRAN_RI_025-d3nz8gpcrz-gm4ovyejii2f_1847-06-11">
+      <rico:generalDescription xml:lang="fr">Non retenus au POS et non repris au PLU : Ordonnance du 11 juin 1847.</rico:generalDescription>
+      <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1847-06-11</rico:date>
+      <rico:hasActivityType rdf:resource="activityType/alignement%20de%20voie%20urbaine"/>
+      <rico:affectsOrAffected rdf:resource="place/FRAN_RI_025-d3nz8gpcrz-gm4ovyejii2f"/>
+   </rico:Activity>
    <rico:Activity rdf:about="activity/numerotage-FRAN_RI_025-d3nz8gpcrz-gm4ovyejii2f_1882-10-10">
       <rico:generalDescription xml:lang="fr">Arrêté du 10 octobre 1882.</rico:generalDescription>
       <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1882-10-10</rico:date>
@@ -121,12 +127,6 @@
       <rico:hasActivityType rdf:resource="activityType/d%C3%A9nomination%20de%20voie%20urbaine"/>
       <rico:affectsOrAffected rdf:resource="place/FRAN_RI_025-d3nz8gpcrz-gm4ovyejii2f"/>
       <rico:resultsOrResultedIn rdf:resource="placeName/FRAN_RI_025-d3nz8gpcrz-gm4ovyejii2f-place%20des%20Alpes-1877-02-01"/>
-   </rico:Activity>
-   <rico:Activity rdf:about="activity/alignement-FRAN_RI_025-d3nz8gpcrz-gm4ovyejii2f_1847-06-11">
-      <rico:generalDescription xml:lang="fr">Non retenus au POS et non repris au PLU : Ordonnance du 11 juin 1847.</rico:generalDescription>
-      <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1847-06-11</rico:date>
-      <rico:hasActivityType rdf:resource="activityType/alignement%20de%20voie%20urbaine"/>
-      <rico:affectsOrAffected rdf:resource="place/FRAN_RI_025-d3nz8gpcrz-gm4ovyejii2f"/>
    </rico:Activity>
    <rico:PhysicalLocation rdf:about="physicalLocation/FRAN_RI_025-d3nz8gpcrz-gm4ovyejii2f">
       <rico:isOrWasPhysicalLocationOf rdf:resource="place/FRAN_RI_025-d3nz8gpcrz-gm4ovyejii2f"/>

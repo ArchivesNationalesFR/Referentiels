@@ -52,7 +52,7 @@
                             Paris (jeu de données de 2023)</rico:recordResourceSourceOfInformation>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-08-28+02:00</dc:date>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-09-03+02:00</dc:date>
             <rdf:value xml:lang="fr">Intégration automatique à la notice de
                                     nombreuses données relatives à ce lieu dans la nomenclature de
                                     la mairie de Paris (historique, coordonnées géographiques,
@@ -72,8 +72,8 @@
       <anf-onto:streetStatus xml:lang="fr">voie actuelle d'après la nomenclature officielle des voies parisiennes en date du 31 mai 2023</anf-onto:streetStatus>
       <rico:hasOrHadPlaceType rdf:resource="placeType/place"/>
       <rico:history xml:lang="fr">Précédemment, place Voltaire. Plus anciennement, place du Prince Eugène.</rico:history>
-      <rico:isOrWasAffectedBy rdf:resource="activity/denomination-FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j_1957-03-25"/>
       <rico:isOrWasAffectedBy rdf:resource="activity/alignement-FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j_1857-08-29_1863-07-06"/>
+      <rico:isOrWasAffectedBy rdf:resource="activity/denomination-FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j_1957-03-25"/>
       <rico:isOrWasAffectedBy rdf:resource="activity/ouverture-FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j_1857-08-29"/>
       <rico:hasExtent rdf:resource="extent/FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j_numero_pair"/>
       <rico:hasExtent rdf:resource="extent/FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j_numero_impair"/>
@@ -99,20 +99,18 @@
    </rico:Identifier>
    <rico:Extent rdf:about="extent/FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j_numero_pair">
       <rico:type xml:lang="fr">numéro pair maximal</rico:type>
-      <rico:quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</rico:quantity>
+      <rico:quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</rico:quantity>
       <rico:isExtentOf rdf:resource="place/FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j"/>
    </rico:Extent>
    <rico:Extent rdf:about="extent/FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j_numero_impair">
       <rico:type xml:lang="fr">numéro impair maximal</rico:type>
-      <rico:quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9</rico:quantity>
+      <rico:quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</rico:quantity>
       <rico:isExtentOf rdf:resource="place/FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j"/>
    </rico:Extent>
-   <rico:Activity rdf:about="activity/denomination-FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j_1957-03-25">
-      <rico:generalDescription xml:lang="fr">dénomination : Arrêté du 25 mars 1957.</rico:generalDescription>
-      <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1957-03-25</rico:date>
-      <rico:hasActivityType rdf:resource="activityType/d%C3%A9nomination%20de%20voie%20urbaine"/>
-      <rico:affectsOrAffected rdf:resource="place/FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j"/>
-      <rico:resultsOrResultedIn rdf:resource="placeName/FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j-place%20L%C3%A9on%20Blum-1957-03-25"/>
+   <rico:Activity rdf:about="activity/alignement-FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j_1857-08-29_1863-07-06_1857-08-29">
+      <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1857-08-29</rico:date>
+      <rico:wasSubeventOf rdf:resource="activity/alignement-FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j_1857-08-29_1863-07-06"/>
+      <rico:precedesInTime rdf:resource="activity/alignement-FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j_1857-08-29_1863-07-06_1863-07-04"/>
    </rico:Activity>
    <rico:Activity rdf:about="activity/alignement-FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j_1857-08-29_1863-07-06">
       <rico:generalDescription xml:lang="fr">Non retenus au POS et non repris au PLU : Décret du 29 août 1857, côté impair. Ce décret prévoyait également des alignements du côté pair qui n'ont pas été suivis. Contrat des 4 et 6 juillet 1863, côté pair.</rico:generalDescription>
@@ -122,21 +120,24 @@
       <rico:hadSubevent rdf:resource="activity/alignement-FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j_1857-08-29_1863-07-06_1863-07-04"/>
       <rico:hadSubevent rdf:resource="activity/alignement-FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j_1857-08-29_1863-07-06_1863-07-06"/>
    </rico:Activity>
+   <rico:Activity rdf:about="activity/alignement-FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j_1857-08-29_1863-07-06_1863-07-04">
+      <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1863-07-04</rico:date>
+      <rico:wasSubeventOf rdf:resource="activity/alignement-FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j_1857-08-29_1863-07-06"/>
+      <rico:precedesInTime rdf:resource="activity/alignement-FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j_1857-08-29_1863-07-06_1863-07-06"/>
+      <rico:followsInTime rdf:resource="activity/alignement-FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j_1857-08-29_1863-07-06_1857-08-29"/>
+   </rico:Activity>
+   <rico:Activity rdf:about="activity/denomination-FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j_1957-03-25">
+      <rico:generalDescription xml:lang="fr">dénomination : Arrêté du 25 mars 1957.</rico:generalDescription>
+      <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1957-03-25</rico:date>
+      <rico:hasActivityType rdf:resource="activityType/d%C3%A9nomination%20de%20voie%20urbaine"/>
+      <rico:affectsOrAffected rdf:resource="place/FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j"/>
+      <rico:resultsOrResultedIn rdf:resource="placeName/FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j-place%20L%C3%A9on%20Blum-1957-03-25"/>
+   </rico:Activity>
    <rico:Activity rdf:about="activity/ouverture-FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j_1857-08-29">
       <rico:generalDescription xml:lang="fr">Décret du 29 août 1857.</rico:generalDescription>
       <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1857-08-29</rico:date>
       <rico:hasActivityType rdf:resource="activityType/ouverture%20de%20voie%20urbaine"/>
       <rico:affectsOrAffected rdf:resource="place/FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j"/>
-   </rico:Activity>
-   <rico:Activity rdf:about="activity/alignement-FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j_1857-08-29_1863-07-06_1857-08-29">
-      <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1857-08-29</rico:date>
-      <rico:wasSubeventOf rdf:resource="activity/alignement-FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j_1857-08-29_1863-07-06"/>
-      <rico:precedesInTime rdf:resource="activity/alignement-FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j_1857-08-29_1863-07-06_1863-07-04"/>
-   </rico:Activity>
-   <rico:Activity rdf:about="activity/alignement-FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j_1857-08-29_1863-07-06_1863-07-04">
-      <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1863-07-04</rico:date>
-      <rico:wasSubeventOf rdf:resource="activity/alignement-FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j_1857-08-29_1863-07-06"/>
-      <rico:followsInTime rdf:resource="activity/alignement-FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j_1857-08-29_1863-07-06_1857-08-29"/>
    </rico:Activity>
    <rico:Activity rdf:about="activity/alignement-FRAN_RI_025-d3nzbqf7nt--1cjy2fuhtqa0j_1857-08-29_1863-07-06_1863-07-06">
       <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1863-07-06</rico:date>
