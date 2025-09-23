@@ -19,18 +19,25 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:creationDate>
-      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:lastModificationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-09-23</rico:lastModificationDate>
       <rico:isOrWasAffectedBy>
          <rico:Activity>
             <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par le Lab)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-09-23</rico:date>
+            <rico:generalDescription xml:lang="fr">X. Shen : ajout de l'identifiant de la notice de l'agent dans le référentiel d'indexation des AnF ; ajout ou modification d'informations venant de cette notice (Histoire).</rico:generalDescription>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
       <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/000040">
             <rico:isOrWasDigitalInstantiationOf rdf:resource="record/000040"/>
-            <dc:format xml:lang="en">text/xml</dc:format>
-            <rico:identifier>FRAN_NP_000040</rico:identifier>
+            <dc:format>text/xml</dc:format>
+            <rico:identifier>FRAN_NP_000040.xml</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_000040"/>
             <rico:identifier>1506</rico:identifier>
@@ -43,7 +50,7 @@
          <rico:Instantiation rdf:about="instantiation/000040-b">
             <rico:isOrWasDigitalInstantiationOf rdf:resource="record/000040"/>
             <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/000040"/>
-            <dc:format xml:lang="en">rdf+xml</dc:format>
+            <dc:format>application/rdf+xml</dc:format>
             <rico:identifier>FRAN_Agent_000040.rdf</rico:identifier>
             <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/ArchivesNationalesFR/Referentiels/refs/heads/main/agents/rdf/collectivites/FRAN_Agent_000040.rdf"/>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
@@ -54,6 +61,20 @@
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:isOrWasDescribedBy rdf:resource="record/000040"/>
       <rdfs:label xml:lang="fr">Conseil supérieur de l'audiovisuel</rdfs:label>
+      <rico:hasOrHadIdentifier>
+         <rico:Identifier rdf:about="identifier/000040">
+            <rico:type xml:lang="fr">identifiant de l'agent dans le référentiel des producteurs du SIA des Archives nationales de France</rico:type>
+            <rico:textualValue>000040</rico:textualValue>
+            <rico:isOrWasIdentifierOf rdf:resource="agent/000040"/>
+         </rico:Identifier>
+      </rico:hasOrHadIdentifier>
+      <rico:hasOrHadIdentifier>
+         <rico:Identifier rdf:about="identifier/d3m0bo58lpg-tshxknzik53c">
+            <rico:type xml:lang="fr">identifiant assigné à cet agent dans le référentiel dit d'indexation des personnes morales (FRAN_RI_013) du SIA des Archives nationales de France</rico:type>
+            <rico:textualValue>d3m0bo58lpg-tshxknzik53c</rico:textualValue>
+            <rico:isOrWasIdentifierOf rdf:resource="agent/000040"/>
+         </rico:Identifier>
+      </rico:hasOrHadIdentifier>
       <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/000040-Conseil%20sup%C3%A9rieur%20de%20l%27audiovisuel">
             <rdfs:label xml:lang="fr">Conseil supérieur de l'audiovisuel</rdfs:label>
@@ -70,6 +91,11 @@
             <rico:isOrWasAgentNameOf rdf:resource="agent/000040"/>
          </rico:AgentName>
       </rico:hasOrHadAgentName>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Créé en 1989. remplace la Commission nationale de la communication et des libertés (CNCL).</html:p>
+         </html:div>
+      </rico:history>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1989-01-01</rico:beginningDate>
       <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5bloo28po-1bei6cefdzkj"/>
       <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/000040-000100-19890101-*"/>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcat="http://www.w3.org/ns/dcat#"
          xmlns:dcterms="http://purl.org/dc/terms/"
          xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:isni="https://isni.org/ontology#"
          xmlns:owl="http://www.w3.org/2002/07/owl#"
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
          xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
-   <rico:Record xmlns:dcat="http://www.w3.org/ns/dcat#"
-                xmlns:isni="https://isni.org/ontology#"
-                rdf:about="record/FRAN_RI_012-d-1bmo21myo-kd6brpb85y0e">
+   <rico:Record rdf:about="record/FRAN_RI_012-d-1bmo21myo-kd6brpb85y0e">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/FRAN_RI_012-d-1bmo21myo-kd6brpb85y0e"/>
       <rico:hasCreator rdf:resource="agent/005061"/>
@@ -24,7 +24,7 @@
          <rico:Instantiation rdf:about="instantiation/FRAN_RI_012-d-1bmo21myo-kd6brpb85y0e-src">
             <rico:isOrWasDigitalInstantiationOf rdf:resource="record/FRAN_RI_012-d-1bmo21myo-kd6brpb85y0e"/>
             <dc:description xml:lang="fr">Notice source (dans un format XML faiblement structuré, et non accessible en ligne) dans le référentiel dit "d'indexation des personnes morales" du SIA des AnF.</dc:description>
-            <dc:format xml:lang="en">text/xml</dc:format>
+            <dc:format>text/xml</dc:format>
             <rico:identifier>FRAN_RI_012.xml#d-1bmo21myo-kd6brpb85y0e</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/FRAN_RI_012-d-1bmo21myo-kd6brpb85y0e"/>
@@ -35,16 +35,14 @@
             <rico:isOrWasDigitalInstantiationOf rdf:resource="record/FRAN_RI_012-d-1bmo21myo-kd6brpb85y0e"/>
             <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/FRAN_RI_012-d-1bmo21myo-kd6brpb85y0e-src"/>
             <dc:description xml:lang="fr">Version RDF de la notice, conforme à RiC-O 1.1, résultant de l'enrichissement et de la restructuration de la notice source.</dc:description>
-            <dc:format xml:lang="en">rdf+xml</dc:format>
+            <dc:format>application/rdf+xml</dc:format>
             <rico:identifier>FRAN_Agent_RI_012-d-1bmo21myo-kd6brpb85y0e.rdf</rico:identifier>
             <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/ArchivesNationalesFR/Referentiels/refs/heads/main/agents/rdf/personnes-physiques/FRAN_Agent_RI_012-d-1bmo21myo-kd6brpb85y0e.rdf"/>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
          </rico:Instantiation>
       </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
-   <rico:Agent xmlns:dcat="http://www.w3.org/ns/dcat#"
-               xmlns:isni="https://isni.org/ontology#"
-               rdf:about="agent/FRAN_RI_012-d-1bmo21myo-kd6brpb85y0e">
+   <rico:Agent rdf:about="agent/FRAN_RI_012-d-1bmo21myo-kd6brpb85y0e">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/FRAN_RI_012-d-1bmo21myo-kd6brpb85y0e"/>
       <rdfs:label xml:lang="fr">Paris, Isabelle Françoise d'Orléans (1848-1919 , comtesse de)</rdfs:label>
@@ -52,6 +50,13 @@
       <skos:altLabel xml:lang="fr">Isabelle (infante d'Espagne , 1848-1919)</skos:altLabel>
       <skos:altLabel xml:lang="fr">Orléans, Isabelle d' (1848-1919)</skos:altLabel>
       <skos:altLabel xml:lang="fr">Orléans, Marie Isabelle d' (1848-1919)</skos:altLabel>
+      <rico:hasOrHadIdentifier>
+         <rico:Identifier rdf:about="identifier/d-1bmo21myo-kd6brpb85y0e">
+            <rico:type xml:lang="fr">identifiant de l'agent dans le référentiel dit d'indexation des personnes physiques (FRAN_RI_012) du SIA des Archives nationales de France</rico:type>
+            <rico:textualValue>d-1bmo21myo-kd6brpb85y0e</rico:textualValue>
+            <rico:isOrWasIdentifierOf rdf:resource="agent/FRAN_RI_012-d-1bmo21myo-kd6brpb85y0e"/>
+         </rico:Identifier>
+      </rico:hasOrHadIdentifier>
       <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/FRAN_RI_012-d-1bmo21myo-kd6brpb85y0e-Paris%2C%20Isabelle%20Fran%C3%A7oise%20d%27Orl%C3%A9ans%20%281848-1919%20%2C%20comtesse%20de%29">
             <rdfs:label xml:lang="fr">Paris, Isabelle Françoise d'Orléans (1848-1919 , comtesse de)</rdfs:label>

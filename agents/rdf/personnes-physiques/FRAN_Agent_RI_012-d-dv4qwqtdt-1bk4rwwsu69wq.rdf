@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcat="http://www.w3.org/ns/dcat#"
          xmlns:dcterms="http://purl.org/dc/terms/"
          xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:isni="https://isni.org/ontology#"
          xmlns:owl="http://www.w3.org/2002/07/owl#"
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
          xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
-   <rico:Record xmlns:dcat="http://www.w3.org/ns/dcat#"
-                xmlns:isni="https://isni.org/ontology#"
-                rdf:about="record/FRAN_RI_012-d-dv4qwqtdt-1bk4rwwsu69wq">
+   <rico:Record rdf:about="record/FRAN_RI_012-d-dv4qwqtdt-1bk4rwwsu69wq">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/FRAN_RI_012-d-dv4qwqtdt-1bk4rwwsu69wq"/>
       <rico:hasCreator rdf:resource="agent/005061"/>
@@ -23,7 +23,7 @@
          <rico:Instantiation rdf:about="instantiation/FRAN_RI_012-d-dv4qwqtdt-1bk4rwwsu69wq-src">
             <rico:isOrWasDigitalInstantiationOf rdf:resource="record/FRAN_RI_012-d-dv4qwqtdt-1bk4rwwsu69wq"/>
             <dc:description xml:lang="fr">Notice source (dans un format XML faiblement structuré, et non accessible en ligne) dans le référentiel dit "d'indexation des personnes morales" du SIA des AnF.</dc:description>
-            <dc:format xml:lang="en">text/xml</dc:format>
+            <dc:format>text/xml</dc:format>
             <rico:identifier>FRAN_RI_012.xml#d-dv4qwqtdt-1bk4rwwsu69wq</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/FRAN_RI_012-d-dv4qwqtdt-1bk4rwwsu69wq"/>
@@ -34,20 +34,25 @@
             <rico:isOrWasDigitalInstantiationOf rdf:resource="record/FRAN_RI_012-d-dv4qwqtdt-1bk4rwwsu69wq"/>
             <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/FRAN_RI_012-d-dv4qwqtdt-1bk4rwwsu69wq-src"/>
             <dc:description xml:lang="fr">Version RDF de la notice, conforme à RiC-O 1.1, résultant de l'enrichissement et de la restructuration de la notice source.</dc:description>
-            <dc:format xml:lang="en">rdf+xml</dc:format>
+            <dc:format>application/rdf+xml</dc:format>
             <rico:identifier>FRAN_Agent_RI_012-d-dv4qwqtdt-1bk4rwwsu69wq.rdf</rico:identifier>
             <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/ArchivesNationalesFR/Referentiels/refs/heads/main/agents/rdf/personnes-physiques/FRAN_Agent_RI_012-d-dv4qwqtdt-1bk4rwwsu69wq.rdf"/>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
          </rico:Instantiation>
       </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
-   <rico:Agent xmlns:dcat="http://www.w3.org/ns/dcat#"
-               xmlns:isni="https://isni.org/ontology#"
-               rdf:about="agent/FRAN_RI_012-d-dv4qwqtdt-1bk4rwwsu69wq">
+   <rico:Agent rdf:about="agent/FRAN_RI_012-d-dv4qwqtdt-1bk4rwwsu69wq">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/FRAN_RI_012-d-dv4qwqtdt-1bk4rwwsu69wq"/>
       <rdfs:label xml:lang="fr">Mouton, Armand Pierre Nicaise (1850-1935)</rdfs:label>
       <skos:prefLabel xml:lang="fr">Mouton, Armand Pierre Nicaise (1850-1935)</skos:prefLabel>
+      <rico:hasOrHadIdentifier>
+         <rico:Identifier rdf:about="identifier/d-dv4qwqtdt-1bk4rwwsu69wq">
+            <rico:type xml:lang="fr">identifiant de l'agent dans le référentiel dit d'indexation des personnes physiques (FRAN_RI_012) du SIA des Archives nationales de France</rico:type>
+            <rico:textualValue>d-dv4qwqtdt-1bk4rwwsu69wq</rico:textualValue>
+            <rico:isOrWasIdentifierOf rdf:resource="agent/FRAN_RI_012-d-dv4qwqtdt-1bk4rwwsu69wq"/>
+         </rico:Identifier>
+      </rico:hasOrHadIdentifier>
       <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/FRAN_RI_012-d-dv4qwqtdt-1bk4rwwsu69wq-Mouton%2C%20Armand%20Pierre%20Nicaise%20%281850-1935%29">
             <rdfs:label xml:lang="fr">Mouton, Armand Pierre Nicaise (1850-1935)</rdfs:label>
