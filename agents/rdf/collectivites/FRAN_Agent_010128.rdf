@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+<rdf:RDF xmlns:anf-onto="https://rdf.archives-nationales.culture.gouv.fr/ontology#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:dcat="http://www.w3.org/ns/dcat#"
          xmlns:dcterms="http://purl.org/dc/terms/"
          xmlns:html="http://www.w3.org/1999/xhtml"
@@ -52,6 +53,13 @@
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-10-05</rico:date>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par F. Clavaud, Lab)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-22</rico:date>
+            <rico:generalDescription xml:lang="fr">Ajout de la propriété anf-onto:hasOrHadActivityOfType connectant directement la collectivité et le type d'activité, à partir de chacune des rico:PerformanceRelation. Ajout d'une propriété skos:hiddenLabel pour consigner le nom de l'étude notariale avec le numéro d'ordre en chiffres arabes.</rico:generalDescription>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
       <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">
             <html:b>Voir :</html:b>
@@ -63,13 +71,6 @@
       <rico:recordResourceSourceOfInformation rdf:parseType="Literal">
          <html:p xml:lang="fr">Poisson (Jean-Paul), " Introduction à l’étude du rôle socio-économique du notariat au XVIIIe siècle : quatre offices parisiens en 1749 études I, XCI, CVII et CVIII", dans<html:i>Notaires et société. Travaux d’histoire et de sociologie notariales</html:i>, t. I, 1985, p. 367. - " Introduction à une étude quantitative des effets socio-économiques du système de Law ; études I, III et XLVIII (1715-1726)", dans<html:i>Notaires et société. Travaux d’histoire et de sociologie notariales</html:i>, t. I, 1985, p. 309.</html:p>
       </rico:recordResourceSourceOfInformation>
-      <rico:isOrWasAffectedBy>
-         <rico:Activity>
-            <rico:name xml:lang="fr">Modification (par le Lab)</rico:name>
-            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-22</rico:date>
-            <rico:generalDescription xml:lang="fr">F. Clavaud : ajout d'une propriété skos:hiddenLabel pour consigner le nom de l'étude avec numéro d'ordre en chiffres arabes.</rico:generalDescription>
-         </rico:Activity>
-      </rico:isOrWasAffectedBy>
       <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/010128">
             <rico:isOrWasDigitalInstantiationOf rdf:resource="record/010128"/>
@@ -150,6 +151,7 @@
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1575-01-01</rico:beginningDate>
          </rico:PerformanceRelation>
       </rico:thingIsTargetOfRelation>
+      <anf-onto:hasOrHadActivityOfType rdf:resource="activityType/FRAN_RI_011-d3nyui3o8w--11y7jgy8q3wnt"/>
       <rico:performsOrPerformed rdf:nodeID="_Activity-d103038e190"/>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
