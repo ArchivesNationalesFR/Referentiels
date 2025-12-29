@@ -41,7 +41,7 @@
       <rico:recordResourceSourceOfInformation xml:lang="fr">Notice relative à ce lieu dans la nomenclature des voies de Paris publiée en open data par la mairie de Paris (jeu de données de 2023)</rico:recordResourceSourceOfInformation>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-10-13</dc:date>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-29</dc:date>
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -58,12 +58,13 @@
       <rico:hasOrHadIdentifier rdf:resource="identifier/11361_VdP"/>
       <rico:hasOrHadPlaceType rdf:resource="placeType/rue"/>
       <rico:history xml:lang="fr">Ouverte dans un lotissement appartenant à la Société Aédès.</rico:history>
-      <rico:isOrWasAffectedBy rdf:resource="activity/assainissement-FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2_1981-09-15"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/servitude-FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2"/>
       <rico:isOrWasAffectedBy rdf:resource="activity/ouverture-FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2_1925-11-29_1928"/>
-      <rico:hasExtent rdf:resource="extent/FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2_longueur"/>
+      <rico:isOrWasAffectedBy rdf:resource="activity/assainissement-FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2_1981-09-15"/>
       <rico:hasExtent rdf:resource="extent/FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2_largeur"/>
+      <rico:hasExtent rdf:resource="extent/FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2_longueur"/>
       <anf-onto:streetStartsOrStartedAtPoint>
-         <rico:Place rdf:nodeID="N1fe5554f2d964680880ce6a814b5c83f">
+         <rico:Place rdf:nodeID="N767d17d94c24495e9273199d0b6ce3c4">
             <rico:name xml:lang="fr">rue Brillat-Savarin, 50-54.</rico:name>
             <anf-onto:isOrWasLocatedOnStreet rdf:resource="place/FRAN_RI_025-d3nz90i6x4--1hgxtgdqjfx5c"/>
          </rico:Place>
@@ -87,24 +88,21 @@
       <rico:type xml:lang="fr">identifiant du lieu dans la nomenclature des voies de Paris publiée en open data par la mairie de Paris (jeu de données de 2023)</rico:type>
       <rico:isOrWasIdentifierOf rdf:resource="place/FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2"/>
    </rico:Identifier>
-   <rico:Extent rdf:about="extent/FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2_longueur">
-      <rico:type xml:lang="fr">longueur</rico:type>
-      <rico:quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">39</rico:quantity>
-      <rico:unitOfMeasurement xml:lang="fr">mètre</rico:unitOfMeasurement>
-      <rico:isExtentOf rdf:resource="place/FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2"/>
-   </rico:Extent>
+   <rico:Rule rdf:about="rule/servitude-FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2">
+      <rico:regulatesOrRegulated rdf:resource="place/FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2"/>
+   </rico:Rule>
    <rico:Extent rdf:about="extent/FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2_largeur">
       <rico:type xml:lang="fr">largeur</rico:type>
       <rico:quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</rico:quantity>
       <rico:unitOfMeasurement xml:lang="fr">mètre</rico:unitOfMeasurement>
       <rico:isExtentOf rdf:resource="place/FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2"/>
    </rico:Extent>
-   <rico:Activity rdf:about="activity/assainissement-FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2_1981-09-15">
-      <rico:generalDescription xml:lang="fr">Arrêté municipal du 15 septembre 1981.</rico:generalDescription>
-      <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1981-09-15</rico:date>
-      <rico:hasActivityType rdf:resource="activityType/assainissement%20de%20voie%20urbaine"/>
-      <rico:affectsOrAffected rdf:resource="place/FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2"/>
-   </rico:Activity>
+   <rico:Extent rdf:about="extent/FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2_longueur">
+      <rico:type xml:lang="fr">longueur</rico:type>
+      <rico:quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">39</rico:quantity>
+      <rico:unitOfMeasurement xml:lang="fr">mètre</rico:unitOfMeasurement>
+      <rico:isExtentOf rdf:resource="place/FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2"/>
+   </rico:Extent>
    <rico:Activity rdf:about="activity/ouverture-FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2_1925-11-29_1928">
       <rico:generalDescription xml:lang="fr">Ouverte en 1928 (Arrêté du 29 novembre 1925).</rico:generalDescription>
       <rico:hasActivityType rdf:resource="activityType/ouverture%20de%20voie%20urbaine"/>
@@ -122,19 +120,25 @@
       <rico:wasSubeventOf rdf:resource="activity/ouverture-FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2_1925-11-29_1928"/>
       <rico:followsInTime rdf:resource="activity/ouverture-FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2_1925-11-29_1928_1925-11-29"/>
    </rico:Activity>
+   <rico:Activity rdf:about="activity/assainissement-FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2_1981-09-15">
+      <rico:generalDescription xml:lang="fr">Arrêté municipal du 15 septembre 1981.</rico:generalDescription>
+      <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1981-09-15</rico:date>
+      <rico:hasActivityType rdf:resource="activityType/assainissement%20de%20voie%20urbaine"/>
+      <rico:affectsOrAffected rdf:resource="place/FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2"/>
+   </rico:Activity>
    <rico:PhysicalLocation rdf:about="physicalLocation/FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2">
       <rico:isOrWasPhysicalLocationOf rdf:resource="place/FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2"/>
       <rico:hasOrHadCoordinates rdf:resource="coordinates/FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2_WKT--point"/>
       <rico:hasOrHadCoordinates rdf:resource="coordinates/FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2_WKT_shape"/>
    </rico:PhysicalLocation>
-   <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2_WKT--point">
-      <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2"/>
-      <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3448617329156627 48.822608196556004)</rico:measure>
-      <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
-   </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3449512389192133 48.82247158521758, 2.3449669100924173 48.82239171983491, 2.344877827019532 48.822407898221904, 2.3448796780359435 48.82240909014726, 2.344864762193957 48.82248975111009, 2.3448626461204793 48.82250119850867, 2.3448483525557537 48.82256918702121, 2.3448456532163604 48.82258304335825, 2.3448351980746662 48.82263670599736, 2.3447492962236502 48.82265191329934, 2.3447476266025005 48.822654169686686, 2.344713661910262 48.82270007045623, 2.3447465685785898 48.82272914513036, 2.344805721990259 48.82278141109491, 2.3448997878609474 48.822733814169744, 2.344913429215574 48.822664289546104, 2.344925621131496 48.822602151672605, 2.344938975741681 48.8225340878582, 2.3449512389192133 48.82247158521758))</rico:measure>
+      <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
+   </rico:Coordinates>
+   <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2_WKT--point">
+      <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2"/>
+      <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3448617329156627 48.822608196556004)</rico:measure>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>
