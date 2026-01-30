@@ -17,14 +17,14 @@
       <dcterms:title xml:lang="fr">Supports des archives</dcterms:title>
       <dcterms:description rdf:parseType="Literal">
          <html:div xml:lang="fr">
-            <html:p>Thésaurus des types de supports des instanciations des archives. Résulte de la conversion automatique en RDF, conforme à SKOS et RiC-O 1.1, d’une partie du référentiel XML correspondant dit des supports des documents (fichier FRAN_RI_002.xml, version 1.2) dans le système d’information archivistique (SIA) des Archives nationales de France (AnF). Des enrichissements, modifications de
+            <html:p>Thésaurus des types de supports des instanciations des archives. Résulte de la conversion automatique en RDF, conforme à SKOS et RiC-O 1.1, d’une partie du référentiel XML correspondant dit des supports des documents (fichier FRAN_RI_002.xml, version 1.3) dans le système d’information archivistique (SIA) des Archives nationales de France (AnF). Des enrichissements, modifications de
                                     structure et alignements sont prévus dans les prochains
                                     mois.</html:p>
-            <html:p>Nombre de concepts : 51.</html:p>
+            <html:p>Nombre de concepts : 57.</html:p>
          </html:div>
       </dcterms:description>
       <dcat:version xml:lang="fr">2.0</dcat:version>
-      <dc:source xml:lang="fr">Fichier FRAN_RI_002.xml, version 1.2 ; exporté du système d’information archivistique (SIA) des Archives nationales de France (AnF) le 21 janvier 2025 (date de dernière modification dans le SIA : 2023-06-29)</dc:source>
+      <dc:source xml:lang="fr">Fichier FRAN_RI_002.xml, version 1.3 ; exporté du système d’information archivistique (SIA) des Archives nationales de France (AnF) le 29 janvier 2026 (date de dernière modification dans le SIA : 2026-01-23)</dc:source>
       <dcterms:creator>
          <foaf:Organization>
             <foaf:mbox>le-lab.archives-nationales@culture.gouv.fr</foaf:mbox>
@@ -42,6 +42,7 @@
       <dcterms:modified>2022-03-20</dcterms:modified>
       <dcterms:modified>2024-10-10T17:32:28.2566262+02:00</dcterms:modified>
       <dcterms:modified>2025-04-16T15:52:49.1196444+02:00</dcterms:modified>
+      <dcterms:modified>2026-01-30T18:13:22.1506532+01:00</dcterms:modified>
       <dc:coverage xml:lang="fr">du Moyen Âge à nos jours</dc:coverage>
       <dc:language>fr-FR</dc:language>
       <dcterms:language rdf:resource="http://id.loc.gov/vocabulary/iso639-2/fre"/>
@@ -77,6 +78,8 @@
             <html:li xml:lang="fr">Mars 2025 : regénéré le fichier. Cette
                                     version du vocabulaire ne compte pas de nouveau concept. Les
                                     métadonnées du fichier SKOS ont été enrichies.</html:li>
+            <html:li xml:lang="fr">Janvier 2026 : regénéré le fichier. Mise à jour des
+                                    métadonnées. Ajout de six concepts spécifiques de "film" ou "vidéocassette".</html:li>
          </html:ul>
       </skos:historyNote>
       <skos:hasTopConcept rdf:resource="carrierType/FRAN_RI_002-d3nd9xqsl6--1i2m77rgllo7c"/>
@@ -156,8 +159,40 @@
       <skos:inScheme rdf:resource="carrierTypes"/>
       <skos:topConceptOf rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">film</skos:prefLabel>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d-7gwxx6bzw--15x9tsy9cxvdm"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d-7m2pe6zrw-647b5xtz6hyr"/>
       <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9xz6sw--1p8r72p03p45d"/>
       <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9xyawe-1w15jcvccsdbo"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d-7gwxx6bzw--15x9tsy9cxvdm">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">film 16 mm</skos:prefLabel>
+      <skos:definition xml:lang="fr">Format de film qui utilise une pellicule de 16 mm de largeur.</skos:definition>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Format_16_mm"/>
+      <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q194383"/>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>23/01/2026</dc:date>
+            <rdf:value xml:lang="fr">concept ajouté le [23/01/2026]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9xwloi-1e8dcour7zw3a"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d-7m2pe6zrw-647b5xtz6hyr">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">film 35 mm</skos:prefLabel>
+      <skos:definition xml:lang="fr">Format de film qui utilise une pellicule de 35 mm de largeur.</skos:definition>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Format_35_mm"/>
+      <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q226528"/>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>23/01/2026</dc:date>
+            <rdf:value xml:lang="fr">concept ajouté le [23/01/2026]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9xwloi-1e8dcour7zw3a"/>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9xz6sw--1p8r72p03p45d">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
@@ -197,6 +232,72 @@
       <skos:topConceptOf rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">vidéocassette</skos:prefLabel>
       <skos:altLabel xml:lang="fr">VHS</skos:altLabel>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d-7n3q6e3ks-1e216piy74iol"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d-7ohyijaro--7r9xsvhpcgbv"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d-7i2mjh1ok--1ro92rmg6cadt"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d-7kkkh9icc--xgwerum6wj7x"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d-7n3q6e3ks-1e216piy74iol">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">cassette Beta</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">cassette Betacam</skos:altLabel>
+      <skos:definition xml:lang="fr">Format d’enregistrement vidéo professionnel sur bande magnétique de 1/2 pouce, développé par Sony à partir de 1982.</skos:definition>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Betacam"/>
+      <skos:closeMatch rdf:resource="http://www.wikidata.org/entity/Q830910"/>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>23/01/2026</dc:date>
+            <rdf:value xml:lang="fr">concept ajouté le [23/01/2026]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9y2ifs--9yvs0ds5wc0l"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d-7ohyijaro--7r9xsvhpcgbv">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">cassette Beta SP</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">cassette Betacam SP</skos:altLabel>
+      <skos:definition xml:lang="fr">Version analogique de la cassette vidéo Betacam développée à partir de 1987.</skos:definition>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Betacam"/>
+      <skos:closeMatch rdf:resource="http://www.wikidata.org/entity/Q830910"/>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>23/01/2026</dc:date>
+            <rdf:value xml:lang="fr">concept ajouté le [23/01/2026]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9y2ifs--9yvs0ds5wc0l"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d-7i2mjh1ok--1ro92rmg6cadt">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">cassette Umatic</skos:prefLabel>
+      <skos:definition xml:lang="fr">Premier format de cassette vidéo analogique à bande magnétique commercialisé internationalement, introduit par Sony en 1971, permettant des reportages autonomes en extérieur grâce à une caméra d’épaule et un magnétoscope portable (usage professionnel et institutionnel).</skos:definition>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/U-matic"/>
+      <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q278080"/>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>23/01/2026</dc:date>
+            <rdf:value xml:lang="fr">concept ajouté le [23/01/2026]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9y2ifs--9yvs0ds5wc0l"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d-7kkkh9icc--xgwerum6wj7x">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">cassette VHS</skos:prefLabel>
+      <skos:definition xml:lang="fr">Format d’enregistrement vidéo analogique sur cassette à bande magnétique développé à partir des années 1970 (usage amateur ou pour diffusion par système de prêt).</skos:definition>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Video_Home_System"/>
+      <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q183976"/>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>23/01/2026</dc:date>
+            <rdf:value xml:lang="fr">concept ajouté le [23/01/2026]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9y2ifs--9yvs0ds5wc0l"/>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9y5u2n-1xzki8sl1gotg">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
@@ -263,8 +364,14 @@
       <skos:inScheme rdf:resource="carrierTypes"/>
       <skos:topConceptOf rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">microforme</skos:prefLabel>
-      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9ydnle-640nybt9jpv2"/>
       <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9yg64n-o4lkrvohks94"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9ydnle-640nybt9jpv2"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yg64n-o4lkrvohks94">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">microfiche</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9ycqec--roxx49bu81co"/>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9ydnle-640nybt9jpv2">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
@@ -285,12 +392,6 @@
       <skos:inScheme rdf:resource="carrierTypes"/>
       <skos:prefLabel xml:lang="fr">microfilm 35 mm</skos:prefLabel>
       <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9ydnle-640nybt9jpv2"/>
-   </skos:Concept>
-   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yg64n-o4lkrvohks94">
-      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
-      <skos:inScheme rdf:resource="carrierTypes"/>
-      <skos:prefLabel xml:lang="fr">microfiche</skos:prefLabel>
-      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9ycqec--roxx49bu81co"/>
    </skos:Concept>
    <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yh03b--1lx80czdt83ae">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
