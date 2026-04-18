@@ -12,7 +12,7 @@
                 <html:p>Thésaurus des types de lieux (entités géo-historiques). Saisi manuellement en se fondant sur les catégories de lieux
                     sous-jacentes ou implicites dans les référentiels de lieux des Archives nationales de France. Des enrichissements sont prévus dans
                     les prochains mois.</html:p>
-                <html:p>Nombre de concepts : 192. Tous ces concepts sont des concepts candidats, le référentiel des types de lieux étant le seul
+                <html:p>Nombre de concepts : 201. Tous ces concepts sont des concepts candidats, le référentiel des types de lieux étant le seul
                     vocabulaire directement créé en RDF, et non instancié actuellement dans le SI des Archives nationales de France.</html:p>
             </html:div>
         </dcterms:description>
@@ -40,6 +40,7 @@
         <dcterms:modified>2025-07-28</dcterms:modified>
         <dcterms:modified>2026-02-23</dcterms:modified>
         <dcterms:modified>2026-04-03</dcterms:modified>
+        <dcterms:modified>2026-04</dcterms:modified>
         <dc:coverage xml:lang="fr">du Moyen Âge à nos jours</dc:coverage>
         <skos:scopeNote xml:lang="fr">Ce thésaurus est utilisé par le Lab des Archives nationales de France pour qualifier les lieux décrits dans les
             référentiels de lieux des AnF. Son contenu reflète donc l’état actuel de ces référentiels.</skos:scopeNote>
@@ -86,7 +87,8 @@
                     concepts.</html:li>
                 <html:li xml:lang="fr">mars-avril 2026 : relecture intégrale du fichier ; corrections typographiques, ajustement de certaines
                     définitions, vérification des relations sémantiques avec des concepts d’autres vocabulaires ; suppression d’un concept ('petite
-                    écurie').</html:li>
+                    écurie') ; ajout de plusieurs nouveaux concepts, suppression de quelques-uns ; vérification systématique des exemples ; ajout
+                    d’exemples.</html:li>
             </html:ul>
         </skos:historyNote>
         <skos:hasTopConcept rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20humaine"/>
@@ -174,6 +176,17 @@
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20physique"/>
         <skos:definition xml:lang="fr">Une aire géographique est une région terrestre de grande taille, comme un continent.</skos:definition>
+        <skos:example>
+            <rico:Place rdf:about="place/FRAN_RI_005-d5bdpgh8r7-18s92t23fmn7l">
+                <rico:name xml:lang="fr">Amérique</rico:name>
+            </rico:Place>
+        </skos:example>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Ajout d’un exemple.</rdf:value>
+                <dc:date>2026-04-18</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <rdf:value xml:lang="fr">Correction de la dénomination préférentielle (skos:prefLabel). Ajout des données suivantes :
@@ -277,6 +290,7 @@
         <skos:narrower rdf:resource="placeType/balcon"/>
         <skos:narrower rdf:resource="placeType/barrage"/>
         <skos:narrower rdf:resource="placeType/camp%20de%20concentration"/>
+        <skos:narrower rdf:resource="placeType/camp%20d%E2%80%99internement"/>
         <skos:narrower rdf:resource="placeType/canal"/>
         <skos:narrower rdf:resource="placeType/chemin%20de%20ronde"/>
         <skos:narrower rdf:resource="placeType/escalier"/>
@@ -300,8 +314,9 @@
         <skos:narrower rdf:resource="placeType/station%20baln%C3%A9aire"/>
         <skos:narrower rdf:resource="placeType/station%20de%20ski"/>
         <skos:narrower rdf:resource="placeType/terrasse"/>
+        <skos:narrower rdf:resource="placeType/tunnel"/>
         <skos:narrower rdf:resource="placeType/voie"/>
-        <skos:narrower rdf:resource="placeType/voie%20urbaine"/>
+        <!--<skos:narrower rdf:resource="placeType/voie%20urbaine"/>-->
         <skos:narrower rdf:resource="placeType/voirie"/>
         <skos:definition xml:lang="fr">Construction, partie de construction, ensemble de constructions ou infrastructure terrestre créés par l’homme
             pour lui permettre de s’abriter, de se protéger ou d’exercer ses activités.</skos:definition>
@@ -397,6 +412,27 @@
             <rdf:Description>
                 <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
                 <dc:date>2026-02-23</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/archipel">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#archipel"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">archipel</skos:prefLabel>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20physique"/>
+        <skos:definition xml:lang="fr">« Un archipel est un ensemble d’îles relativement proches les unes des autres. La proximité se double le plus
+            souvent d’une origine géologique commune, en général volcanique. » (Source : Wikipédia.)</skos:definition>
+          <skos:example>
+            <rico:Place rdf:about="place/FRAN_RI_005-d3m08zy6sfa--1vurhe1dhr86v">
+                <rico:name xml:lang="fr">îles Ioniennes (Grèce)</rico:name>
+            </rico:Place>
+        </skos:example>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q33837"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-04-17</dc:date>
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
@@ -670,10 +706,21 @@
         <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20b%C3%A2timent%20militaire"/>
         <skos:definition xml:lang="fr">« Une base aérienne est un aérodrome ou une partie d’un aérodrome utilisée par les forces armées d’un pays pour
             mettre en œuvre la composante aérienne. » (Source : Wikipédia.)</skos:definition>
+        <skos:example>
+            <rico:Place rdf:about="place/FRAN_RI_005-d-6ywd0c54b--vezx6xmv9xnb5">
+                <rico:name xml:lang="fr">base aérienne d’Orange-Caritat (Vaucluse, France)</rico:name>
+            </rico:Place>
+        </skos:example>
         <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q695850"/>
         <skos:exactMatch rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/T96-438"/>
         <skos:exactMatch rdf:resource="https://data.bnf.fr/ark:/12148/cb11937704g"/>
         <skos:exactMatch rdf:resource="http://fr.dbpedia.org/resource/Base_a%C3%A9rienne"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Ajout d’un exemple.</rdf:value>
+                <dc:date>2026-04-18</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <rdf:value xml:lang="fr">Correction de la relation vers le concept générique. Ajout des données suivantes : définition, relation(s)
@@ -768,7 +815,18 @@
             dans les régions bocagères françaises, le terme désigne simplement le chef-lieu de la commune où il arrive que l’on ne trouve guère que
             les quelques bâtiments publics : l’église, la mairie, l’école, un commerce. » (Source : Wikipédia.)</skos:definition>
         <skos:exactMatch rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/T96-6"/>
+        <skos:example>
+            <rico:Place rdf:about="place/FRAN_RI_005-d-98p1lzrv5-1d43i2h6linly">
+                <rico:name xml:lang="fr">Ploumanac'h (Perros-Guirrec, Côtes-d'Armor, France ; bourg)</rico:name>
+            </rico:Place>
+        </skos:example>
         <skos:exactMatch rdf:resource="http://fr.dbpedia.org/resource/Bourg"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Ajout d’un exemple.</rdf:value>
+                <dc:date>2026-04-18</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <rdf:value xml:lang="fr">Correction de la relation vers le concept générique. Ajout des données suivantes : définition, relation(s)
@@ -836,6 +894,11 @@
             spécifiques, de civils d’une zone critique de combats, ou d’autres groupes humains, souvent pendant une guerre. Les personnes sont
             détenues en raison de critères généraux, sans procédure juridique, et non en vertu d’un jugement individuel. » (Source :
             Wikipédia.)</skos:definition>
+        <skos:example>
+            <rico:Place rdf:about="place/FRAN_RI_005-d5bdpklq77--1a4rirn4ncm2j">
+                <rico:name xml:lang="fr">camp de concentration d'Auschwitz (Pologne)</rico:name>
+            </rico:Place>
+        </skos:example>
         <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q152081"/>
         <skos:exactMatch rdf:resource="https://data.bnf.fr/fr/ark:/12148/cb12647723k"/>
         <skos:changeNote>
@@ -843,6 +906,29 @@
                 <rdf:value xml:lang="fr">Ajout des données suivantes : définition, relation(s) sémantique(s) vers des concepts d’autres
                     vocabulaires.</rdf:value>
                 <dc:date>2026-02-23</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/camp%20d%E2%80%99internement">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">camp d’internement</skos:prefLabel>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:definition xml:lang="fr">« Un camp d’internement français est une appellation générique qui désigne tout à la fois des centres de
+            rétention administrative, des camps de réfugiés ou de prisonniers de guerre, créés en France pendant la période s’étalant de la Première
+            Guerre mondiale à la guerre d'Algérie. » (Source : Wikipédia.) Par extension, ce terme désigne tout camp de travail ou de
+            détention.</skos:definition>
+        <skos:example>
+            <rico:Place rdf:about="place/FRAN_RI_005-d5bdph5l06--he0a86n97k4g">
+                <rico:name xml:lang="fr">camp d'internement de Rivesaltes (Pyrénées-Orientales, France)</rico:name>
+            </rico:Place>
+        </skos:example>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q2935245"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Ajout du concept.</rdf:value>
+                <dc:date>2026-04-12</dc:date>
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
@@ -856,7 +942,7 @@
             former des recrues, ou être utilisé comme lieu de repos. » (Source : Wikipédia.)</skos:definition>
         <skos:example>
             <rico:Place rdf:about="place/FRAN_RI_005-d-1xspc1r54--x16ag8a6jp1d">
-                <rico:name xml:lang="fr">Valbonne, camp militaire de la (Ain ; camp militaire)</rico:name>
+                <rico:name xml:lang="fr">camp militaire de La Valbonne (Ain, France)</rico:name>
             </rico:Place>
         </skos:example>
         <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q1198413"/>
@@ -880,8 +966,8 @@
             transport (canaux de navigation) ». (Source : Thésaurus de la désignation des œuvres architecturales et des espaces
             aménagés.)</skos:definition>
         <skos:example>
-            <rico:Place rdf:about="place/FRAN_RI_026-d3nzuovvc8-1w3u8xggvroc7">
-                <rico:name xml:lang="fr">Saint-Martin, canal (Paris, France)</rico:name>
+            <rico:Place rdf:about="place/FRAN_RI_005-d-b80paf5qn--jkhzg0vzo6nv">
+                <rico:name xml:lang="fr">canal de Marseille au Rhône (Bouches-du-Rhône, France)</rico:name>
             </rico:Place>
         </skos:example>
         <skos:related rdf:resource="placeType/%C3%A9l%C3%A9ment%20d%E2%80%99hydrographie"/>
@@ -894,6 +980,12 @@
                 <rdf:value xml:lang="fr">Ajout des données suivantes : définition, exemple(s), relation(s) d’association avec des concepts du
                     vocabulaire, relation(s) sémantique(s) vers des concepts d’autres vocabulaires.</rdf:value>
                 <dc:date>2026-02-23</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Modification de l’exemple.</rdf:value>
+                <dc:date>2026-04-13</dc:date>
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
@@ -916,6 +1008,7 @@
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
         <skos:prefLabel xml:lang="fr">cap</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">pointe</skos:altLabel>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20physique"/>
         <skos:definition xml:lang="fr">« Un cap ou une pointe est une avancée des terres dans une étendue d’eau et constituant une proéminence du
@@ -928,11 +1021,18 @@
         <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q185113"/>
         <skos:changeNote>
             <rdf:Description>
+                <rdf:value xml:lang="fr">Ajout d’un libellé alternatif.</rdf:value>
+                <dc:date>2026-04-18</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <rdf:value xml:lang="fr">Correction de la relation vers le concept générique. Ajout des données suivantes : définition, exemple(s),
                     relation(s) sémantique(s) vers des concepts d’autres vocabulaires.</rdf:value>
                 <dc:date>2026-02-23</dc:date>
             </rdf:Description>
         </skos:changeNote>
+
     </skos:Concept>
     <skos:Concept rdf:about="placeType/carrefour">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
@@ -1010,6 +1110,27 @@
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
+    <skos:Concept rdf:about="placeType/cha%C3%AEne%20de%20montagnes">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">chaîne de montagnes</skos:prefLabel>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20physique"/>
+        <skos:definition xml:lang="fr">Une chaîne de montagnes est un relief d'altitude qui s'étend sur une longueur variable, allant de quelques
+            centaines à quelques milliers de kilomètres, et dont la largeur est nettement inférieure. (D’après Wikipédia.)</skos:definition>
+        <skos:example>
+            <rico:Place rdf:about="place/FRAN_RI_005-d5bdozn61d-1xdljp3kxz3gh">
+                <rico:name xml:lang="fr">Pyrénées (Europe ; chaîne de montagnes)</rico:name>
+            </rico:Place>
+        </skos:example>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q46831"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-04-18</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
     <skos:Concept rdf:about="placeType/chapelle">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
@@ -1045,8 +1166,8 @@
             forestier et dépendances, ainsi qu’une ferme située à l’écart. (D’après le Thésaurus de la désignation des œuvres architecturales et des
             espaces aménagés.)</skos:definition>
         <skos:example>
-            <rico:Place rdf:about="place/FRAN_RI_026-d3m0cuh0cy5-1r9vcqq4eg0s0">
-                <rico:name xml:lang="fr">Bercy, château de (Paris, France)</rico:name>
+            <rico:Place rdf:about="place/FRAN_RI_005-d3m08zziwsl--175iirbdy6jko">
+                <rico:name xml:lang="fr">château d’Amboise (Indre-et-Loire, France)</rico:name>
             </rico:Place>
         </skos:example>
         <skos:exactMatch rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/T96-516"/>
@@ -1092,10 +1213,6 @@
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
         <skos:prefLabel xml:lang="fr">chemin</skos:prefLabel>
-        <skos:altLabel xml:lang="fr">grand chemin</skos:altLabel>
-        <skos:altLabel xml:lang="fr">chemin pavé</skos:altLabel>
-        <skos:altLabel xml:lang="fr">petit chemin</skos:altLabel>
-        <skos:altLabel xml:lang="fr">chemin latéral</skos:altLabel>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <skos:broader rdf:resource="placeType/voie"/>
         <skos:narrower rdf:resource="placeType/sentier%20de%20traverse"/>
@@ -1215,6 +1332,27 @@
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
+    <skos:Concept rdf:about="placeType/cirque">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">cirque</skos:prefLabel>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20physique"/>
+        <skos:definition xml:lang="fr">« Un cirque, en géomorphologie, ou cirque naturel, est une enceinte naturelle à parois abruptes, de forme
+            semi-circulaire (parfois circulaire), formée par une dépression d'origine glaciaire [[...], volcanique [...] ou hydrologique [...], ou
+            encore formé par l'érosion karstique [...].  » (Source : Wikipédia.)</skos:definition>
+        <skos:example>
+            <rico:Place rdf:about="place/FRAN_RI_005-d-1g86cclls--15hrn1skfb4um">
+                <rico:name xml:lang="fr">cirque d’Anéou (Pyrénées-Atlantiques, France)</rico:name>
+            </rico:Place>
+        </skos:example>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-04-17</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
     <skos:Concept rdf:about="placeType/cit%C3%A9">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
@@ -1293,8 +1431,8 @@
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20physique"/>
         <skos:example>
-            <rico:Place rdf:about="place/FRAN_RI_005-d-1g86cc898-14g8nef6gougx">
-                <rico:name xml:lang="fr">Bussang, col de (France)</rico:name>
+            <rico:Place rdf:about="place/FRAN_RI_005-d-5pku8agyz-1ugbz4zdcy5y6">
+                <rico:name xml:lang="fr">col du Tourmalet (Hautes-Pyrénées, France)</rico:name>
             </rico:Place>
         </skos:example>
         <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q2231510"/>
@@ -1493,7 +1631,18 @@
         <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20d%E2%80%99hydrographie"/>
         <skos:definition xml:lang="fr">« Un cours d’eau est un écoulement terrestre d’eau liquide entre une source et une embouchure ou une confluence
             avec un débit à module supérieur à zéro. » (Source : Wikipédia.)</skos:definition>
+        <skos:example>
+            <rico:Place rdf:about="place/FRAN_RI_005-d-83llb70pi-u76a4g72e8lc">
+                <rico:name xml:lang="fr">Eure (France ; cours d’eau)</rico:name>
+            </rico:Place>
+        </skos:example>
         <skos:exactMatch rdf:resource="https://data.bnf.fr/fr/ark:/12148/cb11952208p"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Ajout d’un exemple.</rdf:value>
+                <dc:date>2026-04-18</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <rdf:value xml:lang="fr">Ajout des données suivantes : définition, relation(s) sémantique(s) vers des concepts d’autres
@@ -1549,6 +1698,29 @@
                 <rdf:value xml:lang="fr">Correction de la relation vers le concept générique. Ajout des données suivantes : définition, exemple(s),
                     relation(s) sémantique(s) vers des concepts d’autres vocabulaires.</rdf:value>
                 <dc:date>2026-02-23</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="placeType/d%C3%A9sert">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#archipel"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">désert</skos:prefLabel>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20physique"/>
+        <skos:definition xml:lang="fr">« Un désert est une zone de terre où les précipitations sont rares et peu abondantes, et où, par conséquent,
+            les conditions de vie sont hostiles pour les plantes et pour les animaux. Les déserts font partie des environnements extrêmes. » (Source :
+            Wikipédia.)</skos:definition>
+          <skos:example>
+              <rico:Place rdf:about="place/FRAN_RI_005-d5bdpehfjt-i35y7mwfd82w">
+                  <rico:name xml:lang="fr">Sahara (Afrique ; désert)</rico:name>
+            </rico:Place>
+        </skos:example>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q8514"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-04-18</dc:date>
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
@@ -1715,24 +1887,29 @@
         <skos:prefLabel xml:lang="fr">élément de géographie physique</skos:prefLabel>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <skos:narrower rdf:resource="placeType/aire%20g%C3%A9ographique"/>
+        <skos:narrower rdf:resource="placeType/archipel"/>
         <skos:narrower rdf:resource="placeType/baie"/>
         <skos:narrower rdf:resource="placeType/cap"/>
+        <skos:narrower rdf:resource="placeType/cha%C3%AEne%20de%20montagnes"/>
+        <skos:narrower rdf:resource="placeType/cirque"/>
         <skos:narrower rdf:resource="placeType/col"/>
+        <skos:narrower rdf:resource="placeType/d%C3%A9sert"/>
         <skos:narrower rdf:resource="placeType/%C3%A9l%C3%A9ment%20d%E2%80%99hydrographie"/>
         <skos:narrower rdf:resource="placeType/for%C3%AAt"/>
         <skos:narrower rdf:resource="placeType/gorge"/>
+        <skos:narrower rdf:resource="placeType/gouffre"/>
         <skos:narrower rdf:resource="placeType/grotte"/>
         <skos:narrower rdf:resource="placeType/%C3%AEle"/>
         <skos:narrower rdf:resource="placeType/massif"/>
         <skos:narrower rdf:resource="placeType/montagne"/>
+        <skos:narrower rdf:resource="placeType/p%C3%A9ninsule"/>
         <skos:narrower rdf:resource="placeType/pic"/>
         <skos:narrower rdf:resource="placeType/plage"/>
         <skos:narrower rdf:resource="placeType/plateau"/>
-        <skos:narrower rdf:resource="placeType/pointe"/>
+        <skos:narrower rdf:resource="placeType/r%C3%A9gion%20naturelle"/>
         <skos:narrower rdf:resource="placeType/sommet"/>
         <skos:narrower rdf:resource="placeType/vall%C3%A9e"/>
         <skos:narrower rdf:resource="placeType/volcan"/>
-        <skos:narrower rdf:resource="placeType/r%C3%A9gion%20naturelle"/>
         <skos:definition xml:lang="fr">Un élément de géographie physique est un élément naturel de la surface terrestre.</skos:definition>
         <skos:changeNote>
             <rdf:Description>
@@ -1749,6 +1926,9 @@
         <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20physique"/>
         <skos:narrower rdf:resource="placeType/cours%20d%E2%80%99eau"/>
         <skos:narrower rdf:resource="placeType/lac"/>
+        <skos:narrower rdf:resource="placeType/lagune"/>
+        <skos:narrower rdf:resource="placeType/mer"/>
+        <skos:narrower rdf:resource="placeType/oc%C3%A9an"/>
         <skos:definition xml:lang="fr">Un élément d’hydrographie est un cours d’eau ou une étendue d’eau.</skos:definition>
         <skos:related rdf:resource="placeType/ouvrage%20li%C3%A9%20%C3%A0%20l%E2%80%99alimentation%20en%20eau"/>
         <skos:related rdf:resource="placeType/gare%20d%E2%80%99eau"/>
@@ -2259,12 +2439,45 @@
         <skos:definition xml:lang="fr">Une gorge (appelée aussi en anglais canyon), est « un passage encaissé entre deux reliefs résultant de
             l’érosion hydraulique sur tout type de roche mais préférentiellement sur les sédimentaires. Une gorge peut être confondue avec une clue ou
             un défilé ». (Source : Wikipédia.)</skos:definition>
+        <skos:example>
+            <rico:Place rdf:about="place/FRAN_RI_005-d-803tfm5w1--1pw8e7hckg15s">
+                <rico:name xml:lang="fr">gorges du Gardon (Gard, France)</rico:name>
+            </rico:Place>
+        </skos:example>
         <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q150784"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Ajout d’un exemple.</rdf:value>
+                <dc:date>2026-04-18</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <rdf:value xml:lang="fr">Correction de la relation vers le concept générique. Ajout des données suivantes : relation(s) sémantique(s)
                     vers des concepts d’autres vocabulaires.</rdf:value>
                 <dc:date>2026-02-23</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/gouffre">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">gouffre</skos:prefLabel>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20physique"/>
+        <skos:definition xml:lang="fr">« Un gouffre (ou abîme, en géologie) est au sens propre une cavité souterraine, souvent d’origine karstique,
+            dont l’entrée généralement imposante présente une verticalité marquée. Le gouffre ou abîme s’oppose à la caverne ou à la grotte, dont
+            l’entrée est plutôt horizontale. » (Source : Wikipédia.)</skos:definition>
+        <skos:example>
+            <rico:Place rdf:about="place/FRAN_RI_005-d-80zojg4za--1tg4s9rg1p87p">
+                <rico:name xml:lang="fr">gouffre de La Pierre Saint-Martin (Pyrénées-Atlantiques, France)</rico:name>
+            </rico:Place>
+        </skos:example>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q35509"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-04-18</dc:date>
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
@@ -2299,11 +2512,6 @@
         <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20physique"/>
         <skos:definition xml:lang="fr">En géomorphologie, une grotte est « une cavité souterraine naturelle comportant au moins une partie horizontale
             accessible ». (Source : Wikipédia.)</skos:definition>
-        <skos:example>
-            <rico:Place rdf:about="place/FRAN_RI_005-d-80zojg4za--1tg4s9rg1p87p">
-                <rico:name xml:lang="fr">Pierre Saint-Martin, Gouffre de la (Pyrénées-Atlantiques)</rico:name>
-            </rico:Place>
-        </skos:example>
         <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q35509"/>
         <skos:changeNote>
             <rdf:Description>
@@ -2572,6 +2780,27 @@
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
+    <skos:Concept rdf:about="placeType/lagune">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">lagune</skos:prefLabel>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20d%E2%80%99hydrographie"/>
+        <skos:definition xml:lang="fr">« Une lagune est une étendue d’eaux côtières généralement peu profonde séparée de la mer par un cordon littoral
+            de largeur variable. Ce cordon se modifie naturellement et, lorsqu’il est fin, peut être vulnérable aux assauts de la mer (tempêtes,
+            tsunamis) et à diverses formes d’artificialisation. » (Source : Wikipédia.)</skos:definition>
+        <skos:example>
+            <rico:Place rdf:about="place/FRAN_RI_005-d5bdphoh3f-1e5v5agzw6t16">
+                <rico:name xml:lang="fr">étang de Berre (Bouches-du-Rhône, France ; lagune)</rico:name>
+            </rico:Place>
+        </skos:example>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-04-17</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
     <skos:Concept rdf:about="placeType/lieu-dit">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
@@ -2829,6 +3058,28 @@
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
+    <skos:Concept rdf:about="placeType/mer">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">mer</skos:prefLabel>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20d%E2%80%99hydrographie"/>
+        <skos:definition xml:lang="fr">Une mer est une étendue d’eau salée. « En hydronymie, sauf exceptions et malgré un contact fréquent, une mer se
+            distingue d’un océan par sa position géographique souvent assez enclavée entre des masses terrestres, donc avec une étendue et une
+            profondeur nettement moindres, ou par une limitation à un plateau continental. » (Source : Wikipédia.)</skos:definition>
+        <skos:example>
+            <rico:Place rdf:about="place/FRAN_RI_005-d5bdpl9rvx-5jkisx57fz3y">
+                <rico:name xml:lang="fr">mer Méditerranée</rico:name>
+            </rico:Place>
+        </skos:example>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q165"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-04-17</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
     <skos:Concept rdf:about="placeType/monast%C3%A8re">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
@@ -2859,11 +3110,22 @@
         <skos:altLabel xml:lang="fr">mont</skos:altLabel>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20physique"/>
-        <skos:definition xml:lang="fr">« Une montagne est une forme topographique de relief positif, à la surface de planètes telluriques, et faisant
-            partie d’un ensemble — une chaîne de montagnes — ou formant un relief isolé. Elle est caractérisée par son altitude et, plus généralement,
-            par sa hauteur relative, voire par sa pente. » (Source : Wikipédia.)</skos:definition>
+        <skos:definition xml:lang="fr">« Une montagne est une forme topographique de relief positif [...] et faisant partie d’un ensemble — une chaîne
+            de montagnes — ou formant un relief isolé. Elle est caractérisée par son altitude et, plus généralement, par sa hauteur relative, voire
+            par sa pente. » (Source : Wikipédia.)</skos:definition>
+        <skos:example>
+            <rico:Place rdf:about="place/FRAN_RI_005-d-1g86cbv28--1cqe6odjrywgr">
+                <rico:name xml:lang="fr">Meije (Hautes-Alpes / Isère, France ; montagne)</rico:name>
+            </rico:Place>
+        </skos:example>
         <skos:exactMatch rdf:resource="https://data.bnf.fr/ark:/12148/cb119323641"/>
         <skos:closeMatch rdf:resource="http://data.ign.fr/id/codes/topo/typederelief/Montagne"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Ajout d’un exemple.</rdf:value>
+                <dc:date>2026-04-18</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <rdf:value xml:lang="fr">Correction de la relation vers le concept générique. Ajout des données suivantes : définition, relation(s)
@@ -2884,6 +3146,17 @@
         <skos:narrower rdf:resource="placeType/ob%C3%A9lisque"/>
         <skos:definition xml:lang="fr">Un monument commémoratif est un monument érigé en souvenir d’un événement, ou/et en l’honneur d’une ou
             plusieurs personnes décédées. (D’après Wikipédia.)</skos:definition>
+        <skos:example>
+            <rico:Place rdf:about="place/FRAN_RI_005-d-1g85e46mo--q6k7icxtlcnz">
+                <rico:name xml:lang="fr">monument de la Cote 304 (Esnes-en-Argonne, Meuse, France ; monument commémoratif)</rico:name>
+            </rico:Place>
+        </skos:example>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Ajout d’un exemple.</rdf:value>
+                <dc:date>2026-04-18</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <rdf:value xml:lang="fr">Ajout des données suivantes : définition</rdf:value>
@@ -2961,6 +3234,35 @@
             <rdf:Description>
                 <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
                 <dc:date>2026-02-23</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/oc%C3%A9an">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">océan</skos:prefLabel>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20d%E2%80%99hydrographie"/>
+        <skos:definition xml:lang="fr">« Un océan est souvent défini, en géographie, comme une vaste étendue d’eau salée comprise entre deux
+            continents. En fait, il s’agit plutôt d’un volume dont l’eau est en permanence brassée par des courants marins. » (Source :
+            Wikipédia.)</skos:definition>
+        <skos:example>
+            <rico:Place rdf:about="place/FRAN_RI_005-d3ntxq319a--10olszrou0nhs">
+                <rico:name xml:lang="fr">océan Atlantique</rico:name>
+            </rico:Place>
+        </skos:example>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q9430"/>
+        <skos:exactMatch rdf:resource="http://fr.dbpedia.org/resource/Ocean"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Ajout d’un exemple.</rdf:value>
+                <dc:date>2026-04-18</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-04-17</dc:date>
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
@@ -3277,6 +3579,28 @@
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
+    <skos:Concept rdf:about="placeType/p%C3%A9ninsule">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">péninsule</skos:prefLabel>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20physique"/>
+        <skos:definition xml:lang="fr">« Une péninsule (du latin paeninsula, paene signifiant « presque » et insula « île ») est une partie de terres
+            émergées rattachée à une masse continentale par un de ses côtés. Elle se distingue d'une presqu’île par sa taille supérieure, ou
+            par l’absence d’isthme. » (Source : Wikipédia.)</skos:definition>
+        <skos:example>
+            <rico:Place rdf:about="place/FRAN_RI_005-d-1fsq9iyb8-8l3pongtlqv7">
+                <rico:name xml:lang="fr">péninsule de Gallipoli (Turquie)</rico:name>
+            </rico:Place>
+        </skos:example>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q1061151"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-04-18</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
     <skos:Concept rdf:about="placeType/p%C3%A9pini%C3%A8re">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
@@ -3492,7 +3816,7 @@
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
-    <skos:Concept rdf:about="placeType/pointe">
+    <!--  <skos:Concept rdf:about="placeType/pointe">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
         <skos:prefLabel xml:lang="fr">pointe</skos:prefLabel>
@@ -3506,7 +3830,7 @@
                 <dc:date>2026-02-23</dc:date>
             </rdf:Description>
         </skos:changeNote>
-    </skos:Concept>
+    </skos:Concept>-->
     <skos:Concept rdf:about="placeType/pompe%20%C3%A0%20eau">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
@@ -3607,7 +3931,18 @@
         <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
         <skos:definition xml:lang="fr">« Un port est une infrastructure construite par l’homme, située sur le littoral maritime, sur les berges d’un
             lac ou sur un cours d’eau, et destinée à accueillir des bateaux et navires. » (Source : Wikipédia.)</skos:definition>
+        <skos:example>
+            <rico:Place rdf:about="place/FRAN_RI_005-d-3pjcsy658--1ikovhyytfq5z">
+                <rico:name xml:lang="fr">port de Moguériec (Sibiril, Finistère, France)</rico:name>
+            </rico:Place>
+        </skos:example>
         <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q44782"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Ajout d’un exemple.</rdf:value>
+                <dc:date>2026-04-18</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <rdf:value xml:lang="fr">Ajout des données suivantes : définition, relation(s) sémantique(s) vers des concepts d’autres
@@ -3898,6 +4233,17 @@
             géographie physique ou par des aires historiques de diffusion culturelle. Les contours des régions historiques sont en général sans
             rapport avec les frontières politiques et l’organisation territoriale moderne : la concordance est d’autant plus rare que les
             délimitations passées sont plus anciennes. (D’après Wikipédia.)</skos:definition>
+        <skos:example>
+            <rico:Place rdf:about="place/FRAN_RI_005-d3m08zzgaid--1um1a0exl283v">
+                <rico:name xml:lang="fr">Silésie (Europe ; région historique)</rico:name>
+            </rico:Place>
+        </skos:example>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Ajout d’un exemple.</rdf:value>
+                <dc:date>2026-04-18</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
@@ -3984,8 +4330,6 @@
         <skos:inScheme rdf:resource="placeTypes"/>
         <skos:prefLabel xml:lang="fr">rue</skos:prefLabel>
         <skos:altLabel xml:lang="fr">grande rue</skos:altLabel>
-        <skos:altLabel xml:lang="fr">grand’rue</skos:altLabel>
-        <skos:altLabel xml:lang="fr">grant rue</skos:altLabel>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <skos:broader rdf:resource="placeType/voie"/>
         <skos:narrower rdf:resource="placeType/ruelle"/>
@@ -3993,10 +4337,21 @@
         <skos:definition xml:lang="fr">Une rue est une « voie de circulation bordée de bâtiments et située dans une agglomération ». (Source :
             Wikidata.) « La rue se distingue des autres voies urbaines (voirie) comme les allées, les cours ou les boulevards et avenues par sa
             relative faible largeur notamment, et par l’absence de contre-allées. » (Source : Wikipédia.)</skos:definition>
+        <skos:example>
+            <rico:Place rdf:about="place/FRAN_RI_025-d3nzcwxu24--1g3t2gfx9dhpf-vdp-13247">
+                <rico:name xml:lang="fr">rue de Rivoli (1er-4e arrondissements, Paris, France)</rico:name>
+            </rico:Place>
+        </skos:example>
         <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q79007"/>
         <skos:exactMatch rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/T96-75"/>
         <skos:exactMatch rdf:resource="https://data.bnf.fr/ark:/12148/cb11975928c"/>
         <skos:exactMatch rdf:resource="http://fr.dbpedia.org/resource/Rue"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Ajout d’un exemple.</rdf:value>
+                <dc:date>2026-04-18</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <rdf:value xml:lang="fr">Ajout des données suivantes : définition, relation(s) sémantique(s) vers des concepts d’autres
@@ -4010,8 +4365,6 @@
         <skos:inScheme rdf:resource="placeTypes"/>
         <skos:prefLabel xml:lang="fr">ruelle</skos:prefLabel>
         <skos:altLabel xml:lang="fr">petite rue</skos:altLabel>
-        <skos:altLabel xml:lang="fr">petite ruelle</skos:altLabel>
-        <skos:altLabel xml:lang="fr">ruella</skos:altLabel>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <skos:broader rdf:resource="placeType/rue"/>
         <skos:definition xml:lang="fr">« Une ruelle est une petite rue entre plusieurs bâtiments, souvent accessible uniquement pour les piétons. »
@@ -4391,6 +4744,30 @@
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
+    <skos:Concept rdf:about="placeType/tunnel">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">tunnel</skos:prefLabel>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:definition xml:lang="fr">Un tunnel est un « ouvrage de franchissement souterrain par une voie de communication d’un obstacle naturel
+            (montagne, cours d’eau, bras de mer, etc.). » (Source : Thésaurus de la désignation des œuvres architecturales et des espaces
+            aménagés.)</skos:definition>
+        <skos:example>
+            <rico:Place rdf:about="place/FRAN_RI_005-d5bdpmiwrw--xvut4oms1wm6">
+                <rico:name xml:lang="fr">tunnel du Mont-Blanc (France / Italie)</rico:name>
+            </rico:Place>
+        </skos:example>
+        <skos:exactMatch rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/T96-1114"/>
+        <skos:exactMatch rdf:resource="http://data.bnf.fr/ark:/12148/cb119754118"/>
+        <skos:exactMatch rdf:resource="http://fr.dbpedia.org/resource/Tunnel"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-04-12</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
     <skos:Concept rdf:about="placeType/unit%C3%A9%20administrative%20fran%C3%A7aise">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
@@ -4616,7 +4993,7 @@
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
-    <skos:Concept rdf:about="placeType/voie%20urbaine">
+   <!-- <skos:Concept rdf:about="placeType/voie%20urbaine">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
         <skos:prefLabel xml:lang="fr">voie urbaine</skos:prefLabel>
@@ -4628,7 +5005,7 @@
                 <dc:date>2026-02-23</dc:date>
             </rdf:Description>
         </skos:changeNote>
-    </skos:Concept>
+    </skos:Concept>-->
     <skos:Concept rdf:about="placeType/voirie">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
