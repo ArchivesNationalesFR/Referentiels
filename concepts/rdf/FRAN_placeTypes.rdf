@@ -12,7 +12,7 @@
                 <html:p>Thésaurus des types de lieux (entités géo-historiques). Saisi manuellement en se fondant sur les catégories de lieux
                     sous-jacentes ou implicites dans les référentiels de lieux des Archives nationales de France. Des enrichissements sont prévus dans
                     les prochains mois.</html:p>
-                <html:p>Nombre de concepts : 202. Tous ces concepts sont des concepts candidats, le référentiel des types de lieux étant le seul
+                <html:p>Nombre de concepts : 205. Tous ces concepts sont des concepts candidats, le référentiel des types de lieux étant le seul
                     vocabulaire directement créé en RDF, et non instancié actuellement dans le SI des Archives nationales de France.</html:p>
             </html:div>
         </dcterms:description>
@@ -326,6 +326,24 @@
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
+    <skos:Concept rdf:about="placeType/ancien%20d%C3%A9partement">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">ancien département français</skos:prefLabel>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/unit%C3%A9%20administrative%20fran%C3%A7aise"/>
+        <skos:example>
+            <rico:Place rdf:about="place/FRAN_RI_005-d3ntb7ng95--a84n333y97sr">
+                <rico:name xml:lang="fr">département de l’Escaut (France). 1795-1814</rico:name>
+            </rico:Place>
+        </skos:example>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté</rdf:value>
+                <dc:date>2026-04-19</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
     <skos:Concept rdf:about="placeType/ancien%20faubourg%20de%20Paris">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
@@ -422,7 +440,7 @@
         <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20physique"/>
         <skos:definition xml:lang="fr">« Un archipel est un ensemble d’îles relativement proches les unes des autres. La proximité se double le plus
             souvent d’une origine géologique commune, en général volcanique. » (Source : Wikipédia.)</skos:definition>
-          <skos:example>
+        <skos:example>
             <rico:Place rdf:about="place/FRAN_RI_005-d3m08zy6sfa--1vurhe1dhr86v">
                 <rico:name xml:lang="fr">îles Ioniennes (Grèce)</rico:name>
             </rico:Place>
@@ -1031,7 +1049,6 @@
                 <dc:date>2026-02-23</dc:date>
             </rdf:Description>
         </skos:changeNote>
-
     </skos:Concept>
     <skos:Concept rdf:about="placeType/carrefour">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
@@ -1443,6 +1460,21 @@
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
+    <skos:Concept rdf:about="placeType/collectivit%C3%A9%20d%E2%80%99outre-mer">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">collectivité d’outre-mer</skos:prefLabel>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/unit%C3%A9%20administrative%20fran%C3%A7aise"/>
+        <skos:scopeNote xml:lang="fr">Inclut la Nouvelle-Calédonie, qui dispose d’un statut spécial de collectivité d’outre-mer fançaise sui
+            generis.</skos:scopeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté</rdf:value>
+                <dc:date>2026-04-19</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
     <skos:Concept rdf:about="placeType/coll%C3%A8ge">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
@@ -1685,7 +1717,7 @@
             déconcentrés de l’État (le plus souvent appelée simplement département, mais parfois appelée circonscription départementale en cas
             d’ambiguïté quand les territoires de compétence de la circonscription et de la collectivité homonyme ne coïncident pas) ». (Source :
             Wikipédia.)</skos:definition>
-        <skos:scopeNote xml:lang="fr">département actuel, ou département ancien disparu.</skos:scopeNote>
+        <skos:scopeNote xml:lang="fr">Employé ici pour les départements actuels.</skos:scopeNote>
         <skos:example>
             <rico:Place rdf:about="place/FRAN_RI_005-d3ntb7ow7c--5vehi4l7x7op">
                 <rico:name xml:lang="fr">Finistère (Bretagne, département)</rico:name>
@@ -1694,13 +1726,18 @@
         <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q6465"/>
         <skos:changeNote>
             <rdf:Description>
+                <rdf:value xml:lang="fr">Modifié la note d’application.</rdf:value>
+                <dc:date>2026-04-20</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <rdf:value xml:lang="fr">Correction de la relation vers le concept générique. Ajout des données suivantes : définition, exemple(s),
                     relation(s) sémantique(s) vers des concepts d’autres vocabulaires.</rdf:value>
                 <dc:date>2026-02-23</dc:date>
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
-
     <skos:Concept rdf:about="placeType/d%C3%A9sert">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#archipel"/>
         <skos:inScheme rdf:resource="placeTypes"/>
@@ -1710,9 +1747,9 @@
         <skos:definition xml:lang="fr">« Un désert est une zone de terre où les précipitations sont rares et peu abondantes, et où, par conséquent,
             les conditions de vie sont hostiles pour les plantes et pour les animaux. Les déserts font partie des environnements extrêmes. » (Source :
             Wikipédia.)</skos:definition>
-          <skos:example>
-              <rico:Place rdf:about="place/FRAN_RI_005-d5bdpehfjt-i35y7mwfd82w">
-                  <rico:name xml:lang="fr">Sahara (Afrique ; désert)</rico:name>
+        <skos:example>
+            <rico:Place rdf:about="place/FRAN_RI_005-d5bdpehfjt-i35y7mwfd82w">
+                <rico:name xml:lang="fr">Sahara (Afrique ; désert)</rico:name>
             </rico:Place>
         </skos:example>
         <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q8514"/>
@@ -3606,8 +3643,8 @@
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20physique"/>
         <skos:definition xml:lang="fr">« Une péninsule (du latin paeninsula, paene signifiant « presque » et insula « île ») est une partie de terres
-            émergées rattachée à une masse continentale par un de ses côtés. Elle se distingue d'une presqu’île par sa taille supérieure, ou
-            par l’absence d’isthme. » (Source : Wikipédia.)</skos:definition>
+            émergées rattachée à une masse continentale par un de ses côtés. Elle se distingue d'une presqu’île par sa taille supérieure, ou par
+            l’absence d’isthme. » (Source : Wikipédia.)</skos:definition>
         <skos:example>
             <rico:Place rdf:about="place/FRAN_RI_005-d-1fsq9iyb8-8l3pongtlqv7">
                 <rico:name xml:lang="fr">péninsule de Gallipoli (Turquie)</rico:name>
@@ -4699,6 +4736,32 @@
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
+    <skos:Concept rdf:about="placeType/territoire%20d%E2%80%99outre-mer">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">territoire d’outre-mer</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">TOM</skos:altLabel>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/unit%C3%A9%20administrative%20fran%C3%A7aise"/>
+        <skos:scopeNote xml:lang="fr">« Un territoire d’outre-mer, ou TOM, est un type de collectivité française d’outre-mer créé en 1946 avec l’Union
+            française, en remplacement du statut de colonie. En 1958, la plupart des territoires d’outre-mer deviennent des États membres de la
+            Communauté française avant de devenir indépendants au moment de la décolonisation de l’Afrique. Le statut de territoire d’outre-mer
+            perdure toutefois jusqu’en 2003 où les TOM restants (Mayotte, Polynésie française, Saint-Pierre-et-Miquelon et Wallis-et-Futuna)
+            deviennent des collectivités d’outre-mer (hors Mayotte qui est un département d’outre-mer). Seules les Terres australes et antarctiques
+            françaises (TAAF), qui n’ont pas de population permanente, sont encore considérées comme un territoire d’outre-mer. » (Source :
+            Wikipédia.) </skos:scopeNote>
+        <skos:example>
+            <rico:Place rdf:about="place/FRAN_RI_005-d3ntb8wf3t--3sy7nuiy6lqb">
+                <rico:name xml:lang="fr">Terres australes et antarctiques françaises (France)</rico:name>
+            </rico:Place>
+        </skos:example>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté</rdf:value>
+                <dc:date>2026-04-19</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
     <skos:Concept rdf:about="placeType/th%C3%A9%C3%A2tre">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
@@ -4779,13 +4842,16 @@
         <skos:prefLabel xml:lang="fr">unité administrative française</skos:prefLabel>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20humaine"/>
+        <skos:narrower rdf:resource="placeType/ancien%20d%C3%A9partement"/>
         <skos:narrower rdf:resource="placeType/ancienne%20commune"/>
         <skos:narrower rdf:resource="placeType/arrondissement"/>
         <skos:narrower rdf:resource="placeType/arrondissement%20municipal"/>
         <skos:narrower rdf:resource="placeType/canton"/>
+        <skos:narrower rdf:resource="placeType/collectivit%C3%A9%20d%E2%80%99outre-mer"/>
         <skos:narrower rdf:resource="placeType/commune"/>
         <skos:narrower rdf:resource="placeType/d%C3%A9partement"/>
         <skos:narrower rdf:resource="placeType/r%C3%A9gion"/>
+        <skos:narrower rdf:resource="placeType/territoire%20d%E2%80%99outre-mer"/>
         <skos:definition xml:lang="fr">Une unité administrative française est un objet géographique résultant du découpage administratif du territoire
             français. (Source : Ontologie des unités administratives de l’IGN, Release 2021-02-18.)</skos:definition>
         <skos:related rdf:resource="placeType/ville%20nouvelle"/>
