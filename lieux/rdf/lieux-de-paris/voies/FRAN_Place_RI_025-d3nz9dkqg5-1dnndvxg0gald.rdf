@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz9dkqg5-1dnndvxg0gald">
       <rdfs:label xml:lang="fr">villa Chanez (Paris, France)</rdfs:label>
@@ -129,11 +136,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz9dkqg5-1dnndvxg0gald_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz9dkqg5-1dnndvxg0gald"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">MULTIPOLYGON (((2.2603982825871345 48.84747360078258, 2.2604086485899266 48.847473608203984, 2.260426634135853 48.847474625949324, 2.260445541490414 48.84747569615732, 2.260690168424167 48.847490632941415, 2.260703630019134 48.8473995166419, 2.260399511863555 48.84738237651526, 2.2603814548391497 48.84738236471626, 2.2603681485478377 48.847383192615, 2.260353890256628 48.84738475120895, 2.2603364613802195 48.84738714369925, 2.260312218253555 48.84739256359925, 2.260022881259268 48.84745826113586, 2.2600671776345482 48.84754433208925, 2.2603549822043947 48.84747900450723, 2.260369162534305 48.84747669985532, 2.2603848662160724 48.84747459798324, 2.2603982825871345 48.84747360078258)), ((2.2611127137352054 48.847417500367065, 2.2610699310765865 48.84735353301878, 2.260844283008709 48.847420358868774, 2.2608343211265614 48.84749235376249, 2.2608548653371963 48.84749379196695, 2.2608530545387913 48.84750741789146, 2.2608684619146273 48.8475082397684, 2.26086828215639 48.847512650955586, 2.2608809305370343 48.8475099797298, 2.2608895122203103 48.847509352824325, 2.2608917209821167 48.84748851642921, 2.2609567125509327 48.84746977937343, 2.2609533729703584 48.847464081035724, 2.2611127137352054 48.847417500367065)))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz9dkqg5-1dnndvxg0gald_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz9dkqg5-1dnndvxg0gald"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.2605155228844 48.84744421580502)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz8z5n5w-wo4afenfl9sx">
       <rdfs:label xml:lang="fr">impasse Bourgoin (Paris, France)</rdfs:label>
@@ -133,11 +140,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8z5n5w-wo4afenfl9sx_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8z5n5w-wo4afenfl9sx"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3676117967625703 48.82387273061416, 2.367528041583677 48.82383915105158, 2.3675104257648663 48.823847470645134, 2.3674993323502687 48.82385920459, 2.367584103245211 48.82389292984633, 2.367647791615524 48.823918268400234, 2.367688962380987 48.823934833161495, 2.367848061131071 48.82399885007596, 2.3679620354337914 48.82404470911876, 2.3679831956173265 48.824053223824436, 2.367997063894755 48.82402718823615, 2.3678741915353805 48.82397792751819, 2.3678383700687604 48.82396356669083, 2.367801583520798 48.82394881851562, 2.3676896611345084 48.82390394688625, 2.3676309592207456 48.82388041278987, 2.3676117967625703 48.82387273061416))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8z5n5w-wo4afenfl9sx_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8z5n5w-wo4afenfl9sx"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.367751293638216 48.82394441001198)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

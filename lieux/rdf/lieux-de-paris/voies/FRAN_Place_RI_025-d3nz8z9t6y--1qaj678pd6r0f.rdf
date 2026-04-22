@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz8z9t6y--1qaj678pd6r0f">
       <rdfs:label xml:lang="fr">rue de la Bourse (Paris, France)</rdfs:label>
@@ -152,11 +159,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8z9t6y--1qaj678pd6r0f_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8z9t6y--1qaj678pd6r0f"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">MULTIPOLYGON (((2.3394787114752797 48.869531163571736, 2.3395332294036 48.869596156771415, 2.3395720927324395 48.86958816022249, 2.3395730864303763 48.86958795525946, 2.339677199852658 48.86956653267683, 2.3397739145168868 48.869546631349145, 2.3400650492577353 48.86948681184825, 2.3402968963501696 48.86943892381092, 2.340222167506644 48.869304053994824, 2.3399863495427415 48.86935271141494, 2.33966549434067 48.86941891577429, 2.3395654850920002 48.869439550686785, 2.3395282700111997 48.869447228968696, 2.3394787114752797 48.869531163571736)), ((2.3394287821799233 48.869615726541234, 2.3394787114752797 48.869531163571736, 2.3394259637178987 48.86946828007552, 2.3393873099115248 48.869476207585194, 2.339161478837283 48.86952251815726, 2.338969476384785 48.86956189144724, 2.339038267850864 48.86969634522402, 2.3392821762809453 48.869645992308826, 2.339392716419808 48.86962317189861, 2.3394287821799233 48.869615726541234)))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8z9t6y--1qaj678pd6r0f_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8z9t6y--1qaj678pd6r0f"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.339640267674774 48.86949878843299)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbusp3b-1uknbk6l7pp4t">
       <rdfs:label xml:lang="fr">place des Magasins de l'Opéra Comique (Paris, France)</rdfs:label>
@@ -133,11 +140,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbusp3b-1uknbk6l7pp4t_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbusp3b-1uknbk6l7pp4t"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3052422403316086 48.89094295379782, 2.3049700532949657 48.890813345945915, 2.304847236393056 48.89092394551913, 2.3049433441723806 48.89097025851561, 2.304992841348806 48.89099410909818, 2.3051194248315108 48.89105510408456, 2.3051272697961975 48.89104793879982, 2.305133816911311 48.891041960290316, 2.3051372506176033 48.891038825374345, 2.3051533781669016 48.89102409803965, 2.30523026448777 48.89095388938652, 2.3052422403316086 48.89094295379782))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbusp3b-1uknbk6l7pp4t_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbusp3b-1uknbk6l7pp4t"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.305044902506971 48.89093397458487)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

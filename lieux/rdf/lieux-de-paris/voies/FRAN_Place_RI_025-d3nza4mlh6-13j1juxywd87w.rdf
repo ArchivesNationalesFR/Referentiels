@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nza4mlh6-13j1juxywd87w">
       <rdfs:label xml:lang="fr">rue Diard (Paris, France)</rdfs:label>
@@ -145,11 +152,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nza4mlh6-13j1juxywd87w_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nza4mlh6-13j1juxywd87w"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3414601036145295 48.89089434586274)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nza4mlh6-13j1juxywd87w_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nza4mlh6-13j1juxywd87w"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3414521784635514 48.89058359120382, 2.3413293857389563 48.89057342705058, 2.3412608792442597 48.89060148234295, 2.3412987479933185 48.89061079452414, 2.341300856789558 48.890617129274894, 2.34133790577207 48.890728441008285, 2.3413582908063617 48.89078968560876, 2.341468019424786 48.8911325539077, 2.3414576546146924 48.89114104498138, 2.341430555363898 48.89116324234815, 2.3414241099058253 48.8911685228037, 2.341635158533073 48.89122890742843, 2.341599830500125 48.891114406410075, 2.3415783429472374 48.89104475971911, 2.3415572890517966 48.890976522846444, 2.341537975141516 48.89091391900785, 2.341509432847844 48.89082495468271, 2.341487743830853 48.89075734561623, 2.341439221006869 48.890610207395596, 2.341434961506598 48.890597290354286, 2.3414521784635514 48.89058359120382))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

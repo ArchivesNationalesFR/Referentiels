@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzaa3xvx-svhwlujsoae">
       <rdfs:label xml:lang="fr">rue Elsa Morante (Paris, France)</rdfs:label>
@@ -134,11 +141,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzaa3xvx-svhwlujsoae_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzaa3xvx-svhwlujsoae"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3820756092033566 48.8286154703193)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzaa3xvx-svhwlujsoae_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzaa3xvx-svhwlujsoae"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">MULTIPOLYGON (((2.3820859556969305 48.82861019804744, 2.3819164399457757 48.82860043809837, 2.381780774168857 48.828736616646715, 2.3816878943582793 48.8288298482391, 2.381673088034184 48.8288447111382, 2.381654835189155 48.8288630313847, 2.381922537369602 48.828973257937086, 2.3819309656001075 48.828963583793694, 2.38196411501599 48.82892553634529, 2.382001444649646 48.828882690759585, 2.3820155003689276 48.828866559426835, 2.3820557424172826 48.82882037152033, 2.3820604875282125 48.82881492246716, 2.3820857582008563 48.828785919716246, 2.3821595152468515 48.82870126166044, 2.3820859556969305 48.82861019804744)), ((2.3820229376563997 48.8285321838643, 2.3820859556969305 48.82861019804744, 2.382231417929611 48.82861857259136, 2.3822968887575775 48.828543186423516, 2.382340702044078 48.828492738547524, 2.382371958949275 48.82845674615512, 2.3824913515030057 48.82831926963866, 2.382286128692763 48.8282304914453, 2.3822637878290367 48.82825609896843, 2.382039607192569 48.82851307562166, 2.3820229376563997 48.8285321838643)))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbj1tms--78u26cx4bvaq">
       <rdfs:label xml:lang="fr">rue Jean Hugues (Paris, France)</rdfs:label>
@@ -140,11 +147,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbj1tms--78u26cx4bvaq_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbj1tms--78u26cx4bvaq"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.27485184156876 48.86863756711765)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbj1tms--78u26cx4bvaq_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbj1tms--78u26cx4bvaq"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.274874719658062 48.86847045927367, 2.2748928628799083 48.86843718444909, 2.274609183218428 48.868535209638694, 2.2747107266671907 48.86856076216163, 2.2748923376707753 48.868830905491244, 2.27494107555674 48.86881553768413, 2.2750407119624207 48.86878411990042, 2.275007125265511 48.86873514656833, 2.2749702536953866 48.86868065110879, 2.274937429610196 48.868632137441985, 2.2748753401221316 48.86854036944299, 2.274856131737617 48.86851197843227, 2.274853888957303 48.86850866513223, 2.274874719658062 48.86847045927367))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

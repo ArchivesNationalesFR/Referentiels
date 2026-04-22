@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nza5atug--1g71l0s1cs8m9">
       <rdfs:label xml:lang="fr">avenue du Docteur Brouardel (Paris, France)</rdfs:label>
@@ -167,11 +174,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nza5atug--1g71l0s1cs8m9_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nza5atug--1g71l0s1cs8m9"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.2957500948118525 48.85524287999343)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nza5atug--1g71l0s1cs8m9_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nza5atug--1g71l0s1cs8m9"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">MULTIPOLYGON (((2.2956160202809857 48.85520568668537, 2.295796234647022 48.85527422891895, 2.295837495505448 48.85516539312894, 2.295767426090855 48.85487345838126, 2.2955614192187803 48.85473826838452, 2.2953848137769626 48.85485169975774, 2.295512999899686 48.85487797201567, 2.2955268155776873 48.85492192134392, 2.2955678002142332 48.85505229523612, 2.295600693874093 48.8551569340095, 2.2956160202809857 48.85520568668537)), ((2.295796234647022 48.85527422891895, 2.2957064452645177 48.85551106613012, 2.295793679389652 48.855780845364336, 2.296025332102164 48.855636474771316, 2.2959186227978514 48.85532077769739, 2.295796234647022 48.85527422891895)))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

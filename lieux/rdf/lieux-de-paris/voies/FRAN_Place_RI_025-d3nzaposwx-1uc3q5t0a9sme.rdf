@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzaposwx-1uc3q5t0a9sme">
       <rdfs:label xml:lang="fr">rue Gauguet (Paris, France)</rdfs:label>
@@ -134,11 +141,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzaposwx-1uc3q5t0a9sme_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzaposwx-1uc3q5t0a9sme"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3342894327832164 48.8261621960994, 2.3344498883152065 48.82614610355442, 2.334471791056275 48.8261605426369, 2.3344329479129966 48.82598868297611, 2.3343991198782996 48.82601702025783, 2.3343931181393285 48.826022048549845, 2.3343611942671747 48.82604879013033, 2.33412454882482 48.82607217321012, 2.334006160554265 48.82608387140468, 2.333879621824319 48.82609637399522, 2.3338662273665514 48.826097697917845, 2.3337604396793776 48.82610815026762, 2.3337231858782763 48.826111830725836, 2.33372066137493 48.826112080178355, 2.333729596379346 48.82615422981787, 2.3337429789622077 48.82621736332458, 2.3337991093450907 48.82621165919241, 2.333873818908197 48.82620406640318, 2.333932645719542 48.82619808762834, 2.3340135487660105 48.82618986460751, 2.3341551869403157 48.82617565978329, 2.3342894327832164 48.8261621960994))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzaposwx-1uc3q5t0a9sme_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzaposwx-1uc3q5t0a9sme"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3341028995308477 48.826125796416726)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

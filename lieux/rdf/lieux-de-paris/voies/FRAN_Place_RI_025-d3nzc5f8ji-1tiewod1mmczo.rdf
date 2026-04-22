@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzc5f8ji-1tiewod1mmczo">
       <rdfs:label xml:lang="fr">passage du Moulin des Prés (Paris, France)</rdfs:label>
@@ -159,11 +166,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzc5f8ji-1tiewod1mmczo_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzc5f8ji-1tiewod1mmczo"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.353427702588446 48.82916100541223, 2.353340513569505 48.82905419481828, 2.353311218810975 48.82907498281969, 2.353189512179755 48.82904214238066, 2.353097394633353 48.829017285518084, 2.353078482370077 48.82901218270291, 2.3529297164746867 48.82897204020828, 2.3528968882211654 48.82896318183494, 2.3528982937239418 48.829032234331855, 2.3529208281813205 48.82902712370404, 2.3530088938287146 48.82905038398011, 2.353083413150016 48.82907006785756, 2.353104025329221 48.829075511735255, 2.3531531274154456 48.82908848186615, 2.3532073265817774 48.82910279712438, 2.353247095454788 48.829113301923165, 2.3533324472132215 48.82913584577027, 2.353378774148244 48.82914808220249, 2.353427702588446 48.82916100541223))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzc5f8ji-1tiewod1mmczo_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzc5f8ji-1tiewod1mmczo"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3531510915140754 48.829059394860096)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

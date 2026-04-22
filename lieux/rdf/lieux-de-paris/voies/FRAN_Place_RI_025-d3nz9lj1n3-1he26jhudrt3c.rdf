@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz9lj1n3-1he26jhudrt3c">
       <rdfs:label xml:lang="fr">rue du Colonel Colonna d'Ornano (Paris, France)</rdfs:label>
@@ -129,11 +136,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz9lj1n3-1he26jhudrt3c_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz9lj1n3-1he26jhudrt3c"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3044624323033274 48.84490364185603)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz9lj1n3-1he26jhudrt3c_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz9lj1n3-1he26jhudrt3c"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3037961319929376 48.8445168639545, 2.303648664800975 48.84447373458889, 2.30359412266701 48.84455341207642, 2.3034875269111916 48.84470913452401, 2.303811445773027 48.84480528515732, 2.3048839577620632 48.845124972029325, 2.3054103168742133 48.84528186018033, 2.3055123023044204 48.845133092032334, 2.3049862381455566 48.84497696238176, 2.3047251718807904 48.84489947964534, 2.303914606157572 48.8446589048452, 2.3038063848986234 48.844626783824815, 2.3037666555067355 48.84455941497627, 2.3037961319929376 48.8445168639545))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

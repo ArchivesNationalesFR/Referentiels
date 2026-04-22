@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz9f1x9h--zr0igjqzjsx7">
       <rdfs:label xml:lang="fr">rue Charles Marie Widor (Paris, France)</rdfs:label>
@@ -166,11 +173,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz9f1x9h--zr0igjqzjsx7_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz9f1x9h--zr0igjqzjsx7"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.2627298722297344 48.84093261073278, 2.26288882002051 48.840900246918395, 2.263021215770931 48.84087329002835, 2.2632396126524896 48.84082882128674, 2.263273459998744 48.84082192920004, 2.263308216573818 48.84083563564184, 2.263247602797145 48.840731354200315, 2.2632277982567874 48.84075565559269, 2.263076839807778 48.84078675509154, 2.263002848653282 48.84080199780809, 2.2629246116941077 48.840818115489434, 2.262646193876144 48.840875472259704, 2.262498267044506 48.840905945765236, 2.26246110871112 48.840893956471945, 2.2625046422572686 48.84099434754477, 2.2625224800527546 48.840974837699555, 2.2627298722297344 48.84093261073278))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz9f1x9h--zr0igjqzjsx7_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz9f1x9h--zr0igjqzjsx7"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.262882811433894 48.84086407399282)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

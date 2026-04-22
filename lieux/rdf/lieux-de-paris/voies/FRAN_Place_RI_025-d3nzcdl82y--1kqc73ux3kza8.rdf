@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzcdl82y--1kqc73ux3kza8">
       <rdfs:label xml:lang="fr">rue du Pasteur Marc Boegner (Paris, France)</rdfs:label>
@@ -146,11 +153,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcdl82y--1kqc73ux3kza8_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcdl82y--1kqc73ux3kza8"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.281249308548994 48.8631293252513)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcdl82y--1kqc73ux3kza8_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcdl82y--1kqc73ux3kza8"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.2810748275488333 48.86284160935854, 2.281080850367956 48.862812622514156, 2.2809355412416723 48.862902453783036, 2.2809763771994946 48.86290660142818, 2.2810358119170298 48.86297491271761, 2.2811741357141284 48.863133893940585, 2.281417176566858 48.86341322740381, 2.2815606004298083 48.863396785836116, 2.281489927077843 48.863316016085925, 2.2814198202631704 48.863235892725655, 2.281258164204632 48.863051141024506, 2.281176490526003 48.86295779679154, 2.2810748275488333 48.86284160935854))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

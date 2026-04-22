@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz93tr7n-1uydlswq8v5zu">
       <rdfs:label xml:lang="fr">allée des Cardinoux (Paris, France)</rdfs:label>
@@ -139,11 +146,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz93tr7n-1uydlswq8v5zu_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz93tr7n-1uydlswq8v5zu"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3723177436188174 48.89889874359149, 2.372054800417596 48.8988933776552, 2.3720546472956947 48.89889657301726, 2.372051172473004 48.89897205137595, 2.3720490575905613 48.89901790174204, 2.372048974518576 48.899019699935934, 2.3720214441599543 48.899616635651995, 2.3722944592364437 48.899622329617316, 2.3722947859086045 48.89961514760752, 2.3722971676458298 48.89956264823282, 2.3722996704127985 48.89950746413743, 2.3723024258336918 48.89945112304652, 2.3723050230134146 48.899395574318596, 2.3723050870053863 48.89939422658169, 2.3723075461122867 48.89934164396555, 2.372307629165113 48.89933984667125, 2.3723177436188174 48.89889874359149))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz93tr7n-1uydlswq8v5zu_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz93tr7n-1uydlswq8v5zu"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3721730341419693 48.89926022373525)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

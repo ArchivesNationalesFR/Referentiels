@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbjpvr1-17g8udfkop1hh">
       <rdfs:label xml:lang="fr">rue Jean Veber (Paris, France)</rdfs:label>
@@ -153,11 +160,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbjpvr1-17g8udfkop1hh_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbjpvr1-17g8udfkop1hh"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.410776964568569 48.86271917761953, 2.4108287135519157 48.862420666782555, 2.4107263160633745 48.86247000142335, 2.4094319367476422 48.86235577472261, 2.4093492836803123 48.86228426938798, 2.409286567501335 48.862587440776466, 2.409395881712032 48.86253279671411, 2.4095291723204806 48.86254465032848, 2.4096891796869078 48.86255887943498, 2.4099914284758865 48.86258575651291, 2.410098604496032 48.862595287249846, 2.4103957064341643 48.8626217062505, 2.4105547910414304 48.862635851407624, 2.4106942902198516 48.86264825591741, 2.410776964568569 48.86271917761953))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbjpvr1-17g8udfkop1hh_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbjpvr1-17g8udfkop1hh"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.4100599885567178 48.86250171378695)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

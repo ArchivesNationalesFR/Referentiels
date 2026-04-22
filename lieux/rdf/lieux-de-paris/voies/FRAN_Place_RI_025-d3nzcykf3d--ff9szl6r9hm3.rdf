@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzcykf3d--ff9szl6r9hm3">
       <rdfs:label xml:lang="fr">impasse du Rouet (Paris, France)</rdfs:label>
@@ -160,11 +167,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcykf3d--ff9szl6r9hm3_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcykf3d--ff9szl6r9hm3"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3258027937524304 48.827650128519984, 2.3258475457355066 48.8276399893978, 2.326007816338696 48.827603679229384, 2.3259384308385984 48.82756282429581, 2.3259237584326518 48.82758550662829, 2.3257845497948004 48.82761749969854, 2.325650568213299 48.82764829173319, 2.3256228390166083 48.82764129021335, 2.3255853775342876 48.827631830668786, 2.32556217459397 48.827593788376824, 2.3254500961490594 48.827619152753186, 2.3254812836166767 48.8276806059159, 2.3255009068419796 48.82771927108576, 2.325535963485156 48.827711196330306, 2.32564786758449 48.82768542167504, 2.3256991893727457 48.827673600944316, 2.3257684151657996 48.82765791757695, 2.3258027937524304 48.827650128519984))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcykf3d--ff9szl6r9hm3_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcykf3d--ff9szl6r9hm3"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3256725417420325 48.82764344340987)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

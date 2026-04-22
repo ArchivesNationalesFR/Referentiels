@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz8o2rvs-a8uxfo0v1dza">
       <rdfs:label xml:lang="fr">voie B/6 (Paris, France)</rdfs:label>
@@ -125,11 +132,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8o2rvs-a8uxfo0v1dza_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8o2rvs-a8uxfo0v1dza"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3340481851112087 48.84304240302468, 2.334065706786174 48.843024040220826, 2.3339433071675497 48.842973543934676, 2.333869969103184 48.84293303744772, 2.333608925289269 48.84278885811642, 2.3335817526547875 48.842810080135436, 2.3335391118861364 48.84284516780932, 2.333598422147796 48.84287787262402, 2.3336171161013377 48.84288804154146, 2.3337173201232355 48.842944725386836, 2.33392905579912 48.84299168210182, 2.3340481851112087 48.84304240302468))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8o2rvs-a8uxfo0v1dza_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8o2rvs-a8uxfo0v1dza"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3337505947059256 48.842905922042654)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzdd95uy-168zszzur4m58">
       <rdfs:label xml:lang="fr">passage de la Station de Ménilmontant (Paris, France)</rdfs:label>
@@ -106,11 +113,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdd95uy-168zszzur4m58_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdd95uy-168zszzur4m58"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.388934719274815 48.868998082840406)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdd95uy-168zszzur4m58_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdd95uy-168zszzur4m58"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3889521425924256 48.86901795861547, 2.3891721650194326 48.868787378066436, 2.3891771904714507 48.868789425424616, 2.389259120780718 48.868641936591374, 2.389217800323331 48.868631990406456, 2.3891339415249386 48.868766175357536, 2.389133965170873 48.868769157682806, 2.388995698533705 48.86891788501922, 2.3889149503371874 48.86900610882287, 2.3886374823793255 48.86927536105847, 2.3885538813582157 48.869356824993034, 2.3885800314977055 48.869381672371595, 2.388601698924547 48.86935857924537, 2.3889521425924256 48.86901795861547))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

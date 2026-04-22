@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbnpg7z-8dlq41539z33">
       <rdfs:label xml:lang="fr">square Lagarde (Paris, France)</rdfs:label>
@@ -131,11 +138,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbnpg7z-8dlq41539z33_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbnpg7z-8dlq41539z33"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.347866606473758 48.84058627872486)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbnpg7z-8dlq41539z33_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbnpg7z-8dlq41539z33"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.347812157024562 48.84049313242712, 2.3478102735689754 48.84047792559493, 2.3477066826332673 48.84056137041313, 2.3479140082255867 48.840676897221975, 2.347923640297179 48.84067609892872, 2.347954728364698 48.84067352082963, 2.3479835960887327 48.840650966528614, 2.3480151951032435 48.84062627582694, 2.348011744024162 48.84061221164257, 2.348018430220835 48.840607065046946, 2.347812157024562 48.84049313242712))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

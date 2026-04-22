@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzc5vi7t--4i5j4nsgybqy">
       <rdfs:label xml:lang="fr">square Mozart (Paris, France)</rdfs:label>
@@ -148,11 +155,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzc5vi7t--4i5j4nsgybqy_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzc5vi7t--4i5j4nsgybqy"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.271329868790429 48.85660247192488, 2.271365557646067 48.85657780127785, 2.271367932242213 48.856579335654175, 2.2714026172866717 48.856554809076414, 2.2715123147194514 48.85647723809879, 2.2713951537615165 48.85640335199917, 2.2712281874147564 48.85651947498947, 2.2711057296454937 48.85660464131303, 2.2711024319413484 48.85660693527683, 2.270559590953626 48.85678613527372, 2.270633951234385 48.85688248629991, 2.270637754863381 48.85688124678375, 2.270754444824177 48.856843202795375, 2.27084763236755 48.85681282102181, 2.2708976366038938 48.85679662696755, 2.2711942850958025 48.856700552343426, 2.2713324697885326 48.85660419025045, 2.271329868790429 48.85660247192488))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzc5vi7t--4i5j4nsgybqy_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzc5vi7t--4i5j4nsgybqy"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.271051610458367 48.856662363893264)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

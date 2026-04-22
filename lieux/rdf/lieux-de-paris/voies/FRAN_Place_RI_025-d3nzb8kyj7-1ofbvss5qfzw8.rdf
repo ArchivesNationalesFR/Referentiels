@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzb8kyj7-1ofbvss5qfzw8">
       <rdfs:label xml:lang="fr">rue Gozlin (Paris, France)</rdfs:label>
@@ -166,11 +173,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzb8kyj7-1ofbvss5qfzw8_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzb8kyj7-1ofbvss5qfzw8"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3334667044596373 48.853491956342694, 2.334040032957732 48.853410947440274, 2.334071518803597 48.85342385755069, 2.3341019645904533 48.853363947347326, 2.33407210462201 48.853318514804656, 2.3339203079332482 48.853342712445695, 2.3338124435033505 48.85335990659444, 2.333725504592861 48.85337376544198, 2.333638049434527 48.853387705890775, 2.333550336116957 48.85340168800695, 2.333547573019137 48.85338809594594, 2.333464112140755 48.853398746188795, 2.333409294801498 48.85337366536794, 2.3334417993091687 48.85351318719097, 2.3334667044596373 48.853491956342694))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzb8kyj7-1ofbvss5qfzw8_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzb8kyj7-1ofbvss5qfzw8"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.33375268705586 48.85340841172685)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

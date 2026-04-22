@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzdlmxuc-1f9pau3wawspn">
       <rdfs:label xml:lang="fr">rue du Tunnel (Paris, France)</rdfs:label>
@@ -184,11 +191,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdlmxuc-1f9pau3wawspn_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdlmxuc-1f9pau3wawspn"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.385387040000048 48.87896350135667, 2.3856061062617555 48.87888002225883, 2.385654728282083 48.87889522674101, 2.385570661591168 48.878736037469075, 2.385498572989953 48.87879324347171, 2.385396816869168 48.87883001003603, 2.3854020527141273 48.87885462280119, 2.3852139822164693 48.87892638055833, 2.385123617528164 48.87896085813587, 2.385102886782268 48.87896893466179, 2.385016148425469 48.87900195048636, 2.385001997644712 48.879007051637906, 2.3849526126000127 48.87902586822148, 2.384901660606247 48.87904528198266, 2.3847072277369814 48.879119363392256, 2.384551135909624 48.879178835929665, 2.384428447666091 48.87922558093726, 2.384655064646215 48.87927184465806, 2.3846506755793935 48.87924494742607, 2.3848290144353905 48.879176142521395, 2.3850137912105396 48.879105731842124, 2.385291556039232 48.878999886336814, 2.385370401232048 48.878969841645805, 2.385387040000048 48.87896350135667))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdlmxuc-1f9pau3wawspn_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdlmxuc-1f9pau3wawspn"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.385087753350922 48.87902226426467)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

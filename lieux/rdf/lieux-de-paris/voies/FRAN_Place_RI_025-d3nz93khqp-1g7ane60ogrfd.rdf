@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz93khqp-1g7ane60ogrfd">
       <rdfs:label xml:lang="fr">rue Caplat (Paris, France)</rdfs:label>
@@ -131,11 +138,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz93khqp-1g7ane60ogrfd_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz93khqp-1g7ane60ogrfd"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3523204174591346 48.88460340970442)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz93khqp-1g7ane60ogrfd_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz93khqp-1g7ane60ogrfd"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3525039201694566 48.884295241751516, 2.3523278516961827 48.88425555355427, 2.352339759526729 48.884270104354975, 2.352302574868162 48.884409603105134, 2.35225721529488 48.88457976247088, 2.3522322560481794 48.88467339141113, 2.3522025648026563 48.88478477715345, 2.3521734413861823 48.88489402644856, 2.3521581621039305 48.884905153900675, 2.3522497517339165 48.88494944672296, 2.3523533785588313 48.88487105529383, 2.352322884761354 48.88485236687994, 2.352367626259862 48.884683113409125, 2.3523934956625285 48.8845852508311, 2.352419387825061 48.88448730472491, 2.3524404547113127 48.88440760686273, 2.352466405387749 48.88430943711515, 2.3525039201694566 48.884295241751516))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

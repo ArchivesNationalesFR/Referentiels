@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzainbmt--1c41om32umt40">
       <rdfs:label xml:lang="fr">rue de Franche Comté (Paris, France)</rdfs:label>
@@ -157,11 +164,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzainbmt--1c41om32umt40_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzainbmt--1c41om32umt40"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.363812336793877 48.86452136461262, 2.3636400112636005 48.864490270980646, 2.363426173762976 48.86452649522168, 2.363536326289171 48.86458450145869, 2.363973162703522 48.86466335969197, 2.3639796696230513 48.86466453463938, 2.36422436497945 48.864708706473884, 2.3643718456021765 48.86473532887124, 2.3644176030003496 48.86463057352858, 2.364218405816275 48.864596078806784, 2.3640044308294073 48.864556024621336, 2.363812336793877 48.86452136461262))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzainbmt--1c41om32umt40_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzainbmt--1c41om32umt40"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.363952549691278 48.86460444715023)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

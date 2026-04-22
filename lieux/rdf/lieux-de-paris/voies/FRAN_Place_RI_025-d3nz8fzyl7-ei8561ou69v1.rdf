@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz8fzyl7-ei8561ou69v1">
       <rdfs:label xml:lang="fr">villa Alexandre Ribot (Paris, France)</rdfs:label>
@@ -146,11 +153,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8fzyl7-ei8561ou69v1_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8fzyl7-ei8561ou69v1"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3951808016092615 48.88115483557011)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8fzyl7-ei8561ou69v1_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8fzyl7-ei8561ou69v1"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3950318498661343 48.88095784866683, 2.3949684819696073 48.88088570185092, 2.3949322386829044 48.88089953650134, 2.3950143061538434 48.88099295429568, 2.3950515354962008 48.881035333468375, 2.3950828717949517 48.881071001748694, 2.395111548857255 48.8811036456357, 2.395143680562467 48.881140221740196, 2.39517411798928 48.88117486831209, 2.395205549989596 48.88121064675635, 2.3952391971814886 48.881248947302424, 2.395273198374132 48.88128764982615, 2.3953146269982515 48.881334807555156, 2.3953903208321456 48.881420968561685, 2.395430811838755 48.881412071849205, 2.395374373615343 48.88134781679854, 2.3953328102140725 48.881299460506554, 2.3952917910877027 48.88125308906393, 2.3952540662028006 48.88121084596934, 2.395219907718516 48.88117195558253, 2.395178077026601 48.8811243308292, 2.3951385799675466 48.8810793636701, 2.3951041323189077 48.88104014352932, 2.395089328876897 48.88102328908231, 2.395072256474767 48.88100385199139, 2.3950318498661343 48.88095784866683))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

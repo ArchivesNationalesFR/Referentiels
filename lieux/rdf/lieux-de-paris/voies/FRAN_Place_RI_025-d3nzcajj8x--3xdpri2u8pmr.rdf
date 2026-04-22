@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzcajj8x--3xdpri2u8pmr">
       <rdfs:label xml:lang="fr">rue des Oiseaux (Paris, France)</rdfs:label>
@@ -126,11 +133,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcajj8x--3xdpri2u8pmr_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcajj8x--3xdpri2u8pmr"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3617325721892724 48.862967819880026)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcajj8x--3xdpri2u8pmr_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcajj8x--3xdpri2u8pmr"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.361472580284718 48.863095384820426, 2.361526499364252 48.863068555436314, 2.3618176558939568 48.86292334965931, 2.36189995648168 48.86298870682948, 2.36198166414208 48.86305240957965, 2.362020075118032 48.86303302391532, 2.361971717025175 48.86299012906664, 2.3619494684328632 48.86297166381214, 2.3617950485154635 48.86284349405798, 2.3617500147983113 48.86286562241082, 2.3617463890074815 48.86289321207204, 2.3614829666787513 48.86302357447043, 2.361508207565589 48.86304623053565, 2.361450247511008 48.86307479027529, 2.361472580284718 48.863095384820426))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

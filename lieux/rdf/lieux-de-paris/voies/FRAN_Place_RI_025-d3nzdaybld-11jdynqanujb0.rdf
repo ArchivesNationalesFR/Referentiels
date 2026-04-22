@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzdaybld-11jdynqanujb0">
       <rdfs:label xml:lang="fr">rue du Sénégal (Paris, France)</rdfs:label>
@@ -167,11 +174,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdaybld-11jdynqanujb0_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdaybld-11jdynqanujb0"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.382864414369025 48.87144340687417, 2.382931618259489 48.87134910358921, 2.382866891560893 48.87135802226347, 2.3827921587788423 48.87131844745176, 2.3826593508950755 48.87124811975054, 2.3824262888098264 48.871124748026034, 2.382411707063513 48.87111702842972, 2.382339107238405 48.87107859839165, 2.382234524776254 48.871023237811926, 2.3821477469975036 48.871066628979754, 2.3821801169404946 48.87106390289671, 2.382308942448704 48.871131850737044, 2.3824069430519534 48.87118354036793, 2.382545429157589 48.87125658306579, 2.3828519003676525 48.87141821849443, 2.382864414369025 48.87144340687417))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdaybld-11jdynqanujb0_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdaybld-11jdynqanujb0"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.382551925389556 48.871225282870924)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

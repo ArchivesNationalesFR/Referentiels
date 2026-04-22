@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzdhxkwg-1kq124jen0bgb">
       <rdfs:label xml:lang="fr">rue Thureau-Dangin (Paris, France)</rdfs:label>
@@ -160,11 +167,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdhxkwg-1kq124jen0bgb_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdhxkwg-1kq124jen0bgb"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.293281652128314 48.82981044347096)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdhxkwg-1kq124jen0bgb_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdhxkwg-1kq124jen0bgb"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.293402424294458 48.82920158628851, 2.293481371413203 48.82913287516447, 2.2930367137302405 48.829284947875855, 2.2931603531274147 48.82931872815659, 2.293160424343312 48.82935818433029, 2.293160588308618 48.82945037792786, 2.293160760228021 48.829547410222546, 2.2931611008171044 48.829738499623105, 2.2931616109366395 48.830025893633, 2.2931619904058445 48.830238630315534, 2.2931622818643156 48.83040290165328, 2.2930893393410443 48.83048190450094, 2.293519169424847 48.83034269785179, 2.2934014672709604 48.83029511343616, 2.293402424294458 48.82920158628851))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbwq19r-bvvunqlikjr6">
       <rdfs:label xml:lang="fr">rue Marcel Dubois (Paris, France)</rdfs:label>
@@ -153,11 +160,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbwq19r-bvvunqlikjr6_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbwq19r-bvvunqlikjr6"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.406220885138598 48.83437143013318)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbwq19r-bvvunqlikjr6_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbwq19r-bvvunqlikjr6"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.406891588268344 48.834094754962706, 2.406506821462336 48.83388533059905, 2.4065160692619765 48.83395650003757, 2.4062315867077837 48.83418377672872, 2.4059719302899807 48.834391216417906, 2.405665721378307 48.83463584494885, 2.4055549683616158 48.83464141024651, 2.405927053979299 48.834862262113376, 2.4059189903260423 48.834792202084714, 2.406001768542268 48.83472499182262, 2.406248040984784 48.83452847681336, 2.406269352417926 48.834511471301376, 2.406468725926823 48.83435237758085, 2.406488021704629 48.83433698088141, 2.4067840906336926 48.83410072606288, 2.406891588268344 48.834094754962706))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbsp55u-1skjeugsh1s0r">
       <rdfs:label xml:lang="fr">villa de Lorraine (Paris, France)</rdfs:label>
@@ -141,11 +148,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbsp55u-1skjeugsh1s0r_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbsp55u-1skjeugsh1s0r"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.393619670781105 48.880897696072225)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbsp55u-1skjeugsh1s0r_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbsp55u-1skjeugsh1s0r"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3936620239887243 48.88073592560107, 2.3936680671560064 48.88069096283727, 2.39363766356459 48.8807102019571, 2.3936243663560206 48.880718617068126, 2.393603403706979 48.88086739909643, 2.393596783256315 48.88091438870862, 2.393590311519104 48.8809603160665, 2.39358283047567 48.88101340864852, 2.3935723214511087 48.88108800319997, 2.3936117689044942 48.88109308365849, 2.3936167623176314 48.88105853430389, 2.3936221456598052 48.88102129523558, 2.3936298973995638 48.880967669822134, 2.393637741051421 48.88091340994587, 2.3936438613807067 48.880871075416614, 2.393649976287589 48.88082557522446, 2.3936557522844715 48.880782597726714, 2.3936620239887243 48.88073592560107))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

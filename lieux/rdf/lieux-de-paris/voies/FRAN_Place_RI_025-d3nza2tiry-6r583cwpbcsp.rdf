@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nza2tiry-6r583cwpbcsp">
       <rdfs:label xml:lang="fr">rue Delouvain (Paris, France)</rdfs:label>
@@ -157,11 +164,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nza2tiry-6r583cwpbcsp_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nza2tiry-6r583cwpbcsp"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3882039357842504 48.875662788082764)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nza2tiry-6r583cwpbcsp_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nza2tiry-6r583cwpbcsp"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.388799793399749 48.87568840857733, 2.3880234963955247 48.87561929843174, 2.3879636313516746 48.875613946217214, 2.387881440531672 48.875606598409746, 2.3878372820137526 48.87560265026263, 2.387719336216065 48.875592105830975, 2.3877086037216992 48.87559114620749, 2.3874608248328237 48.87556899339138, 2.3874620135159894 48.87563833891035, 2.3874820108819765 48.87562848292531, 2.387626677458114 48.875640853231424, 2.387811539727905 48.8756566611313, 2.3879091038236386 48.87566500311409, 2.3880178790326703 48.87567430436258, 2.3886331221402792 48.87572691046236, 2.3887876778212576 48.87574012487601, 2.388861912847357 48.87574647185521, 2.3889703683058787 48.87575574542205, 2.3889771585782573 48.8757039938308, 2.388890136422629 48.87569645118425, 2.388799793399749 48.87568840857733))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

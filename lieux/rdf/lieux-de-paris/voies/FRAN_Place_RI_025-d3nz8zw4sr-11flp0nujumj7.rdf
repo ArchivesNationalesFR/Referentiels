@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz8zw4sr-11flp0nujumj7">
       <rdfs:label xml:lang="fr">rue Brahms (Paris, France)</rdfs:label>
@@ -146,11 +153,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8zw4sr-11flp0nujumj7_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8zw4sr-11flp0nujumj7"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3928937526348233 48.84045912515683, 2.392891430171784 48.8403890073158, 2.39268747835932 48.840434167706896, 2.3926953353067577 48.84065043004106, 2.3926987513277846 48.840756237341594, 2.3927017868347833 48.84084442063601, 2.3927072734980426 48.84100381960768, 2.392909180351239 48.84092491111998, 2.392906782071828 48.840852525636876, 2.392905664285732 48.84081876517648, 2.3929043983060776 48.84078053234376, 2.392896150521881 48.840531541242136, 2.3928948574706945 48.84049247545416, 2.3928937526348233 48.84045912515683))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8zw4sr-11flp0nujumj7_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8zw4sr-11flp0nujumj7"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3927978557582272 48.840688114200645)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

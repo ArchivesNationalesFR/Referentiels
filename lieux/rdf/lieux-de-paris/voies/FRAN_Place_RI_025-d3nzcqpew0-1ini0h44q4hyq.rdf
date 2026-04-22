@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzcqpew0-1ini0h44q4hyq">
       <rdfs:label xml:lang="fr">rue du Puits de l'Ermite (Paris, France)</rdfs:label>
@@ -162,11 +169,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcqpew0-1ini0h44q4hyq_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcqpew0-1ini0h44q4hyq"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.352957281721098 48.842217104254644)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcqpew0-1ini0h44q4hyq_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcqpew0-1ini0h44q4hyq"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">MULTIPOLYGON (((2.352660500477808 48.84219118082327, 2.35279424852191 48.84225813626943, 2.3530025262787677 48.84226833118249, 2.353144003868437 48.84227486658263, 2.353307538286009 48.842282522044535, 2.3534735934161954 48.84229040225608, 2.3535001010386414 48.84231211582612, 2.353559651085059 48.84218560591994, 2.35335292642834 48.842175995962364, 2.3531897027376196 48.842168800915026, 2.3531869123664735 48.842198433319936, 2.353026345735764 48.84218958140053, 2.3528614599406423 48.842180393821444, 2.3526982257693643 48.84217536281273, 2.352660500477808 48.84219118082327)), ((2.352568172490829 48.84222989518751, 2.352660500477808 48.84219118082327, 2.3526195311505296 48.84217067129312, 2.352548410693241 48.84216666106138, 2.3522318459804845 48.8421517410723, 2.3522289035002757 48.84215158034161, 2.352189338176852 48.84210659490948, 2.3522083840771604 48.84223495437998, 2.352238773276402 48.84221466292977, 2.352401244529229 48.842222104324385, 2.352568172490829 48.84222989518751)))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

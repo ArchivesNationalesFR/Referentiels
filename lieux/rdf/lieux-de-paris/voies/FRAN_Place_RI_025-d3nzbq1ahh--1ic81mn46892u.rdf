@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbq1ahh--1ic81mn46892u">
       <rdfs:label xml:lang="fr">rue Legraverend (Paris, France)</rdfs:label>
@@ -169,11 +176,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbq1ahh--1ic81mn46892u_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbq1ahh--1ic81mn46892u"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3757676853111462 48.84623872403007, 2.3755438450513364 48.846213307411425, 2.3755718030293678 48.84624000326739, 2.375540587157128 48.846361012551554, 2.37552134655804 48.84643559744798, 2.3754761300409766 48.846610878168676, 2.37543079176308 48.84678662857433, 2.37540992314479 48.84686752290924, 2.375371694039061 48.84701571630373, 2.3753673275887595 48.84702336951686, 2.375359067426453 48.84702947619214, 2.3753482460049344 48.84703348838255, 2.375547922604012 48.84697315774858, 2.3755886432772266 48.84681633987484, 2.3756003877412946 48.846771108655076, 2.375631318061831 48.8466519910557, 2.3756751768091595 48.84648308593791, 2.3756993439144787 48.846390016157784, 2.375734207986387 48.84625575135882, 2.3757676853111462 48.84623872403007))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbq1ahh--1ic81mn46892u_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbq1ahh--1ic81mn46892u"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.375557636805839 48.846611006148386)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

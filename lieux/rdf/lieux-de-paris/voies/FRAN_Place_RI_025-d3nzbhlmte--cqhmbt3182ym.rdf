@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbhlmte--cqhmbt3182ym">
       <rdfs:label xml:lang="fr">place Jacques Froment (Paris, France)</rdfs:label>
@@ -133,11 +140,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbhlmte--cqhmbt3182ym_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbhlmte--cqhmbt3182ym"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3311849135975176 48.8907627098357, 2.3310387377805184 48.890701937974605, 2.3309729275058784 48.89071744789006, 2.3309346704947194 48.89082944295899, 2.3309212458101745 48.890868008358396, 2.3309081255987665 48.89090569681559, 2.3308947022964395 48.89094425772059, 2.330859655745293 48.891057182599276, 2.3309035939061706 48.89109012578245, 2.331076450305639 48.89107465815917, 2.331083197342389 48.89107401056392, 2.3311277324262702 48.89106973573219, 2.331377704428887 48.891045743824264, 2.331422239464412 48.891041468882854, 2.3314289878562207 48.89104082127575, 2.331721160508503 48.89103586645281, 2.331741511279652 48.890965018780825, 2.3314937051918543 48.89089014903346, 2.3313604149203226 48.89083505051045, 2.3313147490002004 48.890816209152256, 2.331281789194102 48.8908026269426, 2.331214837135964 48.890775043938554, 2.331198792080098 48.89076843061788, 2.3311849135975176 48.8907627098357))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbhlmte--cqhmbt3182ym_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbhlmte--cqhmbt3182ym"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.331219619076866 48.890930372030745)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

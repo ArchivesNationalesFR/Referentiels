@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbvm4cn--kmcmzhqgafny">
       <rdfs:label xml:lang="fr">villa Malakoff (Paris, France)</rdfs:label>
@@ -118,11 +125,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbvm4cn--kmcmzhqgafny_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbvm4cn--kmcmzhqgafny"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.287081150471303 48.865534550012875)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbvm4cn--kmcmzhqgafny_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbvm4cn--kmcmzhqgafny"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.286941350591357 48.865569766405386, 2.2872082095577086 48.865538212271765, 2.2872139127343734 48.86555985672589, 2.2874660248864958 48.86553127557925, 2.2874646226724025 48.86552595746711, 2.287444395878592 48.8654492204921, 2.287200088479717 48.86547908198509, 2.2872056984590867 48.86550145975565, 2.2869618299533445 48.865529802575644, 2.286786934467641 48.865550128131254, 2.2866861117169126 48.865561845667806, 2.286548440882306 48.86557784561475, 2.2865394107628676 48.86561729304875, 2.286672421360803 48.86560156571951, 2.286941350591357 48.865569766405386))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

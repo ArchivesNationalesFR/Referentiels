@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzdrrc5n--97wy326yy3gs">
       <rdfs:label xml:lang="fr">villa Virginie (Paris, France)</rdfs:label>
@@ -123,11 +130,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdrrc5n--97wy326yy3gs_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdrrc5n--97wy326yy3gs"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3268145256411485 48.82424195031074)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdrrc5n--97wy326yy3gs_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdrrc5n--97wy326yy3gs"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.327627539589844 48.82408785796068, 2.3275518751667716 48.82403605184069, 2.3275482575353603 48.8240532609153, 2.3273127160977647 48.82410512188613, 2.327057654496634 48.82416128040745, 2.3268111528873168 48.82421555380631, 2.3265614940043786 48.82427052122583, 2.3263597653678283 48.82431493499999, 2.326182234701472 48.82435402105294, 2.3260367701578537 48.82438604756208, 2.326056858313679 48.82443789039044, 2.326188749736649 48.824408498109094, 2.3275936160726234 48.82409541807107, 2.327627539589844 48.82408785796068))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

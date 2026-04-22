@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbt8m5t-1xv4t12yzsc9l">
       <rdfs:label xml:lang="fr">rue Louis Thuillier (Paris, France)</rdfs:label>
@@ -157,11 +164,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbt8m5t-1xv4t12yzsc9l_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbt8m5t-1xv4t12yzsc9l"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3436724092664942 48.84255958510748, 2.3438927004238552 48.842537847155675, 2.343895336079901 48.842537919170326, 2.3440335459289185 48.84252442939492, 2.3441792235422336 48.84251021144426, 2.3442145393559835 48.84252432719026, 2.344134976419132 48.84235780557696, 2.3440905714278872 48.84242529857025, 2.343180258532707 48.84251603846994, 2.3431171027868007 48.84245892027836, 2.3430137660502184 48.84265921122606, 2.343091481254301 48.8426159874069, 2.3433682161868914 48.84258881522045, 2.3433730415040985 48.84258834525769, 2.3436548108740616 48.842561276488524, 2.3436724092664942 48.84255958510748))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbt8m5t-1xv4t12yzsc9l_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbt8m5t-1xv4t12yzsc9l"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3436168825006902 48.84251664541824)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

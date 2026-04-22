@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbregg0-1mp71ktbgmaix">
       <rdfs:label xml:lang="fr">impasse de Lévis (Paris, France)</rdfs:label>
@@ -133,11 +140,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbregg0-1mp71ktbgmaix_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbregg0-1mp71ktbgmaix"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3154564542267395 48.88248262697358)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbregg0-1mp71ktbgmaix_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbregg0-1mp71ktbgmaix"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3154797405099274 48.88247601173826, 2.3154764094225433 48.88245752937292, 2.315488225272065 48.88244693712787, 2.3155180577578878 48.88245061688922, 2.315542790485384 48.8824291778775, 2.315498208979263 48.882413064147556, 2.315478352467047 48.88243170622332, 2.3154776012122134 48.88243356624673, 2.315473419185195 48.88244392694176, 2.315448659222927 48.88247345169225, 2.3153428146636887 48.882435348734475, 2.315315171931791 48.882454918436, 2.3154346858425274 48.882506575192835, 2.3154464030893576 48.882512199172425, 2.3155052399917215 48.88254044369414, 2.315531577044277 48.88255308691023, 2.3155637620721574 48.88252365135788, 2.315490533644691 48.882488554399686, 2.3154797405099274 48.88247601173826))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

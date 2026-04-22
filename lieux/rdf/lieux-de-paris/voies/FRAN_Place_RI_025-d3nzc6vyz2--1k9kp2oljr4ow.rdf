@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzc6vyz2--1k9kp2oljr4ow">
       <rdfs:label xml:lang="fr">cité Négrier (Paris, France)</rdfs:label>
@@ -139,11 +146,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzc6vyz2--1k9kp2oljr4ow_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzc6vyz2--1k9kp2oljr4ow"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3074133576250406 48.85758950486657, 2.307466841920171 48.85746202779224, 2.3073752486614163 48.857472557941364, 2.3073318101127884 48.85758048539342, 2.3073513924409346 48.85758433376328, 2.307333921174346 48.85763206661109, 2.307305132318385 48.85771072120475, 2.3073024917408684 48.85771793583098, 2.307290056866039 48.85775190801745, 2.307287168744258 48.85775980112222, 2.307280546443184 48.85777771390389, 2.307251811847252 48.85785545324656, 2.307301054730485 48.85785831495847, 2.307336211680861 48.85777626080323, 2.307347100399952 48.857776263574124, 2.3074196285946025 48.85759124993528, 2.3074133576250406 48.85758950486657))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzc6vyz2--1k9kp2oljr4ow_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzc6vyz2--1k9kp2oljr4ow"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.307359086421682 48.85764407330017)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

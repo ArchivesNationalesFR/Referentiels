@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbi4c0b-kic8ubixwp9o">
       <rdfs:label xml:lang="fr">rue Jaucourt (Paris, France)</rdfs:label>
@@ -164,11 +171,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbi4c0b-kic8ubixwp9o_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbi4c0b-kic8ubixwp9o"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3945876363098106 48.84642069335912, 2.3945338942092746 48.846310927543435, 2.3943586606746514 48.84652139994181, 2.3944678149417817 48.84652882263865, 2.3944860109735036 48.846565496018016, 2.3947234301146914 48.84704397714572, 2.3947248371629364 48.84704684421328, 2.394745086768796 48.8470881227285, 2.3948189770808526 48.847238745451996, 2.394922415945749 48.84744960344187, 2.395107667529237 48.84737412742987, 2.3950792632339253 48.847367010219386, 2.3950278826411155 48.84731987334964, 2.394965587594834 48.8471926431727, 2.3949517000726743 48.84716427923485, 2.394946981287139 48.84715464036696, 2.3949192702100324 48.84709804141364, 2.3949150292899253 48.84708937986148, 2.394901710202042 48.84706217715909, 2.394843092294449 48.84694245441377, 2.394783777181376 48.846821305318585, 2.39472485098605 48.84670095317712, 2.3946683210440303 48.84658549211981, 2.3945876363098106 48.84642069335912))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbi4c0b-kic8ubixwp9o_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbi4c0b-kic8ubixwp9o"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.39473049542481 48.84688932269712)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

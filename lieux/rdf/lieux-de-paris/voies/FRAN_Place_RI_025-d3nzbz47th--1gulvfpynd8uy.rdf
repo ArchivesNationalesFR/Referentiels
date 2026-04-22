@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbz47th--1gulvfpynd8uy">
       <rdfs:label xml:lang="fr">place Martin Nadaud (Paris, France)</rdfs:label>
@@ -164,11 +171,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbz47th--1gulvfpynd8uy_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbz47th--1gulvfpynd8uy"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.395553935819787 48.864841072058276, 2.3945634756956724 48.86458823707034, 2.394306808665866 48.86475434528089, 2.3941727176055627 48.86484112477647, 2.3940184248839804 48.864945198677816, 2.393953181445525 48.86498614804973, 2.3942147998770245 48.8651586215391, 2.3943544378871704 48.865153487032245, 2.394604664201103 48.86514317941071, 2.3949041540024516 48.86513174974984, 2.3952350495465193 48.865119119136395, 2.395553935819787 48.864841072058276))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbz47th--1gulvfpynd8uy_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbz47th--1gulvfpynd8uy"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.39473213058286 48.86491374167494)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

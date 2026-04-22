@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz9e93k5--865tvl93810l">
       <rdfs:label xml:lang="fr">rue Charbonnel (Paris, France)</rdfs:label>
@@ -143,11 +150,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz9e93k5--865tvl93810l_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz9e93k5--865tvl93810l"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.343454706739193 48.822833289983045, 2.343714110962268 48.82269647665192, 2.3436039639639636 48.82270002182358, 2.343173140955387 48.82251705091553, 2.342401060367365 48.822191059870306, 2.342323257257978 48.822158209341666, 2.3422626265269564 48.822132609583356, 2.3422509114438763 48.82214288621409, 2.34215212570606 48.82210048386034, 2.3421403747710126 48.822075710549576, 2.342126418396753 48.82227063550434, 2.342230234343483 48.82224664724689, 2.3422790496015145 48.822267275014546, 2.3430265534600228 48.822583136098466, 2.34309294152369 48.822611187311914, 2.3431123345796427 48.82261938196388, 2.3434489800216904 48.82276162928285, 2.343454706739193 48.822833289983045))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz9e93k5--865tvl93810l_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz9e93k5--865tvl93810l"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3428731601686756 48.82245617709479)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

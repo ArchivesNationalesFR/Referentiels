@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbajhe6--13fjgy677o21f">
       <rdfs:label xml:lang="fr">rue de Guébriant (Paris, France)</rdfs:label>
@@ -146,11 +153,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbajhe6--13fjgy677o21f_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbajhe6--13fjgy677o21f"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.409459325032929 48.87315068420186)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbajhe6--13fjgy677o21f_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbajhe6--13fjgy677o21f"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.4100599217587284 48.873228979250584, 2.4090065630737474 48.87291974493866, 2.4088848967531105 48.872884026133875, 2.4088153336010993 48.87280651443375, 2.4087714793276067 48.873125118515674, 2.4088908498123094 48.87308074590899, 2.4091200522824914 48.873147863368246, 2.4092655599645627 48.873190473355166, 2.409499213624463 48.87325889359247, 2.409654675510785 48.87330441747667, 2.4099393157716276 48.87338776718906, 2.4099809415889406 48.873399955975344, 2.4100166998813566 48.873410426881456, 2.4100261385018262 48.87341319028459, 2.4102648398960054 48.87337878264152, 2.4100599217587284 48.873228979250584))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

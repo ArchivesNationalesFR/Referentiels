@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz8gwvqh-1ggves3jffbpw">
       <rdfs:label xml:lang="fr">place Alphonse Humbert (Paris, France)</rdfs:label>
@@ -126,11 +133,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8gwvqh-1ggves3jffbpw_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8gwvqh-1ggves3jffbpw"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.281319907727939 48.84612881729543)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8gwvqh-1ggves3jffbpw_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8gwvqh-1ggves3jffbpw"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.2813898453110335 48.84598552141685, 2.2813449903821263 48.84598207092027, 2.2811871947278823 48.84602123019266, 2.2811698666569438 48.84609140259177, 2.2811184898502317 48.84611887711904, 2.2809584752991863 48.846204446261176, 2.281290663377708 48.846221801709724, 2.2816228503150953 48.84623915622747, 2.2815347297661126 48.846159146441146, 2.2815197440269213 48.84614554076357, 2.281523479379185 48.846073268510544, 2.2813898453110335 48.84598552141685))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

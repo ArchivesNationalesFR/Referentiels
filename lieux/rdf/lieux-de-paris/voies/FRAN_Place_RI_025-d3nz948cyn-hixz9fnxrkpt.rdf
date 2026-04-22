@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz948cyn-hixz9fnxrkpt">
       <rdfs:label xml:lang="fr">avenue Cartellier (Paris, France)</rdfs:label>
@@ -123,11 +130,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz948cyn-hixz9fnxrkpt_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz948cyn-hixz9fnxrkpt"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.4127535754046376 48.86434263726642)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz948cyn-hixz9fnxrkpt_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz948cyn-hixz9fnxrkpt"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.4138910932401987 48.86385721469699, 2.4139376981138776 48.86350279002291, 2.4129812738330148 48.864061191955855, 2.4127134142708546 48.86417727313882, 2.4126408625760183 48.86423466279438, 2.4125805325281906 48.864274520409786, 2.412144758160045 48.86452699364494, 2.411951308027084 48.864639913147144, 2.4119122654156766 48.86467201028649, 2.4116717810034536 48.86480963328221, 2.411719444567988 48.86515148331743, 2.411861391970502 48.865179961529996, 2.4118846611051574 48.86512041553078, 2.411915780399735 48.86506245136333, 2.411954508944786 48.86500651750779, 2.412034439254701 48.864929247785504, 2.412125182326307 48.86485736240049, 2.4122259073860075 48.864791519162736, 2.4123356970995338 48.86473231700054, 2.4128681904254954 48.864414767484874, 2.4134345783797366 48.864081082934256, 2.4138910932401987 48.86385721469699))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

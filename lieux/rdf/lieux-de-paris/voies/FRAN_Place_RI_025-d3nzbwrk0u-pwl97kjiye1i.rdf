@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbwrk0u-pwl97kjiye1i">
       <rdfs:label xml:lang="fr">villa Marcel Lods (Paris, France)</rdfs:label>
@@ -134,11 +141,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbwrk0u-pwl97kjiye1i_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbwrk0u-pwl97kjiye1i"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3774735378765137 48.87543648454043, 2.3774805040629383 48.875414201107084, 2.3774918538073986 48.875415744928866, 2.3775024285447888 48.87537969257605, 2.37749174715167 48.875378240365436, 2.377496124755987 48.875364237123264, 2.3772712873373907 48.875332546122635, 2.3772197687930814 48.87532528488819, 2.3769743719592107 48.87529069573158, 2.3769728988923085 48.87529644290126, 2.376867097587888 48.875281867990964, 2.37688610619994 48.87534216653766, 2.37694871832152 48.87535710840817, 2.3769461727414054 48.87536304155305, 2.3771978443098445 48.87539809059274, 2.3773459609536887 48.87541871749525, 2.377453349232942 48.875433672555666, 2.3774735378765137 48.87543648454043))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbwrk0u-pwl97kjiye1i_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbwrk0u-pwl97kjiye1i"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3771904275803193 48.875358662168686)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzdhks1a-1wzawa849zb18">
       <rdfs:label xml:lang="fr">boulevard Thierry de Martel (Paris, France)</rdfs:label>
@@ -115,11 +122,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdhks1a-1wzawa849zb18_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdhks1a-1wzawa849zb18"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.280063546453416 48.876758681399615, 2.2802217760924424 48.87670676058083, 2.2802227786580245 48.876708308980334, 2.2802736344716785 48.87669273327104, 2.2802293868879815 48.87663553439167, 2.279943197172689 48.87626557314583, 2.279656326613183 48.87589347552822, 2.2795830671160244 48.87580585508251, 2.2793698682696033 48.87553011487276, 2.2795359832022246 48.875432793191194, 2.278616648903923 48.875167604481355, 2.2791901912836994 48.87589348098398, 2.2799007347434284 48.87681044044402, 2.27990225812355 48.87681268087487, 2.280063546453416 48.876758681399615))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdhks1a-1wzawa849zb18_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdhks1a-1wzawa849zb18"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.2794932584158873 48.87598405001011)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

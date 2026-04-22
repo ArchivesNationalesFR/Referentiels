@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2">
       <rdfs:label xml:lang="fr">rue des Iris (Paris, France)</rdfs:label>
@@ -135,11 +142,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3449512389192133 48.82247158521758, 2.3449669100924173 48.82239171983491, 2.344877827019532 48.822407898221904, 2.3448796780359435 48.82240909014726, 2.344864762193957 48.82248975111009, 2.3448626461204793 48.82250119850867, 2.3448483525557537 48.82256918702121, 2.3448456532163604 48.82258304335825, 2.3448351980746662 48.82263670599736, 2.3447492962236502 48.82265191329934, 2.3447476266025005 48.822654169686686, 2.344713661910262 48.82270007045623, 2.3447465685785898 48.82272914513036, 2.344805721990259 48.82278141109491, 2.3448997878609474 48.822733814169744, 2.344913429215574 48.822664289546104, 2.344925621131496 48.822602151672605, 2.344938975741681 48.8225340878582, 2.3449512389192133 48.82247158521758))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbgpb85-1ch4urrgf2ng2"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3448617329156627 48.822608196556004)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

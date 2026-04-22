@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz8msqg2--ctizcnru0t1n">
       <rdfs:label xml:lang="fr">cité d'Austerlitz (Paris, France)</rdfs:label>
@@ -124,11 +131,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8msqg2--ctizcnru0t1n_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8msqg2--ctizcnru0t1n"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3624444493624694 48.84172948921191, 2.362368003729303 48.841626603930564, 2.362334554461763 48.841666721562206, 2.3622709911840096 48.841742955324534, 2.362394524480304 48.84190969812872, 2.3624617092240956 48.841998557924406, 2.362435300695137 48.842041855465176, 2.362630271830755 48.841979581141075, 2.362555073463243 48.84187837456578, 2.3624444493624694 48.84172948921191))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8msqg2--ctizcnru0t1n_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8msqg2--ctizcnru0t1n"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.362440244927444 48.84184493874907)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

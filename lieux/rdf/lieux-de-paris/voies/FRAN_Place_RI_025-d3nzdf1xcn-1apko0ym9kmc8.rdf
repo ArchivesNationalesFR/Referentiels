@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzdf1xcn-1apko0ym9kmc8">
       <rdfs:label xml:lang="fr">rue de Stockholm (Paris, France)</rdfs:label>
@@ -148,11 +155,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdf1xcn-1apko0ym9kmc8_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdf1xcn-1apko0ym9kmc8"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3229037389148965 48.877258382773476, 2.3229847831920174 48.87711673326671, 2.3229457898782635 48.87712927073558, 2.3226036739015123 48.877076557842166, 2.322354912405084 48.87703790747984, 2.322338325231206 48.87703533051328, 2.32230183073725 48.8770296604439, 2.3220916664483986 48.87699700537211, 2.32207148156509 48.87699386929171, 2.3220546018686883 48.876991246561445, 2.3218615066985926 48.87696124366463, 2.3219824398884135 48.877115176667814, 2.3220064479394806 48.87709558837442, 2.3221852222159596 48.87712398556825, 2.3223231265171993 48.877145889951365, 2.3225494127632773 48.877181832988214, 2.3228837266219964 48.87723493357944, 2.3229037389148965 48.877258382773476))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdf1xcn-1apko0ym9kmc8_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdf1xcn-1apko0ym9kmc8"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3224312645474785 48.877105240387806)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

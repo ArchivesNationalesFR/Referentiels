@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nza9flmy--n87dd7wdmcap">
       <rdfs:label xml:lang="fr">impasse de l'Église (Paris, France)</rdfs:label>
@@ -133,11 +140,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nza9flmy--n87dd7wdmcap_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nza9flmy--n87dd7wdmcap"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.2914930286308617 48.84347462395796, 2.291476078807709 48.84345571599369, 2.2914741954771647 48.843456734615394, 2.291424424582551 48.84339174201057, 2.291385498288291 48.84334090941011, 2.2913440122230373 48.84328673576839, 2.2912108067894477 48.84311278860436, 2.2911565354834633 48.843041917910654, 2.2911079657060975 48.8430602803034, 2.2911605456819215 48.84312796802618, 2.2912165526725747 48.84320006673988, 2.291257352450584 48.84325258872333, 2.2914266361946014 48.84347050734811, 2.2914433997819414 48.84349208803633, 2.291446251720818 48.84349108414575, 2.2914930286308617 48.84347462395796))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nza9flmy--n87dd7wdmcap_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nza9flmy--n87dd7wdmcap"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.291297569097323 48.84326531040424)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

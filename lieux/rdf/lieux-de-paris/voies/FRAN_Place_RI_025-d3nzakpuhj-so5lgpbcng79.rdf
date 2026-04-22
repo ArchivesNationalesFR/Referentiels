@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzakpuhj-so5lgpbcng79">
       <rdfs:label xml:lang="fr">rue de Galliera (Paris, France)</rdfs:label>
@@ -133,11 +140,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzakpuhj-so5lgpbcng79_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzakpuhj-so5lgpbcng79"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.296804975382896 48.86607067899994, 2.297181622705547 48.86593517857023, 2.297490430180352 48.865824082813894, 2.2976075068594946 48.865747050020055, 2.2976233617313997 48.865608556965746, 2.29765638636463 48.865320067743674, 2.2976747348567534 48.86515978723306, 2.297704959909866 48.865141815724144, 2.297485220793147 48.86513100017949, 2.297512136697875 48.86515119837519, 2.2974796292563338 48.86544515508789, 2.2974460966088546 48.86571725870961, 2.296773037984591 48.865960051301315, 2.296721978002315 48.865978469427226, 2.2967183341775397 48.865979784448136, 2.2966632262299522 48.865999662688104, 2.296603810103986 48.86599797077949, 2.2968015286750347 48.86609829034369, 2.296804975382896 48.86607067899994))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzakpuhj-so5lgpbcng79_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzakpuhj-so5lgpbcng79"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.297332874034327 48.86567106750137)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

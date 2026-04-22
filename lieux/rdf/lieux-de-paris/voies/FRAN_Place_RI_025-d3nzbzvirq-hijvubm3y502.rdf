@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbzvirq-hijvubm3y502">
       <rdfs:label xml:lang="fr">place Maubert (Paris, France)</rdfs:label>
@@ -125,11 +132,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbzvirq-hijvubm3y502_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbzvirq-hijvubm3y502"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3489909687440624 48.85019704009537, 2.349069322484506 48.850097415668195, 2.3482796321884574 48.850288202541655, 2.3484323125773834 48.850335278118415, 2.3484919195593994 48.85044148215585, 2.3487157163961614 48.85055259743595, 2.3487835385511584 48.85055458903676, 2.348966488323289 48.850432845889685, 2.3489696404521885 48.8503899745296, 2.34896545789552 48.8503855197423, 2.3489805280171483 48.85031358576858, 2.3489900462575752 48.85026815349941, 2.348998525351167 48.85022768631771, 2.348999013737051 48.85022535424524, 2.3489909687440624 48.85019704009537))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbzvirq-hijvubm3y502_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbzvirq-hijvubm3y502"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3487292470931727 48.85033209333638)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

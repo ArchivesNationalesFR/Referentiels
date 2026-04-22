@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzc3x9pc-f05dxn2mjrgj">
       <rdfs:label xml:lang="fr">rue Montesquiou-Fezensac (Paris, France)</rdfs:label>
@@ -128,11 +135,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzc3x9pc-f05dxn2mjrgj_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzc3x9pc-f05dxn2mjrgj"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.409258827332696 48.83610431689551, 2.410540394889148 48.835668599044425, 2.4105432961560713 48.83567274771312, 2.4109803124326654 48.835525412064236, 2.4108998968034103 48.83542224492882, 2.4107751366216243 48.835464291689846, 2.4105086247656495 48.835554111864475, 2.4103284228277895 48.835320792237674, 2.410254901593474 48.83534726046312, 2.410282166812386 48.83538132606335, 2.4104349875367324 48.835572265014264, 2.409109116803125 48.836024437999065, 2.409187427394397 48.836128590593276, 2.409258827332696 48.83610431689551))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzc3x9pc-f05dxn2mjrgj_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzc3x9pc-f05dxn2mjrgj"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.4100703771891108 48.835746894437214)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

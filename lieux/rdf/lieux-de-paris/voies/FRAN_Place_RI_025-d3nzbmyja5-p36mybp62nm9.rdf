@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbmyja5-p36mybp62nm9">
       <rdfs:label xml:lang="fr">rue de La Planche (Paris, France)</rdfs:label>
@@ -146,11 +153,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbmyja5-p36mybp62nm9_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbmyja5-p36mybp62nm9"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.325181400639933 48.85264101831255, 2.3251155411580937 48.85252111331801, 2.3249495492659698 48.85256398642219, 2.324950689533225 48.85256749045481, 2.3249542909051515 48.8525667993815, 2.324960389829554 48.85257898230464, 2.32506045387035 48.85273946504952, 2.3251211616660887 48.85284750365896, 2.325207671935238 48.85300145870285, 2.3252742318158344 48.853122171564564, 2.325366749581207 48.85328850759056, 2.3254986442725034 48.85352563797834, 2.32548874824677 48.8535421933021, 2.3256766785545357 48.85349790341301, 2.3256466156257734 48.853487984065744, 2.3254718436745114 48.85316979955605, 2.325414462917461 48.85306533417666, 2.3253565178620006 48.85295984031036, 2.325298185613636 48.85285363912561, 2.325181400639933 48.85264101831255))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbmyja5-p36mybp62nm9_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbmyja5-p36mybp62nm9"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.325305979644511 48.853025449581224)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzaq27ze--1p1qpbnxobiqe">
       <rdfs:label xml:lang="fr">rue du Général de Castelnau (Paris, France)</rdfs:label>
@@ -162,11 +169,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzaq27ze--1p1qpbnxobiqe_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzaq27ze--1p1qpbnxobiqe"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3005685831300724 48.850134077075445)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzaq27ze--1p1qpbnxobiqe_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzaq27ze--1p1qpbnxobiqe"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3007382411190425 48.850111745880355, 2.300949156094181 48.84997720357369, 2.3010108378614564 48.849998721424, 2.301028930552432 48.84991363870132, 2.3008763615443533 48.84980947989429, 2.300875014420694 48.849849757128105, 2.3007370127785802 48.84993802073472, 2.3005933336859212 48.85002991678709, 2.300448568190691 48.85012250601349, 2.300265969700166 48.85023929146592, 2.300121264893165 48.85033184106874, 2.3000572242815043 48.850331820790274, 2.30025052759856 48.850461379362685, 2.300251478264083 48.85042224742135, 2.3003929880798735 48.850331980451976, 2.3004988362908967 48.8502644601219, 2.300603728907976 48.850197550172275, 2.3007382411190425 48.850111745880355))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbuljhy--kzz0hm5lpmq9">
       <rdfs:label xml:lang="fr">passage de la Madeleine (Paris, France)</rdfs:label>
@@ -132,11 +139,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbuljhy--kzz0hm5lpmq9_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbuljhy--kzz0hm5lpmq9"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.324109741708534 48.87088671331039, 2.3240661129376656 48.870827051895155, 2.3236306261869477 48.87090778642656, 2.3234180542018397 48.87094719485237, 2.323397054996452 48.870951088118375, 2.3234238470879913 48.87101477449403, 2.3236882961745278 48.870965803296585, 2.3238447495987407 48.87093682993112, 2.324109741708534 48.87088671331039))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbuljhy--kzz0hm5lpmq9_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbuljhy--kzz0hm5lpmq9"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3237487345920798 48.870920298418355)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

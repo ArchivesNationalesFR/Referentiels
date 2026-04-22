@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzafe4pb-1n0uk424dm40r">
       <rdfs:label xml:lang="fr">rue de la Ferme de Savy (Paris, France)</rdfs:label>
@@ -127,11 +134,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzafe4pb-1n0uk424dm40r_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzafe4pb-1n0uk424dm40r"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3834751988715523 48.87155028292724, 2.3834825530454244 48.871535157098585, 2.3833138153654123 48.871662041276196, 2.3833077088560675 48.87167599089418, 2.383304493088523 48.871683334492836, 2.3831886467452774 48.871947967957105, 2.3831828204429364 48.87196127508488, 2.3832864707960724 48.87198230052461, 2.3833329563192325 48.87187589047437, 2.3834751988715523 48.87155028292724))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzafe4pb-1n0uk424dm40r_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzafe4pb-1n0uk424dm40r"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.383320582069502 48.871783733393215)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

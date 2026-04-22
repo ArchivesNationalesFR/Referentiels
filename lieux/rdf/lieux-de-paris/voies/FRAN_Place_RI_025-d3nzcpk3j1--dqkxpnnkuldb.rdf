@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzcpk3j1--dqkxpnnkuldb">
       <rdfs:label xml:lang="fr">rue de Presles (Paris, France)</rdfs:label>
@@ -228,11 +235,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcpk3j1--dqkxpnnkuldb_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcpk3j1--dqkxpnnkuldb"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">MULTIPOLYGON (((2.296956352568466 48.852945386872776, 2.2970839345099825 48.85302363244537, 2.2970682629306403 48.852892012652106, 2.296975737135891 48.8527629982266, 2.2967400163153897 48.852434321575586, 2.29662834474658 48.85228286947127, 2.2964727174813646 48.85206640215809, 2.2963528473332095 48.85189961510158, 2.296129711731849 48.851750419015026, 2.296130679544408 48.85172528128503, 2.2961314671669597 48.851704806578496, 2.2961324095147813 48.851680343218135, 2.295964021424778 48.85179224475302, 2.296265988440559 48.85199505972119, 2.29627769785865 48.852002925145456, 2.296405607370588 48.852181112160345, 2.2964348556135614 48.85222214208041, 2.2966279803397622 48.85248998184131, 2.296798333648808 48.85272623947743, 2.296840297806418 48.85278443723567, 2.2969072362331753 48.852877270371565, 2.296956352568466 48.852945386872776)), ((2.2970839345099825 48.85302363244537, 2.2970980660662352 48.85314232657497, 2.297211284223556 48.85329807623299, 2.2972071077512086 48.853314698840855, 2.2971927074354372 48.85337202035405, 2.297414912827935 48.853235260188704, 2.2973243105454366 48.853223935841186, 2.297307281800248 48.85322180778185, 2.297231007880945 48.85311383152307, 2.2970839345099825 48.85302363244537)))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcpk3j1--dqkxpnnkuldb_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcpk3j1--dqkxpnnkuldb"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.2966710686832994 48.852464597553464)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

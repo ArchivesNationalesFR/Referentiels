@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nza2s2lz-2uotr1dio3nd">
       <rdfs:label xml:lang="fr">villa Deloder (Paris, France)</rdfs:label>
@@ -145,11 +152,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nza2s2lz-2uotr1dio3nd_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nza2s2lz-2uotr1dio3nd"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.359352687604978 48.82297970025536, 2.3595043372099442 48.823023704318125, 2.359572614632739 48.82292885829772, 2.3596226395402535 48.82285936417686, 2.3596741234158385 48.82278784525036, 2.3596940274020652 48.82276019613443, 2.359717805677424 48.82272606076126, 2.359629917863467 48.822705697704954, 2.3596327303841305 48.82270049367721, 2.3595642110661426 48.82268311140037, 2.359440229608513 48.82285695359101, 2.3593648726970655 48.822962614405135, 2.3593602312095516 48.822969123517176, 2.3593570394276764 48.82297359790922, 2.359352687604978 48.82297970025536))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nza2s2lz-2uotr1dio3nd_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nza2s2lz-2uotr1dio3nd"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.359534799539983 48.82285326493442)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

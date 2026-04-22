@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbyqbpy--90nhlwv7d2q0">
       <rdfs:label xml:lang="fr">rue de la Marne (Paris, France)</rdfs:label>
@@ -162,11 +169,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbyqbpy--90nhlwv7d2q0_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbyqbpy--90nhlwv7d2q0"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.383918784605095 48.88955548705853, 2.3836838560265536 48.889496220600904, 2.3836422725367883 48.88962665908154, 2.38363918197034 48.88963635494484, 2.383563182650625 48.88987475241017, 2.383536102526405 48.88995969507536, 2.3835188153068207 48.890013922372326, 2.383649327333566 48.8901357903272, 2.383667404901194 48.890078269275726, 2.383676581177217 48.89004906788899, 2.3837381899632395 48.889853031700774, 2.383758547585888 48.889788252243235, 2.3837720503349042 48.88974528561317, 2.38382172600683 48.88958721572574, 2.383918784605095 48.88955548705853))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbyqbpy--90nhlwv7d2q0_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbyqbpy--90nhlwv7d2q0"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3836784145113876 48.88979133608413)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

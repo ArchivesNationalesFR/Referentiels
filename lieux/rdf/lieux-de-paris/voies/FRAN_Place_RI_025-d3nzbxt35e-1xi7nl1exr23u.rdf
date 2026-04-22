@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbxt35e-1xi7nl1exr23u">
       <rdfs:label xml:lang="fr">rue du Maréchal Harispe (Paris, France)</rdfs:label>
@@ -173,11 +180,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbxt35e-1xi7nl1exr23u_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbxt35e-1xi7nl1exr23u"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.298019311199946 48.858261744782055)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbxt35e-1xi7nl1exr23u_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbxt35e-1xi7nl1exr23u"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">MULTIPOLYGON (((2.2979666613630427 48.858226339743965, 2.2980454814264895 48.85835814394129, 2.2982188018357714 48.85847467905365, 2.2983383816734673 48.858555080198784, 2.2983891351454298 48.858589204313844, 2.2983891140999413 48.85861546355137, 2.298545381146578 48.85851432536788, 2.298505678092158 48.85851355571618, 2.298335519801002 48.85839838140672, 2.298164384371168 48.85828254547825, 2.2979666613630427 48.858226339743965)), ((2.297768291127417 48.85816994910911, 2.2979666613630427 48.858226339743965, 2.2978883961945953 48.858095463269656, 2.297658403843601 48.85794030856115, 2.2976580197966574 48.85788983178321, 2.2974710910448817 48.85801293008847, 2.2975369951402613 48.85801261908095, 2.297768291127417 48.85816994910911)))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbkp5tt-cfdzzni1rsxh">
       <rdfs:label xml:lang="fr">passage Josseaume (Paris, France)</rdfs:label>
@@ -118,11 +125,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbkp5tt-cfdzzni1rsxh_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbkp5tt-cfdzzni1rsxh"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.4030335515144525 48.85462779933795, 2.4029899554537444 48.85457574249991, 2.4029805223869714 48.854598397682416, 2.4029770730334405 48.854601245795614, 2.402975708210086 48.854602367667916, 2.4028966165916805 48.854667308866944, 2.402757640869654 48.85478128307143, 2.402704240178217 48.854825074686666, 2.402314028934495 48.85514339484179, 2.402014369292405 48.855390681566035, 2.401967737825236 48.855429162739476, 2.4018869722438705 48.85549581262317, 2.401931732451597 48.855530959811894, 2.402461454117484 48.85509403925158, 2.402676115997693 48.8549190987333, 2.402716148440033 48.854886473262425, 2.4028663972241184 48.85476402595467, 2.402916992225982 48.85472279240113, 2.4030335515144525 48.85462779933795))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbkp5tt-cfdzzni1rsxh_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbkp5tt-cfdzzni1rsxh"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.4024626772809894 48.8550584133066)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

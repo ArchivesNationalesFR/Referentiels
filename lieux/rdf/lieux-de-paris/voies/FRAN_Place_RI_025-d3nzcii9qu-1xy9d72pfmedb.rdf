@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzcii9qu-1xy9d72pfmedb">
       <rdfs:label xml:lang="fr">rue Pierre Girard (Paris, France)</rdfs:label>
@@ -154,11 +161,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcii9qu-1xy9d72pfmedb_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcii9qu-1xy9d72pfmedb"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3797222733638512 48.88603209921152, 2.3798178112305086 48.88587546768655, 2.3799052190326275 48.88573216512354, 2.380040009280492 48.88551117861772, 2.3798860246738966 48.885477522557956, 2.3798183889180753 48.885587884553956, 2.3797645919087245 48.88567566509371, 2.3797020846194976 48.885777658375154, 2.3796300700649167 48.88589516427277, 2.3796283925311306 48.88589460789215, 2.379625252772523 48.88589957478279, 2.3796274198377487 48.88590036302768, 2.3796156853379724 48.88591924200719, 2.3796136589840886 48.885918547121626, 2.3796107284598698 48.88592323540592, 2.379613035171288 48.88592397760975, 2.3795639642921325 48.8860029241756, 2.3797342709940916 48.88605947655319, 2.3797222733638512 48.88603209921152))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcii9qu-1xy9d72pfmedb_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcii9qu-1xy9d72pfmedb"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.37980001113289 48.885762112667834)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

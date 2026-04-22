@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbd6lrs-cj3v6p7dawhl">
       <rdfs:label xml:lang="fr">esplanade Henri de France (Paris, France)</rdfs:label>
@@ -103,11 +110,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbd6lrs-cj3v6p7dawhl_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbd6lrs-cj3v6p7dawhl"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.2706648970638916 48.838962811695694, 2.2705499801829676 48.838835060066494, 2.2704512113618147 48.83872525936513, 2.2703646917244495 48.838629075157606, 2.270077560592359 48.838743442444176, 2.270057949395689 48.838790119886234, 2.2701566438559087 48.83895431816864, 2.270164995789434 48.83895130765935, 2.270706322397594 48.83954907430091, 2.2709885768348306 48.83943864927883, 2.2709944841020593 48.83943634780927, 2.271058276805464 48.83941155232206, 2.2710411566421698 48.839381090553395, 2.2709251069212275 48.83925208231129, 2.2708266464465128 48.83914262561178, 2.270740581582573 48.839046948141785, 2.2706648970638916 48.838962811695694))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbd6lrs-cj3v6p7dawhl_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbd6lrs-cj3v6p7dawhl"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.270539591976596 48.83909224753198)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

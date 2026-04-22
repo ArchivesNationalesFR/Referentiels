@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbjhd84--1w4d249x3ocdl">
       <rdfs:label xml:lang="fr">place Jean-Paul Sartre-Simone de Beauvoir (Paris, France)</rdfs:label>
@@ -115,11 +122,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbjhd84--1w4d249x3ocdl_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbjhd84--1w4d249x3ocdl"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3334978006691123 48.85361246061545, 2.333461682606323 48.85359794438495, 2.33283738560573 48.85365735251997, 2.332823634058037 48.85368409372211, 2.3330679851942526 48.854007338765236, 2.3333204282511826 48.85394901668997, 2.333596580513477 48.853894953270434, 2.3336326672153618 48.85386750177293, 2.3334978006691123 48.85361246061545))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbjhd84--1w4d249x3ocdl_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbjhd84--1w4d249x3ocdl"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.333237532445919 48.85378525842395)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

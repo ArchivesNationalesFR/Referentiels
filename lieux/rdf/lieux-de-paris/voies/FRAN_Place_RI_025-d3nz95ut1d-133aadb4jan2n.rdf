@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz95ut1d-133aadb4jan2n">
       <rdfs:label xml:lang="fr">cité de Chabrol (Paris, France)</rdfs:label>
@@ -138,11 +145,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz95ut1d-133aadb4jan2n_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz95ut1d-133aadb4jan2n"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.35388045984028 48.876524850076144)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz95ut1d-133aadb4jan2n_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz95ut1d-133aadb4jan2n"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3539633040903483 48.87669492861629, 2.353884326568451 48.876469123685126, 2.3538843203528 48.87645160011163, 2.3538711373887673 48.876362009160445, 2.3538061764137317 48.87636702305028, 2.353812028986182 48.87639554287534, 2.353823070844759 48.87644933953771, 2.3538250708615007 48.87645616639259, 2.353830088524647 48.876473297027644, 2.353833841499229 48.87647290628939, 2.353851760355094 48.8765249683758, 2.353857198144855 48.8765407666634, 2.353912640845129 48.87670184627259, 2.3539633040903483 48.87669492861629))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

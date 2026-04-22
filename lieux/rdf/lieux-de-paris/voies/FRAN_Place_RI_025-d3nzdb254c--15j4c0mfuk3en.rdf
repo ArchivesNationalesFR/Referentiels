@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzdb254c--15j4c0mfuk3en">
       <rdfs:label xml:lang="fr">rue des Sept Arpents (Paris, France)</rdfs:label>
@@ -119,11 +126,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdb254c--15j4c0mfuk3en_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdb254c--15j4c0mfuk3en"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3983902042592957 48.88949655351071)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdb254c--15j4c0mfuk3en_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdb254c--15j4c0mfuk3en"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3986260355979274 48.88960430412941, 2.3986313773577725 48.88958731761927, 2.398940813254936 48.889597905844276, 2.3989602796581666 48.88949124616502, 2.398661504009413 48.88941237937283, 2.398386645812825 48.889401743818105, 2.3983821759719257 48.88940157027446, 2.398340938596517 48.88939997452703, 2.3980601180081944 48.889389107714436, 2.397864913440547 48.88943611579067, 2.3978164759271445 48.889555569933854, 2.3985607308072807 48.88958444829681, 2.398560563885976 48.88958827316619, 2.3985600660260635 48.889599732500336, 2.3986260355979274 48.88960430412941))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

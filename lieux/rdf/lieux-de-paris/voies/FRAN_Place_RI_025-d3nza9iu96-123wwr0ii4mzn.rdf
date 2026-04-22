@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nza9iu96-123wwr0ii4mzn">
       <rdfs:label xml:lang="fr">place de l'Église d'Auteuil (Paris, France)</rdfs:label>
@@ -133,11 +140,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nza9iu96-123wwr0ii4mzn_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nza9iu96-123wwr0ii4mzn"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.2689559707714686 48.84740602395117)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nza9iu96-123wwr0ii4mzn_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nza9iu96-123wwr0ii4mzn"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.2690679661277486 48.847251146992384, 2.2690652178953377 48.84723140078813, 2.268693841420879 48.84739008469179, 2.26887065791744 48.847570332734165, 2.269242035137988 48.84741164830729, 2.269217254912968 48.847402184002775, 2.269193553903693 48.84739068292373, 2.2691689098104058 48.84737763456408, 2.269144886609748 48.84736112473137, 2.269126102578719 48.84734522879015, 2.2691073233649046 48.84732607536805, 2.269089187695272 48.84730359461905, 2.269082095288584 48.84728840594954, 2.2690728742878847 48.84726865527673, 2.2690679661277486 48.847251146992384))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

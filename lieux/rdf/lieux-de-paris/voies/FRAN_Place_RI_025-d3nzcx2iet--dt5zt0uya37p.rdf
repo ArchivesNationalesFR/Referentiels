@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzcx2iet--dt5zt0uya37p">
       <rdfs:label xml:lang="fr">place Robert Desnos (Paris, France)</rdfs:label>
@@ -114,11 +121,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcx2iet--dt5zt0uya37p_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcx2iet--dt5zt0uya37p"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3685085421811194 48.878020225566324, 2.3684446176525933 48.87781356531936, 2.368191924113231 48.877835739598375, 2.368102986936938 48.87787415641719, 2.368023877167757 48.87789643167044, 2.3680538649892435 48.87793975163354, 2.3680593300980197 48.877944001049535, 2.3681553869710394 48.87801869489628, 2.3685058181055245 48.87803854048713, 2.3685085421811194 48.878020225566324))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcx2iet--dt5zt0uya37p_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcx2iet--dt5zt0uya37p"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.368291816141218 48.87793017943515)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

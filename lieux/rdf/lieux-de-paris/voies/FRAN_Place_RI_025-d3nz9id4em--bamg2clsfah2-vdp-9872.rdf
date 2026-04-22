@@ -10,7 +10,7 @@
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xml:base="https://rdf.archives-nationales.culture.gouv.fr/"><!--$myName=FRAN_RI_025-d3nz9id4em- -bamg2clsfah2-vdp-9872-->
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/FRAN_RI_025-d3nz9id4em--bamg2clsfah2-vdp-9872">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="place/FRAN_RI_025-d3nz9id4em--bamg2clsfah2-vdp-9872"/>
@@ -43,6 +43,13 @@
          <rdf:Description>
             <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-07</dc:date>
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
          </rdf:Description>
       </skos:changeNote>
    </rico:Record>
@@ -111,11 +118,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz9id4em--bamg2clsfah2-vdp-9872_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz9id4em--bamg2clsfah2-vdp-9872"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3399638144001487 48.85447916070604)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz9id4em--bamg2clsfah2-vdp-9872_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz9id4em--bamg2clsfah2-vdp-9872"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3404661488365974 48.854341213208734, 2.340573922896576 48.854305295222346, 2.3405322624278764 48.85426051251906, 2.3404235766717716 48.8542962149947, 2.3403906202945395 48.85430704052123, 2.340391940711015 48.85430931776992, 2.3403855371251674 48.85431131950692, 2.340380980745745 48.854312742349606, 2.3403796347047465 48.85431098208816, 2.340344554249005 48.85432250908053, 2.3403462784947755 48.85432496842683, 2.340335212788956 48.85432856329662, 2.340334119291176 48.854326555305875, 2.34032647665625 48.85432911050648, 2.3403022868453562 48.85433719724055, 2.3402423775499543 48.854357224709105, 2.339953525203916 48.85445378540243, 2.33980862240512 48.854501788553996, 2.3396835644068 48.85454321704403, 2.3394592081402057 48.854617540666204, 2.339352691799746 48.854652826049104, 2.3393928546290135 48.854697755571785, 2.3394806954698475 48.85466870481212, 2.3395134684482612 48.85465786593408, 2.3395311345923693 48.854652023214136, 2.3396150528369257 48.85462426825749, 2.339746497547635 48.85458079577565, 2.3397797576406307 48.85456979582985, 2.339837506341184 48.85455069649907, 2.3398474958577085 48.854547392524985, 2.3399455464679404 48.85451471579503, 2.340014529466656 48.85449172568813, 2.340084192622869 48.8544685090578, 2.3402080639308154 48.854427226495766, 2.340316656807155 48.854391035356436, 2.3404125922736987 48.85435906246714, 2.3404661488365974 48.854341213208734))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

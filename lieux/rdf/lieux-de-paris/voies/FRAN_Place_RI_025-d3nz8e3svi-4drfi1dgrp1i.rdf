@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz8e3svi-4drfi1dgrp1i">
       <rdfs:label xml:lang="fr">place de l'Adjudant Vincenot (Paris, France)</rdfs:label>
@@ -160,11 +167,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8e3svi-4drfi1dgrp1i_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8e3svi-4drfi1dgrp1i"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.408538639532074 48.87083796556255, 2.408582519760904 48.8703346421446, 2.408479650268015 48.870393248905394, 2.4080052486865746 48.87036377329147, 2.4078411387592564 48.870505448550354, 2.407858336836439 48.87051358537682, 2.408025116243211 48.87059249687468, 2.408044992849848 48.87060198782867, 2.4080653114903696 48.8706116905102, 2.4081002064325174 48.87062835237506, 2.408175298088337 48.87066420783384, 2.4082321674008984 48.87069136292499, 2.4083001595391056 48.87072382868457, 2.4083011859880217 48.870724318500045, 2.408330516296111 48.87073832403203, 2.408365822256518 48.87075518210469, 2.4085357844445556 48.87083667529879, 2.408538639532074 48.87083796556255))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8e3svi-4drfi1dgrp1i_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8e3svi-4drfi1dgrp1i"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.4082850660374953 48.87054428792513)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

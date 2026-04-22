@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzd6bibl-1f85fbqke3ri7">
       <rdfs:label xml:lang="fr">passage Saint-Philippe du Roule (Paris, France)</rdfs:label>
@@ -130,11 +137,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzd6bibl-1f85fbqke3ri7_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzd6bibl-1f85fbqke3ri7"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3107475251672156 48.8732604885973)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzd6bibl-1f85fbqke3ri7_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzd6bibl-1f85fbqke3ri7"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3108759057733366 48.87338062873407, 2.3108070148392765 48.87328827173567, 2.3107369761190037 48.8731943747018, 2.310667367666337 48.87310105387532, 2.31061864243127 48.87303573017044, 2.3105901102379782 48.872998518356646, 2.310550208991347 48.873007655186726, 2.310577420086137 48.87304290782923, 2.310574168242532 48.87304415987005, 2.3105788367441784 48.87304969702583, 2.3105551618248827 48.87305773388566, 2.310591402160462 48.87310630292062, 2.310585321666114 48.87310845599894, 2.3107256265633804 48.873295403443464, 2.310743721167983 48.87328964123045, 2.3107895771063096 48.87335288795504, 2.310784223468793 48.873354716968436, 2.3109200429923913 48.87353474935469, 2.3109653735156663 48.87350057181645, 2.3108759057733366 48.87338062873407))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

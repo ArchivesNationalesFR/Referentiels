@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzcovf7h-1x5h8g0lrdh24">
       <rdfs:label xml:lang="fr">passage Pouchet (Paris, France)</rdfs:label>
@@ -140,11 +147,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcovf7h-1x5h8g0lrdh24_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcovf7h-1x5h8g0lrdh24"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">MULTIPOLYGON (((2.3222226104704125 48.89625799505064, 2.32233245610749 48.896246097226005, 2.322402798668155 48.89622180527429, 2.3223971760932036 48.896213862127986, 2.3224607279391183 48.89619193650517, 2.322519814502729 48.896171551306914, 2.3225899558129295 48.896147302172956, 2.322679709396069 48.896115309246284, 2.322869797867575 48.896047550110204, 2.3230114711394765 48.89599704836712, 2.322896277016801 48.89599581345408, 2.32284786808897 48.89601293622138, 2.322745122344521 48.896049277767425, 2.3226482658942085 48.89608353643119, 2.322556123061661 48.89611612825761, 2.322456984845157 48.89615119403981, 2.322309567389492 48.89620333625744, 2.3222226104704125 48.89625799505064)), ((2.322153355330704 48.896301526844, 2.3222226104704125 48.89625799505064, 2.3221331494756323 48.896267685212734, 2.3219638024477876 48.89632896048911, 2.3219364554379367 48.89633885557333, 2.321843405629629 48.89637252449683, 2.321746715822644 48.89640751002364, 2.3216997180234795 48.896424514411684, 2.3216027196742695 48.89645961138859, 2.321600787348566 48.89646031090646, 2.321625088280992 48.896491692793205, 2.32162783594733 48.89649070381535, 2.321682903029216 48.89647088082228, 2.321719701182803 48.89645763449458, 2.321814264638648 48.89642359292796, 2.321920135147357 48.89638548202652, 2.322015996102928 48.89635097370391, 2.3221378054262076 48.89630712433927, 2.322153355330704 48.896301526844)))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcovf7h-1x5h8g0lrdh24_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcovf7h-1x5h8g0lrdh24"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.322297088679323 48.89623102684173)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

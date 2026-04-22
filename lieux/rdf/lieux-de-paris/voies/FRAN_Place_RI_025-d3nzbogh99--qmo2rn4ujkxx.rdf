@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbogh99--qmo2rn4ujkxx">
       <rdfs:label xml:lang="fr">rue Largillière (Paris, France)</rdfs:label>
@@ -147,11 +154,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbogh99--qmo2rn4ujkxx_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbogh99--qmo2rn4ujkxx"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.273033982175875 48.85741964527471, 2.272856635159224 48.85731002867085, 2.2728682267926077 48.85733779035465, 2.2728219497146185 48.85741975367067, 2.2727509909764376 48.857545430467326, 2.2726872545613483 48.85765468385855, 2.272685839278772 48.85765716198188, 2.2726880885470884 48.85765772156332, 2.2725625724904903 48.857875617756285, 2.2725401257633258 48.857912312709765, 2.2726935327489817 48.8579430849974, 2.2727164214101063 48.85790460208089, 2.2728037062857775 48.857757841975605, 2.272870709998086 48.85763996735337, 2.272992371729983 48.85742593261359, 2.273033982175875 48.85741964527471))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbogh99--qmo2rn4ujkxx_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbogh99--qmo2rn4ujkxx"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.272781161186951 48.85764217885865)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

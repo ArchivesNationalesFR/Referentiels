@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz8mdt21--1g88any96os4v">
       <rdfs:label xml:lang="fr">place Auguste Métivier (Paris, France)</rdfs:label>
@@ -178,11 +185,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8mdt21--1g88any96os4v_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8mdt21--1g88any96os4v"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3885711055847096 48.86325615652811, 2.3885830440519094 48.863065061363514, 2.3884006274467926 48.86301864862528, 2.3882218533599886 48.862973163461135, 2.387949143474448 48.86290377697397, 2.3877228319003856 48.863142953418425, 2.387767862895498 48.86314158655803, 2.3878676986995115 48.8631788407848, 2.387866447744975 48.86318078146305, 2.387956121868436 48.86321605634715, 2.3880178481144534 48.86324033768462, 2.3880203729564164 48.8632375203646, 2.3881154998115184 48.863275221555504, 2.3881119243644657 48.863279170274794, 2.3881527416566315 48.863295252352394, 2.3882402480744935 48.86333117245564, 2.3883890442436306 48.863390510732486, 2.388492615264311 48.86332957262813, 2.3885711055847096 48.86325615652811))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8mdt21--1g88any96os4v_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8mdt21--1g88any96os4v"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.388202496024014 48.863137915146446)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

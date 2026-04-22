@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbl1oci-yh385pa83jrm">
       <rdfs:label xml:lang="fr">rue des Juges Consuls (Paris, France)</rdfs:label>
@@ -141,11 +148,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbl1oci-yh385pa83jrm_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbl1oci-yh385pa83jrm"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3515253504550047 48.85893666999406, 2.3515988082858894 48.85888316643351, 2.3515557811840027 48.85887945910256, 2.351446378523647 48.85877539607726, 2.3513191158919526 48.85865654165439, 2.351329466117925 48.85862766298518, 2.3512339767430293 48.858635985939856, 2.3513242678005306 48.85872311605244, 2.351374180991482 48.858770472947995, 2.3513757095211854 48.85876976625015, 2.3513837527109467 48.8587776332871, 2.3513822560062416 48.85877841120613, 2.3514061067150824 48.858803939906636, 2.35140770323339 48.85880324616781, 2.351440969378206 48.85884181429616, 2.3514388311922785 48.858843100469024, 2.3514629058573027 48.85886892805486, 2.351464825213851 48.858870987174726, 2.351466316087801 48.85887023980103, 2.3514739800656206 48.85887846181759, 2.3514721317398166 48.85887934665339, 2.3515148013748397 48.858926775745324, 2.351516566637671 48.85892610360457, 2.3515253504550047 48.85893666999406))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbl1oci-yh385pa83jrm_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbl1oci-yh385pa83jrm"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3514181563021532 48.85878249564388)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

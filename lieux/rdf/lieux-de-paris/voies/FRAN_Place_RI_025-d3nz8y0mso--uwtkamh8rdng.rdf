@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz8y0mso--uwtkamh8rdng">
       <rdfs:label xml:lang="fr">rue Boucher (Paris, France)</rdfs:label>
@@ -154,11 +161,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8y0mso--uwtkamh8rdng_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8y0mso--uwtkamh8rdng"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3441513187786107 48.85948604242022)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8y0mso--uwtkamh8rdng_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8y0mso--uwtkamh8rdng"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.343835107062858 48.85956337846076, 2.3438656676201712 48.85952837965895, 2.34458058755997 48.85953380288256, 2.3445094843834964 48.859418677114526, 2.3444912707387613 48.85944336072382, 2.344397724445122 48.85944274394411, 2.343771140897815 48.85943861617804, 2.3437584090368206 48.859438617408024, 2.343743156422905 48.85943790511893, 2.3437297043245193 48.85943600386901, 2.3437139694220233 48.85943148738025, 2.3436994357232237 48.85942380187348, 2.343835107062858 48.85956337846076))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

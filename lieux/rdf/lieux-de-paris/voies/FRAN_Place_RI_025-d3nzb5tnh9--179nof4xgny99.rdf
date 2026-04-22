@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzb5tnh9--179nof4xgny99">
       <rdfs:label xml:lang="fr">rue du Général Renault (Paris, France)</rdfs:label>
@@ -174,11 +181,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzb5tnh9--179nof4xgny99_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzb5tnh9--179nof4xgny99"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3782549235213657 48.861331133084605)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzb5tnh9--179nof4xgny99_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzb5tnh9--179nof4xgny99"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.378390085567486 48.86156922145186, 2.3786380720487545 48.86131208075122, 2.378598325859511 48.86131753485349, 2.378390982146221 48.861229039015406, 2.3783088067377145 48.861193965781595, 2.3782276810922833 48.861159340421544, 2.3781350609290164 48.8611198096041, 2.3781248328210407 48.86109341553478, 2.3778689897282885 48.86134985786565, 2.3779094207411506 48.861344707046996, 2.37800916269484 48.861386668201696, 2.3781440613488156 48.861443420018276, 2.3782780000780206 48.86149976738231, 2.3783791951690465 48.86154233922918, 2.378390085567486 48.86156922145186))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

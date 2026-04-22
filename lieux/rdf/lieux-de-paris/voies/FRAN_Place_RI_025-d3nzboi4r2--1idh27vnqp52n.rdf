@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzboi4r2--1idh27vnqp52n">
       <rdfs:label xml:lang="fr">rue Larribe (Paris, France)</rdfs:label>
@@ -153,11 +160,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzboi4r2--1idh27vnqp52n_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzboi4r2--1idh27vnqp52n"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3180084449844482 48.880496062288856, 2.3179636343731684 48.88048616254351, 2.317803838821954 48.88045085971416, 2.317675581332522 48.8804225237031, 2.3175245489392173 48.88038915634685, 2.317512418846486 48.88036427903648, 2.3173913503411936 48.88049188884138, 2.3174314548061523 48.880483196096606, 2.317613885131678 48.8805231979621, 2.3178840775922933 48.88058244445369, 2.318102789801182 48.880630401850524, 2.3181055308612835 48.88065620589073, 2.3183585809850333 48.880573415234316, 2.318199720322497 48.88053831971319, 2.3180084449844482 48.880496062288856))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzboi4r2--1idh27vnqp52n_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzboi4r2--1idh27vnqp52n"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3178530779428046 48.88051773079039)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

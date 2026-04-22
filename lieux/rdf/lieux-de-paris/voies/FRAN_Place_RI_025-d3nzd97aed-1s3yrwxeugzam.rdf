@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzd97aed-1s3yrwxeugzam">
       <rdfs:label xml:lang="fr">impasse Sandrié (Paris, France)</rdfs:label>
@@ -121,11 +128,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzd97aed-1s3yrwxeugzam_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzd97aed-1s3yrwxeugzam"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.330054462385386 48.87170748292722, 2.330102699952321 48.87170216439654, 2.330101242347015 48.871704512512395, 2.3302555138678 48.87173272656299, 2.3302827577881837 48.87166938642302, 2.3301283852129533 48.87164045686328, 2.330088397027583 48.8716329627954, 2.3298431690471335 48.87166014865464, 2.3296575474465606 48.871680725826145, 2.329319128987587 48.87171878693261, 2.3293271787585828 48.87175208786949, 2.3293355600204517 48.87178675046567, 2.329548737289775 48.8717632460985, 2.329643675340262 48.871752777986714, 2.3298234647258136 48.871732954206784, 2.329911637775092 48.87172323133206, 2.330054462385386 48.87170748292722))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzd97aed-1s3yrwxeugzam_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzd97aed-1s3yrwxeugzam"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3297971807799684 48.87170521360998)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

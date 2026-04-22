@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbsc3w0-efxws7dsvz3s">
       <rdfs:label xml:lang="fr">rue du Loing (Paris, France)</rdfs:label>
@@ -165,11 +172,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbsc3w0-efxws7dsvz3s_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbsc3w0-efxws7dsvz3s"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.330296601056721 48.82687920442735, 2.3301108046771577 48.826792870485605, 2.330121441205022 48.826820157813614, 2.330062557553999 48.82690912353258, 2.3300072409956782 48.82699269944748, 2.3299412681689255 48.82709237653218, 2.3298812614705064 48.82718303837202, 2.329821493509749 48.82727333816521, 2.329750481530539 48.82738062619163, 2.329668349012398 48.827504716948326, 2.3295968571648578 48.82761272707279, 2.3295253580256183 48.82772075149496, 2.3294864376558504 48.82773580470237, 2.3297323384802215 48.82773516043453, 2.329708392285171 48.82771230976963, 2.329816388576047 48.827549549548685, 2.3298730534802305 48.82746415198156, 2.3299477262219175 48.82735161225476, 2.3300043226599847 48.82726631495944, 2.3300644582322185 48.82717568526535, 2.330121944681925 48.82708904562204, 2.3301771848212427 48.82700579211006, 2.3302567318373395 48.82688590276063, 2.330296601056721 48.82687920442735))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbsc3w0-efxws7dsvz3s_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbsc3w0-efxws7dsvz3s"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3299022694855296 48.827284604401235)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

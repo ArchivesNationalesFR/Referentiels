@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzci5lmd--1tgc6ljz6ytpd">
       <rdfs:label xml:lang="fr">rue Piémontési (Paris, France)</rdfs:label>
@@ -154,11 +161,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzci5lmd--1tgc6ljz6ytpd_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzci5lmd--1tgc6ljz6ytpd"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3385694320055506 48.88360135767768, 2.338704982743551 48.88356499557924, 2.3387357054802926 48.88357197949567, 2.3386839480338786 48.88350694901908, 2.3386716821863587 48.88352691565376, 2.3385655330247204 48.88355500442895, 2.3384810197178445 48.883577367007, 2.3383891233020555 48.88360168434081, 2.338250294208855 48.883638463238164, 2.3381465386153613 48.8836659497291, 2.3380993436022477 48.88367845302171, 2.3380055528106167 48.88370330008555, 2.337983091602862 48.88370925086803, 2.3380097127591055 48.883751505613866, 2.3383190666135185 48.88366852034084, 2.338370249443086 48.88365478982925, 2.3385694320055506 48.88360135767768))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzci5lmd--1tgc6ljz6ytpd_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzci5lmd--1tgc6ljz6ytpd"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.338353883277959 48.88363508491218)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

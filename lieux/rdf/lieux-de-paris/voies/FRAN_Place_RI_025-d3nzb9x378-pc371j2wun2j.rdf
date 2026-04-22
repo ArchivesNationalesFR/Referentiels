@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzb9x378-pc371j2wun2j">
       <rdfs:label xml:lang="fr">place des Grès (Paris, France)</rdfs:label>
@@ -113,11 +120,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzb9x378-pc371j2wun2j_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzb9x378-pc371j2wun2j"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.4059849636885913 48.859112285322944, 2.4060928764341094 48.85901476902003, 2.406110912885511 48.858888376530246, 2.4061081027379374 48.85879986438499, 2.405889017415745 48.85885840523969, 2.4057560139350707 48.85895049784284, 2.4058189315578025 48.859018665798544, 2.405858494610917 48.85904045189369, 2.405859740207648 48.85903939145553, 2.4059056579500924 48.85906436938081, 2.4059034936517367 48.85906639025498, 2.405923064485433 48.859077415346675, 2.4059849636885913 48.859112285322944))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzb9x378-pc371j2wun2j_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzb9x378-pc371j2wun2j"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.405963545390188 48.858951823883025)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

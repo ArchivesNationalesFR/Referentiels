@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbquclg-bzgkpiaqbccz">
       <rdfs:label xml:lang="fr">voie Léonie Kastner (Paris, France)</rdfs:label>
@@ -116,11 +123,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbquclg-bzgkpiaqbccz_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbquclg-bzgkpiaqbccz"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3145465066163946 48.82788691714974)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbquclg-bzgkpiaqbccz_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbquclg-bzgkpiaqbccz"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3149033290015635 48.82768051646822, 2.314863662838988 48.82765404447796, 2.31428303732867 48.82803446239462, 2.314230567350126 48.82806872282386, 2.3141888045125727 48.828077998757536, 2.314213704026942 48.82812708118454, 2.3144971387085853 48.82794491470348, 2.314759614621802 48.8277739101416, 2.314765138460015 48.82777026873226, 2.3148123403048824 48.82773942249793, 2.3148419528059696 48.82772055681936, 2.3148781615278464 48.827696880374965, 2.3149033290015635 48.82768051646822))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

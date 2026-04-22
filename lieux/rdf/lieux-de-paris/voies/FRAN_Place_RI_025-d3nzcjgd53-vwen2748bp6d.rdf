@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzcjgd53-vwen2748bp6d">
       <rdfs:label xml:lang="fr">rue Pierre Sarrazin (Paris, France)</rdfs:label>
@@ -138,11 +145,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcjgd53-vwen2748bp6d_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcjgd53-vwen2748bp6d"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3423072194840437 48.850864451799524, 2.342616252306503 48.85074810415234, 2.342652509281224 48.850757376965355, 2.3425965874611663 48.85062959937316, 2.342582810367654 48.85065634249656, 2.3424067705721328 48.850722782792324, 2.3424125268491047 48.8507302422173, 2.3423309357471074 48.850759840374465, 2.3422778166751805 48.85077910939318, 2.342090091067474 48.85084720904784, 2.3419963217303783 48.85088177460959, 2.341712775735956 48.85098629763839, 2.341714386834883 48.850988324658836, 2.3415317362157304 48.851054690414145, 2.341626811652762 48.85114093668594, 2.34163933862691 48.851115895579646, 2.34178851164373 48.851059734868365, 2.3423072194840437 48.850864451799524))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcjgd53-vwen2748bp6d_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcjgd53-vwen2748bp6d"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.342100099894818 48.8508922239423)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbg3x8x--551qudhlyge3">
       <rdfs:label xml:lang="fr">voie I/20 (Paris, France)</rdfs:label>
@@ -111,11 +118,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbg3x8x--551qudhlyge3_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbg3x8x--551qudhlyge3"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.400660797799454 48.87317904101515, 2.4006563358225415 48.87318754615303, 2.4006146240270128 48.87326691030741, 2.4005931823311575 48.873308504124374, 2.4005831944193337 48.87332697857568, 2.400563635964229 48.873359289905146, 2.400560282866122 48.87336514575951, 2.4005674004814916 48.87336696657892, 2.400576080796377 48.87336911808388, 2.4006028819018774 48.873322075068835, 2.4006059478628634 48.873311907271045, 2.4006293141626505 48.87327082671548, 2.4006270008206605 48.87327020988087, 2.400668612405284 48.873191022389406, 2.4006730811865573 48.87318251818453, 2.400660797799454 48.87317904101515))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbg3x8x--551qudhlyge3_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbg3x8x--551qudhlyge3"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.4006160781788624 48.87327837883655)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

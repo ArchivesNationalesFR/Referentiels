@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbs5gu0-wgslm0xjabu2">
       <rdfs:label xml:lang="fr">passage Lisa (Paris, France)</rdfs:label>
@@ -138,11 +145,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbs5gu0-wgslm0xjabu2_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbs5gu0-wgslm0xjabu2"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3770346273412852 48.858296816311764, 2.3768458463647453 48.858231728800135, 2.3768179774098837 48.85826856034624, 2.3771441816884193 48.85838050068261, 2.377239838140725 48.858413325573224, 2.377359607725123 48.85845442573789, 2.3775353028999504 48.858514715583276, 2.377542138204186 48.85852498571015, 2.3775792690391695 48.85847872935465, 2.377532911055036 48.858468610692526, 2.3774509209532115 48.85844034218273, 2.37728738485401 48.858383960191155, 2.3771443563913643 48.858334647462435, 2.3770346273412852 48.858296816311764))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbs5gu0-wgslm0xjabu2_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbs5gu0-wgslm0xjabu2"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3771969252963254 48.858375633951105)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

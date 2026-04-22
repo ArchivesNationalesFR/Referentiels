@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzd4fmyd-1ur04l5of611m">
       <rdfs:label xml:lang="fr">passage Saint-Jules (Paris, France)</rdfs:label>
@@ -145,11 +152,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzd4fmyd-1ur04l5of611m_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzd4fmyd-1ur04l5of611m"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.336305370051789 48.89672444346106, 2.336130660190026 48.89670346972713, 2.3361784581275864 48.89673439519673, 2.3362240897607705 48.896857137292685, 2.336277958602471 48.89700203748189, 2.3363604804713205 48.897106118910706, 2.3363929839418147 48.89719401146041, 2.3364496131549854 48.897347137605195, 2.336482086656933 48.897434943609035, 2.336533761579459 48.89741891354664, 2.336519422317281 48.89738066609345, 2.336504221740549 48.897340115204706, 2.3364932951830624 48.897310969778935, 2.336490321813579 48.89730303839502, 2.3364560635164024 48.89721165309439, 2.3364532999122294 48.897204280449124, 2.336435556091646 48.89715694807353, 2.3364128773609987 48.89709206690458, 2.3363754871180973 48.896985097882556, 2.336314324107155 48.896828481443656, 2.3362999741955432 48.89679173664627, 2.3362820421582153 48.89674581601705, 2.336305370051789 48.89672444346106))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzd4fmyd-1ur04l5of611m_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzd4fmyd-1ur04l5of611m"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.336342092430288 48.897016560080395)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

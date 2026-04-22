@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzddb2u7-i7tu32b9s1vw">
       <rdfs:label xml:lang="fr">villa Stendhal (Paris, France)</rdfs:label>
@@ -132,11 +139,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzddb2u7-i7tu32b9s1vw_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzddb2u7-i7tu32b9s1vw"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.4017295424260787 48.862121177794805, 2.401594090719968 48.862047911067805, 2.401442165521027 48.86196573474378, 2.401434797292262 48.861937929795154, 2.401306641996875 48.86205844095689, 2.401345865827263 48.86205379691303, 2.4015105245468353 48.862142769508445, 2.4016430579505768 48.862214383130755, 2.40181266223013 48.86230602678303, 2.4020846019929296 48.862452964923214, 2.4023418869593702 48.8625919833762, 2.402394425192416 48.86254697916578, 2.402441776283015 48.86250641876009, 2.4023233033683127 48.86244233811089, 2.4021731572611214 48.862361125842426, 2.4020031468413308 48.86226916950787, 2.4018975293720675 48.86221204071514, 2.4017295424260787 48.862121177794805))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzddb2u7-i7tu32b9s1vw_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzddb2u7-i7tu32b9s1vw"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.4018793480501626 48.862272083790444)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

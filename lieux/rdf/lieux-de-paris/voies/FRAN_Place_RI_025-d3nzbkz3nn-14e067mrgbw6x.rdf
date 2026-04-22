@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbkz3nn-14e067mrgbw6x">
       <rdfs:label xml:lang="fr">cité Joyeux (Paris, France)</rdfs:label>
@@ -111,11 +118,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbkz3nn-14e067mrgbw6x_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbkz3nn-14e067mrgbw6x"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3236308481846826 48.896745635060235, 2.323554537639514 48.896775102880866, 2.3234690723628764 48.89680810542922, 2.32339629807952 48.896836237848234, 2.323322423324865 48.89686476330324, 2.3232763185986074 48.89688253687208, 2.3232427048381035 48.896895516582724, 2.32317039406438 48.896923439243096, 2.3231557778109626 48.89692908351323, 2.3231718347695534 48.89694911850446, 2.3231867333211875 48.896943373305255, 2.3232595138570615 48.896915304901995, 2.3233393432833522 48.89688451806445, 2.32338751533534 48.89686594046726, 2.3234132408923696 48.896856019708125, 2.323487248104056 48.896827477858366, 2.3236473148414913 48.89676574604861, 2.3236308481846826 48.896745635060235))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbkz3nn-14e067mrgbw6x_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbkz3nn-14e067mrgbw6x"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3234018068648714 48.896847261627926)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

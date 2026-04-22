@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbizw81-106o2gljzyevu">
       <rdfs:label xml:lang="fr">villa Jean Godard (Paris, France)</rdfs:label>
@@ -144,11 +151,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbizw81-106o2gljzyevu_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbizw81-106o2gljzyevu"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.405159631599604 48.83512842629345, 2.4051704905402644 48.83510124576275, 2.4049966803052234 48.83510937041028, 2.405030415717998 48.83512220845919, 2.4050990559290764 48.835208249340674, 2.4051041034884753 48.83521457628662, 2.4051246415934107 48.835240321989346, 2.4051466504888266 48.83526790970429, 2.4051582781652106 48.83528248505856, 2.405173599519557 48.83530169071678, 2.405291626873093 48.835449637425135, 2.4053981573451644 48.835583173902776, 2.4054144070112637 48.835603542518854, 2.405416848893241 48.83560660349904, 2.4055104532842884 48.83572393562691, 2.4056076010855523 48.835687792757525, 2.4055047526251 48.83555936967657, 2.4054161443172077 48.83544872934232, 2.405313529182942 48.83532059592038, 2.405211000518334 48.835192569847486, 2.405159631599604 48.83512842629345))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbizw81-106o2gljzyevu_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbizw81-106o2gljzyevu"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.4053176845765534 48.835404245997346)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

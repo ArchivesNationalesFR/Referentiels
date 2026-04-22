@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzdo0sys-hlvs5w33m4kg">
       <rdfs:label xml:lang="fr">place de Vénétie (Paris, France)</rdfs:label>
@@ -132,11 +139,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdo0sys-hlvs5w33m4kg_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdo0sys-hlvs5w33m4kg"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.36453390899603 48.82151545818275)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdo0sys-hlvs5w33m4kg_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdo0sys-hlvs5w33m4kg"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3638973059375954 48.82139750446254, 2.36421561567433 48.82146910509718, 2.3641956400200654 48.821507672154254, 2.3640895667824395 48.82171246223923, 2.364199367239078 48.821736026112724, 2.3642494582345694 48.821741495339914, 2.3648499276031596 48.82187965505045, 2.365033243470416 48.82152847442413, 2.365027308542489 48.82152651374281, 2.365070920654542 48.82144270112211, 2.3650777034379877 48.82144438120042, 2.365113279231228 48.82137793245626, 2.364512900741121 48.82124145090398, 2.364475945545401 48.82123373299902, 2.364464593090934 48.821254416827664, 2.364452056637866 48.821278821386365, 2.364337322543262 48.82125335360172, 2.364059145091026 48.821191605352084, 2.3638973059375954 48.82139750446254))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

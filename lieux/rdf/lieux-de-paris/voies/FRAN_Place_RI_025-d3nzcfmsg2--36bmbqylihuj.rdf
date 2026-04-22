@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzcfmsg2--36bmbqylihuj">
       <rdfs:label xml:lang="fr">place du Père Marcellin Champagnat (Paris, France)</rdfs:label>
@@ -121,11 +128,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcfmsg2--36bmbqylihuj_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcfmsg2--36bmbqylihuj"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.280342863254621 48.856358647282285, 2.2806276810674175 48.85617634034092, 2.2805447382515665 48.85612000140099, 2.2805365894152674 48.856114465418905, 2.2805383823381242 48.85611323238597, 2.280509885301408 48.856094742905995, 2.2804684662954084 48.85606786924131, 2.280450727259525 48.8560563605034, 2.280377742307707 48.856009005655174, 2.28008874667656 48.85619539066733, 2.280102870641896 48.85619539739624, 2.280118429472222 48.85620598111864, 2.280122129140882 48.856208497297345, 2.280236380016541 48.85628621463765, 2.280342863254621 48.856358647282285))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcfmsg2--36bmbqylihuj_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcfmsg2--36bmbqylihuj"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.2803616588894178 48.856183400618285)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

@@ -10,7 +10,7 @@
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xml:base="https://rdf.archives-nationales.culture.gouv.fr/"><!--$myName=FRAN_RI_025-d3nzbf1ezg- -1s2sm9bitcqsd-vdp-11324-->
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/FRAN_RI_025-d3nzbf1ezg--1s2sm9bitcqsd-vdp-11324">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="place/FRAN_RI_025-d3nzbf1ezg--1s2sm9bitcqsd-vdp-11324"/>
@@ -43,6 +43,13 @@
          <rdf:Description>
             <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-07</dc:date>
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
          </rdf:Description>
       </skos:changeNote>
    </rico:Record>
@@ -116,11 +123,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbf1ezg--1s2sm9bitcqsd-vdp-11324_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbf1ezg--1s2sm9bitcqsd-vdp-11324"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">MULTIPOLYGON (((2.3456625978137113 48.85302483682143, 2.3456706075583855 48.85299550680001, 2.345611584107551 48.852970680194005, 2.3455373870776817 48.852988481820155, 2.3455508939802403 48.85300564073906, 2.345399811427601 48.853036858297685, 2.3453927497406424 48.853022929131065, 2.3453217898277 48.85304068897586, 2.3452618763570934 48.853055683452425, 2.3450819607419278 48.85310071071069, 2.3450719166465523 48.85308368401217, 2.3450389171399757 48.853091899758574, 2.344891002979191 48.8531287262059, 2.344705830397315 48.853174829423395, 2.3444981510303724 48.8532133848843, 2.3443894516443784 48.85326247868687, 2.344387012980354 48.85326002987259, 2.3443829846932087 48.85326184877939, 2.3444858833326077 48.85335828464117, 2.3444875275226846 48.853350328965114, 2.344624043703271 48.853290860494994, 2.344733638343079 48.85326354745657, 2.3448712384842296 48.853229254875785, 2.3449548109813176 48.85320842649917, 2.345122041899616 48.85316674845649, 2.3451128723591865 48.853151485686766, 2.345187592732099 48.85313479789143, 2.3452653197344553 48.853117439394566, 2.345472396973735 48.85307119252605, 2.3455626643944485 48.85305103169398, 2.3456625978137113 48.85302483682143)), ((2.3456706075583855 48.85299550680001, 2.345711829648103 48.85301284603847, 2.345714183006518 48.85300809142794, 2.345859988099507 48.8529623488223, 2.346015618527401 48.85291979129425, 2.346040441211096 48.85291468822321, 2.346126791561583 48.852897334027375, 2.346196325678992 48.85288335939291, 2.346264214765386 48.85286971478707, 2.3464614288629972 48.8528300792349, 2.3464621973798176 48.85283497862042, 2.3465125063117687 48.85282324790837, 2.346491299444903 48.85277129147614, 2.3464756396619673 48.85277440135338, 2.346428499081431 48.85278376336831, 2.3463875120082984 48.852791903479584, 2.346342618855717 48.85280081906651, 2.3462800288246206 48.852813248860826, 2.3462341765321435 48.85282235522617, 2.346229540722124 48.852814273476454, 2.346129382971346 48.85283863471272, 2.346074817540639 48.85285190687886, 2.3459838008300684 48.852874044381565, 2.3458535627126436 48.852910860711354, 2.345806400678743 48.85292419211587, 2.34568874781779 48.852957449976614, 2.345681611430032 48.8529552165262, 2.3456706075583855 48.85299550680001)))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbf1ezg--1s2sm9bitcqsd-vdp-11324_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbf1ezg--1s2sm9bitcqsd-vdp-11324"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3453018219008097 48.85307744710989)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

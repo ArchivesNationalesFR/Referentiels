@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbkjot1--1ew35ovfbtdyg">
       <rdfs:label xml:lang="fr">rue Joseph Chailley (Paris, France)</rdfs:label>
@@ -153,11 +160,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbkjot1--1ew35ovfbtdyg_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbkjot1--1ew35ovfbtdyg"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.4045039847582124 48.83309816690052, 2.404128973297135 48.83282968497021, 2.404136885883504 48.83297517429564, 2.4039083905652734 48.83325416289763, 2.4037702864094053 48.833422781853315, 2.4035762822669784 48.83365964991701, 2.4034732403360444 48.83368082244132, 2.4039054281225143 48.833835601178066, 2.4038717385977937 48.83376714629312, 2.4040390629662687 48.833564282045735, 2.4042401806463336 48.833320445298874, 2.404402131065055 48.83312409389439, 2.4045039847582124 48.83309816690052))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbkjot1--1ew35ovfbtdyg_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbkjot1--1ew35ovfbtdyg"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.4040105808763386 48.83335850744161)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

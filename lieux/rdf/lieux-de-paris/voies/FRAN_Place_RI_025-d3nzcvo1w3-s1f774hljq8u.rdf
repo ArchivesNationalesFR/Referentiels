@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzcvo1w3-s1f774hljq8u">
       <rdfs:label xml:lang="fr">rue René Panhard (Paris, France)</rdfs:label>
@@ -151,11 +158,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcvo1w3-s1f774hljq8u_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcvo1w3-s1f774hljq8u"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3596287640208784 48.83868813843604, 2.359369603139613 48.838587058842684, 2.3593909162396263 48.83863138846809, 2.3592043824782714 48.83889797110312, 2.359137335373116 48.83891160783105, 2.359404050653166 48.8389965271924, 2.3593810905877803 48.83895482390308, 2.3594736570250356 48.83882763228835, 2.3595649050513794 48.83870225204705, 2.3596287640208784 48.83868813843604))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcvo1w3-s1f774hljq8u_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcvo1w3-s1f774hljq8u"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.359385955047243 48.83879492731545)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

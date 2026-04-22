@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbssnha-6r7y7knxrkxx">
       <rdfs:label xml:lang="fr">avenue Louis Barthou (Paris, France)</rdfs:label>
@@ -130,11 +137,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbssnha-6r7y7knxrkxx_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbssnha-6r7y7knxrkxx"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.2675876376024777 48.86388756533831, 2.267541821532691 48.86381231301866, 2.2673274622772484 48.863892359138084, 2.268373129017184 48.865100152484075, 2.268562408112461 48.86500534309742, 2.26849939770179 48.86492551097032, 2.2684182044800374 48.86483333825751, 2.268377675055477 48.86478732873265, 2.268121014113982 48.86449595824038, 2.2680802749106084 48.864449490443306, 2.2679456113582757 48.864295888281035, 2.2675876376024777 48.86388756533831))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbssnha-6r7y7knxrkxx_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbssnha-6r7y7knxrkxx"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.2679516555184347 48.86445727140529)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

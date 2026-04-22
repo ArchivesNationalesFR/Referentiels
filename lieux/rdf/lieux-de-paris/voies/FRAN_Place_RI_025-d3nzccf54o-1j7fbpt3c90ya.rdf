@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzccf54o-1j7fbpt3c90ya">
       <rdfs:label xml:lang="fr">place du Palais Bourbon (Paris, France)</rdfs:label>
@@ -148,11 +155,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzccf54o-1j7fbpt3c90ya_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzccf54o-1j7fbpt3c90ya"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.318675347546215 48.860318425323, 2.3186152085344998 48.860223737355554, 2.3184250967985602 48.86024178304254, 2.318425943699244 48.860245707239606, 2.318358367996967 48.86025190649973, 2.318166568394506 48.86027059509169, 2.318126702284418 48.86027466774336, 2.3181273386294285 48.86027634865967, 2.318100540015737 48.86027874652093, 2.318099490987038 48.86027547949502, 2.317908664358001 48.86029385934477, 2.3178755989687 48.860498186977736, 2.3178520765938897 48.860643546344654, 2.3178343690705967 48.86075297378542, 2.318903148610244 48.86067708824741, 2.3188532444072725 48.86059851659935, 2.3187942960431225 48.86050570527763, 2.318734884463947 48.86041216370571, 2.318675347546215 48.860318425323))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzccf54o-1j7fbpt3c90ya_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzccf54o-1j7fbpt3c90ya"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3183229455776138 48.86050237445931)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz8j7q01-na4us7bzx52k">
       <rdfs:label xml:lang="fr">rue Antoine Arnauld (Paris, France)</rdfs:label>
@@ -167,11 +174,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8j7q01-na4us7bzx52k_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8j7q01-na4us7bzx52k"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.271887127742963 48.85629560666709, 2.272082412295027 48.856157725934374, 2.272227478207997 48.85605530248486, 2.2723858509185497 48.85594284377195, 2.2725254203519416 48.85584432302338, 2.272609354467298 48.85578507442104, 2.272651753270295 48.855785098316204, 2.272507781800564 48.85564398952438, 2.2725058506440248 48.85567355952717, 2.27237738416039 48.855764650717845, 2.2722276315336085 48.85587083396754, 2.272114672429183 48.855950928278126, 2.271964153367628 48.85605765333524, 2.2717889434625476 48.8561818850638, 2.2717478754137823 48.85617858180497, 2.2718840715175395 48.85632626881602, 2.271887127742963 48.85629560666709))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8j7q01-na4us7bzx52k_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8j7q01-na4us7bzx52k"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.272198673383465 48.855983576656456)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

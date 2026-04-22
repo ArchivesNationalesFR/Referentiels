@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz9m229b--pvvp307q97yy">
       <rdfs:label xml:lang="fr">passage du Commandant Charles Martel (Paris, France)</rdfs:label>
@@ -155,11 +162,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz9m229b--pvvp307q97yy_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz9m229b--pvvp307q97yy"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.31752334049434 48.88448742331833)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz9m229b--pvvp307q97yy_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz9m229b--pvvp307q97yy"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3174195723776134 48.88439824445246, 2.317308751564579 48.88434425524119, 2.317256576086548 48.88439472950853, 2.3173901528414325 48.88446054701472, 2.3174178201858173 48.884474180339694, 2.3174399351139563 48.88448507681438, 2.3174469725463025 48.88448854428735, 2.3175278407563074 48.88452838971283, 2.317734649020253 48.884630289926214, 2.317787963931819 48.88457776158623, 2.317662912581871 48.88451679285587, 2.3175841007755724 48.88447839817342, 2.3174195723776134 48.88439824445246))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

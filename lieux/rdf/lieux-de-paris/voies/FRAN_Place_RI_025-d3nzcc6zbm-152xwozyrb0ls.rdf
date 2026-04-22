@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzcc6zbm-152xwozyrb0ls">
       <rdfs:label xml:lang="fr">place Pablo Picasso (Paris, France)</rdfs:label>
@@ -115,11 +122,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcc6zbm-152xwozyrb0ls_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcc6zbm-152xwozyrb0ls"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3300150477465484 48.84166171658685, 2.3299834155229444 48.84164534814636, 2.329365044445702 48.84181709025017, 2.3291378201211868 48.84190540286752, 2.329147989753064 48.84194979140823, 2.3292079323250094 48.84232330018082, 2.3292648232087894 48.84235263808123, 2.3297350938086923 48.84216446644679, 2.3297369069478786 48.842160897133176, 2.329739768781474 48.84215651707184, 2.3297415398926575 48.842153990786024, 2.3297448645249115 48.84215060082033, 2.329748394256742 48.8421475789446, 2.3297533537984574 48.84214388336104, 2.3297581219833763 48.84214129382347, 2.3297626873053923 48.84213900983253, 2.3300150477465484 48.84166171658685))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcc6zbm-152xwozyrb0ls_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcc6zbm-152xwozyrb0ls"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3295308326523125 48.84199194733982)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzahimh5-16pmfi5xifwnh">
       <rdfs:label xml:lang="fr">rue du Forez (Paris, France)</rdfs:label>
@@ -132,11 +139,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzahimh5-16pmfi5xifwnh_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzahimh5-16pmfi5xifwnh"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.363046887761536 48.86365855052855)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzahimh5-16pmfi5xifwnh_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzahimh5-16pmfi5xifwnh"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3632979383981296 48.86356639279247, 2.3632242218065436 48.86350378933239, 2.363204314964582 48.86353668485979, 2.363194324639039 48.86355319582934, 2.363184197089355 48.86355829518461, 2.3629105397876433 48.863696094126254, 2.362784908727919 48.86375935518312, 2.362830438775156 48.86380076777905, 2.3629169711477545 48.863757385407055, 2.363037739314474 48.86369684043192, 2.3630815964604936 48.86367485374046, 2.3631659778680176 48.86363254974395, 2.3632120389495688 48.86360945684639, 2.3632979383981296 48.86356639279247))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzb6t8js-ap5sjpso1laq">
       <rdfs:label xml:lang="fr">villa Georgina (Paris, France)</rdfs:label>
@@ -145,11 +152,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzb6t8js-ap5sjpso1laq_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzb6t8js-ap5sjpso1laq"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3978961987323397 48.87161747390801, 2.39787073904629 48.871602000487826, 2.3977841154944324 48.871664708804495, 2.397673624702939 48.87174469368968, 2.397533386271313 48.871846212606165, 2.397547719773691 48.87186688221085, 2.397612640122195 48.8718204183561, 2.3976773417689534 48.87177411164721, 2.3977422096463594 48.871727685227455, 2.3978076905283174 48.871680819382426, 2.3978961987323397 48.87161747390801))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzb6t8js-ap5sjpso1laq_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzb6t8js-ap5sjpso1laq"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.397714536593171 48.8717313988119)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

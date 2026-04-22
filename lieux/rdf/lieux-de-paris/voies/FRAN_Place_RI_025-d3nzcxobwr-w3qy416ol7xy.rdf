@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzcxobwr-w3qy416ol7xy">
       <rdfs:label xml:lang="fr">rue de Rohan (Paris, France)</rdfs:label>
@@ -149,11 +156,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcxobwr-w3qy416ol7xy_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcxobwr-w3qy416ol7xy"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3354741659917475 48.862792877999624, 2.3354558448691267 48.86275898417469, 2.335184126908831 48.862844651535895, 2.335203292233354 48.86288052865501, 2.335285196493316 48.8630338493111, 2.3353229416643537 48.863104507539866, 2.3353212797320624 48.86310827107236, 2.3353229421671062 48.863108741670644, 2.3352681491590266 48.86323097972726, 2.335265506086581 48.86323098033555, 2.335263975140766 48.863236869752285, 2.335753531273061 48.86302196564354, 2.335568417995293 48.86296724341569, 2.3354741659917475 48.862792877999624))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcxobwr-w3qy416ol7xy_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcxobwr-w3qy416ol7xy"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3354208260979497 48.86298195235108)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

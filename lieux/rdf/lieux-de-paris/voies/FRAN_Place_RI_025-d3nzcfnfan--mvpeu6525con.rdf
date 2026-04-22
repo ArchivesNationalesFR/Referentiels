@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzcfnfan--mvpeu6525con">
       <rdfs:label xml:lang="fr">place du Père Teilhard de Chardin (Paris, France)</rdfs:label>
@@ -115,11 +122,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcfnfan--mvpeu6525con_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcfnfan--mvpeu6525con"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3631305158642357 48.850744216113405, 2.3630852871356165 48.85071719616663, 2.363082310757443 48.85071932078728, 2.3630740675029087 48.85071417756351, 2.363076559314144 48.850712005395785, 2.3630346983743378 48.85068908462934, 2.363032858082918 48.85069057855367, 2.3630248089740187 48.85068616483743, 2.3630257790332516 48.85068551527139, 2.363018312296285 48.85068162088477, 2.363019475188143 48.850680581125985, 2.362977904469155 48.85065867185949, 2.362870799970674 48.850599373688794, 2.362435721495 48.850944073082815, 2.3624534201900036 48.85099239439208, 2.362674219724734 48.85105879911673, 2.362751578157972 48.851045541861026, 2.3631305158642357 48.850744216113405))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcfnfan--mvpeu6525con_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcfnfan--mvpeu6525con"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3627788764584063 48.8508441717041)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

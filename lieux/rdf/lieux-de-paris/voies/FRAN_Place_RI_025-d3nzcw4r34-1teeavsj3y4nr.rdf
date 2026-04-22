@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzcw4r34-1teeavsj3y4nr">
       <rdfs:label xml:lang="fr">allée du Révérend Père Michel Riquet (Paris, France)</rdfs:label>
@@ -121,11 +128,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcw4r34-1teeavsj3y4nr_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcw4r34-1teeavsj3y4nr"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3338575749098847 48.850651462990534, 2.3337804059819676 48.85064615250957, 2.3336765077265373 48.851181378774946, 2.3337560497054537 48.85118693006737, 2.334007923900382 48.851204508162226, 2.3340118256345184 48.85118328436343, 2.33403372615114 48.85106414069114, 2.3340515496295158 48.850974921114755, 2.334062958399821 48.850918120940044, 2.3340735231659737 48.850861459961166, 2.334084614620247 48.85080570576433, 2.3341072212478373 48.850686948196945, 2.3341106614866884 48.850668879461885, 2.3338575749098847 48.850651462990534))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcw4r34-1teeavsj3y4nr_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcw4r34-1teeavsj3y4nr"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3338937497175105 48.85092526208043)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

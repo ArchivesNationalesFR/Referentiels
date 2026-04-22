@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzajaetx-rdcilsalifjy">
       <rdfs:label xml:lang="fr">rue Frédéric Mistral (Paris, France)</rdfs:label>
@@ -151,11 +158,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzajaetx-rdcilsalifjy_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzajaetx-rdcilsalifjy"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.28558437100026 48.83888723999237, 2.2854784594469857 48.83880897269958, 2.2854417732805508 48.838943149416785, 2.285462981093578 48.838958891898066, 2.285635904051702 48.83908724879919, 2.285750300818325 48.83917216168726, 2.2857483597505146 48.839202252969095, 2.285915519595028 48.839104159986945, 2.28587435270755 48.83910232953493, 2.285757715840914 48.839015338427096, 2.2856773962501737 48.83895598412868, 2.285632472513971 48.838922785346526, 2.2856052452806996 48.83890266567694, 2.2855925394356564 48.83889327589708, 2.28558437100026 48.83888723999237))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzajaetx-rdcilsalifjy_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzajaetx-rdcilsalifjy"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.2856500019626425 48.83901379394775)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

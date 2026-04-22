@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzc33hq5-1rcp9kwm515cs">
       <rdfs:label xml:lang="fr">place Monge (Paris, France)</rdfs:label>
@@ -128,11 +135,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzc33hq5-1rcp9kwm515cs_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzc33hq5-1rcp9kwm515cs"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3520893599900834 48.84330563832359, 2.3519903195410548 48.84261630375205, 2.351962612224095 48.842634238942196, 2.3517726852282563 48.84262483957248, 2.351583168192874 48.842615459210734, 2.35155769797868 48.842596604518974, 2.3514850665076796 48.843229416714976, 2.3514950764225793 48.843282714109215, 2.3515242672625303 48.84326331302242, 2.3516667555861694 48.843269967149844, 2.351868020271627 48.84327936424105, 2.352059829617715 48.843287152985916, 2.3520893599900834 48.84330563832359))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzc33hq5-1rcp9kwm515cs_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzc33hq5-1rcp9kwm515cs"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.351779468907535 48.84296738557858)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

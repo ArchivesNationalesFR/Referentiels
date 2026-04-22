@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbs5620--ol07crejk9du">
       <rdfs:label xml:lang="fr">rue Lippmann (Paris, France)</rdfs:label>
@@ -153,11 +160,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbs5620--ol07crejk9du_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbs5620--ol07crejk9du"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.412768559134452 48.84885305937551, 2.412893283599914 48.848780717839155, 2.4129887393847747 48.84881543084397, 2.4129925178190446 48.848723160569044, 2.413005255522557 48.848412090354266, 2.4129694143562608 48.84850032803374, 2.412685635083288 48.848661272907755, 2.4123602485007067 48.84884581409641, 2.41209403296314 48.84899836830693, 2.412651570681576 48.84901304103276, 2.4126101730536202 48.84894492413601, 2.412768559134452 48.84885305937551))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbs5620--ol07crejk9du_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbs5620--ol07crejk9du"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.412644249944786 48.848800565766375)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

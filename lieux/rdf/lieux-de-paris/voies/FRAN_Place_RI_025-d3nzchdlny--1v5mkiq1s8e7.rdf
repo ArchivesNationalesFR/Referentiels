@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzchdlny--1v5mkiq1s8e7">
       <rdfs:label xml:lang="fr">rue Petitot (Paris, France)</rdfs:label>
@@ -156,11 +163,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzchdlny--1v5mkiq1s8e7_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzchdlny--1v5mkiq1s8e7"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.392875546852626 48.87665496791432, 2.393083179753808 48.87657284342332, 2.39311191451468 48.87659284453655, 2.3930984483710445 48.876375623730254, 2.392915657260619 48.87632167769532, 2.3929049215650444 48.87636717528739, 2.39259783946856 48.87648671522969, 2.3925689162607857 48.87649797469078, 2.392559992854641 48.8764972432216, 2.392559995474676 48.87649923975049, 2.3925513920903465 48.87650029507726, 2.3924603910615474 48.87648678127712, 2.3927947162704877 48.87675926797101, 2.392875546852626 48.87665496791432))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzchdlny--1v5mkiq1s8e7_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzchdlny--1v5mkiq1s8e7"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3928444068817987 48.87652602790562)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

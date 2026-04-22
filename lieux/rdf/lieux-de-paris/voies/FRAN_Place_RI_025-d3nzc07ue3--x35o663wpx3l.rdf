@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzc07ue3--x35o663wpx3l">
       <rdfs:label xml:lang="fr">place Maurice de Fontenay (Paris, France)</rdfs:label>
@@ -156,11 +163,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzc07ue3--x35o663wpx3l_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzc07ue3--x35o663wpx3l"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.388911946418341 48.84523630109116, 2.3893018321043518 48.844906922941334, 2.3892535407172835 48.844907049650814, 2.3889899473426413 48.84490773982845, 2.3884685314515925 48.84490910297262, 2.3884048378811054 48.84490927022197, 2.3883949422380346 48.84490929517887, 2.38839520648721 48.84516625727884, 2.3889124095623577 48.845165310010174, 2.388911946418341 48.84523630109116))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzc07ue3--x35o663wpx3l_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzc07ue3--x35o663wpx3l"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3887797899617618 48.845030632940556)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

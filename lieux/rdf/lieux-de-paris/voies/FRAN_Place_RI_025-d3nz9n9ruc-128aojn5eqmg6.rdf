@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz9n9ruc-128aojn5eqmg6">
       <rdfs:label xml:lang="fr">rue du Conventionnel Chiappe (Paris, France)</rdfs:label>
@@ -159,11 +166,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz9n9ruc-128aojn5eqmg6_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz9n9ruc-128aojn5eqmg6"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3637089294297553 48.81854498240198, 2.363330960994566 48.81837723525691, 2.363364616103688 48.81844635919149, 2.3632547507178128 48.8186339237343, 2.363194436879707 48.81873689190323, 2.363096590874738 48.81890393345106, 2.363035551734136 48.81900813790071, 2.3629006786002975 48.81923838921076, 2.3627994077340078 48.81926492362403, 2.3632875831792965 48.81925091616046, 2.3632338425082504 48.81916733028603, 2.363439720808241 48.81881443576516, 2.3634453295162285 48.818804822466035, 2.3635224157696104 48.81867268750776, 2.3635585633736165 48.818610726417745, 2.363581610094872 48.818571222373514, 2.3637089294297553 48.81854498240198))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz9n9ruc-128aojn5eqmg6_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz9n9ruc-128aojn5eqmg6"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.363270555085347 48.81885687975305)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

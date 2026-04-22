@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz8fmcen--6n9p6w52690w">
       <rdfs:label xml:lang="fr">rue Albert Sorel (Paris, France)</rdfs:label>
@@ -173,11 +180,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8fmcen--6n9p6w52690w_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8fmcen--6n9p6w52690w"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3221107611948186 48.82297609166951, 2.322066567004483 48.822889111106726, 2.3218678199888574 48.82294273851985, 2.3219049833114394 48.82301241116741, 2.3220516253750567 48.823198117588994, 2.3221020529578107 48.82329732817394, 2.32216977926335 48.82343056772197, 2.3223009656342195 48.823688655535086, 2.3222403493191335 48.82376859339617, 2.32248584741169 48.8237142976149, 2.322442025147757 48.8236280532569, 2.322361875539513 48.82347031181675, 2.322180127942381 48.823112613398926, 2.3221107611948186 48.82297609166951))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8fmcen--6n9p6w52690w_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8fmcen--6n9p6w52690w"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3221867977037784 48.82331162143695)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

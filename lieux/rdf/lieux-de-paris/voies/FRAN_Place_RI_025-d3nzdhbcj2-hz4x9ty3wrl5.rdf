@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzdhbcj2-hz4x9ty3wrl5">
       <rdfs:label xml:lang="fr">rue Théophile Roussel (Paris, France)</rdfs:label>
@@ -167,11 +174,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdhbcj2-hz4x9ty3wrl5_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdhbcj2-hz4x9ty3wrl5"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">MULTIPOLYGON (((2.376937910110681 48.849892361307234, 2.3770034615761255 48.84977663467529, 2.3768918753247874 48.84977426207794, 2.3764417257218167 48.85004229966925, 2.3764365148142352 48.85003886036151, 2.376410284216553 48.850054483935764, 2.3763245018083112 48.85010557520544, 2.3763284750589753 48.850108581772545, 2.3762243407542947 48.8501711250135, 2.37613474374039 48.85022493658834, 2.3759900242881433 48.85031185363696, 2.3759304282127642 48.85028929817898, 2.3758969166755763 48.850514920593845, 2.3760802562240717 48.85040490370476, 2.376230639689931 48.85031466329081, 2.3763724876958374 48.85022954408468, 2.3764697966304427 48.85017115164212, 2.3766542378872484 48.85006259025199, 2.376937910110681 48.849892361307234)), ((2.3770034615761255 48.84977663467529, 2.377125487936929 48.84977922880003, 2.3772812632353704 48.849685423981114, 2.377415880412356 48.84960435973492, 2.377596770753453 48.849495431228775, 2.3776336986527626 48.84950133782414, 2.377534522516261 48.8493578074144, 2.3775291613435727 48.849389079763505, 2.377338540169413 48.84950300291475, 2.3771335283452784 48.84962552601275, 2.377066292563866 48.8496657080774, 2.3770034615761255 48.84977663467529)))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdhbcj2-hz4x9ty3wrl5_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdhbcj2-hz4x9ty3wrl5"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.37672727819597 48.849943566466465)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

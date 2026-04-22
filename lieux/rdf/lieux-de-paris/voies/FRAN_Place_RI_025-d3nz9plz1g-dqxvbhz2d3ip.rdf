@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz9plz1g-dqxvbhz2d3ip">
       <rdfs:label xml:lang="fr">rue Cretet (Paris, France)</rdfs:label>
@@ -148,11 +155,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz9plz1g-dqxvbhz2d3ip_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz9plz1g-dqxvbhz2d3ip"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.341279491039627 48.88175665855649, 2.341275831961346 48.881752498799976, 2.3413470836723933 48.88188511055571, 2.341578631988353 48.88193102161687, 2.3416927312169644 48.881953645807535, 2.342043545679607 48.88202320400784, 2.3420888590712945 48.881919504696675, 2.341919576653279 48.8818861803979, 2.3417484527301697 48.88185249319479, 2.3416004457616872 48.881823355789095, 2.3414550478238434 48.881794732578435, 2.341299026855843 48.881764017354094, 2.3412922613162053 48.881762784019344, 2.3412846686556557 48.88175999568546, 2.341279491039627 48.88175665855649))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz9plz1g-dqxvbhz2d3ip_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz9plz1g-dqxvbhz2d3ip"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.341690232454172 48.88189568425658)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

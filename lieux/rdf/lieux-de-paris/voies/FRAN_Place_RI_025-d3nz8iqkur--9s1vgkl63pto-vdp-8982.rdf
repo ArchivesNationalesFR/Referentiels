@@ -10,7 +10,7 @@
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xml:base="https://rdf.archives-nationales.culture.gouv.fr/"><!--$myName=FRAN_RI_025-d3nz8iqkur- -9s1vgkl63pto-vdp-8982-->
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/FRAN_RI_025-d3nz8iqkur--9s1vgkl63pto-vdp-8982">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="place/FRAN_RI_025-d3nz8iqkur--9s1vgkl63pto-vdp-8982"/>
@@ -43,6 +43,13 @@
          <rdf:Description>
             <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-07</dc:date>
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
          </rdf:Description>
       </skos:changeNote>
    </rico:Record>
@@ -124,11 +131,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8iqkur--9s1vgkl63pto-vdp-8982_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8iqkur--9s1vgkl63pto-vdp-8982"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3479937470498142 48.85105125436568, 2.348089086977353 48.85095805916607, 2.348017964931765 48.85096097586634, 2.3478174100522566 48.8507851819995, 2.3477810734031648 48.85081061917955, 2.3476847777143997 48.85072975381985, 2.3476782502659623 48.850733325550486, 2.347646154526928 48.85070477136981, 2.3475793107357434 48.850645304794334, 2.3476320356135827 48.850624696636885, 2.3474945676727463 48.8505055791197, 2.3475063291013116 48.8504788586243, 2.3473159132938415 48.850524974206465, 2.3473548944768337 48.85053244824997, 2.3474528329894984 48.85061721616824, 2.347462611220078 48.85062567937967, 2.3475766537036153 48.85069719396235, 2.347721287431779 48.850821134102524, 2.347725366653791 48.85081903206149, 2.3477859944064194 48.85086723709681, 2.34778118460611 48.85087000247967, 2.347910955382369 48.85098065789818, 2.3479937470498142 48.85105125436568))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8iqkur--9s1vgkl63pto-vdp-8982_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8iqkur--9s1vgkl63pto-vdp-8982"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.347703149630521 48.850754711321294)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

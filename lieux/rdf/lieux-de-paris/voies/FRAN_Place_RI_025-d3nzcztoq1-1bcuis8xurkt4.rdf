@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzcztoq1-1bcuis8xurkt4">
       <rdfs:label xml:lang="fr">rue Rude (Paris, France)</rdfs:label>
@@ -164,11 +171,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcztoq1-1bcuis8xurkt4_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcztoq1-1bcuis8xurkt4"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.2915630284677877 48.87443968437054, 2.2914851766689166 48.87431359082636, 2.291483411120411 48.87431408760553, 2.2914604516954604 48.87427678277275, 2.2913915349757814 48.874164802359765, 2.2913892842276957 48.87416538709899, 2.291322194710683 48.87405842049429, 2.291324791614555 48.874057746072644, 2.2913054620338884 48.87402833823614, 2.291257528862135 48.873955414507385, 2.291272966199314 48.87393079376036, 2.2911034433885464 48.87394580454624, 2.291164991749843 48.87404353370033, 2.2911855252690043 48.87407613775864, 2.2912622641006184 48.87419647274492, 2.29132857825656 48.8743023106008, 2.291402234749321 48.87441986444004, 2.291476125075365 48.87453779283073, 2.291463676781908 48.874563777598944, 2.291637900386046 48.874508524257344, 2.2915987614328164 48.874498769504164, 2.291561506933701 48.87444018349432, 2.2915630284677877 48.87443968437054))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcztoq1-1bcuis8xurkt4_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcztoq1-1bcuis8xurkt4"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.291362078237094 48.874238531387185)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

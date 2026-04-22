@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzcej93u--iqkprocc07qy">
       <rdfs:label xml:lang="fr">avenue des Pavillons (Paris, France)</rdfs:label>
@@ -118,11 +125,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcej93u--iqkprocc07qy_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcej93u--iqkprocc07qy"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.288387601431625 48.88178045207298, 2.2883454221391917 48.88176232253825, 2.288041576427359 48.88195684396783, 2.287996825313202 48.88198549331335, 2.28778769219634 48.88211937833918, 2.2877335835841635 48.88215401905698, 2.2876555416919797 48.88220185361389, 2.287564756649684 48.88225946002489, 2.2873884296269655 48.882371343021894, 2.2874225528676932 48.88239305825404, 2.2876252436007767 48.8822640576233, 2.2878370231746223 48.882129271311754, 2.2879625585473877 48.88204937446077, 2.288059123969976 48.881987914282625, 2.2882229627673554 48.881884435877694, 2.288387601431625 48.88178045207298))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcej93u--iqkprocc07qy_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcej93u--iqkprocc07qy"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.287888143634969 48.882075652798946)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

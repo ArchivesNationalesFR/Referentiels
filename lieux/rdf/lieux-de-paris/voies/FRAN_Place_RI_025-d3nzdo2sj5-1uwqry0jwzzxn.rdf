@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzdo2sj5-1uwqry0jwzzxn">
       <rdfs:label xml:lang="fr">rue de Ventadour (Paris, France)</rdfs:label>
@@ -157,11 +164,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdo2sj5-1uwqry0jwzzxn_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdo2sj5-1uwqry0jwzzxn"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3344045237581246 48.866917466296904)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdo2sj5-1uwqry0jwzzxn_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdo2sj5-1uwqry0jwzzxn"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3345406555447217 48.86702348421023, 2.334473127133269 48.86689655747967, 2.33436415192263 48.86668676840945, 2.334337373473565 48.866691979571804, 2.334276374413785 48.866577846207186, 2.3341858097407697 48.86677127711917, 2.3342517257864177 48.866770753440946, 2.334380100126152 48.8670080966792, 2.3343925618746417 48.86700505604976, 2.334523413465354 48.86725143507484, 2.3346234955265106 48.867228239821685, 2.334571893557111 48.8671312581441, 2.3345172445721487 48.86702854865587, 2.3345406555447217 48.86702348421023))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

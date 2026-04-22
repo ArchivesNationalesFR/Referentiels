@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzcgq0d0-1pfbfc6d0ve13">
       <rdfs:label xml:lang="fr">rue du Petit Moine (Paris, France)</rdfs:label>
@@ -136,11 +143,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcgq0d0-1pfbfc6d0ve13_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcgq0d0-1pfbfc6d0ve13"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.351531572121447 48.83813943679989)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcgq0d0-1pfbfc6d0ve13_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcgq0d0-1pfbfc6d0ve13"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.351749076147412 48.838263407458015, 2.351838396420401 48.83814425960923, 2.3517980746197136 48.83815533535342, 2.3516942854229894 48.838130843445036, 2.3515303598903725 48.83809074881594, 2.35132185679327 48.83804068647943, 2.3513078196507404 48.83801823322438, 2.351226794999116 48.83813404317323, 2.351264895231052 48.8381231480367, 2.351502363410117 48.83818061729307, 2.3517324897470666 48.83823568544751, 2.351749076147412 48.838263407458015))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

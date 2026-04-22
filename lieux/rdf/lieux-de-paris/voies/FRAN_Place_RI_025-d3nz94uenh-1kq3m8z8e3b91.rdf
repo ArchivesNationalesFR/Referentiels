@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz94uenh-1kq3m8z8e3b91">
       <rdfs:label xml:lang="fr">voie CB/20 (Paris, France)</rdfs:label>
@@ -117,11 +124,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz94uenh-1kq3m8z8e3b91_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz94uenh-1kq3m8z8e3b91"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.4082972638013884 48.85194164904019)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz94uenh-1kq3m8z8e3b91_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz94uenh-1kq3m8z8e3b91"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.4084784707769344 48.85195230036599, 2.40810887333092 48.851913314166964, 2.4081039850143156 48.85192998641724, 2.4081774164553926 48.85193758042269, 2.408288035981674 48.85194902134763, 2.4083573471109516 48.85195618925922, 2.4084649094536466 48.85196731362084, 2.40849451229502 48.85197007078137, 2.4084961497610684 48.85196232198355, 2.4084784707769344 48.85195230036599))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

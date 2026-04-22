@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzb85mx0-148mvgg207q6x">
       <rdfs:label xml:lang="fr">rue Gomboust (Paris, France)</rdfs:label>
@@ -148,11 +155,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzb85mx0-148mvgg207q6x_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzb85mx0-148mvgg207q6x"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.333067321338569 48.8673387317033, 2.333381537510084 48.867270508712096, 2.3334199073095645 48.86728035349085, 2.333385288484084 48.86717851498728, 2.333372762617586 48.8671953996619, 2.3333556332185394 48.867199604918945, 2.333213531355272 48.867234486735796, 2.3331049016839858 48.86723518375318, 2.3329794209766614 48.86726231202404, 2.3329388908727617 48.86727107418914, 2.332857163522979 48.86728874315134, 2.3325682179681992 48.86735120959107, 2.3326150717463814 48.86743483827462, 2.3326862753839457 48.86742004176719, 2.33283901868424 48.867388301048564, 2.33291322037864 48.86737219008839, 2.333067321338569 48.8673387317033))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzb85mx0-148mvgg207q6x_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzb85mx0-148mvgg207q6x"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3329805980931724 48.867312123228565)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbwot2x-1ugqi7mbnkhvu">
       <rdfs:label xml:lang="fr">place Marcel Achard (Paris, France)</rdfs:label>
@@ -128,11 +135,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbwot2x-1ugqi7mbnkhvu_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbwot2x-1ugqi7mbnkhvu"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.376518531513094 48.87382847342653, 2.376237585534031 48.87375481475936, 2.3762196042506347 48.87378381994303, 2.376205687999834 48.8738062676716, 2.376195540680615 48.87382263484988, 2.376186684863955 48.873836920501795, 2.376178554748423 48.87385003540332, 2.376176273369393 48.87385371528417, 2.376069602789929 48.87402578396725, 2.376446909114237 48.87404371498972, 2.3764737477743814 48.874001653507754, 2.376483731002101 48.873986005821266, 2.376498867654465 48.87396228466766, 2.3765345625562886 48.873906343997504, 2.3765576329065516 48.87387018768365, 2.3765742826106426 48.87384409385911, 2.376518531513094 48.87382847342653))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbwot2x-1ugqi7mbnkhvu_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbwot2x-1ugqi7mbnkhvu"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3763234616255375 48.873915385848655)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

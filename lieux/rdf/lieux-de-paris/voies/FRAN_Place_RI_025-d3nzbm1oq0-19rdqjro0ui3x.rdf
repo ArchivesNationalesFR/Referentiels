@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbm1oq0-19rdqjro0ui3x">
       <rdfs:label xml:lang="fr">rue de Julienne (Paris, France)</rdfs:label>
@@ -130,11 +137,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbm1oq0-19rdqjro0ui3x_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbm1oq0-19rdqjro0ui3x"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.347822760916507 48.83497198279963, 2.3478603987567777 48.83497134980358, 2.3479129861741965 48.83499410454711, 2.3478434260324343 48.834845281737195, 2.3478031120534744 48.8348824352069, 2.3471474217342694 48.83490349633601, 2.346607096728209 48.834920037945565, 2.3469892273750723 48.83504231379193, 2.3470020909537204 48.8349977177546, 2.3471936198552266 48.83499158446986, 2.3472237239046634 48.83499072798401, 2.347381224709609 48.83498624339722, 2.3475374847473924 48.83498107550942, 2.3476942634112508 48.83497637521978, 2.347822760916507 48.83497198279963))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbm1oq0-19rdqjro0ui3x_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbm1oq0-19rdqjro0ui3x"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3473042228043193 48.834943422096146)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

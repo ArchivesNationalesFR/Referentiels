@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz8ghrnv--1aufwxaamreax">
       <rdfs:label xml:lang="fr">hameau d'Alleray (Paris, France)</rdfs:label>
@@ -107,11 +114,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8ghrnv--1aufwxaamreax_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8ghrnv--1aufwxaamreax"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.302092125317002 48.83755750869863, 2.302071444242127 48.83754554600793, 2.302042617421349 48.837569275903846, 2.3020820330214025 48.8375921565557, 2.3025711340630592 48.83787607719117, 2.3026022736176883 48.837852598092724, 2.302497563872059 48.83779203008188, 2.302390597910056 48.83773015731925, 2.302283401024077 48.837668150002116, 2.3021818312951203 48.83760939785953, 2.302092125317002 48.83755750869863))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8ghrnv--1aufwxaamreax_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8ghrnv--1aufwxaamreax"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3023230472930454 48.837711548345005)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzd04ivw--14c1zfz00m8el">
       <rdfs:label xml:lang="fr">avenue Ruysdaël (Paris, France)</rdfs:label>
@@ -155,11 +162,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzd04ivw--14c1zfz00m8el_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzd04ivw--14c1zfz00m8el"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.31031377395521 48.87769979015497, 2.3100593134882197 48.87764075635509, 2.310058215077451 48.87764256668758, 2.3099453532363277 48.87784975679452, 2.3098521650975585 48.87802026557373, 2.3097717968982208 48.87816189939193, 2.3097890660845213 48.87816608465047, 2.3100056936496647 48.87821858308454, 2.31002402844265 48.87822302626516, 2.310102419382516 48.878081464532556, 2.310152564378292 48.877990910493644, 2.3101644395117527 48.877969465863195, 2.3101671928535854 48.87796449130334, 2.3103129101499857 48.877701388698156, 2.31031377395521 48.87769979015497))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzd04ivw--14c1zfz00m8el_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzd04ivw--14c1zfz00m8el"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3100430044008253 48.87793118403623)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

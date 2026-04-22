@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz9f0f5o-1pc9w68kv93ml">
       <rdfs:label xml:lang="fr">rue Charles Le Goffic (Paris, France)</rdfs:label>
@@ -168,11 +175,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz9f0f5o-1pc9w68kv93ml_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz9f0f5o-1pc9w68kv93ml"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3199945718524364 48.8235082731442, 2.320053084093401 48.82342395702741, 2.319810454290188 48.82348778139916, 2.319854676219255 48.82357572796126, 2.3199495237076206 48.82376435668555, 2.3200475794977002 48.82395936306124, 2.3200988507180043 48.8240613286441, 2.3201515825997947 48.82416619580526, 2.3200911226938787 48.82424710838221, 2.3203370591098764 48.824191823887965, 2.3202303564735955 48.8239788628798, 2.3201932053434597 48.82390471721278, 2.320111643208907 48.82374193150399, 2.3201080376545744 48.823734734845864, 2.3199945718524364 48.8235082731442))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz9f0f5o-1pc9w68kv93ml_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz9f0f5o-1pc9w68kv93ml"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3200732172869527 48.82383783385161)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

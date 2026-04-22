@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzaiupf2--1x02d7atuo9tb">
       <rdfs:label xml:lang="fr">rue François Bloch-Lainé (Paris, France)</rdfs:label>
@@ -139,11 +146,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzaiupf2--1x02d7atuo9tb_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzaiupf2--1x02d7atuo9tb"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.369049862344831 48.84039850831611, 2.368989898690017 48.840378909687, 2.3688450526101414 48.8405523718714, 2.368865288842877 48.84055876518425, 2.3689526811067774 48.84058637349414, 2.3691335955667263 48.840643527096674, 2.369321835905862 48.84070299443111, 2.369530525525332 48.84054955794465, 2.3694544349855757 48.84052578245616, 2.3693402551798344 48.840490106308, 2.369232280077829 48.840456369414994, 2.3691720935025318 48.84043727874273, 2.369049862344831 48.84039850831611))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzaiupf2--1x02d7atuo9tb_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzaiupf2--1x02d7atuo9tb"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3691735605617636 48.84054451458337)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

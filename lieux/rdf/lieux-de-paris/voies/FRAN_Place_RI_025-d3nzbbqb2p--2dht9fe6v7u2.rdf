@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbbqb2p--2dht9fe6v7u2">
       <rdfs:label xml:lang="fr">voie H/15 (Paris, France)</rdfs:label>
@@ -131,11 +138,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbbqb2p--2dht9fe6v7u2_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbbqb2p--2dht9fe6v7u2"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.2996405612219317 48.849072683533464, 2.299434916995424 48.84893297235833, 2.2993979282899626 48.848943607474425, 2.2993960615417897 48.84894095691423, 2.2993282627914784 48.84884465635497, 2.2992445466209217 48.84887074221731, 2.2993137997463515 48.8489667050854, 2.299276339354677 48.8489785659306, 2.299524825403907 48.84914847787233, 2.299735664624508 48.849291601766666, 2.2998525503864657 48.84921633109623, 2.2998114530444442 48.84918882012794, 2.2997130236733394 48.84912186571702, 2.2996405612219317 48.849072683533464))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbbqb2p--2dht9fe6v7u2_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbbqb2p--2dht9fe6v7u2"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.2995414129920118 48.84908009850748)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzdt1xfb-1741ctsscflpa">
       <rdfs:label xml:lang="fr">voie Y/12 (Paris, France)</rdfs:label>
@@ -111,11 +118,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdt1xfb-1741ctsscflpa_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdt1xfb-1741ctsscflpa"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.4047487870472235 48.842346229878665)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdt1xfb-1741ctsscflpa_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdt1xfb-1741ctsscflpa"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.4049528982730237 48.84234174707149, 2.4049400641217824 48.842296661371485, 2.4047417873863255 48.84232420346256, 2.4046983907784703 48.842330231759455, 2.4046485499687553 48.84233715520811, 2.404541609381258 48.84235201006588, 2.4045557343889516 48.842395232468036, 2.404693119340322 48.84237673111378, 2.4047797391998436 48.84236506576571, 2.4049528982730237 48.84234174707149))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

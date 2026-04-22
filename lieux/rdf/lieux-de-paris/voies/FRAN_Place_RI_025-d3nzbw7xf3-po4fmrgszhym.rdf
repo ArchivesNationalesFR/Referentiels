@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbw7xf3-po4fmrgszhym">
       <rdfs:label xml:lang="fr">rue de la Manutention (Paris, France)</rdfs:label>
@@ -162,11 +169,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbw7xf3-po4fmrgszhym_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbw7xf3-po4fmrgszhym"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.2963998775142747 48.863477094635535, 2.2961671053734007 48.863391869519894, 2.2961950787648124 48.86343307321967, 2.296122671357117 48.86358026416251, 2.2960624576951796 48.86370266601137, 2.29598874639999 48.86385278105598, 2.2958971880695884 48.86403853303311, 2.2958063803843887 48.86422275683644, 2.29573044518475 48.86437956413102, 2.295720285517823 48.864399943880564, 2.295584955676876 48.864671404135116, 2.295756125886471 48.86468254266274, 2.2957681817879263 48.86465772228989, 2.295884059756174 48.86441915444715, 2.296008089173311 48.86416619262624, 2.2960306493102993 48.86412017785563, 2.296031201837198 48.86411903443372, 2.2962471440730545 48.86367194483499, 2.2963289371098905 48.86350259594488, 2.2963998775142747 48.863477094635535))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbw7xf3-po4fmrgszhym_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbw7xf3-po4fmrgszhym"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.295975507142264 48.86405426491809)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

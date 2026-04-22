@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz8hiyi4--15q7ti4slrual">
       <rdfs:label xml:lang="fr">rue de l'Amiral Cloué (Paris, France)</rdfs:label>
@@ -160,11 +167,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8hiyi4--15q7ti4slrual_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8hiyi4--15q7ti4slrual"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.2742513022960287 48.84737401584918, 2.2744327201721215 48.847299334712, 2.274444818971027 48.847300651010706, 2.274501267844036 48.84730678885128, 2.274513368009012 48.8473081051513, 2.2742340951654167 48.847023744022096, 2.274220025290763 48.84706777979613, 2.2741889479446287 48.847080775077714, 2.2738660813176694 48.847215793928484, 2.2738350051575145 48.84722878912468, 2.273767763420497 48.84722004384403, 2.2740508307716465 48.84749642018851, 2.2740637096392495 48.84745240330468, 2.274064097378448 48.84745107909206, 2.2742513022960287 48.84737401584918))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8hiyi4--15q7ti4slrual_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8hiyi4--15q7ti4slrual"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.274141013305797 48.847260568972914)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

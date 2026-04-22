@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzai49ia--idmio2qpi8fm">
       <rdfs:label xml:lang="fr">rue Foucault (Paris, France)</rdfs:label>
@@ -159,11 +166,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzai49ia--idmio2qpi8fm_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzai49ia--idmio2qpi8fm"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.2948993719316197 48.86332479482372)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzai49ia--idmio2qpi8fm_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzai49ia--idmio2qpi8fm"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.2952039409019585 48.8631169632953, 2.2952475049837546 48.863108869364744, 2.2950384295233603 48.8630430114818, 2.295052005233848 48.86308054764078, 2.2950178466763185 48.86311371776339, 2.2950147602442157 48.86311233346721, 2.2946076070397705 48.86351887569487, 2.294566221916381 48.86352195306407, 2.2947302110924235 48.863621110730435, 2.294724831520282 48.863594781102904, 2.2948906706858017 48.86342939002271, 2.294918159602422 48.863401975170156, 2.2949643009533185 48.863355958293596, 2.295003088474556 48.8633172754568, 2.2950487336271235 48.86327175296332, 2.2952039409019585 48.8631169632953))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

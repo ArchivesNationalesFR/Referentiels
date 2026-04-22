@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzce9zmw-1t3vp2p6yv5rj">
       <rdfs:label xml:lang="fr">place Paul Tortelier (Paris, France)</rdfs:label>
@@ -133,11 +140,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzce9zmw-1t3vp2p6yv5rj_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzce9zmw-1t3vp2p6yv5rj"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.303856079713109 48.89194630308999, 2.3036743616074093 48.89184042186869, 2.3034752247305925 48.891988217470754, 2.30347157208931 48.89199210739786, 2.3034684405805064 48.89199619101348, 2.303465855172888 48.8920004369864, 2.3034638353803687 48.892004813953754, 2.3034623939098977 48.89200928961368, 2.303461544844353 48.892013830773, 2.303461291368602 48.8920184032759, 2.3034616380311936 48.89202297297428, 2.303462581198188 48.89202750567272, 2.3034641117684758 48.89203196804308, 2.303466222004824 48.89203632676517, 2.30346889324769 48.8920405493548, 2.303472108177535 48.89204460513399, 2.303475839952177 48.89204846157079, 2.303480063009076 48.89205209243601, 2.303612265083236 48.89212919890061, 2.30377556542637 48.892007497352424, 2.303793639467833 48.89199402619568, 2.3038381270376678 48.89195967603616, 2.303856079713109 48.89194630308999))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzce9zmw-1t3vp2p6yv5rj_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzce9zmw-1t3vp2p6yv5rj"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3036457218694197 48.89198425041366)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

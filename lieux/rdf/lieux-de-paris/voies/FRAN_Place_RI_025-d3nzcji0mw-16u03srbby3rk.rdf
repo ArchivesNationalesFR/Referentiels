@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzcji0mw-16u03srbby3rk">
       <rdfs:label xml:lang="fr">rue Pierre Villey (Paris, France)</rdfs:label>
@@ -168,11 +175,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcji0mw-16u03srbby3rk_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcji0mw-16u03srbby3rk"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3051310082429595 48.859293609190246, 2.3048895248675483 48.859241851031506, 2.3049396311480383 48.85930401400063, 2.3048391367814203 48.85948940217449, 2.3048194081582762 48.85952579502068, 2.3048081310102697 48.85954660080256, 2.3047899639795477 48.85957954919716, 2.3046186049790065 48.859890350344536, 2.304790065123813 48.859930095179465, 2.304828869273168 48.85985765557149, 2.3051310082429595 48.859293609190246))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcji0mw-16u03srbby3rk_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcji0mw-16u03srbby3rk"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3048762182763265 48.859589962310686)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

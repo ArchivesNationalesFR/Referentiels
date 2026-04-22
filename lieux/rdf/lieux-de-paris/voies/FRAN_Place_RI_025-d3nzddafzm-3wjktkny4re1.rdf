@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzddafzm-3wjktkny4re1">
       <rdfs:label xml:lang="fr">passage Stendhal (Paris, France)</rdfs:label>
@@ -188,11 +195,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzddafzm-3wjktkny4re1_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzddafzm-3wjktkny4re1"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.4008644157664603 48.861671211846314)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzddafzm-3wjktkny4re1_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzddafzm-3wjktkny4re1"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.4009353864114202 48.861632260722644, 2.400812698283355 48.86158231666016, 2.4005630349463702 48.86148132926125, 2.4005500614199415 48.86149613671, 2.4007469667380184 48.8615750518046, 2.400764268223625 48.86162966289086, 2.400657964160823 48.86173469899793, 2.4006129611302405 48.86176943645416, 2.4005994130183645 48.86179046357841, 2.400651006600249 48.86180654411229, 2.4006768145375332 48.86176817610012, 2.400834741463037 48.86161444812272, 2.4013595898229902 48.8618251537933, 2.4013751043299503 48.86181126191205, 2.4009353864114202 48.861632260722644))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

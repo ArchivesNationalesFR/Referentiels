@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz8t8svw-1vm8601q4fpis">
       <rdfs:label xml:lang="fr">rue de Bellièvre (Paris, France)</rdfs:label>
@@ -131,11 +138,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8t8svw-1vm8601q4fpis_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8t8svw-1vm8601q4fpis"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3726070226627365 48.8383018568863, 2.3727520272417655 48.8381947215323, 2.372727971867204 48.83819664683861, 2.3726570617301803 48.83815296968319, 2.3726260218692565 48.838128797462076, 2.3724861282719623 48.83801985215464, 2.3724671232625067 48.838005052343014, 2.372408210542789 48.83795917157184, 2.372103627729399 48.83772196842459, 2.3717685134346804 48.83746098496884, 2.371777354046021 48.8374524091895, 2.371630649973707 48.837337859959085, 2.3715988384342293 48.837313021462315, 2.371437172231981 48.837186788864095, 2.3714358677779113 48.837163453378665, 2.37132671257701 48.83725942297254, 2.371533009572273 48.83741985382814, 2.372609714822626 48.838257150127625, 2.3726070226627365 48.8383018568863))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8t8svw-1vm8601q4fpis_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8t8svw-1vm8601q4fpis"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.37201696312653 48.83772296827565)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

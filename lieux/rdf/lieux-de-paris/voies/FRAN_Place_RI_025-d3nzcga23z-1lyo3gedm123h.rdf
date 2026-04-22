@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzcga23z-1lyo3gedm123h">
       <rdfs:label xml:lang="fr">rue Petiet (Paris, France)</rdfs:label>
@@ -166,11 +173,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcga23z-1lyo3gedm123h_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcga23z-1lyo3gedm123h"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3274710064759083 48.894119012659004, 2.3276127759135665 48.89409801006644, 2.3276351166897205 48.89410805683475, 2.3276094858105894 48.89403150194829, 2.32759378981329 48.894044813728726, 2.3274697840733154 48.8940636048019, 2.327379597283696 48.89407727070661, 2.327250844461127 48.89408765589774, 2.327110249345893 48.89410822759031, 2.3270748741963305 48.89409951581958, 2.3271557578686437 48.894189169650346, 2.327158020873886 48.894184927668675, 2.3271670826355235 48.89416794450762, 2.32716934563892 48.89416370252565, 2.3272831246140155 48.894146847213705, 2.3273250402952006 48.89414063722384, 2.3273283678041894 48.894140144200435, 2.3274710064759083 48.894119012659004))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcga23z-1lyo3gedm123h_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcga23z-1lyo3gedm123h"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.327356071281323 48.89410628763415)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz90kcyb--14l9p3od8bit0">
       <rdfs:label xml:lang="fr">rue Brisemiche (Paris, France)</rdfs:label>
@@ -162,11 +169,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz90kcyb--14l9p3od8bit0_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz90kcyb--14l9p3od8bit0"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3520025807935747 48.85961850287426, 2.3518904771511715 48.85947968926193, 2.351887130391563 48.859480941016876, 2.351889362314364 48.85948329680782, 2.351837049135163 48.85950791734406, 2.351760049425488 48.8594134337674, 2.351721849731986 48.859366559617975, 2.351500965632338 48.85909552211772, 2.3515090483054144 48.85906901353234, 2.3513548309320176 48.85916479479965, 2.3514123289928945 48.85918308173838, 2.351837139133238 48.85970085062571, 2.3518327219954065 48.859743876723364, 2.352105880231294 48.85963585122888, 2.3520712747918493 48.85963003934156, 2.3520371862177956 48.859624314781534, 2.3520025807935747 48.85961850287426))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz90kcyb--14l9p3od8bit0_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz90kcyb--14l9p3od8bit0"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3517150998067105 48.85943487192426)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

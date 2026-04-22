@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz8jffn3-1g9wgwkykfuvp">
       <rdfs:label xml:lang="fr">place d'Anvers (Paris, France)</rdfs:label>
@@ -136,11 +143,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8jffn3-1g9wgwkykfuvp_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8jffn3-1g9wgwkykfuvp"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.344662331658913 48.882640491371326, 2.344730201298734 48.88248824282681, 2.3447790949075076 48.88237856272711, 2.344828862463494 48.88226692504003, 2.3448655253648973 48.88218468039652, 2.3449150722923386 48.8820735333828, 2.344972207456143 48.88194536304565, 2.3450397048364646 48.88179394588283, 2.3443524248698484 48.88166677507429, 2.3442735115091575 48.881845227105714, 2.3442776779262404 48.881845934316495, 2.344242736228493 48.881924414642484, 2.344240618681404 48.881923972264346, 2.3439587963214694 48.88254928904801, 2.3439208420071327 48.882631080250974, 2.3440001628033382 48.882629180233096, 2.3440539188112473 48.88264014352432, 2.3441195018427234 48.882653350661556, 2.3441246426970697 48.882642196545994, 2.344269945348317 48.88266969988028, 2.344430903445331 48.88270189063635, 2.344612108683015 48.88275315349769, 2.344662331658913 48.882640491371326))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8jffn3-1g9wgwkykfuvp_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8jffn3-1g9wgwkykfuvp"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.344485376048922 48.882204245971366)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

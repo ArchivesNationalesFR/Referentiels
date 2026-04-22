@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbqwj25-5ayg62ath17z">
       <rdfs:label xml:lang="fr">rue Léopold Robert (Paris, France)</rdfs:label>
@@ -167,11 +174,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbqwj25-5ayg62ath17z_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbqwj25-5ayg62ath17z"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3307100808659875 48.84081811701695, 2.33056955571008 48.84073654964738, 2.330369659246876 48.84062051972351, 2.330315525316328 48.84076493187838, 2.3303577885199434 48.84075672342447, 2.3305313553514346 48.84085764145193, 2.3306593406638267 48.840932056185416, 2.3307924669206654 48.84100946024702, 2.330979920661937 48.84111730124896, 2.3311146830250014 48.841279842633526, 2.33110149209838 48.841306190436086, 2.331302126470535 48.84124014842312, 2.331259594200469 48.84123150429176, 2.331111725796145 48.841050986109124, 2.330978820676405 48.8409733992757, 2.330846459410155 48.84089667602239, 2.3307100808659875 48.84081811701695))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbqwj25-5ayg62ath17z_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbqwj25-5ayg62ath17z"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.330808495429093 48.84095865957507)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

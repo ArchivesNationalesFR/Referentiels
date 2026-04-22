@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzd3m5r7-w74wtv5on5a">
       <rdfs:label xml:lang="fr">rue Saint-Jean-Baptiste de La Salle (Paris, France)</rdfs:label>
@@ -153,11 +160,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzd3m5r7-w74wtv5on5a_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzd3m5r7-w74wtv5on5a"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3207249296666177 48.84655665770568, 2.320642389121341 48.84651343604318, 2.3205329427552552 48.84662803270911, 2.3204731816161757 48.846690605475665, 2.320469440411678 48.846694522533184, 2.3203388307746144 48.84683127689962, 2.3202485728135924 48.84692578171663, 2.3202036613320387 48.846972804197094, 2.3200710829314573 48.84711162008753, 2.319960091487727 48.84722277004031, 2.3197021869148164 48.84749023725494, 2.319601822512506 48.84759432253143, 2.3194934869640718 48.84770667427606, 2.319430243127939 48.847772262010665, 2.319393253003171 48.847779840058045, 2.319531405119179 48.847834966209874, 2.319634307593927 48.84772847166584, 2.320219793651052 48.84712254249548, 2.3202591791067433 48.847081404620724, 2.3203052426644164 48.847033294145426, 2.3203285624569054 48.84700893790147, 2.3203741630999466 48.84696130952355, 2.320378195705912 48.84695709733569, 2.3204074959520753 48.84692649390324, 2.3205255945453676 48.84680314356116, 2.320499945633 48.84679116767803, 2.3205838066902986 48.846703755580485, 2.3206316669814626 48.84665386813765, 2.3207249296666177 48.84655665770568))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzd3m5r7-w74wtv5on5a_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzd3m5r7-w74wtv5on5a"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3200592187085576 48.84720124672007)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzd0hu2o--8ed6slqprrph">
       <rdfs:label xml:lang="fr">villa du Sahel (Paris, France)</rdfs:label>
@@ -119,11 +126,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzd0hu2o--8ed6slqprrph_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzd0hu2o--8ed6slqprrph"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.4064450078601953 48.8409606906928, 2.4064844972707746 48.84080242496505, 2.406427794590418 48.84080688953925, 2.40640457839699 48.84089999739951, 2.4063870244434162 48.840970401149356, 2.4063648603137 48.84105929171976, 2.406342423415615 48.84114927544529, 2.406397003435365 48.84115308617059, 2.4064225361909033 48.84105075251214, 2.4064450078601953 48.8409606906928))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzd0hu2o--8ed6slqprrph_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzd0hu2o--8ed6slqprrph"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.406413047926411 48.84097788754505)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

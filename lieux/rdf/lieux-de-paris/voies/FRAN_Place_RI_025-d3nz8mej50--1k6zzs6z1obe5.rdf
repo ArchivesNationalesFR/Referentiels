@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz8mej50--1k6zzs6z1obe5">
       <rdfs:label xml:lang="fr">rue Auguste Mie (Paris, France)</rdfs:label>
@@ -160,11 +167,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8mej50--1k6zzs6z1obe5_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8mej50--1k6zzs6z1obe5"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.323654363238827 48.836990344865534, 2.3234950888426673 48.836910594615034, 2.323444588905183 48.836885228264734, 2.3234339253543017 48.83686139310802, 2.323379677095734 48.83699390878403, 2.3234138708622263 48.83698375225519, 2.323799622761285 48.83717533274769, 2.3237951315273957 48.837203214795075, 2.323988446119774 48.83713905552243, 2.3239471116223394 48.83713704745433, 2.323933331693957 48.837130141556685, 2.323912715939626 48.83711981089358, 2.32382321417923 48.83707495886056, 2.323784152630041 48.83705538450537, 2.323758958991369 48.83704275882488, 2.323654363238827 48.836990344865534))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8mej50--1k6zzs6z1obe5_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8mej50--1k6zzs6z1obe5"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.323654293427828 48.837045592849876)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

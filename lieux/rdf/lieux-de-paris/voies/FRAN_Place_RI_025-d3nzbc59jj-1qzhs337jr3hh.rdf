@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbc59jj-1qzhs337jr3hh">
       <rdfs:label xml:lang="fr">rue de l'Harmonie (Paris, France)</rdfs:label>
@@ -160,11 +167,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbc59jj-1qzhs337jr3hh_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbc59jj-1qzhs337jr3hh"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.306973457694525 48.83219898590737, 2.307022784880898 48.832180462185285, 2.307121511703439 48.83214338811822, 2.3072122755365987 48.8321093032361, 2.307241892535003 48.83209818312986, 2.307340762709299 48.83206106204429, 2.3073889436141517 48.832042973125155, 2.3074307188515735 48.83204919498229, 2.3073089149985795 48.83194746546888, 2.3072978754650655 48.83197541617519, 2.3071426244156785 48.83203332166327, 2.3071354838823654 48.83202548541185, 2.3067128417078475 48.832183711471146, 2.3066056206285284 48.83216516895563, 2.306769478050423 48.83234433089774, 2.306791524602421 48.832276073790695, 2.3069801313746745 48.83220545870749, 2.306973457694525 48.83219898590737))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbc59jj-1qzhs337jr3hh_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbc59jj-1qzhs337jr3hh"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3070027609282975 48.832134744511784)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

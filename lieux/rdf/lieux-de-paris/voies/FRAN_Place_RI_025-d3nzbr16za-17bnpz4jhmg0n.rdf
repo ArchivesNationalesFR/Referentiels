@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbr16za-17bnpz4jhmg0n">
       <rdfs:label xml:lang="fr">rue Leroi-Gourhan (Paris, France)</rdfs:label>
@@ -122,11 +129,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbr16za-17bnpz4jhmg0n_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbr16za-17bnpz4jhmg0n"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.294053350487212 48.851937427034024, 2.293936006197822 48.85185838952838, 2.2937329452491886 48.851990612130216, 2.293744029431101 48.85199802533313, 2.2937839700421527 48.85202473915771, 2.293800597019399 48.85203585895829, 2.293857125512447 48.852073667142086, 2.2938810780688934 48.852089686710855, 2.2939767277165 48.85215365786267, 2.2941788074520515 48.852021736659495, 2.2941695879938875 48.8520154973708, 2.2940839431003184 48.851957540957834, 2.294053350487212 48.851937427034024))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbr16za-17bnpz4jhmg0n_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbr16za-17bnpz4jhmg0n"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.2939560777779837 48.85200605913483)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

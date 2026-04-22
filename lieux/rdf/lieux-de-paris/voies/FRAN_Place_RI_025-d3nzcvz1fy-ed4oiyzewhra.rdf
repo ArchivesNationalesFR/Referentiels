@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzcvz1fy-ed4oiyzewhra">
       <rdfs:label xml:lang="fr">passage du Retrait (Paris, France)</rdfs:label>
@@ -133,11 +140,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcvz1fy-ed4oiyzewhra_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcvz1fy-ed4oiyzewhra"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">MULTIPOLYGON (((2.393870809846106 48.86916148193362, 2.3937611152714156 48.8691070416938, 2.3937497701301345 48.869115956918144, 2.3940930189696394 48.86928641245497, 2.3940955658292142 48.869287676325506, 2.3941063862723864 48.86927839418234, 2.3940536016748553 48.86925219818292, 2.393870809846106 48.86916148193362)), ((2.394530286072046 48.86948771050872, 2.3944658006285486 48.86945584634437, 2.394454911425908 48.86946576849845, 2.3944575299871578 48.86946708128794, 2.3945714379005802 48.86952415564895, 2.3946707175121618 48.86957390096819, 2.394680494864682 48.86956193347677, 2.394530286072046 48.86948771050872)))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcvz1fy-ed4oiyzewhra_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcvz1fy-ed4oiyzewhra"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3941893992318852 48.869326731027115)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

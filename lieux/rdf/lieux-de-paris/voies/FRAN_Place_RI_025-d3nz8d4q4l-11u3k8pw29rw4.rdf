@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz8d4q4l-11u3k8pw29rw4">
       <rdfs:label xml:lang="fr">rue de l'Abbé Patureau (Paris, France)</rdfs:label>
@@ -167,11 +174,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8d4q4l-11u3k8pw29rw4_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8d4q4l-11u3k8pw29rw4"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.341763803275534 48.88924240275778)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8d4q4l-11u3k8pw29rw4_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8d4q4l-11u3k8pw29rw4"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">MULTIPOLYGON (((2.3416847190667687 48.889259775621305, 2.3418127593060114 48.88931363773197, 2.3418465257536485 48.889232685285606, 2.341746080194896 48.889089201522644, 2.341653377982089 48.88895677876779, 2.3415629428115277 48.88882759337171, 2.341576904201377 48.88880404934799, 2.3413644391040065 48.88884435327038, 2.3414008133263766 48.888853767837475, 2.3414798922984974 48.888966857720426, 2.3415765037486684 48.88910502091886, 2.3416847190667687 48.889259775621305)), ((2.3418127593060114 48.88931363773197, 2.341779191070902 48.88939411371119, 2.34180394229265 48.88942919485519, 2.341850538838807 48.8894952375303, 2.341955517151243 48.88964402599509, 2.341929701148072 48.8896662008741, 2.3421832834830236 48.88967620617273, 2.3421450873397864 48.88965841452327, 2.342039580658323 48.88950811605721, 2.3420033758981758 48.889456539553976, 2.3419614092443877 48.88939675740382, 2.341940901553166 48.889367542530515, 2.3418127593060114 48.88931363773197)))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzdfmoha--1f3jfjceuqyj8">
       <rdfs:label xml:lang="fr">rue de la Tacherie (Paris, France)</rdfs:label>
@@ -155,11 +162,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdfmoha--1f3jfjceuqyj8_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdfmoha--1f3jfjceuqyj8"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3498428379908796 48.85721119642392)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdfmoha--1f3jfjceuqyj8_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdfmoha--1f3jfjceuqyj8"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">MULTIPOLYGON (((2.349816545112571 48.857171101751014, 2.349848462508435 48.85735941396969, 2.3498901777788914 48.857440402304185, 2.3499839072032587 48.85762237255614, 2.350067795164364 48.85778523471307, 2.350052193179686 48.85781037675197, 2.3502288956253894 48.85775313130631, 2.3501904351856395 48.85774321757194, 2.350143649218278 48.85765248614742, 2.350117148292046 48.85760109273696, 2.350091445864987 48.85755124873904, 2.350020106403702 48.85741289997534, 2.349816545112571 48.857171101751014)), ((2.349651761605747 48.85697536279538, 2.349816545112571 48.857171101751014, 2.3497779416907756 48.85694333640039, 2.3496094163810124 48.85661581394322, 2.3496248192605007 48.85659045141184, 2.3494547675658706 48.85665726618884, 2.349493655977995 48.856668086349146, 2.349651761605747 48.85697536279538)))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

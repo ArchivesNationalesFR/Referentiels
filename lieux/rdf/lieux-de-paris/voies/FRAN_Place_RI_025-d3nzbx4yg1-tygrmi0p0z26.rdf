@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbx4yg1-tygrmi0p0z26">
       <rdfs:label xml:lang="fr">rue du Marché des Blancs Manteaux (Paris, France)</rdfs:label>
@@ -152,11 +159,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbx4yg1-tygrmi0p0z26_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbx4yg1-tygrmi0p0z26"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.358593918941599 48.85813400182674)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbx4yg1-tygrmi0p0z26_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbx4yg1-tygrmi0p0z26"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">MULTIPOLYGON (((2.3588494222797327 48.858240500647355, 2.3589597236345745 48.858168160645896, 2.3590266342359523 48.85816918907767, 2.3589455084619098 48.85808635792616, 2.3587358055910963 48.85822427105619, 2.3585263475929703 48.85836202053936, 2.3586283994290906 48.85842399668971, 2.3586372485541394 48.85837965314509, 2.358706504368626 48.85833423304776, 2.3587078124840946 48.858333374884104, 2.358739947805137 48.85831229817079, 2.358742127072428 48.85831086909153, 2.3588151077840886 48.85826300647211, 2.3588494222797327 48.858240500647355)), ((2.3582456665443203 48.85817727410022, 2.3584552849193736 48.85803967253924, 2.3586645394328176 48.85790230877615, 2.3585986831611168 48.857853639151806, 2.3585405073735117 48.85789219990213, 2.3585343208279363 48.85789630014966, 2.3584380678427164 48.85796009303179, 2.3583132247176937 48.85804283381, 2.358263873590236 48.858075541110544, 2.358205403280218 48.85811429257423, 2.358177977219046 48.85813246882284, 2.3581362113097604 48.85812851880105, 2.3582456665443203 48.85817727410022)))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzcqte8i--1em8lpjmxhfey">
       <rdfs:label xml:lang="fr">passage Puteaux (Paris, France)</rdfs:label>
@@ -120,11 +127,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcqte8i--1em8lpjmxhfey_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcqte8i--1em8lpjmxhfey"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3240643612299636 48.87298598393533, 2.3240524492886725 48.87295679602234, 2.323898529901461 48.87297956950956, 2.3238497914589438 48.872986781222814, 2.323800139157744 48.87299412805091, 2.3236581214049368 48.87301514100204, 2.323666686785885 48.873043539310416, 2.323809195582218 48.873023144272054, 2.3238593528963425 48.873015965771536, 2.323908692657992 48.8730087502561, 2.3240643612299636 48.87298598393533))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcqte8i--1em8lpjmxhfey_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcqte8i--1em8lpjmxhfey"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.323861813628699 48.873000255550984)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

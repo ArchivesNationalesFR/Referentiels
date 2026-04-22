@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzdk7vc3--1hhbobhn5pft3">
       <rdfs:label xml:lang="fr">place Tristan Bernard (Paris, France)</rdfs:label>
@@ -171,11 +178,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdk7vc3--1hhbobhn5pft3_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdk7vc3--1hhbobhn5pft3"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.291138062755588 48.87907580812091, 2.291087049459847 48.87905674673904, 2.2908519409213275 48.8791122860252, 2.2907933253043766 48.87920331881489, 2.2907435439043002 48.87928062873682, 2.2908933739832023 48.879575785298165, 2.2911264050848676 48.879686644527055, 2.2912513840035515 48.87975724239674, 2.2913476415494918 48.879670710406, 2.2915046565093595 48.87952636960637, 2.29162762838506 48.87941692654048, 2.2916387529163886 48.87940684332949, 2.2913239252223137 48.87914525646215, 2.291138062755588 48.87907580812091))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdk7vc3--1hhbobhn5pft3_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdk7vc3--1hhbobhn5pft3"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.2911597713673535 48.879383329508926)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

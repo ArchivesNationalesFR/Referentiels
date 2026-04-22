@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzb7yeb0-1uzx0qegglpwb">
       <rdfs:label xml:lang="fr">rue Goethe (Paris, France)</rdfs:label>
@@ -188,11 +195,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzb7yeb0-1uzx0qegglpwb_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzb7yeb0-1uzx0qegglpwb"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.2983284619801156 48.866108909536585)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzb7yeb0-1uzx0qegglpwb_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzb7yeb0-1uzx0qegglpwb"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">MULTIPOLYGON (((2.2977172766343075 48.86589954835945, 2.2977382460077287 48.86598573729235, 2.2979420363039402 48.86605100699204, 2.2981105324239204 48.8661049731956, 2.2985048867752633 48.866231274839656, 2.2987219266294288 48.86630078662544, 2.2990220863851865 48.866396949603775, 2.2991469729615233 48.86631770282703, 2.299048368460185 48.86628614192155, 2.2988661435190374 48.86622781663134, 2.298717036742376 48.866180091479315, 2.2985566521204133 48.866128755708374, 2.2983824528556105 48.86607299757804, 2.29820122161159 48.86601498915489, 2.298073967720193 48.865974256952725, 2.297891816900938 48.86591595306832, 2.2977172766343075 48.86589954835945)), ((2.2975833146951947 48.86588695736541, 2.2977172766343075 48.86589954835945, 2.2976952520998677 48.86580902105996, 2.2976075068594946 48.865747050020055, 2.297490430180352 48.865824082813894, 2.2975833146951947 48.86588695736541)))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

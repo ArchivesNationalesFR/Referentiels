@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbwks84-6e7qts2atje8">
       <rdfs:label xml:lang="fr">rue Marc Antoine Charpentier (Paris, France)</rdfs:label>
@@ -127,11 +134,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbwks84-6e7qts2atje8_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbwks84-6e7qts2atje8"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3762102413981863 48.82539442990502, 2.3761066483261266 48.82537112543981, 2.3760864032854263 48.82536657061454, 2.37608441594721 48.82537123879032, 2.376055451347954 48.82537288731883, 2.376031360730572 48.82537359624294, 2.376011965755307 48.82537290235669, 2.375996078069358 48.825372334693284, 2.3759819643003217 48.82537127443352, 2.375964082978815 48.82536861700977, 2.375943018719556 48.82536502291373, 2.375915437691219 48.825359530402636, 2.375745165733377 48.82532254800387, 2.37547330897551 48.82526159629704, 2.3753588835808643 48.82523625058755, 2.375348494282705 48.825185360085904, 2.3752237630175124 48.82526632491754, 2.375403480797939 48.82530716175192, 2.375766821278069 48.825389722881056, 2.376062660293362 48.825456944459525, 2.3760547934873104 48.82547201829522, 2.375883715942608 48.82579984135541, 2.375986806172847 48.82582299947729, 2.3762102413981863 48.82539442990502))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbwks84-6e7qts2atje8_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbwks84-6e7qts2atje8"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.375852086569274 48.825459555885665)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

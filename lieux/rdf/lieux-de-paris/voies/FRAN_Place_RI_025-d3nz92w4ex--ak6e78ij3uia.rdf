@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz92w4ex--ak6e78ij3uia">
       <rdfs:label xml:lang="fr">rue de Cambo (Paris, France)</rdfs:label>
@@ -135,11 +142,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz92w4ex--ak6e78ij3uia_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz92w4ex--ak6e78ij3uia"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.39749352584293 48.8778170215549, 2.3974920582215207 48.87778665818882, 2.397391433469673 48.87779030841182, 2.3973694326790347 48.87779110598604, 2.397367340661899 48.87791970321568, 2.397383050761043 48.87803176413671, 2.397348972480117 48.878047965783956, 2.3975342249839056 48.878085237432295, 2.397505400628064 48.878062628014206, 2.397503004251339 48.87801307098377, 2.3975023628852745 48.87799979814648, 2.397499108398755 48.8779324858241, 2.3974984747059693 48.877919374903776, 2.3974969344365107 48.87788751199224, 2.3974957396436367 48.877862794195075, 2.397494198024504 48.87783093037572, 2.39749352584293 48.8778170215549))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz92w4ex--ak6e78ij3uia_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz92w4ex--ak6e78ij3uia"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.397436721724414 48.877929654057034)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

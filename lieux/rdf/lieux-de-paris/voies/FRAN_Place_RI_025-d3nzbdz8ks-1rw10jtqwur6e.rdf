@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbdz8ks-1rw10jtqwur6e">
       <rdfs:label xml:lang="fr">cité Héron (Paris, France)</rdfs:label>
@@ -112,11 +119,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbdz8ks-1rw10jtqwur6e_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbdz8ks-1rw10jtqwur6e"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3652825610338994 48.87469224290701, 2.3647501647008036 48.87432735532232, 2.3646914251582807 48.87435299031946, 2.3650038588699585 48.87456538127876, 2.365433674562987 48.87486003891553, 2.3654564941905516 48.8748756833044, 2.365511422045122 48.874849137397696, 2.365502648188994 48.874843121105975, 2.3653205822971755 48.87471830848439, 2.3652825610338994 48.87469224290701))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbdz8ks-1rw10jtqwur6e_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbdz8ks-1rw10jtqwur6e"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3651011328859157 48.87460018415959)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

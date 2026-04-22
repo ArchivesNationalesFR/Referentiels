@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzafi3ej--q58pz7l1x04i">
       <rdfs:label xml:lang="fr">square Fernand de La Tombelle (Paris, France)</rdfs:label>
@@ -135,11 +142,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzafi3ej--q58pz7l1x04i_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzafi3ej--q58pz7l1x04i"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.313282971917871 48.884759470807225, 2.313134752373858 48.88464795328416, 2.3129716029350416 48.88465869054256, 2.312920947653091 48.88466202417031, 2.3130520041338447 48.884755719451746, 2.3130905294310335 48.884778141394825, 2.3131365370860957 48.88480491764735, 2.313176921878453 48.8848284213331, 2.313325213276742 48.88490961282491, 2.313364492506683 48.88493258309505, 2.3134211704610745 48.884965726539924, 2.3134604511391665 48.8849886967853, 2.3134207537664864 48.88484094725068, 2.313372531089542 48.884812430789836, 2.3133334447559335 48.884789316833135, 2.313282971917871 48.884759470807225))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzafi3ej--q58pz7l1x04i_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzafi3ej--q58pz7l1x04i"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3132160648700673 48.88478637400089)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

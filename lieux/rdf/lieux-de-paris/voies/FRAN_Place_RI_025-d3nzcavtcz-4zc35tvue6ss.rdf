@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzcavtcz-4zc35tvue6ss">
       <rdfs:label xml:lang="fr">rue de l'Oratoire (Paris, France)</rdfs:label>
@@ -157,11 +164,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcavtcz-4zc35tvue6ss_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcavtcz-4zc35tvue6ss"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3400039026397677 48.86132586875314, 2.339969645368239 48.86129700049531, 2.3398208422464477 48.86134494958261, 2.339854071977471 48.861373474958285, 2.339860828764788 48.86137927525507, 2.339919717114393 48.86142982689059, 2.3399375604279755 48.86144514318166, 2.3399435634716683 48.861450297181236, 2.3401094719612874 48.8615866773717, 2.3401067786546954 48.86158828314613, 2.340114745744817 48.86159506409504, 2.3401217176275226 48.86160099776587, 2.3402074920807268 48.86167400402634, 2.340214752585265 48.86168018210643, 2.3403256033054225 48.8617745304532, 2.340336119178144 48.8617834811728, 2.3403404560657344 48.861787172619835, 2.34055656971229 48.86179467259749, 2.3403928763810122 48.8616558734344, 2.3402870144533883 48.861564443145774, 2.34015956121258 48.861457040894884, 2.3400039026397677 48.86132586875314))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcavtcz-4zc35tvue6ss_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcavtcz-4zc35tvue6ss"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3401743926100256 48.86155587059074)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

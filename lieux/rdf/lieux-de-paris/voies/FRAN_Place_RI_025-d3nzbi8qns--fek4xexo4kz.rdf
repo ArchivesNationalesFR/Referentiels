@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbi8qns--fek4xexo4kz">
       <rdfs:label xml:lang="fr">rue Jean-Baptiste Berlier (Paris, France)</rdfs:label>
@@ -184,11 +191,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbi8qns--fek4xexo4kz_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbi8qns--fek4xexo4kz"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3846562930227484 48.8259333979273)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbi8qns--fek4xexo4kz_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbi8qns--fek4xexo4kz"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">MULTIPOLYGON (((2.384682497554443 48.82601085553589, 2.384982098830027 48.82600449930197, 2.3849135777852353 48.82585261155435, 2.383619566338964 48.82557022633673, 2.3832825835615297 48.825519396684314, 2.3830218753755346 48.82565333115749, 2.3827162284575083 48.825793102069476, 2.3829977515836647 48.82589509311474, 2.383320093906652 48.8257454137564, 2.383333985319689 48.825741685537835, 2.383348327249334 48.82573879246028, 2.3833630022739736 48.825736758201224, 2.383377894429762 48.82573559835132, 2.3833928850924013 48.82573532309129, 2.383407851668741 48.82573593268842, 2.3834226756837134 48.8257374247331, 2.3834372387895453 48.825739786023995, 2.3834514240752154 48.82574299707164, 2.3836150201988184 48.825780783947884, 2.3841147421299445 48.82589131752939, 2.384682497554443 48.82601085553589)), ((2.384982098830027 48.82600449930197, 2.3850199953309033 48.8260885004442, 2.385810303884932 48.82626032373213, 2.3865386933867896 48.82642682632083, 2.3867487488774475 48.826278464844854, 2.3857994663925077 48.82607894285927, 2.385549108791737 48.825992467289396, 2.384982098830027 48.82600449930197)))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

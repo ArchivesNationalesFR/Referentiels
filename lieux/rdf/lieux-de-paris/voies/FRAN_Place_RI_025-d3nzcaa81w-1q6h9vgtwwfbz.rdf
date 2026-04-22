@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzcaa81w-1q6h9vgtwwfbz">
       <rdfs:label xml:lang="fr">place Octave Chanute (Paris, France)</rdfs:label>
@@ -185,11 +192,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcaa81w-1q6h9vgtwwfbz_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcaa81w-1q6h9vgtwwfbz"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.406534478223948 48.86615947657051, 2.406636988315938 48.86604356005227, 2.4064607278242547 48.86597737699927, 2.4064532999279544 48.86598945965101, 2.4064427469820573 48.86600662515503, 2.4064348593273364 48.866019457372396, 2.40638210179486 48.86603992367271, 2.4063468511231365 48.86605359864521, 2.4062268823355875 48.866100136963105, 2.4061913974371816 48.86611390335934, 2.406147925823067 48.86613076700992, 2.4061112263825817 48.866145004005375, 2.4060920076357912 48.86614195880808, 2.406064836859292 48.866137654643026, 2.4060455459968604 48.86613459828827, 2.406460481567925 48.866406493357886, 2.4064377201576965 48.86633534263894, 2.406477051247342 48.86626385591861, 2.406534478223948 48.86615947657051))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcaa81w-1q6h9vgtwwfbz_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcaa81w-1q6h9vgtwwfbz"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.4063773303884304 48.86616479430413)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

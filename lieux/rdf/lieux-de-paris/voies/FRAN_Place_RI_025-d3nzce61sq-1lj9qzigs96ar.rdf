@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzce61sq-1lj9qzigs96ar">
       <rdfs:label xml:lang="fr">impasse Paul-Louis Courier (Paris, France)</rdfs:label>
@@ -111,11 +118,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzce61sq-1lj9qzigs96ar_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzce61sq-1lj9qzigs96ar"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.324506688034075 48.85600002245537, 2.32447660945527 48.855969244929724, 2.324446927274761 48.8559821108025, 2.3244488227131774 48.855983822182374, 2.324430482744939 48.85599300807184, 2.3244744847071743 48.856035364254986, 2.3244886014900112 48.85604895224957, 2.324599453479149 48.85615565771251, 2.3245887743603735 48.856183567349916, 2.324661259241415 48.856157557933074, 2.324557072642085 48.8560543625592, 2.324541425506585 48.856038864699435, 2.324503744872552 48.85600154193802, 2.324506688034075 48.85600002245537))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzce61sq-1lj9qzigs96ar_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzce61sq-1lj9qzigs96ar"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3245451068021814 48.85607386974898)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

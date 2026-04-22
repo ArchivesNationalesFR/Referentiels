@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbq5yem-1ke3odbred6lw">
       <rdfs:label xml:lang="fr">rue du Léman (Paris, France)</rdfs:label>
@@ -155,11 +162,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbq5yem-1ke3odbred6lw_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbq5yem-1ke3odbred6lw"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.4058911523904936 48.87733365192007, 2.4059464345849664 48.877222323063265, 2.4059489668423346 48.87722265489123, 2.405966003375947 48.87718917824901, 2.4059971586094915 48.877127959891034, 2.4060236782844537 48.877120277201854, 2.405928662341735 48.877089954270666, 2.405888100638037 48.877171721478845, 2.405813224797626 48.8773226593617, 2.4058060906690906 48.877337042002274, 2.405759631037115 48.87743080660852, 2.405717139237099 48.877516539191134, 2.4057083581288237 48.87753425465617, 2.405667391551981 48.87761691008611, 2.405666951410846 48.87761772359264, 2.405643285235011 48.87766554574216, 2.4056327358355967 48.87768682905257, 2.4057705362510786 48.87766250549542, 2.405734563182139 48.877652990091065, 2.405783012096029 48.877555305317244, 2.4057917107415343 48.87753776480709, 2.405854994361427 48.877410167286854, 2.4058522556726154 48.877409524163795, 2.4058911523904936 48.87733365192007))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbq5yem-1ke3odbred6lw_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbq5yem-1ke3odbred6lw"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.4058219575528055 48.87739080074414)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

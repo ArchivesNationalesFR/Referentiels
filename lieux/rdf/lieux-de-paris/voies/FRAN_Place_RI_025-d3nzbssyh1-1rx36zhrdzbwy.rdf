@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbssyh1-1rx36zhrdzbwy">
       <rdfs:label xml:lang="fr">place Louis Bernier (Paris, France)</rdfs:label>
@@ -133,11 +140,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbssyh1-1rx36zhrdzbwy_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbssyh1-1rx36zhrdzbwy"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3043940676322285 48.892368245963716, 2.3043483030345477 48.89234199586595, 2.3042514265362457 48.89241419576058, 2.3041900339597667 48.89245994932029, 2.304358125551236 48.892557698851896, 2.304365972936408 48.892560993705416, 2.3043742219803454 48.89256382953723, 2.304382811589583 48.892566185307786, 2.3043916779067746 48.89256804265953, 2.304400755650764 48.89256938772339, 2.3044099740371253 48.892570210195494, 2.304419266300922 48.892570505191365, 2.304428562925278 48.892570269609216, 2.3044377929696545 48.89256950483569, 2.3044468895127306 48.89256821767661, 2.3044557828817873 48.89256641672066, 2.304464406059341 48.892564115967794, 2.3044726974350795 48.89256133304677, 2.3044805912834203 48.89255808736113, 2.3044880313412115 48.892554404664594, 2.3045878860116664 48.89248152490529, 2.304569813870692 48.8924709625844, 2.3044349930221193 48.892392164758746, 2.3043940676322285 48.892368245963716))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbssyh1-1rx36zhrdzbwy_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbssyh1-1rx36zhrdzbwy"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.304387542518476 48.89246702892792)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

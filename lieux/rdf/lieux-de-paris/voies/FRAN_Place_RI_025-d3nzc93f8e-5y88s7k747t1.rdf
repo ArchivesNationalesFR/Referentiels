@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzc93f8e-5y88s7k747t1">
       <rdfs:label xml:lang="fr">rue Nicolas Taunay (Paris, France)</rdfs:label>
@@ -153,11 +160,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzc93f8e-5y88s7k747t1_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzc93f8e-5y88s7k747t1"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.31948844847977 48.82383091318944, 2.3195934932793563 48.82354598630153, 2.3191472382009106 48.8236815390785, 2.3192484763406127 48.823748159674146, 2.319230944906546 48.823794799789965, 2.3192301245463707 48.82379733317225, 2.319228575540646 48.82379944419435, 2.319225478930245 48.823800951016, 2.319221744270302 48.823801251733116, 2.319216644510782 48.82380094928859, 2.319207271379917 48.82382707869894, 2.319210318593368 48.823827686040644, 2.3192136700777426 48.82382950478152, 2.319215498435694 48.82383166111277, 2.319215497161713 48.82383509673984, 2.319099955755646 48.824146548258724, 2.3193814750482056 48.82412106693424, 2.3194500909064115 48.823934954703994, 2.31948844847977 48.82383091318944))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzc93f8e-5y88s7k747t1_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzc93f8e-5y88s7k747t1"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3193384096589162 48.823854896610094)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

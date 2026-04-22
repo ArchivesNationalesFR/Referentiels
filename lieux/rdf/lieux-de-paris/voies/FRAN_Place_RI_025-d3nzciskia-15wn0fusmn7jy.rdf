@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzciskia-15wn0fusmn7jy">
       <rdfs:label xml:lang="fr">rue Pierre Le Grand (Paris, France)</rdfs:label>
@@ -165,11 +172,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzciskia-15wn0fusmn7jy_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzciskia-15wn0fusmn7jy"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.301736752665731 48.877966044409895, 2.301564222766809 48.87787288990233, 2.301568782550678 48.87789879767665, 2.301388219918954 48.87806064311731, 2.3012727831501 48.87816411101881, 2.3011434330776144 48.87828004964802, 2.3010154735633717 48.87839474257004, 2.3008973013085656 48.878500660100535, 2.301115691523395 48.87854704965674, 2.301096014509178 48.878505301713744, 2.3012411665933814 48.878374755705366, 2.301370741779335 48.8782597230287, 2.3014895087413065 48.878154286035326, 2.3016074044623944 48.87804911543438, 2.3016980253326618 48.87796827460802, 2.301736752665731 48.877966044409895))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzciskia-15wn0fusmn7jy_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzciskia-15wn0fusmn7jy"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.301314429104614 48.87821868476827)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbk6o6h-11im6mkqpy0jt">
       <rdfs:label xml:lang="fr">passage Joanès (Paris, France)</rdfs:label>
@@ -151,11 +158,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbk6o6h-11im6mkqpy0jt_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbk6o6h-11im6mkqpy0jt"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3171550127854306 48.82841083765169, 2.3171295063314 48.828388007022056, 2.317024957515544 48.828449151360424, 2.3169410651497757 48.828498215333234, 2.316895069378184 48.828525115610404, 2.3168479547850542 48.828552670520786, 2.3167655171821906 48.82860088287323, 2.316712779760038 48.828631726106586, 2.316622242799167 48.82868467497074, 2.316654257983169 48.82870686836028, 2.3167615792129803 48.82864348545495, 2.3168617093159174 48.828584348705576, 2.3169730082947257 48.828518526732495, 2.3170936111616403 48.82844716725234, 2.3171550127854306 48.82841083765169))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbk6o6h-11im6mkqpy0jt_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbk6o6h-11im6mkqpy0jt"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3168868577274866 48.82854960000262)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbw7lka--vkoxh708mxom">
       <rdfs:label xml:lang="fr">rue Manuel (Paris, France)</rdfs:label>
@@ -171,11 +178,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbw7lka--vkoxh708mxom_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbw7lka--vkoxh708mxom"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3403750469997835 48.87832441062203)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbw7lka--vkoxh708mxom_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbw7lka--vkoxh708mxom"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3403057124589637 48.87838718896661, 2.3404214235207577 48.878366940399616, 2.3405462137145867 48.8783451031467, 2.340671979507153 48.878323094867405, 2.3407780617242175 48.87830453133836, 2.3409692784593426 48.87827106948492, 2.341002649498298 48.87828448060272, 2.340936786515315 48.8781441230948, 2.340922150558438 48.87817656875621, 2.3407855737394643 48.87820075621131, 2.340671933179485 48.8782208816337, 2.3405386454371775 48.87824448706588, 2.340412535258241 48.87826570639062, 2.340366538387008 48.878273932779365, 2.340235432146623 48.87829795459509, 2.3400887664610663 48.87832459120052, 2.3397798917704224 48.87837885555573, 2.3397546719493607 48.87836910527714, 2.3397888617522375 48.87849269333294, 2.3398037683458384 48.87847617742187, 2.340086524471357 48.8784264194925, 2.3403057124589637 48.87838718896661))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbggru6-w2ok9jq0t49t">
       <rdfs:label xml:lang="fr">villa Industrielle (Paris, France)</rdfs:label>
@@ -112,11 +119,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbggru6-w2ok9jq0t49t_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbggru6-w2ok9jq0t49t"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3972017441012565 48.868968598028275, 2.397199191156887 48.86896738365664, 2.397189905687964 48.868974720449465, 2.3971922113889605 48.868975859830414, 2.3972617985777696 48.86901024928182, 2.397307469410701 48.86903281969047, 2.3973336766541467 48.869045770800064, 2.397567977581053 48.869147463801134, 2.3975688235708157 48.86915246567424, 2.397794000041409 48.86923550591432, 2.397803990521463 48.86922685059847, 2.3975717860405936 48.86913442010126, 2.3974031804533045 48.86906428734812, 2.3973514914184606 48.86904036734815, 2.39730617360073 48.869018271785414, 2.3972017441012565 48.868968598028275))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbggru6-w2ok9jq0t49t_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbggru6-w2ok9jq0t49t"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3975087838665305 48.869112714273086)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

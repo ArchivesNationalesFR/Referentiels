@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzabv4wg-7edo7rzp0px7">
       <rdfs:label xml:lang="fr">rue Ernest Goüin (Paris, France)</rdfs:label>
@@ -134,11 +141,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzabv4wg-7edo7rzp0px7_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzabv4wg-7edo7rzp0px7"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3177548033868485 48.89396373247425, 2.31811217665969 48.89385351883206, 2.3181143533789603 48.893856753504856, 2.318510831143519 48.89373215900739, 2.3186132420060357 48.893754321953786, 2.318458016869101 48.89354250392464, 2.318421090550512 48.893612413171624, 2.3183690661468748 48.893628218556564, 2.3182755448343855 48.89365663093884, 2.31822235639792 48.89367278936288, 2.3178588854137736 48.89378048827323, 2.3178069851962566 48.89379647038839, 2.3177136882466933 48.893825200171264, 2.317662494576524 48.89384096411617, 2.3175593309923506 48.893817869763666, 2.317725240580714 48.89403273465106, 2.3177548033868485 48.89396373247425))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzabv4wg-7edo7rzp0px7_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzabv4wg-7edo7rzp0px7"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3180872991935138 48.89378734380748)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

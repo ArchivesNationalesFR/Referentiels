@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz90w1ic-1j444za00y69l">
       <rdfs:label xml:lang="fr">rue Bruller (Paris, France)</rdfs:label>
@@ -144,11 +151,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz90w1ic-1j444za00y69l_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz90w1ic-1j444za00y69l"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3354290735702525 48.828218173134154, 2.3354162163013594 48.82812741583962, 2.3352995190934593 48.82812836278495, 2.335146382280836 48.82812960439845, 2.334945563883763 48.828131233616446, 2.334943497233245 48.82813125000453, 2.334940975878503 48.82813028444375, 2.334939716452683 48.828129276434815, 2.3349389972072347 48.82812820937295, 2.3349389973564803 48.82812702309718, 2.334938996588897 48.82812548156291, 2.3349008273018304 48.828225373410795, 2.334909262030968 48.82822024531123, 2.3351341386304596 48.82821934888773, 2.3353353554641223 48.82821854719262, 2.3354290735702525 48.828218173134154))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz90w1ic-1j444za00y69l_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz90w1ic-1j444za00y69l"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3351719363174777 48.828174992673055)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

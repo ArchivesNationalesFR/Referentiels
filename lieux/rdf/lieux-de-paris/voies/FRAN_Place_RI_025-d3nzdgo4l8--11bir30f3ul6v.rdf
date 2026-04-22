@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzdgo4l8--11bir30f3ul6v">
       <rdfs:label xml:lang="fr">place du Tertre (Paris, France)</rdfs:label>
@@ -107,11 +114,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdgo4l8--11bir30f3ul6v_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdgo4l8--11bir30f3ul6v"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3409712812195953 48.8863187729054, 2.3409669314558785 48.8863083914026, 2.340826088173659 48.88632664767318, 2.3407827560642147 48.886332264631655, 2.340555580273563 48.88636171131451, 2.3404828693860553 48.88636336579386, 2.3405046151104463 48.886420974216016, 2.340533712037389 48.88650759856647, 2.3405518936025116 48.886561723130235, 2.3405792322990044 48.88664311447817, 2.3405840435048395 48.88665743668985, 2.340612907467495 48.886707770944696, 2.340614956891331 48.88671134446824, 2.341100387407125 48.88660019876651, 2.341080745063284 48.88658010221286, 2.341005047906021 48.886399387458354, 2.3409712812195953 48.8863187729054))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdgo4l8--11bir30f3ul6v_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdgo4l8--11bir30f3ul6v"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3407818710313726 48.886500639558506)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

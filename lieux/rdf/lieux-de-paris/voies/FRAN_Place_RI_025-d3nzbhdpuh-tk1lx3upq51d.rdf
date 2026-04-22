@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbhdpuh-tk1lx3upq51d">
       <rdfs:label xml:lang="fr">villa Jacquemont (Paris, France)</rdfs:label>
@@ -139,11 +146,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbhdpuh-tk1lx3upq51d_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbhdpuh-tk1lx3upq51d"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.322687107084659 48.88801028627674, 2.3226159251899636 48.88795854274177, 2.3226126223070103 48.88797551506887, 2.3224509998439196 48.88805932634548, 2.3223113700088365 48.888131733386096, 2.3221988997147496 48.88819005584127, 2.32219627584693 48.88819141696055, 2.322193650615389 48.88819277807208, 2.321981353538203 48.888302866196284, 2.32196878476462 48.88830938350326, 2.3219096672509063 48.88834003957877, 2.321895703441992 48.88834728103087, 2.3219087087178587 48.88835803690247, 2.321936033421447 48.88838063707551, 2.3220350591808474 48.88832953230192, 2.3222425686625776 48.88822243782952, 2.322653650070625 48.88801028227861, 2.322687107084659 48.88801028627674))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbhdpuh-tk1lx3upq51d_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbhdpuh-tk1lx3upq51d"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3222878820593067 48.88817157288906)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

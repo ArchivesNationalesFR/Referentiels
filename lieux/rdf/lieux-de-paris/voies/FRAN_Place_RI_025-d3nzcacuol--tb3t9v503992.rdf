@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzcacuol--tb3t9v503992">
       <rdfs:label xml:lang="fr">avenue Octave Gréard (Paris, France)</rdfs:label>
@@ -173,11 +180,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcacuol--tb3t9v503992_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcacuol--tb3t9v503992"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.293830871749792 48.85670748465249, 2.29352746695457 48.856500425440494, 2.2932172970193423 48.85628918930415, 2.2932183204344536 48.85624438847395, 2.2929373625033573 48.856421102654565, 2.293051316862086 48.85649829773919, 2.2932165241239666 48.85661021293664, 2.2932179385905274 48.85660932822983, 2.2932689461387157 48.8566435280564, 2.2932671074066 48.85664474302015, 2.2932725031773793 48.856648368718126, 2.2933198860312975 48.85668020878587, 2.293499889989063 48.85680533436364, 2.293837415200928 48.8570351202219, 2.2940267899189175 48.85716522242911, 2.2942732138557447 48.85700872293129, 2.2940502804179137 48.85685630344367, 2.293830871749792 48.85670748465249))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcacuol--tb3t9v503992_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcacuol--tb3t9v503992"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.293605552152462 48.856714718315004)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

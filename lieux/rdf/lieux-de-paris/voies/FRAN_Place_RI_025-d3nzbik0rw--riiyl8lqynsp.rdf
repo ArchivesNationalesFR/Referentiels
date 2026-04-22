@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbik0rw--riiyl8lqynsp">
       <rdfs:label xml:lang="fr">rue Jean Cocteau (Paris, France)</rdfs:label>
@@ -141,11 +148,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbik0rw--riiyl8lqynsp_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbik0rw--riiyl8lqynsp"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.352138498240694 48.899679802219154, 2.3521663286724213 48.89952758793461, 2.3497285598260222 48.899478030870675, 2.3497323269826764 48.8993641618888, 2.3476046453005766 48.89932119910062, 2.347592530433223 48.89958988488753, 2.348865466129988 48.899613643897744, 2.3489413635580028 48.89961517975538, 2.349737702369083 48.89963129973391, 2.3497372495679385 48.899634133719, 2.349856652197039 48.8996362253552, 2.3498562542366455 48.89963892833824, 2.3499417823016193 48.89964032878306, 2.3499420291694513 48.89963497829195, 2.350790465355861 48.89965246220023, 2.3516964177544044 48.899670917843345, 2.352138498240694 48.899679802219154))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbik0rw--riiyl8lqynsp_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbik0rw--riiyl8lqynsp"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.349559992005785 48.89951690213238)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzb6fn89-25odvhzge6ez">
       <rdfs:label xml:lang="fr">rue Georges de Porto-Riche (Paris, France)</rdfs:label>
@@ -165,11 +172,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzb6fn89-25odvhzge6ez_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzb6fn89-25odvhzge6ez"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3276252937907893 48.82226706946259, 2.3278903055323075 48.822209156063046, 2.327977420338413 48.822156502137105, 2.3280831559939594 48.822092592694375, 2.328240504314044 48.821997487572645, 2.328340129366518 48.82193727060568, 2.328589997434007 48.82178624217621, 2.328344274657988 48.821702601203164, 2.3283551813974186 48.8217464011863, 2.327763042344481 48.82210393889327, 2.327631491137943 48.82213260904572, 2.3268882719038624 48.82208436166972, 2.3268424274181454 48.8220493236236, 2.3268135046722986 48.8222460659522, 2.3268654675709604 48.82221875466375, 2.3270173584031286 48.8222284127351, 2.32715268280667 48.822237017758574, 2.3273642882047945 48.822250473093526, 2.3275039717518453 48.822259354965, 2.3276252937907893 48.82226706946259))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzb6fn89-25odvhzge6ez_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzb6fn89-25odvhzge6ez"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3277193446355313 48.82207085199016)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbkxacb-1tr9cmtn59o2a">
       <rdfs:label xml:lang="fr">square Jouvenet (Paris, France)</rdfs:label>
@@ -149,11 +156,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbkxacb-1tr9cmtn59o2a_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbkxacb-1tr9cmtn59o2a"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.266089218734406 48.84212283650814, 2.2660466525803344 48.84207559129107, 2.2659644293612993 48.84212710463848, 2.2659901239508153 48.84213034534496, 2.26601312252264 48.842155319902815, 2.2660382930682292 48.842191516647375, 2.26606684922433 48.84223054828967, 2.2660999789754857 48.84227591167586, 2.266124536502634 48.84230939752924, 2.2661286042509574 48.842308105804065, 2.2661921516633057 48.8422852774608, 2.2661979194465864 48.84228324338772, 2.266205513684926 48.842280972291455, 2.2662239383054796 48.84227236230507, 2.26621481807668 48.84226223969916, 2.266178487461807 48.84222191567372, 2.2661579113079746 48.8421990785265, 2.266089218734406 48.84212283650814))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbkxacb-1tr9cmtn59o2a_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbkxacb-1tr9cmtn59o2a"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.2660980300049496 48.842197369492595)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

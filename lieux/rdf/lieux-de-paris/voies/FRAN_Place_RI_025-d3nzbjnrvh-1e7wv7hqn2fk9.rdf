@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbjnrvh-1e7wv7hqn2fk9">
       <rdfs:label xml:lang="fr">square Jean Thébaud (Paris, France)</rdfs:label>
@@ -136,11 +143,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbjnrvh-1e7wv7hqn2fk9_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbjnrvh-1e7wv7hqn2fk9"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3008734296875177 48.84645007418962)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbjnrvh-1e7wv7hqn2fk9_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbjnrvh-1e7wv7hqn2fk9"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3011525313512053 48.84672253015179, 2.3012380237405448 48.84659707985958, 2.301323483752181 48.84647167607243, 2.3014095188220365 48.846345427469856, 2.3014549666166673 48.84627873786046, 2.301522532152985 48.84626356435081, 2.3012850237501143 48.84619227255852, 2.30130824031954 48.84623307021662, 2.3012571757525087 48.846308172900436, 2.301170180089474 48.846436119184496, 2.301083120054655 48.846564159450274, 2.301033639578891 48.84663692932999, 2.3009709826859766 48.84665294966432, 2.3007765392251445 48.84659588103305, 2.300582229202949 48.84653885153311, 2.300558728283563 48.846497544838854, 2.3006072956684447 48.84642604060738, 2.300694255654982 48.84629801177343, 2.300782460778232 48.846168148242555, 2.3008308398758888 48.846096920706024, 2.3008996968486275 48.846079333104264, 2.3006659289768843 48.84601019521238, 2.300684868126321 48.84604485951256, 2.300641726223652 48.8461087293289, 2.300558919230747 48.84623132058444, 2.3004744629411373 48.84635635379542, 2.3003916398470694 48.8464789691012, 2.300382316441103 48.84649277288557, 2.300452691633495 48.84661602138448, 2.300454630123112 48.846619416127645, 2.300773240600671 48.846712645095465, 2.3009635482416924 48.84676832971982, 2.3009655082605165 48.846768903274636, 2.3011504709460713 48.84672304064674, 2.3011525313512053 48.84672253015179))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

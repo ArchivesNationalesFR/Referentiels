@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzdbz2ww--ec5q3coirgki">
       <rdfs:label xml:lang="fr">rue Sivel (Paris, France)</rdfs:label>
@@ -158,11 +165,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdbz2ww--ec5q3coirgki_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdbz2ww--ec5q3coirgki"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.327111956961782 48.83326423465374, 2.3271259108074904 48.83323936186762, 2.3269252089926917 48.833296980499235, 2.32696138610536 48.833307594313794, 2.3270208451177816 48.833394522249264, 2.3270876209258002 48.83349214617493, 2.3271593763268577 48.83359705150201, 2.3272169801907427 48.83368020320705, 2.327297777816012 48.83379683673763, 2.3272852271341353 48.83382244681437, 2.3274811636953174 48.833757651695244, 2.327445857466857 48.833750040548246, 2.3273811649013965 48.8336559109346, 2.3273019824279872 48.83354069674509, 2.3272338647991324 48.83344271464328, 2.327172584515473 48.83335299841338, 2.327111956961782 48.83326423465374))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdbz2ww--ec5q3coirgki_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdbz2ww--ec5q3coirgki"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3272035608400232 48.833529408553325)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

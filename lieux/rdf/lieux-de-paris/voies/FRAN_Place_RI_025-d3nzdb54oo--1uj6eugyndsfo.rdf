@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzdb54oo--1uj6eugyndsfo">
       <rdfs:label xml:lang="fr">rue du Sergent Maginot (Paris, France)</rdfs:label>
@@ -130,11 +137,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdb54oo--1uj6eugyndsfo_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdb54oo--1uj6eugyndsfo"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.2557892860062183 48.84007876802588, 2.2555614817512524 48.83996525703851, 2.255378195916224 48.84028642858146, 2.2552750988006522 48.8404670852878, 2.255261206122636 48.84049142759066, 2.255222837266465 48.84055866063804, 2.255209024175903 48.840582864925125, 2.2550284144760306 48.840899338826446, 2.25501407013158 48.84092447422543, 2.2549232106310826 48.840960893279124, 2.255123351729571 48.84123951185929, 2.2553158611273436 48.84090405605922, 2.255346367198402 48.84085015583649, 2.2554601033031147 48.84064919363084, 2.25546041622891 48.84064865325613, 2.255665777828938 48.84029279259268, 2.255714174462527 48.84020892850283, 2.2557892860062183 48.84007876802588))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdb54oo--1uj6eugyndsfo_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdb54oo--1uj6eugyndsfo"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.2553570830098586 48.84057901484397)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

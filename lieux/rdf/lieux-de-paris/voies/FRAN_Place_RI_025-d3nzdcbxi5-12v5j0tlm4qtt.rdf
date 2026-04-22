@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzdcbxi5-12v5j0tlm4qtt">
       <rdfs:label xml:lang="fr">rue de Sontay (Paris, France)</rdfs:label>
@@ -156,11 +163,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdcbxi5-12v5j0tlm4qtt_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdcbxi5-12v5j0tlm4qtt"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.2836551555106874 48.871076011552184, 2.2838927125996613 48.87089296002975, 2.2841662061735803 48.87068064865811, 2.2846568020248217 48.87029979810952, 2.284978555806568 48.8700500159416, 2.284823136000139 48.86996156655549, 2.284588938163395 48.870142778464256, 2.284466838756311 48.87023725346422, 2.2843234482188977 48.87034820117324, 2.284176300746424 48.87046205630623, 2.284030071745571 48.870575199065875, 2.2838844277491863 48.870687888271114, 2.2837638953011403 48.87078114788715, 2.2835015420294758 48.87098413674404, 2.2834490445855775 48.87097770692862, 2.283568651140352 48.87114244654089, 2.2836551555106874 48.871076011552184))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdcbxi5-12v5j0tlm4qtt_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdcbxi5-12v5j0tlm4qtt"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.284207830052768 48.87054324848492)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

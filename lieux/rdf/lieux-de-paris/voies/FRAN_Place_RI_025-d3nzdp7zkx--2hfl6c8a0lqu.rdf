@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzdp7zkx--2hfl6c8a0lqu">
       <rdfs:label xml:lang="fr">rue Victor Dejeante (Paris, France)</rdfs:label>
@@ -153,11 +160,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdp7zkx--2hfl6c8a0lqu_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdp7zkx--2hfl6c8a0lqu"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.4109340085740207 48.86734252485274, 2.4109618655617404 48.867060550626306, 2.41087698297473 48.867106632191394, 2.4106455707390144 48.86709010705145, 2.4104996887742316 48.867079690168616, 2.410363807381685 48.867069986985875, 2.410257678304248 48.86706240789555, 2.4098347667101323 48.86703245823897, 2.40944346609464 48.86700520998686, 2.4092341409314857 48.86699063383402, 2.409159163385657 48.86693814980802, 2.409182280522446 48.86722480366709, 2.4092647184732865 48.86717362008511, 2.4094590036951997 48.867187398005356, 2.409505027875387 48.86719066214305, 2.4106255208292313 48.867270115918735, 2.410866548960662 48.86728720554198, 2.4109340085740207 48.86734252485274))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdp7zkx--2hfl6c8a0lqu_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdp7zkx--2hfl6c8a0lqu"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.410058855640947 48.86713917707511)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

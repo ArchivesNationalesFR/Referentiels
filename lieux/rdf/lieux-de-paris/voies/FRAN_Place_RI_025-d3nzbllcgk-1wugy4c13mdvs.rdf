@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbllcgk-1wugy4c13mdvs">
       <rdfs:label xml:lang="fr">rue Jules Dumien (Paris, France)</rdfs:label>
@@ -173,11 +180,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbllcgk-1wugy4c13mdvs_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbllcgk-1wugy4c13mdvs"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.401083441386641 48.86945697585079, 2.400922320994043 48.86940689309503, 2.400768327066041 48.8693590266877, 2.4007200372841484 48.8693440160163, 2.400690544891497 48.86927585512839, 2.400539468002064 48.86944485193521, 2.400605112226244 48.86942905198517, 2.4011077796914377 48.869584678375716, 2.401691883068851 48.869765513404104, 2.4017151519450315 48.869807122380465, 2.40192233340158 48.86971772775323, 2.401848294125168 48.86969471429242, 2.4017315367765932 48.86965842261794, 2.401557252093799 48.86960425040258, 2.4014023210608992 48.86955609325168, 2.401240045390637 48.86950565351304, 2.401083441386641 48.86945697585079))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbllcgk-1wugy4c13mdvs_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbllcgk-1wugy4c13mdvs"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.4012172553298243 48.86955780342905)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

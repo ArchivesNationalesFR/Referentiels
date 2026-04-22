@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz8fns53-802ouyl36xvn">
       <rdfs:label xml:lang="fr">rue Albin Haller (Paris, France)</rdfs:label>
@@ -145,11 +152,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8fns53-802ouyl36xvn_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8fns53-802ouyl36xvn"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3493835202532973 48.82227439432805, 2.349476188252473 48.82223635379843, 2.349094386003449 48.82223557214951, 2.34915372964043 48.82229188690486, 2.348828593039534 48.82283410882828, 2.3487321034108186 48.82286011772815, 2.349018395244431 48.82298012656331, 2.3489988824628574 48.82291260291989, 2.3490177523208744 48.82288129394934, 2.3490394622872834 48.822845273301645, 2.349045491663261 48.82283526995723, 2.349076015491274 48.822784623018336, 2.349125190615343 48.822703030136616, 2.349248844055753 48.82249785779051, 2.3492986806851057 48.82241516578086, 2.3493309550602133 48.82236161519773, 2.349337110909901 48.822351400269696, 2.3493576660734807 48.822317292540916, 2.3493835202532973 48.82227439432805))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8fns53-802ouyl36xvn_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8fns53-802ouyl36xvn"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3490909209498456 48.82257857226597)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

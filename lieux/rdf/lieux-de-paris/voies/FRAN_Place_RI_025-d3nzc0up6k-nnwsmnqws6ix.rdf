@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzc0up6k-nnwsmnqws6ix">
       <rdfs:label xml:lang="fr">rue Meissonier (Paris, France)</rdfs:label>
@@ -166,11 +173,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzc0up6k-nnwsmnqws6ix_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzc0up6k-nnwsmnqws6ix"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3044070311059315 48.88236753498748, 2.3044389686780717 48.88232625940538, 2.304152323971543 48.88244759216087, 2.304214725863494 48.88246595142005, 2.304238342904304 48.88265227523397, 2.3042711885266494 48.88291141868736, 2.3042918600324085 48.88307450718379, 2.3043329424173122 48.88340776932857, 2.304272502999579 48.88342768552103, 2.3045607401110764 48.88358878953418, 2.3045181900311467 48.88324196154431, 2.304484519444744 48.88297709278682, 2.3044801325453124 48.88294259131998, 2.3044397075445184 48.88262459101857, 2.3044070311059315 48.88236753498748))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzc0up6k-nnwsmnqws6ix_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzc0up6k-nnwsmnqws6ix"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.304380655708312 48.882955156591784)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

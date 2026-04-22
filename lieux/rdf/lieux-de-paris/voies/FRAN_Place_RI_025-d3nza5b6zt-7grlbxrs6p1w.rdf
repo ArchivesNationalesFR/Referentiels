@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nza5b6zt-7grlbxrs6p1w">
       <rdfs:label xml:lang="fr">rue du Docteur Charles Richet (Paris, France)</rdfs:label>
@@ -157,11 +164,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nza5b6zt-7grlbxrs6p1w_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nza5b6zt-7grlbxrs6p1w"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.364457791446411 48.83200744223437, 2.3638810094836753 48.8316227975162, 2.3638810895577853 48.831604736789025, 2.363881257654441 48.831566512648436, 2.363881337181018 48.83154860840787, 2.363664279653501 48.83175078607854, 2.363770439395211 48.83174051793406, 2.363941911938791 48.83185464896887, 2.363942871360787 48.83185528812706, 2.364019974391366 48.83190660698257, 2.364020933826247 48.83190724524077, 2.3641601407277846 48.831999900091525, 2.3644825179309117 48.83221498088507, 2.364651309302543 48.83232759284548, 2.3646557622898707 48.832399380794946, 2.3648964996528736 48.832229382525796, 2.3647897086479386 48.83222878662944, 2.364457791446411 48.83200744223437))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nza5b6zt-7grlbxrs6p1w_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nza5b6zt-7grlbxrs6p1w"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3642747544713845 48.83198093636115)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

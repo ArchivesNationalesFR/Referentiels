@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzafu4of-12ge4696qng3n">
       <rdfs:label xml:lang="fr">place des Fêtes (Paris, France)</rdfs:label>
@@ -136,11 +143,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzafu4of-12ge4696qng3n_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzafu4of-12ge4696qng3n"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3936755591394276 48.87732972464493, 2.3936387970374513 48.877319911110675, 2.393636281389586 48.87732260895082, 2.3935578714903065 48.877308405241145, 2.392937515177822 48.87719602650077, 2.3927947162704877 48.87675926797101, 2.3923249034094574 48.877333710381556, 2.3924804994677733 48.877360729985845, 2.392875513541222 48.87742932310084, 2.3930447848941534 48.87745981168902, 2.393081479329599 48.87746642164618, 2.393131064263285 48.87747535246062, 2.3933589350051903 48.87751639631291, 2.393528798774963 48.87754699243517, 2.3935309621616128 48.8775473820131, 2.393880128998558 48.877576176174955, 2.393913791600908 48.877414976155585, 2.393929671513224 48.87739755468183, 2.3936755591394276 48.87732972464493))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzafu4of-12ge4696qng3n_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzafu4of-12ge4696qng3n"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3930591203380134 48.877288888440845)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

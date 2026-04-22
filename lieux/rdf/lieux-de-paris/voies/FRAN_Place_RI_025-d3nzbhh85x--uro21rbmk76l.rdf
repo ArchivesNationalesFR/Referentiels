@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbhh85x--uro21rbmk76l">
       <rdfs:label xml:lang="fr">rue Jacques Cartier (Paris, France)</rdfs:label>
@@ -166,11 +173,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbhh85x--uro21rbmk76l_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbhh85x--uro21rbmk76l"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3296172695607207 48.89360530538921, 2.329374478868423 48.89354936244159, 2.3294600359322213 48.893704651932055, 2.3296193352434673 48.89399378671236, 2.329685259330194 48.89411344101659, 2.3297717258608617 48.89427037834714, 2.3297864138641424 48.89429803647997, 2.3297714613410276 48.894323559205894, 2.329972181407781 48.89425945096282, 2.329937875747659 48.89425258873816, 2.3298878311217286 48.89416238363974, 2.3298250406740175 48.89404920143186, 2.329784408632053 48.89397596161249, 2.329741109613051 48.893900229212, 2.3297043987259483 48.89383601891989, 2.329664278639897 48.893763508562266, 2.329587432381107 48.89362461679233, 2.3296172695607207 48.89360530538921))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbhh85x--uro21rbmk76l_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbhh85x--uro21rbmk76l"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3296716797742434 48.893933707019336)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

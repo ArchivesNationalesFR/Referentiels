@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzcepcz7-1lvcyx8re53qi">
       <rdfs:label xml:lang="fr">impasse des Peintres (Paris, France)</rdfs:label>
@@ -113,11 +120,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcepcz7-1lvcyx8re53qi_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcepcz7-1lvcyx8re53qi"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.350178261564466 48.86398728345817, 2.3506081053691688 48.86390788229568, 2.350758807129315 48.86388466401834, 2.3507359501718295 48.86384519006164, 2.350719865038887 48.86384980817343, 2.3506126015677897 48.863880603465404, 2.3505385607697087 48.86389723169725, 2.350480052902528 48.86390903375822, 2.350344991962393 48.86393570643625, 2.3503455165832374 48.86393692340033, 2.3503138950751583 48.8639431352991, 2.35031321225274 48.863941706129935, 2.3503108166570477 48.86394219046328, 2.350264402607756 48.8639515650851, 2.3501748104760414 48.86396966183284, 2.3501593942332906 48.86397277529897, 2.3501732254802117 48.86398821391656, 2.350178261564466 48.86398728345817))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcepcz7-1lvcyx8re53qi_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcepcz7-1lvcyx8re53qi"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3504963744469185 48.86391627664066)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

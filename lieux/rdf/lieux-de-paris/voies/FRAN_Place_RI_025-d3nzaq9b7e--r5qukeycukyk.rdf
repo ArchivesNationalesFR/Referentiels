@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzaq9b7e--r5qukeycukyk">
       <rdfs:label xml:lang="fr">rue du Général Estienne (Paris, France)</rdfs:label>
@@ -188,11 +195,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzaq9b7e--r5qukeycukyk_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzaq9b7e--r5qukeycukyk"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.2840136941210125 48.84425538098896)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzaq9b7e--r5qukeycukyk_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzaq9b7e--r5qukeycukyk"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.2839385697818093 48.844337227115986, 2.2841189749605944 48.84426305220259, 2.284249822120842 48.84420925249229, 2.2843121773659036 48.8441836149269, 2.284345989974218 48.844188529891746, 2.284298764524515 48.844090686638964, 2.284134055052845 48.84415889221447, 2.283754752909225 48.844315961105, 2.2836537312604253 48.84429829432966, 2.2837563867168513 48.844412133089556, 2.2839385697818093 48.844337227115986))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

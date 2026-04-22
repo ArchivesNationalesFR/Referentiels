@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbxxxr4--12wfkf25nrn9r">
       <rdfs:label xml:lang="fr">rue Marguerite Boucicaut (Paris, France)</rdfs:label>
@@ -160,11 +167,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbxxxr4--12wfkf25nrn9r_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbxxxr4--12wfkf25nrn9r"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.286030220200338 48.8425588622933, 2.2860417475751826 48.84251648986694, 2.2861747154270544 48.842456414072, 2.286334677599832 48.84238414273998, 2.286491351561909 48.84231335622434, 2.286634776689996 48.84224855584194, 2.2866764664146317 48.842252588986824, 2.2865458210064062 48.84213622205319, 2.286537653713169 48.842161610204634, 2.286397374488848 48.842225243872406, 2.286247467178489 48.8422932439257, 2.286099518771441 48.842360354311644, 2.2859626854206283 48.842422422440904, 2.2858937489224034 48.84241257566739, 2.286030220200338 48.8425588622933))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbxxxr4--12wfkf25nrn9r_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbxxxr4--12wfkf25nrn9r"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.2862839653727884 48.842341929842206)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

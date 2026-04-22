@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzdi9per--1g01jlvxrmacq">
       <rdfs:label xml:lang="fr">rue Tisserand (Paris, France)</rdfs:label>
@@ -178,11 +185,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdi9per--1g01jlvxrmacq_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdi9per--1g01jlvxrmacq"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.2844056130381767 48.84062980972805, 2.2849699056734187 48.84036398438318, 2.285134210404375 48.840286583513546, 2.2852601340705645 48.840227262489634, 2.2853283625430256 48.84019512099987, 2.2853961500939617 48.84019284674617, 2.2851587367768644 48.84009755188709, 2.2851607094699387 48.84014416009043, 2.2850712068513968 48.8401858263914, 2.284722685560623 48.84034807238973, 2.284698959021105 48.84032630693976, 2.284311092774288 48.840508800525875, 2.2842997306006456 48.84050702284266, 2.2842035226894395 48.84049196732239, 2.2841994221388884 48.840491325817084, 2.2843815380930566 48.84070496821756, 2.2844056130381767 48.84062980972805))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdi9per--1g01jlvxrmacq_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdi9per--1g01jlvxrmacq"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.2847531995400203 48.840391335807055)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

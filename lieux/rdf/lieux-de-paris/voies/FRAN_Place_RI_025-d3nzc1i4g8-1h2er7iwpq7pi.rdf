@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzc1i4g8-1h2er7iwpq7pi">
       <rdfs:label xml:lang="fr">quai de Metz (Paris, France)</rdfs:label>
@@ -139,11 +146,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzc1i4g8-1h2er7iwpq7pi_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzc1i4g8-1h2er7iwpq7pi"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3865155926052646 48.891564873883326, 2.3871074330217414 48.89061585033199, 2.3870446503002647 48.8905952951638, 2.3868563662852833 48.89053365047068, 2.386801164861364 48.89072863631688, 2.386743117018093 48.89078429744585, 2.386258583276169 48.89124890651512, 2.3862242783642045 48.89128179867432, 2.386091681265323 48.891295303923975, 2.386277514971577 48.89144789260536, 2.3863303067992825 48.89139428581947, 2.3863332064712526 48.89139566135031, 2.3863859577384146 48.89134687558324, 2.3864699890683863 48.89138773777213, 2.38650360995797 48.89141115474349, 2.3864048570480443 48.89151046334842, 2.3865155926052646 48.891564873883326))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzc1i4g8-1h2er7iwpq7pi_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzc1i4g8-1h2er7iwpq7pi"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.386641885260417 48.89106633937087)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

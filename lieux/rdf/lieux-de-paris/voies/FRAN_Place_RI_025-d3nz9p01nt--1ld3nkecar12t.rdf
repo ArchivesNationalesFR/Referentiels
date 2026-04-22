@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz9p01nt--1ld3nkecar12t">
       <rdfs:label xml:lang="fr">rue Cournot (Paris, France)</rdfs:label>
@@ -169,11 +176,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz9p01nt--1ld3nkecar12t_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz9p01nt--1ld3nkecar12t"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.2931652476661837 48.84008346883197, 2.293098258998122 48.84004536508403, 2.2930950068661584 48.840047763372944, 2.292969239082158 48.8399760633572, 2.2929720262773245 48.83997419115328, 2.292905284069663 48.839936119327184, 2.292898058376778 48.83988773635336, 2.2927100344725933 48.84003792944556, 2.2927802519143987 48.84003286114087, 2.293030799449067 48.84017698767309, 2.2930343749532733 48.840222471068316, 2.2932040721468967 48.84012105987563, 2.293216169642651 48.8401124353433, 2.2932004571366833 48.840103497198626, 2.2931652476661837 48.84008346883197))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz9p01nt--1ld3nkecar12t_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz9p01nt--1ld3nkecar12t"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.2929715591052964 48.84005928693092)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

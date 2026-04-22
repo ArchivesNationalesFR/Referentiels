@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzdtgxm8-z72gulb7e4hw">
       <rdfs:label xml:lang="fr">rue Zadkine (Paris, France)</rdfs:label>
@@ -146,11 +153,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdtgxm8-z72gulb7e4hw_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdtgxm8-z72gulb7e4hw"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3698397533561457 48.83174883192285, 2.369614886908027 48.83156288222761, 2.369546788380669 48.8316163703462, 2.369499260703813 48.83165370176771, 2.3694481914546244 48.83169381423584, 2.3694209898878613 48.83171517924926, 2.3693438700422527 48.83177575348345, 2.3693176269999143 48.83179636625729, 2.3692945197370068 48.83181451599925, 2.3692630461984723 48.83183923647952, 2.3692834480429905 48.83203298461419, 2.369425233550403 48.83196056312618, 2.369585972018747 48.831878460725044, 2.369607384500904 48.83186752303323, 2.3696836679974957 48.8318285587755, 2.36977459778697 48.83178211334378, 2.3698397533561457 48.83174883192285))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdtgxm8-z72gulb7e4hw_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdtgxm8-z72gulb7e4hw"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.369520526668996 48.83179078970721)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

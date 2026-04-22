@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzcibea7-17bjuogwgy4kr">
       <rdfs:label xml:lang="fr">rue Pierre Chausson (Paris, France)</rdfs:label>
@@ -157,11 +164,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcibea7-17bjuogwgy4kr_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcibea7-17bjuogwgy4kr"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3602873394605384 48.87040472812271, 2.3601343840025035 48.870256650039416, 2.360053811316752 48.8703013427375, 2.360188969197373 48.87043263674825, 2.3602882310006508 48.87052906023074, 2.3603908248739156 48.87062871926097, 2.3605009582250287 48.870735704018145, 2.360568986857887 48.87080178484568, 2.3606377148376247 48.870868548366104, 2.3606594364125737 48.870889646864065, 2.3607182425685846 48.870821883705105, 2.360610156090325 48.870717245676715, 2.3604957351123064 48.87060647527706, 2.360471585068995 48.87058309563471, 2.360421242565979 48.87053435946492, 2.3604035864703454 48.87051726671197, 2.360333732856224 48.870449640845415, 2.3602873394605384 48.87040472812271))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcibea7-17bjuogwgy4kr_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcibea7-17bjuogwgy4kr"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.360392030357755 48.87056832368733)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz9p4k6y-1jxuz7x6lg0g3">
       <rdfs:label xml:lang="fr">rue Courtalon (Paris, France)</rdfs:label>
@@ -121,11 +128,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz9p4k6y-1jxuz7x6lg0g3_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz9p4k6y-1jxuz7x6lg0g3"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3476159112339388 48.85958413785753)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz9p4k6y-1jxuz7x6lg0g3_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz9p4k6y-1jxuz7x6lg0g3"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3475131875815105 48.85962278114012, 2.3477134846345242 48.85957336562889, 2.3478221593152147 48.85956014573445, 2.347825820873241 48.859561520109175, 2.347807836616063 48.85953304942856, 2.3478049396758554 48.85953603296986, 2.347660592297767 48.85955557238115, 2.3476364124212403 48.859558845505376, 2.3475626113189003 48.85957688162021, 2.347487410157076 48.85959525990229, 2.347482500342995 48.85959451814811, 2.347401200160906 48.859650723920794, 2.3475131875815105 48.85962278114012))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

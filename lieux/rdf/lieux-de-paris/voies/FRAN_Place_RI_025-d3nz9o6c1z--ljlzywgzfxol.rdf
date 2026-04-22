@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz9o6c1z--ljlzywgzfxol">
       <rdfs:label xml:lang="fr">rue Corvetto (Paris, France)</rdfs:label>
@@ -176,11 +183,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz9o6c1z--ljlzywgzfxol_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz9o6c1z--ljlzywgzfxol"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3149849891916725 48.87725551431604, 2.314999775188022 48.877073647552386, 2.3147906251790435 48.87712153915828, 2.31477308584337 48.87731323068804, 2.3148033359036724 48.87746361484275, 2.3147962297373725 48.87754359904229, 2.3147887542072847 48.87762771627621, 2.314756411578716 48.877644662631454, 2.3149821933839876 48.8776534310087, 2.314954312671947 48.87763281153491, 2.3149653819765184 48.87749666388725, 2.314974922182377 48.877379323418836, 2.3149849891916725 48.87725551431604))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz9o6c1z--ljlzywgzfxol_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz9o6c1z--ljlzywgzfxol"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.314883925633651 48.87736020293961)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

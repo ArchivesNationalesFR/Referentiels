@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzcjeos9--11h3rn5l73ip5">
       <rdfs:label xml:lang="fr">rue Pierre Quillard (Paris, France)</rdfs:label>
@@ -142,11 +149,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcjeos9--11h3rn5l73ip5_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcjeos9--11h3rn5l73ip5"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.410341865883012 48.86652607815901, 2.4099210940420654 48.86649618697854, 2.4099878486473387 48.866550988075645, 2.4099877151931532 48.86655181840604, 2.4099177822560427 48.866987844913425, 2.4098347667101323 48.86703245823897, 2.410257678304248 48.86706240789555, 2.410189104494411 48.86700626159843, 2.410259509603682 48.866570713926485, 2.410341865883012 48.86652607815901))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcjeos9--11h3rn5l73ip5_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcjeos9--11h3rn5l73ip5"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.410088585969455 48.866779346424764)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

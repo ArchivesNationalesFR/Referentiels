@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz8tw9nw-ss9jb3grg2xa">
       <rdfs:label xml:lang="fr">rue des Berges Hennequines (Paris, France)</rdfs:label>
@@ -139,11 +146,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8tw9nw-ss9jb3grg2xa_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8tw9nw-ss9jb3grg2xa"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.337636896353356 48.82529506705109)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8tw9nw-ss9jb3grg2xa_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8tw9nw-ss9jb3grg2xa"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3380030116952626 48.82529904474526, 2.3379601065010984 48.82516677856874, 2.3373080739513448 48.825263916287014, 2.337326875673081 48.825318641487904, 2.3373310593124663 48.8253308125664, 2.3373410460045316 48.82535988183168, 2.3373448670605734 48.82537100222559, 2.3373682254430967 48.8254389933018, 2.337430897452555 48.82542970282047, 2.337460200046787 48.82542536018473, 2.337496171878666 48.82542002829931, 2.3375141652944738 48.82541736149468, 2.337543933238603 48.8254129494662, 2.3376155834433456 48.82540232987703, 2.337634129551097 48.82539958067482, 2.3376312050073604 48.82539100959588, 2.337619233779171 48.825355917923794, 2.3380030116952626 48.82529904474526))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

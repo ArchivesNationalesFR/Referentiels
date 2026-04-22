@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzda9v17-5bzxgukdz7ll">
       <rdfs:label xml:lang="fr">rue Savorgnan de Brazza (Paris, France)</rdfs:label>
@@ -159,11 +166,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzda9v17-5bzxgukdz7ll_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzda9v17-5bzxgukdz7ll"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3027985811002583 48.85464200364984, 2.3028013949141446 48.85459335760586, 2.30261608650468 48.854712970617065, 2.302678867986242 48.85471480425498, 2.302900860982086 48.854865356906934, 2.303197528354084 48.85506707223584, 2.3033597621921618 48.85517676622291, 2.303519293952308 48.85528463384203, 2.3035192651044896 48.85532920760249, 2.3037055241477677 48.855211284185046, 2.30363431055386 48.85520826972838, 2.3034760666998917 48.85510122007278, 2.303324522852123 48.854998703291116, 2.3030159670615644 48.85478933293796, 2.3027985811002583 48.85464200364984))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzda9v17-5bzxgukdz7ll_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzda9v17-5bzxgukdz7ll"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.30315901585097 48.854963206296425)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

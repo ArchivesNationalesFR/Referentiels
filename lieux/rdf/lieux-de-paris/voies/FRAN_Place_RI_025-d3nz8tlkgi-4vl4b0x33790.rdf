@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz8tlkgi-4vl4b0x33790">
       <rdfs:label xml:lang="fr">cour Bérard (Paris, France)</rdfs:label>
@@ -139,11 +146,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8tlkgi-4vl4b0x33790_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8tlkgi-4vl4b0x33790"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.366495737088644 48.85424248371522, 2.3664833356327963 48.85421250201952, 2.3663586125873293 48.85423807840107, 2.3662924971831334 48.85425163584355, 2.3662768806637726 48.854254837569094, 2.366240442092938 48.85426230975283, 2.3662209221058785 48.85426631280379, 2.3662141549387705 48.854267700634054, 2.3661985383988426 48.8542709032486, 2.3661636614676933 48.85427805451801, 2.3659254222213755 48.85432690777186, 2.3659435000634566 48.854384414583244, 2.3661170448842155 48.85434938967685, 2.3661482262288707 48.85434309661203, 2.366247975603414 48.854322965061556, 2.3665073401886336 48.85427053746872, 2.366495737088644 48.85424248371522))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8tlkgi-4vl4b0x33790_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8tlkgi-4vl4b0x33790"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.366216228685283 48.8542983804745)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

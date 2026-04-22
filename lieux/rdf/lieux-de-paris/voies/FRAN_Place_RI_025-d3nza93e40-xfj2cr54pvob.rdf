@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nza93e40-xfj2cr54pvob">
       <rdfs:label xml:lang="fr">rue Édouard Lockroy (Paris, France)</rdfs:label>
@@ -160,11 +167,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nza93e40-xfj2cr54pvob_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nza93e40-xfj2cr54pvob"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.374083995374158 48.866626292231444, 2.3741510589569375 48.866503062676884, 2.374178023589586 48.86650946488737, 2.374247328468441 48.866384370062185, 2.3743735472909098 48.86615654236012, 2.374533597424565 48.86586764522927, 2.374495021389068 48.86585955729936, 2.3745610129064993 48.8657399623722, 2.3746045035738694 48.865661144692716, 2.374648547288186 48.865581327116004, 2.3745442229033107 48.865590536233064, 2.374522242253198 48.86563081080275, 2.374470756872035 48.86572515157808, 2.3743937807579054 48.86586619859412, 2.374285176337909 48.86606519923927, 2.374231050995738 48.866165553463155, 2.3741784758324873 48.866263033371425, 2.3741253790481736 48.86636147821246, 2.3740525450848997 48.866496517415285, 2.374044045050968 48.86649384148834, 2.3739422290600043 48.866671886607676, 2.373888396201831 48.86668825360579, 2.373844204956992 48.86670168970615, 2.3740185972812524 48.866746460097254, 2.374083995374158 48.866626292231444))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nza93e40-xfj2cr54pvob_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nza93e40-xfj2cr54pvob"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.37428175649145 48.866181970279165)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

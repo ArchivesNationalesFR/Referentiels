@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbd1ijo-1i37ll3nq1i4c">
       <rdfs:label xml:lang="fr">passage Hennel (Paris, France)</rdfs:label>
@@ -130,11 +137,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbd1ijo-1i37ll3nq1i4c_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbd1ijo-1i37ll3nq1i4c"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.380336434739171 48.84556073914146, 2.380376324682476 48.84554549118891, 2.380310993539433 48.84550396132869, 2.3802478128313647 48.845473653063245, 2.3800648722426114 48.84538589383143, 2.3800284443408555 48.845367159405676, 2.3800061568722817 48.845342438378, 2.379926838161454 48.84527004539494, 2.379874275119495 48.845295429825434, 2.379954514765086 48.84536760817162, 2.379960444096686 48.845365618045285, 2.3799788953705083 48.845389568236, 2.3799810071928493 48.845392453527865, 2.3799891246313796 48.84539564155008, 2.38005574601504 48.84542180375907, 2.3800764974005126 48.845429952446814, 2.3800794283630147 48.84543110352307, 2.380308315017354 48.845546555417684, 2.380336434739171 48.84556073914146))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbd1ijo-1i37ll3nq1i4c_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbd1ijo-1i37ll3nq1i4c"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.380103507682983 48.84541770493253)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

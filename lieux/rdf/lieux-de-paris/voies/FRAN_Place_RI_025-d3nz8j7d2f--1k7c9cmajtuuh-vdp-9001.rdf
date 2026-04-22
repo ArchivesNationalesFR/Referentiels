@@ -10,7 +10,7 @@
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xml:base="https://rdf.archives-nationales.culture.gouv.fr/"><!--$myName=FRAN_RI_025-d3nz8j7d2f- -1k7c9cmajtuuh-vdp-9001-->
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/FRAN_RI_025-d3nz8j7d2f--1k7c9cmajtuuh-vdp-9001">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="place/FRAN_RI_025-d3nz8j7d2f--1k7c9cmajtuuh-vdp-9001"/>
@@ -43,6 +43,13 @@
          <rdf:Description>
             <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-07</dc:date>
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
          </rdf:Description>
       </skos:changeNote>
    </rico:Record>
@@ -146,11 +153,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8j7d2f--1k7c9cmajtuuh-vdp-9001_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8j7d2f--1k7c9cmajtuuh-vdp-9001"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3331774197230044 48.868709464059705)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8j7d2f--1k7c9cmajtuuh-vdp-9001_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8j7d2f--1k7c9cmajtuuh-vdp-9001"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">MULTIPOLYGON (((2.3331402137914568 48.868708384150466, 2.333303450468128 48.868964257263876, 2.3334965914899994 48.869121185445266, 2.333590523997271 48.86919750597653, 2.3337189569213996 48.869301858533206, 2.333846746774315 48.86940568754031, 2.3339763559425837 48.86951099334939, 2.3340194749552268 48.86933121009163, 2.33397754707028 48.869340000796335, 2.3338576302798897 48.86924286368162, 2.3337733255675315 48.86917457322665, 2.3336877540867818 48.8691052575989, 2.333601389462702 48.869035298954984, 2.333445696790444 48.86890918142747, 2.3333154169212653 48.86880364819923, 2.3331402137914568 48.868708384150466)), ((2.3329675497185747 48.868614500085975, 2.3331402137914568 48.868708384150466, 2.332991620540272 48.86847546175426, 2.332761076674929 48.86823068580999, 2.332642931075689 48.86810569825898, 2.3325215190423503 48.867977254166576, 2.3324003618050098 48.86784907935843, 2.332402209431359 48.86784351283247, 2.3322561729845916 48.867894820559385, 2.3322963126593725 48.86790444083681, 2.3323892495914857 48.868002930184254, 2.3325955210678075 48.86822152387886, 2.332718488539594 48.86835183727702, 2.3328100928408317 48.868448912246365, 2.332856457336929 48.86849804460325, 2.332860367382543 48.868496427793865, 2.3329328946420422 48.868572871507084, 2.332929635348138 48.8685742374314, 2.332953638801891 48.868599728190695, 2.3329675497185747 48.868614500085975)))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

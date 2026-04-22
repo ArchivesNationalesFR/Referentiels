@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbljt9z-8hhs18bmrvs1">
       <rdfs:label xml:lang="fr">rue Jules Cloquet (Paris, France)</rdfs:label>
@@ -152,11 +159,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbljt9z-8hhs18bmrvs1_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbljt9z-8hhs18bmrvs1"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3321416683693186 48.897335765737814)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbljt9z-8hhs18bmrvs1_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbljt9z-8hhs18bmrvs1"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.332115505081271 48.89715388768909, 2.332089934268893 48.89711858886287, 2.332043771250193 48.89713145067825, 2.3319297584705074 48.89716986229411, 2.332000077065951 48.897270386623454, 2.332044264907094 48.89733355580201, 2.3320756987389095 48.897378492964954, 2.3321307000619482 48.8974571196662, 2.3321004051305128 48.89748617680837, 2.33207151464606 48.897513886500434, 2.332369903459037 48.89751747125521, 2.3323616216751533 48.8975056296094, 2.3323330647508502 48.897464797774184, 2.332313074928103 48.89743621566443, 2.332296398923791 48.89741236985769, 2.3322642175827317 48.89736635569888, 2.3322290024942407 48.89731600248208, 2.3321189844102936 48.89715868967659, 2.332115505081271 48.89715388768909))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

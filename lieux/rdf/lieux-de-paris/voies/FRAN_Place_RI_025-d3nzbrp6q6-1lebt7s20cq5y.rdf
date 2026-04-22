@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzbrp6q6-1lebt7s20cq5y">
       <rdfs:label xml:lang="fr">sentier de la Lieutenance (Paris, France)</rdfs:label>
@@ -142,11 +149,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbrp6q6-1lebt7s20cq5y_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbrp6q6-1lebt7s20cq5y"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.4088435106706143 48.84174753032063, 2.4083856362949816 48.84173947670698, 2.4083926986487625 48.84175805280116, 2.4084352123191115 48.841758787368626, 2.4085604510877974 48.841760952617165, 2.408955028084706 48.84176777189822, 2.409003023879151 48.8417685711225, 2.4091340669148997 48.8417707518542, 2.4092062131956227 48.84177195267823, 2.409200400573236 48.841753806403446, 2.409183763246842 48.841753513785775, 2.4091224818173465 48.84175243586441, 2.4088435106706143 48.84174753032063))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzbrp6q6-1lebt7s20cq5y_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzbrp6q6-1lebt7s20cq5y"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.4087948910113774 48.84175582470248)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

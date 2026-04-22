@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz8fs3rw--m23jjxuy3pxq">
       <rdfs:label xml:lang="fr">rue d'Alençon (Paris, France)</rdfs:label>
@@ -151,11 +158,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8fs3rw--m23jjxuy3pxq_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8fs3rw--m23jjxuy3pxq"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.320695062710676 48.84432379019043, 2.320590834050631 48.84426699793931, 2.3204312990703952 48.84418007121834, 2.3203749072628015 48.844321562617225, 2.320420766467085 48.844312858271145, 2.3205745144072347 48.84439678422611, 2.320697598626804 48.84446397137628, 2.3208222661659277 48.84453202267786, 2.320980714383093 48.84461851187665, 2.3209740838078594 48.84464915873729, 2.321172091508962 48.84458371153843, 2.3209680431529143 48.84447253165362, 2.3208841320500833 48.84442681104193, 2.3208006351293013 48.84438131486304, 2.320695062710676 48.84432379019043))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8fs3rw--m23jjxuy3pxq_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8fs3rw--m23jjxuy3pxq"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.320751493171407 48.84442300958832)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

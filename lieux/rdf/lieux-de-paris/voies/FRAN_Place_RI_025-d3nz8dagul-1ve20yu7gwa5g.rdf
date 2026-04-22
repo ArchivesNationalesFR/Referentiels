@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nz8dagul-1ve20yu7gwa5g">
       <rdfs:label xml:lang="fr">passage Abel Leblanc (Paris, France)</rdfs:label>
@@ -144,11 +151,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8dagul-1ve20yu7gwa5g_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8dagul-1ve20yu7gwa5g"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.380819265030638 48.84570928478387, 2.3805610645578277 48.84559855393761, 2.3804698733858163 48.84563769214174, 2.38063068702454 48.84570577695046, 2.380969336619043 48.845849152392276, 2.3810406194135143 48.845879322308384, 2.3810875095039994 48.84589916818194, 2.381239243608124 48.84596338830545, 2.3812616379519214 48.84597286643457, 2.3812861559351455 48.84598332504896, 2.3812892294977224 48.84598463601837, 2.381287493325206 48.84598637089303, 2.381958841873391 48.84627192605107, 2.3820014443317628 48.84621800394623, 2.381889976155327 48.8461702289454, 2.381730925096173 48.84610205965061, 2.381532994129366 48.84601722462375, 2.38133563457481 48.845932634141576, 2.381136275941298 48.84584718578858, 2.381085776608805 48.84582386593093, 2.3809382389916793 48.84576030765903, 2.380819265030638 48.84570928478387))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nz8dagul-1ve20yu7gwa5g_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nz8dagul-1ve20yu7gwa5g"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3812386214406898 48.84592769029666)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nza72w48-g7v75d75grbk">
       <rdfs:label xml:lang="fr">rue Dupin (Paris, France)</rdfs:label>
@@ -164,11 +171,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nza72w48-g7v75d75grbk_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nza72w48-g7v75d75grbk"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.325278580346077 48.849861263853754, 2.325349520819469 48.84979331708743, 2.32536377719328 48.84979958866377, 2.3254340076109 48.84973384217051, 2.3254193606521634 48.849727320176775, 2.325487431045117 48.84966103894242, 2.3255557206968804 48.84959454485481, 2.3256260872652765 48.849526029879435, 2.325692561697187 48.84946130171115, 2.325731869361805 48.849423027956, 2.325853892396307 48.84930421227, 2.325695092880085 48.849216929403795, 2.325705026933213 48.84926329431868, 2.3257073504902963 48.84927413570373, 2.325645457223971 48.84933385869329, 2.3248084000404896 48.850141547102965, 2.3246644208406915 48.8502804715067, 2.32460983620762 48.85028606318961, 2.3245506679412733 48.85029212361881, 2.32479509637043 48.85039314952197, 2.324783659219988 48.850355766982986, 2.3249053993481987 48.850239033658056, 2.3252385021941384 48.84991962838425, 2.3252242437410597 48.84991330551858, 2.325278580346077 48.849861263853754))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nza72w48-g7v75d75grbk_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nza72w48-g7v75d75grbk"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3252268397658282 48.84982759776872)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

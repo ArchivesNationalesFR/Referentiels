@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzdihknl-qh6ku4y1w101">
       <rdfs:label xml:lang="fr">rue Tolain (Paris, France)</rdfs:label>
@@ -195,11 +202,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdihknl-qh6ku4y1w101_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdihknl-qh6ku4y1w101"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.404403001946977 48.85129453338919, 2.4041088400036608 48.851259790055586, 2.404171976416144 48.851319861841986, 2.4041711365570815 48.85132311330949, 2.404101545286767 48.85159225267227, 2.404078366509836 48.851681899609595, 2.4040445051725707 48.85181285175563, 2.404014814293046 48.85192767861491, 2.4039859993672104 48.85203596974423, 2.4039420187637366 48.85220921191804, 2.403905870032865 48.85222543238167, 2.404100198064273 48.85226027077048, 2.4041366191293476 48.85211797711267, 2.4041954336626654 48.85188819102503, 2.4042212608967017 48.85178728301326, 2.404339949010981 48.85132334767744, 2.404403001946977 48.85129453338919))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzdihknl-qh6ku4y1w101_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzdihknl-qh6ku4y1w101"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.404143405120249 48.851755993057196)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

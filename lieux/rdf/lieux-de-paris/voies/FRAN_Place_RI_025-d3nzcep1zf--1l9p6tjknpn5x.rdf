@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzcep1zf--1l9p6tjknpn5x">
       <rdfs:label xml:lang="fr">rue Péguy (Paris, France)</rdfs:label>
@@ -167,11 +174,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcep1zf--1l9p6tjknpn5x_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcep1zf--1l9p6tjknpn5x"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.3279236341725316 48.842995753346)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzcep1zf--1l9p6tjknpn5x_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzcep1zf--1l9p6tjknpn5x"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.3281129148234245 48.84288584765053, 2.3280801795076234 48.84286160039213, 2.328078435817235 48.84286262576692, 2.3279331360822804 48.842753272448036, 2.3279359721198696 48.84274414454014, 2.327772345887245 48.84280248612331, 2.327982174801608 48.84295861654955, 2.3276039901187615 48.843152929774874, 2.3276979428432396 48.84324156044376, 2.3279454414380205 48.84311603190488, 2.328159094574901 48.84300766780958, 2.3282264457001016 48.84297350774439, 2.3281719290965546 48.842932694218845, 2.328110856464652 48.84288697198728, 2.3281129148234245 48.84288584765053))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>

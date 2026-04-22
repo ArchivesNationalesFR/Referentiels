@@ -45,6 +45,13 @@
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-22</dc:date>
+            <rdf:value xml:lang="fr">Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point
+                    ou polygone).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </rico:Record>
    <rico:Place rdf:about="place/FRAN_RI_025-d3nzb5w68a-1q5rwsoye1seu">
       <rdfs:label xml:lang="fr">avenue du Général Tripier (Paris, France)</rdfs:label>
@@ -162,11 +169,13 @@
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzb5w68a-1q5rwsoye1seu_WKT_shape">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzb5w68a-1q5rwsoye1seu"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">MULTIPOLYGON (((2.29657635695229 48.85469386702792, 2.29674825959215 48.85466771235268, 2.296658054012677 48.85454029710662, 2.296479984789508 48.85451304657792, 2.2963630782496183 48.85449515624245, 2.2962001142921706 48.854470217333585, 2.2961624960520126 48.85446446051215, 2.2961247015903448 48.8543758033822, 2.2959326010596732 48.85450165541006, 2.296143481956483 48.854644187048045, 2.29657635695229 48.85469386702792)), ((2.29674825959215 48.85466771235268, 2.2968053743576187 48.85474838767532, 2.297289216033463 48.85482455477394, 2.2975194355253423 48.85467486838283, 2.2971147853556277 48.85461194459203, 2.29674825959215 48.85466771235268)))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzb5w68a-1q5rwsoye1seu_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzb5w68a-1q5rwsoye1seu"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.2966863020532746 48.8546314252196)</rico:measure>
+      <rico:type xml:lang="fr">point</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>
