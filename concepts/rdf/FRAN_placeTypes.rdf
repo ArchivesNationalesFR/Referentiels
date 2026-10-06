@@ -12,7 +12,7 @@
                 <html:p>Thésaurus des types de lieux (entités géo-historiques). Saisi manuellement en se fondant sur les catégories de lieux
                     sous-jacentes ou implicites dans les référentiels de lieux des Archives nationales de France. Des enrichissements sont prévus dans
                     les prochains mois.</html:p>
-                <html:p>Nombre de concepts : 215. Tous ces concepts sont des concepts candidats, le référentiel des types de lieux étant le seul
+                <html:p>Nombre de concepts : 249. Tous ces concepts sont des concepts candidats, le référentiel des types de lieux étant le seul
                     vocabulaire directement créé en RDF, et non instancié actuellement dans le SI des Archives nationales de France.</html:p>
             </html:div>
         </dcterms:description>
@@ -43,6 +43,7 @@
         <dcterms:modified>2026-04-22</dcterms:modified>
         <dcterms:modified>2026-05</dcterms:modified>
         <dcterms:modified>2026-06</dcterms:modified>
+        <dcterms:modified>2026-10</dcterms:modified>
         <dc:coverage xml:lang="fr">du Moyen Âge à nos jours</dc:coverage>
         <skos:scopeNote xml:lang="fr">Ce thésaurus est utilisé par le Lab des Archives nationales de France pour qualifier les lieux décrits dans les
             référentiels de lieux des AnF. Son contenu reflète donc l’état actuel de ces référentiels.</skos:scopeNote>
@@ -93,7 +94,9 @@
                     d’exemples.</html:li>
                 <html:li xml:lang="fr">mai 2026 : dernières petites corrections avant publication de la release 2.0 (correction d’anomalie sur les
                     cibles de deux propriétés, suppression d’une relation d’association.</html:li>
-                <html:li xml:lang="fr">juin 2026 : ajout de neuf nouveaux concepts ; vérification des exemples et de leurs noms, ajout de quelques exemples.</html:li>
+                <html:li xml:lang="fr">juin 2026 : ajout de neuf nouveaux concepts ; vérification des exemples et de leurs noms, ajout de quelques
+                    exemples.</html:li>
+                <html:li xml:lang="fr">septembre-octobre 2026 : ajout de 34 nouveaux concepts et de relations vers ces concepts.</html:li>
             </html:ul>
         </skos:historyNote>
         <skos:hasTopConcept rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20humaine"/>
@@ -211,7 +214,7 @@
         <rdfs:label xml:lang="fr">allée</rdfs:label>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <skos:broader rdf:resource="placeType/voie"/>
-        <skos:definition xml:lang="fr">« Une allée est généralement constituée d'un chemin ou d'une route, souvent goudronnée, bordée d'arbres, et
+        <skos:definition xml:lang="fr">« Une allée est généralement constituée d’un chemin ou d’une route, souvent goudronnée, bordée d’arbres, et
             destinée à la promenade. » (Source : Wikipédia.)</skos:definition>
         <skos:example>
             <rico:Place rdf:about="place/FRAN_RI_025-d3nzcqk13n-y8vae3640yhh">
@@ -241,6 +244,8 @@
         <skos:narrower rdf:resource="placeType/base%20a%C3%A9rienne"/>
         <skos:narrower rdf:resource="placeType/camp%20militaire"/>
         <skos:narrower rdf:resource="placeType/fortification"/>
+        <skos:narrower rdf:resource="placeType/poste%20de%20garde"/>
+        <!-- <skos:narrower rdf:resource="placeType/tranch%C3%A9e"/>-->
         <skos:definition xml:lang="fr">Construction, partie de construction ou groupe de constructions liés aux activités
             militaires.</skos:definition>
         <skos:related rdf:resource="placeType/cimeti%C3%A8re%20militaire"/>
@@ -259,6 +264,8 @@
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20humaine"/>
         <skos:narrower rdf:resource="placeType/abattoir"/>
+        <skos:narrower rdf:resource="placeType/am%C3%A9nagement%20ou%20b%C3%A2timent%20militaire"/>
+        <skos:narrower rdf:resource="placeType/amphith%C3%A9%C3%A2tre"/>
         <skos:narrower rdf:resource="placeType/asile"/>
         <skos:narrower rdf:resource="placeType/bain"/>
         <skos:narrower rdf:resource="placeType/barri%C3%A8re"/>
@@ -266,9 +273,19 @@
         <skos:narrower rdf:resource="placeType/biblioth%C3%A8que"/>
         <skos:narrower rdf:resource="placeType/bourse"/>
         <skos:narrower rdf:resource="placeType/bourse%20de%20marchandises"/>
+        <skos:narrower rdf:resource="placeType/cabane"/>
         <skos:narrower rdf:resource="placeType/cimeti%C3%A8re"/>
+        <skos:narrower rdf:resource="placeType/club"/>
+        <skos:narrower rdf:resource="placeType/clocher"/>
+        <skos:narrower rdf:resource="placeType/colonne%20Morris"/>
+        <skos:narrower rdf:resource="placeType/construction%20ou%20%C3%A9difice%20%C3%A0%20usage%20religieux"/>
+        <skos:narrower rdf:resource="placeType/cour%20%28espace%20libre%20et%20clos%29"/>
+
+        <skos:narrower rdf:resource="placeType/%C3%A9cluse"/>
         <skos:narrower rdf:resource="placeType/%C3%A9curie"/>
+        <skos:narrower rdf:resource="placeType/embarcad%C3%A8re"/>
         <skos:narrower rdf:resource="placeType/enclos"/>
+        <skos:narrower rdf:resource="placeType/ferme"/>
         <skos:narrower rdf:resource="placeType/foire"/>
         <skos:narrower rdf:resource="placeType/gare"/>
         <skos:narrower rdf:resource="placeType/gibet"/>
@@ -276,21 +293,27 @@
         <skos:narrower rdf:resource="placeType/%C3%A9difice%20ou%20local%20commercial"/>
         <skos:narrower rdf:resource="placeType/%C3%A9difice%20judiciaire%2C%20p%C3%A9nitentiaire%20ou%20de%20police"/>
         <skos:narrower rdf:resource="placeType/enseigne"/>
-        <skos:narrower rdf:resource="placeType/am%C3%A9nagement%20ou%20b%C3%A2timent%20militaire"/>
-        <skos:narrower rdf:resource="placeType/construction%20ou%20%C3%A9difice%20%C3%A0%20usage%20religieux"/>
+
+
         <skos:narrower rdf:resource="placeType/%C3%A9difice%20%C3%A0%20usage%20d%E2%80%99habitation"/>
+        <skos:narrower rdf:resource="placeType/%C3%A9difice%20%C3%A0%20usage%20artisanal%20ou%20industriel"/>
+        <skos:narrower rdf:resource="placeType/immeuble"/>
         <skos:narrower rdf:resource="placeType/institut%20culturel"/>
         <skos:narrower rdf:resource="placeType/institut%20national"/>
         <skos:narrower rdf:resource="placeType/jardin"/>
+        <!-- <skos:narrower rdf:resource="placeType/kiosque"/>-->
+        <skos:narrower rdf:resource="placeType/lavoir"/>
         <skos:narrower rdf:resource="placeType/lieu%20d%E2%80%99assistance%20ou%20de%20protection%20sociale"/>
         <skos:narrower rdf:resource="placeType/lieu%20d%E2%80%99enseignement"/>
         <skos:narrower rdf:resource="placeType/entrep%C3%B4t%20industriel"/>
         <skos:narrower rdf:resource="placeType/maison"/>
         <skos:narrower rdf:resource="placeType/maison%20de%20sant%C3%A9"/>
-        <skos:narrower rdf:resource="placeType/manufacture"/>
+        <skos:narrower rdf:resource="placeType/man%C3%A8ge"/>
+        <!-- <skos:narrower rdf:resource="placeType/manufacture"/>-->
         <skos:narrower rdf:resource="placeType/march%C3%A9"/>
         <skos:narrower rdf:resource="placeType/mus%C3%A9e"/>
         <skos:narrower rdf:resource="placeType/observatoire"/>
+        <skos:narrower rdf:resource="placeType/op%C3%A9ra"/>
         <skos:narrower rdf:resource="placeType/orangerie"/>
         <skos:narrower rdf:resource="placeType/ouvrage%20li%C3%A9%20%C3%A0%20l%E2%80%99alimentation%20en%20eau"/>
         <skos:narrower rdf:resource="placeType/palais"/>
@@ -298,6 +321,7 @@
         <skos:narrower rdf:resource="placeType/p%C3%A9pini%C3%A8re"/>
         <skos:narrower rdf:resource="placeType/pilier"/>
         <skos:narrower rdf:resource="placeType/pilori"/>
+        <skos:narrower rdf:resource="placeType/s%C3%A9maphore"/>
         <skos:narrower rdf:resource="placeType/statue"/>
         <skos:narrower rdf:resource="placeType/th%C3%A9%C3%A2tre"/>
         <skos:narrower rdf:resource="placeType/tour"/>
@@ -314,7 +338,7 @@
         <skos:narrower rdf:resource="placeType/galerie"/>
         <skos:narrower rdf:resource="placeType/h%C3%B4pital"/>
         <skos:narrower rdf:resource="placeType/monument%20comm%C3%A9moratif"/>
-        <skos:narrower rdf:resource="placeType/parc%20industriel"/>
+        <!--   <skos:narrower rdf:resource="placeType/parc%20industriel"/>-->
         <skos:narrower rdf:resource="placeType/p%C3%A9ristyle"/>
         <skos:narrower rdf:resource="placeType/phare"/>
         <skos:narrower rdf:resource="placeType/place"/>
@@ -324,21 +348,41 @@
         <skos:narrower rdf:resource="placeType/poterne"/>
         <skos:narrower rdf:resource="placeType/pr%C3%A9au"/>
         <skos:narrower rdf:resource="placeType/quai"/>
-        <skos:narrower rdf:resource="placeType/site%20nucl%C3%A9aire"/>
+        <!-- <skos:narrower rdf:resource="placeType/site%20nucl%C3%A9aire"/>-->
         <skos:narrower rdf:resource="placeType/square"/>
         <skos:narrower rdf:resource="placeType/station%20baln%C3%A9aire"/>
         <skos:narrower rdf:resource="placeType/station%20de%20ski"/>
+        <skos:narrower rdf:resource="placeType/station%20thermale"/>
         <skos:narrower rdf:resource="placeType/terrasse"/>
+        <skos:narrower rdf:resource="placeType/tranch%C3%A9e"/>
         <skos:narrower rdf:resource="placeType/tunnel"/>
         <skos:narrower rdf:resource="placeType/vauxhall"/>
         <skos:narrower rdf:resource="placeType/voie"/>
         <skos:narrower rdf:resource="placeType/voirie"/>
+        <skos:narrower rdf:resource="placeType/zoo"/>
         <skos:definition xml:lang="fr">Construction, partie de construction, ensemble de constructions ou infrastructure terrestre créés par l’homme
             pour lui permettre de s’abriter, de se protéger ou d’exercer ses activités.</skos:definition>
         <skos:changeNote>
             <rdf:Description>
                 <rdf:value xml:lang="fr">Correction de la relation vers le concept générique. Ajout des données suivantes : définition</rdf:value>
                 <dc:date>2026-02-23</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/amphith%C3%A9%C3%A2tre">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">amphithéâtre</skos:prefLabel>
+        <rdfs:label xml:lang="fr">amphithéâtre</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:definition xml:lang="fr">« Un amphithéâtre est une construction présentant des gradins disposés en arcs étagés destinés à accueillir un
+            public. » (Source : Wikipédia.)</skos:definition>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/wiki/Q54831"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
@@ -399,6 +443,27 @@
             <rdf:Description>
                 <rdf:value xml:lang="fr">Correction de la relation vers le concept générique. Ajout des données suivantes : exemple(s)</rdf:value>
                 <dc:date>2026-02-23</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/aqueduc">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">aqueduc</skos:prefLabel>
+        <rdfs:label xml:lang="fr">aqueduc</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/ouvrage%20li%C3%A9%20%C3%A0%20l%E2%80%99alimentation%20en%20eau"/>
+        <skos:definition xml:lang="fr">« Un aqueduc est un canal artificiel, cheminant en souterrain, à même le sol ou en aérien, ouvert ou fermé,
+            destiné au transport de l’eau pour l’approvisionnement d’une population, l’irrigation ou autres usages, industriels notamment. » (Source :
+            Wikipédia.)</skos:definition>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/wiki/Q474"/>
+        <skos:exactMatch rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/T96-1006"/>
+        <skos:exactMatch rdf:resource="https://rdf.archives-nationales.culture.gouv.fr/thing/FRAN_RI_004-d5b8ib3wv0-tbiwv4hcjp16"/>
+        <skos:exactMatch rdf:resource="https://data.bnf.fr/ark:/12148/cb11939572w"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
@@ -694,6 +759,24 @@
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
+    <skos:Concept rdf:about="placeType/baraque">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">baraque</skos:prefLabel>
+        <rdfs:label xml:lang="fr">baraque</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/%C3%A9difice%20%C3%A0%20usage%20d%E2%80%99habitation"/>
+        <skos:definition xml:lang="fr">« Une baraque est une construction provisoire, généralement en planches. L’appellation baraque peut localement
+            se confondre avec cabane dans le langage courant, mais dans la pratique la baraque fait partie des constructions qui peuvent constituer un
+            domicile avec adresse. » (Source : Wikipédia.)</skos:definition>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/wiki/Q721931"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
     <skos:Concept rdf:about="placeType/barrage">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
@@ -787,16 +870,13 @@
         <rdfs:label xml:lang="fr">bassin</rdfs:label>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
-        <skos:definition xml:lang="fr">Un bassin est un plan d’eau artificiel</skos:definition>
+        <skos:definition xml:lang="fr">« Un bassin est un petit plan d’eau, le plus souvent artificiel. » (Source : Wikipédia.)</skos:definition>
         <skos:example>
             <rico:Place rdf:about="place/FRAN_RI_026-d3nzuk62i4--1bulb10635kge">
                 <rico:name xml:lang="fr">bassin de La Villette (Paris, France)</rico:name>
             </rico:Place>
         </skos:example>
-        <skos:related rdf:resource="placeType/%C3%A9l%C3%A9ment%20d%E2%80%99hydrographie"/>
-        <skos:closeMatch rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/T96-1007"/>
-        <skos:closeMatch rdf:resource="https://data.bnf.fr/ark:/12148/cb11937681n"/>
-        <skos:closeMatch rdf:resource="http://fr.dbpedia.org/resource/Canal_(voie_d’eau)"/>
+        <skos:related rdf:resource="placeType/plan%20d%E2%80%99eau"/>
         <skos:changeNote>
             <rdf:Description>
                 <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
@@ -872,7 +952,7 @@
         <skos:exactMatch rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/T96-6"/>
         <skos:example>
             <rico:Place rdf:about="place/FRAN_RI_005-d-98p1lzrv5-1d43i2h6linly">
-                <rico:name xml:lang="fr">Ploumanac'h (Perros-Guirrec, Côtes-d'Armor, France ; bourg)</rico:name>
+                <rico:name xml:lang="fr">Ploumanac’h (Perros-Guirrec, Côtes-d’Armor, France ; bourg)</rico:name>
             </rico:Place>
         </skos:example>
         <skos:exactMatch rdf:resource="http://fr.dbpedia.org/resource/Bourg"/>
@@ -965,6 +1045,27 @@
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
+    <skos:Concept rdf:about="placeType/cabane">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">cabane</skos:prefLabel>
+        <rdfs:label xml:lang="fr">cabane</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:definition xml:lang="fr">« Une cabane est une construction immobilière destinée à servir d’abri temporaire, saisonnier ou provisoire à
+            des personnes, des biens ou des activités de loisir, par opposition à la maison, laquelle sert d’abri permanent. » (Source :
+            Wikipédia.)</skos:definition>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/wiki/Q3649129"/>
+        <skos:exactMatch rdf:resource="https://data.bnf.fr/ark:/12148/cb12461481j"/>
+        <skos:exactMatch rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/T96-512"/>
+        <skos:exactMatch rdf:resource="https://vocab.getty.edu/aat/300004824"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
     <skos:Concept rdf:about="placeType/camp%20de%20concentration">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
@@ -1002,11 +1103,11 @@
         <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
         <skos:definition xml:lang="fr">« Un camp d’internement français est une appellation générique qui désigne tout à la fois des centres de
             rétention administrative, des camps de réfugiés ou de prisonniers de guerre, créés en France pendant la période s’étalant de la Première
-            Guerre mondiale à la guerre d'Algérie. » (Source : Wikipédia.) Par extension, ce terme désigne tout camp de travail ou de
+            Guerre mondiale à la guerre d’Algérie. » (Source : Wikipédia.) Par extension, ce terme désigne tout camp de travail ou de
             détention.</skos:definition>
         <skos:example>
             <rico:Place rdf:about="place/FRAN_RI_005-d5bdph5l06--he0a86n97k4g">
-                <rico:name xml:lang="fr">camp d'internement de Rivesaltes (Pyrénées-Orientales, France)</rico:name>
+                <rico:name xml:lang="fr">camp d’internement de Rivesaltes (Pyrénées-Orientales, France)</rico:name>
             </rico:Place>
         </skos:example>
         <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q2935245"/>
@@ -1057,7 +1158,8 @@
                 <rico:name xml:lang="fr">canal de Marseille au Rhône (Bouches-du-Rhône, France)</rico:name>
             </rico:Place>
         </skos:example>
-        <skos:related rdf:resource="placeType/%C3%A9l%C3%A9ment%20d%E2%80%99hydrographie"/>
+        <!-- <skos:related rdf:resource="placeType/%C3%A9cluse"/>-->
+        <skos:related rdf:resource="placeType/cours%20d%E2%80%99eau"/>
         <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q12284"/>
         <skos:exactMatch rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/T96-1007"/>
         <skos:exactMatch rdf:resource="https://data.bnf.fr/ark:/12148/cb11937681n"/>
@@ -1149,6 +1251,25 @@
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
+    <skos:Concept rdf:about="placeType/cascade">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">cascade</skos:prefLabel>
+        <rdfs:label xml:lang="fr">cascade</rdfs:label>
+        <skos:altLabel xml:lang="fr">chute d’eau</skos:altLabel>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20d%E2%80%99hydrographie"/>
+        <skos:definition xml:lang="fr">« Une chute d’eau, cascade, cataracte ou encore saut est une rupture de pente brutale dans le lit d’un cours
+            d’eau, où l’eau s’écoule verticalement ou en forte déclivité. » (Source : Wikipédia.)</skos:definition>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/wiki/Q34038"/>
+        <skos:exactMatch rdf:resource="https://data.bnf.fr/ark:/12148/cb122040133"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
     <skos:Concept rdf:about="placeType/caserne">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
@@ -1208,7 +1329,7 @@
         <rdfs:label xml:lang="fr">chaîne de montagnes</rdfs:label>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20physique"/>
-        <skos:definition xml:lang="fr">Une chaîne de montagnes est un relief d'altitude qui s'étend sur une longueur variable, allant de quelques
+        <skos:definition xml:lang="fr">Une chaîne de montagnes est un relief d’altitude qui s’étend sur une longueur variable, allant de quelques
             centaines à quelques milliers de kilomètres, et dont la largeur est nettement inférieure. (D’après Wikipédia.)</skos:definition>
         <skos:example>
             <rico:Place rdf:about="place/FRAN_RI_005-d5bdozn61d-1xdljp3kxz3gh">
@@ -1220,6 +1341,23 @@
             <rdf:Description>
                 <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
                 <dc:date>2026-04-18</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/champ">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">champ</skos:prefLabel>
+        <rdfs:label xml:lang="fr">champ</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20humaine"/>
+        <skos:definition xml:lang="fr">Un champ est « en agriculture, [...] un espace de terre arable cultivé ». (Source :
+            Wikipédia.)</skos:definition>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/wiki/Q188869"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
@@ -1440,8 +1578,8 @@
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20physique"/>
         <skos:definition xml:lang="fr">« Un cirque, en géomorphologie, ou cirque naturel, est une enceinte naturelle à parois abruptes, de forme
-            semi-circulaire (parfois circulaire), formée par une dépression d'origine glaciaire [[...], volcanique [...] ou hydrologique [...], ou
-            encore formé par l'érosion karstique [...].  » (Source : Wikipédia.)</skos:definition>
+            semi-circulaire (parfois circulaire), formée par une dépression d’origine glaciaire [[...], volcanique [...] ou hydrologique [...], ou
+            encore formé par l’érosion karstique [...].  » (Source : Wikipédia.)</skos:definition>
         <skos:example>
             <rico:Place rdf:about="place/FRAN_RI_005-d-1g86cclls--15hrn1skfb4um">
                 <rico:name xml:lang="fr">cirque d’Anéou (Pyrénées-Atlantiques, France)</rico:name>
@@ -1461,8 +1599,8 @@
         <rdfs:label xml:lang="fr">cité (voie)</rdfs:label>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <skos:broader rdf:resource="placeType/voie"/>
-        <skos:definition xml:lang="fr">« Le mot cité est un odonyme, c'est-à-dire un terme servant à désigner une voie publique. En effet, il est par
-            extension le terme utilisé pour la voie qui longe un grand ensemble d'une cité. » (Source : Wikipédia.)</skos:definition>
+        <skos:definition xml:lang="fr">« Le mot cité est un odonyme, c’est-à-dire un terme servant à désigner une voie publique. En effet, il est par
+            extension le terme utilisé pour la voie qui longe un grand ensemble d’une cité. » (Source : Wikipédia.)</skos:definition>
         <skos:example>
             <rico:Place rdf:about="place/FRAN_RI_025-d3nz8e9r53--o9uvoklp6y78">
                 <rico:name xml:lang="fr">cité Adrienne (Paris, France)</rico:name>
@@ -1475,6 +1613,25 @@
                 <rdf:value xml:lang="fr">Correction de la dénomination préférentielle (skos:prefLabel). Ajout des données suivantes :
                     exemple(s)</rdf:value>
                 <dc:date>2026-02-23</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/cit%C3%A9%20ouvri%C3%A8re">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">cité ouvrière</skos:prefLabel>
+        <rdfs:label xml:lang="fr">cité ouvrière</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/%C3%A9difice%20%C3%A0%20usage%20d%E2%80%99habitation"/>
+        <skos:definition xml:lang="fr">« Une cité ouvrière est un « lotissement concerté d’habitat ouvrier, généralement mono-familial ». (Source :
+            Wikipédia.)</skos:definition>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/wiki/Q627236"/>
+        <skos:exactMatch rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/T96-41"/>
+        <skos:exactMatch rdf:resource="https://vocab.getty.edu/aat/300000322"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
@@ -1498,6 +1655,28 @@
                 <rdf:value xml:lang="fr">Correction de la relation vers le concept générique. Ajout des données suivantes : définition,
                     exemple(s)</rdf:value>
                 <dc:date>2026-02-23</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/clocher">
+        <!-- à revoir broader -->
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">clocher</skos:prefLabel>
+        <rdfs:label xml:lang="fr">clocher</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <!--<skos:broader rdf:resource="placeType/construction%20ou%20%C3%A9difice%20%C3%A0%20usage%20religieux"/>-->
+        <skos:definition xml:lang="fr">Un clocher est un élément architectural d’une église, d’une tour ou d’un château, généralement en forme de tour
+            plus ou moins élevée, qui héberge une ou plusieurs cloches. (D’après Wikipédia.)</skos:definition>
+        <skos:related rdf:resource="placeType/%C3%A9glise"/>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/wiki/Q3664270"/>
+        <skos:exactMatch rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/T96-1264"/>
+        <skos:exactMatch rdf:resource="https://data.bnf.fr/ark:/12148/cb11934126d"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
@@ -1525,6 +1704,27 @@
             <rdf:Description>
                 <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
                 <dc:date>2026-02-23</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/club">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">club</skos:prefLabel>
+        <rdfs:label xml:lang="fr">club</rdfs:label>
+        <skos:altLabel xml:lang="fr">cercle de sociabilité</skos:altLabel>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:definition xml:lang="fr">Un club est un « édifice réunissant un certain nombre de services à l’usage des membres d’une association née
+            d’un intérêt commun ou plus généralement du désir d’occuper leurs loisirs en société ». (Source : Thésaurus de la désignation des œuvres
+            architecturales et des espaces aménagés.)</skos:definition>
+        <skos:exactMatch rdf:resource="https://data.bnf.fr/ark:/12148/cb133184590"/>
+        <skos:exactMatch rdf:resource="https://vocab.getty.edu/aat/300134512"/>
+        <skos:exactMatch rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/T96-224"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
@@ -1557,7 +1757,7 @@
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <skos:broader rdf:resource="placeType/unit%C3%A9%20administrative%20fran%C3%A7aise"/>
         <skos:definition xml:lang="fr">« Une collectivité à statut particulier est, en France, une collectivité territoriale qui relève de l’article
-            72 de la Constitution sans être une commune, un département ou une région ni une collectivité d’outre-mer régie par l'article 74 de la
+            72 de la Constitution sans être une commune, un département ou une région ni une collectivité d’outre-mer régie par l’article 74 de la
             Constitution. » (Source : Wikipédia.)</skos:definition>
         <skos:scopeNote xml:lang="fr">Inclut notamment Paris depuis janvier 2019.</skos:scopeNote>
         <skos:changeNote>
@@ -1670,6 +1870,25 @@
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
+    <skos:Concept rdf:about="placeType/colonne%20Morris">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">colonne Morris</skos:prefLabel>
+        <rdfs:label xml:lang="fr">colonne Morris</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:definition xml:lang="fr">« Une colonne Morris est un élément du mobilier urbain initialement parisien, mais présent dans beaucoup de
+            villes françaises. Elle tire son nom de l’imprimeur éponyme Gabriel Morris à qui une concession publicitaire fut octroyée en 1868. De
+            forme cylindrique, elle sert principalement de support à la promotion des spectacles et des films. » (Source :
+            Wikipédia.)</skos:definition>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/wiki/Q13964"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
     <skos:Concept rdf:about="placeType/commanderie">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
@@ -1741,12 +1960,14 @@
         </skos:changeNote>
     </skos:Concept>
     <skos:Concept rdf:about="placeType/construction%20ou%20%C3%A9difice%20%C3%A0%20usage%20religieux">
+        <!-- à revoir clocher -->
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
         <skos:prefLabel xml:lang="fr">construction ou édifice à usage religieux</skos:prefLabel>
         <rdfs:label xml:lang="fr">construction ou édifice à usage religieux</rdfs:label>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <!--  <skos:narrower rdf:resource="placeType/clocher"/>-->
         <skos:narrower rdf:resource="placeType/clo%C3%AEtre"/>
         <skos:narrower rdf:resource="placeType/%C3%A9dicule%20religieux"/>
         <skos:narrower rdf:resource="placeType/%C3%A9glise"/>
@@ -1760,14 +1981,33 @@
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
+    <skos:Concept rdf:about="placeType/cour%20%28espace%20libre%20et%20clos%29">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">cour (espace libre et clos)</skos:prefLabel>
+        <rdfs:label xml:lang="fr">cour (espace libre et clos)</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:definition xml:lang="fr">« La cour était un espace libre et clos, entouré d’un ensemble de bâtiments. Ce sens est resté aujourd’hui pour
+            désigner : une cour anglaise, une cour commune, une cour de ferme, une cour d’honneur, une cour d’immeuble, une cour intérieure, une cour
+            jardin, une cour de récréation [...]. » (Source : Wikipédia.)</skos:definition>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/wiki/Q1623285"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
     <skos:Concept rdf:about="placeType/cour">
+        <!-- à revoir URI -->
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
         <skos:prefLabel xml:lang="fr">cour (voie)</skos:prefLabel>
         <rdfs:label xml:lang="fr">cour (voie)</rdfs:label>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <skos:broader rdf:resource="placeType/voie"/>
-        <skos:definition xml:lang="fr">« Le mot cour est un odonyme, c'est-à-dire un terme servant à désigner une voie publique. » Par extension, une
+        <skos:definition xml:lang="fr">« Le mot cour est un odonyme, c’est-à-dire un terme servant à désigner une voie publique. » Par extension, une
             cour est « une voie d’accès qui est une ou plusieurs cours en enfilade, donnant accès à des bâtiments enclavés dans un îlot d’immeubles ».
             (Source : Wikipédia.)</skos:definition>
         <skos:scopeNote xml:lang="fr">Ne pas confondre avec "cours".</skos:scopeNote>
@@ -1811,6 +2051,9 @@
         <skos:altLabel xml:lang="fr">rivière</skos:altLabel>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20d%E2%80%99hydrographie"/>
+        <skos:related rdf:resource="placeType/canal"/>
+        <skos:related rdf:resource="placeType/%C3%A9cluse"/>
+        <skos:related rdf:resource="placeType/embarcad%C3%A8re"/>
         <skos:definition xml:lang="fr">« Un cours d’eau est un écoulement terrestre d’eau liquide entre une source et une embouchure ou une confluence
             avec un débit à module supérieur à zéro. » (Source : Wikipédia.)</skos:definition>
         <skos:example>
@@ -1818,6 +2061,7 @@
                 <rico:name xml:lang="fr">Eure (France ; cours d’eau)</rico:name>
             </rico:Place>
         </skos:example>
+
         <skos:exactMatch rdf:resource="https://data.bnf.fr/fr/ark:/12148/cb11952208p"/>
         <skos:changeNote>
             <rdf:Description>
@@ -1914,6 +2158,43 @@
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
+    <skos:Concept rdf:about="placeType/douve">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">douve</skos:prefLabel>
+        <rdfs:label xml:lang="fr">douve</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/fortification"/>
+        <skos:definition xml:lang="fr">« Une douve, terme généralement employé au pluriel, est un fossé rempli d’eau et entourant des châteaux, des
+            bâtiments importants ou encore des villes fortifiées. » (Source : Wikipédia.)</skos:definition>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/wiki/Q88480"/>
+        <skos:exactMatch rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/T96-481"/>
+        <skos:exactMatch rdf:resource="https://vocab.getty.edu/aat/300003716"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/dune">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">dune</skos:prefLabel>
+        <rdfs:label xml:lang="fr">dune</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20physique"/>
+        <skos:definition xml:lang="fr">« Une dune est une forme de relief ou un modelé constitué d’un amas de sable accumulé sur une largeur plus ou
+            moins grande et une pente généralement assez élevée, sous l’action des vents (dune littorale, bordière ou côtière, dune désertique ou
+            continentale) ou du courant marin sous la mer (dune hydraulique). » (Source : Wikipédia.)</skos:definition>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/wiki/Q25391"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
     <skos:Concept rdf:about="placeType/%C3%A9cole">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
@@ -1939,6 +2220,27 @@
             <rdf:Description>
                 <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
                 <dc:date>2026-02-23</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/%C3%A9cluse">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">écluse</skos:prefLabel>
+        <rdfs:label xml:lang="fr">écluse</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:definition xml:lang="fr">« Une écluse est un ouvrage d’art hydraulique implanté dans un canal ou un cours d’eau pour le rendre navigable
+            et permettre aux bateaux de franchir des dénivellations. » (Source : Wikipédia.)</skos:definition>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/wiki/Q105731"/>
+        <skos:exactMatch rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/T96-1066"/>
+        <skos:exactMatch rdf:resource="https://rdf.archives-nationales.culture.gouv.fr/thing/FRAN_RI_004-d3ndff84jg-1f3303udfj2fy"/>
+        <skos:related rdf:resource="placeType/cours%20d%E2%80%99eau"/>
+        <!-- <skos:related rdf:resource="placeType/canal"/>-->
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
@@ -2011,6 +2313,26 @@
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
+    <skos:Concept rdf:about="placeType/%C3%A9difice%20%C3%A0%20usage%20artisanal%20ou%20industriel">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">édifice à usage artisanal ou industriel</skos:prefLabel>
+        <rdfs:label xml:lang="fr">édifice à usage artisanal ou industriel</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:narrower rdf:resource="placeType/manufacture"/>
+        <skos:narrower rdf:resource="placeType/moulin"/>
+        <skos:narrower rdf:resource="placeType/parc%20industriel"/>
+        <skos:narrower rdf:resource="placeType/site%20nucl%C3%A9aire"/>
+        <skos:definition xml:lang="fr">Un édifice à usage artisanal ou industriel est une construction ou un ensemble de constructions utilisé pour
+            produire des biens.</skos:definition>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
     <skos:Concept rdf:about="placeType/%C3%A9difice%20%C3%A0%20usage%20d%E2%80%99habitation">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
@@ -2018,9 +2340,12 @@
         <rdfs:label xml:lang="fr">édifice à usage d’habitation</rdfs:label>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:narrower rdf:resource="placeType/baraque"/>
+        <skos:narrower rdf:resource="placeType/cit%C3%A9%20ouvri%C3%A8re"/>
         <skos:narrower rdf:resource="placeType/h%C3%B4tel"/>
         <skos:narrower rdf:resource="placeType/h%C3%B4tel%20meubl%C3%A9"/>
         <skos:narrower rdf:resource="placeType/ch%C3%A2teau"/>
+        <!-- <skos:narrower rdf:resource="placeType/immeuble"/>-->
         <skos:narrower rdf:resource="placeType/manoir"/>
         <skos:narrower rdf:resource="placeType/r%C3%A9sidence%20universitaire"/>
         <skos:changeNote>
@@ -2083,6 +2408,7 @@
                 <rico:name xml:lang="fr">église Saint-Germain-l’Auxerrois (Paris, France)</rico:name>
             </rico:Place>
         </skos:example>
+        <skos:related rdf:resource="placeType/clocher"/>
         <skos:exactMatch rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/T96-90"/>
         <skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300007466"/>
         <skos:exactMatch rdf:resource="http://fr.dbpedia.org/resource/%C3%89glise_%28%C3%A9difice%29"/>
@@ -2101,6 +2427,8 @@
         <skos:prefLabel xml:lang="fr">élément de géographie humaine</skos:prefLabel>
         <rdfs:label xml:lang="fr">élément de géographie humaine</rdfs:label>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:narrower rdf:resource="placeType/champ"/>
+        <!-- <skos:narrower rdf:resource="placeType/%C3%A9difice%20%C3%A0%20usage%20artisanal%20ou%20industriel"/>-->
         <skos:narrower rdf:resource="placeType/unit%C3%A9%20administrative%20fran%C3%A7aise"/>
         <skos:narrower rdf:resource="placeType/ville"/>
         <skos:narrower rdf:resource="placeType/r%C3%A9gion%20historique"/>
@@ -2135,12 +2463,15 @@
         <skos:narrower rdf:resource="placeType/cirque"/>
         <skos:narrower rdf:resource="placeType/col"/>
         <skos:narrower rdf:resource="placeType/d%C3%A9sert"/>
+        <skos:narrower rdf:resource="placeType/dune"/>
         <skos:narrower rdf:resource="placeType/%C3%A9l%C3%A9ment%20d%E2%80%99hydrographie"/>
+        <skos:narrower rdf:resource="placeType/falaise"/>
         <skos:narrower rdf:resource="placeType/for%C3%AAt"/>
         <skos:narrower rdf:resource="placeType/gorge"/>
         <skos:narrower rdf:resource="placeType/gouffre"/>
         <skos:narrower rdf:resource="placeType/grotte"/>
         <skos:narrower rdf:resource="placeType/%C3%AEle"/>
+        <skos:narrower rdf:resource="placeType/lande"/>
         <skos:narrower rdf:resource="placeType/massif"/>
         <skos:narrower rdf:resource="placeType/montagne"/>
         <skos:narrower rdf:resource="placeType/p%C3%A9ninsule"/>
@@ -2166,24 +2497,46 @@
         <rdfs:label xml:lang="fr">élément d’hydrographie</rdfs:label>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20physique"/>
+        <skos:narrower rdf:resource="placeType/cascade"/>
         <skos:narrower rdf:resource="placeType/cours%20d%E2%80%99eau"/>
         <skos:narrower rdf:resource="placeType/golfe"/>
         <skos:narrower rdf:resource="placeType/lac"/>
         <skos:narrower rdf:resource="placeType/lagune"/>
         <skos:narrower rdf:resource="placeType/mer"/>
         <skos:narrower rdf:resource="placeType/oc%C3%A9an"/>
+        <skos:narrower rdf:resource="placeType/plan%20d%E2%80%99eau"/>
         <skos:definition xml:lang="fr">Un élément d’hydrographie est un cours d’eau ou une étendue d’eau.</skos:definition>
         <skos:related rdf:resource="placeType/ouvrage%20li%C3%A9%20%C3%A0%20l%E2%80%99alimentation%20en%20eau"/>
         <skos:related rdf:resource="placeType/gare%20d%E2%80%99eau"/>
         <skos:related rdf:resource="placeType/barrage"/>
-        <skos:related rdf:resource="placeType/bassin"/>
-        <skos:related rdf:resource="placeType/canal"/>
+        <!-- <skos:related rdf:resource="placeType/bassin"/>-->
+        <!-- <skos:related rdf:resource="placeType/canal"/>-->
         <skos:related rdf:resource="placeType/fontaine"/>
         <skos:changeNote>
             <rdf:Description>
                 <rdf:value xml:lang="fr">Ajout des données suivantes : définition, relation(s) d’association avec des concepts du
                     vocabulaire</rdf:value>
                 <dc:date>2026-02-23</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/embarcad%C3%A8re">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">embarcadère</skos:prefLabel>
+        <rdfs:label xml:lang="fr">embarcadère</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:definition xml:lang="fr">Un embarcadère est un « ouvrage aménagé dans un port ou sur une rivière, pour permettre l’embarquement et le
+            débarquement de voyageurs et de marchandises. Il peut comprendre un autre type d’édifices ». (Source : Thésaurus de la désignation des
+            œuvres architecturales et des espaces aménagés.)</skos:definition>
+        <!-- <skos:related rdf:resource="placeType/port"/>-->
+        <skos:related rdf:resource="placeType/cours%20d%E2%80%99eau"/>
+        <skos:exactMatch rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/T96-1106"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
@@ -2247,7 +2600,7 @@
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
         <skos:definition xml:lang="fr">Une enseigne est un « panneau portant un emblème, une inscription ou un objet symbolique, placé à la façade
-            d'un établissement professionnel, qu'il soit commercial, artisanal, libéral, industriel ou autre pour en signaler l'existence au public »
+            d’un établissement professionnel, qu’il soit commercial, artisanal, libéral, industriel ou autre pour en signaler l’existence au public »
             (source : Thésaurus de la désignation des objets mobiliers). Par extension, le nom de l’enseigne sert souvent à désigner l’édifice que
             celle-ci orne.</skos:definition>
         <skos:example>
@@ -2389,6 +2742,23 @@
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
+    <skos:Concept rdf:about="placeType/falaise">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">falaise</skos:prefLabel>
+        <rdfs:label xml:lang="fr">falaise</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20physique"/>
+        <skos:definition xml:lang="fr">« Une falaise est un escarpement rocheux créé par l’érosion le long d’une côte maritime ou d’un cours d’eau ».
+            (Source : Wikipédia.)</skos:definition>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/wiki/Q6502866"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
     <skos:Concept rdf:about="placeType/faubourg">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
@@ -2429,6 +2799,24 @@
                 <rdf:value xml:lang="fr">Correction de la relation vers le concept générique. Ajout des données suivantes : exemple(s), relation(s)
                     sémantique(s) vers des concepts d’autres vocabulaires.</rdf:value>
                 <dc:date>2026-02-23</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/ferme">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">ferme</skos:prefLabel>
+        <rdfs:label xml:lang="fr">ferme</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:definition xml:lang="fr">Une ferme est un « édifice comprenant un logis et les dépendances nécessaires à l’exploitation agricole ».
+            ((Source : Thésaurus de la désignation des œuvres architecturales et des espaces aménagés.)</skos:definition>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q131596"/>
+        <skos:exactMatch rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/T96-564"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
@@ -2537,6 +2925,7 @@
         <rdfs:label xml:lang="fr">fortification</rdfs:label>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20b%C3%A2timent%20militaire"/>
+        <skos:narrower rdf:resource="placeType/douve"/>
         <skos:definition xml:lang="fr">« La fortification est l’art militaire de renforcer une position ou un lieu par des ouvrages de défense en
             prévision de leur éventuelle attaque. Par extension, la fortification désigne ces ouvrages de défense eux-mêmes. » (Source :
             Wikipédia.)</skos:definition>
@@ -2994,6 +3383,27 @@
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
+    <skos:Concept rdf:about="placeType/immeuble">
+        <!-- à revoir broader -->
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">immeuble</skos:prefLabel>
+        <rdfs:label xml:lang="fr">immeuble</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:definition xml:lang="fr">« Un immeuble est, dans son sens courant, un bâtiment de plusieurs étages, qui peut être conçu pour assurer
+            aussi bien des fonctions résidentielles, administratives (privées ou publiques), d’enseignement (écoles, universités), de soins (hôpitaux,
+            cliniques), commerciales, financières ou hôtelières. » (Source : Wikipédia.)</skos:definition>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/wiki/Q11755959"/>
+        <skos:relatedMatch rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/T96-518"/>
+        <skos:exactMatch rdf:resource="http://data.bnf.fr/ark:/12148/cb11950219v"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
     <skos:Concept rdf:about="placeType/impasse">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
@@ -3073,6 +3483,7 @@
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
         <skos:narrower rdf:resource="placeType/parc"/>
+        <skos:narrower rdf:resource="placeType/verger"/>
         <skos:definition xml:lang="fr">Un jardin est un « espace organisé, public ou privé, comportant des végétaux en pleine terre ou hors sol ».
             (Source : Thésaurus de la désignation des œuvres architecturales et des espaces aménagés.)</skos:definition>
         <skos:example>
@@ -3086,6 +3497,26 @@
             <rdf:Description>
                 <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
                 <dc:date>2026-02-23</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/kiosque">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">kiosque</skos:prefLabel>
+        <rdfs:label xml:lang="fr">kiosque</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/pavillon"/>
+        <skos:definition xml:lang="fr">Un kiosque est un « pavillon, généralement porté par un soubassement de plan centré et ouvert de tous les
+            côtés. On le trouve le plus souvent placé dans un jardin ou sur une place publique ». (Source : Thésaurus de la désignation des œuvres
+            architecturales et des espaces aménagés.)</skos:definition>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/wiki/Q693369"/>
+        <skos:exactMatch rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/T96-1147"/>
+        <skos:exactMatch rdf:resource="https://data.bnf.fr/ark:/12148/cb15086438r"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
@@ -3133,6 +3564,48 @@
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
+    <skos:Concept rdf:about="placeType/lande">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">lande</skos:prefLabel>
+        <rdfs:label xml:lang="fr">lande</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20physique"/>
+        <skos:definition xml:lang="fr">« La lande (parfois appelée « dorne » dans le nord de la France) est un type d’habitat naturel où se développe
+            une formation végétale particulière, caractérisée par une physionomie de fruticée, c’est-à-dire une formation où dominent des arbrisseaux
+            et des sous-arbrisseaux xéromorphes et sempervirents (les arbres et arbustes sont rares) poussant typiquement sur des sols pauvres,
+            siliceux ou calcaires. Elle correspond à des fourrés denses constitués de plantes ligneuses basses ne dépassant généralement pas deux
+            mètres de haut. » (Source : Wikipédia.)</skos:definition>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/wiki/Q27590"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/lavoir">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">lavoir</skos:prefLabel>
+        <rdfs:label xml:lang="fr">lavoir</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:definition xml:lang="fr">« Un lavoir est un bassin alimenté en eau généralement d’origine naturelle qui a pour vocation première de
+            permettre de rincer le linge après l’avoir lavé. Il est le plus souvent public, gratuit ou payant selon les communes, mais peut être
+            privé, attaché à une seule maison ou une seule ferme et pouvant être mis à la disposition de voisins moyennant une redevance. » (Source :
+            Wikipédia.)</skos:definition>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/wiki/Q1690211"/>
+        <skos:exactMatch rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/T96-235"/>
+        <skos:exactMatch rdf:resource="https://data.bnf.fr/ark:/12148/cb12017858v"/>
+        <skos:exactMatch rdf:resource="https://vocab.getty.edu/aat/300008016"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
     <skos:Concept rdf:about="placeType/lieu-dit">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
@@ -3146,7 +3619,7 @@
             cartographie et la signalétique officielle des lieux d’un pays. (D’après Wikipédia.)</skos:definition>
         <skos:example>
             <rico:Place rdf:about="place/FRAN_RI_005-d-57bir2eed--19uuyuyhzy62n">
-                <rico:name xml:lang="fr">Becléguer (Lannion, Côtes-d'Armor, France ; lieu-dit)</rico:name>
+                <rico:name xml:lang="fr">Becléguer (Lannion, Côtes-d’Armor, France ; lieu-dit)</rico:name>
             </rico:Place>
         </skos:example>
         <skos:changeNote>
@@ -3274,6 +3747,25 @@
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
+    <skos:Concept rdf:about="placeType/man%C3%A8ge">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">manège</skos:prefLabel>
+        <rdfs:label xml:lang="fr">manège</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:definition xml:lang="fr">« Un manège était à l’origine une attraction se présentant sous la forme d’un plateau circulaire pouvant être
+            mis en rotation, garnie de différentes sortes de montures et supports où des personnes (principalement des enfants) pouvaient prendre
+            place le temps de quelques tours, généralement moyennant paiement lors de fêtes foraines. Petit à petit, l’usage du terme « manège » s’est
+            élargi à toute attraction basée sur un mouvement circulaire, parfois à fortes sensations. » (Source : Wikipédia.)</skos:definition>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/wiki/Q15124452"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
     <skos:Concept rdf:about="placeType/manoir">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
@@ -3311,7 +3803,7 @@
         <skos:prefLabel xml:lang="fr">manufacture</skos:prefLabel>
         <rdfs:label xml:lang="fr">manufacture</rdfs:label>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
-        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:broader rdf:resource="placeType/%C3%A9difice%20%C3%A0%20usage%20artisanal%20ou%20industriel"/>
         <skos:narrower rdf:resource="placeType/manufacture%20royale"/>
         <skos:definition xml:lang="fr">« Une manufacture (du latin manufactura, « fait à la main ») est un lieu de fabrication dans lequel des
             produits sont à l’origine fabriqués à la main par des ouvriers et qui sert à désigner aujourd’hui une entreprise dans laquelle les biens
@@ -3367,7 +3859,7 @@
                 <rico:name xml:lang="fr">marché Saint-Martin (Paris, France)</rico:name>
             </rico:Place>
         </skos:example>
-        <skos:exactMathc rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/T96-635"/>
+        <skos:exactMatch rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/T96-635"/>
         <skos:exactMatch rdf:resource="http://fr.dbpedia.org/resource/March%C3%A9"/>
         <skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300005238"/>
         <skos:closeMatch rdf:resource="https://data.bnf.fr/ark:/12148/cb119344952"/>
@@ -3513,6 +4005,25 @@
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
+    <skos:Concept rdf:about="placeType/moulin">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">moulin</skos:prefLabel>
+        <rdfs:label xml:lang="fr">moulin</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/%C3%A9difice%20%C3%A0%20usage%20artisanal%20ou%20industriel"/>
+        <skos:definition xml:lang="fr">« Un moulin est une machine à moudre, à l’origine comportant une ou plusieurs meules, principalement les grains
+            de céréales récoltées afin de les transformer en poudre plus ou moins grossière ou farine. » (Source : Wikipédia.)</skos:definition>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/wiki/Q44494"/>
+        <skos:exactMatch rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/T96-676"/>
+        <skos:exactMatch rdf:resource="https://data.bnf.fr/ark:/12148/cb12468050v"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
     <skos:Concept rdf:about="placeType/mus%C3%A9e">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
@@ -3642,6 +4153,28 @@
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
+    <skos:Concept rdf:about="placeType/op%C3%A9ra">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">opéra</skos:prefLabel>
+        <rdfs:label xml:lang="fr">opéra</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:definition xml:lang="fr">« Un opéra est un édifice conçu dans l’objectif d’y représenter des œuvres lyriques. Comme nombre de théâtres,
+            il est constitué d’un bâtiment abritant une scène, une fosse d’orchestre, une salle, des coulisses, des ateliers de confection des
+            costumes et de construction des décors et des bureaux destinés à l’administration de l’institution qu’il abrite. » (Source :
+            Wikipédia.)</skos:definition>
+        <!--<skos:related rdf:resource="placeType/th%C3%A9%C3%A2tre"/>-->
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/wiki/Q153562"/>
+        <skos:exactMatch rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/T96-417"/>
+        <skos:exactMatch rdf:resource="https://vocab.getty.edu/aat/300007104"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
     <skos:Concept rdf:about="placeType/orangerie">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
@@ -3702,8 +4235,11 @@
         <rdfs:label xml:lang="fr">ouvrage lié à l’alimentation en eau</rdfs:label>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:narrower rdf:resource="placeType/aqueduc"/>
         <skos:narrower rdf:resource="placeType/fontaine"/>
         <skos:narrower rdf:resource="placeType/pompe%20%C3%A0%20eau"/>
+        <skos:narrower rdf:resource="placeType/puits"/>
+        <skos:narrower rdf:resource="placeType/r%C3%A9servoir%20d%E2%80%99eau"/>
         <skos:definition xml:lang="fr">Un « aménagement ou mobilier permettant de recueillir ou de faire circuler l’eau ». (Source : Thésaurus de la
             désignation des objets mobiliers.)</skos:definition>
         <skos:related rdf:resource="placeType/%C3%A9l%C3%A9ment%20d%E2%80%99hydrographie"/>
@@ -3774,9 +4310,9 @@
         <skos:prefLabel xml:lang="fr">parc industriel</skos:prefLabel>
         <rdfs:label xml:lang="fr">parc industriel</rdfs:label>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
-        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:broader rdf:resource="placeType/%C3%A9difice%20%C3%A0%20usage%20artisanal%20ou%20industriel"/>
         <skos:definition xml:lang="fr">« Un parc industriel, aussi appelé zone industrielle ou site industriel, est une zone d’activité prévue pour un
-            usage industriel, situé à l'extérieur ou en périphérie d’une agglomération, réservé aux activités industrielles et regroupant différentes
+            usage industriel, situé à l’extérieur ou en périphérie d’une agglomération, réservé aux activités industrielles et regroupant différentes
             entreprises. » (Source : Wikipédia.)</skos:definition>
         <skos:example>
             <rico:Place rdf:about="place/FRAN_RI_005-d-1g85e4q88--1dt4ywffcrc53">
@@ -3929,6 +4465,7 @@
         <rdfs:label xml:lang="fr">pavillon</rdfs:label>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:narrower rdf:resource="placeType/kiosque"/>
         <skos:definition xml:lang="fr">Un pavillon est un « bâtiment ou corps de bâtiment caractérisé par un plan sensiblement carré. Un pavillon peut
             être isolé, hors-œuvre, demi-hors-œuvre, dans-œuvre, sur l’angle, dans l’angle ». (Source : Thésaurus de la désignation des œuvres
             architecturales et des espaces aménagés.)</skos:definition>
@@ -3986,7 +4523,7 @@
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
         <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20de%20g%C3%A9ographie%20physique"/>
         <skos:definition xml:lang="fr">« Une péninsule (du latin paeninsula, paene signifiant « presque » et insula « île ») est une partie de terres
-            émergées rattachée à une masse continentale par un de ses côtés. Elle se distingue d'une presqu’île par sa taille supérieure, ou par
+            émergées rattachée à une masse continentale par un de ses côtés. Elle se distingue d’une presqu’île par sa taille supérieure, ou par
             l’absence d’isthme. » (Source : Wikipédia.)</skos:definition>
         <skos:example>
             <rico:Place rdf:about="place/FRAN_RI_005-d-1fsq9iyb8-8l3pongtlqv7">
@@ -4202,6 +4739,24 @@
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
+    <skos:Concept rdf:about="placeType/plan%20d%E2%80%99eau">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">plan d’eau</skos:prefLabel>
+        <rdfs:label xml:lang="fr">plan d’eau</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/%C3%A9l%C3%A9ment%20d%E2%80%99hydrographie"/>
+        <skos:related rdf:resource="placeType/bassin"/>
+        <skos:definition xml:lang="fr">« Un plan d’eau est « une étendue d’eau douce continentale de surface, libre stagnante, d’origine naturelle ou
+            anthropique, de profondeur variable. » (Source : Wikipédia.)</skos:definition>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/wiki/Q3391202"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
     <skos:Concept rdf:about="placeType/plateau">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
@@ -4335,6 +4890,7 @@
                 <rico:name xml:lang="fr">port de Moguériec (Sibiril, Finistère, France)</rico:name>
             </rico:Place>
         </skos:example>
+        <!-- <skos:related rdf:resource="placeType/embarcad%C3%A8re"/>-->
         <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q44782"/>
         <skos:changeNote>
             <rdf:Description>
@@ -4375,6 +4931,25 @@
                 <rdf:value xml:lang="fr">Ajout des données suivantes : exemple(s), relation(s) sémantique(s) vers des concepts d’autres
                     vocabulaires.</rdf:value>
                 <dc:date>2026-02-23</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/poste%20de%20garde">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">poste de garde</skos:prefLabel>
+        <rdfs:label xml:lang="fr">poste de garde</rdfs:label>
+        <skos:altLabel xml:lang="fr">corps de garde</skos:altLabel>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20b%C3%A2timent%20militaire"/>
+        <skos:definition xml:lang="fr">Un poste de garde est un « édifice ou bâtiment placé généralement à l’entrée d’une ville, d’une caserne, etc.
+            où se tiennent les soldats chargés de la garde. » (Source : Thésaurus de la désignation des œuvres architecturales et des espaces
+            aménagés.)</skos:definition>
+        <skos:exactMatch rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/T96-462"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
@@ -4510,6 +5085,26 @@
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
+    <skos:Concept rdf:about="placeType/puits">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">puits</skos:prefLabel>
+        <rdfs:label xml:lang="fr">puits</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/ouvrage%20li%C3%A9%20%C3%A0%20l%E2%80%99alimentation%20en%20eau"/>
+        <skos:definition xml:lang="fr">« Un puits à eau est le résultat d’un terrassement vertical, mécanisé (par forage, havage, etc.) ou manuel,
+            permettant l’exploitation d’une nappe d’eau souterraine, autrement dit un aquifère. L’eau peut être remontée au niveau du sol grâce à un
+            seau ou une pompe, manuelle ou non. » (Source : Wikipédia.)</skos:definition>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/wiki/Q43483"/>
+        <skos:exactMatch rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/T69-511"/>
+        <skos:exactMatch rdf:resource="https://data.bnf.fr/ark:/12148/cb119759000"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
     <skos:Concept rdf:about="placeType/quai">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
@@ -4548,7 +5143,7 @@
         <skos:narrower rdf:resource="placeType/faubourg"/>
         <skos:narrower rdf:resource="placeType/quartier%20administratif%20actuel%20de%20Paris"/>
         <skos:narrower rdf:resource="placeType/quartier%20historique%20ou%20administratif%20ancien%20de%20Paris"/>
-        <skos:definition xml:lang="fr">Un quartier est une subdivision d’une ville. C'est aussi souvent une échelle d’appropriation d’une partie de la
+        <skos:definition xml:lang="fr">Un quartier est une subdivision d’une ville. C’est aussi souvent une échelle d’appropriation d’une partie de la
             ville par ses habitants, donc un ensemble urbain comportant certaines caractéristiques particulières ou une certaine unité. (D’après
             Wikipédia.)</skos:definition>
         <skos:example>
@@ -4719,6 +5314,24 @@
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
+    <skos:Concept rdf:about="placeType/r%C3%A9servoir%20d%E2%80%99eau">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">réservoir d’eau</skos:prefLabel>
+        <rdfs:label xml:lang="fr">réservoir d’eau</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/ouvrage%20li%C3%A9%20%C3%A0%20l%E2%80%99alimentation%20en%20eau"/>
+        <skos:definition xml:lang="fr">« Un réservoir d’eau est une enceinte de confinement de l’eau permettant son stockage pour une utilisation
+            ultérieure. Tout cours d’eau dont le flux est interrompu peut être considéré comme un réservoir d’eau. » (Source :
+            Wikipédia.)</skos:definition>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/wiki/Q6501028"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
     <skos:Concept rdf:about="placeType/rond-point">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
@@ -4857,6 +5470,25 @@
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
+    <skos:Concept rdf:about="placeType/s%C3%A9maphore">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">sémaphore</skos:prefLabel>
+        <rdfs:label xml:lang="fr">sémaphore</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:definition xml:lang="fr">Un sémaphore est un « ouvrage muni d’un appareillage destiné à signaler, par un dispositif optique, des
+            informations à des conducteurs ou à des piétons ». (Source : Thésaurus de la désignation des œuvres architecturales et des espaces
+            aménagés.)</skos:definition>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/wiki/Q1874098"/>
+        <skos:exactMatch rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/T96-1111"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
     <skos:Concept rdf:about="placeType/s%C3%A9minaire">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <skos:inScheme rdf:resource="placeTypes"/>
@@ -4938,7 +5570,7 @@
         <rdfs:label xml:lang="fr">site nucléaire</rdfs:label>
         <skos:altLabel xml:lang="fr">installation nucléaire</skos:altLabel>
         <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
-        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:broader rdf:resource="placeType/%C3%A9difice%20%C3%A0%20usage%20artisanal%20ou%20industriel"/>
         <skos:definition xml:lang="fr">Une installation nucléaire est définie par la Convention de Paris sur la responsabilité civile dans le domaine
             de l’énergie nucléaire comme « les réacteurs à l’exception de ceux qui font partie d’un moyen de transport (exemple : sous-marin
             nucléaire, porte-avions nucléaire, etc.) ; les usines de préparation ou de fabrication de substances nucléaires ; les usines de séparation
@@ -5062,6 +5694,26 @@
                 <rdf:value xml:lang="fr">Ajout des données suivantes : définition, exemple(s), relation(s) sémantique(s) vers des concepts d’autres
                     vocabulaires.</rdf:value>
                 <dc:date>2026-02-23</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/station%20thermale">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">station thermale</skos:prefLabel>
+        <rdfs:label xml:lang="fr">station thermale</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:definition xml:lang="fr">« Une station thermale, aussi appelée station hydrominérale, ville d’eaux ou ville thermale, est un type de
+            station touristique dans laquelle sont aménagés un ou plusieurs établissements spécialisés dans le traitement d’affections diverses par
+            les eaux minérales. » (Source : Wikipédia.)</skos:definition>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/wiki/Q4946461"/>
+        <skos:exactMatch rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/T96-14"/>
+        <skos:exactMatch rdf:resource="https://vocab.getty.edu/aat/300006737"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
@@ -5200,6 +5852,7 @@
                 <rico:name xml:lang="fr">théâtre du Châtelet (Paris, France)</rico:name>
             </rico:Place>
         </skos:example>
+        <!-- <skos:related rdf:resource="placeType/op%C3%A9ra"/>-->
         <skos:exactMatch rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/T96-419"/>
         <skos:exactMatch rdf:resource="https://data.bnf.fr/ark:/12148/cb11938054b"/>
         <skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300007117"/>
@@ -5234,6 +5887,24 @@
             <rdf:Description>
                 <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
                 <dc:date>2026-02-23</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/tranch%C3%A9e">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">tranchée</skos:prefLabel>
+        <rdfs:label xml:lang="fr">tranchée</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:definition xml:lang="fr">« Une tranchée est une excavation longue et étroite pratiquée dans le sol. Par définition, la tranchée est
+            généralement considérée comme plus profonde que large (contrairement aux fossés ou aux ravines) et comme significativement plus longue que
+            large à l’inverse d’un trou. » (Source : Wikipédia.)</skos:definition>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/wiki/Q1852785"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
@@ -5363,6 +6034,26 @@
             <rdf:Description>
                 <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
                 <dc:date>2026-06-08</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/verger">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">verger</skos:prefLabel>
+        <rdfs:label xml:lang="fr">verger</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/jardin"/>
+        <skos:definition xml:lang="fr">Un verger est un « jardin ou [une] portion d’un parc ou d’un jardin consacré à la culture d’arbres fruitiers de
+            haute-tige de plein-vent ». (Source : Thésaurus de la désignation des œuvres architecturales et des espaces aménagés.)</skos:definition>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/wiki/Q236371"/>
+        <skos:exactMatch rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/T96-1131"/>
+        <skos:exactMatch rdf:resource="https://data.bnf.fr/ark:/12148/cb11964775w"/>
+        <skos:exactMatch rdf:resource="https://vocab.getty.edu/aat/300008890"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
@@ -5599,6 +6290,27 @@
                 <rdf:value xml:lang="fr">Correction de la relation vers le concept générique. Ajout des données suivantes : définition, exemple(s),
                     relation(s) sémantique(s) vers des concepts d’autres vocabulaires.</rdf:value>
                 <dc:date>2026-02-23</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="placeType/zoo">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
+        <skos:inScheme rdf:resource="placeTypes"/>
+        <skos:prefLabel xml:lang="fr">zoo</skos:prefLabel>
+        <rdfs:label xml:lang="fr">zoo</rdfs:label>
+        <iso-thes:status xml:lang="fr">candidat</iso-thes:status>
+        <skos:broader rdf:resource="placeType/am%C3%A9nagement%20ou%20construction"/>
+        <skos:definition xml:lang="fr">« Un parc zoologique, aussi appelé jardin zoologique ou plus communément zoo, est un espace le plus souvent
+            clos où sont réunies de nombreuses espèces animales, pour la plupart non domestiques, vivant dans des espaces clos. » (Source :
+            Wikipédia.)</skos:definition>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/wiki/Q43501"/>
+        <skos:exactMatch rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/T96-1133"/>
+        <skos:exactMatch rdf:resource="http://data.bnf.fr/ark:/12148/cb119781773"/>
+        <skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300000348"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="fr">Concept ajouté.</rdf:value>
+                <dc:date>2026-09-29</dc:date>
             </rdf:Description>
         </skos:changeNote>
     </skos:Concept>
