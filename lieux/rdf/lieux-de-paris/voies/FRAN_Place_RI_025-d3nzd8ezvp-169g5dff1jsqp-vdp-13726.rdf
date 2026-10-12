@@ -41,7 +41,7 @@
       <rico:recordResourceSourceOfInformation xml:lang="fr">Notice relative à la voie 13726 dans la nomenclature des voies de Paris publiée en open data par la mairie de Paris (jeu de données de 2023)</rico:recordResourceSourceOfInformation>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-06-16</dc:date>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-12</dc:date>
             <rdf:value xml:lang="fr">Intégration automatique à la notice de nombreuses données relatives à ce lieu dans la nomenclature de la mairie de Paris (historique, coordonnées géographiques, données géométriques, indication des arrondissements et quartiers traversés...), ainsi que différentes activités (alignement, nivellement, numérotage...) liés à ce lieu. Ajout d’une propriété rico:type pour catégoriser le type de coordonnées (point ou polygone).</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -50,7 +50,6 @@
       <rdfs:label xml:lang="fr">rue Sainte-Opportune (1er arrondissement, Paris, France)</rdfs:label>
       <skos:prefLabel xml:lang="fr">rue Sainte-Opportune (1er arrondissement, Paris, France)</skos:prefLabel>
       <skos:altLabel xml:lang="fr">rue Sainte-Opportune</skos:altLabel>
-      <skos:hiddenLabel xml:lang="fr">Sainte-Opportune (rue)</skos:hiddenLabel>
       <rico:isOrWasDescribedBy rdf:resource="record/FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726"/>
       <rico:hasOrHadPlaceName rdf:resource="placeName/FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-rue%20Sainte-Opportune"/>
       <rico:thingIsTargetOfRelation rdf:resource="appellationRelation/FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp"/>
@@ -58,8 +57,8 @@
       <rico:hasOrHadIdentifier rdf:resource="identifier/13726_VdP"/>
       <rico:hasOrHadPlaceType rdf:resource="placeType/rue"/>
       <rico:isOrWasAffectedBy rdf:resource="activity/alignement-FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726_1836-05-30_1854-06-21"/>
-      <rico:isOrWasAffectedBy rdf:resource="activity/ouverture-FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726_1836-05-30"/>
       <rico:isOrWasAffectedBy rdf:resource="activity/numerotage-FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726_1873-07-31"/>
+      <rico:isOrWasAffectedBy rdf:resource="activity/ouverture-FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726_1836-05-30"/>
       <rico:hasExtent rdf:resource="extent/FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726_longueur"/>
       <rico:hasExtent rdf:resource="extent/FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726_largeur"/>
       <rico:hasExtent rdf:resource="extent/FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726_numero_pair"/>
@@ -104,6 +103,18 @@
       <rico:hadSubevent rdf:resource="activity/alignement-FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726_1836-05-30_1854-06-21_1836-05-30"/>
       <rico:hadSubevent rdf:resource="activity/alignement-FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726_1836-05-30_1854-06-21_1854-06-21"/>
    </rico:Activity>
+   <rico:Activity rdf:about="activity/numerotage-FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726_1873-07-31">
+      <rico:generalDescription xml:lang="fr">Arrêté du 31 juillet 1873.</rico:generalDescription>
+      <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1873-07-31</rico:date>
+      <rico:hasActivityType rdf:resource="activityType/num%C3%A9rotage%20de%20voie%20urbaine"/>
+      <rico:affectsOrAffected rdf:resource="place/FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726"/>
+   </rico:Activity>
+   <rico:Activity rdf:about="activity/ouverture-FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726_1836-05-30">
+      <rico:generalDescription xml:lang="fr">Ordonnance du 30 mai 1836 (UP).</rico:generalDescription>
+      <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1836-05-30</rico:date>
+      <rico:hasActivityType rdf:resource="activityType/ouverture%20de%20voie%20urbaine"/>
+      <rico:affectsOrAffected rdf:resource="place/FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726"/>
+   </rico:Activity>
    <rico:Activity rdf:about="activity/alignement-FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726_1836-05-30_1854-06-21_1836-05-30">
       <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1836-05-30</rico:date>
       <rico:wasSubeventOf rdf:resource="activity/alignement-FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726_1836-05-30_1854-06-21"/>
@@ -114,33 +125,21 @@
       <rico:wasSubeventOf rdf:resource="activity/alignement-FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726_1836-05-30_1854-06-21"/>
       <rico:followsInTime rdf:resource="activity/alignement-FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726_1836-05-30_1854-06-21_1836-05-30"/>
    </rico:Activity>
-   <rico:Activity rdf:about="activity/ouverture-FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726_1836-05-30">
-      <rico:generalDescription xml:lang="fr">Ordonnance du 30 mai 1836 (UP).</rico:generalDescription>
-      <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1836-05-30</rico:date>
-      <rico:hasActivityType rdf:resource="activityType/ouverture%20de%20voie%20urbaine"/>
-      <rico:affectsOrAffected rdf:resource="place/FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726"/>
-   </rico:Activity>
-   <rico:Activity rdf:about="activity/numerotage-FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726_1873-07-31">
-      <rico:generalDescription xml:lang="fr">Arrêté du 31 juillet 1873.</rico:generalDescription>
-      <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1873-07-31</rico:date>
-      <rico:hasActivityType rdf:resource="activityType/num%C3%A9rotage%20de%20voie%20urbaine"/>
-      <rico:affectsOrAffected rdf:resource="place/FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726"/>
-   </rico:Activity>
    <rico:PhysicalLocation rdf:about="physicalLocation/FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726">
       <rico:isOrWasPhysicalLocationOf rdf:resource="place/FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726"/>
       <rico:hasOrHadCoordinates rdf:resource="coordinates/FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726_WKT--point"/>
       <rico:hasOrHadCoordinates rdf:resource="coordinates/FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726_WKT_shape"/>
    </rico:PhysicalLocation>
-   <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726_WKT_shape">
-      <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726"/>
-      <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.347208929017957 48.85973475456955, 2.347093504518709 48.8597082470066, 2.3471032389960502 48.859744696775365, 2.3471201067594225 48.859807854756156, 2.3471392815631424 48.85987965277176, 2.3471915112977024 48.86007522052238, 2.3471974689571122 48.860097529891725, 2.3472223400096843 48.86019065372633, 2.3472248058560563 48.860199889998114, 2.3473860903844117 48.86018070878779, 2.3473573000452013 48.86007226748906, 2.347332732165077 48.85997973529992, 2.347303638368988 48.85983721777788, 2.3473019829395887 48.859835426239194, 2.347208929017957 48.85973475456955))</rico:measure>
-      <rico:type xml:lang="fr">polygone</rico:type>
-      <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
-   </rico:Coordinates>
    <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726_WKT--point">
       <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726"/>
       <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POINT(2.34724225881018 48.85996402981927)</rico:measure>
       <rico:type xml:lang="fr">point</rico:type>
+      <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
+   </rico:Coordinates>
+   <rico:Coordinates rdf:about="coordinates/FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726_WKT_shape">
+      <rico:isOrWasCoordinatesOf rdf:resource="physicalLocation/FRAN_RI_025-d3nzd8ezvp-169g5dff1jsqp-vdp-13726"/>
+      <rico:measure rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON ((2.347208929017957 48.85973475456955, 2.347093504518709 48.8597082470066, 2.3471032389960502 48.859744696775365, 2.3471201067594225 48.859807854756156, 2.3471392815631424 48.85987965277176, 2.3471915112977024 48.86007522052238, 2.3471974689571122 48.860097529891725, 2.3472223400096843 48.86019065372633, 2.3472248058560563 48.860199889998114, 2.3473860903844117 48.86018070878779, 2.3473573000452013 48.86007226748906, 2.347332732165077 48.85997973529992, 2.347303638368988 48.85983721777788, 2.3473019829395887 48.859835426239194, 2.347208929017957 48.85973475456955))</rico:measure>
+      <rico:type xml:lang="fr">polygone</rico:type>
       <rico:geodesicSystem xml:lang="fr">WGS84</rico:geodesicSystem>
    </rico:Coordinates>
 </rdf:RDF>
