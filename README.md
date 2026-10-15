@@ -4,9 +4,9 @@ Les référentiels des Archives nationales de France | the Archives nationales d
 
 ## Le contenu en quelques mots
 
-- 18 394 agents (des collectivités, des personnes et des familles)
-- 54 121 lieux (parmi lesquels les circonscriptions administratives françaises contemporaines et un nombre conséquent de lieux de Paris, dont 13 819 voies)
-- 13 listes d’autorité et thésauri, contenant en tout 3559 concepts
+- 18 394 notices d’agents (des collectivités, des personnes et des familles)
+- 54 121 notices de lieux (parmi lesquels les circonscriptions administratives françaises contemporaines et un nombre conséquent de lieux de Paris, dont 13 819 voies)
+- 13 listes d’autorité et thésauri, décrivant en tout 3559 concepts
 
 
 ## Téléchargement
