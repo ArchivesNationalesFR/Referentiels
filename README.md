@@ -8,10 +8,9 @@ Les référentiels des Archives nationales de France | the Archives nationales d
 - 54 121 notices de lieux (parmi lesquels les circonscriptions administratives françaises contemporaines et un nombre conséquent de lieux de Paris, dont 13 819 voies)
 - 13 listes d’autorité et thésauri, décrivant en tout 3559 concepts
 
+## Téléchargement des données
 
-## Téléchargement
-
-Télécharger la dernière release (la version 2.0, octobre 2026): TODO
+Télécharger la dernière release (la version 2.0, octobre 2026): https://github.com/ArchivesNationalesFR/Referentiels/releases/tag/2.0
 
 **Cette version 2.0 est très différente de la v 1.1 (plus de données sur les entités déjà décrites, plus d’entités, mise en conformité avec RiC-O 1.1). Pour plus d’informations sur ce qui a été fait, vous pouvez consulter les notes de la release et [la page "le projet" du site web Garance](https://rdf.archives-nationales.culture.gouv.fr/garance/pages/fr/project/)**.
 
