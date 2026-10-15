@@ -10,7 +10,7 @@ Les référentiels des Archives nationales de France | the Archives nationales d
 
 ## Téléchargement des données
 
-Télécharger la dernière release (la version 2.0, octobre 2026): https://github.com/ArchivesNationalesFR/Referentiels/releases/tag/2.0
+Télécharger la dernière release (la version 2.0, octobre 2026) : https://github.com/ArchivesNationalesFR/Referentiels/releases/tag/2.0
 
 **Cette version 2.0 est très différente de la v 1.1 (plus de données sur les entités déjà décrites, plus d’entités, mise en conformité avec RiC-O 1.1). Pour plus d’informations sur ce qui a été fait, vous pouvez consulter les notes de la release et [la page "le projet" du site web Garance](https://rdf.archives-nationales.culture.gouv.fr/garance/pages/fr/project/)**.
 
