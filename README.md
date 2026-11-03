@@ -1,6 +1,6 @@
-# Référentiels des Archives nationales de France
+# Référentiels sémantisés des Archives nationales de France
 
-Les référentiels des Archives nationales de France | the Archives nationales de France authority data and vocabularies
+Les référentiels des Archives nationales de France, sous la forme de données ouvertes liées (LOD) | the Archives nationales de France authority data and vocabularies, as Linked Open Data (LOD)
 
 ## Le contenu en quelques mots
 
